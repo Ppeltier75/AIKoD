@@ -1,0 +1,914 @@
+name
+01 ai yi base (6b)
+01 ai yi chat (34b)
+21.1b 41b
+34b vanilla language model
+4.1b 8b
+41.1b 80b
+70b vanilla language model
+7b vanilla language model
+8.1b 21b
+80.1b 110b
+8x7b vanilla language model
+abab6.5g
+abab6.5s
+abab6.5t
+ada (fine tuning)
+ai21 jurrasic 2 grande
+ai21 jurrasic 2 grande instruct
+ai21 jurrasic 2 jumbo
+ai21 jurrasic 2 jumbo instruct
+ai21 jurrasic 2 large
+ai21 text summarize
+ai21: jamba 1.5 large
+ai21: jamba 1.5 mini
+ai21: jamba instruct
+airoboros 70b
+airoboros gptq (33b)
+allam 1 13b instruct
+alpaca (7b)
+amazon titan text express
+amazon titan text lite
+amazon titan text premier
+anthropic claude instant
+anthropic claude v1
+anthropic claude v2
+anthropic: claude instant v1.1
+anthropic: claude v2
+anthropic: claude v2 (self moderated)
+anthropic: claude v2.1
+anthropic: claude v2.1 (self moderated)
+assistants api
+assistants api (code interpreter)
+assistants api (file search)
+assistants api (retrieval)
+assistants api retrieval
+babbage
+babbage (fine tuning)
+babbage 002
+babbage 002 (base)
+babbage 002 (fine tuned)
+babbage 002 (fine tuning)
+babbage 002 finetuned
+baichuan npc lite
+baichuan npc turbo
+baichuan2 53b
+baichuan2 turbo
+baichuan2 turbo 192k
+baichuan3 turbo
+baichuan3 turbo 128k
+baichuan4
+base control
+bge l
+bge large
+capybara 34b
+carson ml318br
+characterglm
+charglm 3
+chat gpt 3.5 turbo
+chat gpt 3.5 turbo 0125
+chat gpt 3.5 turbo 1106
+chat gpt 3.5 turbo instruct
+chat gpt 4
+chat gpt 4 32k
+chat gpt 4 turbo
+chat gpt 4o
+chat gpt 4o mini
+chat language code and moderation models 21.1b 41b
+chat language code and moderation models 4.1b 8b
+chat language code and moderation models 41.1b 80b
+chat language code and moderation models 8.1b 21b
+chat language code and moderation models 80.1b 110b
+chat language code and moderation models up to 4b
+chatcompletion
+chatcompletion pro
+chatcompletion v2
+chatglm 12b
+chatglm 130b
+chatglm 32b
+chatglm 66b
+chatglm turbo
+chatglm_turbo
+chatgpt (gpt 3.5 turbo)
+chronos hermes (13b)
+chronos hermes 13b v2
+classify custom
+claude
+claude 2.0
+claude 2.0/2.1
+claude 2.1
+claude 3 haiku
+claude 3 opus
+claude 3 sonnet
+claude 3.5 sonnet
+claude instant
+claude instant 1.2
+claude team
+code llama (34b)
+code llama 13b
+code llama 34b
+code llama 7b
+codellama (13b)
+codellama (7b)
+codellama 13b
+codellama 13b instruct
+codellama 34b instruct
+codellama 70b instruct
+codellama 7b
+codellama 7b instruct
+codellama instruct (13b)
+codellama instruct (7b)
+codellama python (13b)
+codellama python (7b)
+codestral
+codestral 22b
+codestral finetuned
+codey for code chat
+codey for code chat 32k
+codey for code completion
+codey for code generation
+codey for code generation 32k
+cognitivecomputations/dolphin mixtral 8x22b
+cohere generate command
+cohere summarize
+cohere: command r (03 2024)
+cohere: command r (08 2024)
+cohere: command r+ (04 2024)
+cohere: command r+ (08 2024)
+command
+command light
+command r
+command r 08 2024
+command r fine tuned model
+command r+
+command r+ 08 2024
+curie
+curie (fine tuning)
+custom
+davinci
+davinci (fine tuning)
+davinci 002
+davinci 002 (base)
+davinci 002 (fine tuned)
+davinci 002 (fine tuning)
+davinci 002 finetuned
+dbrx
+dbrx instruct
+deepseek chat
+deepseek coder
+deepseek coder 6.7b base awq
+deepseek coder 6.7b instruct awq
+deepseek coder v2
+deepseek llm 67b chat
+deepseek llm chat (67b)
+deepseek math 7b instruct
+deepseek v2 chat
+deepseek v2 lite chat
+deepseek v2.5
+deepseek v2.5 (bf16)
+default
+default model
+discolm german 7b v1 awq
+discolm mixtral 8x7b (46.7b)
+document ocr
+document parse
+dolly v2 (12b)
+dolly v2 (3b)
+dolly v2 (7b)
+dolly v2 12b
+dolphin 2.5 mixtral 8x7b
+dolphin 2.6 mixtral 8x7b
+dolphin 2.6 mixtral 8x7b 🐬
+dolphin 2.9.2 mixtral 8x22b
+dolphin 2.9.2 mixtral 8x22b 🐬
+dolphin 2.9.2 qwen2 72b
+dolphin mixtral 8x7b
+eleutherai/pythia 410m
+eleutherai/pythia 70m
+elyza japanese llama 2 7b instruct
+emohaa
+eva qwen2.5 14b
+evo 1 8k base
+extended control
+falcon (40b)
+falcon (7b)
+falcon 40b instruct
+falcon 7b instruct
+falcon instruct (40b)
+falcon instruct (7b)
+fimbulvetr 11b v2
+fine tuned ada
+fine tuned babbage
+fine tuned curie
+fine tuned davinci
+fine tuned model command r
+fine tuning (ada)
+fine tuning (babbage)
+fine tuning (curie)
+fine tuning (davinci)
+finetune
+finetune (微调)
+firellava 13b
+flan t5
+flan t5 xl (3b)
+flan t5 xl 3b
+flan t5 xxl (11b)
+flan t5 xxl 11b
+flan ul2 20b
+flavor of the week
+gcp palm 2 text bison
+gemini 1.0 pro
+gemini 1.5 flash
+gemini 1.5 pro
+gemma (2b)
+gemma (7b)
+gemma 2 (9b)
+gemma 2 27b it
+gemma 2 9b
+gemma 2 9b 8k
+gemma 2 instruct (27b)
+gemma 2 instruct (9b)
+gemma 2b instruct
+gemma 2b it lora
+gemma 7b
+gemma 7b 8k instruct
+gemma 7b instruct
+gemma 7b it lora
+gemma instruct (2b)
+gemma instruct (7b)
+generate
+generate custom
+generate default
+genomic models
+genomic models 4.1b 8b
+glm 130b
+glm 175b
+glm 3 turbo
+glm 4 0520
+glm 4 air
+glm 4 airx
+glm 4 alltools
+glm 4 flash
+glm 4 flashx
+glm 4 long
+glm 4 plus
+glm 6b
+goliath 120b
+google/gemma 2 9b it
+google: gemini 1.5 flash 8b
+google: gemini flash 8b 1.5 experimental
+google: gemma 2 27b
+google: gemma 2 9b
+google: gemma 2 9b (free)
+google: palm 2 chat 32k
+google: palm 2 code chat 32k
+gpr 4 turbo
+gpt 3.5 turbo
+gpt 3.5 turbo (16k context)
+gpt 3.5 turbo (16k fine tuned)
+gpt 3.5 turbo (4k context)
+gpt 3.5 turbo (4k fine tuned)
+gpt 3.5 turbo (fine tuned)
+gpt 3.5 turbo (fine tuning)
+gpt 3.5 turbo 0125
+gpt 3.5 turbo 0301
+gpt 3.5 turbo 0613
+gpt 3.5 turbo 1106
+gpt 3.5 turbo 16k 0613
+gpt 3.5 turbo finetuned
+gpt 3.5 turbo instruct
+gpt 4 (32k context)
+gpt 4 (8k context)
+gpt 4o 2024 05 13
+gpt 4o 2024 08 06
+gpt jt moderation (6b)
+gpt neox (20b)
+gpt neox 20b
+gpt neoxt chat base (20b)
+gpt neoxt chat base 20b
+granite 13b chat
+granite 13b instruct
+granite 20b code instruct
+granite 20b code instruction 8k
+granite 20b multilingual
+granite 3 2b instruct
+granite 3 8b instruct
+granite 34b code instruct
+granite 3b code instruct
+granite 7b lab
+granite 8b code instruct
+granite 8b code instruction 128k
+granite 8b japanese
+granite guardian 3 2b
+granite guardian 3 8b
+groundedness check
+gryphe mythomax l2 lite (13b)
+gryphe/mythomax l2 13b
+gte
+guanaco (13b)
+guanaco (33b)
+guanaco (65b)
+guanaco (7b)
+hermes 2 pro llama 3
+hermes 2 pro mistral 7b
+hermes 2 theta llama 3 70b
+hermes 3 70b (bf16)
+hf internal testing/tiny random gpt2
+hugging face: zephyr 7b (free)
+ibm granite/granite 3.0 2b instruct
+ibm granite/granite 3.0 8b instruct
+ibmwatsonxai/granite 20b code instruction 8k
+ibmwatsonxai/granite 8b code instruction 128k
+inflection: inflection 3 pi
+inflection: inflection 3 productivity
+instructcodet5 (16b)
+instructgpt (ada)
+instructgpt (babbage)
+instructgpt (curie)
+instructgpt (davinci)
+jais 13b chat (arabic)
+jais 30b chat
+jamba 1.5 large
+jamba 1.5 mini
+jamba instruct
+jondurbin/airoboros l2 70b
+jumbo
+jumbo (base & instruct)
+jumbo grande
+jumbo grande (base & instruct)
+jumbo large
+jumbo large (base)
+jurassic 2 chat
+jurassic 2 light
+jurassic 2 mid
+jurassic 2 ultra
+jurassic light
+jurassic mid
+jurassic ultra
+key information extraction air waybill
+key information extraction bill of lading
+key information extraction commercial invoice
+key information extraction export declaration certificate (kr)
+key information extraction packing list
+key information extraction receipt
+key information extraction shipping request
+koala (13b)
+koala (7b)
+lama 2 chat (13b)
+lama 2 chat (70b)
+lemur basic
+lepton search (beta)
+liquid: lfm 40b moe
+liquid: lfm 40b moe (free)
+llama (13b)
+llama (33b)
+llama (65b)
+llama 2 (13b)
+llama 2 (70b)
+llama 2 (70b) chat
+llama 2 (7b)
+llama 2 (7b) 32k context
+llama 2 13b
+llama 2 13b chat
+llama 2 13b chat awq
+llama 2 32k (7b)
+llama 2 70b
+llama 2 70b chat
+llama 2 7b
+llama 2 7b 32k instruct (7b)
+llama 2 7b chat
+llama 2 7b chat fp16
+llama 2 7b chat hf lora
+llama 2 7b chat int8
+llama 2 chat (13b)
+llama 2 chat (70b)
+llama 2 chat (7b)
+llama 2 pretrained (13b)
+llama 2 pretrained (70b)
+llama 2 préentrainé (13b)
+llama 2 préentrainé (70b)
+llama 3
+llama 3 (70b)
+llama 3 (8b)
+llama 3 1 70b instruct
+llama 3 1 8b instruct
+llama 3 2 1b instruct
+llama 3 2 3b instruct
+llama 3 70b
+llama 3 70b (bf16)
+llama 3 70b 8k
+llama 3 70b gradient instruct
+llama 3 70b instruct
+llama 3 70b instruct (hf version)
+llama 3 70b instruct gradient 1048k
+llama 3 70b instruct lite
+llama 3 70b instruct reference
+llama 3 7b
+llama 3 8b (hf version)
+llama 3 8b 8k
+llama 3 8b instruct
+llama 3 8b instruct (hf version)
+llama 3 8b instruct awq
+llama 3 8b instruct lite
+llama 3 8b instruct reference
+llama 3 chat (70b)
+llama 3 chat (8b)
+llama 3 groq 70b tool use preview 8k
+llama 3 groq 8b tool use preview 8k
+llama 3 instruct (70b)
+llama 3 instruct (8b)
+llama 3 lite 3b
+llama 3 lite 70b
+llama 3 lite 8b
+llama 3 lumimaid 70b
+llama 3 lumimaid 8b
+llama 3 lumimaid 8b (extended)
+llama 3 reference 70b
+llama 3 sonar large 32k online
+llama 3 sonar small 32k online
+llama 3 stheno 8b v3.3 32k
+llama 3 turbo 3b
+llama 3 turbo 405b
+llama 3 turbo 70b
+llama 3 turbo 8b
+llama 3.1 (405b) instruct turbo
+llama 3.1 (70b)
+llama 3.1 (8b)
+llama 3.1 405b
+llama 3.1 405b (bf16)
+llama 3.1 405b base (bf16)
+llama 3.1 405b base (fp8)
+llama 3.1 405b instruct
+llama 3.1 70b
+llama 3.1 70b (bf16)
+llama 3.1 70b instruct
+llama 3.1 70b instruct turbo
+llama 3.1 70b versatile 128k
+llama 3.1 8b
+llama 3.1 8b (bf16)
+llama 3.1 8b instant 128k
+llama 3.1 8b instruct
+llama 3.1 8b instruct awq
+llama 3.1 8b instruct fast
+llama 3.1 8b instruct fp8
+llama 3.1 8b instruct turbo
+llama 3.1 euryale 70b v2.2
+llama 3.1 instruct (405b)
+llama 3.1 instruct (70b)
+llama 3.1 instruct (70b) reference
+llama 3.1 instruct (8b)
+llama 3.1 instruct (8b) reference
+llama 3.1 instruct 405b
+llama 3.1 instruct 70b
+llama 3.1 instruct 8b
+llama 3.1 sonar huge 128k online
+llama 3.1 sonar large 128k chat
+llama 3.1 sonar large 128k online
+llama 3.1 sonar small 128k chat
+llama 3.1 sonar small 128k online
+llama 3.1 turbo 405b
+llama 3.2 11b vision instruct
+llama 3.2 1b
+llama 3.2 1b (preview) 8k
+llama 3.2 1b instruct
+llama 3.2 3b
+llama 3.2 3b (bf16)
+llama 3.2 3b (preview) 8k
+llama 3.2 3b instruct
+llama 3.2 3b instruct turbo
+llama 3.2 instruct (1b)
+llama 3.2 instruct (3b)
+llama guard 2 7b
+llama guard 3 8b 8k
+llama guard 7b
+llama guard v2 8b
+llama guard v3 1b
+llama v3 405b
+llama v3p1 405b instruct long
+llama2 13b
+llama2 13b dpo v7 (korean)
+llama2 70b
+llama2 70b chat
+llama2 7b
+llama3 70b
+llama3 8b chat hf int4
+llama3.1 405b
+llama3.1 70b
+llama3.1 8b
+llamaguard 7b awq
+llava next (mistral 7b)
+llm text translation
+lumimaid v0.2 8b
+lynn: llama 3 soliloquy 8b v2
+lzlv 70b
+lzlv_70b
+magnum 72b
+magnum v2 72b
+mancer: weaver (alpha)
+merlinite 7b
+meta llama 3 70b
+meta llama 3 70b instruct
+meta llama 3 70b instruct lite
+meta llama 3 70b instruct reference
+meta llama 3 70b instruct turbo
+meta llama 3 8b instruct
+meta llama 3 8b instruct lite
+meta llama 3 8b instruct reference
+meta llama 3 8b instruct turbo
+meta llama 3.1 405b instruct turbo
+meta llama 3.1 70b instruct
+meta llama 3.1 70b instruct turbo
+meta llama 3.1 8b instruct
+meta llama 3.1 8b instruct turbo
+meta llama 3.2 3b instruct turbo
+meta llama/llama 2 13b chat hf
+meta llama/llama 2 7b chat hf
+meta llama/llama 2 7b hf
+meta llama/llama 3 70b instruct
+meta llama/llama 3 8b instruct
+meta llama/llama 3.1 405b instruct
+meta llama/llama 3.1 70b instruct
+meta llama/llama 3.1 8b instruct
+meta llama/meta llama 3 8b instruct
+meta llama/meta llama 3.1 8b instruct
+meta/llama 2 13b
+meta/llama 2 13b chat
+meta/llama 2 70b
+meta/llama 2 70b chat
+meta/llama 2 7b chat
+meta/meta llama 3 70b
+meta/meta llama 3 70b instruct
+meta/meta llama 3 8b instruct
+meta/meta llama 3.1 405b instruct
+meta: llama 3 70b (base)
+meta: llama 3 70b instruct
+meta: llama 3 70b instruct (nitro)
+meta: llama 3 8b (base)
+meta: llama 3 8b instruct
+meta: llama 3 8b instruct (extended)
+meta: llama 3 8b instruct (free)
+meta: llama 3 8b instruct (nitro)
+meta: llama 3.1 405b (base)
+meta: llama 3.1 405b instruct
+meta: llama 3.2 1b instruct
+meta: llama 3.2 1b instruct (free)
+meta: llama 3.2 3b instruct
+meta: llama 3.2 3b instruct (free)
+meta: llamaguard 2 8b
+microsoft phi 2
+microsoft/phi 2
+microsoft/phi 3 mini 4k instruct
+microsoft/wizardlm 2 7b
+microsoft/wizardlm 2 8x22b
+ministral 3b
+ministral 3b 24.10
+ministral 8b
+ministral 8b 24.10
+mistral (7b)
+mistral (7b) instruct
+mistral (7b) instruct v0.2
+mistral (7b) instruct v0.3
+mistral 7b
+mistral 7b finetuned
+mistral 7b instruct
+mistral 7b instruct v0.1
+mistral 7b instruct v0.1 awq
+mistral 7b instruct v0.2
+mistral 7b instruct v0.2 lora
+mistral 7b instruct v0.3
+mistral 7b openorca
+mistral 7b v0.1
+mistral 7b v0.2
+mistral 7b v2
+mistral 7b v3
+mistral instruct v0.1 (7b)
+mistral instruct v0.2 (7b)
+mistral large
+mistral large (24.02)
+mistral large 2
+mistral large 2 finetuned
+mistral large 2402
+mistral large 2407
+mistral large 2407 finetuned
+mistral medium
+mistral nemo
+mistral nemo 12b celeste
+mistral nemo 12b starcannon
+mistral nemo base 2407
+mistral nemo finetuned
+mistral nemo instruct 2407
+mistral small
+mistral small (24.02)
+mistral small 24.09
+mistral small 24.09 finetuned
+mistral small 2402
+mistral small 2402 finetuned
+mistral small finetuned
+mistral tiny
+mistral v0.1 (7b)
+mistral: codestral mamba
+mistral: mistral 7b instruct v0.1
+mistral: mistral 7b instruct v0.2
+mistral: mistral nemo
+mistral: mixtral 8x22b instruct
+mistral: pixtral 12b
+mistralai/mistral 7b instruct
+mistralai/mistral 7b instruct v0.1
+mistralai/mistral 7b instruct v0.2
+mistralai/mistral 7b instruct v0.3
+mistralai/mistral 7b v0.1
+mistralai/mistral nemo
+mistralai/mixtral 8x7b instruct v0.1
+mistrallite
+mixtral 7b
+mixtral 8 7b
+mixtral 8x22b
+mixtral 8x22b instruct
+mixtral 8x22b instruct v0.1
+mixtral 8x7b
+mixtral 8x7b (46.7b)
+mixtral 8x7b (base)
+mixtral 8x7b chat
+mixtral 8x7b instruct
+mixtral 8x7b instruct (46.7b)
+mixtral 8x7b instruct (nitro)
+mixtral 8x7b instruct 32k
+mixtral 8x7b instruct v0.1
+mixtral 8x7b smoe
+mixtral 8x7b v0.1
+mixtral moe 8x22b
+mixtral moe 8x22b instruct
+mixtral moe 8x7b instruct
+mixtral moe 8x7b instruct (hf version)
+mixture of experts 176.1b 480b
+mixture of experts 56.1b 176b
+mixture of experts models (176.1b 480b)
+mixture of experts models (56.1b 176b)
+mixture of experts models (up to 56b)
+mixture of experts up to 56b
+mpt (30b)
+mpt 30b
+mpt 7b
+mpt chat (30b)
+mpt chat (7b)
+mpt instruct (30b)
+mt0 xxl 13b
+mythomax l2 (13b)
+mythomax l2 13b
+mythomax l2 13b turbo
+mythomist 7b
+mythomist 7b (free)
+neural chat 7b v3 1 awq
+nexusraven (13b)
+noromaid 20b
+nous capybara 7b v1.9
+nous capybara v1.9 (7b)
+nous hermes (13b)
+nous hermes 2 mistral dpo (7b)
+nous hermes 2 mixtral 8x7b dpo
+nous hermes 2 mixtral 8x7b dpo (46.7b)
+nous hermes 2 mixtral 8x7b sft
+nous hermes 2 mixtral 8x7b sft (46.7b)
+nous hermes 2 yi (34b)
+nous hermes 2 yi 34b
+nous hermes llama 2 (13b)
+nous hermes llama 2 (70b)
+nous hermes llama 2 (7b)
+nous hermes llama2 13b
+nous hermes llama2 70b
+nous hermes llama2 7b
+nous hermes mixtral 8x7b
+nous: hermes 13b
+nous: hermes 2 mixtral 8x7b dpo
+nous: hermes 2 theta 8b
+nous: hermes 3 405b instruct
+nous: hermes 3 405b instruct (extended)
+nous: hermes 3 405b instruct (free)
+nous: hermes 3 70b instruct
+nousresearch/hermes 2 pro llama 3 8b
+nousresearch/nous hermes llama2 13b
+nousresearch: hermes 2 pro llama 3 8b
+nvidia nemotron 4 340b instruct
+nvidia: llama 3.1 nemotron 70b instruct
+o1 mini
+o1 mini 2024 09 12
+o1 preview
+o1 preview 2024 09 12
+olmo 7b
+olmo 7b instruct
+olmo instruct (7b)
+olmo twin 2t (7b)
+open assistant llama sft 6 (30b)
+open assistant pythia reward based (7b)
+open assistant pythia sft 4 (12b)
+open assistant stablelm sft 7 (7b)
+openai gpt 3.5 turbo
+openai gpt 3.5 turbo instruct
+openai gpt 4
+openai o1 mini
+openai o1 preview
+openai: gpt 3.5 turbo (older v0613)
+openai: gpt 3.5 turbo instruct
+openai: o1 mini
+openai: o1 mini (2024 09 12)
+openai: o1 preview
+openai: o1 preview (2024 09 12)
+openchat 3.5
+openchat 3.5 (7b)
+openchat 3.5 0106
+openchat 3.5 7b
+openchat 3.5 7b (free)
+openchat 3.6 8b
+openchat/openchat 7b
+openhermes 2 mistral (7b)
+openhermes 2 mistral 7b
+openhermes 2.5 mistral (7b)
+openhermes 2.5 mistral 7b
+openhermes 2.5 mistral 7b awq
+openorca mistral (7b)
+openorca mistral (7b) 8k
+palm 2 for chat (chat bison)
+palm 2 for chat 32k (chat bison 32k)
+palm 2 for text (text bison)
+palm 2 for text (text unicorn)
+palm 2 for text 32k (text bison 32k)
+perplexity: llama 3.1 sonar 405b online
+perplexity: llama 3.1 sonar 70b
+perplexity: llama 3.1 sonar 70b online
+perplexity: llama 3.1 sonar 8b
+perplexity: llama 3.1 sonar 8b online
+perplexity: llama3 sonar 70b
+perplexity: llama3 sonar 70b online
+perplexity: llama3 sonar 8b
+perplexity: llama3 sonar 8b online
+phi 2
+phi 3 medium 128k instruct
+phi 3 medium 128k instruct (free)
+phi 3 medium 4k
+phi 3 medium 4k instruct
+phi 3 medium instruct
+phi 3 medium instruct (free)
+phi 3 mini 128k instruct
+phi 3 mini 4k instruct
+phi 3 mini instruct
+phi 3 mini instruct (free)
+phi 3 small 128k instruct
+phi 3 small 8k instruct
+phi 3.5 mini 128k instruct
+phi 3.5 moe instruct
+phind codellama 34b v2
+platypus2 70b instruct
+platypus2 instruct (70b)
+prompt llm
+pygmalion: mythalion 13b
+pythia 12b
+pythia chat (7b)
+pythia chat base (7b)
+qwen (32b)
+qwen (7b)
+qwen 1.5 (0.5b)
+qwen 1.5 (72b)
+qwen 1.5 110b chat
+qwen 1.5 14b chat
+qwen 1.5 32b chat
+qwen 1.5 4b chat
+qwen 1.5 72b chat
+qwen 1.5 7b chat
+qwen 1.5 chat (0.5b)
+qwen 1.5 chat (1.8b)
+qwen 1.5 chat (110b)
+qwen 1.5 chat (14b)
+qwen 1.5 chat (32b)
+qwen 1.5 chat (4b)
+qwen 1.5 chat (72b)
+qwen 1.5 chat (7b)
+qwen 2 1.5b instruct
+qwen 2 72b instruct
+qwen 2 7b instruct
+qwen 2 instruct (1.5b)
+qwen 2 instruct (72b)
+qwen 2 instruct (7b)
+qwen 2.5 72b (bf16)
+qwen 2.5 72b instruct turbo
+qwen 2.5 7b instruct turbo
+qwen chat (14b)
+qwen chat (7b)
+qwen/qwen 2 72b instruct
+qwen/qwen 2 7b instruct
+qwen/qwen 2.5 72b instruct
+qwen/qwen2 7b instruct
+qwen1.5 0.5b chat
+qwen1.5 1.8b chat
+qwen1.5 14b chat awq
+qwen1.5 72b chat
+qwen1.5 7b chat awq
+qwen2 72b
+qwen2 72b instruct
+qwen2 7b
+qwen2 7b instruct
+qwen2 vl 72b instruct
+qwen2 vl 7b instruct
+qwen2.5 14b
+qwen2.5 14b instruct
+qwen2.5 32b
+qwen2.5 32b instruct
+qwen2.5 72b
+qwen2.5 72b float8 mm 405b
+qwen2.5 72b instruct
+qwen2.5 72b instruct turbo
+qwen2.5 7b
+qwen2.5 7b instruct
+qwen2.5 7b instruct turbo
+qwen2p5 math 72b instruct
+redpajama incite (3b)
+redpajama incite (7b)
+redpajama incite chat (3b)
+redpajama incite chat (7b)
+redpajama incite chat 7b
+redpajama incite instruct (3b)
+redpajama incite instruct (7b)
+remm slerp l2 (13b)
+remm slerp l2 13b
+replit code v1 (3b)
+rerank
+rerank 2
+rerank 3
+rerank custom
+rerank default
+sao10k/l3 70b euryale v2.1
+sao10k/l31 70b euryale v2.2
+sensechat
+sensechat 128k
+sensechat 32k
+sensechat 5
+sensechat 5 cantonais
+sensechat character
+sensechat character pro
+sensechat turbo
+snorkel mistral pairrm dpo
+snorkel mistral pairrm dpo (7b)
+snowflake arctic instruct
+snowflake: arctic instruct
+solar docvision
+solar instruct v1 (11b)
+solar mini
+solar pro
+sonar medium online
+sonar small online
+sophosympatheia/midnight rose 70b
+sqlcoder 7b 2
+stablelm base alpha 3b
+starcoder2 15b
+starcoder2 15b instruct
+starcoderchat alpha (16b)
+starling lm 7b beta
+stripedhyena hessian (7b)
+stripedhyena nous (7b)
+summarize custom
+supreme
+supreme control
+teknium/openhermes 2.5 mistral 7b
+test 11
+tinyllama 1.1b chat v1.0
+togethercomputer llama3 8b instruct int8
+toppy m (7b)
+toppy m 7b
+toppy m 7b (free)
+toppy m 7b (nitro)
+translation
+una cybertron 7b v2 bf16
+up to 4b
+upstage solar instruct v1 (11b)
+upstage solar instruct v1 (11b) int4
+vanilla 7b parameters
+vanilla 8x7b models
+vanilla language model 34b
+vanilla language model 70b
+vanilla language model 7b
+vanilla with 34b parameters
+vanilla with 70b parameters
+vicuna fastchat t5 (3b)
+vicuna v1.1 (13b)
+vicuna v1.3 (13b)
+vicuna v1.3 (7b)
+vicuna v1.5 (13b)
+vicuna v1.5 (7b)
+vicuna v1.5 16k (13b)
+wizardlm 2
+wizardlm 2 (8x22b)
+wizardlm 2 7b
+wizardlm 2 8x22b
+wizardlm 70b
+wizardlm v1.2 (13b)
+xai: grok beta
+xwin 70b
+yi 34b
+yi 34b chat
+yi 6b
+yi 6b 200k
+yi large
+zephyr 7b
+zephyr 7b beta
+zephyr 7b beta awq
+zephyr 7b ß
+zephyr 8x 22b

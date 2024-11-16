@@ -1,0 +1,93 @@
+name
+ada
+ada (embedding)
+ada v1 (embedding)
+ada v2
+ada v2 (embedding)
+ada v2 embed
+all minilm l12 v2
+all minilm l6 v2
+assistants
+baai bge base 1p5
+baai bge large 1p5
+babbage v1 (embedding)
+baichuan text embedding
+bert base uncased
+bge base en v1.5
+bge large en v1.5
+bge small en v1.5
+classify
+classify default
+cohere multilingual text to embeddings
+cohere text to embeddings
+curie v1 (embedding)
+davinci v1 (embedding)
+e5 base v2
+e5 large v2
+embed
+embed 3
+embed anglais
+embed custom
+embed default
+embed english
+embed multilingual
+embed multilingue
+embed v3 english
+embed v3 multilingual
+embedding
+embedding (ada v1)
+embedding (ada v2)
+embedding (ada)
+embedding (babbage v1)
+embedding (babbage)
+embedding (curie v1)
+embedding (curie)
+embedding (davinci v1)
+embedding (davinci)
+embedding 2
+embedding 3
+embedding for text
+embeddings
+embeddings (向量化)
+embeddings for text
+embeddings models (151m 350m)
+embeddings models (up to 150m)
+embeddings models 151m 350m
+embeddings models up to 150m
+gcp embeddings gecko
+gte base
+gte large
+gte large zh
+library
+m2 bert 2k retrieval encoder v1
+m2 bert retrieval 2k
+m2 bert retrieval 32k
+m2 bert retrieval 8k
+mistral embed
+mixedbread ai/mxbai embed 2d large v1
+mixedbread ai/mxbai embed large v1
+multilingual e5 base
+multilingual e5 large
+multimodalembedding
+mxbai embed 2d large v1
+mxbai embed large v1
+mxbai embed v2
+mxbai rerank large v1
+nova embedding stable
+openai text embedding ada
+retrieval
+sentence bert
+slate 125m english rtrvr
+slate 125m english rtrvr v2
+slate 30m english rtrvr
+slate 30m english rtrvr v2
+text embedding
+text embedding 3 large
+text embedding 3 small
+text embedding ada 002
+text multilingual embedding 002
+textembedding gecko multilingual@001
+textembedding gecko@001
+textembedding gecko@003
+uae large v1
+voyage large 2 instruct

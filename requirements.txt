@@ -1,0 +1,12 @@
+requests
+openai
+groq
+tiktoken
+pandas
+anthropic
+flake8
+python-dotenv
+beautifulsoup4
+firecrawl
+selenium
+webdriver-manager

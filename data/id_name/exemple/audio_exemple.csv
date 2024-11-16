@@ -1,0 +1,23 @@
+name,id_name
+whisper (large v2),whisper-large-unknown-2
+wizper (large v3),wizper-large-unknown-3
+incredibly fast whisper,whisper-fast-unknown-unknown
+whisperx,whisperx-unknown-unknown-unknown
+whisper (medium),whisper-medium-unknown-unknown
+whisper (small),whisper-small-unknown-unknown
+whisper (large v3),whisper-large-unknown-3
+distil whisper groq,whisper-distil-groq-unknown
+whisper (large v3) deepinfra,whisper-large-deepinfra-3
+whisper (large v3 turbo),whisper-large-turbo-3
+assemblyai (universal 1),assemblyai-universal-unknown-1
+nano,nano-unknown-unknown-unknown
+speechmatics standard,speechmatics-standard-unknown-unknown
+speechmatics enhanced,speechmatics-enhanced-unknown-unknown
+azure speech service,azure-speech-service-unknown
+nova 2,nova-unknown-unknown-2
+base,base-unknown-unknown-unknown
+whisper large v2,whisper-large-unknown-2
+gladia,gladia-unknown-unknown-unknown
+amazon transcribe,amazon-transcribe-unknown-unknown
+rev ai,rev-ai-unknown-unknown
+cloud speech to text (chirp),chirp-cloud-speech-unknown

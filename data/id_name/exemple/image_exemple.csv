@@ -1,0 +1,35 @@
+name,id_name
+recraft v3,recraft-unknown-unknown-3-unknown-unknown-False
+flux1.1 [pro],flux-pro-unknown-1.1-unknown-unknown-False
+flux.1 [pro],flux-pro-unknown-1-unknown-unknown-False
+midjourney v6.1,midjourney-unknown-unknown-6.1-unknown-unknown-False
+ideogram v2,ideogram-unknown-unknown-2-unknown-unknown-False
+flux.1 [dev],flux-dev-unknown-1-unknown-unknown-False
+ideogram v2 turbo,ideogram-unknown-turbo-2-unknown-unknown-False
+midjourney v6,midjourney-unknown-unknown-6-unknown-unknown-False
+stable diffusion 3.5 large turbo,stablediffusion-large-turbo-3.5-unknown-unknown-False
+stable diffusion 3.5 large,stablediffusion-large-unknown-3.5-unknown-unknown-False
+ideogram v1,ideogram-unknown-unknown-1-unknown-unknown-False
+stable diffusion 3 large,stablediffusion-large-unknown-3-unknown-unknown-False
+playground v3 (beta),playground-unknown-beta-3-unknown-unknown-False
+flux.1 [schnell],flux-schnell-unknown-1-unknown-unknown-False
+recraft 20b,recraft-20b-unknown-v1-unknown-unknown-False
+playground v2.5,playground-unknown-unknown-2.5-unknown-unknown-False
+dalle 3 hd,dalle-unknown-unknown-3-unknown-unknown-True
+dalle 3,dalle-unknown-unknown-3-unknown-unknown-False
+stable diffusion 3 medium,stablediffusion-medium-unknown-3-unknown-unknown-False
+amazon titan g1 v2 (standard),amazontitan-g1-standard-2-unknown-unknown-False
+stable diffusion 3 large turbo,stablediffusion-large-turbo-3-unknown-unknown-False
+stable diffusion 1.6,stablediffusion-unknown-unknown-1.6-unknown-unknown-False
+amazon titan g1 (standard),amazontitan-g1-standard-1-unknown-unknown-False
+sdxl lightning,stablediffusion-xl-lightning-1-unknown-unknown-False
+stable diffusion xl 1.0,stablediffusion-xl-unknown-1-unknown-unknown-False
+dalle 2,dalle-unknown-unknown-2-unknown-unknown-False
+stable diffusion 2.1,stablediffusion-unknown-unknown-2.1-unknown-unknown-False
+stable diffusion 1.5,stablediffusion-unknown-unknown-1.5-unknown-unknown-False
+japonese stable diffusion xl 30 steps,stablediffusion-japonese-xl-v1-1024x1024-30-False
+segmind stable diffusion 1b (ssd 1b) 30 steps,stablediffusion-segmind-1b-unknown-1024x1024-30-False
+stable diffusion 2.1 (50 steps 1024x1024),stablediffusion-unknown-unknown-2.1-1024x1024-50-False
+dalle 2 512,dalle-unknown-unknown-2-512x512-unknown-False
+dalle 3 1792 hd,dalle-unknown-unknown-3-1792x1792-unknown-True
+dalle 2 256,dalle-unknown-unknown-2-256x256-unknown-False

@@ -1,0 +1,276 @@
+name,id_name
+flux.1 [dev] with pretrained loras (30 steps 1024x1024),flux-dev-lora-1-1024x1024-30-false-unknown-false
+sd3 turbo,stablediffusion-unknown-turbo-3-unknown-unknown-false-unknown-false
+stable diffusion 2.1 (100 steps 512x512),stablediffusion-unknown-unknown-2.1-512x512-100-false-unknown-false
+amazon titan image generator 1024,amazontitan-unknown-unknown-1-1024x1024-unknown-false-unknown-false
+realistic vision 3.0 (75 steps 512x512),realisticvision-unknown-unknown-3-512x512-75-false-unknown-false
+flux 1.1 [pro] 1024,flux-pro-unknown-1.1-1024x1024-unknown-false-unknown-false
+stable diffusion 3.5 large 1024,stablediffusion-large-unknown-3.5-1024x1024-unknown-false-unknown-false
+controlnet (100 steps 1024x1024),controlnet-unknown-unknown-1-1024x1024-100-false-unknown-false
+sdxl (768x768 50 steps),stablediffusion-xl-unknown-1-768x768-50-false-unknown-false
+midjourney version 1,midjourney-unknown-unknown-1-unknown-unknown-false-unknown-false
+flux.1 [pro] (25 steps 512x512),flux-pro-unknown-1-512x512-25-false-unknown-false
+flux realism lora (100 steps 512x512),flux-realism-unknown-1-512x512-100-false-unknown-true
+stabilityai stable diffusion xl,stablediffusion-xl-unknown-v1-unknown-unknown-false-unknown-false
+flux realism lora (25 steps 512x512),flux-realism-unknown-1-512x512-25-false-unknown-true
+stable diffusion 1.5 (100 steps 512x512),stablediffusion-unknown-unknown-1.5-512x512-100-false-unknown-false
+sd1.5 (50 steps 1024x1024),stablediffusion-unknown-unknown-1.5-1024x1024-50-false-unknown-false
+flux1.1 [pro],flux-pro-unknown-1.1-unknown-unknown-false-unknown-false
+sdxl lightning 4 steps,stablediffusion-xl-lightning-v1-unknown-4-false-unknown-false
+stable diffusion xl 1.0 (75 steps 1024x1024),stablediffusion-xl-unknown-1-1024x1024-75-false-unknown-false
+flux 1 schnell (50 steps 2048x2048),flux-schnell-unknown-1-2048x2048-50-false-unknown-false
+sdxl 0.8 > 512 hd,stablediffusion-xl-unknown-0.8-1024x1024-unknown-true-unknown-false
+stable diffusion 3 turbo,stablediffusion-unknown-turbo-3-unknown-unknown-false-unknown-false
+stable diffusion xl 1.0 (100 steps 1024x1024),stablediffusion-xl-unknown-1-1024x1024-100-false-unknown-false
+openjourney v4 (75 steps 1024x1024),openjourney-unknown-unknown-4-1024x1024-75-false-unknown-false
+dalle 3 1024,dalle-unknown-unknown-3-1024x1024-unknown-false-unknown-false
+stable diffusion xl base 1.0 (50 steps 512x512),stablediffusion-xl-base-1-512x512-50-false-unknown-false
+stable diffusion xl base 1.0 (50 steps 1024x1024),stablediffusion-xl-base-1-1024x1024-50-false-unknown-false
+stable diffusion 1.5 (50 steps 512x512),stablediffusion-unknown-unknown-1.5-512x512-50-false-unknown-false
+controlnet (25 steps 512x512),controlnet-unknown-unknown-1-512x512-25-false-unknown-false
+stable diffusion 2.1 (25 steps 512x512),stablediffusion-unknown-unknown-2.1-512x512-25-false-unknown-false
+sdxl (40 steps 1024x1024 dpm_2_ancestral sampler),stablediffusion-xl-unknown-1-1024x1024-40-false-dpm2-false
+stable diffusion xl base 1.0 (50 steps 2048x2048),stablediffusion-xl-base-1-2048x2048-50-false-unknown-false
+realistic vision 3.0,realisticvision-unknown-unknown-3-unknown-unknown-false-unknown-false
+flux.1 [dev] (30 steps 1024x1024),flux-dev-unknown-1-1024x1024-30-false-unknown-false
+openai dall·e 3 1024,dalle-unknown-unknown-3-1024x1024-unknown-false-unknown-false
+stable image ultra,stableimage-ultra-unknown-1-unknown-unknown-false-unknown-false
+openai dall·e 3 (50 steps 1024x1024),dalle-unknown-unknown-3-1024x1024-50-false-unknown-false
+stable diffusion 1.5 1024,stablediffusion-unknown-unknown-1.5-1024x1024-unknown-false-unknown-false
+midjourney version 5,midjourney-unknown-unknown-5-unknown-unknown-false-unknown-false
+controlnet (75 steps 512x512),controlnet-unknown-unknown-1-512x512-75-false-unknown-false
+analog diffusion (75 steps 512x512),analogdiffusion-unknown-unknown-1-512x512-75-false-unknown-false
+flux realism lora (75 steps 1024x1024),flux-realism-unknown-1-1024x1024-75-false-unknown-true
+stable diffusion 2.1 (25 steps 1024x1024),stablediffusion-unknown-unknown-2.1-1024x1024-25-false-unknown-false
+dall·e 3,dalle-unknown-unknown-3-unknown-unknown-false-unknown-false
+flux.1 [schnell] fp8 30 steps,flux-schnell-fp8-1-unknown-30-false-unknown-false
+flux.1 [dév] fp8 30 steps,flux-dev-fp8-1-unknown-30-false-unknown-false
+ideogram version 2.0 quality,ideogram-quality-unknown-2-unknown-unknown-false-unknown-false
+stable diffusion 2.1 512,stablediffusion-unknown-unknown-2.1-512x512-unknown-false-unknown-false
+stability ai/stable diffusion 3,stablediffusion-unknown-unknown-3-unknown-unknown-false-unknown-false
+openjourney v4 (100 steps 1024x1024),openjourney-unknown-unknown-4-1024x1024-100-false-unknown-false
+analog diffusion (75 steps 1024x1024),analogdiffusion-unknown-unknown-1-1024x1024-75-false-unknown-false
+stable diffusion 1.5 (50 steps 1024x1024),stablediffusion-unknown-unknown-1.5-1024x1024-50-false-unknown-false
+sdxl 0.8 512,stablediffusion-xl-unknown-0.8-512x512-unknown-false-unknown-false
+openjourney v4 (100 steps 512x512),openjourney-unknown-unknown-4-512x512-100-false-unknown-false
+stable diffusion 3.5 large turbo,stablediffusion-large-turbo-3.5-unknown-unknown-false-unknown-false
+stable diffusion 2.1 (100 steps 512x512),stablediffusion-unknown-unknown-2.1-512x512-100-false-unknown-false
+imagen 3,imagen-unknown-unknown-3-unknown-unknown-false-unknown-false
+flux.1 [dev] (75 steps 1024x1024),flux-dev-unknown-1-1024x1024-75-false-unknown-false
+flux.1 [dev] 1024,flux-dev-unknown-1-1024x1024-unknown-false-unknown-false
+sd1.5 fine tuned (50 steps),stablediffusion-unknown-unknown-1.5-unknown-50-false-unknown-true
+stable diffusion 1.5 512,stablediffusion-unknown-unknown-1.5-512x512-unknown-false-unknown-false
+stable diffusion 3 large,stablediffusion-large-unknown-3-unknown-unknown-false-unknown-false
+flux.1 [schnell] 1024x1024,flux-schnell-unknown-1-1024x1024-unknown-false-unknown-false
+realistic vision 3.0 (100 steps 512x512),realisticvision-unknown-unknown-3-512x512-100-false-unknown-false
+stable diffusion 1.5 (25 steps 512x512),stablediffusion-unknown-unknown-1.5-512x512-25-false-unknown-false
+flux.1 [schnell] (75 steps 512x512),flux-schnell-unknown-1-512x512-75-false-unknown-false
+analog diffusion 1024,analogdiffusion-unknown-unknown-1-1024x1024-unknown-false-unknown-false
+analog diffusion,analogdiffusion-unknown-unknown-1-unknown-unknown-false-unknown-false
+stable diffusion xl (50 steps),stablediffusion-xl-unknown-v1-unknown-50-false-unknown-false
+openai dall·e 3 (100 steps 1024x1024),dalle-unknown-unknown-3-1024x1024-100-false-unknown-false
+ideogram version 2.0 default,ideogram-default-unknown-2-unknown-unknown-false-unknown-false
+flux.1 [pro] (50 steps 1024x1024),flux-pro-unknown-1-1024x1024-50-false-unknown-false
+realistic vision 3.0 (25 steps 1024x1024),realisticvision-unknown-unknown-3-1024x1024-25-false-unknown-false
+controlnet (25 steps 1024x1024),controlnet-unknown-unknown-1-1024x1024-25-false-unknown-false
+stable diffusion 3 large turbo,stablediffusion-large-turbo-3-unknown-unknown-false-unknown-false
+playground v2 1024 30 steps,playground-unknown-unknown-2-1024x1024-30-false-unknown-false
+sd3 text to image,stablediffusion-unknown-unknown-3-unknown-unknown-false-unknown-false
+stable diffusion xl 1.0 (50 steps 1024x1024),stablediffusion-xl-unknown-1-1024x1024-50-false-unknown-false
+sdxl controlnet (50 steps 1024x1024),stablediffusion-xl-controlnet-v1-1024x1024-50-false-unknown-false
+sdxl (512x512 50 steps),stablediffusion-xl-unknown-1-512x512-50-false-unknown-false
+sdxl 1.0 1024,stablediffusion-xl-unknown-1-1024x1024-unknown-false-unknown-false
+stable diffusion 3 medium,stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false
+openjourney v4 1024,openjourney-unknown-unknown-4-1024x1024-unknown-false-unknown-false
+stable diffusion 1.5 (75 steps 512x512),stablediffusion-unknown-unknown-1.5-512x512-75-false-unknown-false
+dalle 3 1792 hd,dalle-unknown-unknown-3-1792x1792-unknown-true-unknown-false
+stable diffusion 2.1,stablediffusion-unknown-unknown-2.1-unknown-unknown-false-unknown-false
+sdxl with lcm lora (fine tuned) (4 steps 1024x1024 lcm sampler),stablediffusion-xl-lcm-1-1024x1024-4-false-unknown-true
+stable diffusion xl 1.0 (25 steps 512x512),stablediffusion-xl-unknown-1-512x512-25-false-unknown-false
+cogview 3,cogview-unknown-unknown-3-unknown-unknown-false-unknown-false
+flux realism lora (75 steps 512x512),flux-realism-unknown-v1-512x512-75-false-unknown-true
+sdxl with custom asset (fine tuned) (60 steps 1024x1024 ddim sampler),stablediffusion-xl-unknown-1-1024x1024-60-false-unknown-true
+realistic vision 3.0 (100 steps 1024x1024),realisticvision-unknown-unknown-3-1024x1024-100-false-unknown-false
+flux.1 [dev] (100 steps 1024x1024),flux-dev-unknown-1-1024x1024-100-false-unknown-false
+flux.1 [dev] 1024x1024,flux-dev-unknown-1-1024x1024-unknown-false-unknown-false
+sdxl 1.0 hd 1024,stablediffusion-xl-unknown-1-1024x1024-unknown-true-unknown-false
+midjourney version 3,midjourney-unknown-unknown-3-unknown-unknown-false-unknown-false
+sd3,stablediffusion-unknown-unknown-3-unknown-unknown-false-unknown-false
+flux.1 [pro] (100 steps 512x512),flux-pro-unknown-1-512x512-100-false-unknown-false
+core,core-unknown-unknown-1-unknown-unknown-false-unknown-false
+openai dall·e 3 (75 steps 1024x1024),dalle-unknown-unknown-3-1024x1024-75-false-unknown-false
+openai dall·e 3 (25 steps 1024x1024),dalle-unknown-unknown-3-1024x1024-25-false-unknown-false
+controlnet,controlnet-unknown-unknown-1-unknown-unknown-false-unknown-false
+sd 1.5 text to image,stablediffusion-unknown-unknown-1.5-unknown-unknown-false-unknown-false
+controlnet (100 steps 512x512),controlnet-unknown-unknown-1-512x512-100-false-unknown-false
+openai dall·e 3 (25 steps 512x512),dalle-unknown-unknown-3-512x512-25-false-unknown-false
+flux realism lora (50 steps 1024x1024),flux-realism-unknown-1-1024x1024-50-false-unknown-true
+sdxl (40 steps 1024x1024 ddim sampler),stablediffusion-xl-unknown-1-1024x1024-40-false-ddim-false
+sdxl lightning,stablediffusion-xl-lightning-1-unknown-unknown-false-unknown-false
+openai dall·e 2 256,dalle-unknown-unknown-2-256x256-unknown-false-unknown-false
+stable diffusion xl 1.0 512,stablediffusion-xl-unknown-1-512x512-unknown-false-unknown-false
+midjourney version 2,midjourney-unknown-unknown-2-unknown-unknown-false-unknown-false
+dall·e 2,dalle-unknown-unknown-2-unknown-unknown-false-unknown-false
+midjourney version 6,midjourney-unknown-unknown-6-unknown-unknown-false-unknown-false
+flux.1 [schnell] (100 steps 1024x1024),flux-schnell-unknown-1-1024x1024-100-false-unknown-false
+imagen 3 fast,imagen-fast-unknown-3-unknown-unknown-false-unknown-false
+openjourney v4 (25 steps 512x512),openjourney-unknown-unknown-4-512x512-25-false-unknown-false
+realistic vision 3.0 512,realisticvision-unknown-unknown-3-512x512-unknown-false-unknown-false
+black forest labs/flux schnell,flux-schnell-unknown-1-unknown-unknown-false-unknown-false
+dalle 2 256,dalle-unknown-unknown-2-256x256-unknown-false-unknown-false
+stable diffusion 3 (100 steps 512x512),stablediffusion-unknown-unknown-3-512x512-100-false-unknown-false
+flux.1 [dev] (50 steps 512x512),flux-dev-unknown-1-512x512-50-false-unknown-false
+controlnet (75 steps 1024x1024),controlnet-unknown-unknown-1-1024x1024-75-false-unknown-false
+cogview 3,cogview-unknown-unknown-3-unknown-unknown-false-unknown-false
+realistic vision 3.0 (75 steps 1024x1024),realisticvision-unknown-unknown-3-1024x1024-75-false-unknown-false
+dalle 3 1792,dalle-unknown-unknown-3-1792x1792-unknown-false-unknown-false
+controlnet (50 steps 1024x1024),controlnet-unknown-unknown-1-1024x1024-50-false-unknown-false
+stable diffusion 3 (50 steps 512x512),stablediffusion-unknown-unknown-3-512x512-50-false-unknown-false
+stable diffusion 3 (75 steps 1024x1024),stablediffusion-unknown-unknown-3-1024x1024-75-false-unknown-false
+ssd (50 steps 1024x1024),ssd-unknown-unknown-1-1024x1024-50-false-unknown-false
+black forest labs/flux pro,flux-pro-unknown-1-unknown-unknown-false-unknown-false
+midjourney version 5.0,midjourney-unknown-unknown-5-unknown-unknown-false-unknown-false
+sdxl 0.8 512 hd,stablediffusion-xl-unknown-0.8-512x512-unknown-true-unknown-false
+stable diffusion 3 (75 steps 512x512),stablediffusion-unknown-unknown-3-512x512-75-false-unknown-false
+flux.1 [schnell] 1024,flux-schnell-unknown-1-1024x1024-unknown-false-unknown-false
+flux.1 [pro] (75 steps 1024x1024),flux-pro-unknown-1-1024x1024-75-false-unknown-false
+realistic vision 3.0 (25 steps 512x512),realisticvision-unknown-unknown-3-512x512-25-false-unknown-false
+sd 1.5 (40 steps 1024x1024 dpm_2 sampler),stablediffusion-unknown-unknown-1.5-1024x1024-40-false-unknown-false
+flux.1 [schnell] with pretrained loras (4 steps 1024x1024),flux-schnell-loras-1-1024x1024-4-false-unknown-false
+imagen,imagen-unknown-unknown-1-unknown-unknown-false-unknown-false
+flux.1 [schnell] (75 steps 1024x1024),flux-schnell-unknown-1-1024x1024-75-false-unknown-false
+aiqr (50 steps),aiqr-unknown-unknown-unknown-unknown-50-false-unknown-false
+flux.1 [schnell] (25 steps 1024x1024),flux-schnell-unknown-1-1024x1024-25-false-unknown-false
+openjourney v4,openjourney-unknown-unknown-4-unknown-unknown-false-unknown-false
+sdxl turbo (50 steps 1024x1024),stablediffusion-xl-turbo-1-1024x1024-50-false-unknown-false
+flux realism lora (50 steps 512x512),flux-realism-unknown-1-512x512-50-false-unknown-true
+flux 1 schnell (50 steps 1024x1024),flux-schnell-unknown-1-1024x1024-50-false-unknown-false
+stable diffusion xl 1.0 (100 steps 512x512),stablediffusion-xl-unknown-1-512x512-100-false-unknown-false
+flux.1 [pro] (25 steps 1024x1024),flux-pro-unknown-1-1024x1024-25-false-unknown-false
+stable diffusion 2.1 (25 steps 512x512),stablediffusion-unknown-unknown-2.1-512x512-25-false-unknown-false
+stable diffusion 2.1 (50 steps 512x512),stablediffusion-unknown-unknown-2.1-512x512-50-false-unknown-false
+flux.1 [schnell] (4 steps 1024x1024),flux-schnell-unknown-1-1024x1024-4-false-unknown-false
+juggernaut v9 and xi lighting (4 steps),juggernaut-lighting-unknown-9-unknown-4-false-unknown-false
+sdxl (1024x1024 50 steps),stablediffusion-xl-unknown-1-1024x1024-50-false-unknown-false
+dalle 2 512,dalle-unknown-unknown-2-512x512-unknown-false-unknown-false
+sd2 (50 steps 1024x1024),stablediffusion-unknown-unknown-2-1024x1024-50-false-unknown-false
+sd 1.5 (40 steps 512x512 ddim sampler),stablediffusion-unknown-unknown-1.5-512x512-40-false-unknown-false
+stable diffusion 2.1 (75 steps 512x512),stablediffusion-unknown-unknown-2.1-512x512-75-false-unknown-false
+dreamshaper 8 lcm (50 steps 512x512),dreamshaper-lcm-unknown-8-512x512-50-false-unknown-false
+flux.1 [pro] (75 steps 512x512),flux-pro-unknown-1-512x512-75-false-unknown-false
+realistic vision 3.0 1024,realisticvision-unknown-unknown-3-1024x1024-unknown-false-unknown-false
+stable diffusion 2.1 (100 steps 1024x1024),stablediffusion-unknown-unknown-2.1-1024x1024-100-false-unknown-false
+open dalle (50 steps),opendalle-unknown-unknown-1-unknown-50-false-unknown-false
+sd3 large,stablediffusion-large-unknown-3-unknown-unknown-false-unknown-false
+stable diffusion 3 (25 steps 1024x1024),stablediffusion-unknown-unknown-3-1024x1024-25-false-unknown-false
+stable diffusion xl 30 steps,stablediffusion-xl-unknown-v1-unknown-30-false-unknown-false
+sd1.5 controlnet (50 steps 1024x1024),stablediffusion-controlnet-unknown-1.5-1024x1024-50-false-unknown-false
+flux realism lora (100 steps 1024x1024),flux-realism-unknown-1-1024x1024-100-false-unknown-true
+stable diffusion 2.1 1024,stablediffusion-unknown-unknown-2.1-1024x1024-unknown-false-unknown-false
+flux.1 [pro] (100 steps 1024x1024),flux-pro-unknown-1-1024x1024-100-false-unknown-false
+flux.1 [dev] (100 steps 512x512),flux-dev-unknown-1-512x512-100-false-unknown-false
+stable diffusion xl lightning (50 steps 1024x1024),stablediffusion-xl-lightning-v1-1024x1024-50-false-unknown-false
+flux.1 [pro] 1024,flux-pro-unknown-1-1024x1024-unknown-false-unknown-false
+stable diffusion 2.1 (75 steps 512x512),stablediffusion-unknown-unknown-2.1-512x512-75-false-unknown-false
+openjourney v4 (50 steps 512x512),openjourney-unknown-unknown-4-512x512-50-false-unknown-false
+dalle 3 1024 hd,dalle-unknown-unknown-3-1024x1024-unknown-true-unknown-false
+sdxl with defaults 20 steps,stablediffusion-xl-unknown-1-unknown-20-false-unknown-false
+midjourney version 5.2,midjourney-unknown-unknown-5.2-unknown-unknown-false-unknown-false
+ideogram version 0.2 default,ideogram-default-unknown-0.2-unknown-unknown-false-unknown-false
+analog diffusion (50 steps 512x512),analogdiffusion-unknown-unknown-1-512x512-50-false-unknown-false
+photomaker v2,photomaker-unknown-unknown-2-unknown-unknown-false-unknown-false
+openai dall·e 3 (100 steps 512x512),dalle-unknown-unknown-3-512x512-100-false-unknown-false
+flux.1 [schnell] free,flux-schnell-free-1-unknown-unknown-false-unknown-false
+stable diffusion 2.1 (75 steps 1024x1024),stablediffusion-unknown-unknown-2.1-1024x1024-75-false-unknown-false
+stable diffusion 2.1 (25 steps 1024x1024),stablediffusion-unknown-unknown-2.1-1024x1024-25-false-unknown-false
+sdxl text to image,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false
+sd 1.6 512,stablediffusion-unknown-unknown-1.6-512x512-unknown-false-unknown-false
+flux.1 [schnell],flux-schnell-unknown-1-unknown-unknown-false-unknown-false
+midjourney version 4,midjourney-unknown-unknown-4-unknown-unknown-false-unknown-false
+flux dev (512x512 50 steps),flux-dev-unknown-1-512x512-50-false-unknown-false
+ideogram version 1.0 turbo,ideogram-unknown-turbo-1-unknown-unknown-false-unknown-false
+stable diffusion 3 (25 steps 512x512),stablediffusion-unknown-unknown-3-512x512-25-false-unknown-false
+flux.1 [dev] (25 steps 1024x1024),flux-dev-unknown-1-1024x1024-25-false-unknown-false
+openjourney v4 (50 steps 1024x1024),openjourney-unknown-unknown-4-1024x1024-50-false-unknown-false
+stable diffusion 1.5 (100 steps 1024x1024),stablediffusion-unknown-unknown-1.5-1024x1024-100-false-unknown-false
+openai dall·e 3 (75 steps 512x512),dalle-unknown-unknown-3-512x512-75-false-unknown-false
+midjourney version 5.1,midjourney-unknown-unknown-5.1-unknown-unknown-false-unknown-false
+sd 1.6 hd 512,stablediffusion-unknown-unknown-1.6-512x512-unknown-true-unknown-false
+flux.1 [dev] (50 steps 1024x1024),flux-dev-unknown-1-1024x1024-50-false-unknown-false
+cogview 3 plus,cogview-plus-unknown-3-unknown-unknown-false-unknown-false
+stable diffusion xl 1.0 (75 steps 512x512),stablediffusion-xl-unknown-1-512x512-75-false-unknown-false
+sdxl 1.0 1024,stablediffusion-xl-unknown-1-1024x1024-unknown-false-unknown-false
+openjourney v4 (25 steps 1024x1024),openjourney-unknown-unknown-4-1024x1024-25-false-unknown-false
+analog diffusion (100 steps 1024x1024),analogdiffusion-unknown-unknown-1-1024x1024-100-false-unknown-false
+sdxl 0.8 > 512,stablediffusion-xl-unknown-0.8-1024x1024-unknown-false-unknown-false
+analog diffusion (50 steps 1024x1024),analogdiffusion-unknown-unknown-1-1024x1024-50-false-unknown-false
+stable diffusion 2.1 (50 steps 512x512),stablediffusion-unknown-unknown-2.1-512x512-50-false-unknown-false
+stable diffusion 1.5 (25 steps 1024x1024),stablediffusion-unknown-unknown-1.5-1024x1024-25-false-unknown-false
+flux.1 [dev] (75 steps 512x512),flux-dev-unknown-1-512x512-75-false-unknown-false
+stable diffusion 3 1024,stablediffusion-unknown-unknown-3-1024x1024-unknown-false-unknown-false
+stable diffusion xl 1.0 1024,stablediffusion-xl-unknown-1-1024x1024-unknown-false-unknown-false
+analog diffusion (25 steps 1024x1024),analogdiffusion-unknown-unknown-1-1024x1024-25-false-unknown-false
+openjourney v4 512,openjourney-unknown-unknown-4-512x512-unknown-false-unknown-false
+stable diffusion 2.1 (50 steps 1024x1024),stablediffusion-unknown-unknown-2.1-1024x1024-50-false-unknown-false
+stable diffusion 3 (50 steps 1024x1024),stablediffusion-unknown-unknown-3-1024x1024-50-false-unknown-false
+flux.1 [schnell] (25 steps 512x512),flux-schnell-unknown-1-512x512-25-false-unknown-false
+stable diffusion xl 1.0 (50 steps 512x512),stablediffusion-xl-unknown-1-512x512-50-false-unknown-false
+flux.1 [schnell] 30 steps,flux-schnell-unknown-1-unknown-30-false-unknown-false
+ultra,ultra-unknown-unknown-v1-unknown-unknown-false-unknown-false
+flux.1 [dev] (25 steps 512x512),flux-dev-unknown-1-512x512-25-false-unknown-false
+sd3 (30 steps),stablediffusion-unknown-unknown-3-unknown-30-false-unknown-false
+sdxl with custom asset (fine tuned) (60 steps 1024x1024 dpm_2 sampler),stablediffusion-xl-unknown-1-1024x1024-60-false-unknown-true
+stable diffusion 3 medium text to image,stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false
+flux 1 schnell (50 steps 512x512),flux-schnell-unknown-1-512x512-50-false-unknown-false
+stable diffusion xl lightning (50 steps 2048x2048),stablediffusion-xl-lightning-v1-2048x2048-50-false-unknown-false
+stable diffusion 1.5,stablediffusion-unknown-unknown-1.5-unknown-unknown-false-unknown-false
+flux dev (1024x1024 50 steps),flux-dev-unknown-1-1024x1024-50-false-unknown-false
+dreamshaper 8 lcm (50 steps 2048x2048),dreamshaper-lcm-unknown-8-2048x2048-50-false-unknown-false
+ideogram version 2.0 turbo,ideogram-unknown-turbo-2-unknown-unknown-false-unknown-false
+flux.1 [pro],flux-pro-unknown-1-unknown-unknown-false-unknown-false
+diffusion stable 3.5 medium,stablediffusion-medium-unknown-3.5-unknown-unknown-false-unknown-false
+sdxl (30 steps 1024x1024 ddim sampler),stablediffusion-xl-unknown-1-1024x1024-30-false-ddim-false
+realistic vision 3.0 (50 steps 512x512),realisticvision-unknown-unknown-3-512x512-50-false-unknown-false
+ideogram version 1.0 default,ideogram-default-unknown-1-unknown-unknown-false-unknown-false
+openjourney v4 (75 steps 512x512),openjourney-unknown-unknown-4-512x512-75-false-unknown-false
+playground v2.5 1024 30 steps,playground-unknown-unknown-2.5-1024x1024-30-false-unknown-false
+sdxl1.0 base (50 steps 1024x1024),stablediffusion-xl-base-1-1024x1024-50-false-unknown-false
+stable diffusion xl 1.0 (25 steps 1024x1024),stablediffusion-xl-unknown-1-1024x1024-25-false-unknown-false
+dalle 2 1024,dalle-unknown-unknown-2-1024x1024-unknown-false-unknown-false
+stable image ultra,stableimage-ultra-unknown-1-unknown-unknown-false-unknown-false
+analog diffusion (100 steps 512x512),analogdiffusion-unknown-unknown-1-512x512-100-false-unknown-false
+flux.1 [schnell] (50 steps 1024x1024),flux-schnell-unknown-1-1024x1024-50-false-unknown-false
+flux.1 [pro] 1024x1024,flux-pro-unknown-1-1024x1024-unknown-false-unknown-false
+stable diffusion xl lightning (50 steps 512x512),stablediffusion-xl-lightning-v1-512x512-50-false-unknown-false
+openai dall·e 3 (50 steps 512x512),dalle-unknown-unknown-3-512x512-50-false-unknown-false
+flux,flux-unknown-unknown-v1-unknown-unknown-false-unknown-false
+sd 1.5 (60 steps 1024x1024 ddim sampler),stablediffusion-unknown-unknown-1.5-1024x1024-60-false-unknown-false
+openai dall e,dalle-unknown-unknown-1-unknown-unknown-false-unknown-false
+openai dall·e 2 512,dalle-unknown-unknown-2-512x512-unknown-false-unknown-false
+stable diffusion 3 (100 steps 1024x1024),stablediffusion-unknown-unknown-3-1024x1024-100-false-unknown-false
+stable diffusion 3 medium,stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false
+flux realism lora 1024,flux-realism-unknown-1-1024x1024-unknown-false-unknown-true
+analog diffusion 512,analogdiffusion-unknown-unknown-1-512x512-unknown-false-unknown-false
+analog diffusion (25 steps 512x512),analogdiffusion-unknown-unknown-v1-512x512-25-false-unknown-false
+japonese stable diffusion xl 30 steps,stablediffusion-japonese-xl-1-unknown-30-false-unknown-false
+flux.1 [schnell] (100 steps 512x512),flux-schnell-unknown-1-512x512-100-false-unknown-false
+sdxl 1.0 1024 hd,stablediffusion-xl-unknown-1-1024x1024-unknown-true-unknown-false
+stable image core,stableimage-core-unknown-v1-unknown-unknown-false-unknown-false
+flux.1 [schnell] (50 steps 512x512),flux-schnell-unknown-1-512x512-50-false-unknown-false
+juggernaut v9 and xi (30 steps),juggernaut-unknown-unknown-9-unknown-30-false-unknown-false
+imagen 2,imagen-unknown-unknown-2-unknown-unknown-false-unknown-false
+stable diffusion 3.5 large,stablediffusion-large-unknown-3.5-unknown-unknown-false-unknown-false
+dreamshaper 8 lcm (50 steps 1024x1024),dreamshaper-lcm-unknown-8-1024x1024-50-false-unknown-false
+stable diffusion 2.1 (50 steps 1024x1024),stablediffusion-unknown-unknown-2.1-1024x1024-50-false-unknown-false
+stable diffusion 2.1 (75 steps 1024x1024),stablediffusion-unknown-unknown-2.1-1024x1024-75-false-unknown-false
+flux.1 [dév] 30 steps,flux-dev-unknown-1-unknown-30-false-unknown-false
+flux.1 [pro] (50 steps 512x512),flux-pro-unknown-1-512x512-50-false-unknown-false
+stable diffusion 1.5 (75 steps 1024x1024),stablediffusion-unknown-unknown-1.5-1024x1024-75-false-unknown-false
+flux realism lora (25 steps 1024x1024),flux-realism-unknown-1-1024x1024-25-false-unknown-true
+midjourney version 6.1,midjourney-unknown-unknown-6.1-unknown-unknown-false-unknown-false
+black forest labs/flux dev,flux-dev-unknown-1-unknown-unknown-false-unknown-false
+segmind stable diffusion 1b (ssd 1b) 30 steps,stablediffusion-segmind-1b-1-1024x1024-30-false-unknown-false
+controlnet (50 steps 512x512),controlnet-unknown-unknown-1-512x512-50-false-unknown-false
+stable diffusion 2.1 (100 steps 1024x1024),stablediffusion-unknown-unknown-2.1-1024x1024-100-false-unknown-false
+flux dev (768x768 50 steps),flux-dev-unknown-1-768x768-50-false-unknown-false
+realistic vision 3.0 (50 steps 1024x1024),realisticvision-unknown-unknown-3-1024x1024-50-false-unknown-false
