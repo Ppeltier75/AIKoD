@@ -1,0 +1,5 @@
+model_name,price_1m_blended_3_to_1,price_1m_input_tokens,price_1m_output_tokens
+Llama 3.1 Instruct 405B,9.5,9.5,9.5
+Llama 3 Instruct 70B,1.175,0.65,2.75
+Llama 3 Instruct 8B,0.1,0.05,0.25
+Llama 2 Chat 7B,0.1,0.05,0.25

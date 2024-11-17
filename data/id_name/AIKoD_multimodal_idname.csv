@@ -1,137 +1,137 @@
-name
-amazon titan image generator v1 512
-amazon titan image generator v1 512 hd
-amazon titan image generator v2 1024
-amazon titan image generator v2 1024 hd
-amazon titan image generator v2 512
-amazon titan image generator v2 512 hd
-anthropic: claude 3 haiku
-anthropic: claude 3 haiku (self moderated)
-anthropic: claude 3 opus
-anthropic: claude 3 opus (self moderated)
-anthropic: claude 3 sonnet
-anthropic: claude 3 sonnet (self moderated)
-anthropic: claude 3.5 sonnet
-anthropic: claude 3.5 sonnet (self moderated)
-base
-chat gpt 4o latest
-claude 3 haiku
-claude 3 opus
-claude 3 sonnet
-claude 3.5 haiku
-claude 3.5 sonnet
-claude 3.5 sonnet 20241022
-extended
-firellava 13b
-gemini 1.0 pro
-gemini 1.5 flash
-gemini 1.5 flash (<128 k)
-gemini 1.5 flash 128k
-gemini 1.5 pro
-gemini 1.5 pro (<128k)
-gemini 1.5 pro 128k
-gemini pro
-glm 4 0520
-glm 4v
-google: gemini flash 1.5
-google: gemini flash 1.5 (preview)
-google: gemini flash 1.5 experimental
-google: gemini pro 1.0
-google: gemini pro 1.5 experimental
-google: gemini pro vision 1.0
-gpt 3.5 16k 0613
-gpt 3.5 16k 1106
-gpt 3.5 4k 0301
-gpt 3.5 4k 0613
-gpt 3.5 turbo 0613 (16k)
-gpt 3.5 turbo 16k
-gpt 3.5 turbo 16k 0613
-gpt 3.5 turbo 4k
-gpt 4
-gpt 4 0 2024 08 06
-gpt 4 0 global deployment
-gpt 4 0 mini global deployment
-gpt 4 0 mini regional api
-gpt 4 0 regional deployment
-gpt 4 0125 preview
-gpt 4 0613
-gpt 4 1106 preview
-gpt 4 1106 vision preview
-gpt 4 32k
-gpt 4 32k 0613
-gpt 4 8k
-gpt 4 turbo
-gpt 4 turbo 2024 04 09
-gpt 4 vision preview
-gpt 4o
-gpt 4o 2024 05 13
-gpt 4o 2024 08 06
-gpt 4o 2024 08 06 finetuned
-gpt 4o 2024 10 01
-gpt 4o global deployment
-gpt 4o mini
-gpt 4o mini 2024 07 18
-gpt 4o mini 2024 07 18 finetuned
-gpt 4o regional api
-intent recognition
-lemur default
-llama 3 2 11b vision instruct
-llama 3 2 90b vision instruct
-llama 3 8b
-llama 3 8b lunaris
-llama 3 reference 8b
-llama 3.2 11b vision
-llama 3.2 11b vision 8k (preview)
-llama 3.2 11b vision instruct
-llama 3.2 11b vision instruct turbo
-llama 3.2 1b
-llama 3.2 3b
-llama 3.2 90b vision
-llama 3.2 90b vision 8k (preview)
-llama 3.2 90b vision base (bf16)
-llama 3.2 90b vision instruct
-llama 3.2 90b vision instruct (bf16)
-llama 3.2 90b vision instruct turbo
-llama 3.2 instruct (11b)
-llama 3.2 instruct (90b)
-llama3 8b
-llama3 llava next 8b hf
-llama3.2 3b
-llava v1.6 34b
-llava v1.6 mistral 7b
-llava v1.6 yi 34b
-meta llama 3 8b
-meta/meta llama 3 8b
-meta: llama 3.2 11b vision instruct
-meta: llama 3.2 11b vision instruct (free)
-meta: llama 3.2 90b vision instruct
-mistral: pixtral 12b
-nousresearch/hermes 2 pro llama 3 8b
-openai: chatgpt 4o
-openai: gpt 3.5 turbo 16k
-openai: gpt 3.5 turbo 16k (older v1106)
-openai: gpt 4 32k
-openai: gpt 4 32k (older v0314)
-openai: gpt 4 turbo (older v1106)
-openai: gpt 4 vision
-openai: gpt 4o
-openai: gpt 4o (2024 05 13)
-phi 3.5 vision
-phi 3.5 vision instruct
-pixtral 12b
-pixtral 12b (bf16)
-qwen2 vl 72b instruct (bf16)
-qwen2 vl 7b instruct (bf16)
-reka core
-reka edge
-reka flash
-reka spark
-rocinante 12b
-sdxl
-sensechat vision
-sentiment analysis
-stable image core
-summarization
-summarize
-summarize default
-topic detection
+name,id_name
+amazon titan image generator v1 512,titan-image-generator-unknown-1-unknown-512-unknown-unknown-false
+amazon titan image generator v1 512 hd,titan-image-generator-hd-1-unknown-512-unknown-unknown-false
+amazon titan image generator v2 1024,titan-image-generator-unknown-2-unknown-1024-unknown-unknown-false
+amazon titan image generator v2 1024 hd,titan-image-generator-hd-2-unknown-1024-unknown-unknown-false
+amazon titan image generator v2 512,titan-image-generator-unknown-2-unknown-512-unknown-unknown-false
+amazon titan image generator v2 512 hd,titan-image-generator-hd-2-unknown-512-unknown-unknown-false
+anthropic: claude 3 haiku,claude-haiku-unknown-3-unknown-unknown-unknown-false
+anthropic: claude 3 haiku (self moderated),claude-haiku-unknown-3-unknown-unknown-unknown-false
+anthropic: claude 3 opus,claude-opus-unknown-3-unknown-unknown-unknown-false
+anthropic: claude 3 opus (self moderated),claude-opus-unknown-3-unknown-unknown-unknown-false
+anthropic: claude 3 sonnet,claude-sonnet-unknown-3-unknown-unknown-unknown-false
+anthropic: claude 3 sonnet (self moderated),claude-sonnet-unknown-3-unknown-unknown-unknown-false
+anthropic: claude 3.5 sonnet,claude-sonnet-unknown-3.5-unknown-unknown-unknown-false
+anthropic: claude 3.5 sonnet (self moderated),claude-sonnet-unknown-3.5-unknown-unknown-unknown-false
+base,base-unknown-unknown-unknown-unknown-unknown-unknown-false
+chat gpt 4o latest,chatgpt-4o-latest-unknown-unknown-unknown-unknown-false
+claude 3 haiku,claude-haiku-unknown-3-unknown-unknown-unknown-false
+claude 3 opus,claude-opus-unknown-3-unknown-unknown-unknown-false
+claude 3 sonnet,claude-sonnet-unknown-3-unknown-unknown-unknown-false
+claude 3.5 haiku,claude-haiku-unknown-3.5-unknown-unknown-unknown-false
+claude 3.5 sonnet,claude-sonnet-unknown-3.5-unknown-unknown-unknown-false
+claude 3.5 sonnet 20241022,claude-sonnet-unknown-3.5-20241022-unknown-unknown-unknown-false
+extended,extended-unknown-unknown-unknown-unknown-unknown-unknown-false
+firellava 13b,firellava-unknown-unknown-unknown-13-unknown-unknown-false
+gemini 1.0 pro,gemini-pro-unknown-1.0-unknown-unknown-unknown-false
+gemini 1.5 flash,gemini-flash-unknown-1.5-unknown-unknown-unknown-false
+gemini 1.5 flash (<128 k),gemini-flash-unknown-1.5-unknown-unknown-unknown-false
+gemini 1.5 flash 128k,gemini-flash-unknown-1.5-unknown-unknown-128-unknown-false
+gemini 1.5 pro,gemini-pro-unknown-1.5-unknown-unknown-unknown-false
+gemini 1.5 pro (<128k),gemini-pro-unknown-1.5-unknown-unknown-unknown-false
+gemini 1.5 pro 128k,gemini-pro-unknown-1.5-unknown-unknown-128-unknown-false
+gemini pro,gemini-pro-unknown-unknown-unknown-unknown-unknown-false
+glm 4 0520,glm-unknown-unknown-4-0520-unknown-unknown-false
+glm 4v,glm-unknown-unknown-4-unknown-unknown-unknown-unknown-false
+google: gemini flash 1.5,gemini-flash-unknown-1.5-unknown-unknown-unknown-false
+google: gemini flash 1.5 (preview),gemini-flash-unknown-1.5-unknown-unknown-unknown-false
+google: gemini flash 1.5 experimental,gemini-flash-unknown-1.5-unknown-unknown-unknown-false
+google: gemini pro 1.0,gemini-pro-unknown-1.0-unknown-unknown-unknown-false
+google: gemini pro 1.5 experimental,gemini-pro-unknown-1.5-unknown-unknown-unknown-false
+google: gemini pro vision 1.0,gemini-pro-vision-unknown-1.0-unknown-unknown-unknown-false
+gpt 3.5 16k 0613,gpt-unknown-unknown-3.5-0613-unknown-16-unknown-false
+gpt 3.5 16k 1106,gpt-unknown-unknown-3.5-1106-unknown-16-unknown-false
+gpt 3.5 4k 0301,gpt-unknown-unknown-3.5-0301-unknown-4-unknown-false
+gpt 3.5 4k 0613,gpt-unknown-unknown-3.5-0613-unknown-4-unknown-false
+gpt 3.5 turbo 0613 (16k),gpt-turbo-unknown-3.5-0613-unknown-16-unknown-false
+gpt 3.5 turbo 16k,gpt-turbo-unknown-3.5-unknown-16-unknown-unknown-false
+gpt 3.5 turbo 16k 0613,gpt-turbo-unknown-3.5-0613-unknown-16-unknown-false
+gpt 3.5 turbo 4k,gpt-turbo-unknown-3.5-unknown-4-unknown-false
+gpt 4,gpt-unknown-unknown-4-unknown-unknown-unknown-false
+gpt 4 0 2024 08 06,gpt-unknown-4-0-20240806-unknown-unknown-unknown-false
+gpt 4 0 global deployment,gpt-unknown-4-0-unknown-unknown-unknown-unknown-false
+gpt 4 0 mini global deployment,gpt-unknown-4-0-mini-unknown-unknown-unknown-false
+gpt 4 0 mini regional api,gpt-unknown-4-0-mini-unknown-unknown-unknown-false
+gpt 4 0 regional deployment,gpt-unknown-4-0-unknown-unknown-unknown-unknown-false
+gpt 4 0125 preview,gpt-unknown-unknown-4-0125-unknown-unknown-unknown-false
+gpt 4 0613,gpt-unknown-unknown-4-0613-unknown-unknown-unknown-false
+gpt 4 1106 preview,gpt-unknown-unknown-4-1106-unknown-unknown-unknown-false
+gpt 4 1106 vision preview,gpt-unknown-unknown-4-1106-unknown-unknown-unknown-false
+gpt 4 32k,gpt-unknown-unknown-4-unknown-32-unknown-false
+gpt 4 32k 0613,gpt-unknown-unknown-4-0613-32-unknown-false
+gpt 4 8k,gpt-unknown-unknown-4-unknown-8-unknown-false
+gpt 4 turbo,gpt-turbo-unknown-4-unknown-unknown-unknown-false
+gpt 4 turbo 2024 04 09,gpt-turbo-unknown-4-20240409-unknown-unknown-unknown-false
+gpt 4 vision preview,gpt-unknown-unknown-4-unknown-unknown-unknown-false
+gpt 4o,gpt-4o-unknown-unknown-unknown-unknown-unknown-false
+gpt 4o 2024 05 13,gpt-4o-unknown-unknown-20240513-unknown-unknown-unknown-false
+gpt 4o 2024 08 06,gpt-4o-unknown-unknown-20240806-unknown-unknown-unknown-false
+gpt 4o 2024 08 06 finetuned,gpt-4o-unknown-unknown-20240806-unknown-unknown-unknown-true
+gpt 4o 2024 10 01,gpt-4o-unknown-unknown-20241001-unknown-unknown-unknown-false
+gpt 4o global deployment,gpt-4o-unknown-unknown-unknown-unknown-unknown-false
+gpt 4o mini,gpt-4o-mini-unknown-unknown-unknown-unknown-unknown-false
+gpt 4o mini 2024 07 18,gpt-4o-mini-unknown-20240718-unknown-unknown-unknown-false
+gpt 4o mini 2024 07 18 finetuned,gpt-4o-mini-unknown-20240718-unknown-unknown-unknown-true
+gpt 4o regional api,gpt-4o-unknown-regional-api-unknown-unknown-unknown-false
+intent recognition,intent-recognition-unknown-unknown-unknown-unknown-unknown-unknown-false
+lemur default,lemur-default-unknown-unknown-unknown-unknown-unknown-unknown-false
+llama 3 2 11b vision instruct,llama-vision-instruct-unknown-3.2-unknown-11-unknown-unknown-false
+llama 3 2 90b vision instruct,llama-vision-instruct-unknown-3.2-unknown-90-unknown-unknown-false
+llama 3 8b,llama-unknown-unknown-3-unknown-8-unknown-unknown-false
+llama 3 8b lunaris,llama-lunaris-unknown-3-unknown-8-unknown-unknown-false
+llama 3 reference 8b,llama-reference-unknown-3-unknown-8-unknown-unknown-false
+llama 3.2 11b vision,llama-vision-unknown-3.2-unknown-11-unknown-unknown-false
+llama 3.2 11b vision 8k (preview),llama-vision-unknown-3.2-unknown-11-unknown-8-preview-false
+llama 3.2 11b vision instruct,llama-vision-instruct-unknown-3.2-unknown-11-unknown-unknown-false
+llama 3.2 11b vision instruct turbo,llama-vision-instruct-turbo-unknown-3.2-unknown-11-unknown-unknown-false
+llama 3.2 1b,llama-unknown-unknown-3.2-unknown-1-unknown-unknown-false
+llama 3.2 3b,llama-unknown-unknown-3.2-unknown-3-unknown-unknown-false
+llama 3.2 90b vision,llama-vision-unknown-3.2-unknown-90-unknown-unknown-false
+llama 3.2 90b vision 8k (preview),llama-vision-unknown-3.2-unknown-90-unknown-8-preview-false
+llama 3.2 90b vision base (bf16),llama-vision-base-bf16-unknown-3.2-unknown-90-unknown-unknown-false
+llama 3.2 90b vision instruct,llama-vision-instruct-unknown-3.2-unknown-90-unknown-unknown-false
+llama 3.2 90b vision instruct (bf16),llama-vision-instruct-bf16-unknown-3.2-unknown-90-unknown-unknown-false
+llama 3.2 90b vision instruct turbo,llama-vision-instruct-turbo-unknown-3.2-unknown-90-unknown-unknown-false
+llama 3.2 instruct (11b),llama-instruct-unknown-3.2-unknown-11-unknown-unknown-false
+llama 3.2 instruct (90b),llama-instruct-unknown-3.2-unknown-90-unknown-unknown-false
+llama3 8b,llama-unknown-unknown-3-unknown-8-unknown-unknown-false
+llama3 llava next 8b hf,llama-next-llava-unknown-3-unknown-8-unknown-unknown-false
+llama3.2 3b,llama-unknown-unknown-3.2-unknown-3-unknown-unknown-false
+llava v1.6 34b,llava-unknown-unknown-unknown-34-unknown-unknown-false
+llava v1.6 mistral 7b,llava-mistral-unknown-unknown-7-unknown-unknown-false
+llava v1.6 yi 34b,llava-unknown-yi-unknown-34-unknown-unknown-false
+meta llama 3 8b,llama-unknown-unknown-3-unknown-8-unknown-unknown-false
+meta/meta llama 3 8b,llama-unknown-unknown-3-unknown-8-unknown-unknown-false
+meta: llama 3.2 11b vision instruct,llama-vision-instruct-unknown-3.2-unknown-11-unknown-unknown-false
+meta: llama 3.2 11b vision instruct (free),llama-vision-instruct-free-unknown-3.2-unknown-11-unknown-unknown-false
+meta: llama 3.2 90b vision instruct,llama-vision-instruct-unknown-3.2-unknown-90-unknown-unknown-false
+mistral: pixtral 12b,pixtral-unknown-unknown-unknown-12-unknown-unknown-false
+nousresearch/hermes 2 pro llama 3 8b,hermes-pro-llama-2-unknown-8-unknown-unknown-false
+openai: chatgpt 4o,chatgpt-4o-unknown-unknown-unknown-unknown-unknown-false
+openai: gpt 3.5 turbo 16k,gpt-turbo-unknown-3.5-unknown-16-unknown-false
+openai: gpt 3.5 turbo 16k (older v1106),gpt-turbo-unknown-3.5-unknown-16-unknown-false
+openai: gpt 4 32k,gpt-unknown-unknown-4-unknown-32-unknown-false
+openai: gpt 4 32k (older v0314),gpt-unknown-unknown-4-unknown-32-unknown-false
+openai: gpt 4 turbo (older v1106),gpt-turbo-unknown-4-unknown-unknown-unknown-false
+openai: gpt 4 vision,gpt-unknown-unknown-4-unknown-unknown-unknown-false
+openai: gpt 4o,gpt-4o-unknown-unknown-unknown-unknown-unknown-false
+openai: gpt 4o (2024 05 13),gpt-4o-unknown-unknown-20240513-unknown-unknown-unknown-false
+phi 3.5 vision,phi-vision-unknown-3.5-unknown-unknown-unknown-false
+phi 3.5 vision instruct,phi-vision-instruct-unknown-3.5-unknown-unknown-unknown-false
+pixtral 12b,pixtral-unknown-unknown-unknown-12-unknown-unknown-false
+pixtral 12b (bf16),pixtral-unknown-unknown-unknown-12-unknown-unknown-false
+qwen2 vl 72b instruct (bf16),qwen-instruct-unknown-2-unknown-72-unknown-unknown-false
+qwen2 vl 7b instruct (bf16),qwen-instruct-unknown-2-unknown-7-unknown-unknown-false
+reka core,reka-core-unknown-unknown-unknown-unknown-unknown-unknown-false
+reka edge,reka-edge-unknown-unknown-unknown-unknown-unknown-unknown-false
+reka flash,reka-flash-unknown-unknown-unknown-unknown-unknown-unknown-false
+reka spark,reka-spark-unknown-unknown-unknown-unknown-unknown-unknown-false
+rocinante 12b,rocinante-unknown-unknown-unknown-12-unknown-unknown-false
+sdxl,sdxl-unknown-unknown-unknown-unknown-unknown-unknown-false
+sensechat vision,sensechat-unknown-unknown-unknown-unknown-unknown-vision-false
+sentiment analysis,sentiment-analysis-unknown-unknown-unknown-unknown-unknown-unknown-false
+stable image core,stable-image-core-unknown-unknown-unknown-unknown-unknown-unknown-false
+summarization,summarization-unknown-unknown-unknown-unknown-unknown-unknown-false
+summarize,summarize-unknown-unknown-unknown-unknown-unknown-unknown-false
+summarize default,summarize-default-unknown-unknown-unknown-unknown-unknown-unknown-false
+topic detection,topic-detection-unknown-unknown-unknown-unknown-unknown-unknown-false

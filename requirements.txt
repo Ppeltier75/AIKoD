@@ -10,3 +10,4 @@ beautifulsoup4
 firecrawl
 selenium
 webdriver-manager
+python-dotenv

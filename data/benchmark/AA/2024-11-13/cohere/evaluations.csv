@@ -1,0 +1,7 @@
+model_name,quality_index,mmlu,gpqa,humaneval,math
+Command-R+ (Aug '24),55.900,0.750,0.339,0.710,0.436
+Command-R (Aug '24),51.100,0.674,0.270,0.695,0.404
+Command-R+ (Apr '24),48.100,0.695,0.301,0.640,0.288
+Command-R (Mar '24),36.200,0.584,0.252,0.456,0.155
+Aya Expanse 8B,,,,,
+Aya Expanse 32B,,,,,

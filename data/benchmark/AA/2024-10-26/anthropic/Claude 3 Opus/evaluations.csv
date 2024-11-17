@@ -1,0 +1,2 @@
+quality_index,mmlu,gpqa,humaneval,math
+70.300,0.841,0.497,0.841,0.632

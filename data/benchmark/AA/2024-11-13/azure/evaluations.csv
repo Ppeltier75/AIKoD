@@ -1,0 +1,20 @@
+model_name,quality_index,mmlu,gpqa,humaneval,math
+GPT-4o (Aug '24),,,,,
+GPT-4o (May '24),,,,,
+GPT-4o mini,,,,,
+Llama 3.1 Instruct 405B,,,,,
+Llama 3.1 Instruct 70B,,,,,
+Llama 3.1 Instruct 8B,,,,,
+Mistral Large 2,,,,,
+Command-R+ (Apr '24),43.700,0.668,0.172,0.632,0.276
+Command-R (Mar '24),35.600,0.597,0.264,0.413,0.150
+Phi-3 Medium Instruct 14B,,,,,
+Jamba 1.5 Large,,,,,
+Jamba 1.5 Mini,,,,,
+GPT-4 Turbo,,,,,
+GPT-3.5 Turbo,,0.660,,0.713,0.345
+Llama 3 Instruct 70B,60.900,0.792,0.363,0.763,0.517
+Llama 3 Instruct 8B,45.300,0.644,0.279,0.595,0.294
+Mistral Large,55.400,0.665,0.345,0.693,0.511
+Mistral Small (Feb '24),,,,,
+Jamba Instruct,28.200,0.577,0.252,0.002,0.296

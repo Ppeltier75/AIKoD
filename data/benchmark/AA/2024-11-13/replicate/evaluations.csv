@@ -1,0 +1,5 @@
+model_name,quality_index,mmlu,gpqa,humaneval,math
+Llama 3.1 Instruct 405B,,,,,
+Llama 3 Instruct 70B,61.900,0.794,0.406,0.746,0.529
+Llama 3 Instruct 8B,45.100,0.645,0.295,0.559,0.304
+Llama 2 Chat 7B,,0.130,0.066,,

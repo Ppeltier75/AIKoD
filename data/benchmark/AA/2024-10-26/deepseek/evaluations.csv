@@ -1,0 +1,4 @@
+model_name,quality_index,mmlu,gpqa,humaneval,math
+DeepSeek-Coder-V2,66.500,0.797,0.421,0.857,0.584
+DeepSeek-V2-Chat,65.900,0.801,0.418,0.776,0.641
+DeepSeek-V2.5,65.800,0.805,0.418,0.857,0.553

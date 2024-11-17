@@ -1,0 +1,4 @@
+model_name,price_1m_blended_3_to_1,price_1m_input_tokens,price_1m_output_tokens
+DeepSeek-Coder-V2,0.175,0.14,0.28
+DeepSeek-V2-Chat,0.175,0.14,0.28
+DeepSeek-V2.5,0.175,0.14,0.28

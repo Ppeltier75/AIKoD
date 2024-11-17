@@ -28,8 +28,12 @@ import os
 from dotenv import load_dotenv
 from function_utils.utils_id_name import generate_and_update_id_names
 
+# Définir le chemin de base du projet
+base_path = os.path.abspath(os.path.dirname(__file__))
+
 # Charger les variables d'environnement depuis .env
-load_dotenv()
+env_path = os.path.join(base_path, ".env")
+load_dotenv(env_path)
 
 # Récupérer la clé API OpenAI depuis .env
 openai_api_key = os.getenv("OPENAI_API_KEY")
@@ -37,22 +41,44 @@ openai_api_key = os.getenv("OPENAI_API_KEY")
 if not openai_api_key:
     raise ValueError("Clé API OpenAI introuvable. Vérifiez votre fichier .env.")
 
-# Chemins des fichiers
-csv_path = "AIKoD/data/id_name/AIKoD_multimodal_idname.csv"
-examples_csv_path = "AIKoD/data/id_name/example/text_exemple.csv"
-output_csv_path = "AIKoD/data/id_name/AIKoD_multimodal_idname_updated.csv"
+# Construire les chemins absolus
+csv_path = os.path.join(base_path, "data/id_name/AIKoD_multimodal_idname.csv")
+examples_csv_path = os.path.join(base_path, "data/id_name/exemple/text_exemple.csv")
 
 # Type de modèle
 model_type = "text"
+column_name = 'name'
 
 # Appliquer la fonction pour générer et mettre à jour les id_name
 print("Début de la mise à jour des `id_name`...")
 added_models = generate_and_update_id_names(
-    csv_path, examples_csv_path, model_type, openai_api_key, output_csv_path
+    csv_path, examples_csv_path, model_type, openai_api_key, column_name
 )
 
 # Afficher les modèles ajoutés
 if added_models:
     print(f"Modèles ajoutés : {added_models}")
 else:
-    print("Aucun modèle ajouté.")
+    print("Aucun modèle ajouté ou mise à jour non requise.")
+
+# %%
+import os
+from dotenv import load_dotenv
+from function_utils.utils_models_infos import generate_csv_with_infos
+
+# Définir le chemin de base du projet
+base_path = os.path.abspath(os.path.dirname(__file__))
+
+# Charger les variables d'environnement depuis .env
+env_path = os.path.join(base_path, ".env")
+load_dotenv(env_path)
+
+# Construire les chemins absolus pour les répertoires d'entrée et de sortie
+input_dir = os.path.join(base_path, "data/id_name")  # Répertoire contenant les fichiers _idname.csv
+output_dir = os.path.join(base_path, "data/models_infos")  # Répertoire où les fichiers _infos.csv seront générés
+
+# Appeler la fonction pour générer les fichiers _infos.csv
+generate_csv_with_infos(input_dir, output_dir)
+
+
+# %%

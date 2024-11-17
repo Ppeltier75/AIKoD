@@ -1,0 +1,2 @@
+parameters,open_weights,open_weights_license_name,open_weights_license_url,release_date,context_window
+236,True,DEEPSEEK LICENSE AGREEMENT,https://github.com/deepseek-ai/DeepSeek-V2/blob/main/LICENSE-MODEL,2024-05-06,128000

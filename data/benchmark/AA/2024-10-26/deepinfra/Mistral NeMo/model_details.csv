@@ -1,0 +1,2 @@
+parameters,open_weights,open_weights_license_name,open_weights_license_url,release_date,context_window
+12,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2024-07-18,128000

@@ -1,0 +1,15 @@
+model_name,quality_index,mmlu,gpqa,humaneval,math
+Mistral Large 2,73.000,0.846,0.484,0.871,0.720
+Mixtral 8x22B Instruct,61.600,0.765,0.376,0.700,0.623
+Mistral Small (Sep '24),60.400,0.741,0.338,0.734,0.602
+Pixtral 12B (2409),56.100,0.694,0.307,0.705,0.537
+Ministral 8B,53.300,0.589,0.299,0.744,0.500
+Mistral NeMo,51.900,0.661,0.330,0.682,0.403
+Ministral 3B,50.800,0.579,0.261,0.713,0.478
+Mixtral 8x7B Instruct,44.300,0.651,0.308,0.480,0.333
+Codestral-Mamba,35.500,0.254,0.028,0.782,0.356
+Mistral Large,56.800,0.708,0.372,0.687,0.505
+Mistral Small (Feb '24),49.900,0.690,0.314,0.537,0.454
+Mistral 7B Instruct,22.300,0.201,0.161,0.383,0.148
+Mistral Medium,,,,,
+Codestral,,,0.229,0.777,

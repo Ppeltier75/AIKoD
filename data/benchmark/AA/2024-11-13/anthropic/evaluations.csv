@@ -1,0 +1,7 @@
+model_name,quality_index,mmlu,gpqa,humaneval,math
+Claude 3.5 Sonnet (Oct '24),80.000,0.895,0.582,0.932,0.790
+Claude 3.5 Sonnet (June '24),76.900,0.881,0.559,0.898,0.738
+Claude 3 Opus,70.300,0.841,0.497,0.841,0.632
+Claude 3.5 Haiku,69.000,0.810,0.369,0.854,0.730
+Claude 3 Haiku,54.200,0.708,0.333,0.717,0.410
+Claude 3 Sonnet,57.200,0.765,0.373,0.694,0.456

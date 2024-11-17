@@ -1,0 +1,19 @@
+model_name,quality_index,mmlu,gpqa,humaneval,math
+Llama 3.1 Instruct 405B,,,,,
+Llama 3.2 Instruct 90B (Vision),,,,,
+Llama 3.1 Instruct 70B,,,,,
+Llama 3.1 Instruct 8B,,,,,
+Gemini 1.5 Pro (Sep '24),,,,,
+Gemini 1.5 Pro (Sep '24),79.700,0.861,0.607,0.871,0.850
+Gemini 1.5 Flash (Sep '24),73.400,0.807,0.499,0.837,0.794
+Gemini 1.5 Flash (Sep '24),,,,,
+Gemini 1.5 Flash-8B,,0.750,0.298,,0.699
+Gemini 1.5 Pro (May '24),,,,,
+Gemini 1.5 Pro (May '24),71.500,0.860,0.460,,0.680
+Gemini 1.5 Flash (May '24),,,,,
+Gemini 1.5 Flash (May '24),60.000,0.789,0.390,,0.550
+Claude 3.5 Sonnet (Oct '24),,,,,
+Claude 3.5 Sonnet (June '24),,,,,
+Claude 3 Opus,,,,,
+Claude 3.5 Haiku,,,,,
+Gemini 1.0 Pro,,,,,

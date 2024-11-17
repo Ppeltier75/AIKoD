@@ -1,0 +1,18 @@
+model_name,parameters,open_weights,open_weights_license_name,open_weights_license_url,release_date,context_window
+Llama 3.1 Instruct 405B,405.0,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,128000
+Llama 3.1 Instruct 70B,70.0,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,128000
+Llama 3.1 Instruct 70B,70.0,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,128000
+Llama 3.1 Instruct 8B,8.0,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,128000
+Llama 3.1 Instruct 8B,8.0,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,128000
+Gemma 2 9B,9.0,True,Gemma license,https://ai.google.dev/gemma/terms,2024-06-27,8192
+Gemma 2 9B,9.0,True,Gemma license,https://ai.google.dev/gemma/terms,2024-06-27,8192
+Mixtral 8x22B Instruct,141.0,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2024-04-17,65384
+Mixtral 8x22B Instruct,141.0,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2024-04-17,65384
+Mistral NeMo,12.0,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2024-07-18,128000
+Mistral NeMo,12.0,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2024-07-18,128000
+Mixtral 8x7B Instruct,46.7,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2023-12-11,32768
+Mixtral 8x7B Instruct,46.7,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2023-12-11,32768
+Llama 3.1 Nemotron Instruct 70B,70.0,True,META LLAMA 3 COMMUNITY LICENSE AGREEMENT,https://llama.meta.com/llama3/license/,,128000
+Llama 3.1 Nemotron Instruct 70B,70.0,True,META LLAMA 3 COMMUNITY LICENSE AGREEMENT,https://llama.meta.com/llama3/license/,,128000
+Qwen2.5 Instruct 72B,72.0,True,Qwen License Agreement,https://huggingface.co/Qwen/Qwen2.5-72B-Instruct/blob/main/LICENSE,2024-09-19,131072
+Qwen2.5 Instruct 72B,72.0,True,Qwen License Agreement,https://huggingface.co/Qwen/Qwen2.5-72B-Instruct/blob/main/LICENSE,2024-09-19,131072

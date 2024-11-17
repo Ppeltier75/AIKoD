@@ -1,0 +1,5 @@
+model_name,price_1m_blended_3_to_1,price_1m_input_tokens,price_1m_output_tokens
+Reka Flash (Sep '24),0.35,0.2,0.8
+Reka Core,2.0,2.0,2.0
+Reka Flash (Feb '24),0.35,0.2,0.8
+Reka Edge,0.1,0.1,0.1

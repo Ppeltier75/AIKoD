@@ -1,0 +1,7 @@
+model_name,price_1m_blended_3_to_1,price_1m_input_tokens,price_1m_output_tokens
+Command-R+ (Aug '24),4.375,2.5,10.0
+Command-R (Aug '24),0.2625,0.15,0.6
+Command-R+ (Apr '24),6.0,3.0,15.0
+Command-R (Mar '24),0.75,0.5,1.5
+Aya Expanse 8B,0.75,0.5,1.5
+Aya Expanse 32B,0.75,0.5,1.5

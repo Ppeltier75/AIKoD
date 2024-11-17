@@ -1,0 +1,18 @@
+model_name,quality_index,mmlu,gpqa,humaneval,math
+Llama 3.1 Instruct 405B,,,,,
+Llama 3.1 Instruct 70B,64.900,0.829,0.413,0.756,0.597
+Llama 3.1 Instruct 70B,63.800,0.823,0.399,0.738,0.592
+Llama 3.1 Instruct 8B,53.400,0.714,0.273,0.655,0.495
+Llama 3.1 Instruct 8B,52.800,0.712,0.253,0.655,0.494
+Gemma 2 9B,46.700,0.735,0.313,0.280,0.539
+Gemma 2 9B,44.900,0.731,0.297,0.238,0.530
+Mixtral 8x22B Instruct,61.600,0.757,0.391,0.694,0.622
+Mixtral 8x22B Instruct,,,,,
+Mistral NeMo,53.100,0.664,0.330,0.665,0.466
+Mistral NeMo,52.400,0.659,0.311,0.672,0.453
+Mixtral 8x7B Instruct,,0.634,0.303,0.415,
+Mixtral 8x7B Instruct,42.500,0.623,0.311,0.450,0.316
+Llama 3.1 Nemotron Instruct 70B,,,,,
+Llama 3.1 Nemotron Instruct 70B,,,,,
+Qwen2.5 Instruct 72B,,,,,
+Qwen2.5 Instruct 72B,,,,,

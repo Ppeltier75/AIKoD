@@ -1,0 +1,5 @@
+model_name,quality_index,mmlu,gpqa,humaneval,math
+Reka Flash (Sep '24),57.900,0.731,0.340,0.707,0.540
+Reka Core,56.800,0.760,0.278,0.685,0.550
+Reka Flash (Feb '24),46.200,0.646,0.267,0.568,0.367
+Reka Edge,29.600,0.437,0.193,0.376,0.178

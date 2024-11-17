@@ -1,0 +1,5 @@
+model_name,price_1m_blended_3_to_1,price_1m_input_tokens,price_1m_output_tokens
+Llama 3.1 Instruct 70B,1.0,1.0,1.0
+Llama 3.1 Instruct 8B,0.2,0.2,0.2
+Sonar 3.1 Small,0.2,0.2,0.2
+Sonar 3.1 Large,1.0,1.0,1.0

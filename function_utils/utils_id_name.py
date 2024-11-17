@@ -1,7 +1,7 @@
 import os
 import json
 import pandas as pd
-import openai
+from openai import OpenAI
 
 from function_utils.utils_cleaning import clean_model_name
 
@@ -222,22 +222,28 @@ Provide the table with generated IDs:
     return prompt
 
 
-
-def generate_and_update_id_names(
-    csv_path, examples_csv_path, model_type, openai_api_key, output_csv_path=None
-):
+def generate_and_update_id_names(csv_path, examples_csv_path, model_type, openai_api_key, column_name):
     """
-    Complète les `id_name` manquants dans un CSV à l'aide de l'API OpenAI (GPT-4) et met à jour le fichier CSV.
+    Complète les `id_name` manquants dans un CSV à l'aide de l'API OpenAI et met à jour le fichier CSV.
 
     :param csv_path: Chemin du fichier CSV contenant les noms des modèles.
     :param examples_csv_path: Chemin du fichier CSV contenant les exemples pour le prompt.
     :param model_type: Type de modèle ('text', 'image', 'audio', etc.).
     :param openai_api_key: Clé API OpenAI pour effectuer les appels.
-    :param output_csv_path: Chemin du fichier CSV mis à jour (optionnel, remplace l'original si non fourni).
     :return: Liste des modèles ajoutés.
     """
     # Charger le fichier CSV
     df = pd.read_csv(csv_path)
+
+    # Vérifier si la colonne 'id_name' existe
+    if "id_name" not in df.columns:
+        print("Colonne 'id_name' manquante. Création de la colonne...")
+        df["id_name"] = None
+
+    # Vérifier si toutes les lignes avec `name` ont un `id_name`
+    if df["id_name"].notnull().all():
+        print("Tous les `id_name` sont déjà remplis. Aucun traitement requis.")
+        return []
 
     # Identifier les lignes avec des `id_name` manquants
     missing_id_names = df[df["id_name"].isnull()]
@@ -252,60 +258,68 @@ def generate_and_update_id_names(
 
     # Construire le prompt
     prompt = create_prompt_id_name(
-        model_names, model_type, examples_csv_path, column_name="name"
+        model_names, model_type, examples_csv_path, column_name
     )
 
-    # Appeler l'API OpenAI
-    openai.api_key = openai_api_key
+    # Initialiser le client OpenAI
+    client = OpenAI(api_key=openai_api_key)
 
     try:
-        response = openai.ChatCompletion.create(
-            model="gpt-4o",
+        # Appeler l'API OpenAI avec un contenu simple
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
             messages=[
                 {
-                    "role": "system",
-                    "content": (
-                        "You are a highly skilled assistant specialized in generating structured identifiers for AI models. "
-                        "You will follow a given template to create accurate and unique IDs based on the provided examples."
-                    ),
+                    "role": "user",
+                    "content": prompt,  # Le prompt doit être une chaîne simple
                 },
-                {"role": "user", "content": prompt},
             ],
-            temperature=0.5,
         )
-        generated_text = response["choices"][0]["message"]["content"].strip()
+
+        # Extraire le contenu généré
+        generated_text = response.choices[0].message.content.strip()
+        print("Réponse brute de l'API OpenAI :")
+        print(generated_text)
+
     except Exception as e:
         print(f"Erreur lors de l'appel à l'API OpenAI : {e}")
         return []
 
-    # Convertir la sortie API en DataFrame
+    # Convertir la sortie API en DataFrame avec le séparateur "|"
     try:
-        generated_data = [
-            line.split(",") for line in generated_text.split("\n") if line
-        ]
-        df_generated = pd.DataFrame(generated_data, columns=["name", "id_name"])
+        rows = [line.split("|") for line in generated_text.split("\n") if "|" in line]
+        df_generated = pd.DataFrame(rows, columns=["name", "id_name"])
+        df_generated["name"] = df_generated["name"].str.strip()  # Nettoyer les espaces
+        df_generated["id_name"] = df_generated["id_name"].str.strip()  # Nettoyer les espaces
+        print("Données générées par l'API OpenAI (converties en DataFrame) :")
+        print(df_generated)
     except Exception as e:
         print(f"Erreur lors du traitement de la réponse API : {e}")
         return []
 
-    # Fusionner les nouveaux `id_name` avec le CSV original
-    updated_df = pd.merge(
-        df,
-        df_generated,
-        on="name",
-        how="left",
-        suffixes=("", "_new"),
-    )
-    updated_df["id_name"] = updated_df["id_name"].combine_first(
-        updated_df["id_name_new"]
-    )
-    updated_df = updated_df.drop(columns=["id_name_new"])
+    # Fusion basée sur les noms
+    print("Fusion des données générées avec le fichier CSV d'entrée...")
+    try:
+        updated_df = pd.merge(
+            df,
+            df_generated,
+            on="name",
+            how="left",
+            suffixes=("", "_new"),
+        )
+        updated_df["id_name"] = updated_df["id_name"].combine_first(
+            updated_df["id_name_new"]
+        )
+        updated_df = updated_df.drop(columns=["id_name_new"])
+    except Exception as e:
+        print(f"Erreur lors de la fusion des données : {e}")
+        return []
 
-    # Sauvegarder le fichier CSV mis à jour
-    output_path = output_csv_path if output_csv_path else csv_path
-    updated_df.to_csv(output_path, index=False)
+    # Sauvegarder directement dans le fichier CSV original
+    updated_df.to_csv(csv_path, index=False)
 
     # Afficher les modèles ajoutés
     added_models = df_generated["name"].tolist()
-    print(f"Modèles ajoutés : {added_models}")
+    print("Fusion réussie. Modèles ajoutés :")
+    print(added_models)
     return added_models
