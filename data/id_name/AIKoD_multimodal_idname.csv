@@ -28,14 +28,14 @@ gemini 1.5 flash,gemini-flash-unknown-1.5-unknown-unknown-unknown-false
 gemini 1.5 flash (<128 k),gemini-flash-unknown-1.5-unknown-unknown-unknown-false
 gemini 1.5 flash 128k,gemini-flash-unknown-1.5-unknown-unknown-128-unknown-false
 gemini 1.5 pro,gemini-pro-unknown-1.5-unknown-unknown-unknown-false
-gemini 1.5 pro (<128k),gemini-pro-unknown-1.5-unknown-unknown-unknown-false
-gemini 1.5 pro 128k,gemini-pro-unknown-1.5-unknown-unknown-128-unknown-false
+gemini 1.5 pro (<128k),gemini-pro-unknown-1.5-unknown-128-unknown-false
+gemini 1.5 pro 128k,gemini-pro-unknown-1.5-unknown-unknown-unknown-unknown-false
 gemini pro,gemini-pro-unknown-unknown-unknown-unknown-unknown-false
 glm 4 0520,glm-unknown-unknown-4-0520-unknown-unknown-false
 glm 4v,glm-unknown-unknown-4-unknown-unknown-unknown-unknown-false
 google: gemini flash 1.5,gemini-flash-unknown-1.5-unknown-unknown-unknown-false
 google: gemini flash 1.5 (preview),gemini-flash-unknown-1.5-unknown-unknown-unknown-false
-google: gemini flash 1.5 experimental,gemini-flash-unknown-1.5-unknown-unknown-unknown-false
+google: gemini flash 1.5 experimental,gemini-flash-exp-1.5-unknown-unknown-unknown-false
 google: gemini pro 1.0,gemini-pro-unknown-1.0-unknown-unknown-unknown-false
 google: gemini pro 1.5 experimental,gemini-pro-unknown-1.5-unknown-unknown-unknown-false
 google: gemini pro vision 1.0,gemini-pro-vision-unknown-1.0-unknown-unknown-unknown-false

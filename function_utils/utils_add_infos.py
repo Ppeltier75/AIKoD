@@ -1,5 +1,8 @@
 import json
-
+from function_utils.utils_cleaning import clean_model_name
+import os
+import re
+import pandas as pd
 
 def add_model_type(json_path, output_path=None):
     """
@@ -68,3 +71,64 @@ def add_model_type(json_path, output_path=None):
     print(f"Les types de modèles ont été ajoutés et enregistrés dans le fichier '{final_output_path}'.")
 
 
+# Fonction principale pour ajouter les id_name au JSON
+def add_id_name_to_json_with_type(json_path, csv_dir, output_path=None):
+    """
+    Ajoute les `id_name` au JSON en se basant sur les correspondances de `name` et `type`
+    dans les fichiers CSV situés dans `csv_dir`.
+
+    :param json_path: Chemin du fichier JSON à traiter.
+    :param csv_dir: Chemin du dossier contenant les fichiers CSV.
+    :param output_path: (Optionnel) Chemin du fichier JSON de sortie. Si non fourni, modifie le fichier d'entrée.
+    """
+    # Charger les données JSON
+    with open(json_path, 'r', encoding='utf-8') as file:
+        data = json.load(file)
+
+    # Charger les fichiers CSV et construire les correspondances
+    csv_files = [f for f in os.listdir(csv_dir) if f.endswith("_idname.csv")]
+    name_to_id_by_type = {}
+
+    for csv_file in csv_files:
+        file_type = csv_file.replace("AIKoD_", "").replace("_idname.csv", "").lower()
+        csv_path = os.path.join(csv_dir, csv_file)
+        csv_data = pd.read_csv(csv_path)
+
+        # Vérifier si le CSV contient les colonnes nécessaires
+        if "name" not in csv_data.columns or "id_name" not in csv_data.columns:
+            print(f"Colonne 'name' ou 'id_name' manquante dans {csv_file}. Ignoré.")
+            continue
+
+        # Construire le dictionnaire pour ce type en ignorant les lignes sans id_name
+        name_to_id_by_type[file_type] = {
+            clean_model_name(row["name"]): row["id_name"]
+            for _, row in csv_data.iterrows()
+            if pd.notna(row["id_name"]) and row["id_name"].strip()  # Ignorer les id_name vides ou manquants
+        }
+
+    # Parcourir les données JSON
+    for provider, date_dict in data.items():
+        for date_str, models_extract in date_dict.items():
+            if isinstance(models_extract, dict):
+                models = models_extract.get("models_extract_GPT4o", {}).get("models", [])
+                
+                for model in models:
+                    # Nettoyer le nom du modèle
+                    cleaned_name = clean_model_name(model.get("name", ""))
+                    model_type = model.get("type", "").replace(" ", "").lower()
+
+                    # Vérifier la correspondance par type
+                    if model_type in name_to_id_by_type and cleaned_name in name_to_id_by_type[model_type]:
+                        # Ajouter l'id_name correspondant
+                        model["id_name"] = name_to_id_by_type[model_type][cleaned_name]
+
+    # Sauvegarder les données avec les id_name ajoutés
+    if output_path:  # Si un chemin de sortie est spécifié
+        final_output_path = output_path
+    else:  # Sinon, écraser le fichier d'entrée
+        final_output_path = json_path
+
+    with open(final_output_path, 'w', encoding='utf-8') as outfile:
+        json.dump(data, outfile, ensure_ascii=False, indent=4)
+
+    print(f"Les id_name ont été ajoutés et enregistrés dans le fichier '{final_output_path}'.")

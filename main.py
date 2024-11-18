@@ -61,6 +61,23 @@ if added_models:
 else:
     print("Aucun modèle ajouté ou mise à jour non requise.")
 
+
+# %% Imports nécessaires
+import os
+from function_utils.utils_add_infos import add_id_name_to_json_with_type
+
+if __name__ == "__main__":
+    # Définir les chemins
+    base_path = os.path.abspath(os.path.dirname(__file__))
+    json_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v1.json")
+    csv_dir = os.path.join(base_path, "data", "id_name")
+    
+    # Si vous souhaitez fournir un chemin de sortie :
+    output_json_path = None  # Changez ceci pour un chemin spécifique si nécessaire
+
+    # Ajouter les id_name au JSON
+    add_id_name_to_json_with_type(json_path, csv_dir, output_json_path)
+
 # %%
 import os
 from dotenv import load_dotenv
