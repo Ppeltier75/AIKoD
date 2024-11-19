@@ -70,12 +70,10 @@ def add_model_type(json_path, output_path=None):
 
     print(f"Les types de modèles ont été ajoutés et enregistrés dans le fichier '{final_output_path}'.")
 
-
-# Fonction principale pour ajouter les id_name au JSON
 def add_id_name_to_json_with_type(json_path, csv_dir, output_path=None):
     """
-    Ajoute les `id_name` au JSON en se basant sur les correspondances de `name` et `type`
-    dans les fichiers CSV situés dans `csv_dir`.
+    Supprime tous les `id_name` existants, ajoute des `id_name` et réattribue les `type` pour les modèles
+    en fonction des correspondances dans les fichiers CSV et des contraintes spécifiées.
 
     :param json_path: Chemin du fichier JSON à traiter.
     :param csv_dir: Chemin du dossier contenant les fichiers CSV.
@@ -99,11 +97,11 @@ def add_id_name_to_json_with_type(json_path, csv_dir, output_path=None):
             print(f"Colonne 'name' ou 'id_name' manquante dans {csv_file}. Ignoré.")
             continue
 
-        # Construire le dictionnaire pour ce type en ignorant les lignes sans id_name
+        # Construire le dictionnaire pour ce type en ignorant les lignes avec un id_name qui commence par 'unknown'
         name_to_id_by_type[file_type] = {
             clean_model_name(row["name"]): row["id_name"]
             for _, row in csv_data.iterrows()
-            if pd.notna(row["id_name"]) and row["id_name"].strip()  # Ignorer les id_name vides ou manquants
+            if pd.notna(row["id_name"]) and not row["id_name"].startswith("unknown")
         }
 
     # Parcourir les données JSON
@@ -111,24 +109,23 @@ def add_id_name_to_json_with_type(json_path, csv_dir, output_path=None):
         for date_str, models_extract in date_dict.items():
             if isinstance(models_extract, dict):
                 models = models_extract.get("models_extract_GPT4o", {}).get("models", [])
-                
+
                 for model in models:
+                    # Supprimer tous les id_name existants
+                    model["id_name"] = None
+
                     # Nettoyer le nom du modèle
                     cleaned_name = clean_model_name(model.get("name", ""))
                     model_type = model.get("type", "").replace(" ", "").lower()
 
-                    # Vérifier la correspondance par type
+                    # Vérifier la correspondance par type et ajouter un id_name
                     if model_type in name_to_id_by_type and cleaned_name in name_to_id_by_type[model_type]:
-                        # Ajouter l'id_name correspondant
                         model["id_name"] = name_to_id_by_type[model_type][cleaned_name]
 
-    # Sauvegarder les données avec les id_name ajoutés
-    if output_path:  # Si un chemin de sortie est spécifié
-        final_output_path = output_path
-    else:  # Sinon, écraser le fichier d'entrée
-        final_output_path = json_path
+    # Sauvegarder les données avec les id_name mis à jour
+    final_output_path = output_path if output_path else json_path
 
     with open(final_output_path, 'w', encoding='utf-8') as outfile:
         json.dump(data, outfile, ensure_ascii=False, indent=4)
 
-    print(f"Les id_name ont été ajoutés et enregistrés dans le fichier '{final_output_path}'.")
+    print(f"Les id_name ont été mis à jour et enregistrés dans le fichier '{final_output_path}'.")

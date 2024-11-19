@@ -99,3 +99,18 @@ generate_csv_with_infos(input_dir, output_dir)
 
 
 # %%
+# %% Imports nécessaires
+import os
+from function_utils.utils_prep_text import AIKoD_text_infos
+
+if __name__ == "__main__":
+    # Définir les chemins
+    base_path = os.path.abspath(os.path.dirname(__file__))
+    json_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v1.json")
+    output_dir = os.path.join(base_path, "data", "models_infos")  # Répertoire contenant les fichiers _infos.csv
+
+    # Appeler la fonction pour mettre à jour AIKoD_text_infos.csv
+    AIKoD_text_infos(json_path, output_dir)
+
+
+# %%
