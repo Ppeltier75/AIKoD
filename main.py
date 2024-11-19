@@ -12,7 +12,7 @@ base_path = os.path.abspath(os.path.dirname(__file__))
 # Construire les chemins absolus
 json_path = os.path.join(base_path, "data/raw/AIKoD_brut_API_v1.json")
 updated_json_path = os.path.join(base_path, "data/raw/AIKoD_brut_API_v1.json")
-output_dir = os.path.join(base_path, "data/id_name")
+output_dir = os.path.join(base_path, "data/id_name/AIKoD")
 
 # Ajouter les types aux modèles
 add_model_type(json_path, updated_json_path)
@@ -54,7 +54,7 @@ if not openai_api_key:
     raise ValueError("Clé API OpenAI introuvable. Vérifiez votre fichier .env.")
 
 # Construire les chemins absolus
-csv_path = os.path.join(base_path, "data/id_name/AIKoD_multimodal_idname.csv")
+csv_path = os.path.join(base_path, "data/id_name/AIKoD/AIKoD_multimodal_idname.csv")
 examples_csv_path = os.path.join(base_path, "data/id_name/exemple/text_exemple.csv")
 
 # Type de modèle
@@ -125,4 +125,4 @@ if __name__ == "__main__":
     AIKoD_text_infos(json_path, output_dir)
 
 
-# %%
+

@@ -1,0 +1,78 @@
+Model,Creator,Context Window,Quality Index (Normalized avg),Blended Price (USD/1M Tokens),Output Tokens/S Median,Latency Median (First Chunk)
+o1-preview,,128k,85,$26.25,35.7,28.76
+o1-mini,,128k,82,$5.25,74.1,13.63
+GPT-4o,,128k,77,$4.38,83.8,0.45
+GPT-4o (May '24),,128k,77,$7.50,91.5,0.45
+GPT-4o mini,,128k,71,$0.26,97.8,0.48
+Llama 3.1 405B,,128k,72,$5.13,79.6,0.87
+Llama 3.2 90B (Vision),,128k,67,$0.90,41.2,0.36
+Llama 3.1 70B,,128k,65,$0.75,71.2,0.43
+Llama 3.2 11B (Vision),,128k,53,$0.18,128.9,0.29
+Llama 3.1 8B,,128k,53,$0.11,156.6,0.37
+Llama 3.2 3B,,128k,47,$0.08,202.2,0.34
+Llama 3.2 1B,,128k,27,$0.05,553.1,0.34
+Gemini 1.5 Pro (Sep),,2m,80,$2.19,59.2,0.77
+Gemini 1.5 Flash (Sep),,1m,73,$0.13,192.5,0.32
+Gemma 2 27B,,8k,61,$0.26,47.0,0.57
+Gemma 2 9B,,8k,46,$0.13,159.1,0.36
+Gemini 1.5 Pro (May),,2m,,$5.25,63.2,0.74
+Gemini 1.5 Flash-8B,,1m,,$0.07,283.9,0.36
+Gemini 1.5 Flash (May),,1m,,$0.13,311.7,0.29
+Claude 3.5 Sonnet (Oct),,200k,80,$6.00,55.3,0.87
+Claude 3.5 Sonnet (June),,200k,77,$6.00,55.4,0.93
+Claude 3 Opus,,200k,70,$30.00,27.1,2.03
+Claude 3.5 Haiku,,200k,69,$2.00,63.2,0.89
+Claude 3 Haiku,,200k,54,$0.50,127.6,0.48
+Mistral Large 2 (Jul '24),,128k,73,$3.00,34.7,0.45
+Mixtral 8x22B,,65k,61,$1.20,79.1,0.56
+Mistral Small (Sep '24),,128k,60,$0.30,59.1,0.47
+Pixtral 12B,,128k,56,$0.13,68.7,0.49
+Ministral 8B,,128k,53,$0.10,135.5,0.42
+Mistral NeMo,,128k,53,$0.13,71.5,0.49
+Ministral 3B,,128k,51,$0.04,209.3,0.41
+Mixtral 8x7B,,33k,42,$0.50,90.0,0.34
+Codestral-Mamba,,256k,36,$0.25,94.6,0.57
+Command-R+,,128k,56,$5.19,49.9,0.47
+Command-R,,128k,51,$0.51,110.1,0.33
+Command-R+ (Apr '24),,128k,46,$6.00,46.7,0.52
+Command-R (Mar '24),,128k,36,$0.75,108.5,0.35
+Aya Expanse 32B,,8k,,$0.75,121.3,0.22
+Aya Expanse 8B,,8k,,$0.75,137.7,0.25
+Sonar 3.1 Small,,131k,,$0.20,144.6,0.35
+Sonar 3.1 Large,,131k,,$1.00,56.7,0.36
+Grok Beta,,8k,70,$7.50,55.8,0.45
+Phi-3 Medium 14B,,128k,,$0.30,44.3,0.44
+Solar Pro,,4k,61,$0.25,49.5,1.22
+Solar Mini,,4k,48,$0.15,84.2,1.13
+DBRX,,33k,49,$1.16,82.9,0.35
+Llama 3.1 Nemotron 70B,,128k,70,$0.36,28.3,0.42
+Reka Flash,,128k,58,$0.35,32.8,1.26
+Reka Core,,128k,57,$2.00,14.8,1.16
+Reka Flash (Feb '24),,128k,46,$0.35,31.2,0.91
+Reka Edge,,64k,30,$0.10,35.2,0.93
+Jamba 1.5 Large,,256k,64,$3.50,51.0,0.70
+Jamba 1.5 Mini,,256k,46,$0.25,82.6,0.49
+DeepSeek-Coder-V2,,128k,67,$0.17,16.4,1.06
+DeepSeek-V2,,128k,66,$0.17,16.5,1.06
+DeepSeek-V2.5,,128k,66,$1.09,13.9,0.94
+Qwen2.5 72B,,131k,75,$0.39,47.3,0.55
+Qwen2.5 Coder 32B,,131k,70,$0.50,50.4,0.39
+Qwen2 72B,,128k,69,$0.63,54.3,0.42
+Yi-Large,,32k,58,$3.00,67.1,0.44
+GPT-4 Turbo,,128k,74,$15.00,36.6,0.64
+GPT-3.5 Turbo,,16k,52,$0.75,101.0,0.42
+GPT-3.5 Turbo Instruct,,4k,,$1.63,108.1,0.66
+GPT-4,,8k,,$37.50,23.4,0.66
+Llama 3 70B,,8k,62,$0.89,45.3,0.43
+Llama 3 8B,,8k,46,$0.15,121.5,0.32
+Llama 2 Chat 13B,,4k,25,$0.56,53.1,0.49
+Llama 2 Chat 7B,,4k,,$0.33,123.8,0.33
+Gemini 1.0 Pro,,33k,,$0.75,102.7,1.26
+Claude 3 Sonnet,,200k,57,$6.00,62.4,0.89
+Mistral Large (Feb '24),,33k,56,$6.00,35.6,0.48
+Mistral Small (Feb '24),,33k,50,$1.50,53.6,0.44
+Mistral 7B,,33k,24,$0.18,96.0,0.32
+Mistral Medium,,33k,,$4.09,44.4,0.43
+Codestral,,33k,,$0.30,80.6,0.43
+OpenChat 3.5,,8k,43,$0.06,74.6,0.31
+Jamba Instruct,,256k,28,$0.55,75.5,0.52

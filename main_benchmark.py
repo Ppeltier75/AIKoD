@@ -3,7 +3,7 @@
 # import os
 from datetime import datetime
 from dotenv import load_dotenv
-from functions_benchmark.utils_AA import (
+from function_benchmark.utils_AA import (
     fetch_performance_data,
     process_performance_data,
     AA_API_model_info,
@@ -51,7 +51,7 @@ if __name__ == "__main__":
 
 # %%
 import os
-from functions_benchmark.utils_Livebench import scrape_livebench
+from function_benchmark.utils_Livebench import scrape_livebench
 
 def main():
     # Définir le chemin de base du projet
@@ -77,8 +77,8 @@ if __name__ == "__main__":
 # %%
 # %% Imports nécessaires
 import os  # Pour gérer les chemins et répertoires
-from functions_benchmark.utils_HF import process_pickle_file, collect_category_data  # Pour traitement des pickles et des catégories
-from functions_benchmark.utils_HF import update_csv_from_leaderboards_Absolubench # Pour générer les CSV Hugging_Face
+from function_benchmark.utils_HF import process_pickle_file, collect_category_data  # Pour traitement des pickles et des catégories
+from function_benchmark.utils_HF import update_csv_from_leaderboards_Absolubench # Pour générer les CSV Hugging_Face
 
 # Fonction principale pour traiter les pickles
 def main():
@@ -109,8 +109,8 @@ def main():
 
 # %% Imports nécessaires
 import os
-from functions_benchmark.utils_HF import complete_ae  # Importer la fonction complète AE
-from functions_benchmark.utils_HF import update_csv_from_leaderboards_Absolubench
+from function_benchmark.utils_HF import complete_ae  # Importer la fonction complète AE
+from function_benchmark.utils_HF import update_csv_from_leaderboards_Absolubench
 
 if __name__ == "__main__":
     # Définir les chemins pour les fichiers et répertoires
@@ -128,5 +128,65 @@ if __name__ == "__main__":
 
     # Compléter HF_AE.csv avec text_full_HF.csv
     complete_ae(hf_ae_path, text_full_hf_path)
+
+# %%
+from function_benchmark.utils_AA import scrappe_table_texttoimageAA
+import os
+
+base_path = os.path.abspath(os.path.dirname(__file__))
+output_dir = os.path.join(base_path, "data/benchmark/AA/texttoimage")
+csv_path = scrappe_table_texttoimageAA(output_dir)
+
+if csv_path:
+    print(f"CSV créé : {csv_path}")
+else:
+    print("Erreur lors de la création du CSV.")
+# %%
+
+from function_benchmark.utils_AA import scrappe_table_speechtotextAA
+import os
+
+base_path = os.path.abspath(os.path.dirname(__file__))
+output_dir = os.path.join(base_path, "data/benchmark/AA/speechtotext")
+csv_path = scrappe_table_speechtotextAA(output_dir)
+
+if csv_path:
+    print(f"CSV créé : {csv_path}")
+else:
+    print("Erreur lors de la création du CSV.")
+# %%
+from function_benchmark.utils_AA import scrappe_table_texttospeechAA
+import os
+
+base_path = os.path.abspath(os.path.dirname(__file__))
+output_dir = os.path.join(base_path, "data/benchmark/AA/texttospeech")
+csv_path = scrappe_table_texttospeechAA(output_dir)
+
+if csv_path:
+    print(f"CSV créé : {csv_path}")
+else:
+    print("Erreur lors de la création du CSV.")
+# %%
+from function_benchmark.utils_AA import scrappe_table_textAA
+import os
+
+base_path = os.path.abspath(os.path.dirname(__file__))
+output_dir = os.path.join(base_path, "data/benchmark/AA/text")
+csv_path = scrappe_table_textAA(output_dir)
+
+if csv_path:
+    print(f"CSV créé : {csv_path}")
+else:
+    print("Erreur lors de la création du CSV.")
+# %%
+import os 
+from function_benchmark.utils_benchmark_id_name import update_model_names_in_AA
+if __name__ == "__main__":
+    # Définir les chemins
+    base_path = os.path.abspath(os.path.dirname(__file__))
+    output_dir = os.path.join(base_path, "data", "id_name", "benchmark", "AA")
+
+    # Mettre à jour les fichiers idname
+    update_model_names_in_AA(output_dir)
 
 # %%
