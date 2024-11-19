@@ -129,3 +129,49 @@ def add_id_name_to_json_with_type(json_path, csv_dir, output_path=None):
         json.dump(data, outfile, ensure_ascii=False, indent=4)
 
     print(f"Les id_name ont été mis à jour et enregistrés dans le fichier '{final_output_path}'.")
+
+def add_date_release(json_path, models_infos_path, output_path=None):
+    """
+    Ajoute une date de publication (`date_release`) aux modèles dans le JSON brut
+    en se basant sur les correspondances dans le fichier `models_infos_PPlx`.
+
+    :param json_path: Chemin du fichier JSON brut contenant les modèles.
+    :param models_infos_path: Chemin du fichier JSON `models_infos_PPlx` contenant les informations de date_release.
+    :param output_path: Chemin du fichier JSON de sortie avec les dates ajoutées. Si non fourni, modifie le fichier d'entrée.
+    """
+    # Charger le fichier JSON brut
+    with open(json_path, 'r', encoding='utf-8') as file:
+        data = json.load(file)
+
+    # Charger les informations des modèles avec date_release
+    with open(models_infos_path, 'r', encoding='utf-8') as file:
+        models_infos = json.load(file)
+
+    # Construire un dictionnaire de correspondances {model_name: date_release}
+    model_name_to_date = {
+        info["model_name"].strip().lower(): info["date_release"]
+        for info in models_infos
+        if info.get("date_release") and info["date_release"] != "null"
+    }
+
+    # Ajouter la date_release aux modèles dans le JSON brut
+    for provider, date_dict in data.items():
+        for date_str, models_extract in date_dict.items():
+            if isinstance(models_extract, dict):
+                models = models_extract.get("models_extract_GPT4o", {}).get("models", [])
+                for model in models:
+                    # Vérifier si la date_release existe déjà
+                    if "date_release" in model and model["date_release"]:
+                        continue  # Ne pas écraser les dates existantes
+
+                    # Chercher la date_release correspondante au model_name
+                    model_name = model.get("name", "").strip().lower()
+                    if model_name in model_name_to_date:
+                        model["date_release"] = model_name_to_date[model_name]
+
+    # Sauvegarder les modifications dans le fichier JSON
+    final_output_path = output_path if output_path else json_path
+    with open(final_output_path, 'w', encoding='utf-8') as outfile:
+        json.dump(data, outfile, ensure_ascii=False, indent=4)
+
+    print(f"Les dates de publication ont été ajoutées et enregistrées dans le fichier '{final_output_path}'.")

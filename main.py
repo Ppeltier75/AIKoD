@@ -20,6 +20,18 @@ add_model_type(json_path, updated_json_path)
 # Extraire les noms des modèles par type et les enregistrer dans des CSV
 update_model_names_in_csv(updated_json_path, output_dir)
 
+# %%
+import json 
+import os 
+from function_utils.utils_add_infos import add_date_release
+if __name__ == "__main__":
+    base_path = os.path.abspath(os.path.dirname(__file__))
+    json_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v1.json")
+    models_infos_path = os.path.join(base_path, "data", "models_infos", "Perplexity", "Models_infos_Pplx.json")
+    output_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v1.json")
+
+    # Appeler la fonction pour ajouter les dates de publication
+    add_date_release(json_path, models_infos_path, output_path)
 
 
 # %%
