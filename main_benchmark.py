@@ -143,24 +143,24 @@ else:
     print("Erreur lors de la création du CSV.")
 # %%
 
-from function_benchmark.utils_AA import scrappe_table_speechtotextAA
+from function_benchmark.utils_AA import scrappe_table_audiototextAA
 import os
 
 base_path = os.path.abspath(os.path.dirname(__file__))
-output_dir = os.path.join(base_path, "data/benchmark/AA/speechtotext")
-csv_path = scrappe_table_speechtotextAA(output_dir)
+output_dir = os.path.join(base_path, "data/benchmark/AA/audiototext")
+csv_path = scrappe_table_audiototextAA(output_dir)
 
 if csv_path:
     print(f"CSV créé : {csv_path}")
 else:
     print("Erreur lors de la création du CSV.")
 # %%
-from function_benchmark.utils_AA import scrappe_table_texttospeechAA
+from function_benchmark.utils_AA import scrappe_table_texttoaudioAA
 import os
 
 base_path = os.path.abspath(os.path.dirname(__file__))
-output_dir = os.path.join(base_path, "data/benchmark/AA/texttospeech")
-csv_path = scrappe_table_texttospeechAA(output_dir)
+output_dir = os.path.join(base_path, "data/benchmark/AA/texttoaudio")
+csv_path = scrappe_table_texttoaudioAA(output_dir)
 
 if csv_path:
     print(f"CSV créé : {csv_path}")
@@ -227,3 +227,32 @@ if __name__ == "__main__":
 
     # Appeler la fonction pour analyser les modèles et générer le fichier HF_text_idname.csv
     update_model_names_HF_Livebench_EpochAI(input_dir, output_dir)
+
+# %%
+import os
+from dotenv import load_dotenv
+from function_benchmark.utils_benchmark_id_name import Benchmark_update_id_names
+
+def main():
+    # Définir le chemin de base
+    base_path = os.path.abspath(os.path.dirname(__file__))
+
+    # Charger les variables d'environnement depuis .env
+    env_path = os.path.join(base_path, ".env")
+    load_dotenv(env_path)
+
+    # Récupérer la clé API OpenAI
+    openai_api_key = os.getenv("OPENAI_API_KEY")
+    if not openai_api_key:
+        raise ValueError("Clé API OpenAI introuvable. Vérifiez votre fichier .env.")
+
+    # Répertoires pour les CSV et les fichiers exemples
+    root_directory = os.path.join(base_path, "data", "id_name", "benchmark")
+    examples_directory = os.path.join(base_path, "data", "id_name", "exemple")
+
+    # Appeler la fonction pour générer les id_name
+    Benchmark_update_id_names(root_directory, examples_directory, openai_api_key)
+
+if __name__ == "__main__":
+    main()
+# %%

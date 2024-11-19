@@ -1,31 +1,31 @@
-name
-adetailer
-background removal
-codeformer
-conservative upscaler
-creative upscaler
-erase object
-esrgan
-faceswap v2
-fast upscaler
-flux 1 dev controlnet union
-ideogram upscale 1.0
-image models 1024x1024
-image models 512x512
-inpaint
-outpaint
-photo merge (30 steps 1024x1024)
-real esrgan x2
-remove background
-search and recolor
-search and replace
-sketch
-stable diffusion v1 5 img2img (50 steps 1024x1024)
-stable diffusion v1 5 img2img (50 steps 2048x2048)
-stable diffusion v1 5 img2img (50 steps 512x512)
-stable diffusion x4 latent upscaler 1024 pixels
-stable diffusion x4 latent upscaler 512 pixels
-structure
-style
-super resolution
-upscaling
+name,id_name
+adetailer,adetailer-unknown-unknown-unknown-unknown-unknown-False
+background removal,backgroundremoval-unknown-unknown-unknown-unknown-unknown-False
+codeformer,codeformer-unknown-unknown-unknown-unknown-unknown-False
+conservative upscaler,conservativeupscaler-unknown-unknown-unknown-unknown-unknown-False
+creative upscaler,creativeupscaler-unknown-unknown-unknown-unknown-unknown-False
+erase object,eraseobject-unknown-unknown-unknown-unknown-unknown-False
+esrgan,esrgan-unknown-unknown-unknown-unknown-unknown-False
+faceswap v2,faceswap-unknown-unknown-2-unknown-unknown-False
+fast upscaler,fastupscaler-unknown-unknown-unknown-unknown-unknown-False
+flux 1 dev controlnet union,flux-dev-controlnet-1-unknown-unknown-False
+ideogram upscale 1.0,ideogram-unknown-unknown-1.0-unknown-unknown-False
+image models 1024x1024,imagemodels-unknown-unknown-unknown-1024x1024-unknown-False
+image models 512x512,imagemodels-unknown-unknown-unknown-512x512-unknown-False
+inpaint,inpaint-unknown-unknown-unknown-unknown-unknown-False
+outpaint,outpaint-unknown-unknown-unknown-unknown-unknown-False
+photo merge (30 steps 1024x1024),photomerge-unknown-unknown-unknown-1024x1024-30-False
+real esrgan x2,esrgan-x2-unknown-unknown-unknown-unknown-False
+remove background,removebackground-unknown-unknown-unknown-unknown-unknown-False
+search and recolor,searchandrecolor-unknown-unknown-unknown-unknown-unknown-False
+search and replace,searchandreplac-unknown-unknown-unknown-unknown-unknown-False
+sketch,sketch-unknown-unknown-unknown-unknown-unknown-False
+stable diffusion v1 5 img2img (50 steps 1024x1024),stablediffusion-unknown-unknown-1.5-img2img-1024x1024-50-False
+stable diffusion v1 5 img2img (50 steps 2048x2048),stablediffusion-unknown-unknown-1.5-img2img-2048x2048-50-False
+stable diffusion v1 5 img2img (50 steps 512x512),stablediffusion-unknown-unknown-1.5-img2img-512x512-50-False
+stable diffusion x4 latent upscaler 1024 pixels,stablediffusion-unknown-unknown-x4-latentupscaler-1024x1024-unknown-False
+stable diffusion x4 latent upscaler 512 pixels,stablediffusion-unknown-unknown-x4-latentupscaler-512x512-unknown-False
+structure,structure-unknown-unknown-unknown-unknown-unknown-False
+style,style-unknown-unknown-unknown-unknown-unknown-False
+super resolution,superresolution-unknown-unknown-unknown-unknown-unknown-False
+upscaling,upscaling-unknown-unknown-unknown-unknown-unknown-False

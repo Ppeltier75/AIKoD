@@ -227,12 +227,12 @@ def scrappe_table_texttoimageAA(output_dir):
         driver.quit()
 
 
-def scrappe_table_speechtotextAA(output_dir):
+def scrappe_table_audiototextAA(output_dir):
     """
-    Scrape a speech-to-text metrics table and save the data to a CSV file.
+    Scrape a audio-to-text metrics table and save the data to a CSV file.
 
     Args:
-        base_path (str): The base directory where the 'AA/speechtotext' folder will be created.
+        base_path (str): The base directory where the 'AA/audiototext' folder will be created.
 
     Returns:
         str: Path to the created CSV file.
@@ -280,7 +280,7 @@ def scrappe_table_speechtotextAA(output_dir):
 
         # Get the current date to name the CSV file
         current_date = datetime.now().strftime("%Y-%m-%d")
-        csv_filename = f"speechtotext_{current_date}.csv"
+        csv_filename = f"audiototext_{current_date}.csv"
         csv_path = os.path.join(output_dir, csv_filename)
         
         # Ensure the output directory exists
@@ -303,12 +303,12 @@ def scrappe_table_speechtotextAA(output_dir):
         # Close the driver
         driver.quit()
 
-def scrappe_table_texttospeechAA(output_dir):
+def scrappe_table_texttoaudioAA(output_dir):
     """
-    Scrape a text-to-speech metrics table and save the data to a CSV file.
+    Scrape a text-to-audio metrics table and save the data to a CSV file.
 
     Args:
-        base_path (str): The base directory where the 'AA/texttospeech' folder will be created.
+        base_path (str): The base directory where the 'AA/texttoaudio' folder will be created.
 
     Returns:
         str: Path to the created CSV file.
@@ -356,7 +356,7 @@ def scrappe_table_texttospeechAA(output_dir):
 
         # Get the current date to name the CSV file
         current_date = datetime.now().strftime("%Y-%m-%d")
-        csv_filename = f"texttospeech_{current_date}.csv"
+        csv_filename = f"texttoaudio_{current_date}.csv"
         csv_path = os.path.join(output_dir, csv_filename)
         
         # Ensure the output directory exists

@@ -103,7 +103,7 @@ generate_csv_with_infos(input_dir, output_dir)
 # %%
 # %% Imports nécessaires
 import os
-from function_utils.utils_prep_text import AIKoD_text_infos
+from function_prep.utils_prep_text import AIKoD_text_infos
 
 if __name__ == "__main__":
     # Définir les chemins

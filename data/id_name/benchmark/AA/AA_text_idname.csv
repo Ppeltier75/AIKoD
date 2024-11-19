@@ -1,112 +1,112 @@
-name
-aya expanse 32b
-aya expanse 8b
-claude 3 haiku
-claude 3 opus
-claude 3 sonnet
-claude 3.5 haiku
-claude 3.5 sonnet (june '24)
-claude 3.5 sonnet (june)
-claude 3.5 sonnet (oct '24)
-claude 3.5 sonnet (oct)
-codestral
-codestral mamba
-command r
-command r (aug '24)
-command r (mar '24)
-command r+
-command r+ (apr '24)
-command r+ (aug '24)
-dbrx
-dbrx instruct
-deepseek coder v2
-deepseek v2
-deepseek v2 chat
-deepseek v2.5
-gemini 1.0 pro
-gemini 1.5 flash (may '24)
-gemini 1.5 flash (may)
-gemini 1.5 flash (sep '24)
-gemini 1.5 flash (sep)
-gemini 1.5 flash 8b
-gemini 1.5 pro (may '24)
-gemini 1.5 pro (may)
-gemini 1.5 pro (sep '24)
-gemini 1.5 pro (sep)
-gemma 2 27b
-gemma 2 9b
-gpt 3.5 turbo
-gpt 3.5 turbo instruct
-gpt 4
-gpt 4 turbo
-gpt 4o
-gpt 4o (aug '24)
-gpt 4o (may '24)
-gpt 4o mini
-grok beta
-jamba 1.5 large
-jamba 1.5 mini
-jamba instruct
-llama 2 chat 13b
-llama 2 chat 70b
-llama 2 chat 7b
-llama 3 70b
-llama 3 8b
-llama 3 instruct 70b
-llama 3 instruct 8b
-llama 3.1 405b
-llama 3.1 70b
-llama 3.1 8b
-llama 3.1 instruct 405b
-llama 3.1 instruct 70b
-llama 3.1 instruct 8b
-llama 3.1 nemotron 70b
-llama 3.1 nemotron instruct 70b
-llama 3.2 11b (vision)
-llama 3.2 1b
-llama 3.2 3b
-llama 3.2 90b (vision)
-llama 3.2 instruct 11b (vision)
-llama 3.2 instruct 1b
-llama 3.2 instruct 3b
-llama 3.2 instruct 90b (vision)
-ministral 3b
-ministral 8b
-mistral 7b
-mistral 7b instruct
-mistral large
-mistral large (feb '24)
-mistral large 2
-mistral large 2 (jul '24)
-mistral medium
-mistral nemo
-mistral small (feb '24)
-mistral small (sep '24)
-mixtral 8x22b
-mixtral 8x22b instruct
-mixtral 8x7b
-mixtral 8x7b instruct
-o1 mini
-o1 preview
-openchat 3.5
-openchat 3.5 (1210)
-phi 3 medium 14b
-phi 3 medium instruct 14b
-pixtral 12b
-pixtral 12b (2409)
-qwen2 72b
-qwen2 instruct 72b
-qwen2.5 72b
-qwen2.5 coder 32b
-qwen2.5 coder 32b instruct
-qwen2.5 instruct 72b
-reka core
-reka edge
-reka flash
-reka flash (feb '24)
-reka flash (sep '24)
-solar mini
-solar pro
-sonar 3.1 large
-sonar 3.1 small
-yi large
+name,id_name
+aya expanse 32b,aya-expanse-unknown-unknown-unknown-unknown-32-unknown-unknown-false
+aya expanse 8b,aya-expanse-unknown-unknown-unknown-unknown-8-unknown-unknown-false
+claude 3 haiku,claude-haiku-unknown-3-unknown-unknown-unknown-unknown-false
+claude 3 opus,claude-opus-unknown-3-unknown-unknown-unknown-unknown-false
+claude 3 sonnet,claude-sonnet-unknown-3-unknown-unknown-unknown-unknown-false
+claude 3.5 haiku,claude-haiku-unknown-3.5-unknown-unknown-unknown-unknown-false
+claude 3.5 sonnet (june '24),claude-sonnet-unknown-3.5-202406-unknown-unknown-unknown-false
+claude 3.5 sonnet (june),claude-sonnet-unknown-3.5-unknown-unknown-unknown-unknown-false
+claude 3.5 sonnet (oct '24),claude-sonnet-unknown-3.5-202410-unknown-unknown-unknown-false
+claude 3.5 sonnet (oct),claude-sonnet-unknown-3.5-unknown-unknown-unknown-unknown-false
+codestral,codestral-unknown-unknown-unknown-unknown-unknown-unknown-false
+codestral mamba,codestral-mamba-unknown-unknown-unknown-unknown-unknown-unknown-false
+command r,commandr-unknown-unknown-unknown-unknown-unknown-unknown-false
+command r (aug '24),commandr-unknown-unknown-202408-unknown-unknown-unknown-false
+command r (mar '24),commandr-unknown-unknown-202403-unknown-unknown-unknown-false
+command r+,commandr-plus-unknown-unknown-unknown-unknown-unknown-unknown-false
+command r+ (apr '24),commandr-plus-unknown-unknown-202404-unknown-unknown-unknown-false
+command r+ (aug '24),commandr-plus-unknown-unknown-202408-unknown-unknown-unknown-false
+dbrx,dbrx-unknown-unknown-unknown-unknown-unknown-unknown-false
+dbrx instruct,dbrx-instruct-unknown-unknown-unknown-unknown-unknown-unknown-false
+deepseek coder v2,deepseek-unknown-unknown-2-unknown-unknown-unknown-coder-false
+deepseek v2,deepseek-unknown-unknown-2-unknown-unknown-unknown-unknown-false
+deepseek v2 chat,deepseek-unknown-chat-2-unknown-unknown-unknown-unknown-false
+deepseek v2.5,deepseek-unknown-unknown-2.5-unknown-unknown-unknown-unknown-false
+gemini 1.0 pro,gemini-pro-unknown-1.0-unknown-unknown-unknown-unknown-false
+gemini 1.5 flash (may '24),gemini-flash-unknown-1.5-202405-unknown-unknown-unknown-false
+gemini 1.5 flash (may),gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false
+gemini 1.5 flash (sep '24),gemini-flash-unknown-1.5-202409-unknown-unknown-unknown-false
+gemini 1.5 flash (sep),gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false
+gemini 1.5 flash 8b,gemini-flash-unknown-1.5-unknown-8-unknown-unknown-false
+gemini 1.5 pro (may '24),gemini-pro-unknown-1.5-202405-unknown-unknown-unknown-false
+gemini 1.5 pro (may),gemini-pro-unknown-1.5-unknown-unknown-unknown-unknown-false
+gemini 1.5 pro (sep '24),gemini-pro-unknown-1.5-202409-unknown-unknown-unknown-false
+gemini 1.5 pro (sep),gemini-pro-unknown-1.5-unknown-unknown-unknown-unknown-false
+gemma 2 27b,gemma-unknown-unknown-2-unknown-27-unknown-unknown-false
+gemma 2 9b,gemma-unknown-unknown-2-unknown-9-unknown-unknown-false
+gpt 3.5 turbo,gpt-unknown-turbo-3.5-unknown-unknown-unknown-false
+gpt 3.5 turbo instruct,gpt-unknown-turbo-3.5-unknown-unknown-unknown-instruct-false
+gpt 4,gpt-unknown-unknown-4-unknown-unknown-unknown-false
+gpt 4 turbo,gpt-unknown-turbo-4-unknown-unknown-unknown-false
+gpt 4o,gpt-4o-unknown-unknown-unknown-unknown-unknown-false
+gpt 4o (aug '24),gpt-4o-unknown-unknown-202408-unknown-unknown-unknown-false
+gpt 4o (may '24),gpt-4o-unknown-unknown-202405-unknown-unknown-unknown-false
+gpt 4o mini,gpt-mini-unknown-4o-unknown-unknown-unknown-false
+grok beta,grok-unknown-unknown-beta-unknown-unknown-unknown-false
+jamba 1.5 large,jamba-large-unknown-1.5-unknown-unknown-unknown-unknown-false
+jamba 1.5 mini,jamba-mini-unknown-1.5-unknown-unknown-unknown-unknown-false
+jamba instruct,jamba-instruct-unknown-1.5-unknown-unknown-unknown-unknown-false
+llama 2 chat 13b,llama-chat-unknown-2-unknown-13-unknown-unknown-false
+llama 2 chat 70b,llama-chat-unknown-2-unknown-70-unknown-unknown-false
+llama 2 chat 7b,llama-chat-unknown-2-unknown-7-unknown-unknown-false
+llama 3 70b,llama-unknown-unknown-3-unknown-70-unknown-unknown-false
+llama 3 8b,llama-unknown-unknown-3-unknown-8-unknown-unknown-false
+llama 3 instruct 70b,llama-unknown-unknown-3-unknown-70-unknown-instruct-false
+llama 3 instruct 8b,llama-unknown-unknown-3-unknown-8-unknown-instruct-false
+llama 3.1 405b,llama-unknown-unknown-3.1-unknown-405-unknown-unknown-false
+llama 3.1 70b,llama-unknown-unknown-3.1-unknown-70-unknown-unknown-false
+llama 3.1 8b,llama-unknown-unknown-3.1-unknown-8-unknown-unknown-false
+llama 3.1 instruct 405b,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false
+llama 3.1 instruct 70b,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
+llama 3.1 instruct 8b,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
+llama 3.1 nemotron 70b,llama-nemotron-unknown-3.1-unknown-70-unknown-unknown-false
+llama 3.1 nemotron instruct 70b,llama-nemotron-unknown-3.1-unknown-70-unknown-instruct-false
+llama 3.2 11b (vision),llama-unknown-unknown-3.2-unknown-11-unknown-unknown-false
+llama 3.2 1b,llama-unknown-unknown-3.2-unknown-1-unknown-unknown-false
+llama 3.2 3b,llama-unknown-unknown-3.2-unknown-3-unknown-unknown-false
+llama 3.2 90b (vision),llama-unknown-unknown-3.2-unknown-90-unknown-unknown-false
+llama 3.2 instruct 11b (vision),llama-unknown-unknown-3.2-unknown-11-unknown-unknown-vision-false
+llama 3.2 instruct 1b,llama-unknown-unknown-3.2-unknown-1-unknown-unknown-false
+llama 3.2 instruct 3b,llama-unknown-unknown-3.2-unknown-3-unknown-unknown-false
+llama 3.2 instruct 90b (vision),llama-unknown-unknown-3.2-unknown-90-unknown-unknown-vision-false
+ministral 3b,ministral-unknown-unknown-3-unknown-3-unknown-unknown-false
+ministral 8b,ministral-unknown-unknown-8-unknown-8-unknown-unknown-false
+mistral 7b,mistral-unknown-unknown-unknown-unknown-7-unknown-unknown-false
+mistral 7b instruct,mistral-unknown-unknown-unknown-unknown-7-unknown-instruct-false
+mistral large,mistral-large-unknown-unknown-unknown-unknown-unknown-false
+mistral large (feb '24),mistral-large-unknown-202402-unknown-unknown-unknown-false
+mistral large 2,mistral-large-unknown-2-unknown-unknown-unknown-unknown-false
+mistral large 2 (jul '24),mistral-large-unknown-2-202407-unknown-unknown-unknown-false
+mistral medium,mistral-medium-unknown-unknown-unknown-unknown-unknown-false
+mistral nemo,mistral-nemo-unknown-unknown-unknown-unknown-unknown-false
+mistral small (feb '24),mistral-small-unknown-202402-unknown-unknown-unknown-false
+mistral small (sep '24),mistral-small-unknown-202409-unknown-unknown-unknown-false
+mixtral 8x22b,mixtral-unknown-unknown-unknown-8x22-unknown-unknown-false
+mixtral 8x22b instruct,mixtral-unknown-unknown-unknown-8x22-unknown-unknown-instruct-false
+mixtral 8x7b,mixtral-unknown-unknown-unknown-8x7-unknown-unknown-false
+mixtral 8x7b instruct,mixtral-unknown-unknown-unknown-8x7-unknown-unknown-instruct-false
+o1 mini,o1-mini-unknown-unknown-unknown-unknown-unknown-false
+o1 preview,o1-preview-unknown-unknown-unknown-unknown-unknown-false
+openchat 3.5,openchat-unknown-unknown-3.5-unknown-unknown-unknown-false
+openchat 3.5 (1210),openchat-unknown-unknown-3.5-1210-unknown-unknown-unknown-false
+phi 3 medium 14b,phi-medium-unknown-3-unknown-unknown-14-instruct-false
+phi 3 medium instruct 14b,phi-medium-unknown-3-unknown-unknown-14-instruct-false
+pixtral 12b,pixtral-unknown-unknown-unknown-12-unknown-unknown-false
+pixtral 12b (2409),pixtral-unknown-unknown-unknown-12-unknown-2409-unknown-false
+qwen2 72b,qwen-unknown-unknown-unknown-unknown-72-unknown-unknown-false
+qwen2 instruct 72b,qwen-unknown-unknown-unknown-unknown-72-unknown-instruct-false
+qwen2.5 72b,qwen-unknown-unknown-2.5-unknown-72-unknown-unknown-false
+qwen2.5 coder 32b,qwen-unknown-coder-2.5-unknown-32-unknown-unknown-false
+qwen2.5 coder 32b instruct,qwen-unknown-coder-2.5-unknown-32-unknown-instruct-false
+qwen2.5 instruct 72b,qwen-unknown-unknown-2.5-unknown-72-unknown-instruct-false
+reka core,reka-core-unknown-unknown-unknown-unknown-unknown-unknown-false
+reka edge,reka-edge-unknown-unknown-unknown-unknown-unknown-unknown-false
+reka flash,reka-flash-unknown-unknown-unknown-unknown-unknown-unknown-false
+reka flash (feb '24),reka-flash-unknown-202402-unknown-unknown-unknown-false
+reka flash (sep '24),reka-flash-unknown-202409-unknown-unknown-unknown-false
+solar mini,solar-mini-unknown-unknown-unknown-unknown-unknown-unknown-false
+solar pro,solar-pro-unknown-unknown-unknown-unknown-unknown-unknown-false
+sonar 3.1 large,sonar-large-unknown-3.1-unknown-unknown-unknown-unknown-false
+sonar 3.1 small,sonar-small-unknown-3.1-unknown-unknown-unknown-unknown-false
+yi large,yi-large-unknown-unknown-unknown-unknown-unknown-unknown-false
