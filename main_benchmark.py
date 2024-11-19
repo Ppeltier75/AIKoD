@@ -88,7 +88,7 @@ def main():
     # Obtenir le chemin absolu du répertoire du script actuel
     base_dir = os.path.dirname(os.path.abspath(__file__))
     # Construire le chemin vers le répertoire Hugging_Face/Arena_Elo
-    hugging_face_dir = os.path.join(base_dir, 'data', 'benchmark', 'Hugging_Face')
+    hugging_face_dir = os.path.join(base_dir, 'data', 'benchmark', 'HF')
     arena_elo_dir = os.path.join(hugging_face_dir, 'Arena_Elo')
     # Vérifier si le dossier Arena_Elo existe
     if not os.path.exists(arena_elo_dir):
@@ -115,8 +115,8 @@ from function_benchmark.utils_HF import update_csv_from_leaderboards_Absolubench
 if __name__ == "__main__":
     # Définir les chemins pour les fichiers et répertoires
     base_path = os.path.abspath(os.path.dirname(__file__))
-    input_dir = os.path.join(base_path, "data", "benchmark", "Hugging_Face", "Absolu_bench")
-    output_dir = os.path.join(base_path, "data", "benchmark", "Hugging_Face")
+    input_dir = os.path.join(base_path, "data", "benchmark", "HF", "Absolu_bench")
+    output_dir = os.path.join(base_path, "data", "benchmark", "HF")
     hf_ae_path = os.path.join(output_dir, "HF_AE.csv")
     text_full_hf_path = os.path.join(output_dir, "Arena_Elo", "category", "text_full_HF.csv")
 
@@ -179,14 +179,51 @@ if csv_path:
 else:
     print("Erreur lors de la création du CSV.")
 # %%
+
 import os 
-from function_benchmark.utils_benchmark_id_name import update_model_names_in_AA
+from function_benchmark.utils_benchmark_id_name import update_model_names_AA
+
 if __name__ == "__main__":
-    # Définir les chemins
+    # Définir les chemins d'entrée et de sortie
     base_path = os.path.abspath(os.path.dirname(__file__))
+    input_dir = os.path.join(base_path, "data", "benchmark", "AA")
     output_dir = os.path.join(base_path, "data", "id_name", "benchmark", "AA")
 
-    # Mettre à jour les fichiers idname
-    update_model_names_in_AA(output_dir)
-
+    # Appeler la fonction pour analyser les modèles et générer les fichiers *_idname.csv
+    update_model_names_AA(input_dir, output_dir)
 # %%
+import os 
+from function_benchmark.utils_benchmark_id_name import update_model_names_HF_Livebench_EpochAI
+
+if __name__ == "__main__":
+    # Définir les chemins d'entrée et de sortie
+    base_path = os.path.abspath(os.path.dirname(__file__))
+    input_dir = os.path.join(base_path, "data", "benchmark", "HF")
+    output_dir = os.path.join(base_path, "data", "id_name", "benchmark", "HF")
+
+    # Appeler la fonction pour analyser les modèles et générer le fichier HF_text_idname.csv
+    update_model_names_HF_Livebench_EpochAI(input_dir, output_dir)
+# %%
+import os 
+from function_benchmark.utils_benchmark_id_name import update_model_names_HF_Livebench_EpochAI
+
+if __name__ == "__main__":
+    # Définir les chemins d'entrée et de sortie
+    base_path = os.path.abspath(os.path.dirname(__file__))
+    input_dir = os.path.join(base_path, "data", "benchmark", "Livebench")
+    output_dir = os.path.join(base_path, "data", "id_name", "benchmark", "Livebench")
+
+    # Appeler la fonction pour analyser les modèles et générer le fichier HF_text_idname.csv
+    update_model_names_HF_Livebench_EpochAI(input_dir, output_dir)
+# %%
+import os 
+from function_benchmark.utils_benchmark_id_name import update_model_names_HF_Livebench_EpochAI
+
+if __name__ == "__main__":
+    # Définir les chemins d'entrée et de sortie
+    base_path = os.path.abspath(os.path.dirname(__file__))
+    input_dir = os.path.join(base_path, "data", "models_infos", "EpochAI")
+    output_dir = os.path.join(base_path, "data", "id_name", "models_infos", "EpochAI")
+
+    # Appeler la fonction pour analyser les modèles et générer le fichier HF_text_idname.csv
+    update_model_names_HF_Livebench_EpochAI(input_dir, output_dir)

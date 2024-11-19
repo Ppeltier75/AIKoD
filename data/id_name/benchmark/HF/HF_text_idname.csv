@@ -1,0 +1,248 @@
+name
+alpaca 13b
+athene 70b
+athene 70b 0725
+baize v2 13b
+bard (gemini pro)
+bard jan 24 gemini pro
+chatglm 6b
+chatglm2 6b
+chatglm3 6b
+chatgpt 4o latest
+chatgpt 4o latest (2024 08 08)
+chatgpt 4o latest (2024 09 03)
+chatgpt 4o latest 2024 08 08
+chatgpt 4o latest 20240808
+chatgpt 4o latest 20240903
+claude 1
+claude 2
+claude 2.0
+claude 2.1
+claude 3 5 sonnet 20240620
+claude 3 haiku
+claude 3 haiku 20240307
+claude 3 opus
+claude 3 opus 20240229
+claude 3 sonnet
+claude 3 sonnet 20240229
+claude 3.5 sonnet
+claude instant 1
+claude instant v1
+claude v1
+codellama 34b instruct
+codellama 70b instruct
+cogvlm2 llama3 chat 19b
+command r
+command r (04 2024)
+command r (08 2024)
+command r 08 2024
+command r plus
+command r plus 08 2024
+command r+
+command r+ (04 2024)
+command r+ (08 2024)
+dbrx instruct
+dbrx instruct preview
+deepseek coder v2
+deepseek coder v2 0724
+deepseek coder v2 instruct
+deepseek llm 67b chat
+deepseek v2 api 0628
+deepseek v2.5
+dolly v2 12b
+dolphin 2.2.1 mistral 7b
+falcon 180b chat
+falcon 40b instruct
+fastchat t5 3b
+gemini 1.0 pro 001
+gemini 1.5 flash 001
+gemini 1.5 flash 002
+gemini 1.5 flash 8b 001
+gemini 1.5 flash 8b exp 0827
+gemini 1.5 flash api 0514
+gemini 1.5 flash exp 0827
+gemini 1.5 pro 001
+gemini 1.5 pro 002
+gemini 1.5 pro api 0409 preview
+gemini 1.5 pro api 0514
+gemini 1.5 pro exp 0801
+gemini 1.5 pro exp 0827
+gemini 1.5 pro preview 0409
+gemini advanced 0514
+gemini advanced app (2024 05 14)
+gemini app (2024 01 24)
+gemini pro
+gemini pro (dev api)
+gemini pro (dev)
+gemini pro dev api
+gemma 1.1 2b it
+gemma 1.1 7b it
+gemma 2 27b it
+gemma 2 2b it
+gemma 2 9b it
+gemma 2 9b it simpo
+gemma 2b it
+gemma 7b it
+glm 4 0116
+glm 4 0520
+glm 4 air
+glm 4 plus
+gpt 3.5 turbo
+gpt 3.5 turbo 0125
+gpt 3.5 turbo 0314
+gpt 3.5 turbo 0613
+gpt 3.5 turbo 1106
+gpt 4
+gpt 4 0125 preview
+gpt 4 0314
+gpt 4 0613
+gpt 4 1106 preview
+gpt 4 turbo
+gpt 4 turbo 2024 04 09
+gpt 4o 2024 05 13
+gpt 4o 2024 08 06
+gpt 4o mini 2024 07 18
+gpt4all 13b snoozy
+grok 2 08 13
+grok 2 2024 08 13
+grok 2 mini 08 13
+grok 2 mini 2024 08 13
+guanaco 33b
+guanaco 65b
+h2o oasst openllama 13b
+im also a late june chatbot
+internlm2.5 20b chat
+internlm2_5 20b chat
+internvl2 26b
+internvl2 4b
+jamba 1.5 large
+jamba 1.5 mini
+koala 13b
+late june chatbot
+llama 13b
+llama 2 13b chat
+llama 2 70b chat
+llama 2 7b chat
+llama 3 70b instruct
+llama 3 8b instruct
+llama 3.1 405b instruct
+llama 3.1 405b instruct bf16
+llama 3.1 405b instruct fp8
+llama 3.1 70b instruct
+llama 3.1 8b instruct
+llama 3.1 nemotron 70b instruct
+llama 3.2 11b vision instruct
+llama 3.2 1b instruct
+llama 3.2 3b instruct
+llama 3.2 90b vision instruct
+llama 3.2 vision 11b instruct
+llama 3.2 vision 90b instruct
+llama2 70b steerlm chat
+llava onevision qwen2 72b ov
+llava onevision qwen2 72b ov sft
+llava v1.6 34b
+meta llama 3 70b instruct
+meta llama 3 8b instruct
+meta llama 3.1 405b instruct
+meta llama 3.1 405b instruct bf16
+meta llama 3.1 405b instruct fp8
+meta llama 3.1 70b instruct
+meta llama 3.1 8b instruct
+meta llama 3.2 1b instruct
+meta llama 3.2 3b instruct
+minicpm v 2_6
+mistral 7b instruct
+mistral 7b instruct v0.1
+mistral 7b instruct v0.2
+mistral large 2402
+mistral large 2407
+mistral medium
+mistral next
+mixtral 8x22b instruct v0.1
+mixtral 8x7b instruct v0.1
+mpt 30b chat
+mpt 30b instruct
+mpt 7b chat
+nemotron 4 340b instruct
+nous hermes 13b
+nous hermes 2 mixtral 8x7b dpo
+nv llama2 70b steerlm chat
+o1 mini
+o1 preview
+oasst pythia 12b
+olmo 7b instruct
+openassistant llama 30b
+openassistant pythia 12b
+openchat 3.5
+openchat 3.5 0106
+openhermes 2.5 mistral 7b
+palm 2
+palm chat bison 001
+phi 3 medium 4k instruct
+phi 3 mini 128k instruct
+phi 3 mini 4k instruct
+phi 3 mini 4k instruct june 2024
+phi 3 mini 4k instruct june 24
+phi 3 small 8k instruct
+phi 3 vision 128k instruct
+phi 3.5 vision instruct
+pixtral 12b 2409
+pplx 70b online
+pplx 7b online
+qwen 14b chat
+qwen chat 14b
+qwen max 0428
+qwen max 0919
+qwen plus 0828
+qwen1.5 110b chat
+qwen1.5 14b chat
+qwen1.5 32b chat
+qwen1.5 4b chat
+qwen1.5 72b chat
+qwen1.5 7b chat
+qwen2 72b instruct
+qwen2 vl 72b
+qwen2 vl 72b instruct
+qwen2 vl 7b instruct
+qwen2.5 72b instruct
+reka core 20240501
+reka core 20240722
+reka flash 20240722
+reka flash 21b
+reka flash 21b 20240226
+reka flash 21b 20240226 online
+reka flash 21b online
+reka flash preview 20240611
+rwkv 4 raven 14b
+snorkel mistral pairrm dpo
+snowflake arctic instruct
+solar 10.7b instruct v1.0
+stablelm tuned alpha 7b
+starling lm 7b alpha
+starling lm 7b beta
+stripedhyena nous 7b
+tulu 2 dpo 70b
+tulu 30b
+vicuna 13b
+vicuna 13b 16k
+vicuna 33b
+vicuna 7b
+vicuna 7b 16k
+wizardlm 13b
+wizardlm 13b v1.0
+wizardlm 13b v1.1
+wizardlm 13b v1.2
+wizardlm 30b
+wizardlm 70b
+wizardlm 70b v1.0
+xgen 7b 8k inst
+yi 1.5 34b chat
+yi 34b chat
+yi large
+yi large preview
+yi lightning
+yi lightning lite
+yi vision
+zephyr 7b alpha
+zephyr 7b beta
+zephyr orpo 141b a35b v0.1

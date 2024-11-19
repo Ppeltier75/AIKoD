@@ -1,0 +1,112 @@
+name
+aya expanse 32b
+aya expanse 8b
+claude 3 haiku
+claude 3 opus
+claude 3 sonnet
+claude 3.5 haiku
+claude 3.5 sonnet (june '24)
+claude 3.5 sonnet (june)
+claude 3.5 sonnet (oct '24)
+claude 3.5 sonnet (oct)
+codestral
+codestral mamba
+command r
+command r (aug '24)
+command r (mar '24)
+command r+
+command r+ (apr '24)
+command r+ (aug '24)
+dbrx
+dbrx instruct
+deepseek coder v2
+deepseek v2
+deepseek v2 chat
+deepseek v2.5
+gemini 1.0 pro
+gemini 1.5 flash (may '24)
+gemini 1.5 flash (may)
+gemini 1.5 flash (sep '24)
+gemini 1.5 flash (sep)
+gemini 1.5 flash 8b
+gemini 1.5 pro (may '24)
+gemini 1.5 pro (may)
+gemini 1.5 pro (sep '24)
+gemini 1.5 pro (sep)
+gemma 2 27b
+gemma 2 9b
+gpt 3.5 turbo
+gpt 3.5 turbo instruct
+gpt 4
+gpt 4 turbo
+gpt 4o
+gpt 4o (aug '24)
+gpt 4o (may '24)
+gpt 4o mini
+grok beta
+jamba 1.5 large
+jamba 1.5 mini
+jamba instruct
+llama 2 chat 13b
+llama 2 chat 70b
+llama 2 chat 7b
+llama 3 70b
+llama 3 8b
+llama 3 instruct 70b
+llama 3 instruct 8b
+llama 3.1 405b
+llama 3.1 70b
+llama 3.1 8b
+llama 3.1 instruct 405b
+llama 3.1 instruct 70b
+llama 3.1 instruct 8b
+llama 3.1 nemotron 70b
+llama 3.1 nemotron instruct 70b
+llama 3.2 11b (vision)
+llama 3.2 1b
+llama 3.2 3b
+llama 3.2 90b (vision)
+llama 3.2 instruct 11b (vision)
+llama 3.2 instruct 1b
+llama 3.2 instruct 3b
+llama 3.2 instruct 90b (vision)
+ministral 3b
+ministral 8b
+mistral 7b
+mistral 7b instruct
+mistral large
+mistral large (feb '24)
+mistral large 2
+mistral large 2 (jul '24)
+mistral medium
+mistral nemo
+mistral small (feb '24)
+mistral small (sep '24)
+mixtral 8x22b
+mixtral 8x22b instruct
+mixtral 8x7b
+mixtral 8x7b instruct
+o1 mini
+o1 preview
+openchat 3.5
+openchat 3.5 (1210)
+phi 3 medium 14b
+phi 3 medium instruct 14b
+pixtral 12b
+pixtral 12b (2409)
+qwen2 72b
+qwen2 instruct 72b
+qwen2.5 72b
+qwen2.5 coder 32b
+qwen2.5 coder 32b instruct
+qwen2.5 instruct 72b
+reka core
+reka edge
+reka flash
+reka flash (feb '24)
+reka flash (sep '24)
+solar mini
+solar pro
+sonar 3.1 large
+sonar 3.1 small
+yi large

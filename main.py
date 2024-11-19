@@ -38,40 +38,30 @@ if __name__ == "__main__":
 #processe pour add idname
 import os
 from dotenv import load_dotenv
-from function_utils.utils_id_name import generate_and_update_id_names
+from function_utils.utils_id_name import AIKoD_update_id_names
 
-# Définir le chemin de base du projet
-base_path = os.path.abspath(os.path.dirname(__file__))
+def main():
+    # Définir le chemin de base
+    base_path = os.path.abspath(os.path.dirname(__file__))
 
-# Charger les variables d'environnement depuis .env
-env_path = os.path.join(base_path, ".env")
-load_dotenv(env_path)
+    # Charger les variables d'environnement depuis .env
+    env_path = os.path.join(base_path, ".env")
+    load_dotenv(env_path)
 
-# Récupérer la clé API OpenAI depuis .env
-openai_api_key = os.getenv("OPENAI_API_KEY")
+    # Récupérer la clé API OpenAI
+    openai_api_key = os.getenv("OPENAI_API_KEY")
+    if not openai_api_key:
+        raise ValueError("Clé API OpenAI introuvable. Vérifiez votre fichier .env.")
 
-if not openai_api_key:
-    raise ValueError("Clé API OpenAI introuvable. Vérifiez votre fichier .env.")
+    # Répertoires pour les CSV et les fichiers exemples
+    csv_directory = os.path.join(base_path, "data", "id_name", "AIKoD")
+    examples_directory = os.path.join(base_path, "data", "id_name", "exemple")
 
-# Construire les chemins absolus
-csv_path = os.path.join(base_path, "data/id_name/AIKoD/AIKoD_multimodal_idname.csv")
-examples_csv_path = os.path.join(base_path, "data/id_name/exemple/text_exemple.csv")
+    # Appeler la fonction pour générer les id_name
+    AIKoD_update_id_names(csv_directory, examples_directory, openai_api_key)
 
-# Type de modèle
-model_type = "text"
-column_name = 'name'
-
-# Appliquer la fonction pour générer et mettre à jour les id_name
-print("Début de la mise à jour des `id_name`...")
-added_models = generate_and_update_id_names(
-    csv_path, examples_csv_path, model_type, openai_api_key, column_name
-)
-
-# Afficher les modèles ajoutés
-if added_models:
-    print(f"Modèles ajoutés : {added_models}")
-else:
-    print("Aucun modèle ajouté ou mise à jour non requise.")
+if __name__ == "__main__":
+    main()
 
 
 # %% Imports nécessaires

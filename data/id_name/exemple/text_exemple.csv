@@ -8,25 +8,25 @@ gemini 1.5 pro 002,gemini-pro-unknown-1.5-unknown-unknown-unknown-unknown-false
 chatgpt 4o latest 0903,chatgpt-unknown-latest-4o-0903-unknown-unknown-unknown-false
 gpt 4o 2024 05 13,gpt-unknown-unknown-4o-20240513-unknown-unknown-unknown-false
 gemini 1.5 pro exp 0827,gemini-pro-exp-1.5-0827-unknown-unknown-unknown-false
-meta llama 3.1 405b instruct turbo,llama-instruct-turbo-3.1-unknown-405-unknown-unknown-false
-qwen2.5 72b instruct,qwen-instruct-unknown-2.5-unknown-72-unknown-unknown-false
+meta llama 3.1 405b instruct turbo,llama-unknown-turbo-3.1-unknown-405-unknown-instruct-false
+qwen2.5 72b instruct,qwen-unknown-unknown-2.5-unknown-72-unknown-instruct-false
 gpt 4 turbo 2024 04 09,gpt-unknown-turbo-4-20240409-unknown-unknown-unknown-false
-dracarys2 72b instruct,dracarys-instruct-unknown-2-unknown-72-unknown-unknown-false
+dracarys2 72b instruct,dracarys-unknown-unknown-2-unknown-72-unknown-instruct-false
 gemini 1.5 pro exp 0801,gemini-pro-exp-1.5-0801-unknown-unknown-unknown-false
 claude 3 opus 20240229,claude-opus-unknown-3-20240229-unknown-unknown-unknown-false
 gemini 1.5 flash 002,gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false
 mistral large 2407,mistral-large-unknown-unknown-2407-unknown-unknown-unknown-false
-dracarys2 llama 3.1 70b instruct,llama-instruct-unknown-3.1-unknown-70-unknown-unknown-false
+dracarys2 llama 3.1 70b instruct,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
 gpt 4 0125 preview,gpt-unknown-preview-4-0125-unknown-unknown-unknown-false
 deepseek v2.5,deepseek-unknown-unknown-2.5-unknown-unknown-unknown-unknown-false
-meta llama 3.1 70b instruct turbo,llama-instruct-turbo-3.1-unknown-70-unknown-unknown-false
+meta llama 3.1 70b instruct turbo,llama-unknown-turbo-3.1-unknown-70-unknown-instruct-false
 grok 2,grok-unknown-unknown-2-unknown-unknown-unknown-unknown-false
 gemini 1.5 flash exp 0827,gemini-flash-exp-1.5-0827-unknown-unknown-unknown-false
 grok 2 mini,grok-mini-unknown-2-unknown-unknown-unknown-unknown-false
 deepseek coder v2,deepseek-unknown-unknown-2-unknown-unknown-unknown-coder-false
 gpt 4 0613,gpt-unknown-unknown-4-0613-unknown-unknown-unknown-false
 gemini 1.5 pro api 0514,gemini-pro-unknown-1.5-0514-unknown-unknown-unknown-false
-gpt 4o mini 2024 07 18,gpt-unknown-mini-4o-20240718-unknown-unknown-unknown-false
+gpt 4o mini 2024 07 18,gpt-mini-unknown-4o-20240718-unknown-unknown-unknown-false
 llama 3.1 nemotron 70b instruct,llama-nemotron-unknown-3.1-unknown-70-unknown-instruct-false
 gemma 2 27b it,gemma-unknown-it-2-unknown-27-unknown-unknown-false
 gemini 1.5 flash api 0514,gemini-flash-unknown-1.5-0514-unknown-unknown-unknown-false
@@ -35,7 +35,7 @@ gemini 1.5 flash 8b exp 0827,gemini-flash-exp-1.5-0827-8-unknown-unknown-false
 claude 3 haiku 20240307,claude-haiku-unknown-3-20240307-unknown-unknown-unknown-false
 mixtral 8x22b instruct v0.1,mixtral-unknown-unknown-0.1-unknown- 8x22-unknown-instruct-false
 phi 3.5 moe instruct,phi-moe-unknown-3.5-unknown-unknown-unknown-instruct-false
-command r plus 08 2024,command-r-plus-unknown-082024-unknown-unknown-unknown-false
+command r plus 08 2024,commandr-plus-unknown-unknown-082024-unknown-unknown-unknown-false
 gpt 3.5 turbo 0125,gpt-unknown-turbo-3.5-0125-unknown-unknown-unknown-false
 command r plus,commandr-plus-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
 gemma 2 9b it,gemma-unknown-it-2-unknown-9-unknown-unknown-false
@@ -52,15 +52,15 @@ mistral large 2 finetuned,mistral-large-unknown-2-unknown-unknown-unknown-unknow
 mistral small 24.09 finetuned,mistral-small-unknown-unknown-24.09-unknown-unknown-unknown-true
 codestral,codestral-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
 gpt 4o 2024 05 13,gpt-4o-unknown-unknown-20240513-unknown-unknown-unknown-false
-gpt 3.5 turbo 0125,gpt-turbo-unknown-3.5-0125-unknown-unknown-unknown-false
-gpt 4 turbo 2024 04 09,gpt-turbo-unknown-4-20240409-unknown-unknown-unknown-false
+gpt 3.5 turbo 0125,gpt-unknown-turbo-3.5-0125-unknown-unknown-unknown-false
+gpt 4 turbo 2024 04 09,gpt-unknown-turbo-4-20240409-unknown-unknown-unknown-false
 jamba 1.5 large,jamba-large-unknown-1.5-unknown-unknown-unknown-unknown-false
 amazon titan text lite,titan-text-lite-unknown-unknown-unknown-unknown-unknown-unknown-false
 granite 20b multilingual,granite-unknown-multilingual-unknown-unknown-20-unknown-unknown-false
 granite 7b lab,granite-unknown-lab-unknown-unknown-7-unknown-unknown-false
 flan ul2 20b,flan-ul2-unknown-unknown-unknown-20-unknown-unknown-false
 luminous extended,luminous-extended-unknown-unknown-unknown-unknown-unknown-unknown-false
-deepseek coder,deepseek-unknown-unknown-unknown-unknown-unknown-unknown-coder-false
+deepseek coder,deepseek-unknown-unknown-unknown-unknown-unknown-unknown-code-false
 dolphin 2.6 mixtral 8x7b,dolphin-mixtral-unknown-2.6-unknown-8x7-unknown-unknown-false
 glm 4 alltools,glm-alltools-unknown-4-unknown-unknown-unknown-unknown-false
 glm 4 airx,glm-airx-unknown-4-unknown-unknown-unknown-unknown-false
@@ -92,7 +92,7 @@ solar pro,solar-pro-unknown-unknown-unknown-unknown-unknown-unknown-false
 solar mini,solar-mini-unknown-unknown-unknown-unknown-unknown-unknown-false
 solar docvision,solar-docvision-unknown-unknown-unknown-unknown-unknown-unknown-false
 sensechat 5.5,sensechat-unknown-unknown-5.5-unknown-unknown-unknown-unknown-false
-sensechat vision 5.5,sensechat-unknown-unknown-5.5-unknown-unknown-unknown-vision-false
+sensechat vision 5.5,sensechat-unknown-vision-5.5-unknown-unknown-unknown-unknown-false
 eleutherai/pythia 410m,pythia-unknown-unknown-unknown-unknown-0.41-unknown-unknown-false
 gpr 4 turbo,gpr-unknown-turbo-4-unknown-unknown-unknown-unknown-false
 deepseek coder 7b base v1.5,deepseek-unknown-base-1.5-unknown-7-unknown-coder-false

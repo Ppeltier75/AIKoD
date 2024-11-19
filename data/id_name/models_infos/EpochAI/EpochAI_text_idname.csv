@@ -1,0 +1,1014 @@
+name
+(ensemble): awd lstm doc (fin) × 5 (wt2)
+2 layer lstm+deep gradient compression
+360 smart brain
+3d city reconstruction
+4 layer qrnn (h=2500)
+6 act tether
+6 layer mlp (mnist)
+a3c ff hs
+abab
+ablang (heavy sequences)
+adaboost.m2 digit recognition
+adaline
+adam (cifar 10)
+adaptive input transformer + rd
+adaptive inputs + layerdrop
+adaptive nlpm
+adaptive subgrad
+adarnn
+adm
+advantage learning
+adversarial joint adaptation network (resnet)
+afm on device
+afm server
+agent57
+agile soccer robot
+albert
+albert xxlarge
+alexatm 20b
+alexnet
+align
+alm 1.0
+alphacode
+alphafold
+alphafold 2
+alphafold multimer
+alphageometry
+alphago fan
+alphago lee
+alphago master
+alphago zero
+alphamissense
+alphastar
+alphax 1
+alphazero
+alstm(depth 2)+recurrentpolicy (wt2)
+altclip_m9
+alvinn
+amazon titan
+amdim
+amoebanet a (f=190)
+amoebanet a (f=448)
+ankh_large
+ann eye tracker
+anthropic lm 175b
+anthropic lm 52b
+aquila2 34b
+ar ldm
+arctic
+ase+ace
+atlas
+audiogen
+audiolm
+awd lstm
+awd lstm + mos + partial shuffled
+awd lstm 3 layer lstm (tied) + continuous cache pointer (wt2)
+awd lstm drill + dynamic evaluation† (wt2)
+awd lstm mos + dynamic evaluation (wt2 2017)
+awd lstm mos + dynamic evaluation (wt2 2018)
+awd lstm mos+pdr + dynamic evaluation (wt2)
+awd lstm+wt+cache+iog (wt2)
+aya
+back propagation
+baichuan2 13b
+baichuan2 53b
+bankruptcy nn
+bart large
+base lm + knn lm + continuous cache
+base lm+gnn+knn
+basic l
+basic l + lion
+batchnorm
+bayesian automated hyperparameter tuning
+beit 3
+bellkor 2007
+bellkor 2008
+bellkor 2009
+bert large
+bert large cas (ptb+wt2+wt103)
+bert rbp
+bidaf
+bidirectional rnn
+big g 137b
+big little net
+big little net (speech)
+big transfer (bit l)
+big transformer for back translation
+bigbigan
+bigchaos 2008
+bigchaos optiblend
+biggan deep 512x512
+bigssl
+bilstm for speech
+binarized neural network (mnist)
+blenderbot 3
+blip 2 (q former)
+bloom 176b
+bloomberggpt
+bloomz 176b
+blstm for handwriting (1)
+blstm for handwriting (2)
+bluelm 130b
+bluelm 175b
+bluelm 70b
+bluelm 7b
+bluumi
+boosting
+boss (darpa urban challenge)
+boxes
+bpe
+bpl
+byt5 xxl
+calm
+camembert
+cancer drug mechanism prediction
+capsnet (mnist)
+capsnet (multimnist)
+cascaded lnet anet
+ceramic mlp
+chai 1
+chameleon 34b
+chameleon 7b
+char cnn bilstm
+character enriched word2vec
+chatglm3 6b
+chatrhino
+chinchilla
+chinese english translation
+cicero
+claude
+claude 1.3
+claude 2
+claude 2.1
+claude 3 haiku
+claude 3 opus
+claude 3 sonnet
+claude 3.5 sonnet
+claude instant
+clip (resnet 50)
+clip (vit l/14@336px)
+cnn best practices
+coatnet
+coca
+codefuse 13b
+codefusion (python)
+codegen mono 16.1b
+codegen2
+codestral
+codet5 base
+codet5 large
+codet5+
+codewhisperer
+codex
+coedit xxl
+cogagent
+cognitron
+cogvideo
+cogvideox
+cogview
+cogview2
+cogvlm 17b
+cohere command
+cohere embed
+command r+
+conformer
+conformer + wav2vec 2.0 + noisy student
+constituency tree lstm
+context dependent rnn
+contextnet
+contextnet + noisy student
+contriever
+conv dbn
+convnet similarity metric
+convolutional pose machines
+convs2s (ensemble of 8 models)
+core
+cpc v2
+cpm large
+crf rnn
+cross lingual alignment
+cross lingual pos tagger
+ct mos (wt2)
+ctc trained lstm
+ctm (cifar 10)
+curl
+cutout regularized net
+dall e
+dall·e 2
+dall·e 3
+danet
+darts
+data2vec (language)
+data2vec (speech)
+data2vec (vision)
+dblstm
+dbrx
+dcn+
+dd ppo
+ddpm ip (celeba)
+deberta
+debertav3large + kear
+decision tree (classification)
+decision tree adaline
+deconvolutional network
+decoupled weight decay regularization
+deep autoencoders
+deep belief nets
+deep blue
+deep boltzmann machines
+deep deterministic policy gradients
+deep lstm video classifier
+deep multitask nlp network
+deep rectifier networks
+deepface
+deeplab
+deeplab (2017)
+deeplabv3
+deeplabv3+
+deeply recursive convnet
+deeply supervised nets
+deepnash
+deepnet
+deepseek coder 33b
+deepseek coder v2 236b
+deepseek llm 67b
+deepseek v2
+deepseek v2.5
+deepspeech2 (english)
+deepstack
+deit b
+delight
+denoising autoencoders
+denoising diffusion probabilistic models (lsun bedroom)
+densenet 264
+densephrases
+detic
+detr
+devise
+diabetic retinopathy detection net
+diffdock
+differentiable neural computer
+diffractive deep neural network
+diffusion gan
+dimensionality reduction
+dinov2
+diplodocus
+discriminator guidance
+distbelief nnlm
+distbelief speech
+distbelief vision
+distilbert
+distributed representation nn
+dit xl/2
+dit xl/2 + cads
+dit xl/2 + discriminator guidance
+ditto
+dlrm 2020
+dmn
+dnabert
+dncnn
+domain adaptation
+dot(s) rnn
+dou bao
+dqn
+dqn 2015
+drlim
+dropout (cifar)
+dropout (imagenet)
+dropout (mnist)
+dropout (timit)
+dropout lstm+noise(bernoulli) (wt2)
+ediff i
+edsr
+efficientdet
+efficientnet l2
+efficientnetv2 xl
+efficientzero
+egru (ptb)
+ei rehn 1000d
+elastic weight consolidation
+electra
+elmo
+emdr
+empirical evaluation of deep architectures
+en^2as with performance reward
+enas
+encodec
+enhanced neighborhood based filtering
+ernie 3.0
+ernie 3.0 titan
+ernie 3.5
+ernie 4.0
+ernie doc (247m)
+ernie gen (large)
+ernie vilg
+error propagation
+esm1b
+esm2 15b
+esm3 (98b)
+esrgan
+eva 01
+eve
+exaone 1.0
+exaone 2.0
+exaone 3.0
+fairseq adaptive inputs
+falcon 180b
+falcon 2 11b
+falcon 40b
+fast
+fast r cnn
+faster r cnn
+fasttext
+feedback transformer
+feedforward nn
+ferret (13b)
+fine tuned awd lstm doc (fin)
+fingpt 13b
+firefly
+firefly video
+fisher boost
+fisher kernel gmm
+fisher vector image classifier
+fixres resnext 101 wsl
+flamingo
+flan 137b
+flan palm 540b
+flan t5 11b
+flan t5 xxl + blip 2
+florence
+fractional max pooling
+fragment embedding
+framenet role labeling
+fraternal dropout + awd lstm 3 layer (wt2)
+fully convolutional networks
+funsearch
+fusion in encoder
+fuyu 8b
+fuyu heavy
+fuzzy nn
+galactica
+gan advancer
+gans
+gated hornn (3rd order)
+gato
+gbert large
+gcnn 14
+gemini 1.0 pro
+gemini 1.0 ultra
+gemini 1.5 pro
+gemini nano 1
+gemini nano 2
+gemma 1.1 7b instruct
+gemma 2 27b
+gemma 2 9b
+gemma 7b
+gen 1
+gen 2
+gencnn + dyn eval
+generative bst
+genetic algorithm
+genslm
+german electra large
+ggnn
+gl lwgc awd mos lstm + dynamic evaluation (wt2)
+glam
+glee
+glide
+glm 130b
+glm 4 (0116)
+glm 4 (0520)
+glm 4 all tools
+glm 4v 9b
+glove (32b)
+glove (6b)
+gnmt
+go explore
+goat
+goat 7b
+golem
+googlenet / inceptionv1
+gopher (280b)
+gpipe (amoeba)
+gpipe (transformer)
+gpt 1
+gpt 2 (1.5b)
+gpt 3 175b (davinci)
+gpt 3.5 (text davinci 003)
+gpt 3.5 turbo
+gpt 4
+gpt 4 turbo
+gpt 4o
+gpt 4o mini
+gpt 4v
+gpt neox 20b
+gpu dbns
+gradient boosting machine
+granite 13b
+graph based structural reasoning
+graphcast
+greedy layer wise dnn training
+grok 0
+grok 1
+grok 1.5
+grok 1.5v
+grouplens
+grus
+gshard (dense)
+gsm
+hanabi 4 player
+handwritten digit recognition system
+heuristic reinforcement learning
+hierarchical cognitron
+hierarchical lm
+hiero
+histograms of oriented gradients
+hlbl
+hmm word alignment
+hogwild!
+hopfield network
+hopfield networks (2020)
+hra
+hubert
+hunyuan
+hunyuan large
+hybrid h3 2.7b
+hyenadna
+hyperclova 204b
+hyperclova 82b
+hyperclova x
+hyperneat
+ibm 5
+ibm model 4
+idefics 80b
+igpt l
+igpt xl
+image generation
+image to image cgan
+imagebind
+imagen
+immediate trihead
+impala
+inception resnet v2
+inception v3
+inceptionv4
+incoder 6.7b
+inflated 3d convnet
+inflection 1
+inflection 2
+inflection 2.5
+innervator
+instructblip
+instructgpt
+internal functionality of visual invariants
+internimage
+internlm
+internlm2 20b
+invariant cnn
+invariant image recognition
+isr network
+iss
+iterative bootstrapping wsd
+jais
+jft
+jiutian
+jpmax
+jurassic 1 jumbo
+jurassic 2 jumbo
+katago
+kepler
+kn lm
+kohonen network
+konan llm 41b
+kwaiyii 13b
+kwaiyii 175b
+lamda
+lanet l (cifar 10)
+large regularized lstm
+lda
+ldm 1.45b
+learnability theory of language development
+lenet 5
+lep ad
+libratus
+lighton mini
+linear decision functions
+lingowhale 8b
+lissom
+listen attend and spell
+llama 2 13b
+llama 2 34b
+llama 2 70b
+llama 2 7b
+llama 3 70b
+llama 3 8b
+llama 3.1 405b
+llama 3.1 70b
+llama 3.1 8b
+llama 3.2 3b
+llama 33b
+llama 65b
+llama guard
+llava
+llava 1.5
+lmica
+lms
+lmsi palm
+local binary patterns for facial recognition
+longt5
+lrcn
+lrso gan
+lstm
+lstm (2018)
+lstm (hebbian cache mbpa)
+lstm + dynamic eval
+lstm 300units
+lstm char large
+lstm lm
+lstm with forget gates
+lstm+neuralcache
+lte speaker verification system
+ltm 1
+luke
+luminous supreme
+lyra fr 10b
+lyria
+m4 50b
+m6 t
+madaline i
+make a video
+mamba 24m (sc09)
+mamba2 hybrid
+mask r cnn
+masked autoencoders vit h
+mathgpt
+matrixfac for recommenders
+max margin markov networks
+maximum entropy models for machine translation
+maxout networks
+mcdnn (mnist)
+meb
+medbert
+meena
+megascale (175b)
+megascale (530b)
+megascale (production)
+megasyn
+megatron bert
+megatron lm (8.3b)
+megatron turing nlg 530b
+memoreader
+mesh tensorflow transformer 2.9b (translation)
+mesh tensorflow transformer 4.9b (language)
+meta movie gen audio
+meta movie gen video
+meta pseudo labels
+metalm
+metamimic
+metnet
+mi:dm 200b
+mid level features
+midjourney v1
+minerva (540b)
+mistral 7b
+mistral large
+mistral large 2
+mistral medium
+mitosis
+mixtral 8x7b
+mixture of linear models
+mln asr
+mlp baggage detector
+mm1 30b
+mmlstm
+mnasnet a1 + ssdlite
+mnasnet a3
+mnemonic reader
+mobilenet
+mobilenetv2
+moco
+moe multi
+mogrifier (d2 mos2 mc) + dynamic eval
+mogrifier rlstm (wt2)
+monocular depth prediction
+motion driven 3d feature tracking
+mplug owl2
+mpt 30b (base)
+ms cnn
+msa transformer
+msra (c prelu)
+mt dnn
+mt0 13b
+mt5 xxl
+multi cell lstm
+multi scale dilated cnn
+multi task cascaded cnn
+multi token prediction 13b
+multi token prediction 7b
+multiband diffusion
+multilingual dnn
+multiresolution cnn
+multiscale deformable part model
+music perceptron
+musicgen
+musiclm
+muzero
+mv rnn
+named entity recognition model
+nanbeige 16b
+nas with base 8 and shared embeddings
+nas+ess (156m)
+nasnet a
+nasv3 (cifar 10)
+neat
+nec llm 13b
+nemotron 3 8b
+nemotron 4 15b
+nemotron 4 340b
+neocognitron
+netflix recommender system
+nettalk (dictionary)
+nettalk (transcription)
+network in network
+neumf (pinterest)
+neural lm
+neuro symbolic concept learner
+neurochess
+nllb
+nlp from scratch
+nmt transformer 437m
+noisy student (l2)
+noisynet dueling
+nplm
+ntm
+nucleotide transformer
+nüwa
+o1 mini
+o1 preview
+olmo 7b
+omegaplm
+omnivec
+once for all
+one peace
+ontoprotein
+openai five
+openai five rerun
+openai ti7 dota 1v1
+openvla
+opt 175b
+opt 66b
+optimized multi scale edge detection
+optimized single layer net
+or wideresnet
+overfeat
+pali
+pali x
+palm (540b)
+palm 2
+palm e
+pandemonium (morse)
+pangu 3.0
+pangu weather
+pangu σ
+paragraph vector
+part of sentence tagging model
+parti
+pattern recognition and reading by machine
+pdp model for serial order
+peptidebert
+perceiver io (optical flow)
+perceptron (1960)
+perceptron for large margin classification
+perceptron mark i
+permuteformer
+pg swgan
+pharia 1 llm 7b
+phenaki
+phi 3 medium 14b
+phi 3 small 7.4b
+photo geometric autoencoder
+phrase based translation
+phrasecond
+piecewise linear model
+plamo 13b
+plato xl
+plug
+pluribus
+pnas net
+pnasnet 5
+poe mnist
+pointer sentinel lstm (medium)
+pointnet
+pointnet++
+polycoder
+polynet
+polysphere 1
+population based drl
+poro34b
+pplx 70b online
+pragmatic theory solution (netflix 2009)
+predictive coding nn
+pretrans 3l 250h
+print recognition logic
+proberta
+progen2 xlarge
+progressivegan
+projected gan
+protbert bfd
+proteinbert
+proteindt
+prototypical networks
+prott5 xxl
+prott5 xxl bfd
+proxylessnas
+pspnet
+pyramidnet
+q learning
+qmoe: compressed 1t model
+qrnn
+qt opt
+qwen 14b
+qwen 72b
+qwen 7b
+qwen audio chat
+qwen vl
+qwen vl max
+qwen1.5 110b
+qwen1.5 14b
+qwen1.5 32b chat
+qwen1.5 72b
+qwen1.5 7b
+qwen2 72b
+qwen2 vl 72b
+qwen2.5 72b
+qwen2.5 coder (32b)
+qwen2.5 coder (7b)
+qwen2.5 instruct (72b)
+qwen2.5 instruct (7b)
+r cnn (t net)
+r fcn
+raam
+random decision forests
+ranknet
+rational dqn average
+rbm image classifier
+rcan
+rctm
+reading twice for nlu
+realm
+recursive neural network
+recursive sentiment autoencoder
+refined part pooling
+refinenet
+regularized svd for collaborative filtering
+reka core
+reka flash
+relational memory core
+relu (lfw)
+relu (norb)
+relu speech
+residual dense network
+resnet 1001
+resnet 110 (cifar 10)
+resnet 152 (imagenet)
+resnet 152 + objectnet
+resnet 200
+resnet 50 billion scale
+resnext 101 32x48d
+resnext 101 billion scale
+resnext 50
+restricted bolzmann machines
+retinanet r101
+retinanet r50
+retrieval augmented generator
+retro 7b
+rnn for 1b words
+rnn lm
+rnn speedup
+rnn wer
+rnn+lda+kn5+cache
+rnn+weight noise+dynamic eval
+rnnsearch 50*
+rntn
+roberta large
+robocat
+robot parkour
+rotation
+routing transformer (wt 103)
+rt 1
+rt 2
+rt 2 x
+rt trajectory
+rugpt 3.5 13b
+s norm
+s4
+sachs
+samsung gauss code
+samsung gauss image
+samsung gauss language
+samuel neural checkers
+sandwich transformer
+sb lm
+sc nlm
+scibert
+seamlessm4t
+search proven best lstm
+seer
+segatron xl large m=384 + hcp
+segment anything model
+selective search
+self organizing system
+semantic hashing
+semexp
+semi supervised embedding for dl
+semvec
+senet (imagenet)
+sensenova
+sensenova 5.0
+seq2seq lstm
+sequence based pattern recognition
+sexnet classification
+sexnet compression
+show 1
+shufflenet v1
+shufflenet v2
+siamese tdnn
+simclr
+simclrv2
+simcse
+simplenet
+skywork 13b
+smooct
+snarc
+snm skip
+social and content based classification
+sora
+spark 3.0
+sparse all mlp
+sparse coding model for v1 receptive fields
+sparse digit recognition svm
+sparse energy based model
+sparse vision encoding
+spatial pyramid matching
+spatially sparse cnn
+spatiotemporal fusion convnet
+speaker independent vowel classification
+specaugment
+spectrally normalized gan
+sphinx (llama 2 13b)
+spider2
+spn 4+kn5
+sppnet
+squeezenet
+srgan
+srn encoded grammatical structures
+sru++ large
+ssd
+st moe
+stable diffusion (ldm kl 8 g)
+stable diffusion xl (sdxl)
+stable lm 2 12b
+stacked denoising autoencoders
+stacked hourglass network
+stanley (darpa grand challenge 2)
+starcoder
+starcoder 2 15b
+starcoder 2 7b
+stargan v2
+statement curriculum learning
+statistical continuous speech recognizer
+statistical shape constellations
+student of games
+super vector coding
+support vector machines
+svd in recommender systems
+svm for face detection
+swift
+swin transformer v2
+switch
+symmetric residual encoder decoder net
+system 11
+t0 xxl
+t5 11b
+t5 3b
+table tennis agent
+tacotron 2
+tagging via viterbi decoding
+talk convolution
+tcan (wt2)
+tcn (p mnist)
+td gammon
+td(0)
+telechat
+tensor transformer(1core)+pn (wt103)
+tensorized transformer (257m)
+tensorreasoner
+textual imager
+tfe svm
+theseus
+theseus 6/768
+thumbs up?
+time delay neural networks
+tongyi qianwen 2.0
+top down frozen classifier
+trajectory pooled conv nets
+trancepteve
+tranception
+transe
+transformer
+transformer (adaptive input embeddings) wt103
+transformer + simple recurrent unit
+transformer elmo
+transformer librivox + decoding/rescoring
+transformer local attention (nest b)
+transformer xl (257m)
+transformer xl + rms dynamic eval
+transformer xl define (141m)
+transformer xl large + phrase induction
+transformerxl + spectrum control
+trellisnet
+trinet
+trocr
+trpo
+truck backer upper
+true regularization+finetune+dynamic eval
+tsn
+tsuzumi 7b
+turing nlg
+two stream convnets for action recognition
+u palm (540b)
+udsmprot
+ul2
+ulm fit
+unifiedqa
+unsupervised high level feature learner
+unsupervised scale invariant learning
+vall e
+varco llm 2.0 base
+variational (untied weights mc) lstm (large)
+vd lstm+real large
+vd rhn
+vector space model
+vgg16
+vgg19
+videomae v2
+viking
+visualizing cnns
+vit + dino
+vit 22b
+vit base/32
+vit g (model soup)
+vit g/14
+vit g/14 (lit)
+vit huge/14
+vlm 4
+volcano 13b
+vqgan + clip
+w2v bert
+walking minotaur robot
+wave2vec 2.0 large
+wavenet
+weight decay
+wenet (penn treebank)
+wgan gp
+whisper
+whisper v2
+whisper v3
+wide & deep
+wide residual network
+word representations
+word2vec (large)
+word2vec (small)
+wu dao aquila 33b
+wu dao aquila 7b
+xception
+xglm 7.5b
+xinghan foundation model
+xlm
+xlm roberta
+xlmr xxl
+xlnet
+xtrimopglm 100b
+xverse 13b 2
+xverse 65b 2
+yalm
+yandexgpt 3
+yi 1.5 34b
+yi 34b
+yi large
+yi lightning
+yolo
+yolov2
+yolov3
+yolox x
+youtube recommendation model
+youtube video recommendation system
+yuan 1.0
+yuan 2.0
+yuyan 11b
+zi yue
+zi yue 2.0
+zidong taichu
+zoneout + variational lstm (wt2)
+λ wasp

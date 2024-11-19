@@ -324,3 +324,68 @@ def generate_and_update_id_names(csv_path, examples_csv_path, model_type, openai
     print("Fusion réussie. Modèles ajoutés :")
     print(added_models)
     return added_models
+
+
+
+
+def AIKoD_update_id_names(csv_directory, examples_directory, openai_api_key):
+    """
+    Génère et met à jour les `id_name` pour tous les fichiers CSV dans le répertoire spécifié.
+
+    :param csv_directory: Répertoire contenant les fichiers CSV pour lesquels les id_name doivent être générés.
+    :param examples_directory: Répertoire contenant les fichiers exemples utilisés pour chaque type.
+    :param openai_api_key: Clé API OpenAI pour les appels à l'API.
+    """
+    # Vérifier que les répertoires existent
+    if not os.path.exists(csv_directory):
+        raise FileNotFoundError(f"Le répertoire des CSV {csv_directory} n'existe pas.")
+    if not os.path.exists(examples_directory):
+        raise FileNotFoundError(f"Le répertoire des fichiers exemples {examples_directory} n'existe pas.")
+    
+    # Liste des fichiers exemples disponibles
+    example_files = {
+        "audio": os.path.join(examples_directory, "audio_exemple.csv"),
+        "image": os.path.join(examples_directory, "image_exemple.csv"),
+        "text": os.path.join(examples_directory, "text_exemple.csv")
+    }
+
+    # Parcourir tous les fichiers CSV dans le répertoire des CSV
+    for csv_file in os.listdir(csv_directory):
+        if csv_file.endswith(".csv"):
+            # Déterminer le chemin absolu du fichier CSV
+            csv_path = os.path.join(csv_directory, csv_file)
+
+            # Identifier le type de modèle
+            if "audio" in csv_file.lower():
+                model_type = "audio"
+                examples_csv_path = example_files["audio"]
+            elif "image" in csv_file.lower():
+                model_type = "image"
+                examples_csv_path = example_files["image"]
+            elif "text" in csv_file.lower() or "multimodal" in csv_file.lower():
+                model_type = "text"
+                examples_csv_path = example_files["text"]
+            else:
+                print(f"Impossible de déterminer le type pour {csv_file}. Ignoré.")
+                continue
+
+            # Vérifier que le fichier exemple existe pour le type
+            if not os.path.exists(examples_csv_path):
+                print(f"Fichier exemple manquant pour {model_type}: {examples_csv_path}. Ignoré.")
+                continue
+
+            # Appliquer la fonction pour générer et mettre à jour les id_name
+            print(f"Traitement du fichier : {csv_file} avec le type {model_type}...")
+            added_models = generate_and_update_id_names(
+                csv_path=csv_path,
+                examples_csv_path=examples_csv_path,
+                model_type=model_type,
+                openai_api_key=openai_api_key,
+                column_name="name"
+            )
+
+            # Afficher les résultats
+            if added_models:
+                print(f"Modèles ajoutés pour {csv_file} : {added_models}")
+            else:
+                print(f"Aucun modèle ajouté ou mise à jour non requise pour {csv_file}.")
