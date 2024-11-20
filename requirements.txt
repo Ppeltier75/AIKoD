@@ -10,4 +10,4 @@ beautifulsoup4
 firecrawl
 selenium
 webdriver-manager
-ipkernel
+ipykernel

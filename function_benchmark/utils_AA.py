@@ -203,7 +203,7 @@ def scrappe_table_texttoimageAA(output_dir):
 
         # Get the current date to name the CSV file
         current_date = datetime.now().strftime("%Y-%m-%d")
-        csv_filename = f"texttoimage_{current_date}.csv"
+        csv_filename = f"AA_texttoimage_{current_date}.csv"
         csv_path = os.path.join(output_dir, csv_filename)
         
         # Ensure the output directory exists
@@ -280,7 +280,7 @@ def scrappe_table_audiototextAA(output_dir):
 
         # Get the current date to name the CSV file
         current_date = datetime.now().strftime("%Y-%m-%d")
-        csv_filename = f"audiototext_{current_date}.csv"
+        csv_filename = f"AA_audiototext_{current_date}.csv"
         csv_path = os.path.join(output_dir, csv_filename)
         
         # Ensure the output directory exists
@@ -356,7 +356,7 @@ def scrappe_table_texttoaudioAA(output_dir):
 
         # Get the current date to name the CSV file
         current_date = datetime.now().strftime("%Y-%m-%d")
-        csv_filename = f"texttoaudio_{current_date}.csv"
+        csv_filename = f"AA_texttoaudio_{current_date}.csv"
         csv_path = os.path.join(output_dir, csv_filename)
         
         # Ensure the output directory exists
@@ -436,7 +436,7 @@ def scrappe_table_textAA(output_dir):
 
         # Get the current date to name the CSV file
         current_date = datetime.now().strftime("%Y-%m-%d")
-        csv_filename = f"text_{current_date}.csv"
+        csv_filename = f"AA_text_{current_date}.csv"
         csv_path = os.path.join(output_dir, csv_filename)
         
         # Ensure the output directory exists
