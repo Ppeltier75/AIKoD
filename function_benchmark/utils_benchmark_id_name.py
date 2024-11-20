@@ -218,3 +218,175 @@ def Benchmark_update_id_names(root_directory, examples_directory, openai_api_key
                     print(f"Modèles ajoutés pour {file} : {added_models}")
                 else:
                     print(f"Aucun modèle ajouté ou mise à jour non requise pour {file}.")
+
+
+def add_idname_benchmark(benchmark_dir, id_benchmark_dir):
+    """
+    Ajoute une colonne `id_name` aux fichiers CSV dans benchmark_dir en se basant uniquement
+    sur les fichiers correspondants (par préfixe) dans id_benchmark_dir.
+    Supprime toutes les colonnes commençant par 'id_name' avant de faire le merge.
+
+    :param benchmark_dir: Répertoire contenant les fichiers de benchmark (avec sous-dossiers).
+    :param id_benchmark_dir: Répertoire contenant les fichiers avec les `id_name`.
+    """
+    if not os.path.exists(benchmark_dir) or not os.path.exists(id_benchmark_dir):
+        print("Un des répertoires spécifiés n'existe pas.")
+        return
+
+    # Parcourir les fichiers dans id_benchmark_dir
+    id_name_files = {}
+    for root, _, files in os.walk(id_benchmark_dir):
+        subdir_name = os.path.basename(root)
+        for f in files:
+            if f.endswith("_idname.csv"):
+                key = os.path.basename(f).split("_idname")[0]
+                id_name_files[(subdir_name, key)] = os.path.join(root, f)
+
+    print(f"Fichiers d'ID_name détectés : {id_name_files}")
+
+    # Parcourir tous les fichiers CSV dans benchmark_dir, y compris les sous-dossiers
+    for root, _, files in os.walk(benchmark_dir):
+        subdir_name = os.path.basename(root)
+        for benchmark_file in files:
+            if not benchmark_file.endswith(".csv"):
+                continue
+
+            benchmark_file_path = os.path.join(root, benchmark_file)
+            print(f"Traitement du fichier benchmark : {benchmark_file_path}")
+
+            try:
+                # Lire le fichier benchmark
+                benchmark_df = pd.read_csv(benchmark_file_path)
+
+                # Supprimer toutes les colonnes commençant par 'id_name'
+                id_name_columns = [col for col in benchmark_df.columns if col.startswith("id_name")]
+                if id_name_columns:
+                    benchmark_df.drop(columns=id_name_columns, inplace=True)
+                    print(f"Colonnes supprimées : {id_name_columns}")
+
+                # Identifier la colonne des modèles (Model ou model_name)
+                model_column = None
+                for col in benchmark_df.columns:
+                    if col.lower() in ["model", "model_name"]:
+                        model_column = col
+                        break
+
+                if not model_column:
+                    print(f"Aucune colonne 'Model' ou 'model_name' trouvée dans {benchmark_file_path}. Ignoré.")
+                    continue
+
+                # Nettoyer les modèles pour le merge
+                benchmark_df["cleaned_model"] = benchmark_df[model_column].apply(
+                    lambda x: clean_model_name(x) if isinstance(x, str) else None
+                )
+
+                # Identifier le fichier id_name correspondant
+                prefix = "_".join(benchmark_file.split("_")[:2])  # Extraire le préfixe jusqu'au deuxième '_'
+                id_name_file = id_name_files.get((subdir_name, prefix))
+
+                if not id_name_file:
+                    print(f"Aucun fichier ID_name correspondant trouvé pour {benchmark_file_path}. Ignoré.")
+                    continue
+
+                # Charger le fichier id_name et nettoyer les noms
+                id_name_df = pd.read_csv(id_name_file)
+                if "name" not in id_name_df.columns or "id_name" not in id_name_df.columns:
+                    print(f"Colonnes 'name' ou 'id_name' manquantes dans {id_name_file}. Ignoré.")
+                    continue
+
+                id_name_df["cleaned_name"] = id_name_df["name"].apply(clean_model_name)
+
+                # Effectuer le merge
+                merged_df = benchmark_df.merge(
+                    id_name_df[["cleaned_name", "id_name"]],
+                    left_on="cleaned_model",
+                    right_on="cleaned_name",
+                    how="left"
+                )
+
+                # Supprimer les colonnes temporaires
+                merged_df.drop(columns=["cleaned_model", "cleaned_name"], inplace=True)
+
+                # Sauvegarder le fichier mis à jour
+                merged_df.to_csv(benchmark_file_path, index=False)
+                print(f"Fichier mis à jour : {benchmark_file_path}")
+
+            except Exception as e:
+                print(f"Erreur lors du traitement de {benchmark_file_path}: {e}")
+
+
+def add_id_name_benchmark_bis(input_dir, id_name_csv, column_names):
+    """
+    Analyse tous les fichiers CSV dans un répertoire donné et effectue un merge basé sur la colonne id_name.
+    
+    :param input_dir: Répertoire contenant les fichiers CSV à analyser.
+    :param id_name_csv: Chemin du fichier CSV contenant les id_name.
+    :param column_names: Liste des noms de colonnes à rechercher pour le merge.
+    """
+    if not os.path.exists(input_dir) or not os.path.exists(id_name_csv):
+        print("Le répertoire d'entrée ou le fichier d'ID_name spécifié n'existe pas.")
+        return
+
+    try:
+        # Charger le fichier id_name
+        id_name_df = pd.read_csv(id_name_csv)
+        if "name" not in id_name_df.columns or "id_name" not in id_name_df.columns:
+            print(f"Les colonnes 'name' ou 'id_name' sont absentes dans {id_name_csv}.")
+            return
+
+        # Nettoyer les noms dans le fichier id_name
+        id_name_df["cleaned_name"] = id_name_df["name"].apply(clean_model_name)
+
+    except Exception as e:
+        print(f"Erreur lors du chargement du fichier ID_name : {e}")
+        return
+
+    # Parcourir tous les fichiers dans le répertoire d'entrée
+    for root, _, files in os.walk(input_dir):
+        for file in files:
+            if not file.endswith(".csv"):
+                continue
+
+            file_path = os.path.join(root, file)
+            print(f"Traitement du fichier : {file_path}")
+
+            try:
+                # Charger le fichier CSV
+                benchmark_df = pd.read_csv(file_path)
+
+                # Identifier les colonnes correspondantes pour le merge
+                target_columns = [col for col in benchmark_df.columns if col in column_names]
+                if not target_columns:
+                    print(f"Aucune des colonnes spécifiées {column_names} trouvée dans {file_path}. Ignoré.")
+                    continue
+
+                # Supprimer les colonnes id_name existantes
+                id_name_columns = [col for col in benchmark_df.columns if col.startswith("id_name")]
+                if id_name_columns:
+                    benchmark_df.drop(columns=id_name_columns, inplace=True)
+                    print(f"Colonnes supprimées : {id_name_columns}")
+
+                # Nettoyer les colonnes cibles pour le merge
+                for target_col in target_columns:
+                    benchmark_df[f"cleaned_{target_col}"] = benchmark_df[target_col].apply(
+                        lambda x: clean_model_name(x) if isinstance(x, str) else None
+                    )
+
+                # Effectuer le merge pour chaque colonne cible
+                for target_col in target_columns:
+                    merged_df = benchmark_df.merge(
+                        id_name_df[["cleaned_name", "id_name"]],
+                        left_on=f"cleaned_{target_col}",
+                        right_on="cleaned_name",
+                        how="left"
+                    )
+
+                    # Supprimer les colonnes temporaires
+                    merged_df.drop(columns=[f"cleaned_{target_col}", "cleaned_name"], inplace=True)
+
+                    # Sauvegarder le fichier mis à jour
+                    merged_df.to_csv(file_path, index=False)
+                    print(f"Fichier mis à jour : {file_path}")
+
+            except Exception as e:
+                print(f"Erreur lors du traitement du fichier {file_path} : {e}")

@@ -1,20 +1,20 @@
-model_name,price_1m_blended_3_to_1,price_1m_input_tokens,price_1m_output_tokens
-GPT-4o (Aug '24),4.375,2.5,10.0
-GPT-4o (May '24),7.5,5.0,15.0
-GPT-4o mini,0.2625,0.15,0.6
-Llama 3.1 Instruct 405B,7.9975,5.33,16.0
-Llama 3.1 Instruct 70B,2.895,2.68,3.54
-Llama 3.1 Instruct 8B,0.3775,0.3,0.61
-Mistral Large 2,3.0,2.0,6.0
-Command-R+ (Apr '24),6.0,3.0,15.0
-Command-R (Mar '24),0.75,0.5,1.5
-Phi-3 Medium Instruct 14B,0.2975,0.17,0.68
-Jamba 1.5 Large,3.5,2.0,8.0
-Jamba 1.5 Mini,0.25,0.2,0.4
-GPT-4 Turbo,15.0,10.0,30.0
-GPT-3.5 Turbo,0.75,0.5,1.5
-Llama 3 Instruct 70B,2.895,2.68,3.54
-Llama 3 Instruct 8B,0.3775,0.3,0.61
-Mistral Large,6.0,4.0,12.0
-Mistral Small (Feb '24),1.5,1.0,3.0
-Jamba Instruct,0.55,0.5,0.7
+model_name,price_1m_blended_3_to_1,price_1m_input_tokens,price_1m_output_tokens,id_name
+GPT-4o (Aug '24),4.375,2.5,10.0,gpt-4o-unknown-unknown-202408-unknown-unknown-unknown-false
+GPT-4o (May '24),7.5,5.0,15.0,gpt-4o-unknown-unknown-202405-unknown-unknown-unknown-false
+GPT-4o mini,0.2625,0.15,0.6,gpt-mini-unknown-4o-unknown-unknown-unknown-false
+Llama 3.1 Instruct 405B,7.9975,5.33,16.0,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false
+Llama 3.1 Instruct 70B,2.895,2.68,3.54,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
+Llama 3.1 Instruct 8B,0.3775,0.3,0.61,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
+Mistral Large 2,3.0,2.0,6.0,mistral-large-unknown-2-unknown-unknown-unknown-unknown-false
+Command-R+ (Apr '24),6.0,3.0,15.0,commandr-plus-unknown-unknown-202404-unknown-unknown-unknown-false
+Command-R (Mar '24),0.75,0.5,1.5,commandr-unknown-unknown-202403-unknown-unknown-unknown-false
+Phi-3 Medium Instruct 14B,0.2975,0.17,0.68,phi-medium-unknown-3-unknown-unknown-14-instruct-false
+Jamba 1.5 Large,3.5,2.0,8.0,jamba-large-unknown-1.5-unknown-unknown-unknown-unknown-false
+Jamba 1.5 Mini,0.25,0.2,0.4,jamba-mini-unknown-1.5-unknown-unknown-unknown-unknown-false
+GPT-4 Turbo,15.0,10.0,30.0,gpt-unknown-turbo-4-unknown-unknown-unknown-false
+GPT-3.5 Turbo,0.75,0.5,1.5,gpt-unknown-turbo-3.5-unknown-unknown-unknown-false
+Llama 3 Instruct 70B,2.895,2.68,3.54,llama-unknown-unknown-3-unknown-70-unknown-instruct-false
+Llama 3 Instruct 8B,0.3775,0.3,0.61,llama-unknown-unknown-3-unknown-8-unknown-instruct-false
+Mistral Large,6.0,4.0,12.0,mistral-large-unknown-unknown-unknown-unknown-unknown-false
+Mistral Small (Feb '24),1.5,1.0,3.0,mistral-small-unknown-202402-unknown-unknown-unknown-false
+Jamba Instruct,0.55,0.5,0.7,jamba-instruct-unknown-1.5-unknown-unknown-unknown-unknown-false

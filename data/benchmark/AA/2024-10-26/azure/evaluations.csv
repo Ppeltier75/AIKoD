@@ -1,15 +1,15 @@
-model_name,quality_index,mmlu,gpqa,humaneval,math
-Llama 3.1 Instruct 405B,,,,,
-Llama 3.1 Instruct 70B,,,,,
-Llama 3.1 Instruct 8B,,,,,
-Mistral Large 2,,,,,
-Command-R+ (Apr '24),43.700,0.668,0.172,0.632,0.276
-Command-R (Mar '24),35.600,0.597,0.264,0.413,0.150
-Phi-3 Medium Instruct 14B,,,,,
-Jamba 1.5 Large,,,,,
-Jamba 1.5 Mini,,,,,
-Llama 3 Instruct 70B,60.900,0.792,0.363,0.763,0.517
-Llama 3 Instruct 8B,45.300,0.644,0.279,0.595,0.294
-Mistral Large,55.400,0.665,0.345,0.693,0.511
-Mistral Small (Feb '24),,,,,
-Jamba Instruct,28.200,0.577,0.252,0.002,0.296
+model_name,quality_index,mmlu,gpqa,humaneval,math,id_name
+Llama 3.1 Instruct 405B,,,,,,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false
+Llama 3.1 Instruct 70B,,,,,,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
+Llama 3.1 Instruct 8B,,,,,,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
+Mistral Large 2,,,,,,mistral-large-unknown-2-unknown-unknown-unknown-unknown-false
+Command-R+ (Apr '24),43.7,0.668,0.172,0.632,0.276,commandr-plus-unknown-unknown-202404-unknown-unknown-unknown-false
+Command-R (Mar '24),35.6,0.597,0.264,0.413,0.15,commandr-unknown-unknown-202403-unknown-unknown-unknown-false
+Phi-3 Medium Instruct 14B,,,,,,phi-medium-unknown-3-unknown-unknown-14-instruct-false
+Jamba 1.5 Large,,,,,,jamba-large-unknown-1.5-unknown-unknown-unknown-unknown-false
+Jamba 1.5 Mini,,,,,,jamba-mini-unknown-1.5-unknown-unknown-unknown-unknown-false
+Llama 3 Instruct 70B,60.9,0.792,0.363,0.763,0.517,llama-unknown-unknown-3-unknown-70-unknown-instruct-false
+Llama 3 Instruct 8B,45.3,0.644,0.279,0.595,0.294,llama-unknown-unknown-3-unknown-8-unknown-instruct-false
+Mistral Large,55.4,0.665,0.345,0.693,0.511,mistral-large-unknown-unknown-unknown-unknown-unknown-false
+Mistral Small (Feb '24),,,,,,mistral-small-unknown-202402-unknown-unknown-unknown-false
+Jamba Instruct,28.2,0.577,0.252,0.002,0.296,jamba-instruct-unknown-1.5-unknown-unknown-unknown-unknown-false

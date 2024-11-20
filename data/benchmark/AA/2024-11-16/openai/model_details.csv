@@ -1,10 +1,10 @@
-model_name,parameters,open_weights,open_weights_license_name,open_weights_license_url,release_date,context_window
-o1-preview,,False,,,2024-09-12,128000
-o1-mini,,False,,,2024-09-12,128000
-GPT-4o (Aug '24),,False,,,,128000
-GPT-4o (May '24),,False,,,2024-05-13,128000
-GPT-4o mini,,False,,,2024-07-18,128000
-GPT-4 Turbo,,False,,,2023-11-06,128000
-GPT-3.5 Turbo,,False,,,2023-03-03,16384
-GPT-4,,False,,,2023-03-14,8192
-GPT-3.5 Turbo Instruct,,False,,,2023-09-14,4096
+model_name,parameters,open_weights,open_weights_license_name,open_weights_license_url,release_date,context_window,id_name
+o1-preview,,False,,,2024-09-12,128000,o1-preview-unknown-unknown-unknown-unknown-unknown-false
+o1-mini,,False,,,2024-09-12,128000,o1-mini-unknown-unknown-unknown-unknown-unknown-false
+GPT-4o (Aug '24),,False,,,,128000,gpt-4o-unknown-unknown-202408-unknown-unknown-unknown-false
+GPT-4o (May '24),,False,,,2024-05-13,128000,gpt-4o-unknown-unknown-202405-unknown-unknown-unknown-false
+GPT-4o mini,,False,,,2024-07-18,128000,gpt-mini-unknown-4o-unknown-unknown-unknown-false
+GPT-4 Turbo,,False,,,2023-11-06,128000,gpt-unknown-turbo-4-unknown-unknown-unknown-false
+GPT-3.5 Turbo,,False,,,2023-03-03,16384,gpt-unknown-turbo-3.5-unknown-unknown-unknown-false
+GPT-4,,False,,,2023-03-14,8192,gpt-unknown-unknown-4-unknown-unknown-unknown-false
+GPT-3.5 Turbo Instruct,,False,,,2023-09-14,4096,gpt-unknown-turbo-3.5-unknown-unknown-unknown-instruct-false

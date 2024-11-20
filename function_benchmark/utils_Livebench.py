@@ -54,7 +54,7 @@ def scrape_table_livebench(driver, url, save_path):
         df = pd.DataFrame(table_data[1:], columns=table_data[0])  # Ignorer la première ligne pour les données
 
         # Sauvegarder dans un fichier CSV
-        file_name = f'Livebench_all_{date_text}.csv'
+        file_name = f'Livebench_text_{date_text}.csv'
         os.makedirs(save_path, exist_ok=True)
         file_path = os.path.join(save_path, file_name)
         df.to_csv(file_path, index=False)

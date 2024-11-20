@@ -1,4 +1,4 @@
-model_name,parameters,open_weights,open_weights_license_name,open_weights_license_url,release_date,context_window
-DeepSeek-Coder-V2,236,True,DEEPSEEK LICENSE AGREEMENT,https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct-0724/blob/main/LICENSE,2024-06-17,128000
-DeepSeek-V2-Chat,236,True,DEEPSEEK LICENSE AGREEMENT,https://github.com/deepseek-ai/DeepSeek-V2/blob/main/LICENSE-MODEL,2024-05-06,128000
-DeepSeek-V2.5,236,True,DEEPSEEK LICENSE AGREEMENT,https://github.com/deepseek-ai/DeepSeek-V2/blob/main/LICENSE-MODEL,2024-09-06,128000
+model_name,parameters,open_weights,open_weights_license_name,open_weights_license_url,release_date,context_window,id_name
+DeepSeek-Coder-V2,236,True,DEEPSEEK LICENSE AGREEMENT,https://huggingface.co/deepseek-ai/DeepSeek-Coder-V2-Instruct-0724/blob/main/LICENSE,2024-06-17,128000,deepseek-unknown-unknown-2-unknown-unknown-unknown-coder-false
+DeepSeek-V2-Chat,236,True,DEEPSEEK LICENSE AGREEMENT,https://github.com/deepseek-ai/DeepSeek-V2/blob/main/LICENSE-MODEL,2024-05-06,128000,deepseek-unknown-chat-2-unknown-unknown-unknown-unknown-false
+DeepSeek-V2.5,236,True,DEEPSEEK LICENSE AGREEMENT,https://github.com/deepseek-ai/DeepSeek-V2/blob/main/LICENSE-MODEL,2024-09-06,128000,deepseek-unknown-unknown-2.5-unknown-unknown-unknown-unknown-false

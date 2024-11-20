@@ -1,9 +1,9 @@
-model_name,quality_index,mmlu,gpqa,humaneval,math
-Llama 3.1 Instruct 405B,74.000,0.876,0.513,0.844,0.729
-Llama 3.1 Instruct 70B,65.800,0.837,0.449,0.743,0.604
-Llama 3.1 Instruct 8B,53.700,0.711,0.253,0.666,0.517
-Llama 3.2 Instruct 3B,36.000,0.638,0.208,0.090,0.504
-Pixtral 12B (2409),56.500,0.695,0.302,0.726,0.537
-DeepSeek-V2.5,,,,,
-Qwen2.5 Instruct 72B,75.400,0.857,0.503,0.848,0.807
-Llama 3 Instruct 70B,62.300,0.795,0.393,0.774,0.529
+model_name,quality_index,mmlu,gpqa,humaneval,math,id_name
+Llama 3.1 Instruct 405B,74.0,0.876,0.513,0.844,0.729,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false
+Llama 3.1 Instruct 70B,65.8,0.837,0.449,0.743,0.604,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
+Llama 3.1 Instruct 8B,53.7,0.711,0.253,0.666,0.517,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
+Llama 3.2 Instruct 3B,36.0,0.638,0.208,0.09,0.504,llama-unknown-unknown-3.2-unknown-3-unknown-unknown-false
+Pixtral 12B (2409),56.5,0.695,0.302,0.726,0.537,pixtral-unknown-unknown-unknown-12-unknown-2409-unknown-false
+DeepSeek-V2.5,,,,,,deepseek-unknown-unknown-2.5-unknown-unknown-unknown-unknown-false
+Qwen2.5 Instruct 72B,75.4,0.857,0.503,0.848,0.807,qwen-unknown-unknown-2.5-unknown-72-unknown-instruct-false
+Llama 3 Instruct 70B,62.3,0.795,0.393,0.774,0.529,llama-unknown-unknown-3-unknown-70-unknown-instruct-false

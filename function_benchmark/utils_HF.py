@@ -215,9 +215,9 @@ def update_csv_from_leaderboards_Absolubench(input_dir, output_dir):
     """
     # Chemins des fichiers CSV finaux
     files_to_generate = {
-        "Arena Elo rating": os.path.join(output_dir, "HF_AE.csv"),
-        "MMLU": os.path.join(output_dir, "HF_MMLU.csv"),
-        "MT-bench (score)": os.path.join(output_dir, "HF_MT.csv"),
+        "Arena Elo rating": os.path.join(output_dir, "HF_text_AE.csv"),
+        "MMLU": os.path.join(output_dir, "HF_text_MMLU.csv"),
+        "MT-bench (score)": os.path.join(output_dir, "HF_text_MT.csv"),
     }
 
     # Créer un DataFrame vide pour chaque fichier si non existant

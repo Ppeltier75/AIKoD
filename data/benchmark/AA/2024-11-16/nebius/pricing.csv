@@ -1,18 +1,18 @@
-model_name,price_1m_blended_3_to_1,price_1m_input_tokens,price_1m_output_tokens
-Llama 3.1 Instruct 405B,1.5,1.0,3.0
-Llama 3.1 Instruct 70B,0.1975,0.13,0.4
-Llama 3.1 Instruct 70B,0.375,0.25,0.75
-Llama 3.1 Instruct 8B,0.045,0.03,0.09
-Llama 3.1 Instruct 8B,0.03,0.02,0.06
-Gemma 2 9B,0.045,0.03,0.09
-Gemma 2 9B,0.03,0.02,0.06
-Mixtral 8x22B Instruct,0.6,0.4,1.2
-Mixtral 8x22B Instruct,1.05,0.7,2.1
-Mistral NeMo,0.12,0.08,0.24
-Mistral NeMo,0.06,0.04,0.12
-Mixtral 8x7B Instruct,0.225,0.15,0.45
-Mixtral 8x7B Instruct,0.12,0.08,0.24
-Llama 3.1 Nemotron Instruct 70B,0.1975,0.13,0.4
-Llama 3.1 Nemotron Instruct 70B,0.375,0.25,0.75
-Qwen2.5 Instruct 72B,0.1975,0.13,0.4
-Qwen2.5 Instruct 72B,0.375,0.25,0.75
+model_name,price_1m_blended_3_to_1,price_1m_input_tokens,price_1m_output_tokens,id_name
+Llama 3.1 Instruct 405B,1.5,1.0,3.0,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false
+Llama 3.1 Instruct 70B,0.1975,0.13,0.4,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
+Llama 3.1 Instruct 70B,0.375,0.25,0.75,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
+Llama 3.1 Instruct 8B,0.045,0.03,0.09,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
+Llama 3.1 Instruct 8B,0.03,0.02,0.06,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
+Gemma 2 9B,0.045,0.03,0.09,gemma-unknown-unknown-2-unknown-9-unknown-unknown-false
+Gemma 2 9B,0.03,0.02,0.06,gemma-unknown-unknown-2-unknown-9-unknown-unknown-false
+Mixtral 8x22B Instruct,0.6,0.4,1.2,mixtral-unknown-unknown-unknown-8x22-unknown-unknown-instruct-false
+Mixtral 8x22B Instruct,1.05,0.7,2.1,mixtral-unknown-unknown-unknown-8x22-unknown-unknown-instruct-false
+Mistral NeMo,0.12,0.08,0.24,mistral-nemo-unknown-unknown-unknown-unknown-unknown-false
+Mistral NeMo,0.06,0.04,0.12,mistral-nemo-unknown-unknown-unknown-unknown-unknown-false
+Mixtral 8x7B Instruct,0.225,0.15,0.45,mixtral-unknown-unknown-unknown-8x7-unknown-unknown-instruct-false
+Mixtral 8x7B Instruct,0.12,0.08,0.24,mixtral-unknown-unknown-unknown-8x7-unknown-unknown-instruct-false
+Llama 3.1 Nemotron Instruct 70B,0.1975,0.13,0.4,llama-nemotron-unknown-3.1-unknown-70-unknown-instruct-false
+Llama 3.1 Nemotron Instruct 70B,0.375,0.25,0.75,llama-nemotron-unknown-3.1-unknown-70-unknown-instruct-false
+Qwen2.5 Instruct 72B,0.1975,0.13,0.4,qwen-unknown-unknown-2.5-unknown-72-unknown-instruct-false
+Qwen2.5 Instruct 72B,0.375,0.25,0.75,qwen-unknown-unknown-2.5-unknown-72-unknown-instruct-false

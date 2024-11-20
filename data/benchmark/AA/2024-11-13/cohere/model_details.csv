@@ -1,7 +1,7 @@
-model_name,parameters,open_weights,open_weights_license_name,open_weights_license_url,release_date,context_window
-Command-R+ (Aug '24),104,True,CC-BY-NC 4.0 License with Acceptable Use Addendum,https://cohere.com/c4ai-cc-by-nc-license,2024-08-30,128000
-Command-R (Aug '24),32,True,CC-BY-NC 4.0 License with Acceptable Use Addendum,https://cohere.com/c4ai-cc-by-nc-license,2024-08-30,128000
-Command-R+ (Apr '24),104,True,CC-BY-NC 4.0 License with Acceptable Use Addendum,https://cohere.com/c4ai-cc-by-nc-license,2024-04-05,128000
-Command-R (Mar '24),35,True,CC-BY-NC 4.0 License with Acceptable Use Addendum,https://cohere.com/c4ai-cc-by-nc-license,2024-03-12,128000
-Aya Expanse 8B,8,True,CC-BY-NC 4.0 License with Acceptable Use Addendum,https://cohere.com/c4ai-cc-by-nc-license,2024-10-24,8000
-Aya Expanse 32B,32,True,CC-BY-NC 4.0 License with Acceptable Use Addendum,https://cohere.com/c4ai-cc-by-nc-license,2024-10-24,8000
+model_name,parameters,open_weights,open_weights_license_name,open_weights_license_url,release_date,context_window,id_name
+Command-R+ (Aug '24),104,True,CC-BY-NC 4.0 License with Acceptable Use Addendum,https://cohere.com/c4ai-cc-by-nc-license,2024-08-30,128000,commandr-plus-unknown-unknown-202408-unknown-unknown-unknown-false
+Command-R (Aug '24),32,True,CC-BY-NC 4.0 License with Acceptable Use Addendum,https://cohere.com/c4ai-cc-by-nc-license,2024-08-30,128000,commandr-unknown-unknown-202408-unknown-unknown-unknown-false
+Command-R+ (Apr '24),104,True,CC-BY-NC 4.0 License with Acceptable Use Addendum,https://cohere.com/c4ai-cc-by-nc-license,2024-04-05,128000,commandr-plus-unknown-unknown-202404-unknown-unknown-unknown-false
+Command-R (Mar '24),35,True,CC-BY-NC 4.0 License with Acceptable Use Addendum,https://cohere.com/c4ai-cc-by-nc-license,2024-03-12,128000,commandr-unknown-unknown-202403-unknown-unknown-unknown-false
+Aya Expanse 8B,8,True,CC-BY-NC 4.0 License with Acceptable Use Addendum,https://cohere.com/c4ai-cc-by-nc-license,2024-10-24,8000,aya-expanse-unknown-unknown-unknown-unknown-8-unknown-unknown-false
+Aya Expanse 32B,32,True,CC-BY-NC 4.0 License with Acceptable Use Addendum,https://cohere.com/c4ai-cc-by-nc-license,2024-10-24,8000,aya-expanse-unknown-unknown-unknown-unknown-32-unknown-unknown-false

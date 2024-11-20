@@ -256,3 +256,32 @@ def main():
 if __name__ == "__main__":
     main()
 # %%
+from function_benchmark.utils_benchmark_id_name import add_idname_benchmark
+
+if __name__ == "__main__":
+    base_path = os.path.abspath(os.path.dirname(__file__))
+    benchmark_dir = os.path.join(base_path, "data", "benchmark")
+    id_benchmark_dir = os.path.join(base_path, "data", "id_name", "benchmark")
+
+    print("Ajout des id_name aux fichiers benchmark...")
+    add_idname_benchmark(benchmark_dir, id_benchmark_dir)
+
+# %%
+from function_benchmark.utils_benchmark_id_name import add_id_name_benchmark_bis
+import os 
+
+if __name__ == "__main__":
+    base_path = os.path.abspath(os.path.dirname(__file__))
+    
+    # Répertoire contenant les fichiers benchmark
+    benchmark_dir = os.path.join(base_path, "data", "benchmark","AA","2024-11-16")
+    
+    # Fichier CSV contenant les id_name
+    id_name_csv = os.path.join(base_path, "data", "id_name", "benchmark", "AA", "AA_text_idname.csv")
+    
+    # Colonnes à rechercher pour le merge
+    column_names = ["model", "model_name"]
+
+    # Appeler la fonction
+    add_id_name_benchmark_bis(benchmark_dir, id_name_csv, column_names)
+# %%

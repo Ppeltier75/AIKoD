@@ -1,5 +1,5 @@
-model_name,price_1m_blended_3_to_1,price_1m_input_tokens,price_1m_output_tokens
-Command-R+ (Aug '24),4.375,2.5,10.0
-Command-R (Aug '24),0.2625,0.15,0.6
-Command-R+ (Apr '24),6.0,3.0,15.0
-Command-R (Mar '24),0.75,0.5,1.5
+model_name,price_1m_blended_3_to_1,price_1m_input_tokens,price_1m_output_tokens,id_name
+Command-R+ (Aug '24),4.375,2.5,10.0,commandr-plus-unknown-unknown-202408-unknown-unknown-unknown-false
+Command-R (Aug '24),0.2625,0.15,0.6,commandr-unknown-unknown-202408-unknown-unknown-unknown-false
+Command-R+ (Apr '24),6.0,3.0,15.0,commandr-plus-unknown-unknown-202404-unknown-unknown-unknown-false
+Command-R (Mar '24),0.75,0.5,1.5,commandr-unknown-unknown-202403-unknown-unknown-unknown-false

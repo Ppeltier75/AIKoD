@@ -1,20 +1,20 @@
-Provider,Model,Streaming Support,Footnotes,Model Arena ELO,Characters Per Second,Price Per 1M Characters (USD)
-OpenAI,"HD, OpenAI TTS",,,1219,71.6,$30.00
-ElevenLabs,"Turbo v2.5, ElevenLabs",,,1192,355.7,$103.00
-ElevenLabs,"Multilingual v2, ElevenLabs",,,1190,77.5,$206.00
-OpenAI,"Standard, OpenAI TTS",,,1156,98.7,$15.00
-Cartesia,"Sonic English (Oct '24), Cartesia",,,1144,39.8,$46.70
-Microsoft Azure,"Neural, Microsoft Azure",,,1096,279.3,$15.00
-Amazon Bedrock,"Long-form, Amazon Polly",,,1088,330.6,$100.00
-Google,"Studio, Google Cloud TTS",,,1064,284.8,$160.00
-Google,"Journey, Google Cloud TTS",,,1061,111.8,$160.00
-LMNT,LMNT,,,979,329.7,$43.60
-Replicate,OpenVoice v2,,,977,3.7,$10.89
-Replicate,XTTS v2,,,920,32.5,$29.64
-Replicate,StyleTTS 2,,,895,2.4,$2.84
-Google,"WaveNet, Google Cloud TTS",,,891,604.8,$16.00
-Amazon Bedrock,"Neural, Amazon Polly",,,872,488.0,$16.00
-Google,"Neural2, Google Cloud TTS",,,857,802.6,$16.00
-Google,"Standard, Google Cloud TTS",,,840,967.3,$4.00
-Replicate,MetaVoice v1,,,796,1.2,$123.97
-Amazon Bedrock,"Standard, Amazon Polly",,,777,872.1,$4.00
+Provider,Model,Streaming Support,Footnotes,Model Arena ELO,Characters Per Second,Price Per 1M Characters (USD),id_name_x,id_name_y,id_name
+OpenAI,"HD, OpenAI TTS",,,1219,71.6,$30.00,openai-unknown-unknown-unknown,openai-unknown-unknown-unknown,openai-unknown-unknown-unknown
+ElevenLabs,"Turbo v2.5, ElevenLabs",,,1192,355.7,$103.00,elevenlabs-turbo-unknown-2.5,elevenlabs-turbo-unknown-2.5,elevenlabs-turbo-unknown-2.5
+ElevenLabs,"Multilingual v2, ElevenLabs",,,1190,77.5,$206.00,elevenlabs-multilingual-unknown-2,elevenlabs-multilingual-unknown-2,elevenlabs-multilingual-unknown-2
+OpenAI,"Standard, OpenAI TTS",,,1156,98.7,$15.00,openai-standard-unknown,openai-standard-unknown,openai-standard-unknown
+Cartesia,"Sonic English (Oct '24), Cartesia",,,1144,39.8,$46.70,cartesia-sonic-english-unknown-24,cartesia-sonic-english-unknown-24,cartesia-sonic-english-unknown-24
+Microsoft Azure,"Neural, Microsoft Azure",,,1096,279.3,$15.00,microsoft-azure-neural-unknown,microsoft-azure-neural-unknown,microsoft-azure-neural-unknown
+Amazon Bedrock,"Long-form, Amazon Polly",,,1088,330.6,$100.00,amazon-polly-longform-unknown-unknown,amazon-polly-longform-unknown-unknown,amazon-polly-longform-unknown-unknown
+Google,"Studio, Google Cloud TTS",,,1064,284.8,$160.00,google-cloud-studio-unknown,google-cloud-studio-unknown,google-cloud-studio-unknown
+Google,"Journey, Google Cloud TTS",,,1061,111.8,$160.00,google-cloud-unknown-unknown-unknown,google-cloud-unknown-unknown-unknown,google-cloud-unknown-unknown-unknown
+LMNT,LMNT,,,979,329.7,$43.60,lmnt-unknown-unknown-unknown,lmnt-unknown-unknown-unknown,lmnt-unknown-unknown-unknown
+Replicate,OpenVoice v2,,,977,3.7,$10.89,openvoice-unknown-unknown-2,openvoice-unknown-unknown-2,openvoice-unknown-unknown-2
+Replicate,XTTS v2,,,920,32.5,$29.64,xtts-unknown-unknown-2,xtts-unknown-unknown-2,xtts-unknown-unknown-2
+Replicate,StyleTTS 2,,,895,2.4,$2.84,styletts-unknown-unknown-2,styletts-unknown-unknown-2,styletts-unknown-unknown-2
+Google,"WaveNet, Google Cloud TTS",,,891,604.8,$16.00,google-cloud-wavenet-unknown,google-cloud-wavenet-unknown,google-cloud-wavenet-unknown
+Amazon Bedrock,"Neural, Amazon Polly",,,872,488.0,$16.00,amazon-polly-neural-unknown,amazon-polly-neural-unknown,amazon-polly-neural-unknown
+Google,"Neural2, Google Cloud TTS",,,857,802.6,$16.00,google-cloud-neural2-unknown,google-cloud-neural2-unknown,google-cloud-neural2-unknown
+Google,"Standard, Google Cloud TTS",,,840,967.3,$4.00,google-cloud-standard-unknown,google-cloud-standard-unknown,google-cloud-standard-unknown
+Replicate,MetaVoice v1,,,796,1.2,$123.97,metavoice-unknown-unknown-1,metavoice-unknown-unknown-1,metavoice-unknown-unknown-1
+Amazon Bedrock,"Standard, Amazon Polly",,,777,872.1,$4.00,amazon-polly-standard-unknown,amazon-polly-standard-unknown,amazon-polly-standard-unknown
