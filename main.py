@@ -118,3 +118,16 @@ if __name__ == "__main__":
 
 
 # %%
+import os
+from function_utils.utils_extract_pricing import extract_pricing_text
+
+if __name__ == "__main__":
+    # Définir le chemin de base et les répertoires
+    base_path = os.path.abspath(os.path.dirname(__file__))
+    json_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v1.json")
+    pricing_dir = os.path.join(base_path, "data", "pricing")
+
+    # Appeler la fonction pour extraire les prix
+    print("Extraction des prix en cours...")
+    extract_pricing_text(json_path, pricing_dir)
+    print("Extraction terminée.")
