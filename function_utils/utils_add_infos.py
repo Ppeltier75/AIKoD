@@ -33,36 +33,41 @@ def add_model_type(json_path, output_path=None):
                     unit_input = [unit.lower() for unit in unit_input]
                     unit_output = [unit.lower() for unit in unit_output]
 
+                    # Traiter "code" comme "text" pour la détermination des types
+                    temp_input = [mod.replace("code", "text") for mod in modality_input]
+                    temp_output = [mod.replace("code", "text") for mod in modality_output]
+
                     # Vérification spéciale pour `text` en input/output avec d'autres modalités
                     if (
-                        "text" in modality_input and
-                        "text" in modality_output and
-                        any(mod not in ["text", "image", "audio"] for mod in modality_input + modality_output)
+                        "text" in temp_input and
+                        "text" in temp_output and
+                        any(mod not in ["text", "image", "audio", "video"] for mod in modality_input + modality_output)
                     ):
                         model_type = "task"
                     elif any('api request' in unit for unit in unit_input + unit_output):
                         model_type = "task"
                     elif "embedding" in modality_output:
                         model_type = "embeddings"
-                    elif ("text" in modality_input or "code" in modality_input) and \
-                         ("text" in modality_output or "code" in modality_output) and \
+                    elif ("text" in temp_input and "text" in temp_output) and \
                          ("audio" in modality_input or "audio" in modality_output or
                           "image" in modality_input or "image" in modality_output):
                         model_type = "multimodal"
-                    elif ("text" in modality_input and "text" in modality_output):
+                    elif ("text" in temp_input and "text" in temp_output):
                         model_type = "text"
-                    elif ("text" in modality_input and "image" in modality_output):
+                    elif ("text" in temp_input and "image" in temp_output):
                         model_type = "text to image"
-                    elif ("image" in modality_input and "image" in modality_output):
+                    elif ("image" in temp_input and "image" in temp_output):
                         model_type = "image to image"
-                    elif ("image" in modality_input and "text" in modality_output):
+                    elif ("image" in temp_input and "text" in temp_output):
                         model_type = "image to text"
-                    elif ("audio" in modality_input and "audio" in modality_output):
+                    elif ("audio" in temp_input and "audio" in temp_output):
                         model_type = "audio to audio"
-                    elif ("audio" in modality_input and "text" in modality_output):
+                    elif ("audio" in temp_input and "text" in temp_output):
                         model_type = "audio to text"
-                    elif ("text" in modality_input and "audio" in modality_output):
+                    elif ("text" in temp_input and "audio" in temp_output):
                         model_type = "text to audio"
+                    elif ("video" in modality_output or "vidéo" in modality_output):
+                        model_type = "video"
                     else:
                         model_type = "unknown"
 
@@ -75,7 +80,13 @@ def add_model_type(json_path, output_path=None):
         json.dump(data, outfile, ensure_ascii=False, indent=4)
 
     print(f"Les types de modèles ont été ajoutés et sauvegardés dans {final_output_path}.")
-    
+    # Sauvegarder les données avec les types ajoutés dans un nouveau fichier JSON
+    final_output_path = output_path if output_path else json_path
+    with open(final_output_path, 'w', encoding='utf-8') as outfile:
+        json.dump(data, outfile, ensure_ascii=False, indent=4)
+
+    print(f"Les types de modèles ont été ajoutés et sauvegardés dans {final_output_path}.")
+
 
 def add_id_name_to_json_with_type(json_path, csv_dir, output_path=None):
     """

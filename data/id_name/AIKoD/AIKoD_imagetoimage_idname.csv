@@ -23,8 +23,6 @@ sketch,sketch-unknown-unknown-unknown-unknown-unknown-False
 stable diffusion v1 5 img2img (50 steps 1024x1024),stablediffusion-unknown-unknown-1.5-img2img-1024x1024-50-False
 stable diffusion v1 5 img2img (50 steps 2048x2048),stablediffusion-unknown-unknown-1.5-img2img-2048x2048-50-False
 stable diffusion v1 5 img2img (50 steps 512x512),stablediffusion-unknown-unknown-1.5-img2img-512x512-50-False
-stable diffusion x4 latent upscaler 1024 pixels,stablediffusion-unknown-unknown-x4-latentupscaler-1024x1024-unknown-False
-stable diffusion x4 latent upscaler 512 pixels,stablediffusion-unknown-unknown-x4-latentupscaler-512x512-unknown-False
 structure,structure-unknown-unknown-unknown-unknown-unknown-False
 style,style-unknown-unknown-unknown-unknown-unknown-False
 super resolution,superresolution-unknown-unknown-unknown-unknown-unknown-False

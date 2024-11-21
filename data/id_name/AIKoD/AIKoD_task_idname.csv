@@ -76,3 +76,57 @@ wordtune api summarize
 wordtune api summarize by segment
 wordtune api text improvements
 wordtune api text segmentation
+21.1b 41b
+4.1b 8b
+41.1b 80b
+8.1b 21b
+80.1b 110b
+ada
+ada v1 (embedding)
+ada v2
+ada v2 (embedding)
+ada v2 embed
+all minilm l12 v2
+assistants api (file search)
+assistants api retrieval
+babbage v1 (embedding)
+chat language code and moderation models 21.1b 41b
+chat language code and moderation models 4.1b 8b
+chat language code and moderation models 41.1b 80b
+chat language code and moderation models 8.1b 21b
+chat language code and moderation models 80.1b 110b
+chat language code and moderation models up to 4b
+classify
+classify default
+claude
+claude team
+curie v1 (embedding)
+davinci v1 (embedding)
+embed anglais
+embed multilingue
+embedding (ada v1)
+embedding (ada v2)
+embedding (babbage v1)
+embedding (curie v1)
+embedding (davinci v1)
+gemini 1.0 pro
+google: gemini pro 1.0
+google: gemini pro vision 1.0
+gte large
+gte large zh
+lepton search (beta)
+multilingual e5 large
+rerank 2
+rerank 3
+slate 125m english rtrvr
+slate 125m english rtrvr v2
+slate 30m english rtrvr
+slate 30m english rtrvr v2
+text embedding ada 002
+up to 4b
+classify custom
+rerank
+rerank custom
+rerank default
+summarize custom
+summarize default

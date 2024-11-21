@@ -18,7 +18,7 @@ output_dir = os.path.join(base_path, "data/id_name/AIKoD")
 add_model_type(json_path, updated_json_path)
 
 # Extraire les noms des modèles par type et les enregistrer dans des CSV
-#update_model_names_in_csv(updated_json_path, output_dir)
+update_model_names_in_csv(updated_json_path, output_dir)
 
 # %%
 import json 

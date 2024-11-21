@@ -4,8 +4,6 @@ name
 abab5.5
 abab5.5 chat 240123
 abab6.5
-azure ai speech stt
-azure ai speech tts
 baichuan text embedding
 baichuan2 53b
 baichuan4
@@ -40,8 +38,6 @@ codegen2 (16b)
 codegen2 (7b)
 codestral mamba
 codestral mamba 7b
-cogvideox
-core
 custom classification model image
 dall·e 2
 dall·e 2 (1024x1024)
@@ -84,7 +80,6 @@ grounding with google search for up to 1m requests per day
 image prompt (ip) adapter (30 steps 1024x1024)
 imagen
 jurassic light
-kling ai
 library
 llama 2 13b
 llama 2 70b
@@ -92,7 +87,6 @@ llama 2 chat (70b)
 llama 3 70b
 llama guard (7b)
 llama guard 3 11b vision
-luma ai api
 luminous base
 magma base
 meta llama 3.2 11b vision instruct turbo
@@ -115,38 +109,14 @@ qwen2.5 coder 1.5b instruct
 qwen2.5 coder 7b
 qwen2.5 coder 7b instruct
 replit code v1 (3b)
-sam v2 video
-sd 1.6 512
 sdxl 1.0
-sdxl 1.0 1024
 sdxl fine tuning (1000 steps)
 sqlcoder
 sqlcoder (15b)
 stable code 3b
-stable diffusion 1.5 30 steps 512 pixels
-stable diffusion 1.5 hd 30 steps 1024 pixels
-stable diffusion 1.6 30 steps 512 pixels
-stable diffusion 1.6 hd 30 steps 1024 pixels
-stable diffusion 2.1 30 steps 512 pixels
-stable diffusion 2.1 hd 30 steps 1024 pixels
-stable diffusion 3 & 3.5 large
-stable diffusion 3 & 3.5 large turbo
-stable diffusion 3 & 3.5 medium
-stable diffusion 3 large
-stable diffusion 3 large turbo
-stable diffusion 3 medium
-stable diffusion xl 0.8 30 steps 512 pixels
-stable diffusion xl 0.9 30 steps 1024 pixels
 stable diffusion xl 1.0 (25 steps 512x512)
-stable diffusion xl 1.0 1024 30 steps
-stable diffusion xl 1.0 30 steps 1024 pixels
 stable fast 3d
-stable image core
-stable image ultra
 stable triposr 3d
-stable video
-stable video diffusion (50 steps)
-stable video diffusion api
 starcoder
 starcoder (16b)
 starcoder 15.5b
@@ -155,12 +125,10 @@ starcoder2 15b
 starcoder2 3b
 starcoder2 7b
 suno ai
-svd 1.1 (stable video diffusion 1.1)
 text embedding 3 small
 timegen 1
 tts
 ultra
-video faceswap
 voice cloning api
 web search pro
 whisper

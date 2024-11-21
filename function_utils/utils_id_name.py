@@ -73,8 +73,9 @@ def extract_names_by_type(json_path, output_dir):
 
 def update_model_names_in_csv(json_path, csv_dir):
     """
-    Analyse les fichiers CSV et le JSON pour détecter de nouveaux noms de modèles
-    et les ajouter aux fichiers CSV correspondants.
+    Met à jour les fichiers CSV dans un répertoire en fonction des modèles et types
+    extraits du fichier JSON. Ajoute les nouveaux modèles et supprime ceux qui ne
+    devraient plus y être, en fonction de leur type.
 
     :param json_path: Chemin du fichier JSON contenant les données.
     :param csv_dir: Répertoire contenant les fichiers CSV à mettre à jour.
@@ -83,7 +84,7 @@ def update_model_names_in_csv(json_path, csv_dir):
     temp_output_dir = os.path.join(csv_dir, "temp")  # Dossier temporaire pour comparer les fichiers
     os.makedirs(temp_output_dir, exist_ok=True)
 
-    # Extraire les noms des modèles dans des fichiers temporaires
+    # Extraire les noms des modèles dans des fichiers temporaires par type
     extract_names_by_type(json_path, temp_output_dir)
 
     # Parcourir les fichiers temporaires pour comparer avec les CSV existants
@@ -100,30 +101,36 @@ def update_model_names_in_csv(json_path, csv_dir):
             final_df = pd.read_csv(final_csv_path)
             existing_names = set(final_df["name"].tolist())
         else:
+            final_df = pd.DataFrame(columns=["name"])
             existing_names = set()
             print(f"Création d'un nouveau fichier CSV : {final_csv_path}")
 
-        # Trouver les modèles à ajouter
+        # Déterminer les actions nécessaires :
+        # 1. Ajouter les nouveaux modèles au CSV
         added_names = new_names - existing_names
+        # 2. Supprimer les modèles qui ne sont plus valides
+        removed_names = existing_names - new_names
 
+        # Si des modèles doivent être supprimés
+        if removed_names:
+            print(f"Suppression des modèles obsolètes dans {final_csv_path} : {removed_names}")
+            final_df = final_df[~final_df["name"].isin(removed_names)]
+
+        # Si des modèles doivent être ajoutés
         if added_names:
-            # Ajouter les nouveaux modèles au fichier final
-            updated_names = sorted(existing_names | added_names)
-            updated_df = pd.DataFrame(updated_names, columns=["name"])
-            updated_df.to_csv(final_csv_path, index=False)
+            print(f"Ajout des nouveaux modèles dans {final_csv_path} : {added_names}")
+            added_df = pd.DataFrame(sorted(added_names), columns=["name"])
+            final_df = pd.concat([final_df, added_df], ignore_index=True)
 
-            # Afficher les modèles ajoutés
-            for added_name in added_names:
-                print(f"Ajouté : {added_name} au fichier : {final_csv_path}")
-        else:
-            print(f"Aucun nouveau modèle à ajouter pour le fichier : {final_csv_path}")
+        # Sauvegarder le fichier CSV mis à jour
+        final_df.to_csv(final_csv_path, index=False)
 
     # Nettoyer le dossier temporaire
     for temp_file in os.listdir(temp_output_dir):
         os.remove(os.path.join(temp_output_dir, temp_file))
     os.rmdir(temp_output_dir)
 
-
+    print("Mise à jour des fichiers CSV terminée.")
 def create_prompt_id_name(model_names, model_type, examples_csv_path, column_name='name'):
     """
     Creates a prompt to generate IDs based on the provided model names and type.
