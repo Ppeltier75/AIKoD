@@ -33,8 +33,14 @@ def add_model_type(json_path, output_path=None):
                     unit_input = [unit.lower() for unit in unit_input]
                     unit_output = [unit.lower() for unit in unit_output]
 
-                    # Déterminer le type du modèle
-                    if any('api request' in unit for unit in unit_input + unit_output):
+                    # Vérification spéciale pour `text` en input/output avec d'autres modalités
+                    if (
+                        "text" in modality_input and
+                        "text" in modality_output and
+                        any(mod not in ["text", "image", "audio"] for mod in modality_input + modality_output)
+                    ):
+                        model_type = "task"
+                    elif any('api request' in unit for unit in unit_input + unit_output):
                         model_type = "task"
                     elif "embedding" in modality_output:
                         model_type = "embeddings"
@@ -68,7 +74,8 @@ def add_model_type(json_path, output_path=None):
     with open(final_output_path, 'w', encoding='utf-8') as outfile:
         json.dump(data, outfile, ensure_ascii=False, indent=4)
 
-    print(f"Les types de modèles ont été ajoutés et enregistrés dans le fichier '{final_output_path}'.")
+    print(f"Les types de modèles ont été ajoutés et sauvegardés dans {final_output_path}.")
+    
 
 def add_id_name_to_json_with_type(json_path, csv_dir, output_path=None):
     """

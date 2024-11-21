@@ -1,0 +1,40 @@
+name,2024-02-14,2024-07-03
+AI21 Jurrasic-2 large,,
+AI21 Jurrasic-2 grande,,
+AI21 Jurrasic-2 jumbo,,
+AI21 Jurrasic-2 grande instruct,,
+AI21 Jurrasic-2 jumbo instruct,,
+AI21 text-summarize,,
+Anthropic claude-V1,,
+Anthropic claude-V2,,
+Anthropic claude-instant,,
+Claude-Instant-1.2,,
+Cohere-summarize,,
+Cohere-generate-command,,
+Dolly-v2-12b,,
+Falcon-40b-instruct,,
+GCP PaLM 2 Text Bison,,
+Llama2-70b-chat,,
+OpenAI GPT-3.5-turbo,,
+OpenAI GPT-3.5-turbo-instruct,,
+OpenAI GPT-4,,
+RedPajama-INCITE-Chat-7B,,
+WizardLM-70B,,
+ai21 jurrasic-2 large,,[]
+ai21 jurrasic-2 grande,,[]
+ai21 jurrasic-2 jumbo,,[]
+ai21 jurrasic-2 grande instruct,,[]
+ai21 jurrasic-2 jumbo instruct,,[]
+ai21 text-summarize,,[]
+anthropic claude-v1,,[]
+anthropic claude-v2,,[]
+anthropic claude-instant,,[]
+claude-instant-1.2,,[]
+cohere-summarize,,[]
+cohere-generate-command,,[]
+dolly-v2-12b,,[]
+falcon-40b-instruct,,[]
+gcp palm 2 text bison,,[]
+llama2-70b-chat,,[]
+openai gpt 4,,[]
+redpajama-incite-chat-7b,,[]

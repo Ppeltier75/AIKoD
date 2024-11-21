@@ -34,8 +34,20 @@ def extract_pricing_text(json_path, pricing_dir):
                 # Filtrer uniquement les modèles de type 'text'
                 if model.get("type") == "text":
                     name = model.get("name", "unknown").strip()
+                    
+                    # Extraire et convertir price_input
                     price_input = model.get("price_input", None)
+                    if isinstance(price_input, list) and price_input:
+                        price_input = float(price_input[0]) if price_input[0].replace('.', '', 1).isdigit() else None
+                    elif isinstance(price_input, str) and price_input.replace('.', '', 1).isdigit():
+                        price_input = float(price_input)
+                    
+                    # Extraire et convertir price_output
                     price_output = model.get("price_output", None)
+                    if isinstance(price_output, list) and price_output:
+                        price_output = float(price_output[0]) if price_output[0].replace('.', '', 1).isdigit() else None
+                    elif isinstance(price_output, str) and price_output.replace('.', '', 1).isdigit():
+                        price_output = float(price_output)
                     
                     if name not in price_input_data:
                         price_input_data[name] = {}

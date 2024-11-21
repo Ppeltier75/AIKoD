@@ -1,0 +1,42 @@
+name,2024-07-05,2024-09-30
+gpt-3.5-turbo-0125,1.5,
+gpt-3.5-turbo-instruct,2.0,
+gpt-3.5-turbo-0301,2.0,
+gpt-3.5-turbo-0613,2.0,
+gpt-3.5-turbo-1106,2.0,
+babbage-002,0.4,
+davinci-002,2.0,
+babbage-002 (fine-tuned),0.4,0.0004
+davinci-002 (fine-tuned),2.0,0.002
+gpt-3.5-turbo (4k fine-tuned),1.5,
+gpt-3.5-turbo (16k fine-tuned),1.5,
+llama 3 70b instruct,0.01178,0.00354
+llama 3 8b instruct,0.0011,0.00061
+llama 2 7b,0.00067,0.00067
+llama 2 70b,0.00177,0.00177
+llama 2 70b chat,0.00067,0.00177
+llama 2 13b,0.00094,0.00094
+llama 2 13b chat,0.00094,0.00094
+mistral large,0.012,0.012
+mistral small,0.003,0.0003
+command r+,0.015,0.015
+command r,0.0015,0.0015
+jais 30b chat,0.00971,0.00971
+jamba-instruct,0.0007,0.0007
+phi-3-mini-4k-instruct,0.84,0.00052
+phi-3-mini-128k-instruct,0.9,0.00052
+phi-3-small-8k-instruct,0.96,0.0006
+phi-3-small-128k-instruct,1.05,0.0006
+phi-3-medium-4k-instruct,1.35,0.00068
+phi-3-medium-128k-instruct,1.5,0.00068
+gpt 3.5 turbo 0125,,0.0015
+gpt 3.5 turbo instruct,,0.002
+llama 3.1 8b instruct,,0.00061
+llama 3.1 405b instruct,,0.016
+llama 3.1 70b instruct,,0.00354
+mistral large 2407,,0.009
+command r+ 08-2024,,0.0025
+command r 08-2024,,0.0006
+jamba 1.5 mini,,0.0004
+jamba 1.5 large,,0.008
+phi-3.5 moe instruct,,0.00064
