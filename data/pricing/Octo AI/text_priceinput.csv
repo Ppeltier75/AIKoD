@@ -1,30 +1,32 @@
-name,2024-02-06,2024-02-24,2024-04-15,2024-04-21,2024-07-25,2024-08-26,2024-09-27,2024-10-21
-llama 2 70b chat,0.0006,0.0006,0.0006,,,,,
-codellama 70b instruct,0.0006,0.0006,0.0006,,,,,
-codellama-34b-instruct,0.0005,0.0005,0.0005,,,,,
-llama 2 13b chat,0.0002,0.0002,0.0002,,,,,
-codellama-13b-instruct,0.0002,0.0002,0.0002,,,,,
-mixtral 8x7b,0.0003,0.0003,0.0003,,0.45,0.45,,
-codellama 7b instruct,0.0001,0.0001,0.0001,,,,,
-mistral 7b instruct,0.0001,0.0001,0.0001,,0.15,0.15,,
-mixtral-8x7b,,,,0.3,,,,
-mixtral-8x22b,,,,1.2,1.2,1.2,,
-mistral 7b,,,,0.1,,,,
-codellama 7b,,,,0.1,,,,
-llama 2 7b,,,,0.1,,,,
-llama 3 7b,,,,0.1,,,,
-llama 2 13b,,,,0.2,,,,
-codellama 13b,,,,0.2,,,,
-qwen (32b),,,,0.5,,,,
-code llama (34b),,,,0.5,,,,
-llama 2 70b,,,,0.6,,,,
-llama 3 70b,,,,0.6,0.9,0.9,,
-llama 3.1 instruct 8b,,,,,0.15,0.15,0.15,0.15
-llama 3.1 instruct 70b,,,,,0.9,0.9,0.9,0.9
-llama 3.1 instruct 405b,,,,,3.0,3.0,3.0,3.0
-nous hermes mixtral 8x7b,,,,,0.45,0.45,0.45,0.45
-wizardlm-2 8x22b,,,,,1.2,1.2,1.2,1.2
-llama guard 2 7b,,,,,0.15,0.15,,
-Mistral NeMo,,,,,,,0.2,0.2
+name,2024-02-06,2024-04-21,2024-07-25,2024-08-26,2024-02-24,2024-04-15,2024-09-27,2024-10-21
 Hermes 2 Pro Llama 3,,,,,,,0.15,0.15
+Mistral NeMo,,,,,,,0.2,0.2
+Phi 3.5-Vision,,,,,,,0.15,0.15
 WizardLM 2,,,,,,,0.75,0.75
+code llama (34b),,0.5,,,,,,
+codellama 13b,,0.2,,,,,,
+codellama 70b instruct,0.6,,,,0.6,0.6,,
+codellama 7b,,0.1,,,,,,
+codellama 7b instruct,0.1,,,,0.1,0.1,,
+codellama-13b-instruct,0.2,,,,0.2,0.2,,
+codellama-34b-instruct,0.5,,,,0.5,0.5,,
+llama 2 13b,,0.2,,,,,,
+llama 2 13b chat,0.2,,,,0.2,0.2,,
+llama 2 70b,,0.6,,,,,,
+llama 2 70b chat,0.6,,,,0.6,0.6,,
+llama 2 7b,,0.1,,,,,,
+llama 3 70b,,0.6,0.9,0.9,,,,
+llama 3 7b,,0.1,,,,,,
+llama 3 8b,,0.1,,,,,,
+llama 3.1 instruct 405b,,,3.0,3.0,,,3.0,3.0
+llama 3.1 instruct 70b,,,0.9,0.9,,,0.9,0.9
+llama 3.1 instruct 8b,,,0.15,0.15,,,0.15,0.15
+llama guard 2 7b,,,0.15,0.15,,,,
+mistral 7b,,0.1,,,,,,
+mistral 7b instruct,0.1,,0.15,0.15,0.1,0.1,,
+mixtral 8x7b,0.3,,0.45,0.45,0.3,0.3,,
+mixtral-8x22b,,1.2,1.2,1.2,,,,
+mixtral-8x7b,,0.3,,,,,,
+nous hermes mixtral 8x7b,,,0.45,0.45,,,0.45,0.45
+qwen (32b),,0.5,,,,,,
+wizardlm-2 8x22b,,,1.2,1.2,,,1.2,1.2

@@ -34,8 +34,6 @@ dalle 3 1024,dalle-unknown-unknown-3-1024x1024-unknown-false-unknown-false
 dalle 3 1024 hd,dalle-unknown-unknown-3-1024x1024-unknown-true-unknown-false
 dalle 3 1792,dalle-unknown-unknown-3-1792x1792-unknown-false-unknown-false
 dalle 3 1792 hd,dalle-unknown-unknown-3-1792x1792-unknown-true-unknown-false
-dall·e 2,dalle-unknown-unknown-2-unknown-unknown-false-unknown-false
-dall·e 3,dalle-unknown-unknown-3-unknown-unknown-false-unknown-false
 diffusion stable 3.5 medium,stablediffusion-medium-unknown-3.5-unknown-unknown-false-unknown-false
 dreamshaper 8 lcm (50 steps 1024x1024),dreamshaper-lcm-unknown-8-1024x1024-50-false-unknown-false
 dreamshaper 8 lcm (50 steps 2048x2048),dreamshaper-lcm-unknown-8-2048x2048-50-false-unknown-false
@@ -280,9 +278,25 @@ stable diffusion 2.1 hd 30 steps 1024 pixels,
 stable diffusion 3 & 3.5 large,
 stable diffusion 3 & 3.5 large turbo,
 stable diffusion 3 & 3.5 medium,
-stable diffusion x4 latent upscaler 1024 pixels,
 stable diffusion x4 latent upscaler 512 pixels,
 stable diffusion xl 0.8 30 steps 512 pixels,
 stable diffusion xl 0.9 30 steps 1024 pixels,
 stable diffusion xl 1.0 1024 30 steps,
 stable diffusion xl 1.0 30 steps 1024 pixels,
+dall·e 2 (1024x1024),
+dall·e 2 (256x256),
+dall·e 2 (512x512),
+dall·e 2 1024,
+dall·e 2 256,
+dall·e 2 512,
+dall·e 3 1024,
+dall·e 3 1024 hd,
+dall·e 3 1792,
+dall·e 3 1792 hd,
+dall·e 3 hd (1024x1024),
+dall·e 3 hd (1024x1792),
+dall·e 3 standard (1024x1024),
+dall·e 3 standard (256x256),
+dall·e 3 standard (512x512),
+dall e,
+stabilityai stable difussion xl,

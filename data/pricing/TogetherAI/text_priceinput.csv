@@ -1,215 +1,209 @@
-name,2023-07-14,2023-07-18,2023-08-12,2023-10-17,2023-11-29,2023-12-24,2024-01-17,2024-03-04,2024-03-23,2024-05-10,2024-05-28,2024-06-20,2024-07-03,2024-08-26,2024-09-27,2024-10-21
-Llama 3 (8B),,,,,,,,,,0.2,0.2,0.2,,,,
-Llama 3 Instruct (8B),,,,,,,,,,0.2,0.2,0.2,,,,
-Mixtral-8x7B (46.7B),,,,,,,,0.9,0.9,0.9,0.9,0.9,,,,
-Mixtral-8x7B Instruct (46.7B),,,,,,,,0.9,0.9,0.9,0.9,0.9,,,,
-Nous-Hermes-2 Mixtral 8x7B-DPO (46.7B),,,,,,,,0.9,0.9,0.9,0.9,0.9,,,,
-Nous-Hermes-2 Mixtral 8x7B-SFT (46.7B),,,,,,,,0.9,0.9,0.9,0.9,0.9,,,,
-Mistral v0.1 (7B),,,,,,,,0.2,0.2,0.2,0.2,0.2,,,,
-Mistral Instruct v0.1 (7B),,,,,,,,0.2,0.2,0.2,0.2,0.2,,,,
-Mistral Instruct v0.2 (7B),,,,,,,,0.2,0.2,0.2,0.2,0.2,,,,
-Llama-2 (7B),,,,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,
-Llama-2 Chat (7B),,,,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,
-Llama-2 (13B),,,,0.4,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,,,,
-Llama-2 Chat (13B),,,,0.4,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,,,,
-Llama-2 (7B) 32K Context,,,,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,
-CodeLlama (7B),,,,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,
-CodeLlama Python (7B),,,,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,
-CodeLlama Instruct (7B),,,,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,
-CodeLlama (13B),,,,0.4,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,,,,
-CodeLlama Python (13B),,,,0.4,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,,,,
-CodeLlama Instruct (13B),,,,0.4,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,,,,
-Zephyr 7B,,,,,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,
-OpenHermes 2.5 Mistral 7B,,,,,,,,,,,,0.2,,,,
-SOLAR Instruct v1 (11B),,,,,,,,,,,,0.3,,,,
-Llama 3 (70B),,,,,,,,,,0.9,0.9,,,,,
-Llama 3 Instruct (70B),,,,,,,,,,0.9,0.9,,,,,
-Llama-2 (70B),,,,1.0,0.9,0.9,0.9,0.9,0.9,0.9,0.9,,,,,
-Llama-2 (70B) Chat,,,,1.0,0.9,0.9,0.9,0.9,0.9,0.9,0.9,,,,,
-RedPajama-INCITE Chat (3B),,,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,,,,,
-RedPajama-INCITE Instruct (3B),,,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,,,,,
-RedPajama-INCITE (3B),,,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,,,,,
-RedPajama-INCITE Chat (7B),,,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,
-RedPajama-INCITE Instruct (7B),,,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,
-RedPajama-INCITE (7B),,,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,
-Pythia Chat (7B),,,,,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,
-redpajama-incite chat (7b),0.001,0.001,,,,,,,,,,,,,,
-redpajama-incite chat (3b),0.001,0.001,,,,,,,,,,,,,,
-gpt-neoxt-chat-base (20b),0.003,0.003,,,,,,,,,,,,,,
-pythia-chat-base (7b),0.001,0.001,,,,,,,,,,,,,,
-starcoderchat alpha (16b),0.003,0.003,,,,,,,,,,,,,,
-guanaco (33b),0.006,0.006,,,,,,,,,,,,,,
-airoboros gptq (33b),0.006,0.006,,,,,,,,,,,,,,
-mpt-chat (30b),0.006,0.006,,,,,,,,,,,,,,
-open-assistant llama sft-6 (30b),0.006,0.006,,,,,,,,,,,,,,
-instructcodet5 (16b),0.003,0.003,,,,,,,,,,,,,,
-koala (13b),0.003,0.003,,,,,,,,,,,,,,
-vicuna v1.3 (13b),0.003,0.003,,,,,,,,,,,,,,
-open-assistant pythia sft-4 (12b),0.003,0.003,,,,,,,,,,,,,,
-vicuna v1.3 (7b),0.001,0.001,,,,,,,,,,,,,,
-open-assistant pythia reward based (7b),0.001,0.001,,,,,,,,,,,,,,
-koala (7b),0.001,0.001,,,,,,,,,,,,,,
-alpaca (7b),0.001,0.001,,,,,,,,,,,,,,
-falcon instruct (7b),0.001,0.001,,,,,,,,,,,,,,
-mpt-chat (7b),0.001,0.001,,,,,,,,,,,,,,
-open-assistant stablelm sft-7 (7b),0.001,0.001,,,,,,,,,,,,,,
-guanaco (7b),0.001,0.001,,,,,,,,,,,,,,
-vicuna v1.1 (13b),0.003,0.003,,,,,,,,,,,,,,
-vicuna-fastchat-t5 (3b),0.001,0.001,,,,,,,,,,,,,,
-guanaco (65b),0.015,0.015,,,,,,,,,,,,,,
-redpajama-incite instruct (7b),0.001,0.001,,,,,,,,,,,,,,
-redpajama-incite (7b),0.001,0.001,,,,,,,,,,,,,,
-redpajama-incite instruct (3b),0.001,0.001,,,,,,,,,,,,,,
-redpajama-incite (3b),0.001,0.001,,,,,,,,,,,,,,
-llama (65b),0.015,0.015,,,,,,,,,,,,,,
-dolly v2 (3b),0.001,0.001,,,,,,,,,,,,,,
-falcon (40b),0.006,0.006,,,,,,,,,,,,,,
-llama (33b),0.006,0.006,,,,,,,,,,,,,,
-mpt (30b),0.006,0.006,,,,,,,,,,,,,,
-mpt-instruct (30b),0.006,0.006,,,,,,,,,,,,,,
-nous hermes (13b),0.003,0.003,,,,,,,,,,,,,,
-flan t5 xxl (11b),0.003,0.003,,,,,,,,,,,,,,
-gpt-neox (20b),0.003,0.003,,,,,,,,,,,,,,
-llama (13b),0.003,0.003,,,,,,,,,,,,,,
-replit-code-v1 (3b),0.001,0.001,,,,,,,,,,,,,,
-gpt-jt-moderation (6b),0.001,0.001,,,,,,,,,,,,,,
-falcon (7b),0.001,0.001,,,,,,,,,,,,,,
-dolly v2 (7b),0.003,0.003,,,,,,,,,,,,,,
-up to 4b,,,,,,,,,,,,,0.1,,,
-4.1b - 8b,,,,,,,,,,,,,0.2,,,
-8.1b - 21b,,,,,,,,,,,,,0.3,,,
-21.1b - 41b,,,,,,,,,,,,,0.8,,,
-41.1b - 80b,,,,,,,,,,,,,0.9,,,
-80.1b - 110b,,,,,,,,,,,,,1.8,,,
-mixture-of-experts models (up to 56b),,,,,,,,,,,,,0.6,,,
-mixture-of-experts models (56.1b - 176b),,,,,,,,,,,,,1.2,,,
-mixture-of-experts models (176.1b - 480b),,,,,,,,,,,,,2.4,,,
-genomic models,,,,,,,,,,,,,2.0,,,
-llama 3 lite 8b,,,,,,,,,,,,,,0.1,0.1,0.1
-llama 3 turbo 8b,,,,,,,,,,,,,,0.18,0.18,
-llama 3 lite 70b,,,,,,,,,,,,,,0.54,0.54,
-llama 3 turbo 70b,,,,,,,,,,,,,,0.88,0.88,
-llama 3 reference 70b,,,,,,,,,,,,,,0.9,0.9,
-llama 3 turbo 405b,,,,,,,,,,,,,,5.0,,
-"chat, language, code and moderation models up to 4b",,,,,,,,,,,,,,0.1,,
-"chat, language, code and moderation models 4.1b - 8b",,,,,,,,,,,,,,0.2,,
-"chat, language, code and moderation models 8.1b - 21b",,,,,,,,,,,,,,0.3,,
-"chat, language, code and moderation models 21.1b - 41b",,,,,,,,,,,,,,0.8,,
-"chat, language, code and moderation models 41.1b - 80b",,,,,,,,,,,,,,0.9,,
-"chat, language, code and moderation models 80.1b - 110b",,,,,,,,,,,,,,1.8,,
-mixture-of-experts up to 56b,,,,,,,,,,,,,,0.6,,
-mixture-of-experts 56.1b - 176b,,,,,,,,,,,,,,1.2,,
-mixture-of-experts 176.1b - 480b,,,,,,,,,,,,,,2.4,,
-genomic models 4.1b - 8b,,,,,,,,,,,,,,2.0,,
-llama 3.1 instruct (8b) reference,,,,,,,,,,,,,,,,
-llama 3.1 instruct (70b) reference,,,,,,,,,,,,,,,,
-llama 3 instruct (8b),,,,,,,,,,,,,,,,
-llama 3 instruct (70b),,,,,,,,,,,,,,,,
-mixtral-8x7b (46.7b),,,,,,,,,,,,,,,,
-mixtral-8x7b instruct (46.7b),,,,,,,,,,,,,,,,
-nous-hermes-2 mixtral 8x7b-dpo (46.7b),,,,,,,,,,,,,,,,
-nous-hermes-2 mixtral 8x7b-sft (46.7b),,,,,,,,,,,,,,,,
-mistral v0.1 (7b),,,,,,,,,,,,,,,,
-mistral instruct v0.1 (7b),,,,,,,,,,,,,,,,
-mistral instruct v0.2 (7b),,,,,,,,,,,,,,,,
-openhermes 2.5 mistral (7b),,,,,,,,,,,,,,,,
-llama-2 (7b),,,,,,,,,,,,,,,,
-llama-2 chat (7b),,,,,,,,,,,,,,,,
-llama-2 (13b),,,,,,,,,,,,,,,,
-llama-2 chat (13b),,,,,,,,,,,,,,,,
-llama-2 (70b),,,,,,,,,,,,,,,,
-llama-2 chat (70b),,,,,,,,,,,,,,,,
-llama-2 (7b) 32k context,,,,,,,,,,,,,,,,
-solar instruct v1 (11b),,,,,,,,,,,,,,,,
-codellama (7b),,,,,,,,,,,,,,,,
-codellama python (7b),,,,,,,,,,,,,,,,
-llama 3 lite 3b,,,,,,,,,,,,,,,0.06,0.06
-llama 3 turbo 3b,,,,,,,,,,,,,,,0.06,0.06
-llama 3.1 turbo 405b,,,,,,,,,,,,,,,3.5,
+name,2024-06-20,2024-05-28,2024-05-10,2024-03-23,2024-03-04,2024-01-17,2023-12-24,2023-11-29,2023-10-17,2023-08-12,2023-07-18,2023-07-14,2024-07-03,2024-08-26,2024-09-27,2024-10-21
 01-ai Yi Chat (34B),,,,,,,,,,,,,,,,0.8
-OLMo Instruct (7B),,,,,,,,,,,,,,,,0.2
+Alpaca (7B),,,,,,,,,,,,,,,,0.2
 Chronos Hermes (13B),,,,,,,,,,,,,,,,0.3
-carson ml318br,,,,,,,,,,,,,,,,0.1
-Dolphin 2.5 Mixtral 8x7b,,,,,,,,,,,,,,,,0.6
+Code Llama Instruct (13B),,,,,,,,,,,,,,,,0.3
+Code Llama Instruct (34B),,,,,,,,,,,,,,,,0.8
+Code Llama Instruct (70B),,,,,,,,,,,,,,,,0.9
+Code Llama Instruct (7B),,,,,,,,,,,,,,,,0.2
+CodeLlama (13B),0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.4,,,,,,,
+CodeLlama (7B),0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,
+CodeLlama Instruct (13B),0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.4,,,,,,,
+CodeLlama Instruct (7B),0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,
+CodeLlama Python (13B),0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.4,,,,,,,
+CodeLlama Python (7B),0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,
 DBRX Instruct,,,,,,,,,,,,,,,,0.1
 DeepSeek LLM Chat (67B),,,,,,,,,,,,,,,,0.9
-Platypus2 Instruct (70B),,,,,,,,,,,,,,,,0.9
-Gemma-2 Instruct (9B),,,,,,,,,,,,,,,,0.3
+Deepseek Coder Instruct (33B),,,,,,,,,,,,,,,,0.8
+Dolphin 2.5 Mixtral 8x7b,,,,,,,,,,,,,,,,0.6
 Gemma Instruct (2B),,,,,,,,,,,,,,,,0.1
-Gemma-2 Instruct (27B),,,,,,,,,,,,,,,,0.8
 Gemma Instruct (7B),,,,,,,,,,,,,,,,0.2
-Llama-3 70B Instruct Gradient 1048K,,,,,,,,,,,,,,,,0.9
-MythoMax-L2 (13B),,,,,,,,,,,,,,,,0.6
+Gemma-2 Instruct (27B),,,,,,,,,,,,,,,,0.8
+Gemma-2 Instruct (9B),,,,,,,,,,,,,,,,0.3
 Gryphe MythoMax L2 Lite (13B),,,,,,,,,,,,,,,,0.6
-LLaVa-Next (Mistral-7B),,,,,,,,,,,,,,,,0.6
-Zephyr-7B-ß,,,,,,,,,,,,,,,,0.2
-Koala (7B),,,,,,,,,,,,,,,,0.2
-Vicuna v1.3 (7B),,,,,,,,,,,,,,,,0.2
-Vicuna v1.5 16K (13B),,,,,,,,,,,,,,,,0.3
-Vicuna v1.5 (13B),,,,,,,,,,,,,,,,0.3
-Vicuna v1.3 (13B),,,,,,,,,,,,,,,,0.3
+Guanaco (13B),,,,,,,,,,,,,,,,0.3
+Guanaco (33B),,,,,,,,,,,,,,,,0.8
+Guanaco (65B),,,,,,,,,,,,,,,,0.9
+Guanaco (7B),,,,,,,,,,,,,,,,0.2
+Hermes 2 Theta Llama-3 70B,,,,,,,,,,,,,,,,0.9
 Koala (13B),,,,,,,,,,,,,,,,0.3
-Vicuna v1.5 (7B),,,,,,,,,,,,,,,,0.2
-Llama3 8B Chat HF INT4,,,,,,,,,,,,,,,,0.2
-Meta Llama 3.2 3B Instruct Turbo,,,,,,,,,,,,,,,,0.06
-Togethercomputer Llama3 8B Instruct Int8,,,,,,,,,,,,,,,,0.2
-Meta Llama 3.1 70B Instruct Turbo,,,,,,,,,,,,,,,,0.88
+Koala (7B),,,,,,,,,,,,,,,,0.2
 LLaMA-2 Chat (13B),,,,,,,,,,,,,,,,0.3
-Meta Llama 3 70B Instruct Lite,,,,,,,,,,,,,,,,0.54
-Meta Llama 3 8B Instruct Reference,,,,,,,,,,,,,,,,0.2
-Meta Llama 3 70B Instruct Reference,,,,,,,,,,,,,,,,0.9
-Meta Llama 3 8B Instruct Turbo,,,,,,,,,,,,,,,,0.18
-Meta Llama 3 8B Instruct Lite,,,,,,,,,,,,,,,,0.1
-Meta Llama 3.1 405B Instruct Turbo,,,,,,,,,,,,,,,,3.5
-LLaMA-2 Chat (7B),,,,,,,,,,,,,,,,0.2
-Meta Llama 3 70B Instruct Turbo,,,,,,,,,,,,,,,,0.88
-Meta Llama 3.1 8B Instruct Turbo,,,,,,,,,,,,,,,,0.18
-Meta Llama 3 8B Instruct,,,,,,,,,,,,,,,,0.18
-Meta Llama 3 70B Instruct,,,,,,,,,,,,,,,,0.88
 LLaMA-2 Chat (70B),,,,,,,,,,,,,,,,0.9
-Meta Llama 3.1 8B Instruct,,,,,,,,,,,,,,,,0.18
+LLaMA-2 Chat (7B),,,,,,,,,,,,,,,,0.2
+LLaVa-Next (Mistral-7B),,,,,,,,,,,,,,,,0.6
+Llama 3 (70B),,0.9,0.9,,,,,,,,,,,,,
+Llama 3 (8B),0.2,0.2,0.2,,,,,,,,,,,,,
+Llama 3 Instruct (70B),,0.9,0.9,,,,,,,,,,,,,
+Llama 3 Instruct (8B),0.2,0.2,0.2,,,,,,,,,,,,,
+Llama-2 (13B),0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.4,,,,,,,
+Llama-2 (70B),,0.9,0.9,0.9,0.9,0.9,0.9,0.9,1.0,,,,,,,
+Llama-2 (70B) Chat,,0.9,0.9,0.9,0.9,0.9,0.9,0.9,1.0,,,,,,,
+Llama-2 (7B),0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,
+Llama-2 (7B) 32K Context,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,
+Llama-2 Chat (13B),0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.4,,,,,,,
+Llama-2 Chat (7B),0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,
+Llama-3 70B Instruct Gradient 1048K,,,,,,,,,,,,,,,,0.9
+Llama3 8B Chat HF INT4,,,,,,,,,,,,,,,,0.2
+Meta Llama 3 70B Instruct,,,,,,,,,,,,,,,,0.88
+Meta Llama 3 70B Instruct Lite,,,,,,,,,,,,,,,,0.54
+Meta Llama 3 70B Instruct Reference,,,,,,,,,,,,,,,,0.9
+Meta Llama 3 70B Instruct Turbo,,,,,,,,,,,,,,,,0.88
+Meta Llama 3 8B Instruct,,,,,,,,,,,,,,,,0.18
+Meta Llama 3 8B Instruct Lite,,,,,,,,,,,,,,,,0.1
+Meta Llama 3 8B Instruct Reference,,,,,,,,,,,,,,,,0.2
+Meta Llama 3 8B Instruct Turbo,,,,,,,,,,,,,,,,0.18
+Meta Llama 3.1 405B Instruct Turbo,,,,,,,,,,,,,,,,3.5
 Meta Llama 3.1 70B Instruct,,,,,,,,,,,,,,,,0.88
-WizardLM-2 (8x22B),,,,,,,,,,,,,,,,0.6
+Meta Llama 3.1 70B Instruct Turbo,,,,,,,,,,,,,,,,0.88
+Meta Llama 3.1 8B Instruct,,,,,,,,,,,,,,,,0.18
+Meta Llama 3.1 8B Instruct Turbo,,,,,,,,,,,,,,,,0.18
+Meta Llama 3.2 3B Instruct Turbo,,,,,,,,,,,,,,,,0.06
 Mistral (7B) Instruct,,,,,,,,,,,,,,,,0.2
 Mistral (7B) Instruct v0.2,,,,,,,,,,,,,,,,0.2
 Mistral (7B) Instruct v0.3,,,,,,,,,,,,,,,,0.2
-Mixtral-8x7B Instruct v0.1,,,,,,,,,,,,,,,,0.6
+Mistral Instruct v0.1 (7B),0.2,0.2,0.2,0.2,0.2,,,,,,,,,,,
+Mistral Instruct v0.2 (7B),0.2,0.2,0.2,0.2,0.2,,,,,,,,,,,
+Mistral v0.1 (7B),0.2,0.2,0.2,0.2,0.2,,,,,,,,,,,
 Mixtral-8x22B Instruct v0.1,,,,,,,,,,,,,,,,0.6
-Nous Hermes 2 - Mixtral 8x7B-DPO,,,,,,,,,,,,,,,,0.6
-Nous Hermes LLaMA-2 (70B),,,,,,,,,,,,,,,,0.9
-Nous Hermes 2 - Mixtral 8x7B-SFT,,,,,,,,,,,,,,,,0.6
-Nous Hermes Llama-2 (13B),,,,,,,,,,,,,,,,0.3
-Nous Hermes 2 - Mistral DPO (7B),,,,,,,,,,,,,,,,0.2
-Nous Hermes LLaMA-2 (7B),,,,,,,,,,,,,,,,0.2
+Mixtral-8x7B (46.7B),0.9,0.9,0.9,0.9,0.9,,,,,,,,,,,
+Mixtral-8x7B Instruct (46.7B),0.9,0.9,0.9,0.9,0.9,,,,,,,,,,,
+Mixtral-8x7B Instruct v0.1,,,,,,,,,,,,,,,,0.6
+MythoMax-L2 (13B),,,,,,,,,,,,,,,,0.6
 Nous Capybara v1.9 (7B),,,,,,,,,,,,,,,,0.2
-Hermes 2 Theta Llama-3 70B,,,,,,,,,,,,,,,,0.9
+Nous Hermes 2 - Mistral DPO (7B),,,,,,,,,,,,,,,,0.2
+Nous Hermes 2 - Mixtral 8x7B-DPO,,,,,,,,,,,,,,,,0.6
+Nous Hermes 2 - Mixtral 8x7B-SFT,,,,,,,,,,,,,,,,0.6
+Nous Hermes LLaMA-2 (70B),,,,,,,,,,,,,,,,0.9
+Nous Hermes LLaMA-2 (7B),,,,,,,,,,,,,,,,0.2
+Nous Hermes Llama-2 (13B),,,,,,,,,,,,,,,,0.3
+Nous-Hermes-2 Mixtral 8x7B-DPO (46.7B),0.9,0.9,0.9,0.9,0.9,,,,,,,,,,,
+Nous-Hermes-2 Mixtral 8x7B-SFT (46.7B),0.9,0.9,0.9,0.9,0.9,,,,,,,,,,,
+OLMo Instruct (7B),,,,,,,,,,,,,,,,0.2
 OpenChat 3.5,,,,,,,,,,,,,,,,0.1
-OpenOrca Mistral (7B) 8K,,,,,,,,,,,,,,,,0.2
-Qwen 2 Instruct (72B),,,,,,,,,,,,,,,,0.9
-Qwen2.5 72B Instruct Turbo,,,,,,,,,,,,,,,,0.9
-Qwen2.5 7B Instruct Turbo,,,,,,,,,,,,,,,,0.2
-Qwen 1.5 Chat (110B),,,,,,,,,,,,,,,,1.8
-Qwen 1.5 Chat (72B),,,,,,,,,,,,,,,,0.9
-Qwen 2 Instruct (1.5B),,,,,,,,,,,,,,,,0.1
-Qwen 2 Instruct (7B),,,,,,,,,,,,,,,,0.2
-Qwen 1.5 Chat (14B),,,,,,,,,,,,,,,,0.3
-Qwen 1.5 Chat (1.8B),,,,,,,,,,,,,,,,0.1
-Qwen 1.5 Chat (32B),,,,,,,,,,,,,,,,0.8
-Qwen 1.5 Chat (7B),,,,,,,,,,,,,,,,0.2
-Qwen 1.5 Chat (0.5B),,,,,,,,,,,,,,,,0.1
-Qwen 1.5 Chat (4B),,,,,,,,,,,,,,,,0.1
-Snorkel Mistral PairRM DPO (7B),,,,,,,,,,,,,,,,0.2
-Snowflake Arctic Instruct,,,,,,,,,,,,,,,,0.1
-Alpaca (7B),,,,,,,,,,,,,,,,0.2
+OpenHermes 2.5 Mistral 7B,0.2,,,,,,,,,,,,,,,
 OpenHermes-2-Mistral (7B),,,,,,,,,,,,,,,,0.2
 OpenHermes-2.5-Mistral (7B),,,,,,,,,,,,,,,,0.2
-Test 11,,,,,,,,,,,,,,,,0.1
-Guanaco (65B),,,,,,,,,,,,,,,,0.9
-Guanaco (13B),,,,,,,,,,,,,,,,0.3
-Guanaco (33B),,,,,,,,,,,,,,,,0.8
-Guanaco (7B),,,,,,,,,,,,,,,,0.2
+OpenOrca Mistral (7B) 8K,,,,,,,,,,,,,,,,0.2
+Platypus2 Instruct (70B),,,,,,,,,,,,,,,,0.9
+Pythia Chat (7B),,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,,
+Qwen 1.5 Chat (0.5B),,,,,,,,,,,,,,,,0.1
+Qwen 1.5 Chat (1.8B),,,,,,,,,,,,,,,,0.1
+Qwen 1.5 Chat (110B),,,,,,,,,,,,,,,,1.8
+Qwen 1.5 Chat (14B),,,,,,,,,,,,,,,,0.3
+Qwen 1.5 Chat (32B),,,,,,,,,,,,,,,,0.8
+Qwen 1.5 Chat (4B),,,,,,,,,,,,,,,,0.1
+Qwen 1.5 Chat (72B),,,,,,,,,,,,,,,,0.9
+Qwen 1.5 Chat (7B),,,,,,,,,,,,,,,,0.2
+Qwen 2 Instruct (1.5B),,,,,,,,,,,,,,,,0.1
+Qwen 2 Instruct (72B),,,,,,,,,,,,,,,,0.9
+Qwen 2 Instruct (7B),,,,,,,,,,,,,,,,0.2
+Qwen2.5 72B Instruct Turbo,,,,,,,,,,,,,,,,0.9
+Qwen2.5 7B Instruct Turbo,,,,,,,,,,,,,,,,0.2
 ReMM SLERP L2 (13B),,,,,,,,,,,,,,,,0.3
+RedPajama-INCITE (3B),,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,,,,,,
+RedPajama-INCITE (7B),,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,
+RedPajama-INCITE Chat (3B),,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,,,,,,
+RedPajama-INCITE Chat (7B),,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,
+RedPajama-INCITE Instruct (3B),,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,,,,,,
+RedPajama-INCITE Instruct (7B),,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,
+SOLAR Instruct v1 (11B),0.3,,,,,,,,,,,,,,,
+Snorkel Mistral PairRM DPO (7B),,,,,,,,,,,,,,,,0.2
+Snowflake Arctic Instruct,,,,,,,,,,,,,,,,0.1
+Test 11,,,,,,,,,,,,,,,,0.1
+Togethercomputer Llama3 8B Instruct Int8,,,,,,,,,,,,,,,,0.2
 Toppy M (7B),,,,,,,,,,,,,,,,0.2
 Upstage SOLAR Instruct v1 (11B),,,,,,,,,,,,,,,,0.3
 Upstage SOLAR Instruct v1 (11B)-Int4,,,,,,,,,,,,,,,,0.3
+Vicuna v1.3 (13B),,,,,,,,,,,,,,,,0.3
+Vicuna v1.3 (7B),,,,,,,,,,,,,,,,0.2
+Vicuna v1.5 (13B),,,,,,,,,,,,,,,,0.3
+Vicuna v1.5 (7B),,,,,,,,,,,,,,,,0.2
+Vicuna v1.5 16K (13B),,,,,,,,,,,,,,,,0.3
 WizardLM v1.2 (13B),,,,,,,,,,,,,,,,0.3
+WizardLM-2 (8x22B),,,,,,,,,,,,,,,,0.6
+Zephyr 7B,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,,
+Zephyr-7B-ß,,,,,,,,,,,,,,,,0.2
+airoboros gptq (33b),,,,,,,,,,,6.0,6.0,,,,
+alpaca (7b),,,,,,,,,,,1.0,1.0,,,,
+carson ml318br,,,,,,,,,,,,,,,,0.1
+codellama (7b),,,,,,,,,,,,,,0.0,,
+codellama python (7b),,,,,,,,,,,,,,0.0,,
+dolly v2 (3b),,,,,,,,,,,1.0,1.0,,,,
+dolly v2 (7b),,,,,,,,,,,3.0,3.0,,,,
+falcon (40b),,,,,,,,,,,6.0,6.0,,,,
+falcon (7b),,,,,,,,,,,1.0,1.0,,,,
+falcon instruct (7b),,,,,,,,,,,1.0,1.0,,,,
+flan t5 xxl (11b),,,,,,,,,,,3.0,3.0,,,,
+genomic models,,,,,,,,,,,,,2.0,,,
+genomic models 4.1b - 8b,,,,,,,,,,,,,,2.0,,
+gpt-jt-moderation (6b),,,,,,,,,,,1.0,1.0,,,,
+gpt-neox (20b),,,,,,,,,,,3.0,3.0,,,,
+gpt-neoxt-chat-base (20b),,,,,,,,,,,3.0,3.0,,,,
+guanaco (33b),,,,,,,,,,,6.0,6.0,,,,
+guanaco (65b),,,,,,,,,,,15.0,15.0,,,,
+guanaco (7b),,,,,,,,,,,1.0,1.0,,,,
+instructcodet5 (16b),,,,,,,,,,,3.0,3.0,,,,
+koala (13b),,,,,,,,,,,3.0,3.0,,,,
+koala (7b),,,,,,,,,,,1.0,1.0,,,,
+llama (13b),,,,,,,,,,,3.0,3.0,,,,
+llama (33b),,,,,,,,,,,6.0,6.0,,,,
+llama (65b),,,,,,,,,,,15.0,15.0,,,,
+llama 3 instruct (70b),,,,,,,,,,,,,,0.0,,
+llama 3 instruct (8b),,,,,,,,,,,,,,0.0,,
+llama 3 lite 3b,,,,,,,,,,,,,,,0.06,0.06
+llama 3 lite 70b,,,,,,,,,,,,,,0.54,0.54,
+llama 3 lite 8b,,,,,,,,,,,,,,0.1,0.1,0.1
+llama 3 reference 70b,,,,,,,,,,,,,,0.9,0.9,
+llama 3 reference 8b,,,,,,,,,,,,,,0.2,0.2,
+llama 3 turbo 3b,,,,,,,,,,,,,,,0.06,0.06
+llama 3 turbo 405b,,,,,,,,,,,,,,5.0,,
+llama 3 turbo 70b,,,,,,,,,,,,,,0.88,0.88,
+llama 3 turbo 8b,,,,,,,,,,,,,,0.18,0.18,
+llama 3.1 instruct (70b) reference,,,,,,,,,,,,,,0.0,,
+llama 3.1 instruct (8b) reference,,,,,,,,,,,,,,0.0,,
+llama 3.1 turbo 405b,,,,,,,,,,,,,,,3.5,
+llama-2 (13b),,,,,,,,,,,,,,0.0,,
+llama-2 (70b),,,,,,,,,,,,,,0.0,,
+llama-2 (7b),,,,,,,,,,,,,,0.0,,
+llama-2 (7b) 32k context,,,,,,,,,,,,,,0.0,,
+llama-2 chat (13b),,,,,,,,,,,,,,0.0,,
+llama-2 chat (70b),,,,,,,,,,,,,,0.0,,
+llama-2 chat (7b),,,,,,,,,,,,,,0.0,,
+mistral instruct v0.1 (7b),,,,,,,,,,,,,,0.0,,
+mistral instruct v0.2 (7b),,,,,,,,,,,,,,0.0,,
+mistral v0.1 (7b),,,,,,,,,,,,,,0.0,,
+mixtral-8x7b (46.7b),,,,,,,,,,,,,,0.0,,
+mixtral-8x7b instruct (46.7b),,,,,,,,,,,,,,0.0,,
+mixture-of-experts 176.1b - 480b,,,,,,,,,,,,,,2.4,,
+mixture-of-experts 56.1b - 176b,,,,,,,,,,,,,,1.2,,
+mixture-of-experts models (176.1b - 480b),,,,,,,,,,,,,2.4,,,
+mixture-of-experts models (56.1b - 176b),,,,,,,,,,,,,1.2,,,
+mixture-of-experts models (up to 56b),,,,,,,,,,,,,0.6,,,
+mixture-of-experts up to 56b,,,,,,,,,,,,,,0.6,,
+mpt (30b),,,,,,,,,,,6.0,6.0,,,,
+mpt-chat (30b),,,,,,,,,,,6.0,6.0,,,,
+mpt-chat (7b),,,,,,,,,,,1.0,1.0,,,,
+mpt-instruct (30b),,,,,,,,,,,6.0,6.0,,,,
+nous hermes (13b),,,,,,,,,,,3.0,3.0,,,,
+nous-hermes-2 mixtral 8x7b-dpo (46.7b),,,,,,,,,,,,,,0.0,,
+nous-hermes-2 mixtral 8x7b-sft (46.7b),,,,,,,,,,,,,,0.0,,
+open-assistant llama sft-6 (30b),,,,,,,,,,,6.0,6.0,,,,
+open-assistant pythia reward based (7b),,,,,,,,,,,1.0,1.0,,,,
+open-assistant pythia sft-4 (12b),,,,,,,,,,,3.0,3.0,,,,
+open-assistant stablelm sft-7 (7b),,,,,,,,,,,1.0,1.0,,,,
+openhermes 2.5 mistral (7b),,,,,,,,,,,,,,0.0,,
+pythia-chat-base (7b),,,,,,,,,,,1.0,1.0,,,,
+redpajama-incite (3b),,,,,,,,,,,1.0,1.0,,,,
+redpajama-incite (7b),,,,,,,,,,,1.0,1.0,,,,
+redpajama-incite chat (3b),,,,,,,,,,,1.0,1.0,,,,
+redpajama-incite chat (7b),,,,,,,,,,,1.0,1.0,,,,
+redpajama-incite instruct (3b),,,,,,,,,,,1.0,1.0,,,,
+redpajama-incite instruct (7b),,,,,,,,,,,1.0,1.0,,,,
+replit-code-v1 (3b),,,,,,,,,,,1.0,1.0,,,,
+solar instruct v1 (11b),,,,,,,,,,,,,,0.0,,
+starcoderchat alpha (16b),,,,,,,,,,,3.0,3.0,,,,
+vicuna v1.1 (13b),,,,,,,,,,,3.0,3.0,,,,
+vicuna v1.3 (13b),,,,,,,,,,,3.0,3.0,,,,
+vicuna v1.3 (7b),,,,,,,,,,,1.0,1.0,,,,
+vicuna-fastchat-t5 (3b),,,,,,,,,,,1.0,1.0,,,,

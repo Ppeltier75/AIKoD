@@ -6,8 +6,8 @@ nova tts 1,nova-tts-unknown-1
 sonic english (oct '24) cartesia,sonic-english-cartesia-unknown-24
 speech 01,speech-unknown-unknown-1
 speech 01 240228,speech-unknown-unknown-240228
-summarization,summarization-unknown-unknown-unknown
 tts,tts-unknown-unknown-unknown
 tts (text to speech),tts-text-to-speech-unknown-unknown
 tts hd,tts-hd-unknown-unknown
 azure ai speech tts,
+suno ai,

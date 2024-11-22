@@ -1,7 +1,7 @@
 name,2024-05-29,2024-10-31
-Llama-2 (7B),0.15,
 Llama-2 (13B),0.25,
 Llama-2 (70B),0.9,
-Mistral (7B),0.2,
-Llama-3.1 (8B),,0.15
+Llama-2 (7B),0.15,
 Llama-3.1 (70B),,0.9
+Llama-3.1 (8B),,0.15
+Mistral (7B),0.2,

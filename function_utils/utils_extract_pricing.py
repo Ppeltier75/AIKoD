@@ -1,76 +1,115 @@
 import os
 import json
 import pandas as pd
+from collections import defaultdict
+import re
 
-def extract_pricing_text(json_path, pricing_dir):
-    """
-    Extrait les informations de prix des modèles de type 'text' depuis un fichier JSON
-    et génère des fichiers CSV (text_priceinput.csv et text_priceoutput.csv) par fournisseur.
 
-    :param json_path: Chemin vers le fichier JSON contenant les données des modèles.
-    :param pricing_dir: Répertoire de sortie où les dossiers et CSV seront générés.
+def extract_pricing_text(json_path, output_dir):
     """
-    # Charger le fichier JSON
+    Extrait les prix des modèles de type `text` et `multimodal` et les enregistre en CSV.
+
+    :param json_path: Chemin vers le fichier JSON d'entrée.
+    :param output_dir: Répertoire de sortie pour les fichiers CSV.
+    """
+    if not os.path.exists(output_dir):
+        os.makedirs(output_dir)
+
+    # Charger le JSON
     with open(json_path, 'r', encoding='utf-8') as file:
         data = json.load(file)
-    
-    # Créer le répertoire de sortie s'il n'existe pas
-    os.makedirs(pricing_dir, exist_ok=True)
 
-    # Parcourir les données du JSON
     for provider, date_dict in data.items():
-        provider_dir = os.path.join(pricing_dir, provider)
-        os.makedirs(provider_dir, exist_ok=True)  # Créer le dossier pour chaque provider
-        
-        price_input_data = {}
-        price_output_data = {}
+        provider_dir = os.path.join(output_dir, provider)
+        if not os.path.exists(provider_dir):
+            os.makedirs(provider_dir)
 
-        for date, model_data in date_dict.items():
-            if not isinstance(model_data, dict):
-                continue
-            
-            models = model_data.get("models_extract_GPT4o", {}).get("models", [])
-            for model in models:
-                # Filtrer uniquement les modèles de type 'text'
-                if model.get("type") == "text":
-                    name = model.get("name", "unknown").strip()
-                    
-                    # Extraire et convertir price_input
-                    price_input = model.get("price_input", None)
-                    if isinstance(price_input, list) and price_input:
-                        price_input = float(price_input[0]) if price_input[0].replace('.', '', 1).isdigit() else None
-                    elif isinstance(price_input, str) and price_input.replace('.', '', 1).isdigit():
-                        price_input = float(price_input)
-                    
-                    # Extraire et convertir price_output
-                    price_output = model.get("price_output", None)
-                    if isinstance(price_output, list) and price_output:
-                        price_output = float(price_output[0]) if price_output[0].replace('.', '', 1).isdigit() else None
-                    elif isinstance(price_output, str) and price_output.replace('.', '', 1).isdigit():
-                        price_output = float(price_output)
-                    
-                    if name not in price_input_data:
-                        price_input_data[name] = {}
-                    if name not in price_output_data:
-                        price_output_data[name] = {}
+        price_input_data = []
+        price_output_data = []
 
-                    # Ajouter les prix pour la date correspondante
-                    price_input_data[name][date] = price_input
-                    price_output_data[name][date] = price_output
+        for date_str, models_extract in date_dict.items():
+            if isinstance(models_extract, dict):
+                models = models_extract.get("models_extract_GPT4o", {}).get("models", [])
+                for model in models:
+                    # Filtrer les types pertinents
+                    if model.get("type") not in ["text", "multimodal"]:
+                        continue
 
-        # Convertir les données en DataFrame pour chaque fichier
+                    model_name = model.get("name", "unknown")
+                    company = model.get("company", "unknown")
+                    currency = model.get("currency", [])
+                    unit_input = model.get("unit_input", [])
+                    price_input = model.get("price_input", [])
+                    unit_output = model.get("unit_output", [])
+                    price_output = model.get("price_output", [])
+
+                    # Harmoniser les prix
+                    true_price_input = harmonize_and_convert_prices(unit_input, price_input, currency, company)
+                    true_price_output = harmonize_and_convert_prices(unit_output, price_output, currency, company)
+
+                    # Calculer les prix moyens
+                    avg_price_input = sum(true_price_input) / len(true_price_input) if true_price_input else None
+                    avg_price_output = sum(true_price_output) / len(true_price_output) if true_price_output else None
+
+                    # Ajouter aux données des CSV
+                    price_input_data.append({"name": model_name, date_str: avg_price_input})
+                    price_output_data.append({"name": model_name, date_str: avg_price_output})
+
+        # Convertir en DataFrame et sauvegarder
         if price_input_data:
-            price_input_df = pd.DataFrame(price_input_data).T
-            price_input_df.index.name = "name"
-            price_input_df.sort_index(axis=1, inplace=True)  # Trier les colonnes par date
-            price_input_csv_path = os.path.join(provider_dir, "text_priceinput.csv")
-            price_input_df.to_csv(price_input_csv_path, index=True)
-            print(f"Fichier généré : {price_input_csv_path}")
+            input_df = pd.DataFrame(price_input_data).groupby("name").mean()
+            input_csv_path = os.path.join(provider_dir, "text_priceinput.csv")
+            input_df.to_csv(input_csv_path)
+            print(f"Fichier sauvegardé : {input_csv_path}")
 
         if price_output_data:
-            price_output_df = pd.DataFrame(price_output_data).T
-            price_output_df.index.name = "name"
-            price_output_df.sort_index(axis=1, inplace=True)  # Trier les colonnes par date
-            price_output_csv_path = os.path.join(provider_dir, "text_priceoutput.csv")
-            price_output_df.to_csv(price_output_csv_path, index=True)
-            print(f"Fichier généré : {price_output_csv_path}")
+            output_df = pd.DataFrame(price_output_data).groupby("name").mean()
+            output_csv_path = os.path.join(provider_dir, "text_priceoutput.csv")
+            output_df.to_csv(output_csv_path)
+            print(f"Fichier sauvegardé : {output_csv_path}")
+
+
+
+def harmonize_and_convert_prices(units, prices, currencies, company):
+    """
+    Harmonise les prix en fonction des unités textuelles et convertit en USD.
+
+    :param units: Liste des unités associées.
+    :param prices: Liste des prix associés.
+    :param currencies: Liste des devises associées.
+    :param company: Nom de la société (utilisé pour des conversions spécifiques).
+    :return: Liste des prix harmonisés en USD.
+    """
+    conversion_rates = {'EUR': 1.1, 'CHF': 1.17, 'CNY': 0.15, 'CREDITS': 0.01, 'DBU': 0.070, 'USD': 1.0}
+    harmonized_prices = []
+
+    for i, (unit, price) in enumerate(zip(units, prices)):
+        unit = unit.lower()
+        # Extraire les valeurs numériques même si elles sont précédées par un symbole
+        price = float(re.search(r'\d+(\.\d+)?', str(price)).group()) if re.search(r'\d+(\.\d+)?', str(price)) else 0.0
+
+        # Détecter la devise, appliquer le taux de conversion
+        currency = currencies[i % len(currencies)].upper() if currencies else 'USD'
+        rate = conversion_rates.get(currency, 1.0)
+
+        # Harmonisation des unités textuelles uniquement
+        if '1k tokens' in unit:
+            price_per_million = price * 1000
+        elif '1k characters' in unit:
+            price_per_million = price * 4000
+        elif '10k tokens' in unit:
+            price_per_million = price * 100
+        elif '10k characters' in unit:
+            price_per_million = price * 400
+        elif '1m tokens' in unit:
+            price_per_million = price
+        elif '1m characters' in unit:
+            price_per_million = price * 4
+        else:
+            # Ignorer les unités non pertinentes
+            continue
+
+        price_in_usd = price_per_million * rate
+        harmonized_prices.append(price_in_usd)
+
+    return harmonized_prices

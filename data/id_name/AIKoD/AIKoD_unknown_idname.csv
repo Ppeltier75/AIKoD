@@ -9,56 +9,10 @@ baichuan2 53b
 baichuan4
 chatglm 130b
 claude pro
-code llama (70b)
-code llama 13b
-code llama 13b instruct
-code llama 13b python
-code llama 34b
-code llama 34b instruct
-code llama 34b python
-code llama 70b
-code llama 70b instruct
-code llama 70b python
-code llama 7b
-code llama 7b instruct
-code llama 7b python
-code llama instruct (13b)
-code llama instruct (34b)
-code llama instruct (70b)
-code llama instruct (7b)
-code llama python (13b)
-code llama python (34b)
-code llama python (70b)
-code llama python (7b)
-code qwen 1.5 7b
-codegeex 4
-codegemma 2b
-codegemma 7b
-codegen2 (16b)
-codegen2 (7b)
-codestral mamba
-codestral mamba 7b
 custom classification model image
 dall·e 2
-dall·e 2 (1024x1024)
-dall·e 2 (256x256)
-dall·e 2 (512x512)
-dall·e 3 hd (1024x1024)
-dall·e 3 hd (1024x1792)
-dall·e 3 standard (1024x1024)
-dall·e 3 standard (256x256)
-dall·e 3 standard (512x512)
 dbrx
 deepseek chat
-deepseek coder 1.3b base
-deepseek coder 33b instruct
-deepseek coder 6.7b base
-deepseek coder 7b base v1.5
-deepseek coder 7b instruct v1.5
-deepseek coder instruct (33b)
-deepseek coder v2 instruct
-deepseek coder v2 lite
-deepseek coder v2 lite base
 embeddings for text
 embo 01
 evo 1 8k base
@@ -66,7 +20,6 @@ falcon 40b instruct
 fine tuning models
 firefunction v1
 firefunction v2
-gcp code generation
 gemini 1.5 flash ( < 128 k)
 gemini 1.5 flash (>128 k)
 gemini 1.5 pro (<128k)
@@ -97,33 +50,13 @@ mixtral 8x7b
 multimodalembedding
 mxbai embed large v1
 nova 2
-openai dall·e 3 (25 steps 512x512)
 paraphrase
-phind code llama v2 (34b)
-phind codellama 34b python v1
-phind codellama 34b v1
-phind codellama 34b v2
 plongement lexical amazon titan v2
-qwen2.5 coder 1.5b
-qwen2.5 coder 1.5b instruct
-qwen2.5 coder 7b
-qwen2.5 coder 7b instruct
-replit code v1 (3b)
 sdxl 1.0
 sdxl fine tuning (1000 steps)
-sqlcoder
-sqlcoder (15b)
-stable code 3b
 stable diffusion xl 1.0 (25 steps 512x512)
 stable fast 3d
 stable triposr 3d
-starcoder
-starcoder (16b)
-starcoder 15.5b
-starcoder 7b
-starcoder2 15b
-starcoder2 3b
-starcoder2 7b
 suno ai
 text embedding 3 small
 timegen 1
@@ -132,8 +65,6 @@ ultra
 voice cloning api
 web search pro
 whisper
-wizardcoder python 34b
-wizardcoder python v1.0 (34b)
 your fine tuned models 1x a100 pcie 80gb
 your fine tuned models 1x a100 sxm 40gb
 your fine tuned models 1x a100 sxm 80gb

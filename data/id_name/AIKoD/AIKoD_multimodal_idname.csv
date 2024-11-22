@@ -50,7 +50,6 @@ gpt 4o mini,gpt-4o-mini-unknown-unknown-unknown-unknown-unknown-false
 gpt 4o mini 2024 07 18,gpt-4o-mini-unknown-20240718-unknown-unknown-unknown-false
 gpt 4o mini 2024 07 18 finetuned,gpt-4o-mini-unknown-20240718-unknown-unknown-unknown-true
 gpt 4o regional api,gpt-4o-unknown-regional-api-unknown-unknown-unknown-false
-intent recognition,intent-recognition-unknown-unknown-unknown-unknown-unknown-unknown-false
 lemur default,lemur-default-unknown-unknown-unknown-unknown-unknown-unknown-false
 llama 3 2 11b vision instruct,llama-vision-instruct-unknown-3.2-unknown-11-unknown-unknown-false
 llama 3 2 90b vision instruct,llama-vision-instruct-unknown-3.2-unknown-90-unknown-unknown-false
@@ -102,9 +101,7 @@ qwen2 vl 7b instruct (bf16),qwen-instruct-unknown-2-unknown-7-unknown-unknown-fa
 rocinante 12b,rocinante-unknown-unknown-unknown-12-unknown-unknown-false
 sdxl,sdxl-unknown-unknown-unknown-unknown-unknown-unknown-false
 sensechat vision,sensechat-unknown-unknown-unknown-unknown-unknown-vision-false
-sentiment analysis,sentiment-analysis-unknown-unknown-unknown-unknown-unknown-unknown-false
 stable image core,stable-image-core-unknown-unknown-unknown-unknown-unknown-unknown-false
-topic detection,topic-detection-unknown-unknown-unknown-unknown-unknown-unknown-false
 gemini 1.5 flash,
 gemini 1.5 flash (<128 k),
 gemini 1.5 flash 128k,
@@ -120,7 +117,22 @@ reka core,
 reka edge,
 reka flash,
 reka spark,
+chat gpt 3.5 turbo,
+chat gpt 4,
+chat gpt 4 turbo,
+chat gpt 4o,
+chat gpt 4o mini,
 anthropic: claude 3 opus,
 anthropic: claude 3 opus (self moderated),
 claude 3 opus,
+claude haiku,
+claude opus,
+deepgram aura,
+magma base,
+magma enhanced,
+magma extended,
+magma supreme,
+openai gpt 4,
+pre trained classification model,
+pre trained segmentation model,
 summarization,

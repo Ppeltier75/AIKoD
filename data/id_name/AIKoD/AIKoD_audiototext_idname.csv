@@ -10,33 +10,14 @@ deepgram whisper cloud,deepgram-whisper-cloud-unknown
 distil whisper,whisper-distil-unknown-unknown
 enhanced,enhanced-unknown-unknown-unknown
 enhanced model,enhanced-unknown-unknown-unknown
-entity detection,entity-detection-unknown-unknown
 gladia model,gladia-unknown-unknown-unknown
 nova 1,nova-unknown-unknown-1
 nova 2,nova-unknown-unknown-2
 redaction,redaction-unknown-unknown-unknown
-rev ai forced alignment,rev-ai-forced-alignment-unknown-unknown
-rev ai human transcription,rev-ai-human-transcription-unknown-unknown
-rev ai language identification,rev-ai-language-identification-unknown-unknown
-rev ai language translation (premium),rev-ai-language-translation-premium-unknown
-rev ai language translation (standard),rev-ai-language-translation-standard-unknown
-rev ai machine transcription,rev-ai-machine-transcription-unknown-unknown
-rev ai reverb foreign language transcription,rev-ai-reverb-foreign-language-transcription-unknown
-rev ai reverb transcription,rev-ai-reverb-transcription-unknown
-rev ai reverb turbo transcription,rev-ai-reverb-turbo-transcription-unknown
-rev ai sentiment analysis,rev-ai-sentiment-analysis-unknown-unknown
-rev ai summarization (premium),rev-ai-summarization-premium-unknown
-rev ai summarization (standard),rev-ai-summarization-standard-unknown
-rev ai topic extraction,rev-ai-topic-extraction-unknown-unknown
-speechmatics chapters,speechmatics-chapters-unknown-unknown
-speechmatics sentiment analysis,speechmatics-sentiment-analysis-unknown-unknown
-speechmatics summaries,speechmatics-summaries-unknown-unknown
-speechmatics topic extraction,speechmatics-topic-extraction-unknown-unknown
 speechmatics transcription enhanced,speechmatics-transcription-enhanced-unknown
 speechmatics transcription lite mode,speechmatics-transcription-lite-mode-unknown
 speechmatics transcription standard,speechmatics-transcription-standard-unknown
 speechmatics translation,speechmatics-translation-unknown-unknown
-summarization,summarization-unknown-unknown-unknown
 universal 1,universal-unknown-unknown-1
 universal nano,universal-nano-unknown-unknown
 whisper,whisper-unknown-unknown-unknown

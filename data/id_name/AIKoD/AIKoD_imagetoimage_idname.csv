@@ -27,3 +27,5 @@ structure,structure-unknown-unknown-unknown-unknown-unknown-False
 style,style-unknown-unknown-unknown-unknown-unknown-False
 super resolution,superresolution-unknown-unknown-unknown-unknown-unknown-False
 upscaling,upscaling-unknown-unknown-unknown-unknown-unknown-False
+stable diffusion x4 latent upscaler 1024 pixels,
+custom segmentation model,

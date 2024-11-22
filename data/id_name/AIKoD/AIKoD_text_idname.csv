@@ -137,8 +137,6 @@ default,cohere-default-unknown-unknown-unknown-unknown-unknown-unknown-false
 default model,cohere-default-unknown-unknown-unknown-unknown-unknown-unknown-false
 discolm german 7b v1 awq,discolm-german-awq-1-unknown-7-unknown-unknown-false
 discolm mixtral 8x7b (46.7b),discolm-mixtral-unknown-unknown-unknown-8x7-unknown-unknown-false
-document ocr,unknown-documentocr-unknown-unknown-unknown-unknown-unknown-unknown-false
-document parse,unknown-documentparse-unknown-unknown-unknown-unknown-unknown-unknown-false
 dolly v2 (12b),dolly-unknown-unknown-2-unknown-12-unknown-unknown-false
 dolly v2 (3b),dolly-unknown-unknown-2-unknown-3-unknown-unknown-false
 dolly v2 (7b),dolly-unknown-unknown-2-unknown-7-unknown-unknown-false
@@ -262,7 +260,6 @@ granite 8b code instruction 128k,granite-code-unknown-unknown-unknown-8-128-inst
 granite 8b japanese,granite-unknown-japanese-unknown-unknown-8-unknown-unknown-false
 granite guardian 3 2b,granite-guardian-unknown-3-unknown-2-unknown-unknown-false
 granite guardian 3 8b,granite-guardian-unknown-3-unknown-8-unknown-unknown-false
-groundedness check,unknown-groundedness-check-unknown-unknown-unknown-unknown-unknown-false
 gryphe mythomax l2 lite (13b),mythomax-unknown-lite-l2-unknown-13-unknown-unknown-false
 gryphe/mythomax l2 13b,mythomax-unknown-unknown-l2-unknown-13-unknown-unknown-false
 gte,gte-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
@@ -306,13 +303,6 @@ jurassic 2 ultra,jurassic-ultra-unknown-2-unknown-unknown-unknown-unknown-false
 jurassic light,jurassic-light-unknown-unknown-unknown-unknown-unknown-unknown-false
 jurassic mid,jurassic-mid-unknown-unknown-unknown-unknown-unknown-unknown-false
 jurassic ultra,jurassic-ultra-unknown-unknown-unknown-unknown-unknown-unknown-false
-key information extraction air waybill,unknown-extraction-airwaybill-unknown-unknown-unknown-unknown-unknown-false
-key information extraction bill of lading,unknown-extraction-billoflading-unknown-unknown-unknown-unknown-unknown-false
-key information extraction commercial invoice,unknown-extraction-commercialinvoice-unknown-unknown-unknown-unknown-unknown-false
-key information extraction export declaration certificate (kr),unknown-extraction-exportdecla-unknown-unknown-unknown-unknown-unknown-false
-key information extraction packing list,unknown-extraction-packinglist-unknown-unknown-unknown-unknown-unknown-false
-key information extraction receipt,unknown-extraction-receipt-unknown-unknown-unknown-unknown-unknown-false
-key information extraction shipping request,unknown-extraction-shippinrequestunknown-unknown-unknown-unknown-unknown-false-false
 koala (13b),koala-unknown-unknown-unknown-unknown-13-unknown-unknown-false
 koala (7b),koala-unknown-unknown-unknown-unknown-7-unknown-unknown-false
 lama 2 chat (13b),lama-unknown-unknown-2-unknown-13-unknown-chat-false
@@ -793,7 +783,6 @@ toppy m (7b),toppy-m-unknown-unknown-unknown-7-unknown-unknown-false
 toppy m 7b,toppy-m-unknown-unknown-unknown-7-unknown-unknown-false
 toppy m 7b (free),toppy-m-unknown-unknown-unknown-7-unknown-unknown-false
 toppy m 7b (nitro),toppy-m-nitro-unknown-unknown-7-unknown-unknown-false
-translation,unknown-translation-unknown-unknown-unknown-unknown-unknown-unknown-false
 una cybertron 7b v2 bf16,una-cybertron-bf16-2-unknown-7-unknown-unknown-false
 upstage solar instruct v1 (11b),solar-unknown-unknown-1-unknown-11-unknown-instruct-false
 upstage solar instruct v1 (11b) int4,solar-unknown-unknown-1-unknown-11-unknown-instruct-false
@@ -828,22 +817,60 @@ zephyr 7b beta,zephyr-beta-unknown-unknown-unknown-7-unknown-unknown-false
 zephyr 7b beta awq,zephyr-beta-awq-unknown-unknown-7-unknown-unknown-false
 zephyr 7b ß,zephyr-unknown-unknown-unknown-unknown-7-unknown-unknown-false
 zephyr 8x 22b,zephyr-unknown-unknown-unknown-unknown-8x22-unknown-unknown-false
+code interpreter,
 code llama (34b),
+code llama (70b),
 code llama 13b,
+code llama 13b instruct,
+code llama 13b python,
 code llama 34b,
+code llama 34b instruct,
+code llama 34b python,
+code llama 70b,
+code llama 70b instruct,
+code llama 70b python,
 code llama 7b,
+code llama 7b instruct,
+code llama 7b python,
+code llama instruct (13b),
+code llama instruct (34b),
+code llama instruct (70b),
+code llama instruct (7b),
+code llama python (13b),
+code llama python (34b),
+code llama python (70b),
+code llama python (7b),
+code qwen 1.5 7b,
+codegeex 4,
+codegemma 2b,
+codegemma 7b,
+codegen2 (16b),
+codegen2 (7b),
 codellama 13b,
 codellama 34b instruct,
 codellama 7b,
 codestral,
+codestral mamba,
+codestral mamba 7b,
 codey for code chat,
 codey for code chat 32k,
 codey for code completion,
 codey for code generation,
 codey for code generation 32k,
+databricks instruct,
+deepseek coder 1.3b base,
+deepseek coder 33b instruct,
+deepseek coder 6.7b base,
+deepseek coder 7b base v1.5,
+deepseek coder 7b instruct v1.5,
+deepseek coder instruct (33b),
 deepseek coder v2,
+deepseek coder v2 instruct,
+deepseek coder v2 lite,
+deepseek coder v2 lite base,
 finetune,
 finetune (微调),
+gcp code generation,
 granite 20b code instruct,
 granite 34b code instruct,
 granite 3b code instruct,
@@ -863,6 +890,10 @@ llama 3.1 instruct 8b,
 llama2 13b,
 llama2 70b,
 llama2 7b,
+luminous base,
+luminous enhanced,
+luminous extended,
+luminous supreme,
 merlinite 7b,
 meta llama/llama 3 70b instruct,
 meta llama/llama 3.1 405b instruct,
@@ -881,8 +912,30 @@ mixtral 8x7b instruct,
 mixtral 8x7b instruct (nitro),
 nousresearch/nous hermes llama2 13b,
 nvidia: llama 3.1 nemotron 70b instruct,
+openai 3.5 turbo instruct,
+openai gpt 3_5 turbo,
+phind code llama v2 (34b),
+phind codellama 34b python v1,
+phind codellama 34b v1,
 phind codellama 34b v2,
+pre trained named entity recognition model,
+pre trained translation model,
 qwen/qwen 2.5 72b instruct,
+qwen2.5 coder 1.5b,
+qwen2.5 coder 1.5b instruct,
+qwen2.5 coder 7b,
+qwen2.5 coder 7b instruct,
+sqlcoder,
+sqlcoder (15b),
+stable code 3b,
+starcoder,
+starcoder (16b),
+starcoder 15.5b,
+starcoder 7b,
 starcoder2 15b,
 starcoder2 15b instruct,
+starcoder2 3b,
+starcoder2 7b,
+wizardcoder python 34b,
+wizardcoder python v1.0 (34b),
 wizardlm 2,

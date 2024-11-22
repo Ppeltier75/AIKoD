@@ -1,9 +1,9 @@
 name,2024-07-03,2024-08-26,2024-09-27,2024-10-21
-chatcompletion v2,0.03,,,
-chatcompletion pro,0.03,,,
-chatcompletion,0.015,,,
-finetune,[],,,
-finetune (微调),,0.015,,
+abab6.5g,,,0.7,0.7
 abab6.5s,,,0.15,0.15
 abab6.5t,,,0.7,0.7
-abab6.5g,,,0.7,0.7
+chatcompletion,2.25,,,
+chatcompletion pro,4.5,,,
+chatcompletion v2,4.5,,,
+finetune,,,,
+finetune (微调),,15.0,,

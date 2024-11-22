@@ -37,14 +37,15 @@ def add_model_type(json_path, output_path=None):
                     temp_input = [mod.replace("code", "text") for mod in modality_input]
                     temp_output = [mod.replace("code", "text") for mod in modality_output]
 
+                    # Si 'api request' est dans modality_input ou modality_output, type = 'task'
+                    if "api request" in modality_input or "api request" in modality_output:
+                        model_type = "task"
                     # Vérification spéciale pour `text` en input/output avec d'autres modalités
-                    if (
+                    elif (
                         "text" in temp_input and
                         "text" in temp_output and
-                        any(mod not in ["text", "image", "audio", "video"] for mod in modality_input + modality_output)
+                        any(mod not in ["text", "image", "audio", "video", "code"] for mod in modality_input + modality_output)
                     ):
-                        model_type = "task"
-                    elif any('api request' in unit for unit in unit_input + unit_output):
                         model_type = "task"
                     elif "embedding" in modality_output:
                         model_type = "embeddings"
@@ -80,12 +81,7 @@ def add_model_type(json_path, output_path=None):
         json.dump(data, outfile, ensure_ascii=False, indent=4)
 
     print(f"Les types de modèles ont été ajoutés et sauvegardés dans {final_output_path}.")
-    # Sauvegarder les données avec les types ajoutés dans un nouveau fichier JSON
-    final_output_path = output_path if output_path else json_path
-    with open(final_output_path, 'w', encoding='utf-8') as outfile:
-        json.dump(data, outfile, ensure_ascii=False, indent=4)
 
-    print(f"Les types de modèles ont été ajoutés et sauvegardés dans {final_output_path}.")
 
 
 def add_id_name_to_json_with_type(json_path, csv_dir, output_path=None):
