@@ -1,17 +1,17 @@
-name,2024-04-01,2024-02-15,2024-01-20,2023-12-31,2023-09-30,2023-08-31,2023-03-31,2023-03-07,2024-07-03,2024-08-26,2023-06-27,2024-09-27,2024-10-21
-jamba 1.5 large,,,,,,,,,,8.0,,8.0,8.0
-jamba 1.5 mini,,,,,,,,,,0.4,,0.4,0.4
-jamba-instruct,,,,,,,,,,0.7,,,
-jumbo,,,,,,,,15.0,,,,,
-jumbo (base & instruct),,,,,,,15.0,,,,,,
-jumbo grande,,,,,,,,10.0,,,,,
-jumbo grande (base & instruct),,,,,,,10.0,,,,,,
-jumbo large,,,,,,,,3.0,,,,,
-jumbo large (base),,,,,,,3.0,,,,,,
-jurassic-2 chat,10.0,0.0,0.0,0.0,,,,,10.0,,,,
-jurassic-2 light,0.5,3.0,3.0,3.0,3.0,3.0,,,0.5,,3.0,,
-jurassic-2 mid,1.25,10.0,10.0,10.0,10.0,10.0,,,1.25,,10.0,,
-jurassic-2 ultra,10.0,15.0,15.0,15.0,15.0,15.0,,,10.0,,15.0,,
-jurassic-light,,,,,,,,,,0.5,,,
-jurassic-mid,,,,,,,,,,1.25,,,
-jurassic-ultra,,,,,,,,,,10.0,,,
+name,id_name,2024-04-01,2024-02-15,2024-01-20,2023-12-31,2023-09-30,2023-08-31,2023-03-31,2023-03-07,2024-07-03,2024-08-26,2023-06-27,2024-09-27,2024-10-21
+jamba 1.5 large,jamba-large-unknown-1.5-unknown-unknown-unknown-unknown-false,,,,,,,,,,8.0,,8.0,8.0
+jamba 1.5 mini,jamba-mini-unknown-1.5-unknown-unknown-unknown-unknown-false,,,,,,,,,,0.4,,0.4,0.4
+jamba-instruct,jamba-unknown-unknown-unknown-unknown-unknown-unknown-instruct-false,,,,,,,,,,0.7,,,
+jumbo,jumbo-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,15.0,,,,,
+jumbo (base & instruct),jumbo-unknown-unknown-unknown-unknown-unknown-unknown-instruct-false,,,,,,,15.0,,,,,,
+jumbo grande,jumbo-grande-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,10.0,,,,,
+jumbo grande (base & instruct),jumbo-grande-unknown-unknown-unknown-unknown-unknown-instruct-false,,,,,,,10.0,,,,,,
+jumbo large,jumbo-large-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,3.0,,,,,
+jumbo large (base),jumbo-large-unknown-unknown-unknown-unknown-unknown-base-false,,,,,,,3.0,,,,,,
+jurassic-2 chat,jurassic-unknown-unknown-2-unknown-unknown-unknown-chat-false,10.0,0.0,0.0,0.0,,,,,10.0,,,,
+jurassic-2 light,jurassic-light-unknown-2-unknown-unknown-unknown-unknown-false,0.5,3.0,3.0,3.0,3.0,3.0,,,0.5,,3.0,,
+jurassic-2 mid,jurassic-mid-unknown-2-unknown-unknown-unknown-unknown-false,1.25,10.0,10.0,10.0,10.0,10.0,,,1.25,,10.0,,
+jurassic-2 ultra,jurassic-ultra-unknown-2-unknown-unknown-unknown-unknown-false,10.0,15.0,15.0,15.0,15.0,15.0,,,10.0,,15.0,,
+jurassic-light,jurassic-light-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,0.5,,,
+jurassic-mid,jurassic-mid-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,1.25,,,
+jurassic-ultra,jurassic-ultra-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,10.0,,,

@@ -1,7 +1,7 @@
-name,2024-05-29,2024-10-31
-Llama-2 (13B),0.25,
-Llama-2 (70B),0.9,
-Llama-2 (7B),0.15,
-Llama-3.1 (70B),,0.9
-Llama-3.1 (8B),,0.15
-Mistral (7B),0.2,
+name,id_name,2024-05-29,2024-10-31
+Llama-2 (13B),llama-unknown-unknown-2-unknown-13-unknown-unknown-false,0.25,
+Llama-2 (70B),llama-unknown-unknown-2-unknown-70-unknown-unknown-false,0.9,
+Llama-2 (7B),llama-unknown-unknown-2-unknown-7-unknown-unknown-false,0.15,
+Llama-3.1 (70B),llama-unknown-unknown-3.1-unknown-70-unknown-unknown-false,,0.9
+Llama-3.1 (8B),llama-unknown-unknown-3.1-unknown-8-unknown-unknown-false,,0.15
+Mistral (7B),mistral-unknown-unknown-unknown-unknown-7-unknown-unknown-false,0.2,

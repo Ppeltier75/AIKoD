@@ -1,209 +1,209 @@
-name,2024-06-20,2024-05-28,2024-05-10,2024-03-23,2024-03-04,2024-01-17,2023-12-24,2023-11-29,2023-10-17,2023-08-12,2023-07-18,2023-07-14,2024-07-03,2024-08-26,2024-09-27,2024-10-21
-01-ai Yi Chat (34B),,,,,,,,,,,,,,,,0.8
-Alpaca (7B),,,,,,,,,,,,,,,,0.2
-Chronos Hermes (13B),,,,,,,,,,,,,,,,0.3
-Code Llama Instruct (13B),,,,,,,,,,,,,,,,0.3
-Code Llama Instruct (34B),,,,,,,,,,,,,,,,0.8
-Code Llama Instruct (70B),,,,,,,,,,,,,,,,0.9
-Code Llama Instruct (7B),,,,,,,,,,,,,,,,0.2
-CodeLlama (13B),0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.4,,,,,,,
-CodeLlama (7B),0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,
-CodeLlama Instruct (13B),0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.4,,,,,,,
-CodeLlama Instruct (7B),0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,
-CodeLlama Python (13B),0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.4,,,,,,,
-CodeLlama Python (7B),0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,
-DBRX Instruct,,,,,,,,,,,,,,,,0.1
-DeepSeek LLM Chat (67B),,,,,,,,,,,,,,,,0.9
-Deepseek Coder Instruct (33B),,,,,,,,,,,,,,,,0.8
-Dolphin 2.5 Mixtral 8x7b,,,,,,,,,,,,,,,,0.6
-Gemma Instruct (2B),,,,,,,,,,,,,,,,0.1
-Gemma Instruct (7B),,,,,,,,,,,,,,,,0.2
-Gemma-2 Instruct (27B),,,,,,,,,,,,,,,,0.8
-Gemma-2 Instruct (9B),,,,,,,,,,,,,,,,0.3
-Gryphe MythoMax L2 Lite (13B),,,,,,,,,,,,,,,,0.6
-Guanaco (13B),,,,,,,,,,,,,,,,0.3
-Guanaco (33B),,,,,,,,,,,,,,,,0.8
-Guanaco (65B),,,,,,,,,,,,,,,,0.9
-Guanaco (7B),,,,,,,,,,,,,,,,0.2
-Hermes 2 Theta Llama-3 70B,,,,,,,,,,,,,,,,0.9
-Koala (13B),,,,,,,,,,,,,,,,0.3
-Koala (7B),,,,,,,,,,,,,,,,0.2
-LLaMA-2 Chat (13B),,,,,,,,,,,,,,,,0.3
-LLaMA-2 Chat (70B),,,,,,,,,,,,,,,,0.9
-LLaMA-2 Chat (7B),,,,,,,,,,,,,,,,0.2
-LLaVa-Next (Mistral-7B),,,,,,,,,,,,,,,,0.6
-Llama 3 (70B),,0.9,0.9,,,,,,,,,,,,,
-Llama 3 (8B),0.2,0.2,0.2,,,,,,,,,,,,,
-Llama 3 Instruct (70B),,0.9,0.9,,,,,,,,,,,,,
-Llama 3 Instruct (8B),0.2,0.2,0.2,,,,,,,,,,,,,
-Llama-2 (13B),0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.4,,,,,,,
-Llama-2 (70B),,0.9,0.9,0.9,0.9,0.9,0.9,0.9,1.0,,,,,,,
-Llama-2 (70B) Chat,,0.9,0.9,0.9,0.9,0.9,0.9,0.9,1.0,,,,,,,
-Llama-2 (7B),0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,
-Llama-2 (7B) 32K Context,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,
-Llama-2 Chat (13B),0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.4,,,,,,,
-Llama-2 Chat (7B),0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,
-Llama-3 70B Instruct Gradient 1048K,,,,,,,,,,,,,,,,0.9
-Llama3 8B Chat HF INT4,,,,,,,,,,,,,,,,0.2
-Meta Llama 3 70B Instruct,,,,,,,,,,,,,,,,0.88
-Meta Llama 3 70B Instruct Lite,,,,,,,,,,,,,,,,0.54
-Meta Llama 3 70B Instruct Reference,,,,,,,,,,,,,,,,0.9
-Meta Llama 3 70B Instruct Turbo,,,,,,,,,,,,,,,,0.88
-Meta Llama 3 8B Instruct,,,,,,,,,,,,,,,,0.18
-Meta Llama 3 8B Instruct Lite,,,,,,,,,,,,,,,,0.1
-Meta Llama 3 8B Instruct Reference,,,,,,,,,,,,,,,,0.2
-Meta Llama 3 8B Instruct Turbo,,,,,,,,,,,,,,,,0.18
-Meta Llama 3.1 405B Instruct Turbo,,,,,,,,,,,,,,,,3.5
-Meta Llama 3.1 70B Instruct,,,,,,,,,,,,,,,,0.88
-Meta Llama 3.1 70B Instruct Turbo,,,,,,,,,,,,,,,,0.88
-Meta Llama 3.1 8B Instruct,,,,,,,,,,,,,,,,0.18
-Meta Llama 3.1 8B Instruct Turbo,,,,,,,,,,,,,,,,0.18
-Meta Llama 3.2 3B Instruct Turbo,,,,,,,,,,,,,,,,0.06
-Mistral (7B) Instruct,,,,,,,,,,,,,,,,0.2
-Mistral (7B) Instruct v0.2,,,,,,,,,,,,,,,,0.2
-Mistral (7B) Instruct v0.3,,,,,,,,,,,,,,,,0.2
-Mistral Instruct v0.1 (7B),0.2,0.2,0.2,0.2,0.2,,,,,,,,,,,
-Mistral Instruct v0.2 (7B),0.2,0.2,0.2,0.2,0.2,,,,,,,,,,,
-Mistral v0.1 (7B),0.2,0.2,0.2,0.2,0.2,,,,,,,,,,,
-Mixtral-8x22B Instruct v0.1,,,,,,,,,,,,,,,,0.6
-Mixtral-8x7B (46.7B),0.9,0.9,0.9,0.9,0.9,,,,,,,,,,,
-Mixtral-8x7B Instruct (46.7B),0.9,0.9,0.9,0.9,0.9,,,,,,,,,,,
-Mixtral-8x7B Instruct v0.1,,,,,,,,,,,,,,,,0.6
-MythoMax-L2 (13B),,,,,,,,,,,,,,,,0.6
-Nous Capybara v1.9 (7B),,,,,,,,,,,,,,,,0.2
-Nous Hermes 2 - Mistral DPO (7B),,,,,,,,,,,,,,,,0.2
-Nous Hermes 2 - Mixtral 8x7B-DPO,,,,,,,,,,,,,,,,0.6
-Nous Hermes 2 - Mixtral 8x7B-SFT,,,,,,,,,,,,,,,,0.6
-Nous Hermes LLaMA-2 (70B),,,,,,,,,,,,,,,,0.9
-Nous Hermes LLaMA-2 (7B),,,,,,,,,,,,,,,,0.2
-Nous Hermes Llama-2 (13B),,,,,,,,,,,,,,,,0.3
-Nous-Hermes-2 Mixtral 8x7B-DPO (46.7B),0.9,0.9,0.9,0.9,0.9,,,,,,,,,,,
-Nous-Hermes-2 Mixtral 8x7B-SFT (46.7B),0.9,0.9,0.9,0.9,0.9,,,,,,,,,,,
-OLMo Instruct (7B),,,,,,,,,,,,,,,,0.2
-OpenChat 3.5,,,,,,,,,,,,,,,,0.1
-OpenHermes 2.5 Mistral 7B,0.2,,,,,,,,,,,,,,,
-OpenHermes-2-Mistral (7B),,,,,,,,,,,,,,,,0.2
-OpenHermes-2.5-Mistral (7B),,,,,,,,,,,,,,,,0.2
-OpenOrca Mistral (7B) 8K,,,,,,,,,,,,,,,,0.2
-Platypus2 Instruct (70B),,,,,,,,,,,,,,,,0.9
-Pythia Chat (7B),,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,,
-Qwen 1.5 Chat (0.5B),,,,,,,,,,,,,,,,0.1
-Qwen 1.5 Chat (1.8B),,,,,,,,,,,,,,,,0.1
-Qwen 1.5 Chat (110B),,,,,,,,,,,,,,,,1.8
-Qwen 1.5 Chat (14B),,,,,,,,,,,,,,,,0.3
-Qwen 1.5 Chat (32B),,,,,,,,,,,,,,,,0.8
-Qwen 1.5 Chat (4B),,,,,,,,,,,,,,,,0.1
-Qwen 1.5 Chat (72B),,,,,,,,,,,,,,,,0.9
-Qwen 1.5 Chat (7B),,,,,,,,,,,,,,,,0.2
-Qwen 2 Instruct (1.5B),,,,,,,,,,,,,,,,0.1
-Qwen 2 Instruct (72B),,,,,,,,,,,,,,,,0.9
-Qwen 2 Instruct (7B),,,,,,,,,,,,,,,,0.2
-Qwen2.5 72B Instruct Turbo,,,,,,,,,,,,,,,,0.9
-Qwen2.5 7B Instruct Turbo,,,,,,,,,,,,,,,,0.2
-ReMM SLERP L2 (13B),,,,,,,,,,,,,,,,0.3
-RedPajama-INCITE (3B),,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,,,,,,
-RedPajama-INCITE (7B),,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,
-RedPajama-INCITE Chat (3B),,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,,,,,,
-RedPajama-INCITE Chat (7B),,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,
-RedPajama-INCITE Instruct (3B),,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,,,,,,
-RedPajama-INCITE Instruct (7B),,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,
-SOLAR Instruct v1 (11B),0.3,,,,,,,,,,,,,,,
-Snorkel Mistral PairRM DPO (7B),,,,,,,,,,,,,,,,0.2
-Snowflake Arctic Instruct,,,,,,,,,,,,,,,,0.1
-Test 11,,,,,,,,,,,,,,,,0.1
-Togethercomputer Llama3 8B Instruct Int8,,,,,,,,,,,,,,,,0.2
-Toppy M (7B),,,,,,,,,,,,,,,,0.2
-Upstage SOLAR Instruct v1 (11B),,,,,,,,,,,,,,,,0.3
-Upstage SOLAR Instruct v1 (11B)-Int4,,,,,,,,,,,,,,,,0.3
-Vicuna v1.3 (13B),,,,,,,,,,,,,,,,0.3
-Vicuna v1.3 (7B),,,,,,,,,,,,,,,,0.2
-Vicuna v1.5 (13B),,,,,,,,,,,,,,,,0.3
-Vicuna v1.5 (7B),,,,,,,,,,,,,,,,0.2
-Vicuna v1.5 16K (13B),,,,,,,,,,,,,,,,0.3
-WizardLM v1.2 (13B),,,,,,,,,,,,,,,,0.3
-WizardLM-2 (8x22B),,,,,,,,,,,,,,,,0.6
-Zephyr 7B,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,,
-Zephyr-7B-ß,,,,,,,,,,,,,,,,0.2
-airoboros gptq (33b),,,,,,,,,,,6.0,6.0,,,,
-alpaca (7b),,,,,,,,,,,1.0,1.0,,,,
-carson ml318br,,,,,,,,,,,,,,,,0.1
-codellama (7b),,,,,,,,,,,,,,0.0,,
-codellama python (7b),,,,,,,,,,,,,,0.0,,
-dolly v2 (3b),,,,,,,,,,,1.0,1.0,,,,
-dolly v2 (7b),,,,,,,,,,,3.0,3.0,,,,
-falcon (40b),,,,,,,,,,,6.0,6.0,,,,
-falcon (7b),,,,,,,,,,,1.0,1.0,,,,
-falcon instruct (7b),,,,,,,,,,,1.0,1.0,,,,
-flan t5 xxl (11b),,,,,,,,,,,3.0,3.0,,,,
-genomic models,,,,,,,,,,,,,2.0,,,
-genomic models 4.1b - 8b,,,,,,,,,,,,,,2.0,,
-gpt-jt-moderation (6b),,,,,,,,,,,1.0,1.0,,,,
-gpt-neox (20b),,,,,,,,,,,3.0,3.0,,,,
-gpt-neoxt-chat-base (20b),,,,,,,,,,,3.0,3.0,,,,
-guanaco (33b),,,,,,,,,,,6.0,6.0,,,,
-guanaco (65b),,,,,,,,,,,15.0,15.0,,,,
-guanaco (7b),,,,,,,,,,,1.0,1.0,,,,
-instructcodet5 (16b),,,,,,,,,,,3.0,3.0,,,,
-koala (13b),,,,,,,,,,,3.0,3.0,,,,
-koala (7b),,,,,,,,,,,1.0,1.0,,,,
-llama (13b),,,,,,,,,,,3.0,3.0,,,,
-llama (33b),,,,,,,,,,,6.0,6.0,,,,
-llama (65b),,,,,,,,,,,15.0,15.0,,,,
-llama 3 instruct (70b),,,,,,,,,,,,,,0.0,,
-llama 3 instruct (8b),,,,,,,,,,,,,,0.0,,
-llama 3 lite 3b,,,,,,,,,,,,,,,0.06,0.06
-llama 3 lite 70b,,,,,,,,,,,,,,0.54,0.54,
-llama 3 lite 8b,,,,,,,,,,,,,,0.1,0.1,0.1
-llama 3 reference 70b,,,,,,,,,,,,,,0.9,0.9,
-llama 3 reference 8b,,,,,,,,,,,,,,0.2,0.2,
-llama 3 turbo 3b,,,,,,,,,,,,,,,0.06,0.06
-llama 3 turbo 405b,,,,,,,,,,,,,,5.0,,
-llama 3 turbo 70b,,,,,,,,,,,,,,0.88,0.88,
-llama 3 turbo 8b,,,,,,,,,,,,,,0.18,0.18,
-llama 3.1 instruct (70b) reference,,,,,,,,,,,,,,0.0,,
-llama 3.1 instruct (8b) reference,,,,,,,,,,,,,,0.0,,
-llama 3.1 turbo 405b,,,,,,,,,,,,,,,3.5,
-llama-2 (13b),,,,,,,,,,,,,,0.0,,
-llama-2 (70b),,,,,,,,,,,,,,0.0,,
-llama-2 (7b),,,,,,,,,,,,,,0.0,,
-llama-2 (7b) 32k context,,,,,,,,,,,,,,0.0,,
-llama-2 chat (13b),,,,,,,,,,,,,,0.0,,
-llama-2 chat (70b),,,,,,,,,,,,,,0.0,,
-llama-2 chat (7b),,,,,,,,,,,,,,0.0,,
-mistral instruct v0.1 (7b),,,,,,,,,,,,,,0.0,,
-mistral instruct v0.2 (7b),,,,,,,,,,,,,,0.0,,
-mistral v0.1 (7b),,,,,,,,,,,,,,0.0,,
-mixtral-8x7b (46.7b),,,,,,,,,,,,,,0.0,,
-mixtral-8x7b instruct (46.7b),,,,,,,,,,,,,,0.0,,
-mixture-of-experts 176.1b - 480b,,,,,,,,,,,,,,2.4,,
-mixture-of-experts 56.1b - 176b,,,,,,,,,,,,,,1.2,,
-mixture-of-experts models (176.1b - 480b),,,,,,,,,,,,,2.4,,,
-mixture-of-experts models (56.1b - 176b),,,,,,,,,,,,,1.2,,,
-mixture-of-experts models (up to 56b),,,,,,,,,,,,,0.6,,,
-mixture-of-experts up to 56b,,,,,,,,,,,,,,0.6,,
-mpt (30b),,,,,,,,,,,6.0,6.0,,,,
-mpt-chat (30b),,,,,,,,,,,6.0,6.0,,,,
-mpt-chat (7b),,,,,,,,,,,1.0,1.0,,,,
-mpt-instruct (30b),,,,,,,,,,,6.0,6.0,,,,
-nous hermes (13b),,,,,,,,,,,3.0,3.0,,,,
-nous-hermes-2 mixtral 8x7b-dpo (46.7b),,,,,,,,,,,,,,0.0,,
-nous-hermes-2 mixtral 8x7b-sft (46.7b),,,,,,,,,,,,,,0.0,,
-open-assistant llama sft-6 (30b),,,,,,,,,,,6.0,6.0,,,,
-open-assistant pythia reward based (7b),,,,,,,,,,,1.0,1.0,,,,
-open-assistant pythia sft-4 (12b),,,,,,,,,,,3.0,3.0,,,,
-open-assistant stablelm sft-7 (7b),,,,,,,,,,,1.0,1.0,,,,
-openhermes 2.5 mistral (7b),,,,,,,,,,,,,,0.0,,
-pythia-chat-base (7b),,,,,,,,,,,1.0,1.0,,,,
-redpajama-incite (3b),,,,,,,,,,,1.0,1.0,,,,
-redpajama-incite (7b),,,,,,,,,,,1.0,1.0,,,,
-redpajama-incite chat (3b),,,,,,,,,,,1.0,1.0,,,,
-redpajama-incite chat (7b),,,,,,,,,,,1.0,1.0,,,,
-redpajama-incite instruct (3b),,,,,,,,,,,1.0,1.0,,,,
-redpajama-incite instruct (7b),,,,,,,,,,,1.0,1.0,,,,
-replit-code-v1 (3b),,,,,,,,,,,1.0,1.0,,,,
-solar instruct v1 (11b),,,,,,,,,,,,,,0.0,,
-starcoderchat alpha (16b),,,,,,,,,,,3.0,3.0,,,,
-vicuna v1.1 (13b),,,,,,,,,,,3.0,3.0,,,,
-vicuna v1.3 (13b),,,,,,,,,,,3.0,3.0,,,,
-vicuna v1.3 (7b),,,,,,,,,,,1.0,1.0,,,,
-vicuna-fastchat-t5 (3b),,,,,,,,,,,1.0,1.0,,,,
+name,id_name,2024-06-20,2024-05-28,2024-05-10,2024-03-23,2024-03-04,2024-01-17,2023-12-24,2023-11-29,2023-10-17,2023-08-12,2023-07-18,2023-07-14,2024-07-03,2024-08-26,2024-09-27,2024-10-21
+01-ai Yi Chat (34B),yi-unknown-unknown-unknown-unknown-34-unknown-chat-false,,,,,,,,,,,,,,,,0.8
+Alpaca (7B),alpaca-unknown-unknown-unknown-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,,,0.2
+Chronos Hermes (13B),chronos-hermes-unknown-unknown-unknown-13-unknown-unknown-false,,,,,,,,,,,,,,,,0.3
+Code Llama Instruct (13B),code-unknown-unknown-unknown-unknown-13-unknown-unknown-instruct-false,,,,,,,,,,,,,,,,0.3
+Code Llama Instruct (34B),code-unknown-unknown-unknown-unknown-34-unknown-unknown-instruct-false,,,,,,,,,,,,,,,,0.8
+Code Llama Instruct (70B),code-unknown-unknown-unknown-unknown-70-unknown-unknown-instruct-false,,,,,,,,,,,,,,,,0.9
+Code Llama Instruct (7B),code-unknown-unknown-unknown-unknown-7-unknown-unknown-instruct-false,,,,,,,,,,,,,,,,0.2
+CodeLlama (13B),llama-unknown-unknown-unknown-unknown-13-unknown-code-false,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.4,,,,,,,
+CodeLlama (7B),codellama-unknown-unknown-unknown-unknown-7-unknown-code-false,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,
+CodeLlama Instruct (13B),codellama-unknown-instruct-unknown-unknown-13-unknown-code-false,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.4,,,,,,,
+CodeLlama Instruct (7B),codellama-unknown-instruct-unknown-unknown-7-unknown-code-false,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,
+CodeLlama Python (13B),codellama-unknown-python-python-unknown-13-unknown-code-false,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.4,,,,,,,
+CodeLlama Python (7B),codellama-unknown-python-unknown-unknown-7-unknown-code-false,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,
+DBRX Instruct,dbrx-unknown-unknown-unknown-unknown-unknown-unknown-instruct-false,,,,,,,,,,,,,,,,0.1
+DeepSeek LLM Chat (67B),deepseek-unknown-unknown-unknown-unknown-67-unknown-chat-false,,,,,,,,,,,,,,,,0.9
+Deepseek Coder Instruct (33B),deepseek-unknown-instruct-unknown-33-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,0.8
+Dolphin 2.5 Mixtral 8x7b,dolphin-mixtral-unknown-2.5-unknown-8x7-unknown-unknown-false,,,,,,,,,,,,,,,,0.6
+Gemma Instruct (2B),gemma-unknown-unknown-unknown-unknown-2-unknown-instruct-false,,,,,,,,,,,,,,,,0.1
+Gemma Instruct (7B),gemma-unknown-unknown-unknown-unknown-7-unknown-instruct-false,,,,,,,,,,,,,,,,0.2
+Gemma-2 Instruct (27B),gemma-unknown-unknown-2-unknown-27-unknown-instruct-false,,,,,,,,,,,,,,,,0.8
+Gemma-2 Instruct (9B),gemma-instruct-unknown-2-unknown-9-unknown-unknown-false,,,,,,,,,,,,,,,,0.3
+Gryphe MythoMax L2 Lite (13B),mythomax-unknown-lite-l2-unknown-13-unknown-unknown-false,,,,,,,,,,,,,,,,0.6
+Guanaco (13B),guanaco-unknown-unknown-unknown-unknown-13-unknown-unknown-false,,,,,,,,,,,,,,,,0.3
+Guanaco (33B),guanaco-unknown-unknown-unknown-unknown-33-unknown-unknown-false,,,,,,,,,,,,,,,,0.8
+Guanaco (65B),guanaco-unknown-unknown-unknown-unknown-65-unknown-unknown-false,,,,,,,,,,,,,,,,0.9
+Guanaco (7B),guanaco-unknown-unknown-unknown-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,,,0.2
+Hermes 2 Theta Llama-3 70B,hermes-llama-theta-2-unknown-70-unknown-unknown-false,,,,,,,,,,,,,,,,0.9
+Koala (13B),koala-unknown-unknown-unknown-unknown-13-unknown-unknown-false,,,,,,,,,,,,,,,,0.3
+Koala (7B),koala-unknown-unknown-unknown-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,,,0.2
+LLaMA-2 Chat (13B),llama-unknown-unknown-2-unknown-13-unknown-chat-false,,,,,,,,,,,,,,,,0.3
+LLaMA-2 Chat (70B),llama-unknown-unknown-2-unknown-70-unknown-chat-false,,,,,,,,,,,,,,,,0.9
+LLaMA-2 Chat (7B),llama-unknown-unknown-2-unknown-7-unknown-chat-false,,,,,,,,,,,,,,,,0.2
+LLaVa-Next (Mistral-7B),llava-mistral-next-unknown-7-unknown-unknown-false-false,,,,,,,,,,,,,,,,0.6
+Llama 3 (70B),llama-unknown-unknown-3-unknown-70-unknown-unknown-false,,0.9,0.9,,,,,,,,,,,,,
+Llama 3 (8B),llama-unknown-unknown-3-unknown-8-unknown-unknown-false,0.2,0.2,0.2,,,,,,,,,,,,,
+Llama 3 Instruct (70B),llama-unknown-unknown-3-unknown-70-unknown-instruct-false,,0.9,0.9,,,,,,,,,,,,,
+Llama 3 Instruct (8B),llama-unknown-unknown-3-unknown-8-unknown-instruct-false,0.2,0.2,0.2,,,,,,,,,,,,,
+Llama-2 (13B),llama-unknown-unknown-2-unknown-13-unknown-unknown-false,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.4,,,,,,,
+Llama-2 (70B),llama-unknown-unknown-2-unknown-70-unknown-unknown-false,,0.9,0.9,0.9,0.9,0.9,0.9,0.9,1.0,,,,,,,
+Llama-2 (70B) Chat,llama-unknown-unknown-2-unknown-70-unknown-chat-false,,0.9,0.9,0.9,0.9,0.9,0.9,0.9,1.0,,,,,,,
+Llama-2 (7B),llama-unknown-unknown-2-unknown-7-unknown-unknown-false,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,
+Llama-2 (7B) 32K Context,llama-unknown-unknown-2-unknown-7-32-unknown-false,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,
+Llama-2 Chat (13B),llama-unknown-unknown-2-unknown-13-unknown-chat-false,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.4,,,,,,,
+Llama-2 Chat (7B),llama-unknown-unknown-2-unknown-7-unknown-chat-false,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,
+Llama-3 70B Instruct Gradient 1048K,llama-unknown-gradient-3-unknown-70-1048-instruct-false,,,,,,,,,,,,,,,,0.9
+Llama3 8B Chat HF INT4,llama-unknown-int4-3-unknown-8-unknown-chat-false,,,,,,,,,,,,,,,,0.2
+Meta Llama 3 70B Instruct,llama-unknown-unknown-3-unknown-70-unknown-instruct-false,,,,,,,,,,,,,,,,0.88
+Meta Llama 3 70B Instruct Lite,llama-unknown-lite-3-unknown-70-unknown-instruct-false,,,,,,,,,,,,,,,,0.54
+Meta Llama 3 70B Instruct Reference,llama-unknown-reference-3-unknown-70-unknown-instruct-false,,,,,,,,,,,,,,,,0.9
+Meta Llama 3 70B Instruct Turbo,llama-unknown-turbo-3-unknown-70-unknown-instruct-false,,,,,,,,,,,,,,,,0.88
+Meta Llama 3 8B Instruct,llama-unknown-unknown-3-unknown-8-unknown-instruct-false,,,,,,,,,,,,,,,,0.18
+Meta Llama 3 8B Instruct Lite,llama-unknown-lite-3-unknown-8-unknown-instruct-false,,,,,,,,,,,,,,,,0.1
+Meta Llama 3 8B Instruct Reference,llama-unknown-reference-3-unknown-8-unknown-instruct-false,,,,,,,,,,,,,,,,0.2
+Meta Llama 3 8B Instruct Turbo,llama-unknown-turbo-3-unknown-8-unknown-instruct-false,,,,,,,,,,,,,,,,0.18
+Meta Llama 3.1 405B Instruct Turbo,llama-unknown-turbo-3.1-unknown-405-unknown-instruct-false,,,,,,,,,,,,,,,,3.5
+Meta Llama 3.1 70B Instruct,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false,,,,,,,,,,,,,,,,0.88
+Meta Llama 3.1 70B Instruct Turbo,llama-unknown-turbo-3.1-unknown-70-unknown-instruct-false,,,,,,,,,,,,,,,,0.88
+Meta Llama 3.1 8B Instruct,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false,,,,,,,,,,,,,,,,0.18
+Meta Llama 3.1 8B Instruct Turbo,llama-unknown-turbo-3.1-unknown-8-unknown-instruct-false,,,,,,,,,,,,,,,,0.18
+Meta Llama 3.2 3B Instruct Turbo,llama-unknown-turbo-3.2-unknown-3-unknown-instruct-false,,,,,,,,,,,,,,,,0.06
+Mistral (7B) Instruct,mistral-unknown-unknown-unknown-unknown-7-unknown-instruct-false,,,,,,,,,,,,,,,,0.2
+Mistral (7B) Instruct v0.2,mistral-instruct-unknown-0.2-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,,,0.2
+Mistral (7B) Instruct v0.3,mistral-instruct-unknown-0.3-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,,,0.2
+Mistral Instruct v0.1 (7B),mistral-instruct-unknown-0.1-unknown-7-unknown-unknown-false,0.2,0.2,0.2,0.2,0.2,,,,,,,,,,,
+Mistral Instruct v0.2 (7B),mistral-instruct-unknown-0.2-unknown-7-unknown-unknown-false,0.2,0.2,0.2,0.2,0.2,,,,,,,,,,,
+Mistral v0.1 (7B),mistral-unknown-unknown-0.1-unknown-7-unknown-unknown-false,0.2,0.2,0.2,0.2,0.2,,,,,,,,,,,
+Mixtral-8x22B Instruct v0.1,mixtral-unknown-unknown-0.1-unknown-8x22-unknown-instruct-false,,,,,,,,,,,,,,,,0.6
+Mixtral-8x7B (46.7B),mixtral-unknown-unknown-unknown-unknown-46.7-unknown-unknown-false,0.9,0.9,0.9,0.9,0.9,,,,,,,,,,,
+Mixtral-8x7B Instruct (46.7B),mixtral-unknown-unknown-unknown-unknown-8x7-unknown-instruct-false,0.9,0.9,0.9,0.9,0.9,,,,,,,,,,,
+Mixtral-8x7B Instruct v0.1,mixtral-unknown-unknown-0.1-unknown-8x7-unknown-unknown-false,,,,,,,,,,,,,,,,0.6
+MythoMax-L2 (13B),mythomax-unknown-unknown-l2-unknown-13-unknown-unknown-false,,,,,,,,,,,,,,,,0.6
+Nous Capybara v1.9 (7B),capybara-unknown-unknown-1.9-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,,,0.2
+Nous Hermes 2 - Mistral DPO (7B),hermes-mistral-dpo-2-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,,,0.2
+Nous Hermes 2 - Mixtral 8x7B-DPO,hermes-mixtral-dpo-2-unknown-8x7-unknown-unknown-false,,,,,,,,,,,,,,,,0.6
+Nous Hermes 2 - Mixtral 8x7B-SFT,hermes-mixtral-sft-2-unknown-8x7-unknown-unknown-false,,,,,,,,,,,,,,,,0.6
+Nous Hermes LLaMA-2 (70B),hermes-llama-unknown-2-unknown-70-unknown-unknown-false,,,,,,,,,,,,,,,,0.9
+Nous Hermes LLaMA-2 (7B),hermes-llama-unknown-2-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,,,0.2
+Nous Hermes Llama-2 (13B),hermes-llama-unknown-2-unknown-13-unknown-unknown-false,,,,,,,,,,,,,,,,0.3
+Nous-Hermes-2 Mixtral 8x7B-DPO (46.7B),hermes-mixtral-dpo-2-unknown-8x7-unknown-unknown-false,0.9,0.9,0.9,0.9,0.9,,,,,,,,,,,
+Nous-Hermes-2 Mixtral 8x7B-SFT (46.7B),hermes-mixtral-sft-2-unknown-8x7-unknown-unknown-false,0.9,0.9,0.9,0.9,0.9,,,,,,,,,,,
+OLMo Instruct (7B),olmo-unknown-unknown-unknown-unknown-7-unknown-instruct-false,,,,,,,,,,,,,,,,0.2
+OpenChat 3.5,openchat-unknown-unknown-3.5-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,0.1
+OpenHermes 2.5 Mistral 7B,openhermes-mistral-unknown-2.5-unknown-7-unknown-unknown-false,0.2,,,,,,,,,,,,,,,
+OpenHermes-2-Mistral (7B),openhermes-mistral-unknown-2-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,,,0.2
+OpenHermes-2.5-Mistral (7B),openhermes-mistral-unknown-2.5-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,,,0.2
+OpenOrca Mistral (7B) 8K,mistral-openorca-unknown-unknown-unknown-7-8-unknown-false,,,,,,,,,,,,,,,,0.2
+Platypus2 Instruct (70B),platypus-unknown-unknown-2-unknown-70-unknown-instruct-false,,,,,,,,,,,,,,,,0.9
+Pythia Chat (7B),pythia-unknown-unknown-unknown-unknown-7-unknown-chat-false,,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,,
+Qwen 1.5 Chat (0.5B),qwen-unknown-unknown-1.5-unknown-0.5-unknown-chat-false,,,,,,,,,,,,,,,,0.1
+Qwen 1.5 Chat (1.8B),qwen-unknown-unknown-1.5-unknown-1.8-unknown-chat-false,,,,,,,,,,,,,,,,0.1
+Qwen 1.5 Chat (110B),qwen-unknown-unknown-1.5-unknown-110-unknown-chat-false,,,,,,,,,,,,,,,,1.8
+Qwen 1.5 Chat (14B),qwen-unknown-unknown-1.5-unknown-14-unknown-chat-false,,,,,,,,,,,,,,,,0.3
+Qwen 1.5 Chat (32B),qwen-unknown-unknown-1.5-unknown-32-unknown-chat-false,,,,,,,,,,,,,,,,0.8
+Qwen 1.5 Chat (4B),qwen-unknown-unknown-1.5-unknown-4-unknown-chat-false,,,,,,,,,,,,,,,,0.1
+Qwen 1.5 Chat (72B),qwen-unknown-unknown-1.5-unknown-72-unknown-chat-false,,,,,,,,,,,,,,,,0.9
+Qwen 1.5 Chat (7B),qwen-unknown-unknown-1.5-unknown-7-unknown-chat-false,,,,,,,,,,,,,,,,0.2
+Qwen 2 Instruct (1.5B),qwen-unknown-unknown-2-unknown-1.5-unknown-instruct-false,,,,,,,,,,,,,,,,0.1
+Qwen 2 Instruct (72B),qwen-unknown-unknown-2-unknown-72-unknown-instruct-false,,,,,,,,,,,,,,,,0.9
+Qwen 2 Instruct (7B),qwen-unknown-unknown-2-unknown-7-unknown-instruct-false,,,,,,,,,,,,,,,,0.2
+Qwen2.5 72B Instruct Turbo,qwen-unknown-turbo-2.5-unknown-72-unknown-instruct-false,,,,,,,,,,,,,,,,0.9
+Qwen2.5 7B Instruct Turbo,qwen-instruct-turbo-2.5-unknown-7-unknown-instruct-false,,,,,,,,,,,,,,,,0.2
+ReMM SLERP L2 (13B),remm-slerp-unknown-l2-unknown-13-unknown-unknown-false,,,,,,,,,,,,,,,,0.3
+RedPajama-INCITE (3B),redpajama-incite-unknown-unknown-unknown-3-unknown-unknown-false,,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,,,,,,
+RedPajama-INCITE (7B),redpajama-incite-unknown-unknown-unknown-7-unknown-unknown-false,,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,
+RedPajama-INCITE Chat (3B),redpajama-incite-unknown-unknown-unknown-3-unknown-chat-false,,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,,,,,,
+RedPajama-INCITE Chat (7B),redpajama-incite-unknown-unknown-unknown-7-unknown-chat-false,,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,
+RedPajama-INCITE Instruct (3B),redpajama-incite-unknown-unknown-unknown-3-unknown-instruct-false,,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,,,,,,
+RedPajama-INCITE Instruct (7B),redpajama-incite-unknown-unknown-unknown-7-unknown-instruct-false,,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,
+SOLAR Instruct v1 (11B),solar-unknown-unknown-1-unknown-11-unknown-instruct-false,0.3,,,,,,,,,,,,,,,
+Snorkel Mistral PairRM DPO (7B),mistral-pairrm-dpo-unknown-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,,,0.2
+Snowflake Arctic Instruct,snowflake-arctic-unknown-unknown-unknown-unknown-unknown-instruct-false,,,,,,,,,,,,,,,,0.1
+Test 11,test-unknown-unknown-11-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,0.1
+Togethercomputer Llama3 8B Instruct Int8,llama-unknown-int8-3-unknown-8-unknown-instruct-false,,,,,,,,,,,,,,,,0.2
+Toppy M (7B),toppy-m-unknown-unknown-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,,,0.2
+Upstage SOLAR Instruct v1 (11B),solar-unknown-unknown-1-unknown-11-unknown-instruct-false,,,,,,,,,,,,,,,,0.3
+Upstage SOLAR Instruct v1 (11B)-Int4,solar-unknown-unknown-1-unknown-11-unknown-instruct-false,,,,,,,,,,,,,,,,0.3
+Vicuna v1.3 (13B),vicuna-unknown-unknown-1.3-unknown-13-unknown-unknown-false,,,,,,,,,,,,,,,,0.3
+Vicuna v1.3 (7B),vicuna-unknown-unknown-1.3-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,,,0.2
+Vicuna v1.5 (13B),vicuna-unknown-unknown-1.5-unknown-13-unknown-unknown-false,,,,,,,,,,,,,,,,0.3
+Vicuna v1.5 (7B),vicuna-unknown-unknown-1.5-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,,,0.2
+Vicuna v1.5 16K (13B),vicuna-unknown-unknown-1.5-unknown-13-16-unknown-false,,,,,,,,,,,,,,,,0.3
+WizardLM v1.2 (13B),wizardlm-unknown-unknown-1.2-unknown-13-unknown-unknown-false,,,,,,,,,,,,,,,,0.3
+WizardLM-2 (8x22B),wizardlm-unknown-unknown-2-unknown-8x22-unknown-unknown-false,,,,,,,,,,,,,,,,0.6
+Zephyr 7B,zephyr-unknown-unknown-unknown-unknown-7-unknown-unknown-false,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,,
+Zephyr-7B-ß,zephyr-unknown-unknown-unknown-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,,,0.2
+airoboros gptq (33b),airoboros-gptq-unknown-unknown-unknown-33-unknown-unknown-false,,,,,,,,,,,6.0,6.0,,,,
+alpaca (7b),alpaca-unknown-unknown-unknown-unknown-7-unknown-unknown-false,,,,,,,,,,,1.0,1.0,,,,
+carson ml318br,ml318br-unknown-carson-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,0.1
+codellama (7b),codellama-unknown-unknown-unknown-unknown-7-unknown-code-false,,,,,,,,,,,,,,0.0,,
+codellama python (7b),codellama-unknown-python-unknown-unknown-7-unknown-code-false,,,,,,,,,,,,,,0.0,,
+dolly v2 (3b),dolly-unknown-unknown-2-unknown-3-unknown-unknown-false,,,,,,,,,,,1.0,1.0,,,,
+dolly v2 (7b),dolly-unknown-unknown-2-unknown-7-unknown-unknown-false,,,,,,,,,,,3.0,3.0,,,,
+falcon (40b),falcon-unknown-unknown-unknown-unknown-40-unknown-unknown-false,,,,,,,,,,,6.0,6.0,,,,
+falcon (7b),falcon-unknown-unknown-unknown-unknown-7-unknown-unknown-false,,,,,,,,,,,1.0,1.0,,,,
+falcon instruct (7b),falcon-instruct-unknown-unknown-unknown-7-unknown-unknown-false,,,,,,,,,,,1.0,1.0,,,,
+flan t5 xxl (11b),flan-t5-xxl-unknown-unknown-11-unknown-unknown-false,,,,,,,,,,,3.0,3.0,,,,
+genomic models,genomic-models-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,2.0,,,
+genomic models 4.1b - 8b,genomic-models-unknown-unknown-unknown-8-unknown-unknown-false,,,,,,,,,,,,,,2.0,,
+gpt-jt-moderation (6b),gpt-jt-moderation-unknown-unknown-6-unknown-unknown-false,,,,,,,,,,,1.0,1.0,,,,
+gpt-neox (20b),gpt-neox-unknown-unknown-unknown-20-unknown-unknown-false,,,,,,,,,,,3.0,3.0,,,,
+gpt-neoxt-chat-base (20b),gpt-neoxt-base-unknown-unknown-20-unknown-chat-false,,,,,,,,,,,3.0,3.0,,,,
+guanaco (33b),guanaco-unknown-unknown-unknown-unknown-33-unknown-unknown-false,,,,,,,,,,,6.0,6.0,,,,
+guanaco (65b),guanaco-unknown-unknown-unknown-unknown-65-unknown-unknown-false,,,,,,,,,,,15.0,15.0,,,,
+guanaco (7b),guanaco-unknown-unknown-unknown-unknown-7-unknown-unknown-false,,,,,,,,,,,1.0,1.0,,,,
+instructcodet5 (16b),instructcodet5-unknown-unknown-unknown-unknown-16-unknown-unknown-false,,,,,,,,,,,3.0,3.0,,,,
+koala (13b),koala-unknown-unknown-unknown-unknown-13-unknown-unknown-false,,,,,,,,,,,3.0,3.0,,,,
+koala (7b),koala-unknown-unknown-unknown-unknown-7-unknown-unknown-false,,,,,,,,,,,1.0,1.0,,,,
+llama (13b),llama-unknown-unknown-unknown-unknown-13-unknown-unknown-false,,,,,,,,,,,3.0,3.0,,,,
+llama (33b),llama-unknown-unknown-unknown-unknown-33-unknown-unknown-false,,,,,,,,,,,6.0,6.0,,,,
+llama (65b),llama-unknown-unknown-unknown-unknown-65-unknown-unknown-false,,,,,,,,,,,15.0,15.0,,,,
+llama 3 instruct (70b),llama-unknown-unknown-3-unknown-70-unknown-instruct-false,,,,,,,,,,,,,,0.0,,
+llama 3 instruct (8b),llama-unknown-unknown-3-unknown-8-unknown-instruct-false,,,,,,,,,,,,,,0.0,,
+llama 3 lite 3b,llama-unknown-lite-3-unknown-3-unknown-unknown-false,,,,,,,,,,,,,,,0.06,0.06
+llama 3 lite 70b,llama-unknown-lite-3-unknown-70-unknown-unknown-false,,,,,,,,,,,,,,0.54,0.54,
+llama 3 lite 8b,llama-unknown-lite-3-unknown-8-unknown-unknown-false,,,,,,,,,,,,,,0.1,0.1,0.1
+llama 3 reference 70b,llama-unknown-reference-3-unknown-70-unknown-unknown-false,,,,,,,,,,,,,,0.9,0.9,
+llama 3 reference 8b,llama-reference-unknown-3-unknown-8-unknown-unknown-false,,,,,,,,,,,,,,0.2,0.2,
+llama 3 turbo 3b,llama-unknown-turbo-3-unknown-3-unknown-unknown-false,,,,,,,,,,,,,,,0.06,0.06
+llama 3 turbo 405b,llama-unknown-turbo-3-unknown-405-unknown-unknown-false,,,,,,,,,,,,,,5.0,,
+llama 3 turbo 70b,llama-unknown-turbo-3-unknown-70-unknown-unknown-false,,,,,,,,,,,,,,0.88,0.88,
+llama 3 turbo 8b,llama-unknown-turbo-3-unknown-8-unknown-unknown-false,,,,,,,,,,,,,,0.18,0.18,
+llama 3.1 instruct (70b) reference,llama-unknown-reference-3.1-unknown-70-unknown-instruct-false,,,,,,,,,,,,,,0.0,,
+llama 3.1 instruct (8b) reference,llama-unknown-reference-3.1-unknown-8-unknown-instruct-false,,,,,,,,,,,,,,0.0,,
+llama 3.1 turbo 405b,llama-unknown-turbo-3.1-unknown-405-unknown-unknown-false,,,,,,,,,,,,,,,3.5,
+llama-2 (13b),llama-unknown-unknown-2-unknown-13-unknown-unknown-false,,,,,,,,,,,,,,0.0,,
+llama-2 (70b),llama-unknown-unknown-2-unknown-70-unknown-unknown-false,,,,,,,,,,,,,,0.0,,
+llama-2 (7b),llama-unknown-unknown-2-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,0.0,,
+llama-2 (7b) 32k context,llama-unknown-unknown-2-unknown-7-32-unknown-false,,,,,,,,,,,,,,0.0,,
+llama-2 chat (13b),llama-unknown-unknown-2-unknown-13-unknown-chat-false,,,,,,,,,,,,,,0.0,,
+llama-2 chat (70b),llama-unknown-unknown-2-unknown-70-unknown-chat-false,,,,,,,,,,,,,,0.0,,
+llama-2 chat (7b),llama-unknown-unknown-2-unknown-7-unknown-chat-false,,,,,,,,,,,,,,0.0,,
+mistral instruct v0.1 (7b),mistral-instruct-unknown-0.1-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,0.0,,
+mistral instruct v0.2 (7b),mistral-instruct-unknown-0.2-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,0.0,,
+mistral v0.1 (7b),mistral-unknown-unknown-0.1-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,0.0,,
+mixtral-8x7b (46.7b),mixtral-unknown-unknown-unknown-unknown-46.7-unknown-unknown-false,,,,,,,,,,,,,,0.0,,
+mixtral-8x7b instruct (46.7b),mixtral-unknown-unknown-unknown-unknown-8x7-unknown-instruct-false,,,,,,,,,,,,,,0.0,,
+mixture-of-experts 176.1b - 480b,moe-unknown-unknown-unknown-unknown-480-unknown-unknown-false,,,,,,,,,,,,,,2.4,,
+mixture-of-experts 56.1b - 176b,moe-unknown-unknown-unknown-unknown-56.1-unknown-unknown-false,,,,,,,,,,,,,,1.2,,
+mixture-of-experts models (176.1b - 480b),moe-unknown-unknown-unknown-unknown-480-unknown-unknown-false,,,,,,,,,,,,,2.4,,,
+mixture-of-experts models (56.1b - 176b),moe-unknown-unknown-unknown-unknown-176-unknown-unknown-false,,,,,,,,,,,,,1.2,,,
+mixture-of-experts models (up to 56b),moe-unknown-unknown-unknown-unknown-56-unknown-unknown-false,,,,,,,,,,,,,0.6,,,
+mixture-of-experts up to 56b,moe-unknown-unknown-unknown-unknown-56-unknown-unknown-false,,,,,,,,,,,,,,0.6,,
+mpt (30b),mpt-unknown-unknown-unknown-unknown-30-unknown-unknown-false,,,,,,,,,,,6.0,6.0,,,,
+mpt-chat (30b),mpt-unknown-unknown-unknown-unknown-30-unknown-chat-false,,,,,,,,,,,6.0,6.0,,,,
+mpt-chat (7b),mpt-chat-unknown-unknown-unknown-7-unknown-unknown-false,,,,,,,,,,,1.0,1.0,,,,
+mpt-instruct (30b),mpt-unknown-unknown-unknown-unknown-30-unknown-instruct-false,,,,,,,,,,,6.0,6.0,,,,
+nous hermes (13b),hermes-unknown-unknown-unknown-unknown-13-unknown-unknown-false,,,,,,,,,,,3.0,3.0,,,,
+nous-hermes-2 mixtral 8x7b-dpo (46.7b),hermes-mixtral-dpo-2-unknown-8x7-unknown-unknown-false,,,,,,,,,,,,,,0.0,,
+nous-hermes-2 mixtral 8x7b-sft (46.7b),hermes-mixtral-sft-2-unknown-8x7-unknown-unknown-false,,,,,,,,,,,,,,0.0,,
+open-assistant llama sft-6 (30b),llama-sft-unknown-6-unknown-30-unknown-unknown-false,,,,,,,,,,,6.0,6.0,,,,
+open-assistant pythia reward based (7b),pythia-reward-unknown-unknown-unknown-7-unknown-unknown-false,,,,,,,,,,,1.0,1.0,,,,
+open-assistant pythia sft-4 (12b),pythia-sft-unknown-4-unknown-12-unknown-unknown-false,,,,,,,,,,,3.0,3.0,,,,
+open-assistant stablelm sft-7 (7b),stablelm-sft-unknown-7-unknown-7-unknown-unknown-false,,,,,,,,,,,1.0,1.0,,,,
+openhermes 2.5 mistral (7b),openhermes-mistral-unknown-2.5-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,0.0,,
+pythia-chat-base (7b),pythia-unknown-base-unknown-unknown-7-unknown-chat-false,,,,,,,,,,,1.0,1.0,,,,
+redpajama-incite (3b),redpajama-incite-unknown-unknown-unknown-3-unknown-unknown-false,,,,,,,,,,,1.0,1.0,,,,
+redpajama-incite (7b),redpajama-incite-unknown-unknown-unknown-7-unknown-unknown-false,,,,,,,,,,,1.0,1.0,,,,
+redpajama-incite chat (3b),redpajama-incite-unknown-unknown-unknown-3-unknown-chat-false,,,,,,,,,,,1.0,1.0,,,,
+redpajama-incite chat (7b),redpajama-incite-unknown-unknown-unknown-7-unknown-chat-false,,,,,,,,,,,1.0,1.0,,,,
+redpajama-incite instruct (3b),redpajama-incite-unknown-unknown-unknown-3-unknown-instruct-false,,,,,,,,,,,1.0,1.0,,,,
+redpajama-incite instruct (7b),redpajama-incite-unknown-unknown-unknown-7-unknown-instruct-false,,,,,,,,,,,1.0,1.0,,,,
+replit-code-v1 (3b),replit-code-unknown-1-unknown-3-unknown-unknown-false,,,,,,,,,,,1.0,1.0,,,,
+solar instruct v1 (11b),solar-unknown-unknown-1-unknown-11-unknown-instruct-false,,,,,,,,,,,,,,0.0,,
+starcoderchat alpha (16b),starcoderchat-alpha-unknown-unknown-unknown-16-unknown-unknown-false,,,,,,,,,,,3.0,3.0,,,,
+vicuna v1.1 (13b),vicuna-unknown-unknown-1.1-unknown-13-unknown-unknown-false,,,,,,,,,,,3.0,3.0,,,,
+vicuna v1.3 (13b),vicuna-unknown-unknown-1.3-unknown-13-unknown-unknown-false,,,,,,,,,,,3.0,3.0,,,,
+vicuna v1.3 (7b),vicuna-unknown-unknown-1.3-unknown-7-unknown-unknown-false,,,,,,,,,,,1.0,1.0,,,,
+vicuna-fastchat-t5 (3b),vicuna-t5-fastchat-unknown-unknown-3-unknown-unknown-false,,,,,,,,,,,1.0,1.0,,,,

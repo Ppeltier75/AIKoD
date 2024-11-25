@@ -1,47 +1,47 @@
-name,2024-06-22,2024-05-24,2024-04-26,2024-03-26,2024-02-24,2024-01-27,2024-07-03,2024-08-26,2024-09-27,2024-10-21
-amazon titan text express,,,,,,,,0.2,0.2,
-amazon titan text lite,0.3,0.3,,,,,,0.15,0.15,0.3
-amazon titan text premier,,,,,,,,0.5,0.5,
-claude 2.0,,,,,,,,8.0,8.0,8.0
-claude 2.0/2.1,8.0,8.0,8.0,8.0,,,8.0,,,
-claude 2.1,,,,,,,,8.0,8.0,8.0
-claude 3 haiku,0.25,0.25,0.25,,,,0.25,0.25,0.25,0.25
-claude 3 opus,15.0,15.0,,,,,15.0,15.0,15.0,15.0
-claude 3 sonnet,3.0,3.0,3.0,3.0,,,3.0,3.0,3.0,3.0
-claude 3.5 sonnet,,,,,,,,3.0,3.0,3.0
-claude instant,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8
-command,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5
-command light,,,,,,,,0.3,0.3,0.3
-command r,0.5,0.5,,,,,0.5,5.0,5.0,0.5
-command r+,3.0,3.0,,,,,3.0,3.0,3.0,3.0
-command-light,0.3,0.3,0.3,0.3,0.3,0.3,0.3,,,
-jamba 1.5 large,,,,,,,,,,2.0
-jamba 1.5 mini,,,,,,,,,,0.2
-jamba-instruct,,,,,,,,0.5,0.5,0.5
-jurassic 2 ultra,18.8,18.8,18.8,18.8,18.8,18.8,,18.8,18.8,18.8
-jurassic-2 mid,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
-jurassic-2 ultra,,,,,,,18.8,,,
-lama 2 chat (13b),,,0.75,0.75,,,0.75,,,
-lama 2 chat (70b),,,1.95,1.95,,,,,,
-llama 2 chat (13b),0.75,0.75,,,0.75,0.75,,0.75,0.75,0.75
-llama 2 chat (70b),1.95,1.95,,,1.95,1.95,1.95,1.95,1.95,1.95
-llama 2 pretrained (13b),,,,,,,,,,
-llama 2 pretrained (70b),,,,,,,,,,
-llama 2 préentrainé (13b),,,,,,1.49,,,,
-llama 2 préentrainé (70b),,,,,,7.99,,,,
-llama 3,,,,,,,,,,
-llama 3 instruct (70b),,,,,,,,,2.65,2.65
-llama 3 instruct (8b),,,,,,,,,0.3,0.3
-llama 3.1 instruct (405b),,,,,,,,,5.32,5.32
-llama 3.1 instruct (70b),,,,,,,,,0.99,0.99
-llama 3.1 instruct (8b),,,,,,,,,0.22,0.22
-llama 3.2 instruct (11b),,,,,,,,,,0.35
-llama 3.2 instruct (1b),,,,,,,,,,0.1
-llama 3.2 instruct (3b),,,,,,,,,,0.15
-llama 3.2 instruct (90b),,,,,,,,,,2.0
-mistral 7b,0.15,0.15,0.15,0.15,,,0.15,0.15,0.15,0.15
-mistral large,8.0,8.0,8.0,,,,8.0,,8.0,8.0
-mistral large (24.02),,,,,,,,,,4.0
-mistral small (24.02),,,,,,,,,,1.0
-mixtral 8x7b,0.45,0.45,0.45,0.45,,,0.45,0.45,0.45,0.45
-stable image core,,,,,,,,,,
+name,id_name,2024-06-22,2024-05-24,2024-04-26,2024-03-26,2024-02-24,2024-01-27,2024-07-03,2024-08-26,2024-09-27,2024-10-21
+amazon titan text express,titan-text-express-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,0.2,0.2,
+amazon titan text lite,titan-text-lite-unknown-unknown-unknown-unknown-unknown-unknown-false,0.3,0.3,,,,,,0.15,0.15,0.3
+amazon titan text premier,titan-text-premier-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,0.5,0.5,
+claude 2.0,claude-unknown-unknown-2-unknown-unknown-unknown-unknown-false,,,,,,,,8.0,8.0,8.0
+claude 2.0/2.1,claude-unknown-unknown-2.1-unknown-unknown-unknown-unknown-false,8.0,8.0,8.0,8.0,,,8.0,,,
+claude 2.1,claude-unknown-unknown-2.1-unknown-unknown-unknown-unknown-false,,,,,,,,8.0,8.0,8.0
+claude 3 haiku,claude-haiku-unknown-3-unknown-unknown-unknown-false,0.25,0.25,0.25,,,,0.25,0.25,0.25,0.25
+claude 3 opus,claude-opus-unknown-3-unknown-unknown-unknown-false,15.0,15.0,,,,,15.0,15.0,15.0,15.0
+claude 3 sonnet,claude-sonnet-unknown-3-unknown-unknown-unknown-false,3.0,3.0,3.0,3.0,,,3.0,3.0,3.0,3.0
+claude 3.5 sonnet,claude-sonnet-unknown-3.5-unknown-unknown-unknown-false,,,,,,,,3.0,3.0,3.0
+claude instant,claude-instant-unknown-unknown-unknown-unknown-unknown-unknown-false,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8
+command,command-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5
+command light,command-light-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,0.3,0.3,0.3
+command r,commandr-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,0.5,0.5,,,,,0.5,5.0,5.0,0.5
+command r+,commandr-plus-unknown-unknown-unknown-unknown-unknown-unknown-false,3.0,3.0,,,,,3.0,3.0,3.0,3.0
+command-light,command-light-unknown-unknown-unknown-unknown-unknown-unknown-false,0.3,0.3,0.3,0.3,0.3,0.3,0.3,,,
+jamba 1.5 large,jamba-large-unknown-1.5-unknown-unknown-unknown-unknown-false,,,,,,,,,,2.0
+jamba 1.5 mini,jamba-mini-unknown-1.5-unknown-unknown-unknown-unknown-false,,,,,,,,,,0.2
+jamba-instruct,jamba-unknown-unknown-unknown-unknown-unknown-unknown-instruct-false,,,,,,,,0.5,0.5,0.5
+jurassic 2 ultra,jurassic-ultra-unknown-2-unknown-unknown-unknown-unknown-false,18.8,18.8,18.8,18.8,18.8,18.8,,18.8,18.8,18.8
+jurassic-2 mid,jurassic-mid-unknown-2-unknown-unknown-unknown-unknown-false,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5,12.5
+jurassic-2 ultra,jurassic-ultra-unknown-2-unknown-unknown-unknown-unknown-false,,,,,,,18.8,,,
+lama 2 chat (13b),lama-unknown-unknown-2-unknown-13-unknown-chat-false,,,0.75,0.75,,,0.75,,,
+lama 2 chat (70b),lama-unknown-unknown-2-unknown-70-unknown-chat-false,,,1.95,1.95,,,,,,
+llama 2 chat (13b),llama-unknown-unknown-2-unknown-13-unknown-chat-false,0.75,0.75,,,0.75,0.75,,0.75,0.75,0.75
+llama 2 chat (70b),llama-unknown-unknown-2-unknown-70-unknown-chat-false,1.95,1.95,,,1.95,1.95,1.95,1.95,1.95,1.95
+llama 2 pretrained (13b),llama-unknown-unknown-2-unknown-13-unknown-unknown-true,,,,,,,,,,
+llama 2 pretrained (70b),llama-unknown-unknown-2-unknown-70-unknown-unknown-true,,,,,,,,,,
+llama 2 préentrainé (13b),llama-unknown-unknown-unknown-unknown-13-unknown-unknown-false,,,,,,1.49,,,,
+llama 2 préentrainé (70b),llama-unknown-unknown-unknown-unknown-70-unknown-unknown-false,,,,,,7.99,,,,
+llama 3,llama-unknown-unknown-3-unknown-unknown-unknown-unknown-false,,,,,,,,,,
+llama 3 instruct (70b),llama-unknown-unknown-3-unknown-70-unknown-instruct-false,,,,,,,,,2.65,2.65
+llama 3 instruct (8b),llama-unknown-unknown-3-unknown-8-unknown-instruct-false,,,,,,,,,0.3,0.3
+llama 3.1 instruct (405b),llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false,,,,,,,,,5.32,5.32
+llama 3.1 instruct (70b),llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false,,,,,,,,,0.99,0.99
+llama 3.1 instruct (8b),llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false,,,,,,,,,0.22,0.22
+llama 3.2 instruct (11b),llama-instruct-unknown-3.2-unknown-11-unknown-unknown-false,,,,,,,,,,0.35
+llama 3.2 instruct (1b),llama-unknown-unknown-3.2-unknown-1-unknown-instruct-false,,,,,,,,,,0.1
+llama 3.2 instruct (3b),llama-unknown-unknown-3.2-unknown-3-unknown-instruct-false,,,,,,,,,,0.15
+llama 3.2 instruct (90b),llama-instruct-unknown-3.2-unknown-90-unknown-unknown-false,,,,,,,,,,2.0
+mistral 7b,mistral-unknown-unknown-unknown-unknown-7-unknown-unknown-false,0.15,0.15,0.15,0.15,,,0.15,0.15,0.15,0.15
+mistral large,mistral-large-unknown-unknown-unknown-unknown-unknown-unknown-false,8.0,8.0,8.0,,,,8.0,,8.0,8.0
+mistral large (24.02),mistral-large-unknown-unknown-2402-unknown-unknown-unknown-false,,,,,,,,,,4.0
+mistral small (24.02),mistral-small-unknown-unknown-2402-unknown-unknown-unknown-false,,,,,,,,,,1.0
+mixtral 8x7b,mixtral-unknown-unknown-unknown-unknown-8x7-unknown-unknown-false,0.45,0.45,0.45,0.45,,,0.45,0.45,0.45,0.45
+stable image core,stable-image-core-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,

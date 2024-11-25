@@ -9,5 +9,5 @@ speech 01 240228,speech-unknown-unknown-240228
 tts,tts-unknown-unknown-unknown
 tts (text to speech),tts-text-to-speech-unknown-unknown
 tts hd,tts-hd-unknown-unknown
-azure ai speech tts,
-suno ai,
+azure ai speech tts,azure-ai-speech-tts-unknown
+suno ai,suno-unknown-unknown-unknown

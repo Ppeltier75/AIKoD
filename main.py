@@ -71,8 +71,8 @@ from function_utils.utils_add_infos import add_id_name_to_json_with_type
 if __name__ == "__main__":
     # Définir les chemins
     base_path = os.path.abspath(os.path.dirname(__file__))
-    json_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v1.json")
-    csv_dir = os.path.join(base_path, "data", "id_name")
+    json_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v2.json")
+    csv_dir = os.path.join(base_path, "data", "id_name", "AIKoD")
     
     # Si vous souhaitez fournir un chemin de sortie :
     output_json_path = None  # Changez ceci pour un chemin spécifique si nécessaire
@@ -118,18 +118,22 @@ if __name__ == "__main__":
 
 
 # %%
+
 import os
 from function_utils.utils_extract_pricing import extract_pricing_text
+from function_utils.utils_extract_pricing import add_id_name_to_pricing_files
 
 if __name__ == "__main__":
     # Définir le chemin de base et les répertoires
     base_path = os.path.abspath(os.path.dirname(__file__))
-    json_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v1.json")
+    json_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v2.json")
     pricing_dir = os.path.join(base_path, "data", "pricing")
 
     # Appeler la fonction pour extraire les prix
     print("Extraction des prix en cours...")
     extract_pricing_text(json_path, pricing_dir)
     print("Extraction terminée.")
+
+
 
 # %%

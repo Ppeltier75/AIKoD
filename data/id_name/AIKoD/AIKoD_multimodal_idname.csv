@@ -102,37 +102,37 @@ rocinante 12b,rocinante-unknown-unknown-unknown-12-unknown-unknown-false
 sdxl,sdxl-unknown-unknown-unknown-unknown-unknown-unknown-false
 sensechat vision,sensechat-unknown-unknown-unknown-unknown-unknown-vision-false
 stable image core,stable-image-core-unknown-unknown-unknown-unknown-unknown-unknown-false
-gemini 1.5 flash,
-gemini 1.5 flash (<128 k),
-gemini 1.5 flash 128k,
-gemini 1.5 pro,
-gemini 1.5 pro (<128k),
-gemini 1.5 pro 128k,
-gemini pro,
-google: gemini flash 1.5,
-google: gemini flash 1.5 (preview),
-google: gemini flash 1.5 experimental,
-google: gemini pro 1.5 experimental,
-reka core,
-reka edge,
-reka flash,
-reka spark,
-chat gpt 3.5 turbo,
-chat gpt 4,
-chat gpt 4 turbo,
-chat gpt 4o,
-chat gpt 4o mini,
-anthropic: claude 3 opus,
-anthropic: claude 3 opus (self moderated),
-claude 3 opus,
-claude haiku,
-claude opus,
-deepgram aura,
-magma base,
-magma enhanced,
-magma extended,
-magma supreme,
-openai gpt 4,
-pre trained classification model,
-pre trained segmentation model,
-summarization,
+gemini 1.5 flash,gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false
+gemini 1.5 flash (<128 k),gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false
+gemini 1.5 flash 128k,gemini-flash-unknown-1.5-unknown-unknown-128-unknown-false
+gemini 1.5 pro,gemini-pro-unknown-1.5-unknown-unknown-unknown-unknown-false
+gemini 1.5 pro (<128k),gemini-pro-unknown-1.5-unknown-unknown-unknown-unknown-false
+gemini 1.5 pro 128k,gemini-pro-unknown-1.5-unknown-unknown-128-unknown-false
+gemini pro,gemini-pro-unknown-unknown-unknown-unknown-unknown-unknown-false
+google: gemini flash 1.5,gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false
+google: gemini flash 1.5 (preview),gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false
+google: gemini flash 1.5 experimental,gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false
+google: gemini pro 1.5 experimental,gemini-pro-unknown-1.5-unknown-unknown-unknown-unknown-false
+reka core,reka-core-unknown-unknown-unknown-unknown-unknown-unknown-false
+reka edge,reka-edge-unknown-unknown-unknown-unknown-unknown-unknown-false
+reka flash,reka-flash-unknown-unknown-unknown-unknown-unknown-unknown-false
+reka spark,reka-spark-unknown-unknown-unknown-unknown-unknown-unknown-false
+chat gpt 3.5 turbo,chatgpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-false
+chat gpt 4,chatgpt-unknown-unknown-4-unknown-unknown-unknown-false
+chat gpt 4 turbo,chatgpt-unknown-turbo-4-unknown-unknown-unknown-false
+chat gpt 4o,chatgpt-unknown-unknown-4o-unknown-unknown-unknown-false
+chat gpt 4o mini,chatgpt-mini-unknown-4o-unknown-unknown-unknown-false
+anthropic: claude 3 opus,claude-opus-unknown-3-unknown-unknown-unknown-false
+anthropic: claude 3 opus (self moderated),claude-opus-selfmoderated-3-unknown-unknown-unknown-false
+claude 3 opus,claude-opus-unknown-3-unknown-unknown-unknown-false
+claude haiku,claude-haiku-unknown-unknown-unknown-unknown-unknown-false
+claude opus,claude-opus-unknown-unknown-unknown-unknown-unknown-false
+deepgram aura,deepgram-unknown-unknown-unknown-unknown-unknown-unknown-false
+magma base,magma-unknown-unknown-unknown-unknown-unknown-unknown-false
+magma enhanced,magma-unknown-unknown-unknown-unknown-unknown-unknown-false
+magma extended,magma-unknown-unknown-unknown-unknown-unknown-unknown-false
+magma supreme,magma-unknown-unknown-unknown-unknown-unknown-unknown-false
+openai gpt 4,gpt-unknown-unknown-4-unknown-unknown-unknown-false
+pre trained classification model,pretrained-classification-unknown-unknown-unknown-unknown-unknown-unknown-false
+pre trained segmentation model,pretrained-segmentation-unknown-unknown-unknown-unknown-unknown-unknown-false
+summarization,summarization-unknown-unknown-unknown-unknown-unknown-unknown-false

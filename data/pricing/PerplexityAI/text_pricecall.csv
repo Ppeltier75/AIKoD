@@ -1,0 +1,23 @@
+name,id_name,2024-01-31,2024-03-01,2024-03-26,2024-05-13,2024-06-08,2024-08-26,2024-09-27,2024-10-21
+34b vanilla language model,vanilla-language-unknown-unknown-unknown-34-unknown-unknown-false,,,,,,,,
+70b vanilla language model,vanilla-language-unknown-unknown-unknown-70-unknown-unknown-false,,,,,,,,
+7b vanilla language model,vanilla-language-unknown-unknown-unknown-7-unknown-unknown-false,,,,,,,,
+8x7b vanilla language model,vanilla-language-unknown-unknown-unknown-8x7-unknown-unknown-false,,,,,,,,
+llama-3-sonar-large-32k-online,llama-sonar-large-3-unknown-unknown-32-unknown-online-false,,,,0.005,0.005,,,
+llama-3-sonar-small-32k-online,llama-sonar-small-3-unknown-unknown-32-online-false,,,,0.005,0.005,,,
+llama-3.1-70b-instruct,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false,,,,,,,,
+llama-3.1-8b-instruct,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false,,,,,,,,
+llama-3.1-sonar-huge-128k-online,llama-sonar-huge-3.1-unknown-unknown-128-online-false,,,,,,0.005,0.005,0.005
+llama-3.1-sonar-large-128k-chat,llama-sonar-large-3.1-unknown-unknown-128-chat-false,,,,,,,,
+llama-3.1-sonar-large-128k-online,llama-sonar-large-3.1-unknown-unknown-128-online-false,,,,,,0.005,0.005,0.005
+llama-3.1-sonar-small-128k-chat,llama-sonar-small-3.1-unknown-unknown-128-chat-false,,,,,,,,
+llama-3.1-sonar-small-128k-online,llama-sonar-small-3.1-unknown-unknown-128-online-false,,,,,,0.005,0.005,0.005
+sonar medium online,sonar-medium-unknown-unknown-unknown-unknown-unknown-online-false,0.005,0.005,0.005,,,,,
+sonar small online,sonar-small-unknown-unknown-unknown-unknown-unknown-online-false,0.005,0.005,0.005,,,,,
+vanilla 7b parameters,vanilla-unknown-unknown-unknown-unknown-7-unknown-unknown-false,,,,,,,,
+vanilla 8x7b models,vanilla-unknown-unknown-unknown-unknown-8x7-unknown-unknown-false,,,,,,,,
+vanilla language model 34b,vanilla-language-unknown-unknown-unknown-34-unknown-unknown-false,,,,,,,,
+vanilla language model 70b,vanilla-language-unknown-unknown-unknown-70-unknown-unknown-false,,,,,,,,
+vanilla language model 7b,vanilla-language-unknown-unknown-unknown-7-unknown-unknown-false,,,,,,,,
+vanilla with 34b parameters,vanilla-unknown-unknown-unknown-unknown-34-unknown-unknown-false,,,,,,,,
+vanilla with 70b parameters,vanilla-unknown-unknown-unknown-unknown-70-unknown-unknown-false,,,,,,,,

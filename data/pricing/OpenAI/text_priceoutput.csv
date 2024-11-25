@@ -1,73 +1,74 @@
-name,2024-05-01,2024-04-24,2024-03-23,2024-02-24,2024-01-23,2023-12-22,2023-11-23,2023-10-24,2023-09-24,2023-08-23,2023-07-24,2023-06-24,2023-05-24,2023-03-23,2023-02-27,2024-07-03,2024-08-26,2024-09-16,2022-11-17,2024-09-27,2024-10-21
-ada (fine-tuning),,,,,,,,,,,,,,,,,,,,,
-babbage,,,,,,,,,,,,,,,,,,,,,
-babbage (fine-tuning),,,,,,,,,,,,,,,,,,,,,
-babbage 002,,,,,,,,,,,,,,,,0.4,0.4,0.4,,0.4,0.4
-babbage-002,,,,0.4,,,,,,,,,,,,1.6,,,,,
-babbage-002 (base),,,,,,,,,,,,,,,,,,,,,
-babbage-002 (fine-tuned),1.6,,,,,,,,,,,,,,,,,,,,
-babbage-002 (fine-tuning),,,,,,,,,1.6,1.6,,,,,,,,,,,
-babbage-002 finetuned,,1.6,1.6,1.6,1.6,1.6,1.6,1.6,,,,,,,,,1.6,1.6,,1.6,1.6
-chat gpt-4o latest,,,,,,,,,,,,,,,,,10.0,10.0,,10.0,10.0
-chatgpt (gpt-3.5-turbo),,,,,,,,,,,,,,,,,,,,,
-curie,,,,,,,,,,,,,,,,,,,,,
-curie (fine-tuning),,,,,,,,,,,,,,,,,,,,,
-davinci,,,,,,,,,,,,,,,,,,,,,
-davinci (fine-tuning),,,,,,,,,,,,,,,,,,,,,
-davinci 002,,,,,,,,,,,,,,,,2.0,2.0,2.0,,2.0,2.0
-davinci-002,,,,2.0,,,,,,,,,,,,12.0,,,,,
-davinci-002 (base),,,,,,,,,,,,,,,,,,,,,
-davinci-002 (fine-tuned),12.0,,,,,,,,,,,,,,,,,,,,
-davinci-002 (fine-tuning),,,,,,,,,12.0,12.0,,,,,,,,,,,
-davinci-002 finetuned,,12.0,12.0,12.0,12.0,12.0,12.0,12.0,,,,,,,,,12.0,12.0,,12.0,12.0
-fine-tuned ada,,,,,,,,,,,,,,,,,,,1.6,,
-fine-tuned babbage,,,,,,,,,,,,,,,,,,,2.4,,
-fine-tuned curie,,,,,,,,,,,,,,,,,,,12.0,,
-fine-tuned davinci,,,,,,,,,,,,,,,,,,,120.0,,
-fine-tuning (ada),,,,,,,,,,,,,,,,,,,,,
-fine-tuning (babbage),,,,,,,,,,,,,,,,,,,,,
-fine-tuning (curie),,,,,,,,,,,,,,,,,,,,,
-fine-tuning (davinci),,,,,,,,,,,,,,,,,,,,,
-gpt-3.5 turbo (16k context),,,,,,,,4.0,4.0,4.0,4.0,4.0,,,,,,,,,
-gpt-3.5 turbo (4k context),,,,,,,,2.0,2.0,2.0,2.0,2.0,,,,,,,,,
-gpt-3.5 turbo (fine-tuning),,,,,,,,,16.0,16.0,,,,,,,,,,,
-gpt-3.5 turbo 0125,,,,,,,,,,,,,,,,1.5,,,,,
-gpt-3.5 turbo finetuned,,,,,,,,16.0,,,,,,,,,,,,,
-gpt-3.5 turbo instruct,,,,,,,,,,,,,,,,2.0,,,,,
-gpt-3.5 turbo-1106,,,,,,2.0,,,,,,,,,,,,,,,
-gpt-3.5-turbo,,,,,,,,,,,,,,,,,,,,,
-gpt-3.5-turbo (fine-tuned),6.0,,,,,,,,,,,,,,,6.0,,,,,
-gpt-3.5-turbo finetuned,,6.0,6.0,6.0,6.0,6.0,6.0,,,,,,,,,,6.0,6.0,,6.0,6.0
-gpt-3.5-turbo-0125,1.5,1.5,1.5,1.5,,,,,,,,,,,,,,,,,
-gpt-3.5-turbo-0301,2.0,2.0,2.0,2.0,,,,,,,,,,,,2.0,2.0,2.0,,2.0,2.0
-gpt-3.5-turbo-0613,2.0,2.0,2.0,2.0,,,,,,,,,,,,2.0,2.0,2.0,,2.0,2.0
-gpt-3.5-turbo-1106,2.0,2.0,2.0,2.0,2.0,,20.0,,,,,,,,,2.0,2.0,2.0,,2.0,2.0
-gpt-3.5-turbo-16k-0613,4.0,4.0,4.0,4.0,,,,,,,,,,,,4.0,4.0,4.0,,4.0,4.0
-gpt-3.5-turbo-instruct,2.0,2.0,2.0,2.0,2.0,2.0,2.0,,,,,,,,,,,,,,
-gpt-4,60.0,60.0,60.0,60.0,60.0,60.0,60.0,,,,,,,,,60.0,60.0,60.0,,60.0,60.0
-gpt-4 (32k context),,,,,,,,120.0,120.0,120.0,120.0,120.0,120.0,120.0,,,,,,,
-gpt-4 (8k context),,,,,,,,60.0,60.0,60.0,60.0,60.0,60.0,60.0,,,,,,,
-gpt-4-0125-preview,30.0,30.0,30.0,30.0,,,,,,,,,,,,30.0,30.0,30.0,,30.0,30.0
-gpt-4-1106-preview,30.0,30.0,30.0,30.0,30.0,30.0,60.0,,,,,,,,,30.0,30.0,30.0,,30.0,30.0
-gpt-4-1106-vision-preview,,,30.0,30.0,30.0,30.0,60.0,,,,,,,,,,,,,,
-gpt-4-32k,120.0,120.0,120.0,120.0,120.0,120.0,120.0,,,,,,,,,120.0,120.0,120.0,,120.0,120.0
-gpt-4-turbo,,,,,,,,,,,,,,,,30.0,30.0,30.0,,30.0,30.0
-gpt-4-turbo-2024-04-09,30.0,30.0,,,,,,,,,,,,,,30.0,30.0,30.0,,30.0,30.0
-gpt-4-vision-preview,30.0,30.0,,,,,,,,,,,,,,30.0,30.0,30.0,,30.0,30.0
-gpt-4o,,,,,,,,,,,,,,,,15.0,15.0,15.0,,15.0,5.0009565
-gpt-4o 2024-05-13,,,,,,,,,,,,,,,,15.0,,,,,
-gpt-4o mini,,,,,,,,,,,,,,,,,0.6,0.6,,0.6,0.6
-gpt-4o mini 2024 07 18 finetuned,,,,,,,,,,,,,,,,,1.2,1.2,,1.2,1.2
-gpt-4o-2024-05-13,,,,,,,,,,,,,,,,,15.0,15.0,,15.0,15.0
-gpt-4o-2024-08-06,,,,,,,,,,,,,,,,,10.0,10.0,,10.0,10.0
-gpt-4o-2024-08-06 finetuned,,,,,,,,,,,,,,,,,15.0,15.0,,15.0,15.0
-gpt-4o-2024-10-01,,,,,,,,,,,,,,,,,,,,,105.0
-gpt-4o-mini-2024-07-18,,,,,,,,,,,,,,,,,0.6,0.6,,0.6,0.6
-instructgpt (ada),,,,,,,,,,,,,,,,,,,0.4,,
-instructgpt (babbage),,,,,,,,,,,,,,,,,,,0.5,,
-instructgpt (curie),,,,,,,,,,,,,,,,,,,2.0,,
-instructgpt (davinci),,,,,,,,,,,,,,,,,,,20.0,,
-o1-mini,,,,,,,,,,,,,,,,,,12.0,,12.0,12.0
-o1-mini 2024 09 12,,,,,,,,,,,,,,,,,,,,,12.0
-o1-preview,,,,,,,,,,,,,,,,,,60.0,,60.0,60.0
-o1-preview 2024 09 12,,,,,,,,,,,,,,,,,,,,,60.0
+name,id_name,2024-05-01,2024-04-24,2024-03-23,2024-02-24,2024-01-23,2023-12-22,2023-11-23,2023-10-24,2023-09-24,2023-08-23,2023-07-24,2023-06-24,2023-05-24,2023-03-23,2023-02-27,2024-07-03,2024-08-26,2024-09-16,2022-11-17,2024-09-27,2024-10-21
+ada (fine-tuning),ada-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,,,,,,,,,,,,,,
+babbage,babbage-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,,,,,
+babbage (fine-tuning),babbage-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,,,,,
+babbage 002,babbage-unknown-unknown-unknown-2-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,0.4,0.4,0.4,,0.4,0.4
+babbage-002,babbage-unknown-unknown-unknown-2-unknown-unknown-unknown-false,,,,0.4,,,,,,,,,,,,1.6,,,,,
+babbage-002 (base),babbage-base-unknown-unknown-2-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,,,,,
+babbage-002 (fine-tuned),babbage-unknown-unknown-unknown-2-unknown-unknown-unknown-true,1.6,,,,,,,,,,,,,,,,,,,,
+babbage-002 (fine-tuning),babbage-unknown-unknown-unknown-2-unknown-unknown-unknown-true,,,,,,,,,1.6,1.6,,,,,,,,,,,
+babbage-002 finetuned,babbage-unknown-unknown-unknown-2-unknown-unknown-unknown-true,,1.6,1.6,1.6,1.6,1.6,1.6,1.6,,,,,,,,,1.6,1.6,,1.6,1.6
+chat gpt-4o latest,chatgpt-4o-latest-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,10.0,10.0,,10.0,10.0
+chatgpt (gpt-3.5-turbo),chatgpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,,,,,
+curie,curie-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,,,,,
+curie (fine-tuning),curie-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,,,,,,,,,,,,,,
+davinci,davinci-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,,,,,
+davinci (fine-tuning),davinci-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,,,,,,,,,,,,,,
+davinci 002,davinci-unknown-unknown-unknown-2-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,2.0,2.0,2.0,,2.0,2.0
+davinci-002,davinci-unknown-unknown-unknown-2-unknown-unknown-unknown-false,,,,2.0,,,,,,,,,,,,12.0,,,,,
+davinci-002 (base),davinci-base-unknown-unknown-2-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,,,,,
+davinci-002 (fine-tuned),davinci-unknown-unknown-2-unknown-unknown-unknown-unknown-false,12.0,,,,,,,,,,,,,,,,,,,,
+davinci-002 (fine-tuning),davinci-unknown-unknown-unknown-2-unknown-unknown-unknown-true,,,,,,,,,12.0,12.0,,,,,,,,,,,
+davinci-002 finetuned,davinci-unknown-unknown-unknown-2-unknown-unknown-unknown-true,,12.0,12.0,12.0,12.0,12.0,12.0,12.0,,,,,,,,,12.0,12.0,,12.0,12.0
+fine-tuned ada,ada-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,,,,,,,,,,,,1.6,,
+fine-tuned babbage,babbage-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,,,,,,,,,,,,2.4,,
+fine-tuned curie,curie-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,,,,,,,,,,,,12.0,,
+fine-tuned davinci,davinci-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,,,,,,,,,,,,120.0,,
+fine-tuning (ada),ada-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,,,,,,,,,,,,,,
+fine-tuning (babbage),babbage-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,,,,,,,,,,,,,,
+fine-tuning (curie),curie-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,,,,,,,,,,,,,,
+fine-tuning (davinci),davinci-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,,,,,,,,,,,,,,
+gpt-3.5 turbo (16k context),gpt-unknown-turbo-3.5-unknown-unknown-16-unknown-false,,,,,,,,4.0,4.0,4.0,4.0,4.0,,,,,,,,,
+gpt-3.5 turbo (4k context),gpt-unknown-turbo-3.5-unknown-unknown-4-unknown-false,,,,,,,,2.0,2.0,2.0,2.0,2.0,,,,,,,,,
+gpt-3.5 turbo (fine-tuning),gpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-true,,,,,,,,,16.0,16.0,,,,,,,,,,,
+gpt-3.5 turbo 0125,gpt-unknown-turbo-3.5-0125-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,1.5,,,,,
+gpt-3.5 turbo finetuned,gpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-true,,,,,,,,16.0,,,,,,,,,,,,,
+gpt-3.5 turbo instruct,gpt-unknown-turbo-3.5-unknown-unknown-unknown-instruct-false,,,,,,,,,,,,,,,,2.0,,,,,
+gpt-3.5 turbo-1106,gpt-unknown-turbo-3.5-1106-unknown-unknown-unknown-false,,,,,,2.0,,,,,,,,,,,,,,,
+gpt-3.5-turbo,gpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,,,,,
+gpt-3.5-turbo (fine-tuned),gpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-true,6.0,,,,,,,,,,,,,,,6.0,,,,,
+gpt-3.5-turbo finetuned,gpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-true,,6.0,6.0,6.0,6.0,6.0,6.0,,,,,,,,,,6.0,6.0,,6.0,6.0
+gpt-3.5-turbo-0125,gpt-unknown-turbo-3.5-0125-unknown-unknown-unknown-false,1.5,1.5,1.5,1.5,,,,,,,,,,,,,,,,,
+gpt-3.5-turbo-0301,gpt-unknown-turbo-3.5-0301-unknown-unknown-unknown-false,2.0,2.0,2.0,2.0,,,,,,,,,,,,2.0,2.0,2.0,,2.0,2.0
+gpt-3.5-turbo-0613,gpt-unknown-turbo-3.5-0613-unknown-unknown-unknown-false,2.0,2.0,2.0,2.0,,,,,,,,,,,,2.0,2.0,2.0,,2.0,2.0
+gpt-3.5-turbo-1106,gpt-unknown-turbo-3.5-1106-unknown-unknown-unknown-false,2.0,2.0,2.0,2.0,2.0,,20.0,,,,,,,,,2.0,2.0,2.0,,2.0,2.0
+gpt-3.5-turbo-16k-0613,gpt-turbo-unknown-3.5-0613-unknown-16-unknown-false,4.0,4.0,4.0,4.0,,,,,,,,,,,,,,,,,
+gpt-3.5-turbo-16k-0613,gpt-unknown-turbo-3.5-0613-unknown-16-unknown-false,,,,,,,,,,,,,,,,4.0,4.0,4.0,,4.0,4.0
+gpt-3.5-turbo-instruct,gpt-unknown-turbo-3.5-unknown-unknown-unknown-instruct-false,2.0,2.0,2.0,2.0,2.0,2.0,2.0,,,,,,,,,,,,,,
+gpt-4,gpt-unknown-unknown-4-unknown-unknown-unknown-false,60.0,60.0,60.0,60.0,60.0,60.0,60.0,,,,,,,,,60.0,60.0,60.0,,60.0,60.0
+gpt-4 (32k context),gpt-unknown-unknown-4-unknown-unknown-32-unknown-false,,,,,,,,120.0,120.0,120.0,120.0,120.0,120.0,120.0,,,,,,,
+gpt-4 (8k context),gpt-unknown-unknown-4-unknown-unknown-8-unknown-false,,,,,,,,60.0,60.0,60.0,60.0,60.0,60.0,60.0,,,,,,,
+gpt-4-0125-preview,gpt-unknown-unknown-4-0125-unknown-unknown-unknown-false,30.0,30.0,30.0,30.0,,,,,,,,,,,,30.0,30.0,30.0,,30.0,30.0
+gpt-4-1106-preview,gpt-unknown-unknown-4-1106-unknown-unknown-unknown-false,30.0,30.0,30.0,30.0,30.0,30.0,60.0,,,,,,,,,30.0,30.0,30.0,,30.0,30.0
+gpt-4-1106-vision-preview,gpt-unknown-unknown-4-1106-unknown-unknown-unknown-false,,,30.0,30.0,30.0,30.0,60.0,,,,,,,,,,,,,,
+gpt-4-32k,gpt-unknown-unknown-4-unknown-32-unknown-false,120.0,120.0,120.0,120.0,120.0,120.0,120.0,,,,,,,,,120.0,120.0,120.0,,120.0,120.0
+gpt-4-turbo,gpt-turbo-unknown-4-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,30.0,30.0,30.0,,30.0,30.0
+gpt-4-turbo-2024-04-09,gpt-turbo-unknown-4-20240409-unknown-unknown-unknown-false,30.0,30.0,,,,,,,,,,,,,,30.0,30.0,30.0,,30.0,30.0
+gpt-4-vision-preview,gpt-unknown-unknown-4-unknown-unknown-unknown-false,30.0,30.0,,,,,,,,,,,,,,30.0,30.0,30.0,,30.0,30.0
+gpt-4o,gpt-4o-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,15.0,15.0,15.0,,15.0,5.0009565
+gpt-4o 2024-05-13,gpt-4o-unknown-unknown-20240513-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,15.0,,,,,
+gpt-4o mini,gpt-4o-mini-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,0.6,0.6,,0.6,0.6
+gpt-4o mini 2024 07 18 finetuned,gpt-4o-mini-unknown-20240718-unknown-unknown-unknown-true,,,,,,,,,,,,,,,,,1.2,1.2,,1.2,1.2
+gpt-4o-2024-05-13,gpt-4o-unknown-unknown-20240513-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,15.0,15.0,,15.0,15.0
+gpt-4o-2024-08-06,gpt-4o-unknown-unknown-20240806-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,10.0,10.0,,10.0,10.0
+gpt-4o-2024-08-06 finetuned,gpt-4o-unknown-unknown-20240806-unknown-unknown-unknown-true,,,,,,,,,,,,,,,,,15.0,15.0,,15.0,15.0
+gpt-4o-2024-10-01,gpt-4o-unknown-unknown-20241001-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,,,,,105.0
+gpt-4o-mini-2024-07-18,gpt-4o-mini-unknown-20240718-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,0.6,0.6,,0.6,0.6
+instructgpt (ada),ada-unknown-unknown-unknown-unknown-unknown-unknown-instruct-false,,,,,,,,,,,,,,,,,,,0.4,,
+instructgpt (babbage),babbage-unknown-unknown--unknown-unknown-unknown-unknown-instruct-false,,,,,,,,,,,,,,,,,,,0.5,,
+instructgpt (curie),curie-unknown-unknown-unknown-unknown-unknown-unknown-instruct-false,,,,,,,,,,,,,,,,,,,2.0,,
+instructgpt (davinci),davinci-unknownunknown--unknown-unknown-unknown-unknown-instruct-false,,,,,,,,,,,,,,,,,,,20.0,,
+o1-mini,o1-mini-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,,12.0,,12.0,12.0
+o1-mini 2024 09 12,o1-mini-unknown-unknown-20240912-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,,,,,12.0
+o1-preview,o1-preview-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,,60.0,,60.0,60.0
+o1-preview 2024 09 12,o1-preview-unknown-unknown-20240912-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,,,,,60.0

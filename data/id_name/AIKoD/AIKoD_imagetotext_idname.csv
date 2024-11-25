@@ -1,7 +1,7 @@
 name,id_name
 glm 4v,glm-unknown-unknown-4-unknown-unknown-False
 glm 4v plus,glm-unknown-unknown-4-unknown-unknown-False
-custom classification model image,
-custom detection model,
-pre trained detection model,
-pre trained landmark model,
+custom classification model image,custom-unknown-unknown-unknown-unknown-unknown-True
+custom detection model,custom-unknown-unknown-unknown-unknown-unknown-True
+pre trained detection model,pretrained-unknown-unknown-unknown-unknown-unknown-False
+pre trained landmark model,pretrained-unknown-unknown-unknown-unknown-unknown-False

@@ -1,42 +1,42 @@
-name,2024-05-21,2024-07-03,2024-08-26,2024-09-27,2024-10-21
-allam-1-13b-instruct,,1.8,1.8,1.8,1.8
-codellama-34b-instruct,1.8,1.8,1.8,1.8,1.8
-elyza-japanese-llama-2-7b-instruct,1.8,1.8,1.8,1.8,1.8
-flan-t5-xl-3b,0.6,0.6,,0.6,0.6
-flan-t5-xxl-11b,1.8,1.8,1.8,1.8,1.8
-flan-ul2-20b,5.0,5.0,,5.0,5.0
-granite 13b chat,,0.6,,,
-granite 13b instruct,,0.6,,,
-granite-13b-chat,0.6,,0.6,0.6,0.6
-granite-13b-instruct,0.6,,0.6,0.6,0.6
-granite-20b-code-instruct,0.6,0.6,0.6,0.6,0.6
-granite-20b-multilingual,0.6,0.6,0.6,0.6,0.6
-granite-3-2b-instruct,,,,,0.1
-granite-3-8b-instruct,,,,,0.2
-granite-34b-code-instruct,0.6,0.6,0.6,0.6,0.6
-granite-3b-code-instruct,0.6,0.6,0.6,0.6,0.6
-granite-7b-lab,0.6,0.6,0.6,0.6,
-granite-8b-code-instruct,0.6,0.6,0.6,0.6,0.6
-granite-8b-japanese,0.6,0.6,0.6,0.6,0.6
-granite-guardian-3-2b,,,,,0.1
-granite-guardian-3-8b,,,,,0.2
-jais-13b-chat (arabic),1.8,1.8,1.8,1.8,1.8
-llama-2-13b-chat,0.6,0.6,0.6,,
-llama-2-70b-chat,1.8,1.8,1.8,,
-llama-3-1-70b-instruct,,,1.8,1.8,1.8
-llama-3-1-8b-instruct,,,0.6,0.6,0.6
-llama-3-2-11b-vision-instruct,,,,0.0,0.35
-llama-3-2-1b-instruct,,,,,0.1
-llama-3-2-3b-instruct,,,,0.0,0.15
-llama-3-2-90b-vision-instruct,,,,0.0,2.0
-llama-3-70b-instruct,1.8,1.8,1.8,1.8,1.8
-llama-3-8b-instruct,0.6,0.6,,0.6,0.6
-llama-3.1-405b-instruct,,,5.0,5.0,5.0
-llama-3.1-8b-instruct,,,0.6,,
-llama2-13b-dpo-v7 (korean),1.8,1.8,1.8,1.8,1.8
-llama3-llava-next-8b-hf,,,,0.6,
-merlinite-7b,0.6,0.6,,,
-mistral-large-2,,,10.0,10.0,10.0
-mixtral-8x7b-instruct,0.6,,0.6,0.6,0.6
-mt0-xxl-13b,1.8,1.8,1.8,1.8,1.8
-pixtral 12b,,,,,0.35
+name,id_name,2024-05-21,2024-07-03,2024-08-26,2024-09-27,2024-10-21
+allam-1-13b-instruct,allam-unknown-unknown-1-unknown-13-unknown-instruct-false,,1.8,1.8,1.8,1.8
+codellama-34b-instruct,codellama-unknown-unknown-unknown-unknown-34-unknown-unknown-instruct-false,1.8,1.8,1.8,1.8,1.8
+elyza-japanese-llama-2-7b-instruct,elyza-llama-japanese-2-unknown-7-unknown-instruct-false,1.8,1.8,1.8,1.8,1.8
+flan-t5-xl-3b,flan-t5-xl-unknown-unknown-3-unknown-unknown-false,0.6,0.6,,0.6,0.6
+flan-t5-xxl-11b,flan-t5-xxl-unknown-unknown-11-unknown-unknown-false,1.8,1.8,1.8,1.8,1.8
+flan-ul2-20b,flan-ul2-unknown-unknown-unknown-20-unknown-unknown-false,5.0,5.0,,5.0,5.0
+granite 13b chat,granite-unknown-unknown-unknown-unknown-13-unknown-chat-false,,0.6,,,
+granite 13b instruct,granite-unknown-unknown-unknown-unknown-13-unknown-instruct-false,,0.6,,,
+granite-13b-chat,granite-unknown-unknown-unknown-unknown-13-unknown-chat-false,0.6,,0.6,0.6,0.6
+granite-13b-instruct,granite-unknown-unknown-unknown-unknown-13-unknown-instruct-false,0.6,,0.6,0.6,0.6
+granite-20b-code-instruct,granite-unknown-code-instruct-unknown-unknown-20-unknown-unknown-false,0.6,0.6,0.6,0.6,0.6
+granite-20b-multilingual,granite-unknown-multilingual-unknown-unknown-20-unknown-unknown-false,0.6,0.6,0.6,0.6,0.6
+granite-3-2b-instruct,granite-unknown-unknown-3-unknown-2-unknown-instruct-false,,,,,0.1
+granite-3-8b-instruct,granite-unknown-unknown-3-unknown-8-unknown-instruct-false,,,,,0.2
+granite-34b-code-instruct,granite-unknown-code-instruct-unknown-unknown-34-unknown-unknown-false,0.6,0.6,0.6,0.6,0.6
+granite-3b-code-instruct,granite-unknown-code-instruct-unknown-unknown-3-unknown-unknown-false,0.6,0.6,0.6,0.6,0.6
+granite-7b-lab,granite-unknown-lab-unknown-unknown-7-unknown-unknown-false,0.6,0.6,0.6,0.6,
+granite-8b-code-instruct,granite-unknown-code-instruct-unknown-unknown-8-unknown-unknown-false,0.6,0.6,0.6,0.6,0.6
+granite-8b-japanese,granite-unknown-japanese-unknown-unknown-8-unknown-unknown-false,0.6,0.6,0.6,0.6,0.6
+granite-guardian-3-2b,granite-guardian-unknown-3-unknown-2-unknown-unknown-false,,,,,0.1
+granite-guardian-3-8b,granite-guardian-unknown-3-unknown-8-unknown-unknown-false,,,,,0.2
+jais-13b-chat (arabic),jais-arabic-unknown-unknown-unknown-13-unknown-unknown-false,1.8,1.8,1.8,1.8,1.8
+llama-2-13b-chat,llama-unknown--unknown-2-unknown-13-unknown-chat-false,0.6,0.6,0.6,,
+llama-2-70b-chat,llama-unknown--unknown-2-unknown-70-unknown-unknown-false,1.8,1.8,1.8,,
+llama-3-1-70b-instruct,llama-unknown-unknown-3.1-unknown-70-unknown-unknown-instruct-false,,,1.8,1.8,1.8
+llama-3-1-8b-instruct,llama-unknown-unknown-3.1-unknown-8-unknown-unknown-instruct-false,,,0.6,0.6,0.6
+llama-3-2-11b-vision-instruct,llama-vision-instruct-unknown-3.2-unknown-11-unknown-unknown-false,,,,0.0,0.35
+llama-3-2-1b-instruct,llama-unknown-unknown-3.2-unknown-1-unknown-instruct-false,,,,,0.1
+llama-3-2-3b-instruct,llama-unknown-unknown-3.2-unknown-3-unknown-instruct-false,,,,0.0,0.15
+llama-3-2-90b-vision-instruct,llama-vision-instruct-unknown-3.2-unknown-90-unknown-unknown-false,,,,0.0,2.0
+llama-3-70b-instruct,llama-unknown-unknown-3-unknown-70-unknown-instruct-false,1.8,1.8,1.8,1.8,1.8
+llama-3-8b-instruct,llama-unknown-unknown-3-unknown-8-unknown-instruct-false,0.6,0.6,,0.6,0.6
+llama-3.1-405b-instruct,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false,,,5.0,5.0,5.0
+llama-3.1-8b-instruct,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false,,,0.6,,
+llama2-13b-dpo-v7 (korean),llama-dpo-korean-7-unknown-13-unknown-unknown-false,1.8,1.8,1.8,1.8,1.8
+llama3-llava-next-8b-hf,llama-next-llava-unknown-3-unknown-8-unknown-unknown-false,,,,0.6,
+merlinite-7b,merlinite-unknown-unknown-unknown-7-unknown-unknown-unknown-false,0.6,0.6,,,
+mistral-large-2,mistral-large-unknown-2-unknown-unknown-unknown-unknown-false,,,10.0,10.0,10.0
+mixtral-8x7b-instruct,mixtral-unknown-unknown-unknown-unknown-8x7-unknown-unknown-instruct-false,0.6,,0.6,0.6,0.6
+mt0-xxl-13b,mt0-xxl-unknown-unknown-unknown-13-unknown-unknown-false,1.8,1.8,1.8,1.8,1.8
+pixtral 12b,pixtral-unknown-unknown-unknown-12-unknown-unknown-false,,,,,0.35

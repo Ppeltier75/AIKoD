@@ -1,5 +1,5 @@
-name,2024-06-01,2024-07-03,2024-08-26,2024-09-27,2024-10-21
-llama 3 70b,,1.1,1.1,1.1,1.1
-mixtral 8x22b,,1.1,1.1,1.1,1.1
-mixtral 8x7b,,0.55,0.55,0.55,0.55
-mixtral-8x7b,0.585,,,,
+name,id_name,2024-06-01,2024-07-03,2024-08-26,2024-09-27,2024-10-21
+llama 3 70b,llama-unknown-unknown-3-unknown-70-unknown-unknown-false,,1.1,1.1,1.1,1.1
+mixtral 8x22b,mixtral-unknown-unknown-unknown-unknown-8x22-unknown-unknown-false,,1.1,1.1,1.1,1.1
+mixtral 8x7b,mixtral-unknown-unknown-unknown-unknown-8x7-unknown-unknown-false,,0.55,0.55,0.55,0.55
+mixtral-8x7b,mixtral-unknown-unknown-unknown-unknown-8x7-unknown-unknown-false,0.585,,,,

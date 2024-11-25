@@ -817,125 +817,125 @@ zephyr 7b beta,zephyr-beta-unknown-unknown-unknown-7-unknown-unknown-false
 zephyr 7b beta awq,zephyr-beta-awq-unknown-unknown-7-unknown-unknown-false
 zephyr 7b ß,zephyr-unknown-unknown-unknown-unknown-7-unknown-unknown-false
 zephyr 8x 22b,zephyr-unknown-unknown-unknown-unknown-8x22-unknown-unknown-false
-code interpreter,
-code llama (34b),
-code llama (70b),
-code llama 13b,
-code llama 13b instruct,
-code llama 13b python,
-code llama 34b,
-code llama 34b instruct,
-code llama 34b python,
-code llama 70b,
-code llama 70b instruct,
-code llama 70b python,
-code llama 7b,
-code llama 7b instruct,
-code llama 7b python,
-code llama instruct (13b),
-code llama instruct (34b),
-code llama instruct (70b),
-code llama instruct (7b),
-code llama python (13b),
-code llama python (34b),
-code llama python (70b),
-code llama python (7b),
-code qwen 1.5 7b,
-codegeex 4,
-codegemma 2b,
-codegemma 7b,
-codegen2 (16b),
-codegen2 (7b),
-codellama 13b,
-codellama 34b instruct,
-codellama 7b,
-codestral,
-codestral mamba,
-codestral mamba 7b,
-codey for code chat,
-codey for code chat 32k,
-codey for code completion,
-codey for code generation,
-codey for code generation 32k,
-databricks instruct,
-deepseek coder 1.3b base,
-deepseek coder 33b instruct,
-deepseek coder 6.7b base,
-deepseek coder 7b base v1.5,
-deepseek coder 7b instruct v1.5,
-deepseek coder instruct (33b),
-deepseek coder v2,
-deepseek coder v2 instruct,
-deepseek coder v2 lite,
-deepseek coder v2 lite base,
-finetune,
-finetune (微调),
-gcp code generation,
-granite 20b code instruct,
-granite 34b code instruct,
-granite 3b code instruct,
-granite 8b code instruct,
-llama 2 préentrainé (13b),
-llama 2 préentrainé (70b),
-llama 3 1 70b instruct,
-llama 3 1 8b instruct,
-llama 3.1 instruct (405b),
-llama 3.1 instruct (70b),
-llama 3.1 instruct (70b) reference,
-llama 3.1 instruct (8b),
-llama 3.1 instruct (8b) reference,
-llama 3.1 instruct 405b,
-llama 3.1 instruct 70b,
-llama 3.1 instruct 8b,
-llama2 13b,
-llama2 70b,
-llama2 7b,
-luminous base,
-luminous enhanced,
-luminous extended,
-luminous supreme,
-merlinite 7b,
-meta llama/llama 3 70b instruct,
-meta llama/llama 3.1 405b instruct,
-meta llama/llama 3.1 70b instruct,
-meta llama/llama 3.1 8b instruct,
-meta/llama 2 13b,
-meta/llama 2 70b,
-meta/meta llama 3 70b instruct,
-meta/meta llama 3.1 405b instruct,
-meta: llama 3 70b instruct,
-meta: llama 3 70b instruct (nitro),
-meta: llama 3.1 405b instruct,
-ministral 8b,
-mistral: codestral mamba,
-mixtral 8x7b instruct,
-mixtral 8x7b instruct (nitro),
-nousresearch/nous hermes llama2 13b,
-nvidia: llama 3.1 nemotron 70b instruct,
-openai 3.5 turbo instruct,
-openai gpt 3_5 turbo,
-phind code llama v2 (34b),
-phind codellama 34b python v1,
-phind codellama 34b v1,
-phind codellama 34b v2,
-pre trained named entity recognition model,
-pre trained translation model,
-qwen/qwen 2.5 72b instruct,
-qwen2.5 coder 1.5b,
-qwen2.5 coder 1.5b instruct,
-qwen2.5 coder 7b,
-qwen2.5 coder 7b instruct,
-sqlcoder,
-sqlcoder (15b),
-stable code 3b,
-starcoder,
-starcoder (16b),
-starcoder 15.5b,
-starcoder 7b,
-starcoder2 15b,
-starcoder2 15b instruct,
-starcoder2 3b,
-starcoder2 7b,
-wizardcoder python 34b,
-wizardcoder python v1.0 (34b),
-wizardlm 2,
+code interpreter,code-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
+code llama (34b),code-unknown-unknown-unknown-unknown-34-unknown-unknown-false
+code llama (70b),code-unknown-unknown-unknown-unknown-70-unknown-unknown-false
+code llama 13b,code-unknown-unknown-unknown-unknown-13-unknown-unknown-false
+code llama 13b instruct,code-unknown-unknown-unknown-unknown-13-unknown-unknown-instruct-false
+code llama 13b python,code-unknown-unknown-unknown-unknown-13-unknown-unknown-python-false
+code llama 34b,code-unknown-unknown-unknown-unknown-34-unknown-unknown-false
+code llama 34b instruct,code-unknown-unknown-unknown-unknown-34-unknown-unknown-instruct-false
+code llama 34b python,code-unknown-unknown-unknown-unknown-34-unknown-unknown-python-false
+code llama 70b,code-unknown-unknown-unknown-unknown-70-unknown-unknown-false
+code llama 70b instruct,code-unknown-unknown-unknown-unknown-70-unknown-unknown-instruct-false
+code llama 70b python,code-unknown-unknown-unknown-unknown-70-unknown-unknown-python-false
+code llama 7b,code-unknown-unknown-unknown-unknown-7-unknown-unknown-false
+code llama 7b instruct,code-unknown-unknown-unknown-unknown-7-unknown-unknown-instruct-false
+code llama 7b python,code-unknown-unknown-unknown-unknown-7-unknown-unknown-python-false
+code llama instruct (13b),code-unknown-unknown-unknown-unknown-13-unknown-unknown-instruct-false
+code llama instruct (34b),code-unknown-unknown-unknown-unknown-34-unknown-unknown-instruct-false
+code llama instruct (70b),code-unknown-unknown-unknown-unknown-70-unknown-unknown-instruct-false
+code llama instruct (7b),code-unknown-unknown-unknown-unknown-7-unknown-unknown-instruct-false
+code llama python (13b),code-unknown-unknown-unknown-unknown-13-unknown-unknown-python-false
+code llama python (34b),code-unknown-unknown-unknown-unknown-34-unknown-unknown-python-false
+code llama python (70b),code-unknown-unknown-unknown-unknown-70-unknown-unknown-python-false
+code llama python (7b),code-unknown-unknown-unknown-unknown-7-unknown-unknown-python-false
+code qwen 1.5 7b,qwen-unknown-unknown-1.5-unknown-7-unknown-unknown-false
+codegeex 4,codegeex-unknown-unknown-4-unknown-unknown-unknown-false
+codegemma 2b,codegemma-unknown-unknown-unknown-2-unknown-unknown-unknown-false
+codegemma 7b,codegemma-unknown-unknown-unknown-7-unknown-unknown-unknown-false
+codegen2 (16b),codegen-unknown-unknown-unknown-unknown-16-unknown-unknown-false
+codegen2 (7b),codegen-unknown-unknown-unknown-unknown-7-unknown-unknown-false
+codellama 13b,codellama-unknown-unknown-unknown-unknown-13-unknown-unknown-false
+codellama 34b instruct,codellama-unknown-unknown-unknown-unknown-34-unknown-unknown-instruct-false
+codellama 7b,codellama-unknown-unknown-unknown-unknown-7-unknown-unknown-false
+codestral,codestral-unknown-unknown-unknown-unknown-unknown-unknown-false
+codestral mamba,codestral-mamba-unknown-unknown-unknown-unknown-unknown-unknown-false
+codestral mamba 7b,codestral-mamba-unknown-unknown-unknown-7-unknown-unknown-false
+codey for code chat,codey-unknown-code-chat-unknown-unknown-unknown-unknown-false
+codey for code chat 32k,codey-unknown-code-chat-unknown-unknown-unknown-32-false
+codey for code completion,codey-unknown-code-completion-unknown-unknown-unknown-unknown-false
+codey for code generation,codey-unknown-code-generation-unknown-unknown-unknown-unknown-false
+codey for code generation 32k,codey-unknown-code-generation-unknown-unknown-unknown-32-false
+databricks instruct,databricks-unknown-unknown-unknown-unknown-unknown-unknown-instruct-false
+deepseek coder 1.3b base,deepseek-unknown-base-unknown-1.3-unknown-unknown-unknown-false
+deepseek coder 33b instruct,deepseek-unknown-unknown-unknown-33-unknown-unknown-instruct-false
+deepseek coder 6.7b base,deepseek-unknown-base-unknown-6.7-unknown-unknown-unknown-false
+deepseek coder 7b base v1.5,deepseek-unknown-base-1.5-unknown-7-unknown-unknown-false
+deepseek coder 7b instruct v1.5,deepseek-unknown-unknown-1.5-7-unknown-unknown-instruct-false
+deepseek coder instruct (33b),deepseek-unknown-instruct-unknown-33-unknown-unknown-unknown-false
+deepseek coder v2,deepseek-unknown-unknown-2-unknown-unknown-unknown-unknown-false
+deepseek coder v2 instruct,deepseek-unknown-instruct-unknown-2-unknown-unknown-unknown-false
+deepseek coder v2 lite,deepseek-unknown-unknown-2-unknown-unknown-unknown-lite-false
+deepseek coder v2 lite base,deepseek-unknown-base-unknown-2-unknown-unknown-unknown-lite-false
+finetune,finetune-unknown-unknown-unknown-unknown-unknown-unknown-false
+finetune (微调),finetune-unknown-unknown-unknown-unknown-unknown-unknown-false
+gcp code generation,gcp-unknown-code-generation-unknown-unknown-unknown-unknown-false
+granite 20b code instruct,granite-unknown-code-instruct-unknown-unknown-20-unknown-unknown-false
+granite 34b code instruct,granite-unknown-code-instruct-unknown-unknown-34-unknown-unknown-false
+granite 3b code instruct,granite-unknown-code-instruct-unknown-unknown-3-unknown-unknown-false
+granite 8b code instruct,granite-unknown-code-instruct-unknown-unknown-8-unknown-unknown-false
+llama 2 préentrainé (13b),llama-unknown-unknown-unknown-unknown-13-unknown-unknown-false
+llama 2 préentrainé (70b),llama-unknown-unknown-unknown-unknown-70-unknown-unknown-false
+llama 3 1 70b instruct,llama-unknown-unknown-3.1-unknown-70-unknown-unknown-instruct-false
+llama 3 1 8b instruct,llama-unknown-unknown-3.1-unknown-8-unknown-unknown-instruct-false
+llama 3.1 instruct (405b),llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false
+llama 3.1 instruct (70b),llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
+llama 3.1 instruct (70b) reference,llama-unknown-reference-3.1-unknown-70-unknown-instruct-false
+llama 3.1 instruct (8b),llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
+llama 3.1 instruct (8b) reference,llama-unknown-reference-3.1-unknown-8-unknown-instruct-false
+llama 3.1 instruct 405b,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false
+llama 3.1 instruct 70b,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
+llama 3.1 instruct 8b,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
+llama2 13b,llama-unknown-unknown-unknown-13-unknown-unknown-unknown-false
+llama2 70b,llama-unknown-unknown-unknown-70-unknown-unknown-unknown-false
+llama2 7b,llama-unknown-unknown-unknown-7-unknown-unknown-unknown-false
+luminous base,luminous-base-unknown-unknown-unknown-unknown-unknown-unknown-false
+luminous enhanced,luminous-enhanced-unknown-unknown-unknown-unknown-unknown-unknown-false
+luminous extended,luminous-extended-unknown-unknown-unknown-unknown-unknown-unknown-false
+luminous supreme,luminous-supreme-unknown-unknown-unknown-unknown-unknown-unknown-false
+merlinite 7b,merlinite-unknown-unknown-unknown-7-unknown-unknown-unknown-false
+meta llama/llama 3 70b instruct,llama-unknown-unknown-3-unknown-70-unknown-unknown-instruct-false
+meta llama/llama 3.1 405b instruct,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false
+meta llama/llama 3.1 70b instruct,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
+meta llama/llama 3.1 8b instruct,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
+meta/llama 2 13b,llama-unknown-unknown-2-unknown-13-unknown-unknown-false
+meta/llama 2 70b,llama-unknown-unknown-2-unknown-70-unknown-unknown-false
+meta/meta llama 3 70b instruct,llama-unknown-unknown-3-unknown-70-unknown-unknown-instruct-false
+meta/meta llama 3.1 405b instruct,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false
+meta: llama 3 70b instruct,llama-unknown-unknown-3-unknown-70-unknown-unknown-instruct-false
+meta: llama 3 70b instruct (nitro),llama-unknown-unknown-3-unknown-70-unknown-unknown-instruct-false
+meta: llama 3.1 405b instruct,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false
+ministral 8b,ministral-unknown-unknown-unknown-8-unknown-unknown-false
+mistral: codestral mamba,mistral-codestral-unknown-unknown-unknown-unknown-unknown-unknown-false
+mixtral 8x7b instruct,mixtral-unknown-unknown-unknown-unknown-8x7-unknown-unknown-instruct-false
+mixtral 8x7b instruct (nitro),mixtral-unknown-unknown-unknown-unknown-8x7-unknown-unknown-instruct-false
+nousresearch/nous hermes llama2 13b,llama2-unknown-unknown-2-unknown-13-unknown-unknown-false
+nvidia: llama 3.1 nemotron 70b instruct,llama-nemotron-unknown-3.1-unknown-70-unknown-unknown-instruct-false
+openai 3.5 turbo instruct,openai-unknown-unknown-3.5-unknown-unknown-unknown-instruct-false
+openai gpt 3_5 turbo,openai-unknown-unknown-3.5-unknown-unknown-unknown-false
+phind code llama v2 (34b),code-unknown-unknown-unknown-2-unknown-34-unknown-unknown-false
+phind codellama 34b python v1,codellama-unknown-unknown-unknown-34-unknown-unknown-python-false
+phind codellama 34b v1,codellama-unknown-unknown-unknown-34-unknown-unknown-false
+phind codellama 34b v2,codellama-unknown-unknown-unknown-34-unknown-unknown-false
+pre trained named entity recognition model,pretrained-unknown-unknown-unknown-unknown-unknown-unknown-false
+pre trained translation model,pretrained-unknown-unknown-unknown-unknown-unknown-unknown-false
+qwen/qwen 2.5 72b instruct,qwen-unknown-unknown-2.5-unknown-72-unknown-unknown-instruct-false
+qwen2.5 coder 1.5b,qwen-unknown-unknown-2.5-1.5-unknown-unknown-unknown-false
+qwen2.5 coder 1.5b instruct,qwen-unknown-unknown-2.5-1.5-unknown-unknown-instruct-false
+qwen2.5 coder 7b,qwen-unknown-unknown-2.5-unknown-7-unknown-unknown-false
+qwen2.5 coder 7b instruct,qwen-unknown-unknown-2.5-unknown-7-unknown-instruct-false
+sqlcoder,sqlcoder-unknown-unknown-unknown-unknown-unknown-unknown-false
+sqlcoder (15b),sqlcoder-unknown-unknown-unknown-15-unknown-unknown-unknown-false
+stable code 3b,stable-code-unknown-unknown-unknown-3-unknown-unknown-false
+starcoder,starcoder-unknown-unknown-unknown-unknown-unknown-unknown-false
+starcoder (16b),starcoder-unknown-unknown-unknown-16-unknown-unknown-false
+starcoder 15.5b,starcoder-unknown-unknown-unknown-15.5-unknown-unknown-false
+starcoder 7b,starcoder-unknown-unknown-unknown-7-unknown-unknown-false
+starcoder2 15b,starcoder2-unknown-unknown-unknown-15-unknown-unknown-false
+starcoder2 15b instruct,starcoder2-unknown-unknown-unknown-15-unknown-unknown-instruct-false
+starcoder2 3b,starcoder2-unknown-unknown-unknown-3-unknown-unknown-false
+starcoder2 7b,starcoder2-unknown-unknown-unknown-7-unknown-unknown-false
+wizardcoder python 34b,wizardcoder-unknown-unknown-34-unknown-unknown-unknown-python-false
+wizardcoder python v1.0 (34b),wizardcoder-unknown-unknown-1.0-34-unknown-unknown-python-false
+wizardlm 2,wizardlm-unknown-unknown-2-unknown-unknown-unknown-false
