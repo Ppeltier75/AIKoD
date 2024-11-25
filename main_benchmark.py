@@ -247,7 +247,7 @@ def main():
         raise ValueError("Clé API OpenAI introuvable. Vérifiez votre fichier .env.")
 
     # Répertoires pour les CSV et les fichiers exemples
-    root_directory = os.path.join(base_path, "data", "id_name", "benchmark")
+    root_directory = os.path.join(base_path, "data", "models_infos","AA")
     examples_directory = os.path.join(base_path, "data", "id_name", "exemple")
 
     # Appeler la fonction pour générer les id_name

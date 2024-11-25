@@ -101,6 +101,32 @@ generate_csv_with_infos(input_dir, output_dir)
 
 
 # %%
+
+import os
+from function_prep.utils_prep_texttoimage import AIKoD_texttoimage_infos
+
+if __name__ == "__main__":
+    # Définir les chemins
+    base_path = os.path.abspath(os.path.dirname(__file__))
+    json_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v2.json")
+    output_file = os.path.join(base_path, "data", "models_infos", "AIKoD_image_infos.csv")
+    merge_files = [
+        os.path.join(base_path, "data", "models_infos", "AA", "AA_texttoimage_infos.csv")
+    ]
+
+    # Appeler la fonction pour mettre à jour AIKoD_image_infos.csv
+    AIKoD_texttoimage_infos(
+        json_path=json_path,
+        output_file=output_file,
+        merge_files=merge_files,
+        merge_columns='all',
+        merge_strategy='exact',
+        segments_order=[1, 2, 3, 4],
+        segments_no_order=[1, 2, 3, 4],
+        fuzzy_match=False,
+        fuzzy_threshold=85
+    )
+
 # %% Imports nécessaires
 import os
 from function_prep.utils_prep_text import AIKoD_text_infos
@@ -109,7 +135,7 @@ if __name__ == "__main__":
     # Définir les chemins
     base_path = os.path.abspath(os.path.dirname(__file__))
     json_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v2.json")
-    output_dir = os.path.join(base_path, "data", "models_infos")  # Répertoire contenant les fichiers _infos.csv
+    output_dir = os.path.join(base_path, "data", "models_infos", "AIKoD_text_infos.csv")  # Répertoire contenant les fichiers _infos.csv
 
     # Appeler la fonction pour mettre à jour AIKoD_text_infos.csv
     AIKoD_text_infos(json_path, output_dir)

@@ -30,7 +30,7 @@ def analyze_id_name(id_name):
     return number_of_parameters, context_window, finetuned
 
 
-def AIKoD_text_infos(json_path, output_dir):
+def AIKoD_text_infos(json_path, text_infos_csv_path):
     """
     Analyse un fichier JSON pour les modèles avec type 'text' et ajoute des informations
     aux fichiers CSV existants dans le répertoire `output_dir`.
@@ -42,12 +42,6 @@ def AIKoD_text_infos(json_path, output_dir):
     # Charger les données JSON
     with open(json_path, 'r', encoding='utf-8') as file:
         data = json.load(file)
-
-    # Chemin du fichier AIKoD_text_infos.csv existant
-    text_infos_csv_path = os.path.join(output_dir, "AIKoD_text_infos.csv")
-    if not os.path.exists(text_infos_csv_path):
-        print(f"Le fichier {text_infos_csv_path} n'existe pas. Aucun traitement effectué.")
-        return
 
     # Charger le fichier AIKoD_text_infos.csv
     text_infos_df = pd.read_csv(text_infos_csv_path)
