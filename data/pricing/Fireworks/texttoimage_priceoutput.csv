@@ -1,0 +1,16 @@
+name,id_name,2024-10-31
+FLUX.1 [dév] FP8 - 30 steps,flux-dev-fp8-1-unknown-30-false-unknown-false,0.015
+FLUX.1 [schnell] FP8 - 30 steps,flux-schnell-fp8-1-unknown-30-false-unknown-false,0.0105
+FLUX.1 [schnell] - 30 steps,flux-schnell-unknown-1-unknown-30-false-unknown-false,0.021
+FLUX.1 [dév] - 30 steps,flux-dev-unknown-1-unknown-30-false-unknown-false,0.03
+Diffusion stable 3.5 Medium,stablediffusion-medium-unknown-3.5-unknown-unknown-false-unknown-false,0.035
+Stable Diffusion 3.5 Large,stablediffusion-large-unknown-3.5-unknown-unknown-false-unknown-false,0.065
+Stable Diffusion 3.5 Large Turbo,stablediffusion-large-turbo-3.5-unknown-unknown-false-unknown-false,0.04
+Stable Diffusion XL - 30 steps,stablediffusion-xl-unknown-v1-unknown-30-false-unknown-false,0.0039
+Playground v2 1024 - 30 steps,playground-unknown-unknown-2-1024x1024-30-false-unknown-false,0.0039
+Playground v2.5 1024 - 30 steps,playground-unknown-unknown-2.5-1024x1024-30-false-unknown-false,0.0039
+Segmind Stable Diffusion 1B (SSD-1B) - 30 steps,stablediffusion-segmind-1b-1-1024x1024-30-false-unknown-false,0.0039
+Japonese Stable Diffusion XL - 30 steps,stablediffusion-japonese-xl-1-unknown-30-false-unknown-false,0.0039
+Stable Diffusion 3 Large,stablediffusion-large-unknown-3-unknown-unknown-false-unknown-false,0.065
+Stable Diffusion 3 Turbo,stablediffusion-unknown-turbo-3-unknown-unknown-false-unknown-false,0.04
+Stable Diffusion 3 Medium,stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false,0.035

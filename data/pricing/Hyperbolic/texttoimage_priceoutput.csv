@@ -1,0 +1,8 @@
+name,id_name,2024-10-31
+"SDXL1.0-base (50 steps, 1024x1024)",stablediffusion-xl-base-1-1024x1024-50-false-unknown-false,0.02
+"SD2 (50 steps, 1024x1024)",stablediffusion-unknown-unknown-2-1024x1024-50-false-unknown-false,0.02
+"SD1.5 (50 steps, 1024x1024)",stablediffusion-unknown-unknown-1.5-1024x1024-50-false-unknown-false,0.02
+"SSD (50 steps, 1024x1024)",ssd-unknown-unknown-1-1024x1024-50-false-unknown-false,0.02
+"SDXL-turbo (50 steps, 1024x1024)",stablediffusion-xl-turbo-1-1024x1024-50-false-unknown-false,0.02
+"SDXL-ControlNet (50 steps, 1024x1024)",stablediffusion-xl-controlnet-v1-1024x1024-50-false-unknown-false,0.02
+"SD1.5-ControlNet (50 steps, 1024x1024)",stablediffusion-controlnet-unknown-1.5-1024x1024-50-false-unknown-false,0.02

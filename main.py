@@ -93,7 +93,7 @@ env_path = os.path.join(base_path, ".env")
 load_dotenv(env_path)
 
 # Construire les chemins absolus pour les répertoires d'entrée et de sortie
-input_dir = os.path.join(base_path, "data/id_name")  # Répertoire contenant les fichiers _idname.csv
+input_dir = os.path.join(base_path, "data/id_name/AIKoD")  # Répertoire contenant les fichiers _idname.csv
 output_dir = os.path.join(base_path, "data/models_infos")  # Répertoire où les fichiers _infos.csv seront générés
 
 # Appeler la fonction pour générer les fichiers _infos.csv
@@ -108,7 +108,7 @@ from function_prep.utils_prep_text import AIKoD_text_infos
 if __name__ == "__main__":
     # Définir les chemins
     base_path = os.path.abspath(os.path.dirname(__file__))
-    json_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v1.json")
+    json_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v2.json")
     output_dir = os.path.join(base_path, "data", "models_infos")  # Répertoire contenant les fichiers _infos.csv
 
     # Appeler la fonction pour mettre à jour AIKoD_text_infos.csv
@@ -135,5 +135,36 @@ if __name__ == "__main__":
     print("Extraction terminée.")
 
 
+
+# %%
+import os 
+from function_utils.utils_extract_pricing import extract_pricing_audiototext
+
+if __name__ == "__main__":
+    # Définir le chemin de base et les répertoires
+    base_path = os.path.abspath(os.path.dirname(__file__))
+    json_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v2.json")
+    pricing_dir = os.path.join(base_path, "data", "pricing")
+
+    # Extraire les prix pour les modèles audio to text
+    print("Extraction des prix pour les modèles audio to text en cours...")
+    extract_pricing_audiototext(json_path, pricing_dir)
+    print("Extraction terminée.")
+
+# %%
+
+import os 
+from function_utils.utils_extract_pricing import extract_pricing_texttoimage
+
+if __name__ == "__main__":
+    # Définir le chemin de base et les répertoires
+    base_path = os.path.abspath(os.path.dirname(__file__))
+    json_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v2.json")
+    pricing_dir = os.path.join(base_path, "data", "pricing")
+
+    # Extraire les prix pour les modèles text to image
+    print("Extraction des prix pour les modèles text to image en cours...")
+    extract_pricing_texttoimage(json_path, pricing_dir)
+    print("Extraction terminée.")
 
 # %%

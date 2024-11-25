@@ -1,0 +1,7 @@
+name,id_name,2024-05-29,2024-10-31
+"SDXL (512x512, 50 steps)",stablediffusion-xl-unknown-1-512x512-50-false-unknown-false,0.00274,0.00274
+"SDXL (768x768, 50 steps)",stablediffusion-xl-unknown-1-768x768-50-false-unknown-false,0.00468,0.00468
+"SDXL (1024x1024, 50 steps)",stablediffusion-xl-unknown-1-1024x1024-50-false-unknown-false,0.00692,0.00692
+"Flux-Dev (512x512, 50 steps)",flux-dev-unknown-1-512x512-50-false-unknown-false,,0.006
+"Flux-Dev (768x768, 50 steps)",flux-dev-unknown-1-768x768-50-false-unknown-false,,0.013
+"Flux-Dev (1024x1024, 50 steps)",flux-dev-unknown-1-1024x1024-50-false-unknown-false,,0.025

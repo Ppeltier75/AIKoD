@@ -1,0 +1,4 @@
+name,id_name,2024-01-03,2024-02-01,2024-03-02,2024-04-05,2024-05-20,2024-08-26,2024-09-27,2024-10-21
+AIQR (50 steps),aiqr-unknown-unknown-unknown-unknown-50-false-unknown-false,0.0075,0.0075,0.0075,0.0075,,,,
+Stable Diffusion XL (50 steps),stablediffusion-xl-unknown-v1-unknown-50-false-unknown-false,0.0075,0.0075,0.0075,0.0075,0.0075,0.0075,0.0075,0.0075
+Open Dalle (50 steps),opendalle-unknown-unknown-1-unknown-50-false-unknown-false,,0.004,0.004,0.004,,,,

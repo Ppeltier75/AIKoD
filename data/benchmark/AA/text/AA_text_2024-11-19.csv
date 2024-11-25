@@ -1,78 +1,78 @@
-Model,Creator,Context Window,Quality Index (Normalized avg),Blended Price (USD/1M Tokens),Output Tokens/S Median,Latency Median (First Chunk),id_name_x,id_name_y,id_name
-o1-preview,,128k,85.0,$26.25,35.7,28.76,o1-preview-unknown-unknown-unknown-unknown-unknown-false,o1-preview-unknown-unknown-unknown-unknown-unknown-false,o1-preview-unknown-unknown-unknown-unknown-unknown-false
-o1-mini,,128k,82.0,$5.25,74.1,13.63,o1-mini-unknown-unknown-unknown-unknown-unknown-false,o1-mini-unknown-unknown-unknown-unknown-unknown-false,o1-mini-unknown-unknown-unknown-unknown-unknown-false
-GPT-4o,,128k,77.0,$4.38,83.8,0.45,gpt-4o-unknown-unknown-unknown-unknown-unknown-false,gpt-4o-unknown-unknown-unknown-unknown-unknown-false,gpt-4o-unknown-unknown-unknown-unknown-unknown-false
-GPT-4o (May '24),,128k,77.0,$7.50,91.5,0.45,gpt-4o-unknown-unknown-202405-unknown-unknown-unknown-false,gpt-4o-unknown-unknown-202405-unknown-unknown-unknown-false,gpt-4o-unknown-unknown-202405-unknown-unknown-unknown-false
-GPT-4o mini,,128k,71.0,$0.26,97.8,0.48,gpt-mini-unknown-4o-unknown-unknown-unknown-false,gpt-mini-unknown-4o-unknown-unknown-unknown-false,gpt-mini-unknown-4o-unknown-unknown-unknown-false
-Llama 3.1 405B,,128k,72.0,$5.13,79.6,0.87,llama-unknown-unknown-3.1-unknown-405-unknown-unknown-false,llama-unknown-unknown-3.1-unknown-405-unknown-unknown-false,llama-unknown-unknown-3.1-unknown-405-unknown-unknown-false
-Llama 3.2 90B (Vision),,128k,67.0,$0.90,41.2,0.36,llama-unknown-unknown-3.2-unknown-90-unknown-unknown-false,llama-unknown-unknown-3.2-unknown-90-unknown-unknown-false,llama-unknown-unknown-3.2-unknown-90-unknown-unknown-false
-Llama 3.1 70B,,128k,65.0,$0.75,71.2,0.43,llama-unknown-unknown-3.1-unknown-70-unknown-unknown-false,llama-unknown-unknown-3.1-unknown-70-unknown-unknown-false,llama-unknown-unknown-3.1-unknown-70-unknown-unknown-false
-Llama 3.2 11B (Vision),,128k,53.0,$0.18,128.9,0.29,llama-unknown-unknown-3.2-unknown-11-unknown-unknown-false,llama-unknown-unknown-3.2-unknown-11-unknown-unknown-false,llama-unknown-unknown-3.2-unknown-11-unknown-unknown-false
-Llama 3.1 8B,,128k,53.0,$0.11,156.6,0.37,llama-unknown-unknown-3.1-unknown-8-unknown-unknown-false,llama-unknown-unknown-3.1-unknown-8-unknown-unknown-false,llama-unknown-unknown-3.1-unknown-8-unknown-unknown-false
-Llama 3.2 3B,,128k,47.0,$0.08,202.2,0.34,llama-unknown-unknown-3.2-unknown-3-unknown-unknown-false,llama-unknown-unknown-3.2-unknown-3-unknown-unknown-false,llama-unknown-unknown-3.2-unknown-3-unknown-unknown-false
-Llama 3.2 1B,,128k,27.0,$0.05,553.1,0.34,llama-unknown-unknown-3.2-unknown-1-unknown-unknown-false,llama-unknown-unknown-3.2-unknown-1-unknown-unknown-false,llama-unknown-unknown-3.2-unknown-1-unknown-unknown-false
-Gemini 1.5 Pro (Sep),,2m,80.0,$2.19,59.2,0.77,gemini-pro-unknown-1.5-unknown-unknown-unknown-unknown-false,gemini-pro-unknown-1.5-unknown-unknown-unknown-unknown-false,gemini-pro-unknown-1.5-unknown-unknown-unknown-unknown-false
-Gemini 1.5 Flash (Sep),,1m,73.0,$0.13,192.5,0.32,gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false,gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false,gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false
-Gemma 2 27B,,8k,61.0,$0.26,47.0,0.57,gemma-unknown-unknown-2-unknown-27-unknown-unknown-false,gemma-unknown-unknown-2-unknown-27-unknown-unknown-false,gemma-unknown-unknown-2-unknown-27-unknown-unknown-false
-Gemma 2 9B,,8k,46.0,$0.13,159.1,0.36,gemma-unknown-unknown-2-unknown-9-unknown-unknown-false,gemma-unknown-unknown-2-unknown-9-unknown-unknown-false,gemma-unknown-unknown-2-unknown-9-unknown-unknown-false
-Gemini 1.5 Pro (May),,2m,,$5.25,63.2,0.74,gemini-pro-unknown-1.5-unknown-unknown-unknown-unknown-false,gemini-pro-unknown-1.5-unknown-unknown-unknown-unknown-false,gemini-pro-unknown-1.5-unknown-unknown-unknown-unknown-false
-Gemini 1.5 Flash-8B,,1m,,$0.07,283.9,0.36,gemini-flash-unknown-1.5-unknown-8-unknown-unknown-false,gemini-flash-unknown-1.5-unknown-8-unknown-unknown-false,gemini-flash-unknown-1.5-unknown-8-unknown-unknown-false
-Gemini 1.5 Flash (May),,1m,,$0.13,311.7,0.29,gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false,gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false,gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false
-Claude 3.5 Sonnet (Oct),,200k,80.0,$6.00,55.3,0.87,claude-sonnet-unknown-3.5-unknown-unknown-unknown-unknown-false,claude-sonnet-unknown-3.5-unknown-unknown-unknown-unknown-false,claude-sonnet-unknown-3.5-unknown-unknown-unknown-unknown-false
-Claude 3.5 Sonnet (June),,200k,77.0,$6.00,55.4,0.93,claude-sonnet-unknown-3.5-unknown-unknown-unknown-unknown-false,claude-sonnet-unknown-3.5-unknown-unknown-unknown-unknown-false,claude-sonnet-unknown-3.5-unknown-unknown-unknown-unknown-false
-Claude 3 Opus,,200k,70.0,$30.00,27.1,2.03,claude-opus-unknown-3-unknown-unknown-unknown-unknown-false,claude-opus-unknown-3-unknown-unknown-unknown-unknown-false,claude-opus-unknown-3-unknown-unknown-unknown-unknown-false
-Claude 3.5 Haiku,,200k,69.0,$2.00,63.2,0.89,claude-haiku-unknown-3.5-unknown-unknown-unknown-unknown-false,claude-haiku-unknown-3.5-unknown-unknown-unknown-unknown-false,claude-haiku-unknown-3.5-unknown-unknown-unknown-unknown-false
-Claude 3 Haiku,,200k,54.0,$0.50,127.6,0.48,claude-haiku-unknown-3-unknown-unknown-unknown-unknown-false,claude-haiku-unknown-3-unknown-unknown-unknown-unknown-false,claude-haiku-unknown-3-unknown-unknown-unknown-unknown-false
-Mistral Large 2 (Jul '24),,128k,73.0,$3.00,34.7,0.45,mistral-large-unknown-2-202407-unknown-unknown-unknown-false,mistral-large-unknown-2-202407-unknown-unknown-unknown-false,mistral-large-unknown-2-202407-unknown-unknown-unknown-false
-Mixtral 8x22B,,65k,61.0,$1.20,79.1,0.56,mixtral-unknown-unknown-unknown-8x22-unknown-unknown-false,mixtral-unknown-unknown-unknown-8x22-unknown-unknown-false,mixtral-unknown-unknown-unknown-8x22-unknown-unknown-false
-Mistral Small (Sep '24),,128k,60.0,$0.30,59.1,0.47,mistral-small-unknown-202409-unknown-unknown-unknown-false,mistral-small-unknown-202409-unknown-unknown-unknown-false,mistral-small-unknown-202409-unknown-unknown-unknown-false
-Pixtral 12B,,128k,56.0,$0.13,68.7,0.49,pixtral-unknown-unknown-unknown-12-unknown-unknown-false,pixtral-unknown-unknown-unknown-12-unknown-unknown-false,pixtral-unknown-unknown-unknown-12-unknown-unknown-false
-Ministral 8B,,128k,53.0,$0.10,135.5,0.42,ministral-unknown-unknown-8-unknown-8-unknown-unknown-false,ministral-unknown-unknown-8-unknown-8-unknown-unknown-false,ministral-unknown-unknown-8-unknown-8-unknown-unknown-false
-Mistral NeMo,,128k,53.0,$0.13,71.5,0.49,mistral-nemo-unknown-unknown-unknown-unknown-unknown-false,mistral-nemo-unknown-unknown-unknown-unknown-unknown-false,mistral-nemo-unknown-unknown-unknown-unknown-unknown-false
-Ministral 3B,,128k,51.0,$0.04,209.3,0.41,ministral-unknown-unknown-3-unknown-3-unknown-unknown-false,ministral-unknown-unknown-3-unknown-3-unknown-unknown-false,ministral-unknown-unknown-3-unknown-3-unknown-unknown-false
-Mixtral 8x7B,,33k,42.0,$0.50,90.0,0.34,mixtral-unknown-unknown-unknown-8x7-unknown-unknown-false,mixtral-unknown-unknown-unknown-8x7-unknown-unknown-false,mixtral-unknown-unknown-unknown-8x7-unknown-unknown-false
-Codestral-Mamba,,256k,36.0,$0.25,94.6,0.57,codestral-mamba-unknown-unknown-unknown-unknown-unknown-unknown-false,codestral-mamba-unknown-unknown-unknown-unknown-unknown-unknown-false,codestral-mamba-unknown-unknown-unknown-unknown-unknown-unknown-false
-Command-R+,,128k,56.0,$5.19,49.9,0.47,commandr-plus-unknown-unknown-unknown-unknown-unknown-unknown-false,commandr-plus-unknown-unknown-unknown-unknown-unknown-unknown-false,commandr-plus-unknown-unknown-unknown-unknown-unknown-unknown-false
-Command-R,,128k,51.0,$0.51,110.1,0.33,commandr-unknown-unknown-unknown-unknown-unknown-unknown-false,commandr-unknown-unknown-unknown-unknown-unknown-unknown-false,commandr-unknown-unknown-unknown-unknown-unknown-unknown-false
-Command-R+ (Apr '24),,128k,46.0,$6.00,46.7,0.52,commandr-plus-unknown-unknown-202404-unknown-unknown-unknown-false,commandr-plus-unknown-unknown-202404-unknown-unknown-unknown-false,commandr-plus-unknown-unknown-202404-unknown-unknown-unknown-false
-Command-R (Mar '24),,128k,36.0,$0.75,108.5,0.35,commandr-unknown-unknown-202403-unknown-unknown-unknown-false,commandr-unknown-unknown-202403-unknown-unknown-unknown-false,commandr-unknown-unknown-202403-unknown-unknown-unknown-false
-Aya Expanse 32B,,8k,,$0.75,121.3,0.22,aya-expanse-unknown-unknown-unknown-unknown-32-unknown-unknown-false,aya-expanse-unknown-unknown-unknown-unknown-32-unknown-unknown-false,aya-expanse-unknown-unknown-unknown-unknown-32-unknown-unknown-false
-Aya Expanse 8B,,8k,,$0.75,137.7,0.25,aya-expanse-unknown-unknown-unknown-unknown-8-unknown-unknown-false,aya-expanse-unknown-unknown-unknown-unknown-8-unknown-unknown-false,aya-expanse-unknown-unknown-unknown-unknown-8-unknown-unknown-false
-Sonar 3.1 Small,,131k,,$0.20,144.6,0.35,sonar-small-unknown-3.1-unknown-unknown-unknown-unknown-false,sonar-small-unknown-3.1-unknown-unknown-unknown-unknown-false,sonar-small-unknown-3.1-unknown-unknown-unknown-unknown-false
-Sonar 3.1 Large,,131k,,$1.00,56.7,0.36,sonar-large-unknown-3.1-unknown-unknown-unknown-unknown-false,sonar-large-unknown-3.1-unknown-unknown-unknown-unknown-false,sonar-large-unknown-3.1-unknown-unknown-unknown-unknown-false
-Grok Beta,,8k,70.0,$7.50,55.8,0.45,grok-unknown-unknown-beta-unknown-unknown-unknown-false,grok-unknown-unknown-beta-unknown-unknown-unknown-false,grok-unknown-unknown-beta-unknown-unknown-unknown-false
-Phi-3 Medium 14B,,128k,,$0.30,44.3,0.44,phi-medium-unknown-3-unknown-unknown-14-instruct-false,phi-medium-unknown-3-unknown-unknown-14-instruct-false,phi-medium-unknown-3-unknown-unknown-14-instruct-false
-Solar Pro,,4k,61.0,$0.25,49.5,1.22,solar-pro-unknown-unknown-unknown-unknown-unknown-unknown-false,solar-pro-unknown-unknown-unknown-unknown-unknown-unknown-false,solar-pro-unknown-unknown-unknown-unknown-unknown-unknown-false
-Solar Mini,,4k,48.0,$0.15,84.2,1.13,solar-mini-unknown-unknown-unknown-unknown-unknown-unknown-false,solar-mini-unknown-unknown-unknown-unknown-unknown-unknown-false,solar-mini-unknown-unknown-unknown-unknown-unknown-unknown-false
-DBRX,,33k,49.0,$1.16,82.9,0.35,dbrx-unknown-unknown-unknown-unknown-unknown-unknown-false,dbrx-unknown-unknown-unknown-unknown-unknown-unknown-false,dbrx-unknown-unknown-unknown-unknown-unknown-unknown-false
-Llama 3.1 Nemotron 70B,,128k,70.0,$0.36,28.3,0.42,llama-nemotron-unknown-3.1-unknown-70-unknown-unknown-false,llama-nemotron-unknown-3.1-unknown-70-unknown-unknown-false,llama-nemotron-unknown-3.1-unknown-70-unknown-unknown-false
-Reka Flash,,128k,58.0,$0.35,32.8,1.26,reka-flash-unknown-unknown-unknown-unknown-unknown-unknown-false,reka-flash-unknown-unknown-unknown-unknown-unknown-unknown-false,reka-flash-unknown-unknown-unknown-unknown-unknown-unknown-false
-Reka Core,,128k,57.0,$2.00,14.8,1.16,reka-core-unknown-unknown-unknown-unknown-unknown-unknown-false,reka-core-unknown-unknown-unknown-unknown-unknown-unknown-false,reka-core-unknown-unknown-unknown-unknown-unknown-unknown-false
-Reka Flash (Feb '24),,128k,46.0,$0.35,31.2,0.91,reka-flash-unknown-202402-unknown-unknown-unknown-false,reka-flash-unknown-202402-unknown-unknown-unknown-false,reka-flash-unknown-202402-unknown-unknown-unknown-false
-Reka Edge,,64k,30.0,$0.10,35.2,0.93,reka-edge-unknown-unknown-unknown-unknown-unknown-unknown-false,reka-edge-unknown-unknown-unknown-unknown-unknown-unknown-false,reka-edge-unknown-unknown-unknown-unknown-unknown-unknown-false
-Jamba 1.5 Large,,256k,64.0,$3.50,51.0,0.7,jamba-large-unknown-1.5-unknown-unknown-unknown-unknown-false,jamba-large-unknown-1.5-unknown-unknown-unknown-unknown-false,jamba-large-unknown-1.5-unknown-unknown-unknown-unknown-false
-Jamba 1.5 Mini,,256k,46.0,$0.25,82.6,0.49,jamba-mini-unknown-1.5-unknown-unknown-unknown-unknown-false,jamba-mini-unknown-1.5-unknown-unknown-unknown-unknown-false,jamba-mini-unknown-1.5-unknown-unknown-unknown-unknown-false
-DeepSeek-Coder-V2,,128k,67.0,$0.17,16.4,1.06,deepseek-unknown-unknown-2-unknown-unknown-unknown-coder-false,deepseek-unknown-unknown-2-unknown-unknown-unknown-coder-false,deepseek-unknown-unknown-2-unknown-unknown-unknown-coder-false
-DeepSeek-V2,,128k,66.0,$0.17,16.5,1.06,deepseek-unknown-unknown-2-unknown-unknown-unknown-unknown-false,deepseek-unknown-unknown-2-unknown-unknown-unknown-unknown-false,deepseek-unknown-unknown-2-unknown-unknown-unknown-unknown-false
-DeepSeek-V2.5,,128k,66.0,$1.09,13.9,0.94,deepseek-unknown-unknown-2.5-unknown-unknown-unknown-unknown-false,deepseek-unknown-unknown-2.5-unknown-unknown-unknown-unknown-false,deepseek-unknown-unknown-2.5-unknown-unknown-unknown-unknown-false
-Qwen2.5 72B,,131k,75.0,$0.39,47.3,0.55,qwen-unknown-unknown-2.5-unknown-72-unknown-unknown-false,qwen-unknown-unknown-2.5-unknown-72-unknown-unknown-false,qwen-unknown-unknown-2.5-unknown-72-unknown-unknown-false
-Qwen2.5 Coder 32B,,131k,70.0,$0.50,50.4,0.39,qwen-unknown-coder-2.5-unknown-32-unknown-unknown-false,qwen-unknown-coder-2.5-unknown-32-unknown-unknown-false,qwen-unknown-coder-2.5-unknown-32-unknown-unknown-false
-Qwen2 72B,,128k,69.0,$0.63,54.3,0.42,qwen-unknown-unknown-unknown-unknown-72-unknown-unknown-false,qwen-unknown-unknown-unknown-unknown-72-unknown-unknown-false,qwen-unknown-unknown-unknown-unknown-72-unknown-unknown-false
-Yi-Large,,32k,58.0,$3.00,67.1,0.44,yi-large-unknown-unknown-unknown-unknown-unknown-unknown-false,yi-large-unknown-unknown-unknown-unknown-unknown-unknown-false,yi-large-unknown-unknown-unknown-unknown-unknown-unknown-false
-GPT-4 Turbo,,128k,74.0,$15.00,36.6,0.64,gpt-unknown-turbo-4-unknown-unknown-unknown-false,gpt-unknown-turbo-4-unknown-unknown-unknown-false,gpt-unknown-turbo-4-unknown-unknown-unknown-false
-GPT-3.5 Turbo,,16k,52.0,$0.75,101.0,0.42,gpt-unknown-turbo-3.5-unknown-unknown-unknown-false,gpt-unknown-turbo-3.5-unknown-unknown-unknown-false,gpt-unknown-turbo-3.5-unknown-unknown-unknown-false
-GPT-3.5 Turbo Instruct,,4k,,$1.63,108.1,0.66,gpt-unknown-turbo-3.5-unknown-unknown-unknown-instruct-false,gpt-unknown-turbo-3.5-unknown-unknown-unknown-instruct-false,gpt-unknown-turbo-3.5-unknown-unknown-unknown-instruct-false
-GPT-4,,8k,,$37.50,23.4,0.66,gpt-unknown-unknown-4-unknown-unknown-unknown-false,gpt-unknown-unknown-4-unknown-unknown-unknown-false,gpt-unknown-unknown-4-unknown-unknown-unknown-false
-Llama 3 70B,,8k,62.0,$0.89,45.3,0.43,llama-unknown-unknown-3-unknown-70-unknown-unknown-false,llama-unknown-unknown-3-unknown-70-unknown-unknown-false,llama-unknown-unknown-3-unknown-70-unknown-unknown-false
-Llama 3 8B,,8k,46.0,$0.15,121.5,0.32,llama-unknown-unknown-3-unknown-8-unknown-unknown-false,llama-unknown-unknown-3-unknown-8-unknown-unknown-false,llama-unknown-unknown-3-unknown-8-unknown-unknown-false
-Llama 2 Chat 13B,,4k,25.0,$0.56,53.1,0.49,llama-chat-unknown-2-unknown-13-unknown-unknown-false,llama-chat-unknown-2-unknown-13-unknown-unknown-false,llama-chat-unknown-2-unknown-13-unknown-unknown-false
-Llama 2 Chat 7B,,4k,,$0.33,123.8,0.33,llama-chat-unknown-2-unknown-7-unknown-unknown-false,llama-chat-unknown-2-unknown-7-unknown-unknown-false,llama-chat-unknown-2-unknown-7-unknown-unknown-false
-Gemini 1.0 Pro,,33k,,$0.75,102.7,1.26,gemini-pro-unknown-1.0-unknown-unknown-unknown-unknown-false,gemini-pro-unknown-1.0-unknown-unknown-unknown-unknown-false,gemini-pro-unknown-1.0-unknown-unknown-unknown-unknown-false
-Claude 3 Sonnet,,200k,57.0,$6.00,62.4,0.89,claude-sonnet-unknown-3-unknown-unknown-unknown-unknown-false,claude-sonnet-unknown-3-unknown-unknown-unknown-unknown-false,claude-sonnet-unknown-3-unknown-unknown-unknown-unknown-false
-Mistral Large (Feb '24),,33k,56.0,$6.00,35.6,0.48,mistral-large-unknown-202402-unknown-unknown-unknown-false,mistral-large-unknown-202402-unknown-unknown-unknown-false,mistral-large-unknown-202402-unknown-unknown-unknown-false
-Mistral Small (Feb '24),,33k,50.0,$1.50,53.6,0.44,mistral-small-unknown-202402-unknown-unknown-unknown-false,mistral-small-unknown-202402-unknown-unknown-unknown-false,mistral-small-unknown-202402-unknown-unknown-unknown-false
-Mistral 7B,,33k,24.0,$0.18,96.0,0.32,mistral-unknown-unknown-unknown-unknown-7-unknown-unknown-false,mistral-unknown-unknown-unknown-unknown-7-unknown-unknown-false,mistral-unknown-unknown-unknown-unknown-7-unknown-unknown-false
-Mistral Medium,,33k,,$4.09,44.4,0.43,mistral-medium-unknown-unknown-unknown-unknown-unknown-false,mistral-medium-unknown-unknown-unknown-unknown-unknown-false,mistral-medium-unknown-unknown-unknown-unknown-unknown-false
-Codestral,,33k,,$0.30,80.6,0.43,codestral-unknown-unknown-unknown-unknown-unknown-unknown-false,codestral-unknown-unknown-unknown-unknown-unknown-unknown-false,codestral-unknown-unknown-unknown-unknown-unknown-unknown-false
-OpenChat 3.5,,8k,43.0,$0.06,74.6,0.31,openchat-unknown-unknown-3.5-unknown-unknown-unknown-false,openchat-unknown-unknown-3.5-unknown-unknown-unknown-false,openchat-unknown-unknown-3.5-unknown-unknown-unknown-false
-Jamba Instruct,,256k,28.0,$0.55,75.5,0.52,jamba-instruct-unknown-1.5-unknown-unknown-unknown-unknown-false,jamba-instruct-unknown-1.5-unknown-unknown-unknown-unknown-false,jamba-instruct-unknown-1.5-unknown-unknown-unknown-unknown-false
+Model,Creator,Context Window,Quality Index (Normalized avg),Blended Price (USD/1M Tokens),Output Tokens/S Median,Latency Median (First Chunk),id_name
+o1-preview,,128k,85.0,$26.25,35.7,28.76,o1-preview-unknown-unknown-unknown-unknown-unknown-false
+o1-mini,,128k,82.0,$5.25,74.1,13.63,o1-mini-unknown-unknown-unknown-unknown-unknown-false
+GPT-4o,,128k,77.0,$4.38,83.8,0.45,gpt-4o-unknown-unknown-unknown-unknown-unknown-false
+GPT-4o (May '24),,128k,77.0,$7.50,91.5,0.45,gpt-4o-unknown-unknown-202405-unknown-unknown-unknown-false
+GPT-4o mini,,128k,71.0,$0.26,97.8,0.48,gpt-mini-unknown-4o-unknown-unknown-unknown-false
+Llama 3.1 405B,,128k,72.0,$5.13,79.6,0.87,llama-unknown-unknown-3.1-unknown-405-unknown-unknown-false
+Llama 3.2 90B (Vision),,128k,67.0,$0.90,41.2,0.36,llama-unknown-unknown-3.2-unknown-90-unknown-unknown-false
+Llama 3.1 70B,,128k,65.0,$0.75,71.2,0.43,llama-unknown-unknown-3.1-unknown-70-unknown-unknown-false
+Llama 3.2 11B (Vision),,128k,53.0,$0.18,128.9,0.29,llama-unknown-unknown-3.2-unknown-11-unknown-unknown-false
+Llama 3.1 8B,,128k,53.0,$0.11,156.6,0.37,llama-unknown-unknown-3.1-unknown-8-unknown-unknown-false
+Llama 3.2 3B,,128k,47.0,$0.08,202.2,0.34,llama-unknown-unknown-3.2-unknown-3-unknown-unknown-false
+Llama 3.2 1B,,128k,27.0,$0.05,553.1,0.34,llama-unknown-unknown-3.2-unknown-1-unknown-unknown-false
+Gemini 1.5 Pro (Sep),,2m,80.0,$2.19,59.2,0.77,gemini-pro-unknown-1.5-unknown-unknown-unknown-unknown-false
+Gemini 1.5 Flash (Sep),,1m,73.0,$0.13,192.5,0.32,gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false
+Gemma 2 27B,,8k,61.0,$0.26,47.0,0.57,gemma-unknown-unknown-2-unknown-27-unknown-unknown-false
+Gemma 2 9B,,8k,46.0,$0.13,159.1,0.36,gemma-unknown-unknown-2-unknown-9-unknown-unknown-false
+Gemini 1.5 Pro (May),,2m,,$5.25,63.2,0.74,gemini-pro-unknown-1.5-unknown-unknown-unknown-unknown-false
+Gemini 1.5 Flash-8B,,1m,,$0.07,283.9,0.36,gemini-flash-unknown-1.5-unknown-8-unknown-unknown-false
+Gemini 1.5 Flash (May),,1m,,$0.13,311.7,0.29,gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false
+Claude 3.5 Sonnet (Oct),,200k,80.0,$6.00,55.3,0.87,claude-sonnet-unknown-3.5-unknown-unknown-unknown-unknown-false
+Claude 3.5 Sonnet (June),,200k,77.0,$6.00,55.4,0.93,claude-sonnet-unknown-3.5-unknown-unknown-unknown-unknown-false
+Claude 3 Opus,,200k,70.0,$30.00,27.1,2.03,claude-opus-unknown-3-unknown-unknown-unknown-unknown-false
+Claude 3.5 Haiku,,200k,69.0,$2.00,63.2,0.89,claude-haiku-unknown-3.5-unknown-unknown-unknown-unknown-false
+Claude 3 Haiku,,200k,54.0,$0.50,127.6,0.48,claude-haiku-unknown-3-unknown-unknown-unknown-unknown-false
+Mistral Large 2 (Jul '24),,128k,73.0,$3.00,34.7,0.45,mistral-large-unknown-2-202407-unknown-unknown-unknown-false
+Mixtral 8x22B,,65k,61.0,$1.20,79.1,0.56,mixtral-unknown-unknown-unknown-8x22-unknown-unknown-false
+Mistral Small (Sep '24),,128k,60.0,$0.30,59.1,0.47,mistral-small-unknown-202409-unknown-unknown-unknown-false
+Pixtral 12B,,128k,56.0,$0.13,68.7,0.49,pixtral-unknown-unknown-unknown-12-unknown-unknown-false
+Ministral 8B,,128k,53.0,$0.10,135.5,0.42,ministral-unknown-unknown-8-unknown-8-unknown-unknown-false
+Mistral NeMo,,128k,53.0,$0.13,71.5,0.49,mistral-nemo-unknown-unknown-unknown-unknown-unknown-false
+Ministral 3B,,128k,51.0,$0.04,209.3,0.41,ministral-unknown-unknown-3-unknown-3-unknown-unknown-false
+Mixtral 8x7B,,33k,42.0,$0.50,90.0,0.34,mixtral-unknown-unknown-unknown-8x7-unknown-unknown-false
+Codestral-Mamba,,256k,36.0,$0.25,94.6,0.57,codestral-mamba-unknown-unknown-unknown-unknown-unknown-unknown-false
+Command-R+,,128k,56.0,$5.19,49.9,0.47,commandr-plus-unknown-unknown-unknown-unknown-unknown-unknown-false
+Command-R,,128k,51.0,$0.51,110.1,0.33,commandr-unknown-unknown-unknown-unknown-unknown-unknown-false
+Command-R+ (Apr '24),,128k,46.0,$6.00,46.7,0.52,commandr-plus-unknown-unknown-202404-unknown-unknown-unknown-false
+Command-R (Mar '24),,128k,36.0,$0.75,108.5,0.35,commandr-unknown-unknown-202403-unknown-unknown-unknown-false
+Aya Expanse 32B,,8k,,$0.75,121.3,0.22,aya-expanse-unknown-unknown-unknown-unknown-32-unknown-unknown-false
+Aya Expanse 8B,,8k,,$0.75,137.7,0.25,aya-expanse-unknown-unknown-unknown-unknown-8-unknown-unknown-false
+Sonar 3.1 Small,,131k,,$0.20,144.6,0.35,sonar-small-unknown-3.1-unknown-unknown-unknown-unknown-false
+Sonar 3.1 Large,,131k,,$1.00,56.7,0.36,sonar-large-unknown-3.1-unknown-unknown-unknown-unknown-false
+Grok Beta,,8k,70.0,$7.50,55.8,0.45,grok-unknown-unknown-beta-unknown-unknown-unknown-false
+Phi-3 Medium 14B,,128k,,$0.30,44.3,0.44,phi-medium-unknown-3-unknown-unknown-14-instruct-false
+Solar Pro,,4k,61.0,$0.25,49.5,1.22,solar-pro-unknown-unknown-unknown-unknown-unknown-unknown-false
+Solar Mini,,4k,48.0,$0.15,84.2,1.13,solar-mini-unknown-unknown-unknown-unknown-unknown-unknown-false
+DBRX,,33k,49.0,$1.16,82.9,0.35,dbrx-unknown-unknown-unknown-unknown-unknown-unknown-false
+Llama 3.1 Nemotron 70B,,128k,70.0,$0.36,28.3,0.42,llama-nemotron-unknown-3.1-unknown-70-unknown-unknown-false
+Reka Flash,,128k,58.0,$0.35,32.8,1.26,reka-flash-unknown-unknown-unknown-unknown-unknown-unknown-false
+Reka Core,,128k,57.0,$2.00,14.8,1.16,reka-core-unknown-unknown-unknown-unknown-unknown-unknown-false
+Reka Flash (Feb '24),,128k,46.0,$0.35,31.2,0.91,reka-flash-unknown-202402-unknown-unknown-unknown-false
+Reka Edge,,64k,30.0,$0.10,35.2,0.93,reka-edge-unknown-unknown-unknown-unknown-unknown-unknown-false
+Jamba 1.5 Large,,256k,64.0,$3.50,51.0,0.7,jamba-large-unknown-1.5-unknown-unknown-unknown-unknown-false
+Jamba 1.5 Mini,,256k,46.0,$0.25,82.6,0.49,jamba-mini-unknown-1.5-unknown-unknown-unknown-unknown-false
+DeepSeek-Coder-V2,,128k,67.0,$0.17,16.4,1.06,deepseek-unknown-unknown-2-unknown-unknown-unknown-coder-false
+DeepSeek-V2,,128k,66.0,$0.17,16.5,1.06,deepseek-unknown-unknown-2-unknown-unknown-unknown-unknown-false
+DeepSeek-V2.5,,128k,66.0,$1.09,13.9,0.94,deepseek-unknown-unknown-2.5-unknown-unknown-unknown-unknown-false
+Qwen2.5 72B,,131k,75.0,$0.39,47.3,0.55,qwen-unknown-unknown-2.5-unknown-72-unknown-unknown-false
+Qwen2.5 Coder 32B,,131k,70.0,$0.50,50.4,0.39,qwen-unknown-coder-2.5-unknown-32-unknown-unknown-false
+Qwen2 72B,,128k,69.0,$0.63,54.3,0.42,qwen-unknown-unknown-unknown-unknown-72-unknown-unknown-false
+Yi-Large,,32k,58.0,$3.00,67.1,0.44,yi-large-unknown-unknown-unknown-unknown-unknown-unknown-false
+GPT-4 Turbo,,128k,74.0,$15.00,36.6,0.64,gpt-unknown-turbo-4-unknown-unknown-unknown-false
+GPT-3.5 Turbo,,16k,52.0,$0.75,101.0,0.42,gpt-unknown-turbo-3.5-unknown-unknown-unknown-false
+GPT-3.5 Turbo Instruct,,4k,,$1.63,108.1,0.66,gpt-unknown-turbo-3.5-unknown-unknown-unknown-instruct-false
+GPT-4,,8k,,$37.50,23.4,0.66,gpt-unknown-unknown-4-unknown-unknown-unknown-false
+Llama 3 70B,,8k,62.0,$0.89,45.3,0.43,llama-unknown-unknown-3-unknown-70-unknown-unknown-false
+Llama 3 8B,,8k,46.0,$0.15,121.5,0.32,llama-unknown-unknown-3-unknown-8-unknown-unknown-false
+Llama 2 Chat 13B,,4k,25.0,$0.56,53.1,0.49,llama-chat-unknown-2-unknown-13-unknown-unknown-false
+Llama 2 Chat 7B,,4k,,$0.33,123.8,0.33,llama-chat-unknown-2-unknown-7-unknown-unknown-false
+Gemini 1.0 Pro,,33k,,$0.75,102.7,1.26,gemini-pro-unknown-1.0-unknown-unknown-unknown-unknown-false
+Claude 3 Sonnet,,200k,57.0,$6.00,62.4,0.89,claude-sonnet-unknown-3-unknown-unknown-unknown-unknown-false
+Mistral Large (Feb '24),,33k,56.0,$6.00,35.6,0.48,mistral-large-unknown-202402-unknown-unknown-unknown-false
+Mistral Small (Feb '24),,33k,50.0,$1.50,53.6,0.44,mistral-small-unknown-202402-unknown-unknown-unknown-false
+Mistral 7B,,33k,24.0,$0.18,96.0,0.32,mistral-unknown-unknown-unknown-unknown-7-unknown-unknown-false
+Mistral Medium,,33k,,$4.09,44.4,0.43,mistral-medium-unknown-unknown-unknown-unknown-unknown-false
+Codestral,,33k,,$0.30,80.6,0.43,codestral-unknown-unknown-unknown-unknown-unknown-unknown-false
+OpenChat 3.5,,8k,43.0,$0.06,74.6,0.31,openchat-unknown-unknown-3.5-unknown-unknown-unknown-false
+Jamba Instruct,,256k,28.0,$0.55,75.5,0.52,jamba-instruct-unknown-1.5-unknown-unknown-unknown-unknown-false
