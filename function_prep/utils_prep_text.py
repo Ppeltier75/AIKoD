@@ -3,6 +3,7 @@ import pandas as pd
 import json
 import re
 from collections import Counter
+from function_utils.utils_merge_id import strategy_merge
 
 # Fonction pour analyser un id_name et extraire les informations
 def analyze_id_name(id_name):
@@ -148,3 +149,44 @@ def AIKoD_text_infos(json_path, text_infos_csv_path):
     # Sauvegarder le fichier mis à jour
     text_infos_df.to_csv(text_infos_csv_path, index=False)
     print(f"Le fichier {text_infos_csv_path} a été mis à jour avec succès.")
+
+
+def add_rating_text(text_file, rating_file_1, rating_file_2, output_file):
+    """
+    Ajoute des colonnes de notation (ratings) à un fichier texte en fusionnant sur `id_name`
+    en suivant plusieurs stratégies de merge.
+
+    :param text_file: Chemin vers le fichier texte de base (`AIKoD_text_infos.csv`).
+    :param rating_file_1: Chemin vers le premier fichier de notation (`AA_quality_...`).
+    :param rating_file_2: Chemin vers le deuxième fichier de notation (ex. Global Average, etc.).
+    :param output_file: Chemin où le fichier fusionné sera sauvegardé.
+    """
+    # Charger les fichiers
+    base_df = pd.read_csv(text_file)
+    rating_df_1 = pd.read_csv(rating_file_1)
+    rating_df_2 = pd.read_csv(rating_file_2)
+
+    # Préparer les colonnes à conserver
+    rating_df_1 = rating_df_1[[col for col in rating_df_1.columns if "name" not in col.lower() or col == "id_name"]]
+    rating_df_2 = rating_df_2[["Global Average", "id_name"]]
+
+    # Appliquer la stratégie de merge avec les deux fichiers de notation
+    merged_df = strategy_merge(
+        base_df=base_df,
+        merge_df=rating_df_1,
+        strategies=["exact", "segments_order", "segments_order", "segments_no_order"],
+        segments_order=[1, 2, 3, 4],
+        segments_no_order=[1, 2, 4]
+    )
+
+    merged_df = strategy_merge(
+        base_df=merged_df,
+        merge_df=rating_df_2,
+        strategies=["exact", "segments_order", "segments_order", "segments_no_order"],
+        segments_order=[1, 2, 3, 4, 6],
+        segments_no_order=[1, 2, 3, 4, 6]
+    )
+
+    # Sauvegarder le fichier mis à jour
+    merged_df.to_csv(output_file, index=False)
+    print(f"Fichier mis à jour et sauvegardé : {output_file}")

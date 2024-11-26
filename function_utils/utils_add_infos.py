@@ -144,10 +144,12 @@ def add_id_name_to_json_with_type(json_path, csv_dir, output_path=None):
 
     print(f"Les id_name ont été mis à jour et enregistrés dans le fichier '{final_output_path}'.")
 
+
+
 def add_date_release(json_path, models_infos_path, output_path=None):
     """
-    Ajoute une date de publication (`date_release`) aux modèles dans le JSON brut
-    en se basant sur les correspondances dans le fichier `models_infos_PPlx`.
+    Ajoute une date de publication (`date_release`) aux modèles dans le JSON brut.
+    Si `date_release` est manquant, cherche la date la plus ancienne dans les clés secondaires où le `id_name` ou `name` apparaît.
 
     :param json_path: Chemin du fichier JSON brut contenant les modèles.
     :param models_infos_path: Chemin du fichier JSON `models_infos_PPlx` contenant les informations de date_release.
@@ -168,7 +170,23 @@ def add_date_release(json_path, models_infos_path, output_path=None):
         if info.get("date_release") and info["date_release"] != "null"
     }
 
-    # Ajouter la date_release aux modèles dans le JSON brut
+    # Fonction pour trouver la première date à laquelle un `id_name` ou `name` apparaît
+    def find_earliest_date(data, identifier, key="id_name"):
+        earliest_date = None
+        for provider_data in data.values():
+            if not isinstance(provider_data, dict):
+                continue
+            for date_str, content in provider_data.items():
+                if not isinstance(content, dict):
+                    continue
+                models = content.get("models_extract_GPT4o", {}).get("models", [])
+                for model in models:
+                    if model.get(key) == identifier:
+                        if earliest_date is None or date_str < earliest_date:
+                            earliest_date = date_str
+        return earliest_date
+
+    # Ajouter ou corriger les `date_release` dans le JSON brut
     for provider, date_dict in data.items():
         for date_str, models_extract in date_dict.items():
             if isinstance(models_extract, dict):
@@ -178,10 +196,16 @@ def add_date_release(json_path, models_infos_path, output_path=None):
                     if "date_release" in model and model["date_release"]:
                         continue  # Ne pas écraser les dates existantes
 
-                    # Chercher la date_release correspondante au model_name
+                    # Chercher la date_release correspondante au model_name ou au `id_name`
                     model_name = model.get("name", "").strip().lower()
+                    id_name = model.get("id_name", "").strip() if model.get("id_name") else None
+
                     if model_name in model_name_to_date:
                         model["date_release"] = model_name_to_date[model_name]
+                    elif id_name:  # Si `id_name` existe
+                        model["date_release"] = find_earliest_date(data, id_name, key="id_name")
+                    elif model_name:  # Si `id_name` est manquant, utiliser `name`
+                        model["date_release"] = find_earliest_date(data, model_name, key="name")
 
     # Sauvegarder les modifications dans le fichier JSON
     final_output_path = output_path if output_path else json_path

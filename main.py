@@ -26,9 +26,9 @@ import os
 from function_utils.utils_add_infos import add_date_release
 if __name__ == "__main__":
     base_path = os.path.abspath(os.path.dirname(__file__))
-    json_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v1.json")
+    json_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v2.json")
     models_infos_path = os.path.join(base_path, "data", "models_infos", "Perplexity", "Models_infos_Pplx.json")
-    output_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v1.json")
+    output_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v2.json")
 
     # Appeler la fonction pour ajouter les dates de publication
     add_date_release(json_path, models_infos_path, output_path)
@@ -109,23 +109,46 @@ if __name__ == "__main__":
     # Définir les chemins
     base_path = os.path.abspath(os.path.dirname(__file__))
     json_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v2.json")
-    output_file = os.path.join(base_path, "data", "models_infos", "AIKoD_image_infos.csv")
-    merge_files = [
-        os.path.join(base_path, "data", "models_infos", "AA", "AA_texttoimage_infos.csv")
-    ]
+    output_file = os.path.join(base_path, "data", "models_infos", "AIKoD_texttoimage_infos.csv")
+    merge_file = os.path.join(base_path, "data", "models_infos", "AA", "AA_texttoimage_infos.csv")
 
-    # Appeler la fonction pour mettre à jour AIKoD_image_infos.csv
-    AIKoD_texttoimage_infos(
-        json_path=json_path,
-        output_file=output_file,
-        merge_files=merge_files,
-        merge_columns='all',
-        merge_strategy='exact',
-        segments_order=[1, 2, 3, 4],
-        segments_no_order=[1, 2, 3, 4],
-        fuzzy_match=False,
-        fuzzy_threshold=85
+    # Vérification des fichiers
+    for file_path in [json_path, output_file, merge_file]:
+        if not os.path.exists(file_path):
+            raise FileNotFoundError(f"Le fichier {file_path} est introuvable.")
+
+    # Appeler la fonction pour mettre à jour et fusionner les informations
+    try:
+        print("Mise à jour et fusion des fichiers en cours...")
+        AIKoD_texttoimage_infos(
+            json_path=json_path,
+            output_file=output_file,
+            merge_file=merge_file,
+        )
+        print("Mise à jour et fusion terminées avec succès.")
+    except Exception as e:
+        print(f"Une erreur est survenue : {e}")
+
+# %%
+import os
+from function_prep.utils_prep_text import add_rating_text
+
+if __name__ == "__main__":
+    # Définir les chemins
+    base_path = os.path.abspath(os.path.dirname(__file__))
+    text_file = os.path.join(base_path, "data", "models_infos", "AIKoD_text_infos.csv")
+    rating_file_1 = os.path.join(base_path, "data", "benchmark", "AA", "2024-11-16", "AA_quality_2024-11-16.csv")
+    rating_file_2 = os.path.join(base_path, "data", "benchmark", "Livebench", "Livebench_text_2024-08-31.csv")
+    output_file = os.path.join(base_path, "data", "models_infos", "AIKoD_text_infos_with_ratings.csv")
+
+    # Appeler la fonction pour ajouter les notations
+    add_rating_text(
+        text_file=text_file,
+        rating_file_1=rating_file_1,
+        rating_file_2=rating_file_2,
+        output_file=output_file
     )
+
 
 # %% Imports nécessaires
 import os
