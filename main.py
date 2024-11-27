@@ -63,6 +63,17 @@ def main():
 if __name__ == "__main__":
     main()
 
+# %%
+#processe pour add idname
+import os
+from dotenv import load_dotenv
+from function_utils.utils_cleaning import remove_id_names_with_wrong_segments
+
+base_path = os.path.abspath(os.path.dirname(__file__))
+csv_path = os.path.join(base_path, "data", "id_name", "AIKoD", "AIKoD_texttoimage_idname.csv")
+expected_segments = 9  # Vous pouvez modifier ce nombre selon vos besoins
+
+remove_id_names_with_wrong_segments(csv_path, expected_segments)
 
 # %% Imports nécessaires
 import os
@@ -145,8 +156,30 @@ if __name__ == "__main__":
 
 
 # %% Imports nécessaires
+from function_prep.utils_prep_texttoimage import create_adjusted_price_text_to_image
+
+base_path = os.path.abspath(os.path.dirname(__file__))
+
+# Chemin vers le répertoire contenant les fichiers 'texttoimage_priceoutput.csv'
+directory_csv = os.path.join(base_path, "data", "pricing")
+
+# Chemin vers le fichier AIKoD_texttoimage.csv
+csv_path = os.path.join(base_path, "data", "models_infos", "AIKoD_texttoimage_pricing_infos.csv")
+
+# Appel de la fonction
+create_adjusted_price_text_to_image(directory_csv, csv_path)
+
+# %% Imports nécessaires
+from function_prep.utils_prep_texttoimage import reorganize_prices_by_resolution_and_steps
+
+base_path = os.path.abspath(os.path.dirname(__file__))
+
+# Chemin vers le répertoire contenant les fichiers 'texttoimage_priceoutput.csv'
+input_csv = os.path.join(base_path, "data", "models_infos", "AIKoD_texttoimage_pricing_infos.csv")
 
 
+# Appel de la fonction
+reorganize_prices_by_resolution_and_steps(input_csv)
 
 # %%
 

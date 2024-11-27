@@ -273,3 +273,176 @@ def AIKoD_texttoimage_infos(json_path, output_file):
         os.remove(temp_csv_path)
 
     return df_final
+
+
+
+def create_adjusted_price_text_to_image(directory_csv, csv_path):
+    """
+    Parcourt tous les fichiers 'texttoimage_priceoutput.csv' dans le répertoire donné,
+    calcule la moyenne des valeurs numériques pour chaque 'id_name',
+    et stocke le résultat dans un fichier CSV avec les colonnes 'id_name' et 'mean_price'.
+
+    :param directory_csv: Répertoire où chercher les fichiers 'texttoimage_priceoutput.csv'.
+    :param csv_path: Chemin du fichier CSV où les résultats seront stockés.
+    """
+    # Initialiser un dictionnaire pour stocker les listes de prix par id_name
+    id_name_prices = {}
+
+    # Parcourir le répertoire pour trouver tous les fichiers 'texttoimage_priceoutput.csv'
+    for root, dirs, files in os.walk(directory_csv):
+        for file in files:
+            if file == 'texttoimage_priceoutput.csv':
+                file_path = os.path.join(root, file)
+                # Lire le fichier CSV
+                df = pd.read_csv(file_path)
+                # Vérifier que les colonnes nécessaires sont présentes
+                if 'id_name' not in df.columns:
+                    print(f"Le fichier {file_path} ne contient pas la colonne 'id_name'.")
+                    continue
+                # Itérer sur chaque ligne du DataFrame
+                for index, row in df.iterrows():
+                    id_name = row['id_name']
+                    # Obtenir les colonnes de dates (exclure 'name' et 'id_name')
+                    date_columns = [col for col in df.columns if col not in ['name', 'id_name']]
+                    # Obtenir les valeurs numériques non nulles pour cette ligne
+                    prices = row[date_columns].dropna().tolist()
+                    # Convertir les prix en float (au cas où ils sont sous forme de chaînes)
+                    prices = [float(price) for price in prices if price != '']
+                    if prices:
+                        # Initialiser la liste pour cet id_name si nécessaire
+                        if id_name not in id_name_prices:
+                            id_name_prices[id_name] = []
+                        # Ajouter les nouveaux prix à la liste
+                        id_name_prices[id_name].extend(prices)
+
+    # Calculer le prix moyen pour chaque id_name
+    id_name_avg_price = []
+    for id_name, prices in id_name_prices.items():
+        avg_price = sum(prices) / len(prices)
+        id_name_avg_price.append({'id_name': id_name, 'mean_price': avg_price})
+
+    # Créer un DataFrame avec les résultats
+    df_results = pd.DataFrame(id_name_avg_price)
+
+    # Sauvegarder le DataFrame dans le fichier CSV
+    df_results.to_csv(csv_path, index=False)
+
+    print(f"Le fichier '{csv_path}' a été créé avec les colonnes 'id_name' et 'mean_price'.")
+
+
+
+
+def reorganize_prices_by_resolution_and_steps(input_csv_path):
+    """
+    Lit le fichier CSV à input_csv_path, traite les id_names pour regrouper par id_name de base
+    (en supprimant uniquement le segment de résolution ou de steps selon le cas),
+    et génère deux nouveaux CSV dans le même répertoire :
+    - Un pour les résolutions (en conservant les steps).
+    - Un pour les steps (en conservant les résolutions).
+    
+    :param input_csv_path: Chemin vers le fichier CSV d'entrée.
+    """
+    # Lire le fichier CSV
+    df = pd.read_csv(input_csv_path)
+
+    # Vérifier que les colonnes requises sont présentes
+    if 'id_name' not in df.columns or 'mean_price' not in df.columns:
+        print("Le fichier CSV doit contenir les colonnes 'id_name' et 'mean_price'.")
+        return
+
+    # Fonction pour supprimer uniquement le segment de résolution (segment 5)
+    def remove_resolution(id_name):
+        segments = id_name.split('-')
+        if len(segments) >= 6:
+            resolution = segments[4]
+            # Retirer le segment de résolution, conserver les steps
+            base_id_name = segments[:4] + segments[5:]
+            base_id_name = '-'.join(base_id_name)
+            return base_id_name, resolution
+        else:
+            return id_name, ''
+
+    # Fonction pour supprimer uniquement le segment des steps (segment 6)
+    def remove_steps(id_name):
+        segments = id_name.split('-')
+        if len(segments) >= 7:
+            steps = segments[5]
+            # Retirer le segment des steps, conserver la résolution
+            base_id_name = segments[:5] + segments[6:]
+            base_id_name = '-'.join(base_id_name)
+            return base_id_name, steps
+        else:
+            return id_name, ''
+
+    # Initialiser des dictionnaires pour collecter les données
+    data_resolution = {}
+    data_steps = {}
+
+    # Traitement pour les résolutions (en conservant les steps)
+    for idx, row in df.iterrows():
+        id_name = row['id_name']
+        mean_price = row['mean_price']
+        base_id_name, resolution = remove_resolution(id_name)
+
+        # Collecter les données pour les résolutions
+        if base_id_name not in data_resolution:
+            data_resolution[base_id_name] = {}
+        data_resolution[base_id_name][resolution] = mean_price
+
+    # Traitement pour les steps (en conservant les résolutions)
+    for idx, row in df.iterrows():
+        id_name = row['id_name']
+        mean_price = row['mean_price']
+        base_id_name, steps = remove_steps(id_name)
+
+        # Collecter les données pour les steps
+        if base_id_name not in data_steps:
+            data_steps[base_id_name] = {}
+        data_steps[base_id_name][steps] = mean_price
+
+    # Obtenir toutes les résolutions uniques pour définir les colonnes
+    resolutions = set()
+    for resolutions_dict in data_resolution.values():
+        resolutions.update(resolutions_dict.keys())
+    resolutions.discard('')  # Supprimer la résolution vide si présente
+    resolutions = sorted(resolutions)
+
+    # Obtenir tous les steps uniques pour définir les colonnes
+    steps_set = set()
+    for steps_dict in data_steps.values():
+        steps_set.update(steps_dict.keys())
+    steps_set.discard('')  # Supprimer les steps vides si présents
+
+    # Tri corrigé des steps
+    steps_set = sorted(steps_set, key=lambda x: (0, float(x)) if x.replace('.', '', 1).isdigit() else (1, x))
+
+    # Construire le nouveau DataFrame pour les résolutions
+    rows_resolution = []
+    for base_id_name, resolutions_dict in data_resolution.items():
+        row = {'id_name': base_id_name}
+        for res in resolutions:
+            row[res] = resolutions_dict.get(res, '')
+        rows_resolution.append(row)
+    df_resolutions = pd.DataFrame(rows_resolution)
+
+    # Construire le nouveau DataFrame pour les steps
+    rows_steps = []
+    for base_id_name, steps_dict in data_steps.items():
+        row = {'id_name': base_id_name}
+        for step in steps_set:
+            row[step] = steps_dict.get(step, '')
+        rows_steps.append(row)
+    df_steps = pd.DataFrame(rows_steps)
+
+    # Déterminer les chemins de sortie (même répertoire que le fichier d'entrée)
+    dir_name = os.path.dirname(input_csv_path)
+    output_csv_path_resolutions = os.path.join(dir_name, 'resolution_prices.csv')
+    output_csv_path_steps = os.path.join(dir_name, 'steps_prices.csv')
+
+    # Sauvegarder les DataFrames dans les fichiers CSV
+    df_resolutions.to_csv(output_csv_path_resolutions, index=False)
+    df_steps.to_csv(output_csv_path_steps, index=False)
+
+    print(f"Les nouveaux fichiers CSV ont été créés :")
+    print(f"- Résolutions : {output_csv_path_resolutions}")
+    print(f"- Steps : {output_csv_path_steps}")
