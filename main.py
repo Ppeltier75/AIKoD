@@ -99,6 +99,7 @@ output_dir = os.path.join(base_path, "data/models_infos")  # Répertoire où les
 # Appeler la fonction pour générer les fichiers _infos.csv
 generate_csv_with_infos(input_dir, output_dir)
 
+# %%
 
 # %%
 
@@ -110,57 +111,23 @@ if __name__ == "__main__":
     base_path = os.path.abspath(os.path.dirname(__file__))
     json_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v2.json")
     output_file = os.path.join(base_path, "data", "models_infos", "AIKoD_texttoimage_infos.csv")
-    merge_file = os.path.join(base_path, "data", "models_infos", "AA", "AA_texttoimage_infos.csv")
 
-    # Vérification des fichiers
-    for file_path in [json_path, output_file, merge_file]:
-        if not os.path.exists(file_path):
-            raise FileNotFoundError(f"Le fichier {file_path} est introuvable.")
 
-    # Appeler la fonction pour mettre à jour et fusionner les informations
-    try:
-        print("Mise à jour et fusion des fichiers en cours...")
-        AIKoD_texttoimage_infos(
-            json_path=json_path,
-            output_file=output_file,
-            merge_file=merge_file,
-        )
-        print("Mise à jour et fusion terminées avec succès.")
-    except Exception as e:
-        print(f"Une erreur est survenue : {e}")
+    AIKoD_texttoimage_infos(json_path=json_path,output_file=output_file)
+
 
 # %%
 import os
-from function_prep.utils_prep_text import add_ratings_text
-
-def main():
-    base_path = os.path.abspath(os.path.dirname(__file__))
-
-    # Définir le chemin du fichier de base
-    base_file = os.path.join(base_path, "data", "models_infos", "AIKoD_text_infos.csv")
-    
-    # Définir le répertoire de fusion
-    directory_merge = os.path.join(base_path, "data", "benchmark")
-    
-    # Définir les segments à garder et le séparateur (optionnel)
-    segments_to_keep = [1, 4, 6]
-    separator = '-'
-    
-    # Appeler la fonction pour ajouter les ratings
-    add_ratings_text(
-        directory_merge=directory_merge,
-        base_file=base_file,
-        segments_to_keep=segments_to_keep,
-        separator=separator
-    )
+from function_prep.utils_prep_audiototext import AIKoD_audiototext_infos
 
 if __name__ == "__main__":
-    main()
+    # Définir les chemins
+    base_path = os.path.abspath(os.path.dirname(__file__))
+    json_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v2.json")
+    base_csv_path= os.path.join(base_path, "data", "models_infos", "AIKoD_audiototext_infos.csv")
 
 
-# %% Imports nécessaires
-
-
+    AIKoD_audiototext_infos(json_path=json_path,base_csv_path=base_csv_path)
 
 # %% Imports nécessaires
 import os
@@ -175,6 +142,9 @@ if __name__ == "__main__":
     # Appeler la fonction pour mettre à jour AIKoD_text_infos.csv
     AIKoD_text_infos(json_path, output_dir)
 
+
+
+# %% Imports nécessaires
 
 
 

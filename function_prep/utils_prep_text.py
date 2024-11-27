@@ -3,7 +3,10 @@ import pandas as pd
 import json
 import re
 from collections import Counter
-from function_utils.utils_merge_id import generate_partial_key
+import numpy as np
+
+# Importation des fonctions depuis merge_utils.py
+from function_utils.utils_merge_id import select_specific_segments, select_segments_no_order, merge_csv_id_name
 
 # Fonction pour analyser un id_name et extraire les informations
 def analyze_id_name(id_name):
@@ -31,13 +34,267 @@ def analyze_id_name(id_name):
     return number_of_parameters, context_window, finetuned
 
 
+def add_csv_text(base_csv_path):
+    # Définition des stratégies de correspondance
+    strategies = [
+        lambda x: x,  # Correspondance exacte
+        lambda x: select_specific_segments(x, [1, 2, 3, 4, 5, 6, 7, 8]),
+        lambda x: select_segments_no_order(x, [1, 2, 3, 4, 5, 6, 7, 8]),
+        lambda x: select_specific_segments(x, [1, 2, 3, 4, 5, 6, 7]),
+        lambda x: select_segments_no_order(x, [1, 2, 3, 4, 5, 6, 7]),
+        lambda x: select_specific_segments(x, [1, 2, 3, 4, 5, 6]),
+        lambda x: select_segments_no_order(x, [1, 2, 3, 4, 5, 6]),
+        lambda x: select_specific_segments(x, [1, 2, 3, 4, 6]),
+        lambda x: select_segments_no_order(x, [1, 2, 3, 4, 6]),
+        lambda x: select_specific_segments(x, [1, 2, 4, 6]),
+        lambda x: select_segments_no_order(x, [1, 2, 3, 4]),
+        lambda x: select_specific_segments(x, [1, 2, 4]),
+        lambda x: select_specific_segments(x, [1, 4, 6]),
+        # Vous pouvez ajouter d'autres stratégies si nécessaire
+    ]
+
+    # Lecture du fichier de base
+    df_base = pd.read_csv(base_csv_path)
+
+    # Création d'une copie du DataFrame de base pour les fusions successives
+    df_merged = df_base.copy()
+
+    # Chemins vers les fichiers à fusionner
+    paths = {
+        'AA_quality': r'C:\Users\piwip\OneDrive\Documents\OCDE\AIKoD\data\benchmark\AA\2024-11-16\AA_quality_2024-11-16.csv',
+        'Livebench_text': r'C:\Users\piwip\OneDrive\Documents\OCDE\AIKoD\data\benchmark\Livebench\Livebench_text_2024-08-31.csv',
+        'HF_text_AE': r'C:\Users\piwip\OneDrive\Documents\OCDE\AIKoD\data\benchmark\HF\HF_text_AE.csv',
+        'HF_text_MMLU': r'C:\Users\piwip\OneDrive\Documents\OCDE\AIKoD\data\benchmark\HF\HF_text_MMLU.csv',
+        'HF_text_MT': r'C:\Users\piwip\OneDrive\Documents\OCDE\AIKoD\data\benchmark\HF\HF_text_MT.csv',
+        'AA_text': r'C:\Users\piwip\OneDrive\Documents\OCDE\AIKoD\data\benchmark\AA\text\AA_text_2024-11-19.csv',
+    }
+
+    # Fusion avec AA_quality_2024-11-16
+    df_merge = pd.read_csv(paths['AA_quality'])
+
+    # Renommer les colonnes selon vos spécifications
+    df_merge.rename(columns={
+        'chatbot_arena_elo': 'AA_arenaelo',
+        'mmlu': 'aa_mmlu',
+        'gpqa': 'aa_gpqa',
+        'humaneval': 'aa_humaneval',
+        'math': 'aa_math',
+        'mgsm': 'aa_mgsm'
+    }, inplace=True)
+
+    # Colonnes à conserver
+    keep_columns = ['AA_arenaelo', 'quality_index', 'aa_mmlu', 'aa_gpqa', 'aa_humaneval', 'aa_math', 'aa_mgsm']
+
+    # Fusion
+    df_merged = merge_csv_id_name(df_merged, df_merge, keep_columns, strategies)
+
+    # Fusion avec Livebench_text_2024-08-31
+    df_merge = pd.read_csv(paths['Livebench_text'])
+
+    # Renommer la colonne 'Global Average' en 'Livebench_rating'
+    df_merge.rename(columns={'Global Average': 'Livebench_rating'}, inplace=True)
+
+    keep_columns = ['Livebench_rating']
+
+    df_merged = merge_csv_id_name(df_merged, df_merge, keep_columns, strategies)
+
+    # Fusion avec HF_text_AE
+    df_merge = pd.read_csv(paths['HF_text_AE'])
+
+    keep_columns = ['AE']
+
+    df_merged = merge_csv_id_name(df_merged, df_merge, keep_columns, strategies)
+
+    # Fusion avec HF_text_MMLU
+    df_merge = pd.read_csv(paths['HF_text_MMLU'])
+
+    keep_columns = ['MMLU']
+
+    df_merged = merge_csv_id_name(df_merged, df_merge, keep_columns, strategies)
+
+    # Fusion avec HF_text_MT
+    df_merge = pd.read_csv(paths['HF_text_MT'])
+
+    keep_columns = ['MT']
+
+    df_merged = merge_csv_id_name(df_merged, df_merge, keep_columns, strategies)
+
+    # Fusion avec AA_text_2024-11-19
+    df_merge = pd.read_csv(paths['AA_text'])
+
+    keep_columns = ['Output Tokens/S Median', 'Latency Median (First Chunk)']
+
+    df_merged = merge_csv_id_name(df_merged, df_merge, keep_columns, strategies)
+
+    df_merged.to_csv(base_csv_path, index=False)
+
+    print(f"Le fichier fusionné a été enregistré sous {base_csv_path}")
+
+    return df_merged
+
+import pandas as pd
+import numpy as np
+
+
+
+def add_quality_index(csv_path):
+    """
+    Calculates the quality index for models based on specified columns and coefficients.
+    The function reads the CSV file, computes the quality index, and saves the updated DataFrame.
+
+    :param csv_path: Path to the CSV file.
+    """
+    def normalize_elo_rating(elo, elo_min=1000, elo_max=2000):
+        """Normalize an ELO rating to a 0-1 scale."""
+        if pd.isnull(elo):
+            return np.nan
+        return (elo - elo_min) / (elo_max - elo_min)
+    # Read the CSV file into a DataFrame
+    df = pd.read_csv(csv_path)
+
+    # Define the columns to be used
+    columns = {
+        'Livebench_rating': 'Livebench_rating',
+        'aa_mmlu': 'aa_mmlu',
+        'MMLU': 'MMLU',
+        'AA_arenaelo': 'AA_arenaelo',
+        'AE': 'AE',
+        'aa_gpqa': 'aa_gpqa'
+    }
+
+    # Ensure all required columns are present
+    missing_cols = [col for col in columns.values() if col not in df.columns]
+    if missing_cols:
+        print(f"Les colonnes suivantes sont manquantes dans le CSV : {missing_cols}")
+        return
+
+    # Combine MMLU and aa_mmlu
+    def compute_mmlu(row):
+        values = []
+        if pd.notnull(row['MMLU']):
+            values.append(row['MMLU'])
+        if pd.notnull(row['aa_mmlu']):
+            values.append(row['aa_mmlu'])
+        if values:
+            return sum(values) / len(values)
+        else:
+            return np.nan
+
+    df['MMLU_value'] = df.apply(compute_mmlu, axis=1)
+
+    # Combine AE and AA_arenaelo
+    def compute_arenaelo(row):
+        values = []
+        if pd.notnull(row['AE']):
+            values.append(row['AE'])
+        if pd.notnull(row['AA_arenaelo']):
+            values.append(row['AA_arenaelo'])
+        if values:
+            return sum(values) / len(values)
+        else:
+            return np.nan
+
+    df['Arenaelo_value_raw'] = df.apply(compute_arenaelo, axis=1)
+
+    # Normalize Arenaelo_value using normalize_elo_rating function
+    df['Arenaelo_value'] = df['Arenaelo_value_raw'].apply(lambda x: normalize_elo_rating(x, elo_min=1000, elo_max=2000))
+
+    # GPQA value
+    df['GPQA_value'] = df['aa_gpqa']
+
+    # Livebench rating normalized by dividing by 100
+    df['Livebench_value_raw'] = df['Livebench_rating']
+    df['Livebench_value'] = df['Livebench_value_raw'] / 100
+
+    # Coefficients for the quality index
+    coefficients = {
+        'MMLU_value': 0.35,
+        'Arenaelo_value': 0.35,
+        'GPQA_value': 0.15,
+        'Livebench_value': 0.15
+    }
+
+    # Function to calculate the quality index for a row
+    def calculate_quality_index(row):
+        # Check if any of the MMLU or Arenaelo sources have values
+        has_mmlu = pd.notnull(row['MMLU']) or pd.notnull(row['aa_mmlu'])
+        has_arenaelo = pd.notnull(row['AE']) or pd.notnull(row['AA_arenaelo'])
+
+        # Proceed only if at least one of MMLU or Arenaelo has a value
+        if has_mmlu or has_arenaelo:
+            # Get the values for the metrics
+            mmlu = row['MMLU_value']
+            arenaelo = row['Arenaelo_value']
+            gpqa = row['GPQA_value']
+            livebench = row['Livebench_value']
+
+            # Prepare a dictionary of values
+            values = {
+                'MMLU_value': mmlu,
+                'Arenaelo_value': arenaelo,
+                'GPQA_value': gpqa,
+                'Livebench_value': livebench
+            }
+
+            # Impute missing values using decile imputation
+            for key in values:
+                if pd.isnull(values[key]):
+                    values[key] = impute_value(df, key, row)
+
+            # Calculate the quality index
+            quality_index = sum(values[k] * coefficients[k] for k in coefficients)
+            return round(quality_index, 3)
+        else:
+            return np.nan
+
+    # Function to impute missing values based on deciles using normalized values
+    def impute_value(df, column, row):
+        # Get the deciles for the column
+        deciles = df[column].quantile([i/10 for i in range(1, 10)]).values
+
+        # Get the decile positions of available metrics (excluding the current column)
+        available_metrics = ['MMLU_value', 'Arenaelo_value', 'GPQA_value', 'Livebench_value']
+        available_metrics = [m for m in available_metrics if pd.notnull(row[m]) and m != column]
+
+        if not available_metrics:
+            return df[column].mean()  # Fallback to mean if no metrics are available
+
+        # Calculate the average decile position
+        decile_positions = []
+        for metric in available_metrics:
+            metric_value = row[metric]
+            metric_deciles = df[metric].quantile([i/10 for i in range(1, 10)]).values
+            position = np.searchsorted(metric_deciles, metric_value, side='right')
+            decile_positions.append(position)
+
+        avg_decile = int(np.floor(np.mean(decile_positions)))
+        if avg_decile >= len(deciles):
+            avg_decile = len(deciles) - 1
+        elif avg_decile < 0:
+            avg_decile = 0
+
+        # Impute the value based on the average decile
+        return deciles[avg_decile]
+
+    # Calculate the quality index for each row
+    df['quality_index'] = df.apply(calculate_quality_index, axis=1)
+
+    # Save the updated DataFrame to the CSV file
+    df.to_csv(csv_path, index=False)
+    print(f"La colonne 'quality_index' a été ajoutée au fichier CSV '{csv_path}'.")
+
+    # Return the updated DataFrame
+    return df
+
+
+
 def AIKoD_text_infos(json_path, text_infos_csv_path):
     """
     Analyse un fichier JSON pour les modèles avec type 'text' et ajoute des informations
-    aux fichiers CSV existants dans le répertoire `output_dir`.
+    aux fichiers CSV existants.
 
     :param json_path: Chemin du fichier JSON contenant les données des modèles.
-    :param output_dir: Répertoire contenant les fichiers _infos.csv à mettre à jour.
+    :param text_infos_csv_path: Chemin vers le fichier CSV à mettre à jour.
     """
 
     # Charger les données JSON
@@ -106,12 +363,6 @@ def AIKoD_text_infos(json_path, text_infos_csv_path):
         )
         finetuned = info["finetuned"]
 
-        # Analyser id_name pour combler les informations manquantes
-        analyzed_number_of_parameters, analyzed_context_window, analyzed_finetuned = analyze_id_name(id_name)
-        number_of_parameters = number_of_parameters or analyzed_number_of_parameters
-        context_window = context_window or analyzed_context_window
-        finetuned = finetuned or analyzed_finetuned
-
         # Ajouter les informations pour cet id_name
         rows_to_update.append({
             "id_name": id_name,
@@ -125,195 +376,41 @@ def AIKoD_text_infos(json_path, text_infos_csv_path):
     # Créer un DataFrame avec les mises à jour
     updates_df = pd.DataFrame(rows_to_update)
 
-    # Fusionner avec le fichier existant (toujours remplacer pour garantir la mise à jour)
+    # Fusionner les mises à jour avec le DataFrame existant
     text_infos_df = pd.merge(
         text_infos_df,
         updates_df,
         on="id_name",
-        how="left",
+        how="outer",
         suffixes=("", "_new"),
     )
 
-    # Toujours remplacer les colonnes avec les nouvelles valeurs majoritaires
+    # Remplacer les colonnes avec les nouvelles valeurs (si elles existent)
     for col in ["number_of_parameters", "context_window", "finetuned", "company", "date_release"]:
         if f"{col}_new" in text_infos_df.columns:
-            text_infos_df[col] = text_infos_df[f"{col}_new"]
+            text_infos_df[col] = text_infos_df[f"{col}_new"].combine_first(text_infos_df[col])
 
-    # Supprimer les colonnes temporaires si elles existent
+    # Supprimer les colonnes temporaires
     text_infos_df.drop(
         columns=[col for col in ["number_of_parameters_new", "context_window_new", "finetuned_new", "company_new", "date_release_new"]
                  if col in text_infos_df.columns],
         inplace=True,
     )
 
-    # Sauvegarder le fichier mis à jour
-    text_infos_df.to_csv(text_infos_csv_path, index=False)
-    print(f"Le fichier {text_infos_csv_path} a été mis à jour avec succès.")
+    # Sauvegarder le fichier mis à jour temporairement
+    temp_csv_path = text_infos_csv_path.replace('.csv', '_temp.csv')
+    text_infos_df.to_csv(temp_csv_path, index=False)
+
+    # Utiliser add_csv_text pour effectuer les fusions supplémentaires
+    df_final = add_csv_text(temp_csv_path)
+    df_final = add_quality_index(temp_csv_path)
+
+    # Enregistrer le DataFrame final à l'emplacement d'origine
+    df_final.to_csv(text_infos_csv_path, index=False)
+    print(f"Le fichier {text_infos_csv_path} a été mis à jour avec succès en utilisant add_csv_text.")
+
+    # Supprimer le fichier temporaire
+    if os.path.exists(temp_csv_path):
+        os.remove(temp_csv_path)
 
 
-def determine_suffix(filename):
-    """
-    Détermine le suffixe basé sur le nom du fichier.
-    
-    Args:
-        filename (str): Nom du fichier CSV.
-    
-    Returns:
-        str or None: Suffixe déterminé ou None si non déterminé.
-    """
-    if 'HF_text_AE' in filename:
-        return 'AE'
-    elif 'HF_text_MMLU' in filename:
-        return 'MMLU'
-    elif 'HF_text_MT' in filename:
-        return 'MT'
-    elif 'AA_quality' in filename:
-        return 'AA'
-    elif 'Livebench_text' in filename:
-        return 'Livebench_rating'
-    else:
-        return None
-
-def add_ratings_text(directory_merge, base_file, segments_to_keep=[1, 4, 6], separator='-'):
-    """
-    Ajoute des colonnes de ratings moyennes au fichier de base en fusionnant avec les fichiers de fusion présents dans directory_merge.
-    
-    Args:
-        directory_merge (str): Chemin vers le répertoire contenant les fichiers CSV de fusion.
-        base_file (str): Chemin vers le fichier CSV de base à mettre à jour.
-        segments_to_keep (list, optional): Liste des indices de segments à garder pour la clé partielle. Defaults to [1, 4, 6].
-        separator (str, optional): Séparateur utilisé dans 'id_name'. Defaults to '-'.
-    
-    Returns:
-        None
-    """
-    # Vérifier l'existence du fichier de base
-    if not os.path.exists(base_file):
-        print(f"Le fichier de base {base_file} n'existe pas.")
-        return
-    
-    # Charger le fichier de base
-    base_df = pd.read_csv(base_file)
-    
-    # Générer la clé partielle pour base_df
-    base_df = base_df.copy()
-    base_df['partial_key'] = generate_partial_key(base_df['id_name'], segments_to_keep, separator)
-    
-    # Parcourir tous les fichiers de fusion dans directory_merge et ses sous-répertoires
-    for root, dirs, files in os.walk(directory_merge):
-        for file in files:
-            if file.endswith('.csv'):
-                merge_file_path = os.path.join(root, file)
-                
-                # Déterminer le suffixe basé sur le nom du fichier
-                suffix = determine_suffix(file)
-                if not suffix:
-                    print(f"Suffixe non déterminé pour le fichier {file}. Skipping...\n")
-                    continue
-                
-                try:
-                    # Charger le fichier de fusion
-                    merge_df = pd.read_csv(merge_file_path)
-                    
-                    # Traitement spécifique selon le suffixe
-                    if suffix in ['AE', 'MMLU', 'MT']:
-                        # Identifier les colonnes de date (noms entièrement numériques)
-                        date_columns = [col for col in merge_df.columns if col.isdigit()]
-                        print(f"Traitement du fichier {file} avec suffixe '{suffix}'. Colonnes de date trouvées : {date_columns}")
-                        
-                        if not date_columns:
-                            print(f"Aucune colonne de date trouvée dans {file}. Skipping...\n")
-                            continue
-                        
-                        # Convertir les colonnes de date en numérique, forçant les erreurs à NaN
-                        merge_df[date_columns] = merge_df[date_columns].apply(pd.to_numeric, errors='coerce')
-                        
-                        # Calculer la moyenne des colonnes de date pour chaque ligne, en ignorant les valeurs NaN
-                        merge_df[suffix] = merge_df[date_columns].mean(axis=1, skipna=True)
-                        
-                        # Générer la clé partielle pour merge_df
-                        merge_df['partial_key'] = generate_partial_key(merge_df['id_name'], segments_to_keep, separator)
-                        
-                        # Supprimer les doublons dans merge_df basé sur partial_key, garder la première occurrence
-                        ratings_df_unique = merge_df.drop_duplicates(subset='partial_key', keep='first')
-                        
-                        # Créer un mapping de partial_key vers le rating moyen
-                        ratings_mapping = ratings_df_unique.set_index('partial_key')[suffix]
-                        
-                        # Assigner le rating moyen au base_df en utilisant le mapping
-                        base_df[suffix] = base_df['partial_key'].map(ratings_mapping)
-                        
-                        # Afficher le nombre de lignes mises à jour
-                        updated_count = base_df[suffix].notna().sum()
-                        print(f"Ajout de la colonne '{suffix}' au fichier de base depuis {file}. Nombre de lignes mises à jour : {updated_count}\n")
-                    
-                    elif suffix == 'AA':
-                        # Colonnes spécifiques à fusionner
-                        columns_to_merge = ['chatbot_arena_elo', 'mmlu', 'gpqa', 'humaneval', 'math', 'mgsm']
-                        print(f"Traitement du fichier {file} avec suffixe '{suffix}'. Colonnes à fusionner : {columns_to_merge}")
-                        
-                        # Vérifier si les colonnes existent
-                        if not all(col in merge_df.columns for col in columns_to_merge):
-                            print(f"Certaines colonnes requises ne sont pas présentes dans {file}. Skipping...\n")
-                            continue
-                        
-                        # Convertir les colonnes en numérique, forçant les erreurs à NaN
-                        merge_df[columns_to_merge] = merge_df[columns_to_merge].apply(pd.to_numeric, errors='coerce')
-                        
-                        # Calculer la moyenne des colonnes spécifiques pour chaque ligne
-                        merge_df[suffix] = merge_df[columns_to_merge].mean(axis=1, skipna=True)
-                        
-                        # Générer la clé partielle pour merge_df
-                        merge_df['partial_key'] = generate_partial_key(merge_df['id_name'], segments_to_keep, separator)
-                        
-                        # Supprimer les doublons dans merge_df basé sur partial_key, garder la première occurrence
-                        ratings_df_unique = merge_df.drop_duplicates(subset='partial_key', keep='first')
-                        
-                        # Créer un mapping de partial_key vers le rating moyen
-                        ratings_mapping = ratings_df_unique.set_index('partial_key')[suffix]
-                        
-                        # Assigner le rating moyen au base_df en utilisant le mapping
-                        base_df[suffix] = base_df['partial_key'].map(ratings_mapping)
-                        
-                        # Afficher le nombre de lignes mises à jour
-                        updated_count = base_df[suffix].notna().sum()
-                        print(f"Ajout de la colonne '{suffix}' au fichier de base depuis {file}. Nombre de lignes mises à jour : {updated_count}\n")
-                    
-                    elif suffix == 'Livebench_rating':
-                        # Colonne spécifique à fusionner
-                        column_to_merge = 'Global Average'
-                        print(f"Traitement du fichier {file} avec suffixe '{suffix}'. Colonne à fusionner : {column_to_merge}")
-                        
-                        if column_to_merge not in merge_df.columns:
-                            print(f"La colonne '{column_to_merge}' n'est pas présente dans {file}. Skipping...\n")
-                            continue
-                        
-                        # Convertir la colonne en numérique, forçant les erreurs à NaN
-                        merge_df[column_to_merge] = pd.to_numeric(merge_df[column_to_merge], errors='coerce')
-                        
-                        # Renommer la colonne pour correspondre au suffixe
-                        merge_df[suffix] = merge_df[column_to_merge]
-                        
-                        # Générer la clé partielle pour merge_df
-                        merge_df['partial_key'] = generate_partial_key(merge_df['id_name'], segments_to_keep, separator)
-                        
-                        # Supprimer les doublons dans merge_df basé sur partial_key, garder la première occurrence
-                        ratings_df_unique = merge_df.drop_duplicates(subset='partial_key', keep='first')
-                        
-                        # Créer un mapping de partial_key vers le rating
-                        ratings_mapping = ratings_df_unique.set_index('partial_key')[suffix]
-                        
-                        # Assigner le rating au base_df en utilisant le mapping
-                        base_df[suffix] = base_df['partial_key'].map(ratings_mapping)
-                        
-                        # Afficher le nombre de lignes mises à jour
-                        updated_count = base_df[suffix].notna().sum()
-                        print(f"Ajout de la colonne '{suffix}' au fichier de base depuis {file}. Nombre de lignes mises à jour : {updated_count}\n")
-                    
-                except Exception as e:
-                    print(f"Erreur lors du traitement du fichier {file}: {e}\n")
-    
-    # Sauvegarder le fichier de base mis à jour
-    base_df.drop(columns=['partial_key'], inplace=True)
-    base_df.to_csv(base_file, index=False)
-    print(f"Fichier de base mis à jour sauvegardé : {base_file}")
