@@ -335,3 +335,65 @@ def complete_ae(hf_ae_path, text_full_hf_path):
     # Sauvegarder le fichier mis à jour
     hf_ae_df.to_csv(hf_ae_path, index=False)
     print(f"Le fichier {hf_ae_path} a été mis à jour et trié par ordre alphabétique.")
+
+
+def add_ratings_HF(directory):
+    """
+    Ajoute une colonne de rating moyenne (AE, MMLU, MT) à chaque fichier CSV dans le répertoire spécifié.
+    
+    Args:
+        directory (str): Chemin vers le répertoire contenant les fichiers CSV à traiter.
+    
+    Returns:
+        None
+    """
+    # Définir les fichiers et leurs suffixes correspondants
+    hf_files = [
+        ("HF_text_AE.csv", "AE"),
+        ("HF_text_MMLU.csv", "MMLU"),
+        ("HF_text_MT.csv", "MT")
+    ]
+    
+    for filename, suffix in hf_files:
+        # Liste des variantes possibles des noms de fichiers
+        possible_filenames = [filename, filename.replace('.csv', '_.csv')]
+        
+        file_found = False
+        for fname in possible_filenames:
+            file_path = os.path.join(directory, fname)
+            if os.path.exists(file_path):
+                filename = fname
+                file_found = True
+                break
+        
+        if not file_found:
+            print(f"Le fichier {filename} ou {filename.replace('.csv', '_.csv')} n'existe pas. Skipping...")
+            continue  # Passer au fichier suivant si aucun fichier correspondant n'est trouvé
+        
+        try:
+            # Charger le fichier CSV
+            df = pd.read_csv(file_path)
+            print(f"Fichier {filename} chargé avec succès.")
+            
+            # Identifier les colonnes de date (noms entièrement numériques)
+            date_columns = [col for col in df.columns if col.isdigit()]
+            print(f"Fichier {filename} - Colonnes de date trouvées : {date_columns}")
+            
+            if not date_columns:
+                print(f"Aucune colonne de date trouvée dans {filename}. Skipping...")
+                continue  # Passer au fichier suivant si aucune colonne de date n'est trouvée
+            
+            # Convertir les colonnes de date en numérique, forçant les erreurs à NaN
+            df[date_columns] = df[date_columns].apply(pd.to_numeric, errors='coerce')
+            print(f"Fichier {filename} - Conversion en numérique effectuée.")
+            
+            # Calculer la moyenne des colonnes de date pour chaque ligne, en ignorant les valeurs NaN
+            df[suffix] = df[date_columns].mean(axis=1, skipna=True)
+            print(f"Fichier {filename} - Moyenne des colonnes de date calculée et ajoutée dans la colonne '{suffix}'.")
+            
+            # Sauvegarder le fichier CSV avec la nouvelle colonne
+            df.to_csv(file_path, index=False)
+            print(f"Ajout de la colonne '{suffix}' au fichier {filename} terminé.\n")
+        
+        except Exception as e:
+            print(f"Erreur lors du traitement du fichier {filename}: {e}\n")

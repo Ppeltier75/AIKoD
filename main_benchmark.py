@@ -109,25 +109,28 @@ def main():
 
 # %% Imports nécessaires
 import os
-from function_benchmark.utils_HF import complete_ae  # Importer la fonction complète AE
-from function_benchmark.utils_HF import update_csv_from_leaderboards_Absolubench
+from function_benchmark.utils_HF import complete_ae, update_csv_from_leaderboards_Absolubench, add_ratings_HF  # Importer la fonction complète AE
 
 if __name__ == "__main__":
     # Définir les chemins pour les fichiers et répertoires
     base_path = os.path.abspath(os.path.dirname(__file__))
     input_dir = os.path.join(base_path, "data", "benchmark", "HF", "Absolu_bench")
     output_dir = os.path.join(base_path, "data", "benchmark", "HF")
-    hf_ae_path = os.path.join(output_dir, "HF_AE.csv")
+    hf_ae_path = os.path.join(output_dir, "HF_text_AE.csv")
     text_full_hf_path = os.path.join(output_dir, "Arena_Elo", "category", "text_full_HF.csv")
 
     # Créer le répertoire de sortie s'il n'existe pas
     os.makedirs(output_dir, exist_ok=True)
 
-    # Lancer le traitement des fichiers leaderboard
-    update_csv_from_leaderboards_Absolubench(input_dir, output_dir)
+    # # Lancer le traitement des fichiers leaderboard
+    # update_csv_from_leaderboards_Absolubench(input_dir, output_dir)
 
-    # Compléter HF_AE.csv avec text_full_HF.csv
-    complete_ae(hf_ae_path, text_full_hf_path)
+    # # Compléter HF_AE.csv avec text_full_HF.csv
+    # complete_ae(hf_ae_path, text_full_hf_path)
+
+    # # Ajouter les ratings aux fichiers HF
+    hf_directory = os.path.join(base_path, "data", "benchmark", "HF")
+    add_ratings_HF(hf_directory)
 
 # %%
 from function_benchmark.utils_AA import scrappe_table_texttoimageAA

@@ -131,23 +131,35 @@ if __name__ == "__main__":
 
 # %%
 import os
-from function_prep.utils_prep_text import add_rating_text
+from function_prep.utils_prep_text import add_ratings_text
+
+def main():
+    base_path = os.path.abspath(os.path.dirname(__file__))
+
+    # Définir le chemin du fichier de base
+    base_file = os.path.join(base_path, "data", "models_infos", "AIKoD_text_infos.csv")
+    
+    # Définir le répertoire de fusion
+    directory_merge = os.path.join(base_path, "data", "benchmark")
+    
+    # Définir les segments à garder et le séparateur (optionnel)
+    segments_to_keep = [1, 4, 6]
+    separator = '-'
+    
+    # Appeler la fonction pour ajouter les ratings
+    add_ratings_text(
+        directory_merge=directory_merge,
+        base_file=base_file,
+        segments_to_keep=segments_to_keep,
+        separator=separator
+    )
 
 if __name__ == "__main__":
-    # Définir les chemins
-    base_path = os.path.abspath(os.path.dirname(__file__))
-    text_file = os.path.join(base_path, "data", "models_infos", "AIKoD_text_infos.csv")
-    rating_file_1 = os.path.join(base_path, "data", "benchmark", "AA", "2024-11-16", "AA_quality_2024-11-16.csv")
-    rating_file_2 = os.path.join(base_path, "data", "benchmark", "Livebench", "Livebench_text_2024-08-31.csv")
-    output_file = os.path.join(base_path, "data", "models_infos", "AIKoD_text_infos_with_ratings.csv")
+    main()
 
-    # Appeler la fonction pour ajouter les notations
-    add_rating_text(
-        text_file=text_file,
-        rating_file_1=rating_file_1,
-        rating_file_2=rating_file_2,
-        output_file=output_file
-    )
+
+# %% Imports nécessaires
+
 
 
 # %% Imports nécessaires

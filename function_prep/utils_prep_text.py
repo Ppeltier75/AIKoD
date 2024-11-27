@@ -3,7 +3,7 @@ import pandas as pd
 import json
 import re
 from collections import Counter
-from function_utils.utils_merge_id import strategy_merge
+from function_utils.utils_merge_id import generate_partial_key
 
 # Fonction pour analyser un id_name et extraire les informations
 def analyze_id_name(id_name):
@@ -151,42 +151,169 @@ def AIKoD_text_infos(json_path, text_infos_csv_path):
     print(f"Le fichier {text_infos_csv_path} a été mis à jour avec succès.")
 
 
-def add_rating_text(text_file, rating_file_1, rating_file_2, output_file):
+def determine_suffix(filename):
     """
-    Ajoute des colonnes de notation (ratings) à un fichier texte en fusionnant sur `id_name`
-    en suivant plusieurs stratégies de merge.
-
-    :param text_file: Chemin vers le fichier texte de base (`AIKoD_text_infos.csv`).
-    :param rating_file_1: Chemin vers le premier fichier de notation (`AA_quality_...`).
-    :param rating_file_2: Chemin vers le deuxième fichier de notation (ex. Global Average, etc.).
-    :param output_file: Chemin où le fichier fusionné sera sauvegardé.
+    Détermine le suffixe basé sur le nom du fichier.
+    
+    Args:
+        filename (str): Nom du fichier CSV.
+    
+    Returns:
+        str or None: Suffixe déterminé ou None si non déterminé.
     """
-    # Charger les fichiers
-    base_df = pd.read_csv(text_file)
-    rating_df_1 = pd.read_csv(rating_file_1)
-    rating_df_2 = pd.read_csv(rating_file_2)
+    if 'HF_text_AE' in filename:
+        return 'AE'
+    elif 'HF_text_MMLU' in filename:
+        return 'MMLU'
+    elif 'HF_text_MT' in filename:
+        return 'MT'
+    elif 'AA_quality' in filename:
+        return 'AA'
+    elif 'Livebench_text' in filename:
+        return 'Livebench_rating'
+    else:
+        return None
 
-    # Préparer les colonnes à conserver
-    rating_df_1 = rating_df_1[[col for col in rating_df_1.columns if "name" not in col.lower() or col == "id_name"]]
-    rating_df_2 = rating_df_2[["Global Average", "id_name"]]
-
-    # Appliquer la stratégie de merge avec les deux fichiers de notation
-    merged_df = strategy_merge(
-        base_df=base_df,
-        merge_df=rating_df_1,
-        strategies=["exact", "segments_order", "segments_order", "segments_no_order"],
-        segments_order=[1, 2, 3, 4],
-        segments_no_order=[1, 2, 4]
-    )
-
-    merged_df = strategy_merge(
-        base_df=merged_df,
-        merge_df=rating_df_2,
-        strategies=["exact", "segments_order", "segments_order", "segments_no_order"],
-        segments_order=[1, 2, 3, 4, 6],
-        segments_no_order=[1, 2, 3, 4, 6]
-    )
-
-    # Sauvegarder le fichier mis à jour
-    merged_df.to_csv(output_file, index=False)
-    print(f"Fichier mis à jour et sauvegardé : {output_file}")
+def add_ratings_text(directory_merge, base_file, segments_to_keep=[1, 4, 6], separator='-'):
+    """
+    Ajoute des colonnes de ratings moyennes au fichier de base en fusionnant avec les fichiers de fusion présents dans directory_merge.
+    
+    Args:
+        directory_merge (str): Chemin vers le répertoire contenant les fichiers CSV de fusion.
+        base_file (str): Chemin vers le fichier CSV de base à mettre à jour.
+        segments_to_keep (list, optional): Liste des indices de segments à garder pour la clé partielle. Defaults to [1, 4, 6].
+        separator (str, optional): Séparateur utilisé dans 'id_name'. Defaults to '-'.
+    
+    Returns:
+        None
+    """
+    # Vérifier l'existence du fichier de base
+    if not os.path.exists(base_file):
+        print(f"Le fichier de base {base_file} n'existe pas.")
+        return
+    
+    # Charger le fichier de base
+    base_df = pd.read_csv(base_file)
+    
+    # Générer la clé partielle pour base_df
+    base_df = base_df.copy()
+    base_df['partial_key'] = generate_partial_key(base_df['id_name'], segments_to_keep, separator)
+    
+    # Parcourir tous les fichiers de fusion dans directory_merge et ses sous-répertoires
+    for root, dirs, files in os.walk(directory_merge):
+        for file in files:
+            if file.endswith('.csv'):
+                merge_file_path = os.path.join(root, file)
+                
+                # Déterminer le suffixe basé sur le nom du fichier
+                suffix = determine_suffix(file)
+                if not suffix:
+                    print(f"Suffixe non déterminé pour le fichier {file}. Skipping...\n")
+                    continue
+                
+                try:
+                    # Charger le fichier de fusion
+                    merge_df = pd.read_csv(merge_file_path)
+                    
+                    # Traitement spécifique selon le suffixe
+                    if suffix in ['AE', 'MMLU', 'MT']:
+                        # Identifier les colonnes de date (noms entièrement numériques)
+                        date_columns = [col for col in merge_df.columns if col.isdigit()]
+                        print(f"Traitement du fichier {file} avec suffixe '{suffix}'. Colonnes de date trouvées : {date_columns}")
+                        
+                        if not date_columns:
+                            print(f"Aucune colonne de date trouvée dans {file}. Skipping...\n")
+                            continue
+                        
+                        # Convertir les colonnes de date en numérique, forçant les erreurs à NaN
+                        merge_df[date_columns] = merge_df[date_columns].apply(pd.to_numeric, errors='coerce')
+                        
+                        # Calculer la moyenne des colonnes de date pour chaque ligne, en ignorant les valeurs NaN
+                        merge_df[suffix] = merge_df[date_columns].mean(axis=1, skipna=True)
+                        
+                        # Générer la clé partielle pour merge_df
+                        merge_df['partial_key'] = generate_partial_key(merge_df['id_name'], segments_to_keep, separator)
+                        
+                        # Supprimer les doublons dans merge_df basé sur partial_key, garder la première occurrence
+                        ratings_df_unique = merge_df.drop_duplicates(subset='partial_key', keep='first')
+                        
+                        # Créer un mapping de partial_key vers le rating moyen
+                        ratings_mapping = ratings_df_unique.set_index('partial_key')[suffix]
+                        
+                        # Assigner le rating moyen au base_df en utilisant le mapping
+                        base_df[suffix] = base_df['partial_key'].map(ratings_mapping)
+                        
+                        # Afficher le nombre de lignes mises à jour
+                        updated_count = base_df[suffix].notna().sum()
+                        print(f"Ajout de la colonne '{suffix}' au fichier de base depuis {file}. Nombre de lignes mises à jour : {updated_count}\n")
+                    
+                    elif suffix == 'AA':
+                        # Colonnes spécifiques à fusionner
+                        columns_to_merge = ['chatbot_arena_elo', 'mmlu', 'gpqa', 'humaneval', 'math', 'mgsm']
+                        print(f"Traitement du fichier {file} avec suffixe '{suffix}'. Colonnes à fusionner : {columns_to_merge}")
+                        
+                        # Vérifier si les colonnes existent
+                        if not all(col in merge_df.columns for col in columns_to_merge):
+                            print(f"Certaines colonnes requises ne sont pas présentes dans {file}. Skipping...\n")
+                            continue
+                        
+                        # Convertir les colonnes en numérique, forçant les erreurs à NaN
+                        merge_df[columns_to_merge] = merge_df[columns_to_merge].apply(pd.to_numeric, errors='coerce')
+                        
+                        # Calculer la moyenne des colonnes spécifiques pour chaque ligne
+                        merge_df[suffix] = merge_df[columns_to_merge].mean(axis=1, skipna=True)
+                        
+                        # Générer la clé partielle pour merge_df
+                        merge_df['partial_key'] = generate_partial_key(merge_df['id_name'], segments_to_keep, separator)
+                        
+                        # Supprimer les doublons dans merge_df basé sur partial_key, garder la première occurrence
+                        ratings_df_unique = merge_df.drop_duplicates(subset='partial_key', keep='first')
+                        
+                        # Créer un mapping de partial_key vers le rating moyen
+                        ratings_mapping = ratings_df_unique.set_index('partial_key')[suffix]
+                        
+                        # Assigner le rating moyen au base_df en utilisant le mapping
+                        base_df[suffix] = base_df['partial_key'].map(ratings_mapping)
+                        
+                        # Afficher le nombre de lignes mises à jour
+                        updated_count = base_df[suffix].notna().sum()
+                        print(f"Ajout de la colonne '{suffix}' au fichier de base depuis {file}. Nombre de lignes mises à jour : {updated_count}\n")
+                    
+                    elif suffix == 'Livebench_rating':
+                        # Colonne spécifique à fusionner
+                        column_to_merge = 'Global Average'
+                        print(f"Traitement du fichier {file} avec suffixe '{suffix}'. Colonne à fusionner : {column_to_merge}")
+                        
+                        if column_to_merge not in merge_df.columns:
+                            print(f"La colonne '{column_to_merge}' n'est pas présente dans {file}. Skipping...\n")
+                            continue
+                        
+                        # Convertir la colonne en numérique, forçant les erreurs à NaN
+                        merge_df[column_to_merge] = pd.to_numeric(merge_df[column_to_merge], errors='coerce')
+                        
+                        # Renommer la colonne pour correspondre au suffixe
+                        merge_df[suffix] = merge_df[column_to_merge]
+                        
+                        # Générer la clé partielle pour merge_df
+                        merge_df['partial_key'] = generate_partial_key(merge_df['id_name'], segments_to_keep, separator)
+                        
+                        # Supprimer les doublons dans merge_df basé sur partial_key, garder la première occurrence
+                        ratings_df_unique = merge_df.drop_duplicates(subset='partial_key', keep='first')
+                        
+                        # Créer un mapping de partial_key vers le rating
+                        ratings_mapping = ratings_df_unique.set_index('partial_key')[suffix]
+                        
+                        # Assigner le rating au base_df en utilisant le mapping
+                        base_df[suffix] = base_df['partial_key'].map(ratings_mapping)
+                        
+                        # Afficher le nombre de lignes mises à jour
+                        updated_count = base_df[suffix].notna().sum()
+                        print(f"Ajout de la colonne '{suffix}' au fichier de base depuis {file}. Nombre de lignes mises à jour : {updated_count}\n")
+                    
+                except Exception as e:
+                    print(f"Erreur lors du traitement du fichier {file}: {e}\n")
+    
+    # Sauvegarder le fichier de base mis à jour
+    base_df.drop(columns=['partial_key'], inplace=True)
+    base_df.to_csv(base_file, index=False)
+    print(f"Fichier de base mis à jour sauvegardé : {base_file}")
