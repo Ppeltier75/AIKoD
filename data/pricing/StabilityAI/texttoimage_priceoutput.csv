@@ -18,12 +18,12 @@ Stable Diffusion 1.5 HD - 30 steps - 1024 pixels,stablediffusion-unknown-unknown
 Stable Diffusion 2.1 - 30 steps - 512 pixels,stablediffusion-unknown-unknown-2.1-512x512-30-False,,,,,,,,,,,,0.2,0.2,0.2
 Stable Diffusion 2.1 HD - 30 steps - 1024 pixels,stablediffusion-unknown-unknown-2.1-1024x1024-30-True,,,,,,,,,,,,1.9,1.9,1.9
 Stable Diffusion x4 Latent Upscaler - 512 pixels,stablediffusion-x4-unknown-unknown-unknown-512x512-False,,,,,,,,,,,,8.0,8.0,8.0
-Ultra,ultra-unknown-unknown-v1-unknown-unknown-false-unknown-false,,,,0.08,8.0,,,,,,,,,
+Ultra,ultra-unknown-unknown-1-unknown-unknown-false-unknown-false,,,,0.08,8.0,,,,,,,,,
 Stable Diffusion 3 Medium,stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false,,,,0.035,3.5,0.035,,,,,,,,
 Stable Diffusion 3 Large,stablediffusion-large-unknown-3-unknown-unknown-false-unknown-false,,,,0.065,6.5,0.065,,,,,,,,
 Stable Diffusion 3 Large Turbo,stablediffusion-large-turbo-3-unknown-unknown-false-unknown-false,,,,0.04,4.0,0.04,,,,,,,,
 Stable Image Ultra,stableimage-ultra-unknown-1-unknown-unknown-false-unknown-false,,,,,,0.08,8.0,,,,,,,
-Stable Image Core,stableimage-core-unknown-v1-unknown-unknown-false-unknown-false,,,,,,0.03,3.0,,,,,,,
+Stable Image Core,stableimage-core-unknown-1-unknown-unknown-false-unknown-false,,,,,,0.03,3.0,,,,,,,
 Stable Diffusion 3 & 3.5 Large,stablediffusion-large-unknown-unknown-unknown-unknown-False,,,,,,,6.5,,,,,,,
 Stable Diffusion 3 & 3.5 Large Turbo,stablediffusion-large-turbo-unknown-unknown-unknown-False,,,,,,,4.0,,,,,,,
 Stable Diffusion 3 & 3.5 Medium,stablediffusion-medium-unknown-unknown-unknown-unknown-False,,,,,,,3.5,,,,,,,

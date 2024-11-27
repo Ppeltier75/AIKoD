@@ -39,6 +39,11 @@ def add_csv_audio_to_text(base_csv_path):
     # Colonnes à conserver
     keep_columns = ['Word Error Rate (%)', 'Median Speed Factor']
 
+    # Nettoyer la colonne 'Word Error Rate (%)' dans df_merge
+    if 'Word Error Rate (%)' in df_merge.columns:
+        df_merge['Word Error Rate (%)'] = df_merge['Word Error Rate (%)'].str.replace('%', '', regex=False)
+        df_merge['Word Error Rate (%)'] = pd.to_numeric(df_merge['Word Error Rate (%)'], errors='coerce') / 100
+
     # Fusion
     df_merged = merge_csv_id_name(df_merged, df_merge, keep_columns, strategies)
 
@@ -51,6 +56,8 @@ def add_csv_audio_to_text(base_csv_path):
     print(f"Le fichier fusionné a été enregistré sous {output_csv_path}")
 
     return df_merged
+
+
 
 def AIKoD_audiototext_infos(json_path, base_csv_path):
     """

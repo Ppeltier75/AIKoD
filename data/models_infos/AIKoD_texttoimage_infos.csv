@@ -1,270 +1,269 @@
-id_name,date_release,resolution,Steps,Model Quality ELO,Median Generation Time (s),Default Steps,Default Resolution,company
-aiqr-unknown-unknown-unknown-unknown-50-false-unknown-false,2024-01-03,,50.0,,,,,AIQR
-amazontitan-unknown-unknown-1-1024x1024-unknown-false-unknown-false,2024-05-24,1024.0,,919.0,11.2,,,amazon
-analogdiffusion-unknown-unknown-1-unknown-unknown-false-unknown-false,2023-07-14,,,,,,,
-analogdiffusion-unknown-unknown-1-1024x1024-100-false-unknown-false,2023-08-12,1024.0,100.0,,,,,wavymulder
-analogdiffusion-unknown-unknown-1-512x512-100-false-unknown-false,2023-08-12,512.0,100.0,,,,,wavymulder
-analogdiffusion-unknown-unknown-1-1024x1024-25-false-unknown-false,2023-08-12,1024.0,25.0,,,,,wavymulder
-analogdiffusion-unknown-unknown-v1-512x512-25-false-unknown-false,2023-08-12,512.0,25.0,,,,,wavymulder
-analogdiffusion-unknown-unknown-1-1024x1024-50-false-unknown-false,2023-08-12,1024.0,50.0,,,,,wavymulder
-analogdiffusion-unknown-unknown-1-512x512-50-false-unknown-false,2023-08-12,512.0,50.0,,,,,wavymulder
-analogdiffusion-unknown-unknown-1-1024x1024-75-false-unknown-false,2023-08-12,1024.0,75.0,,,,,wavymulder
-analogdiffusion-unknown-unknown-1-512x512-75-false-unknown-false,2023-08-12,512.0,75.0,,,,,wavymulder
-analogdiffusion-unknown-unknown-1-1024x1024-unknown-false-unknown-false,2024-09-27,1024.0,,,,,,wavymulder
-analogdiffusion-unknown-unknown-1-512x512-unknown-false-unknown-false,2024-09-27,512.0,,,,,,wavymulder
-flux-dev-unknown-1-unknown-unknown-false-unknown-false,2024-09-27,,,1091.0,3.5,28.0,1024.0,replicateai
-flux-pro-unknown-1-unknown-unknown-false-unknown-false,2024-09-27,,,1114.0,10.0,28.0,1024.0,replicateai
-flux-schnell-unknown-1-unknown-unknown-false-unknown-false,2024-09-27,,,1045.0,1.1,4.0,1024.0,replicateai
-cogview-unknown-unknown-3-unknown-unknown-false-unknown-false,2023-06-26,,,,,,,zhipuai
-cogview-plus-unknown-3-unknown-unknown-false-unknown-false,2024-10-21,,,,,,,zhipuai
-controlnet-unknown-unknown-1-unknown-unknown-false-unknown-false,2023-07-14,,,,,,,
-controlnet-unknown-unknown-1-1024x1024-100-false-unknown-false,2023-08-12,1024.0,100.0,,,,,stablediffusion
-controlnet-unknown-unknown-1-512x512-100-false-unknown-false,2023-08-12,512.0,100.0,,,,,stablediffusion
-controlnet-unknown-unknown-1-1024x1024-25-false-unknown-false,2023-08-12,1024.0,25.0,,,,,stablediffusion
-controlnet-unknown-unknown-1-512x512-25-false-unknown-false,2023-08-12,512.0,25.0,,,,,stablediffusion
-controlnet-unknown-unknown-1-1024x1024-50-false-unknown-false,2023-08-12,1024.0,50.0,,,,,stablediffusion
-controlnet-unknown-unknown-1-512x512-50-false-unknown-false,2023-08-12,512.0,50.0,,,,,stablediffusion
-controlnet-unknown-unknown-1-1024x1024-75-false-unknown-false,2023-08-12,1024.0,75.0,,,,,stablediffusion
-controlnet-unknown-unknown-1-512x512-75-false-unknown-false,2023-08-12,512.0,75.0,,,,,stablediffusion
-core-unknown-unknown-1-unknown-unknown-false-unknown-false,2024-03-24,,,,,,,stabilityai
-dalle-unknown-unknown-2-1024x1024-unknown-false-unknown-false,2022-11-17,1024.0,,742.0,12.5,,,openai
-dalle-unknown-unknown-2-256x256-unknown-false-unknown-false,2022-11-17,256.0,,742.0,12.5,,,openai
-dalle-unknown-unknown-2-512x512-unknown-false-unknown-false,2022-11-17,512.0,,742.0,12.5,,,openai
-dalle-unknown-unknown-3-1024x1024-unknown-false-unknown-false,2022-11-17,1024.0,,984.0,17.7,,,openai
-dalle-unknown-unknown-3-1024x1024-unknown-true-unknown-false,2022-11-17,1024.0,,984.0,17.7,,,openai
-dalle-unknown-unknown-3-1792x1792-unknown-false-unknown-false,2022-11-17,1792.0,,984.0,17.7,,,openai
-dalle-unknown-unknown-3-1792x1792-unknown-true-unknown-false,2022-11-17,1792.0,,984.0,17.7,,,openai
-stablediffusion-medium-unknown-3.5-unknown-unknown-false-unknown-false,2024-10-31,,,1084.0,2.3,35.0,1024.0,
-dreamshaper-lcm-unknown-8-1024x1024-50-false-unknown-false,2024-10-31,1024.0,50.0,,,,,lykon
-dreamshaper-lcm-unknown-8-2048x2048-50-false-unknown-false,2024-10-31,2048.0,50.0,,,,,lykon
-dreamshaper-lcm-unknown-8-512x512-50-false-unknown-false,2024-10-31,512.0,50.0,,,,,lykon
-flux-unknown-unknown-v1-unknown-unknown-false-unknown-false,2024-09-27,,,,,,,replicateai
-flux-schnell-unknown-1-1024x1024-50-false-unknown-false,2024-07-03,1024.0,50.0,1045.0,1.1,4.0,1024.0,blackforestlabs
-flux-schnell-unknown-1-2048x2048-50-false-unknown-false,2024-10-31,2048.0,50.0,1045.0,1.1,4.0,1024.0,black-forest-labs
-flux-schnell-unknown-1-512x512-50-false-unknown-false,2024-07-03,512.0,50.0,1045.0,1.1,4.0,1024.0,blackforestlabs
-flux-pro-unknown-1.1-1024x1024-unknown-false-unknown-false,2024-09-27,1024.0,,1135.0,4.2,50.0,1024.0,black forest labs
-flux-dev-unknown-1-1024x1024-50-false-unknown-false,2024-07-03,1024.0,50.0,1091.0,3.5,28.0,1024.0,blackforestlabs
-flux-dev-unknown-1-512x512-50-false-unknown-false,2024-07-03,512.0,50.0,1091.0,3.5,28.0,1024.0,blackforestlabs
-flux-dev-unknown-1-768x768-50-false-unknown-false,2024-10-31,768.0,50.0,1091.0,3.5,28.0,1024.0,Flux AI
-flux-realism-unknown-1-1024x1024-100-false-unknown-true,2024-07-03,1024.0,100.0,1114.0,10.0,28.0,1024.0,blackforestlabs
-flux-realism-unknown-1-512x512-100-false-unknown-true,2024-07-03,512.0,100.0,1114.0,10.0,28.0,1024.0,blackforestlabs
-flux-realism-unknown-1-1024x1024-25-false-unknown-true,2024-07-03,1024.0,25.0,1114.0,10.0,28.0,1024.0,blackforestlabs
-flux-realism-unknown-1-512x512-25-false-unknown-true,2024-07-03,512.0,25.0,1114.0,10.0,28.0,1024.0,blackforestlabs
-flux-realism-unknown-1-1024x1024-50-false-unknown-true,2024-07-03,1024.0,50.0,1114.0,10.0,28.0,1024.0,blackforestlabs
-flux-realism-unknown-1-512x512-50-false-unknown-true,2024-07-03,512.0,50.0,1114.0,10.0,28.0,1024.0,blackforestlabs
-flux-realism-unknown-1-1024x1024-75-false-unknown-true,2024-07-03,1024.0,75.0,1114.0,10.0,28.0,1024.0,blackforestlabs
-flux-realism-unknown-v1-512x512-75-false-unknown-true,2024-07-03,512.0,75.0,,,,,blackforestlabs
-flux-realism-unknown-1-1024x1024-unknown-false-unknown-true,2024-09-27,1024.0,,1114.0,10.0,28.0,1024.0,black forest labs
-flux-dev-unknown-1-1024x1024-100-false-unknown-false,2024-07-03,1024.0,100.0,1091.0,3.5,28.0,1024.0,blackforestlabs
-flux-dev-unknown-1-512x512-100-false-unknown-false,2024-07-03,512.0,100.0,1091.0,3.5,28.0,1024.0,blackforestlabs
-flux-dev-unknown-1-1024x1024-25-false-unknown-false,2024-07-03,1024.0,25.0,1091.0,3.5,28.0,1024.0,blackforestlabs
-flux-dev-unknown-1-512x512-25-false-unknown-false,2024-07-03,512.0,25.0,1091.0,3.5,28.0,1024.0,blackforestlabs
-flux-dev-unknown-1-1024x1024-30-false-unknown-false,2024-09-27,1024.0,30.0,1091.0,3.5,28.0,1024.0,Black Forest Labs
-flux-dev-unknown-1-1024x1024-75-false-unknown-false,2024-07-03,1024.0,75.0,1091.0,3.5,28.0,1024.0,blackforestlabs
-flux-dev-unknown-1-512x512-75-false-unknown-false,2024-07-03,512.0,75.0,1091.0,3.5,28.0,1024.0,blackforestlabs
-flux-dev-unknown-1-1024x1024-unknown-false-unknown-false,2024-09-27,1024.0,,1091.0,3.5,28.0,1024.0,black forest labs
-flux-dev-lora-1-1024x1024-30-false-unknown-false,2024-09-27,1024.0,30.0,1091.0,3.5,28.0,1024.0,Black Forest Labs
-flux-dev-unknown-1-unknown-30-false-unknown-false,2024-10-31,,30.0,1091.0,3.5,28.0,1024.0,
-flux-dev-fp8-1-unknown-30-false-unknown-false,2024-10-31,,30.0,1091.0,3.5,28.0,1024.0,
-flux-pro-unknown-1-1024x1024-100-false-unknown-false,2024-07-03,1024.0,100.0,1114.0,10.0,28.0,1024.0,blackforestlabs
-flux-pro-unknown-1-512x512-100-false-unknown-false,2024-07-03,512.0,100.0,1114.0,10.0,28.0,1024.0,blackforestlabs
-flux-pro-unknown-1-1024x1024-25-false-unknown-false,2024-07-03,1024.0,25.0,1114.0,10.0,28.0,1024.0,blackforestlabs
-flux-pro-unknown-1-512x512-25-false-unknown-false,2024-07-03,512.0,25.0,1114.0,10.0,28.0,1024.0,blackforestlabs
-flux-pro-unknown-1-1024x1024-50-false-unknown-false,2024-07-03,1024.0,50.0,1114.0,10.0,28.0,1024.0,blackforestlabs
-flux-pro-unknown-1-512x512-50-false-unknown-false,2024-07-03,512.0,50.0,1114.0,10.0,28.0,1024.0,blackforestlabs
-flux-pro-unknown-1-1024x1024-75-false-unknown-false,2024-07-03,1024.0,75.0,1114.0,10.0,28.0,1024.0,blackforestlabs
-flux-pro-unknown-1-512x512-75-false-unknown-false,2024-07-03,512.0,75.0,1114.0,10.0,28.0,1024.0,blackforestlabs
-flux-pro-unknown-1-1024x1024-unknown-false-unknown-false,2024-09-27,1024.0,,1114.0,10.0,28.0,1024.0,black forest labs
-flux-schnell-unknown-1-1024x1024-100-false-unknown-false,2024-07-03,1024.0,100.0,1045.0,1.1,4.0,1024.0,blackforestlabs
-flux-schnell-unknown-1-512x512-100-false-unknown-false,2024-07-03,512.0,100.0,1045.0,1.1,4.0,1024.0,blackforestlabs
-flux-schnell-unknown-1-1024x1024-25-false-unknown-false,2024-07-03,1024.0,25.0,1045.0,1.1,4.0,1024.0,blackforestlabs
-flux-schnell-unknown-1-512x512-25-false-unknown-false,2024-07-03,512.0,25.0,1045.0,1.1,4.0,1024.0,blackforestlabs
-flux-schnell-unknown-1-1024x1024-4-false-unknown-false,2024-09-27,1024.0,4.0,1045.0,1.1,4.0,1024.0,Black Forest Labs
-flux-schnell-unknown-1-1024x1024-75-false-unknown-false,2024-07-03,1024.0,75.0,1045.0,1.1,4.0,1024.0,blackforestlabs
-flux-schnell-unknown-1-512x512-75-false-unknown-false,2024-07-03,512.0,75.0,1045.0,1.1,4.0,1024.0,blackforestlabs
-flux-schnell-unknown-1-1024x1024-unknown-false-unknown-false,2024-09-27,1024.0,,1045.0,1.1,4.0,1024.0,black forest labs
-flux-schnell-unknown-1-unknown-30-false-unknown-false,2024-10-31,,30.0,1045.0,1.1,4.0,1024.0,
-flux-schnell-fp8-1-unknown-30-false-unknown-false,2024-10-31,,30.0,1045.0,1.1,4.0,1024.0,
-flux-schnell-free-1-unknown-unknown-false-unknown-false,2024-10-21,,,1045.0,1.1,4.0,1024.0,Black Forest Labs
-flux-schnell-loras-1-1024x1024-4-false-unknown-false,2024-09-27,1024.0,4.0,1045.0,1.1,4.0,1024.0,Black Forest Labs
-flux-pro-unknown-1.1-unknown-unknown-false-unknown-false,2024-10-21,,,1135.0,4.2,50.0,1024.0,Black Forest Labs
-ideogram-default-unknown-0.2-unknown-unknown-false-unknown-false,2024-10-31,,,,,,,Ideogram
-ideogram-default-unknown-1-unknown-unknown-false-unknown-false,2024-10-31,,,1069.0,16.1,,,Ideogram
-ideogram-unknown-turbo-1-unknown-unknown-false-unknown-false,2024-10-31,,,1069.0,16.1,,,Ideogram
-ideogram-default-unknown-2-unknown-unknown-false-unknown-false,2024-10-31,,,1094.0,20.4,,,Ideogram
-ideogram-quality-unknown-2-unknown-unknown-false-unknown-false,2024-10-31,,,1094.0,20.4,,,Ideogram
-ideogram-unknown-turbo-2-unknown-unknown-false-unknown-false,2024-10-31,,,1086.0,11.8,,,Ideogram
-imagen-unknown-unknown-1-unknown-unknown-false-unknown-false,2024-03-10,,,,,,,google
-imagen-unknown-unknown-2-unknown-unknown-false-unknown-false,2024-08-26,,,,,,,google
-imagen-unknown-unknown-3-unknown-unknown-false-unknown-false,2024-08-26,,,,,,,google
-imagen-fast-unknown-3-unknown-unknown-false-unknown-false,2024-08-26,,,,,,,google
-stablediffusion-japonese-xl-1-unknown-30-false-unknown-false,2024-10-31,,30.0,909.0,1.1,30.0,1024.0,
-juggernaut-unknown-unknown-9-unknown-30-false-unknown-false,2024-07-25,,30.0,,,,,Juggernaut AI
-juggernaut-lighting-unknown-9-unknown-4-false-unknown-false,2024-07-25,,4.0,,,,,Juggernaut AI
-midjourney-unknown-unknown-1-unknown-unknown-false-unknown-false,2023-01-30,,,1098.0,87.7,,,Midjourney
-midjourney-unknown-unknown-2-unknown-unknown-false-unknown-false,2023-01-30,,,1098.0,87.7,,,Midjourney
-midjourney-unknown-unknown-3-unknown-unknown-false-unknown-false,2023-01-30,,,1098.0,87.7,,,Midjourney
-midjourney-unknown-unknown-4-unknown-unknown-false-unknown-false,2023-01-30,,,1098.0,87.7,,,Midjourney
-midjourney-unknown-unknown-5-unknown-unknown-false-unknown-false,2024-01-14,,,1098.0,87.7,,,Midjourney
-midjourney-unknown-unknown-5.1-unknown-unknown-false-unknown-false,2024-01-14,,,1098.0,87.7,,,Midjourney
-midjourney-unknown-unknown-5.2-unknown-unknown-false-unknown-false,2024-01-14,,,1098.0,87.7,,,Midjourney
-midjourney-unknown-unknown-6-unknown-unknown-false-unknown-false,2024-10-31,,,1084.0,80.8,,,Midjourney
-midjourney-unknown-unknown-6.1-unknown-unknown-false-unknown-false,2024-10-31,,,1098.0,87.7,,,Midjourney
-opendalle-unknown-unknown-1-unknown-50-false-unknown-false,2024-02-01,,50.0,,,,,OpenAI
-dalle-unknown-unknown-1-unknown-unknown-false-unknown-false,2024-02-14,,,984.0,17.7,,,OpenAI
-dalle-unknown-unknown-3-1024x1024-100-false-unknown-false,2024-06-18,1024.0,100.0,984.0,17.7,,,openai
-dalle-unknown-unknown-3-512x512-100-false-unknown-false,2024-06-18,512.0,100.0,984.0,17.7,,,openai
-dalle-unknown-unknown-3-1024x1024-25-false-unknown-false,2024-06-18,1024.0,25.0,984.0,17.7,,,openai
-dalle-unknown-unknown-3-512x512-25-false-unknown-false,2024-06-18,512.0,25.0,984.0,17.7,,,openai
-dalle-unknown-unknown-3-1024x1024-50-false-unknown-false,2024-06-18,1024.0,50.0,984.0,17.7,,,openai
-dalle-unknown-unknown-3-512x512-50-false-unknown-false,2024-06-18,512.0,50.0,984.0,17.7,,,openai
-dalle-unknown-unknown-3-1024x1024-75-false-unknown-false,2024-06-18,1024.0,75.0,984.0,17.7,,,openai
-dalle-unknown-unknown-3-512x512-75-false-unknown-false,2024-06-18,512.0,75.0,984.0,17.7,,,openai
-openjourney-unknown-unknown-4-unknown-unknown-false-unknown-false,2023-07-14,,,,,,,
-openjourney-unknown-unknown-4-1024x1024-100-false-unknown-false,2023-08-12,1024.0,100.0,,,,,prompthero
-openjourney-unknown-unknown-4-512x512-100-false-unknown-false,2023-08-12,512.0,100.0,,,,,prompthero
-openjourney-unknown-unknown-4-1024x1024-25-false-unknown-false,2023-08-12,1024.0,25.0,,,,,prompthero
-openjourney-unknown-unknown-4-512x512-25-false-unknown-false,2023-08-12,512.0,25.0,,,,,prompthero
-openjourney-unknown-unknown-4-1024x1024-50-false-unknown-false,2023-08-12,1024.0,50.0,,,,,prompthero
-openjourney-unknown-unknown-4-512x512-50-false-unknown-false,2023-08-12,512.0,50.0,,,,,prompthero
-openjourney-unknown-unknown-4-1024x1024-75-false-unknown-false,2023-08-12,1024.0,75.0,,,,,prompthero
-openjourney-unknown-unknown-4-512x512-75-false-unknown-false,2023-08-12,512.0,75.0,,,,,prompthero
-openjourney-unknown-unknown-4-1024x1024-unknown-false-unknown-false,2024-09-27,1024.0,,,,,,prompthero
-openjourney-unknown-unknown-4-512x512-unknown-false-unknown-false,2024-09-27,512.0,,,,,,prompthero
-photomaker-unknown-unknown-2-unknown-unknown-false-unknown-false,2024-08-26,,,,,,,tencentarc
-playground-unknown-unknown-2-1024x1024-30-false-unknown-false,2024-10-31,1024.0,30.0,1046.0,17.7,50.0,1024.0,
-playground-unknown-unknown-2.5-1024x1024-30-false-unknown-false,2024-10-31,1024.0,30.0,996.0,4.4,50.0,1024.0,
-realisticvision-unknown-unknown-3-unknown-unknown-false-unknown-false,2023-07-14,,,,,,,
-realisticvision-unknown-unknown-3-1024x1024-100-false-unknown-false,2023-08-12,1024.0,100.0,,,,,togetherai
-realisticvision-unknown-unknown-3-512x512-100-false-unknown-false,2023-08-12,512.0,100.0,,,,,togetherai
-realisticvision-unknown-unknown-3-1024x1024-25-false-unknown-false,2023-08-12,1024.0,25.0,,,,,togetherai
-realisticvision-unknown-unknown-3-512x512-25-false-unknown-false,2023-08-12,512.0,25.0,,,,,togetherai
-realisticvision-unknown-unknown-3-1024x1024-50-false-unknown-false,2023-08-12,1024.0,50.0,,,,,togetherai
-realisticvision-unknown-unknown-3-512x512-50-false-unknown-false,2023-08-12,512.0,50.0,,,,,togetherai
-realisticvision-unknown-unknown-3-1024x1024-75-false-unknown-false,2023-08-12,1024.0,75.0,,,,,togetherai
-realisticvision-unknown-unknown-3-512x512-75-false-unknown-false,2023-08-12,512.0,75.0,,,,,togetherai
-realisticvision-unknown-unknown-3-1024x1024-unknown-false-unknown-false,2024-09-27,1024.0,,,,,,together
-realisticvision-unknown-unknown-3-512x512-unknown-false-unknown-false,2024-09-27,512.0,,,,,,together
-stablediffusion-unknown-unknown-1.5-1024x1024-40-false-unknown-false,2024-02-24,1024.0,40.0,623.0,68.5,50.0,1024.0,Stability AI
-stablediffusion-unknown-unknown-1.5-512x512-40-false-unknown-false,2024-02-24,512.0,40.0,623.0,68.5,50.0,1024.0,Stability AI
-stablediffusion-unknown-unknown-1.5-1024x1024-60-false-unknown-false,2024-02-06,1024.0,60.0,623.0,68.5,50.0,1024.0,Stability AI
-stablediffusion-unknown-unknown-1.5-unknown-unknown-false-unknown-false,2023-07-14,,,623.0,68.5,50.0,1024.0,Stability AI
-stablediffusion-unknown-unknown-1.6-512x512-unknown-false-unknown-false,2024-03-24,512.0,,926.0,5.0,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-1.6-512x512-unknown-true-unknown-false,2024-03-24,512.0,,926.0,5.0,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-1.5-1024x1024-50-false-unknown-false,2023-08-12,1024.0,50.0,623.0,68.5,50.0,1024.0,stabilityai
-stablediffusion-controlnet-unknown-1.5-1024x1024-50-false-unknown-false,2024-10-31,1024.0,50.0,623.0,68.5,50.0,1024.0,Stability AI
-stablediffusion-unknown-unknown-1.5-unknown-50-false-unknown-true,2024-02-06,,50.0,623.0,68.5,50.0,1024.0,Stability AI
-stablediffusion-unknown-unknown-2-1024x1024-50-false-unknown-false,2024-10-31,1024.0,50.0,926.0,5.0,50.0,1024.0,Stability AI
-stablediffusion-unknown-unknown-3-unknown-unknown-false-unknown-false,2024-03-24,,,1059.0,7.4,30.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-3-unknown-30-false-unknown-false,2024-07-25,,30.0,1059.0,7.4,30.0,1024.0,Stability AI
-stablediffusion-large-unknown-3-unknown-unknown-false-unknown-false,2024-07-03,,,1059.0,7.4,30.0,1024.0,stabilityai
-stablediffusion-unknown-turbo-3-unknown-unknown-false-unknown-false,2024-03-24,,,1059.0,7.4,30.0,1024.0,stabilityai
-stablediffusion-xl-unknown-1-1024x1024-50-false-unknown-false,2024-05-29,1024.0,50.0,885.0,1.5,30.0,1024.0,stabilityai
-stablediffusion-xl-unknown-1-1024x1024-30-false-ddim-false,2024-02-06,1024.0,30.0,885.0,1.5,30.0,1024.0,Stability AI
-stablediffusion-xl-unknown-1-1024x1024-40-false-ddim-false,2024-02-24,1024.0,40.0,885.0,1.5,30.0,1024.0,Stability AI
-stablediffusion-xl-unknown-1-1024x1024-40-false-dpm2-false,2024-02-06,1024.0,40.0,885.0,1.5,30.0,1024.0,Stability AI
-stablediffusion-xl-unknown-1-512x512-50-false-unknown-false,2024-05-29,512.0,50.0,885.0,1.5,30.0,1024.0,stabilityai
-stablediffusion-xl-unknown-1-768x768-50-false-unknown-false,2024-05-29,768.0,50.0,885.0,1.5,30.0,1024.0,Stability AI
-stablediffusion-xl-unknown-0.8-512x512-unknown-false-unknown-false,2024-01-27,512.0,,909.0,1.1,30.0,1024.0,stabilityai
-stablediffusion-xl-unknown-0.8-512x512-unknown-true-unknown-false,2024-01-27,512.0,,909.0,1.1,30.0,1024.0,stabilityai
-stablediffusion-xl-unknown-0.8-1024x1024-unknown-false-unknown-false,2024-01-27,1024.0,,909.0,1.1,30.0,1024.0,stabilityai
-stablediffusion-xl-unknown-0.8-1024x1024-unknown-true-unknown-false,2024-01-27,1024.0,,909.0,1.1,30.0,1024.0,stabilityai
-stablediffusion-xl-unknown-1-1024x1024-unknown-false-unknown-false,2024-01-27,1024.0,,885.0,1.5,30.0,1024.0,stabilityai
-stablediffusion-xl-unknown-1-1024x1024-unknown-true-unknown-false,2024-01-27,1024.0,,885.0,1.5,30.0,1024.0,stabilityai
-stablediffusion-xl-controlnet-v1-1024x1024-50-false-unknown-false,2024-10-31,1024.0,50.0,909.0,1.1,30.0,1024.0,Stability AI
-stablediffusion-xl-lightning-1-unknown-unknown-false-unknown-false,2024-08-26,,,909.0,1.1,4.0,1024.0,stabilityai
-stablediffusion-xl-lightning-v1-unknown-4-false-unknown-false,2024-06-19,,4.0,909.0,1.1,30.0,1024.0,Stability AI
-stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false,2024-09-27,,,885.0,1.5,30.0,1024.0,Stability AI
-stablediffusion-xl-turbo-1-1024x1024-50-false-unknown-false,2024-10-31,1024.0,50.0,909.0,1.1,30.0,1024.0,Stability AI
-stablediffusion-xl-unknown-1-1024x1024-60-false-unknown-true,2024-02-06,1024.0,60.0,885.0,1.5,30.0,1024.0,Stability AI
-stablediffusion-xl-unknown-1-unknown-20-false-unknown-false,2024-06-19,,20.0,885.0,1.5,30.0,1024.0,Stability AI
-stablediffusion-xl-lcm-1-1024x1024-4-false-unknown-true,2024-02-24,1024.0,4.0,909.0,1.1,30.0,1024.0,Stability AI
-stablediffusion-xl-base-1-1024x1024-50-false-unknown-false,2024-10-31,1024.0,50.0,909.0,1.1,30.0,1024.0,Stability AI
-stablediffusion-segmind-1b-1-1024x1024-30-false-unknown-false,2024-10-31,1024.0,30.0,909.0,1.1,30.0,1024.0,
-ssd-unknown-unknown-1-1024x1024-50-false-unknown-false,2024-10-31,1024.0,50.0,,,,,Segmind
-stablediffusion-xl-unknown-v1-unknown-unknown-false-unknown-false,2024-02-14,,,909.0,1.1,30.0,1024.0,StabilityAI
-stablediffusion-unknown-unknown-1.5-1024x1024-100-false-unknown-false,2023-08-12,1024.0,100.0,623.0,68.5,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-1.5-512x512-100-false-unknown-false,2023-08-12,512.0,100.0,623.0,68.5,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-1.5-1024x1024-25-false-unknown-false,2023-08-12,1024.0,25.0,623.0,68.5,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-1.5-512x512-25-false-unknown-false,2023-08-12,512.0,25.0,623.0,68.5,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-1.5-512x512-50-false-unknown-false,2023-08-12,512.0,50.0,623.0,68.5,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-1.5-1024x1024-75-false-unknown-false,2023-08-12,1024.0,75.0,623.0,68.5,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-1.5-512x512-75-false-unknown-false,2023-08-12,512.0,75.0,623.0,68.5,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-1.5-1024x1024-unknown-false-unknown-false,2024-09-27,1024.0,,623.0,68.5,50.0,1024.0,stability ai
-stablediffusion-unknown-unknown-1.5-512x512-unknown-false-unknown-false,2024-09-27,512.0,,623.0,68.5,50.0,1024.0,stability ai
-stablediffusion-unknown-unknown-2.1-unknown-unknown-false-unknown-false,2023-07-14,,,737.0,6.2,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-2.1-1024x1024-100-false-unknown-false,2023-08-12,1024.0,100.0,737.0,6.2,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-2.1-512x512-100-false-unknown-false,2023-08-12,512.0,100.0,737.0,6.2,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-2.1-1024x1024-25-false-unknown-false,2023-08-12,1024.0,25.0,737.0,6.2,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-2.1-512x512-25-false-unknown-false,2023-08-12,512.0,25.0,737.0,6.2,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-2.1-1024x1024-50-false-unknown-false,2023-08-12,1024.0,50.0,737.0,6.2,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-2.1-512x512-50-false-unknown-false,2023-08-12,512.0,50.0,737.0,6.2,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-2.1-1024x1024-75-false-unknown-false,2023-08-12,1024.0,75.0,737.0,6.2,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-2.1-512x512-75-false-unknown-false,2023-08-12,512.0,75.0,737.0,6.2,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-2.1-1024x1024-unknown-false-unknown-false,2024-09-27,1024.0,,737.0,6.2,50.0,1024.0,stability ai
-stablediffusion-unknown-unknown-2.1-512x512-unknown-false-unknown-false,2024-09-27,512.0,,737.0,6.2,50.0,1024.0,stability ai
-stablediffusion-unknown-unknown-3-1024x1024-100-false-unknown-false,2024-07-03,1024.0,100.0,1059.0,7.4,30.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-3-512x512-100-false-unknown-false,2024-07-03,512.0,100.0,1059.0,7.4,30.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-3-1024x1024-25-false-unknown-false,2024-07-03,1024.0,25.0,1059.0,7.4,30.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-3-512x512-25-false-unknown-false,2024-07-03,512.0,25.0,1059.0,7.4,30.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-3-1024x1024-50-false-unknown-false,2024-07-03,1024.0,50.0,1059.0,7.4,30.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-3-512x512-50-false-unknown-false,2024-07-03,512.0,50.0,1059.0,7.4,30.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-3-1024x1024-75-false-unknown-false,2024-07-03,1024.0,75.0,1059.0,7.4,30.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-3-512x512-75-false-unknown-false,2024-07-03,512.0,75.0,1059.0,7.4,30.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-3-1024x1024-unknown-false-unknown-false,2024-09-27,1024.0,,1059.0,7.4,30.0,1024.0,stability ai
-stablediffusion-large-turbo-3-unknown-unknown-false-unknown-false,2024-07-03,,,935.0,2.1,30.0,1024.0,stabilityai
-stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false,2024-07-03,,,942.0,2.4,30.0,1024.0,stabilityai
-stablediffusion-large-unknown-3.5-unknown-unknown-false-unknown-false,2024-10-31,,,1081.0,11.8,35.0,1024.0,
-stablediffusion-large-unknown-3.5-1024x1024-unknown-false-unknown-false,2024-09-27,1024.0,,1081.0,11.8,35.0,1024.0,stability ai
-stablediffusion-large-turbo-3.5-unknown-unknown-false-unknown-false,2024-10-31,,,1084.0,2.3,4.0,1024.0,
-stablediffusion-xl-unknown-v1-unknown-50-false-unknown-false,2024-01-03,,50.0,909.0,1.1,30.0,1024.0,Stability AI
-stablediffusion-xl-unknown-1-1024x1024-100-false-unknown-false,2024-06-18,1024.0,100.0,885.0,1.5,30.0,1024.0,stabilityai
-stablediffusion-xl-unknown-1-512x512-100-false-unknown-false,2024-06-18,512.0,100.0,885.0,1.5,30.0,1024.0,stabilityai
-stablediffusion-xl-unknown-1-1024x1024-25-false-unknown-false,2024-06-18,1024.0,25.0,885.0,1.5,30.0,1024.0,stabilityai
-stablediffusion-xl-unknown-1-512x512-25-false-unknown-false,2024-06-18,512.0,25.0,885.0,1.5,30.0,1024.0,stabilityai
-stablediffusion-xl-unknown-1-1024x1024-75-false-unknown-false,2024-06-18,1024.0,75.0,885.0,1.5,30.0,1024.0,stabilityai
-stablediffusion-xl-unknown-1-512x512-75-false-unknown-false,2024-06-18,512.0,75.0,885.0,1.5,30.0,1024.0,stabilityai
-stablediffusion-xl-unknown-1-512x512-unknown-false-unknown-false,2024-09-27,512.0,,885.0,1.5,30.0,1024.0,stability ai
-stablediffusion-xl-unknown-v1-unknown-30-false-unknown-false,2024-10-31,,30.0,909.0,1.1,30.0,1024.0,
-stablediffusion-xl-base-1-2048x2048-50-false-unknown-false,2024-10-31,2048.0,50.0,909.0,1.1,30.0,1024.0,Stability.ai
-stablediffusion-xl-base-1-512x512-50-false-unknown-false,2024-10-31,512.0,50.0,909.0,1.1,30.0,1024.0,Stability.ai
-stablediffusion-xl-lightning-v1-1024x1024-50-false-unknown-false,2024-10-31,1024.0,50.0,909.0,1.1,30.0,1024.0,bytedance
-stablediffusion-xl-lightning-v1-2048x2048-50-false-unknown-false,2024-10-31,2048.0,50.0,909.0,1.1,30.0,1024.0,bytedance
-stablediffusion-xl-lightning-v1-512x512-50-false-unknown-false,2024-10-31,512.0,50.0,909.0,1.1,30.0,1024.0,bytedance
-stableimage-core-unknown-v1-unknown-unknown-false-unknown-false,2024-09-27,,,,,,,stabilityai
-stableimage-ultra-unknown-1-unknown-unknown-false-unknown-false,2024-09-27,,,,,,,stabilityai
-ultra-unknown-unknown-v1-unknown-unknown-false-unknown-false,2024-07-03,,,,,,,stabilityai
-flux-pro-unknown-1.1-unknown-unknown-False,2024-08-05,,,1135.0,4.2,50.0,1024.0,blackforestlabs
-flux-pro-ultra-1.1-unknown-unknown-False,2024-10-31,,,1135.0,4.2,50.0,1024.0,blackforestlabs
-flux-dev-unknown-1-unknown-unknown-False,2024-09-18,,,1091.0,3.5,28.0,1024.0,blackforestlabs
-amazontitan-unknown-unknown-1-512x512-unknown-False,2024-08-26,512.0,,919.0,11.2,,,amazon
-amazontitan-unknown-unknown-1-512x512-unknown-True,2024-08-26,512.0,,919.0,11.2,,,amazon
-amazontitan-unknown-unknown-2-1024x1024-unknown-False,2024-08-26,1024.0,,940.0,12.2,,,amazon
-amazontitan-unknown-unknown-2-1024x1024-unknown-True,2024-08-26,1024.0,,940.0,12.2,,,amazon
-amazontitan-unknown-unknown-2-512x512-unknown-False,2024-08-26,512.0,,940.0,12.2,,,amazon
-amazontitan-unknown-unknown-2-512x512-unknown-True,2024-08-26,512.0,,940.0,12.2,,,amazon
-stablediffusion-unknown-unknown-1.5-512x512-30-False,2023-07-27,512.0,30.0,623.0,68.5,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-1.5-1024x1024-30-True,2023-07-27,1024.0,30.0,623.0,68.5,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-1.6-512x512-30-False,2023-11-20,512.0,30.0,926.0,5.0,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-1.6-1024x1024-30-True,2023-11-20,1024.0,30.0,926.0,5.0,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-2.1-512x512-30-False,2023-07-27,512.0,30.0,737.0,6.2,50.0,1024.0,stabilityai
-stablediffusion-unknown-unknown-2.1-1024x1024-30-True,2023-07-27,1024.0,30.0,737.0,6.2,50.0,1024.0,stabilityai
-stablediffusion-large-unknown-unknown-unknown-unknown-False,2024-10-21,,,1084.0,2.3,35.0,1024.0,stabilityai
-stablediffusion-large-turbo-unknown-unknown-unknown-False,2024-10-21,,,1084.0,2.3,35.0,1024.0,stabilityai
-stablediffusion-medium-unknown-unknown-unknown-unknown-False,2024-10-21,,,942.0,2.4,30.0,1024.0,stabilityai
-stablediffusion-x4-unknown-unknown-unknown-512x512-False,2023-07-27,,,,,,,stabilityai
-stablediffusion-xl-unknown-0.8-512x512-30-False,2023-07-27,512.0,30.0,909.0,1.1,30.0,1024.0,stabilityai
-stablediffusion-xl-unknown-0.9-1024x1024-30-False,2023-07-27,1024.0,30.0,909.0,1.1,30.0,1024.0,stabilityai
-stablediffusion-xl-unknown-1.0-1024x1024-30-False,2023-07-27,1024.0,30.0,909.0,1.1,30.0,1024.0,stabilityai
-dalle-unknown-unknown-2-1024x1024-unknown-False,2024-07-03,1024.0,,742.0,12.5,,,openai
-dalle-unknown-unknown-2-256x256-unknown-False,2024-07-03,256.0,,742.0,12.5,,,openai
-dalle-unknown-unknown-2-512x512-unknown-False,2024-07-03,512.0,,742.0,12.5,,,openai
-dalle-unknown-unknown-3-1024x1024-unknown-False,2024-07-03,1024.0,,970.0,14.4,,,openai
-dalle-unknown-unknown-3-1024x1024-unknown-True,2024-07-03,1024.0,,984.0,17.7,,,openai
-dalle-unknown-unknown-3-1792x1792-unknown-False,2024-07-05,1792.0,,970.0,14.4,,,openai
-dalle-unknown-unknown-3-1792x1792-unknown-True,2024-07-05,1792.0,,984.0,17.7,,,openai
-dalle-unknown-unknown-3-1024x1792-unknown-True,2024-07-03,1408.0,,984.0,17.7,,,openai
-dalle-unknown-unknown-3-256x256-unknown-False,2024-07-03,256.0,,970.0,14.4,,,openai
-dalle-unknown-unknown-3-512x512-unknown-False,2024-07-03,512.0,,970.0,14.4,,,openai
-dalle-unknown-unknown-unknown-unknown-unknown-False,2024-07-03,,,984.0,17.7,,,openai
-stablediffusion-xl-unknown-unknown-unknown-unknown-False,2024-07-03,,,909.0,1.1,30.0,1024.0,stabilityai
+id_name,company,date_release,Steps,resolution,Model Quality ELO,Median Generation Time (s),Default Steps,Default Resolution
+aiqr-unknown-unknown-unknown-unknown-50-false-unknown-false,AIQR,2024-01-03,50.0,,,,,
+amazontitan-unknown-unknown-1-1024x1024-unknown-false-unknown-false,amazon,2024-05-24,,1024.0,919.0,11.2,,
+analogdiffusion-unknown-unknown-1-unknown-unknown-false-unknown-false,,2023-07-14,,,,,,
+analogdiffusion-unknown-unknown-1-1024x1024-100-false-unknown-false,wavymulder,2023-08-12,100.0,1024.0,,,,
+analogdiffusion-unknown-unknown-1-512x512-100-false-unknown-false,wavymulder,2023-08-12,100.0,512.0,,,,
+analogdiffusion-unknown-unknown-1-1024x1024-25-false-unknown-false,wavymulder,2023-08-12,25.0,1024.0,,,,
+analogdiffusion-unknown-unknown-1-512x512-25-false-unknown-false,wavymulder,2023-08-12,25.0,512.0,,,,
+analogdiffusion-unknown-unknown-1-1024x1024-50-false-unknown-false,wavymulder,2023-08-12,50.0,1024.0,,,,
+analogdiffusion-unknown-unknown-1-512x512-50-false-unknown-false,wavymulder,2023-08-12,50.0,512.0,,,,
+analogdiffusion-unknown-unknown-1-1024x1024-75-false-unknown-false,wavymulder,2023-08-12,75.0,1024.0,,,,
+analogdiffusion-unknown-unknown-1-512x512-75-false-unknown-false,wavymulder,2023-08-12,75.0,512.0,,,,
+analogdiffusion-unknown-unknown-1-1024x1024-unknown-false-unknown-false,wavymulder,2024-09-27,,1024.0,,,,
+analogdiffusion-unknown-unknown-1-512x512-unknown-false-unknown-false,wavymulder,2024-09-27,,512.0,,,,
+flux-dev-unknown-1-unknown-unknown-false-unknown-false,replicateai,2024-09-27,,,1091.0,3.5,28.0,1024.0
+flux-pro-unknown-1-unknown-unknown-false-unknown-false,replicateai,2024-09-27,,,1114.0,10.0,28.0,1024.0
+flux-schnell-unknown-1-unknown-unknown-false-unknown-false,replicateai,2024-09-27,,,1045.0,1.1,4.0,1024.0
+cogview-unknown-unknown-3-unknown-unknown-false-unknown-false,zhipuai,2023-06-26,,,,,,
+cogview-plus-unknown-3-unknown-unknown-false-unknown-false,zhipuai,2024-10-21,,,,,,
+controlnet-unknown-unknown-1-unknown-unknown-false-unknown-false,,2023-07-14,,,,,,
+controlnet-unknown-unknown-1-1024x1024-100-false-unknown-false,stablediffusion,2023-08-12,100.0,1024.0,,,,
+controlnet-unknown-unknown-1-512x512-100-false-unknown-false,stablediffusion,2023-08-12,100.0,512.0,,,,
+controlnet-unknown-unknown-1-1024x1024-25-false-unknown-false,stablediffusion,2023-08-12,25.0,1024.0,,,,
+controlnet-unknown-unknown-1-512x512-25-false-unknown-false,stablediffusion,2023-08-12,25.0,512.0,,,,
+controlnet-unknown-unknown-1-1024x1024-50-false-unknown-false,stablediffusion,2023-08-12,50.0,1024.0,,,,
+controlnet-unknown-unknown-1-512x512-50-false-unknown-false,stablediffusion,2023-08-12,50.0,512.0,,,,
+controlnet-unknown-unknown-1-1024x1024-75-false-unknown-false,stablediffusion,2023-08-12,75.0,1024.0,,,,
+controlnet-unknown-unknown-1-512x512-75-false-unknown-false,stablediffusion,2023-08-12,75.0,512.0,,,,
+core-unknown-unknown-1-unknown-unknown-false-unknown-false,stabilityai,2024-03-24,,,,,,
+dalle-unknown-unknown-2-1024x1024-unknown-false-unknown-false,openai,2022-11-17,,1024.0,742.0,12.5,,
+dalle-unknown-unknown-2-256x256-unknown-false-unknown-false,openai,2022-11-17,,256.0,742.0,12.5,,
+dalle-unknown-unknown-2-512x512-unknown-false-unknown-false,openai,2022-11-17,,512.0,742.0,12.5,,
+dalle-unknown-unknown-3-1024x1024-unknown-false-unknown-false,openai,2022-11-17,,1024.0,984.0,17.7,,
+dalle-unknown-unknown-3-1024x1024-unknown-true-unknown-false,openai,2022-11-17,,1024.0,984.0,17.7,,
+dalle-unknown-unknown-3-1792x1792-unknown-false-unknown-false,openai,2022-11-17,,1792.0,984.0,17.7,,
+dalle-unknown-unknown-3-1792x1792-unknown-true-unknown-false,openai,2022-11-17,,1792.0,984.0,17.7,,
+stablediffusion-medium-unknown-3.5-unknown-unknown-false-unknown-false,,2024-10-31,,,1084.0,2.3,35.0,1024.0
+dreamshaper-lcm-unknown-8-1024x1024-50-false-unknown-false,lykon,2024-10-31,50.0,1024.0,,,,
+dreamshaper-lcm-unknown-8-2048x2048-50-false-unknown-false,lykon,2024-10-31,50.0,2048.0,,,,
+dreamshaper-lcm-unknown-8-512x512-50-false-unknown-false,lykon,2024-10-31,50.0,512.0,,,,
+flux-unknown-unknown-1-unknown-unknown-false-unknown-false,replicateai,2024-09-27,,,1114.0,10.0,28.0,1024.0
+flux-schnell-unknown-1-1024x1024-50-false-unknown-false,blackforestlabs,2024-07-03,50.0,1024.0,1045.0,1.1,4.0,1024.0
+flux-schnell-unknown-1-2048x2048-50-false-unknown-false,black-forest-labs,2024-10-31,50.0,2048.0,1045.0,1.1,4.0,1024.0
+flux-schnell-unknown-1-512x512-50-false-unknown-false,blackforestlabs,2024-07-03,50.0,512.0,1045.0,1.1,4.0,1024.0
+flux-pro-unknown-1.1-1024x1024-unknown-false-unknown-false,black forest labs,2024-09-27,,1024.0,1135.0,4.2,50.0,1024.0
+flux-dev-unknown-1-1024x1024-50-false-unknown-false,blackforestlabs,2024-07-03,50.0,1024.0,1091.0,3.5,28.0,1024.0
+flux-dev-unknown-1-512x512-50-false-unknown-false,blackforestlabs,2024-07-03,50.0,512.0,1091.0,3.5,28.0,1024.0
+flux-dev-unknown-1-768x768-50-false-unknown-false,Flux AI,2024-10-31,50.0,768.0,1091.0,3.5,28.0,1024.0
+flux-realism-unknown-1-1024x1024-100-false-unknown-true,blackforestlabs,2024-07-03,100.0,1024.0,1114.0,10.0,28.0,1024.0
+flux-realism-unknown-1-512x512-100-false-unknown-true,blackforestlabs,2024-07-03,100.0,512.0,1114.0,10.0,28.0,1024.0
+flux-realism-unknown-1-1024x1024-25-false-unknown-true,blackforestlabs,2024-07-03,25.0,1024.0,1114.0,10.0,28.0,1024.0
+flux-realism-unknown-1-512x512-25-false-unknown-true,blackforestlabs,2024-07-03,25.0,512.0,1114.0,10.0,28.0,1024.0
+flux-realism-unknown-1-1024x1024-50-false-unknown-true,blackforestlabs,2024-07-03,50.0,1024.0,1114.0,10.0,28.0,1024.0
+flux-realism-unknown-1-512x512-50-false-unknown-true,blackforestlabs,2024-07-03,50.0,512.0,1114.0,10.0,28.0,1024.0
+flux-realism-unknown-1-1024x1024-75-false-unknown-true,blackforestlabs,2024-07-03,75.0,1024.0,1114.0,10.0,28.0,1024.0
+flux-realism-unknown-1-512x512-75-false-unknown-true,blackforestlabs,2024-07-03,75.0,512.0,1114.0,10.0,28.0,1024.0
+flux-realism-unknown-1-1024x1024-unknown-false-unknown-true,black forest labs,2024-09-27,,1024.0,1114.0,10.0,28.0,1024.0
+flux-dev-unknown-1-1024x1024-100-false-unknown-false,blackforestlabs,2024-07-03,100.0,1024.0,1091.0,3.5,28.0,1024.0
+flux-dev-unknown-1-512x512-100-false-unknown-false,blackforestlabs,2024-07-03,100.0,512.0,1091.0,3.5,28.0,1024.0
+flux-dev-unknown-1-1024x1024-25-false-unknown-false,blackforestlabs,2024-07-03,25.0,1024.0,1091.0,3.5,28.0,1024.0
+flux-dev-unknown-1-512x512-25-false-unknown-false,blackforestlabs,2024-07-03,25.0,512.0,1091.0,3.5,28.0,1024.0
+flux-dev-unknown-1-1024x1024-30-false-unknown-false,Black Forest Labs,2024-09-27,30.0,1024.0,1091.0,3.5,28.0,1024.0
+flux-dev-unknown-1-1024x1024-75-false-unknown-false,blackforestlabs,2024-07-03,75.0,1024.0,1091.0,3.5,28.0,1024.0
+flux-dev-unknown-1-512x512-75-false-unknown-false,blackforestlabs,2024-07-03,75.0,512.0,1091.0,3.5,28.0,1024.0
+flux-dev-unknown-1-1024x1024-unknown-false-unknown-false,black forest labs,2024-09-27,,1024.0,1091.0,3.5,28.0,1024.0
+flux-dev-lora-1-1024x1024-30-false-unknown-false,Black Forest Labs,2024-09-27,30.0,1024.0,1091.0,3.5,28.0,1024.0
+flux-dev-unknown-1-unknown-30-false-unknown-false,,2024-10-31,30.0,,1091.0,3.5,28.0,1024.0
+flux-dev-fp8-1-unknown-30-false-unknown-false,,2024-10-31,30.0,,1091.0,3.5,28.0,1024.0
+flux-pro-unknown-1-1024x1024-100-false-unknown-false,blackforestlabs,2024-07-03,100.0,1024.0,1114.0,10.0,28.0,1024.0
+flux-pro-unknown-1-512x512-100-false-unknown-false,blackforestlabs,2024-07-03,100.0,512.0,1114.0,10.0,28.0,1024.0
+flux-pro-unknown-1-1024x1024-25-false-unknown-false,blackforestlabs,2024-07-03,25.0,1024.0,1114.0,10.0,28.0,1024.0
+flux-pro-unknown-1-512x512-25-false-unknown-false,blackforestlabs,2024-07-03,25.0,512.0,1114.0,10.0,28.0,1024.0
+flux-pro-unknown-1-1024x1024-50-false-unknown-false,blackforestlabs,2024-07-03,50.0,1024.0,1114.0,10.0,28.0,1024.0
+flux-pro-unknown-1-512x512-50-false-unknown-false,blackforestlabs,2024-07-03,50.0,512.0,1114.0,10.0,28.0,1024.0
+flux-pro-unknown-1-1024x1024-75-false-unknown-false,blackforestlabs,2024-07-03,75.0,1024.0,1114.0,10.0,28.0,1024.0
+flux-pro-unknown-1-512x512-75-false-unknown-false,blackforestlabs,2024-07-03,75.0,512.0,1114.0,10.0,28.0,1024.0
+flux-pro-unknown-1-1024x1024-unknown-false-unknown-false,black forest labs,2024-09-27,,1024.0,1114.0,10.0,28.0,1024.0
+flux-schnell-unknown-1-1024x1024-100-false-unknown-false,blackforestlabs,2024-07-03,100.0,1024.0,1045.0,1.1,4.0,1024.0
+flux-schnell-unknown-1-512x512-100-false-unknown-false,blackforestlabs,2024-07-03,100.0,512.0,1045.0,1.1,4.0,1024.0
+flux-schnell-unknown-1-1024x1024-25-false-unknown-false,blackforestlabs,2024-07-03,25.0,1024.0,1045.0,1.1,4.0,1024.0
+flux-schnell-unknown-1-512x512-25-false-unknown-false,blackforestlabs,2024-07-03,25.0,512.0,1045.0,1.1,4.0,1024.0
+flux-schnell-unknown-1-1024x1024-4-false-unknown-false,Black Forest Labs,2024-09-27,4.0,1024.0,1045.0,1.1,4.0,1024.0
+flux-schnell-unknown-1-1024x1024-75-false-unknown-false,blackforestlabs,2024-07-03,75.0,1024.0,1045.0,1.1,4.0,1024.0
+flux-schnell-unknown-1-512x512-75-false-unknown-false,blackforestlabs,2024-07-03,75.0,512.0,1045.0,1.1,4.0,1024.0
+flux-schnell-unknown-1-1024x1024-unknown-false-unknown-false,black forest labs,2024-09-27,,1024.0,1045.0,1.1,4.0,1024.0
+flux-schnell-unknown-1-unknown-30-false-unknown-false,,2024-10-31,30.0,,1045.0,1.1,4.0,1024.0
+flux-schnell-fp8-1-unknown-30-false-unknown-false,,2024-10-31,30.0,,1045.0,1.1,4.0,1024.0
+flux-schnell-free-1-unknown-unknown-false-unknown-false,Black Forest Labs,2024-10-21,,,1045.0,1.1,4.0,1024.0
+flux-schnell-loras-1-1024x1024-4-false-unknown-false,Black Forest Labs,2024-09-27,4.0,1024.0,1045.0,1.1,4.0,1024.0
+flux-pro-unknown-1.1-unknown-unknown-false-unknown-false,Black Forest Labs,2024-10-21,,,1135.0,4.2,50.0,1024.0
+ideogram-default-unknown-0.2-unknown-unknown-false-unknown-false,Ideogram,2024-10-31,,,,,,
+ideogram-default-unknown-1-unknown-unknown-false-unknown-false,Ideogram,2024-10-31,,,1069.0,16.1,,
+ideogram-unknown-turbo-1-unknown-unknown-false-unknown-false,Ideogram,2024-10-31,,,1069.0,16.1,,
+ideogram-default-unknown-2-unknown-unknown-false-unknown-false,Ideogram,2024-10-31,,,1094.0,20.4,,
+ideogram-quality-unknown-2-unknown-unknown-false-unknown-false,Ideogram,2024-10-31,,,1094.0,20.4,,
+ideogram-unknown-turbo-2-unknown-unknown-false-unknown-false,Ideogram,2024-10-31,,,1086.0,11.8,,
+imagen-unknown-unknown-1-unknown-unknown-false-unknown-false,google,2024-03-10,,,,,,
+imagen-unknown-unknown-2-unknown-unknown-false-unknown-false,google,2024-08-26,,,,,,
+imagen-unknown-unknown-3-unknown-unknown-false-unknown-false,google,2024-08-26,,,,,,
+imagen-fast-unknown-3-unknown-unknown-false-unknown-false,google,2024-08-26,,,,,,
+stablediffusion-japonese-xl-1-unknown-30-false-unknown-false,,2024-10-31,30.0,,909.0,1.1,30.0,1024.0
+juggernaut-unknown-unknown-9-unknown-30-false-unknown-false,Juggernaut AI,2024-07-25,30.0,,,,,
+juggernaut-lighting-unknown-9-unknown-4-false-unknown-false,Juggernaut AI,2024-07-25,4.0,,,,,
+midjourney-unknown-unknown-1-unknown-unknown-false-unknown-false,Midjourney,2023-01-30,,,1098.0,87.7,,
+midjourney-unknown-unknown-2-unknown-unknown-false-unknown-false,Midjourney,2023-01-30,,,1098.0,87.7,,
+midjourney-unknown-unknown-3-unknown-unknown-false-unknown-false,Midjourney,2023-01-30,,,1098.0,87.7,,
+midjourney-unknown-unknown-4-unknown-unknown-false-unknown-false,Midjourney,2023-01-30,,,1098.0,87.7,,
+midjourney-unknown-unknown-5-unknown-unknown-false-unknown-false,Midjourney,2024-01-14,,,1098.0,87.7,,
+midjourney-unknown-unknown-5.1-unknown-unknown-false-unknown-false,Midjourney,2024-01-14,,,1098.0,87.7,,
+midjourney-unknown-unknown-5.2-unknown-unknown-false-unknown-false,Midjourney,2024-01-14,,,1098.0,87.7,,
+midjourney-unknown-unknown-6-unknown-unknown-false-unknown-false,Midjourney,2024-10-31,,,1084.0,80.8,,
+midjourney-unknown-unknown-6.1-unknown-unknown-false-unknown-false,Midjourney,2024-10-31,,,1098.0,87.7,,
+opendalle-unknown-unknown-1-unknown-50-false-unknown-false,OpenAI,2024-02-01,50.0,,,,,
+dalle-unknown-unknown-1-unknown-unknown-false-unknown-false,OpenAI,2024-02-14,,,984.0,17.7,,
+dalle-unknown-unknown-3-1024x1024-100-false-unknown-false,openai,2024-06-18,100.0,1024.0,984.0,17.7,,
+dalle-unknown-unknown-3-512x512-100-false-unknown-false,openai,2024-06-18,100.0,512.0,984.0,17.7,,
+dalle-unknown-unknown-3-1024x1024-25-false-unknown-false,openai,2024-06-18,25.0,1024.0,984.0,17.7,,
+dalle-unknown-unknown-3-512x512-25-false-unknown-false,openai,2024-06-18,25.0,512.0,984.0,17.7,,
+dalle-unknown-unknown-3-1024x1024-50-false-unknown-false,openai,2024-06-18,50.0,1024.0,984.0,17.7,,
+dalle-unknown-unknown-3-512x512-50-false-unknown-false,openai,2024-06-18,50.0,512.0,984.0,17.7,,
+dalle-unknown-unknown-3-1024x1024-75-false-unknown-false,openai,2024-06-18,75.0,1024.0,984.0,17.7,,
+dalle-unknown-unknown-3-512x512-75-false-unknown-false,openai,2024-06-18,75.0,512.0,984.0,17.7,,
+openjourney-unknown-unknown-4-unknown-unknown-false-unknown-false,,2023-07-14,,,,,,
+openjourney-unknown-unknown-4-1024x1024-100-false-unknown-false,prompthero,2023-08-12,100.0,1024.0,,,,
+openjourney-unknown-unknown-4-512x512-100-false-unknown-false,prompthero,2023-08-12,100.0,512.0,,,,
+openjourney-unknown-unknown-4-1024x1024-25-false-unknown-false,prompthero,2023-08-12,25.0,1024.0,,,,
+openjourney-unknown-unknown-4-512x512-25-false-unknown-false,prompthero,2023-08-12,25.0,512.0,,,,
+openjourney-unknown-unknown-4-1024x1024-50-false-unknown-false,prompthero,2023-08-12,50.0,1024.0,,,,
+openjourney-unknown-unknown-4-512x512-50-false-unknown-false,prompthero,2023-08-12,50.0,512.0,,,,
+openjourney-unknown-unknown-4-1024x1024-75-false-unknown-false,prompthero,2023-08-12,75.0,1024.0,,,,
+openjourney-unknown-unknown-4-512x512-75-false-unknown-false,prompthero,2023-08-12,75.0,512.0,,,,
+openjourney-unknown-unknown-4-1024x1024-unknown-false-unknown-false,prompthero,2024-09-27,,1024.0,,,,
+openjourney-unknown-unknown-4-512x512-unknown-false-unknown-false,prompthero,2024-09-27,,512.0,,,,
+photomaker-unknown-unknown-2-unknown-unknown-false-unknown-false,tencentarc,2024-08-26,,,,,,
+playground-unknown-unknown-2-1024x1024-30-false-unknown-false,,2024-10-31,30.0,1024.0,1046.0,17.7,50.0,1024.0
+playground-unknown-unknown-2.5-1024x1024-30-false-unknown-false,,2024-10-31,30.0,1024.0,996.0,4.4,50.0,1024.0
+realisticvision-unknown-unknown-3-unknown-unknown-false-unknown-false,,2023-07-14,,,,,,
+realisticvision-unknown-unknown-3-1024x1024-100-false-unknown-false,togetherai,2023-08-12,100.0,1024.0,,,,
+realisticvision-unknown-unknown-3-512x512-100-false-unknown-false,togetherai,2023-08-12,100.0,512.0,,,,
+realisticvision-unknown-unknown-3-1024x1024-25-false-unknown-false,togetherai,2023-08-12,25.0,1024.0,,,,
+realisticvision-unknown-unknown-3-512x512-25-false-unknown-false,togetherai,2023-08-12,25.0,512.0,,,,
+realisticvision-unknown-unknown-3-1024x1024-50-false-unknown-false,togetherai,2023-08-12,50.0,1024.0,,,,
+realisticvision-unknown-unknown-3-512x512-50-false-unknown-false,togetherai,2023-08-12,50.0,512.0,,,,
+realisticvision-unknown-unknown-3-1024x1024-75-false-unknown-false,togetherai,2023-08-12,75.0,1024.0,,,,
+realisticvision-unknown-unknown-3-512x512-75-false-unknown-false,togetherai,2023-08-12,75.0,512.0,,,,
+realisticvision-unknown-unknown-3-1024x1024-unknown-false-unknown-false,together,2024-09-27,,1024.0,,,,
+realisticvision-unknown-unknown-3-512x512-unknown-false-unknown-false,together,2024-09-27,,512.0,,,,
+stablediffusion-unknown-unknown-1.5-1024x1024-40-false-unknown-false,Stability AI,2024-02-24,40.0,1024.0,623.0,68.5,50.0,1024.0
+stablediffusion-unknown-unknown-1.5-512x512-40-false-unknown-false,Stability AI,2024-02-24,40.0,512.0,623.0,68.5,50.0,1024.0
+stablediffusion-unknown-unknown-1.5-1024x1024-60-false-unknown-false,Stability AI,2024-02-06,60.0,1024.0,623.0,68.5,50.0,1024.0
+stablediffusion-unknown-unknown-1.5-unknown-unknown-false-unknown-false,Stability AI,2023-07-14,,,623.0,68.5,50.0,1024.0
+stablediffusion-unknown-unknown-1.6-512x512-unknown-false-unknown-false,stabilityai,2024-03-24,,512.0,926.0,5.0,50.0,1024.0
+stablediffusion-unknown-unknown-1.6-512x512-unknown-true-unknown-false,stabilityai,2024-03-24,,512.0,926.0,5.0,50.0,1024.0
+stablediffusion-unknown-unknown-1.5-1024x1024-50-false-unknown-false,stabilityai,2023-08-12,50.0,1024.0,623.0,68.5,50.0,1024.0
+stablediffusion-controlnet-unknown-1.5-1024x1024-50-false-unknown-false,Stability AI,2024-10-31,50.0,1024.0,623.0,68.5,50.0,1024.0
+stablediffusion-unknown-unknown-1.5-unknown-50-false-unknown-true,Stability AI,2024-02-06,50.0,,623.0,68.5,50.0,1024.0
+stablediffusion-unknown-unknown-2-1024x1024-50-false-unknown-false,Stability AI,2024-10-31,50.0,1024.0,926.0,5.0,50.0,1024.0
+stablediffusion-unknown-unknown-3-unknown-unknown-false-unknown-false,stabilityai,2024-03-24,,,1059.0,7.4,30.0,1024.0
+stablediffusion-unknown-unknown-3-unknown-30-false-unknown-false,Stability AI,2024-07-25,30.0,,1059.0,7.4,30.0,1024.0
+stablediffusion-large-unknown-3-unknown-unknown-false-unknown-false,stabilityai,2024-07-03,,,1059.0,7.4,30.0,1024.0
+stablediffusion-unknown-turbo-3-unknown-unknown-false-unknown-false,stabilityai,2024-03-24,,,1059.0,7.4,30.0,1024.0
+stablediffusion-xl-unknown-1-1024x1024-50-false-unknown-false,stabilityai,2024-05-29,50.0,1024.0,885.0,1.5,30.0,1024.0
+stablediffusion-xl-unknown-1-1024x1024-30-false-ddim-false,Stability AI,2024-02-06,30.0,1024.0,885.0,1.5,30.0,1024.0
+stablediffusion-xl-unknown-1-1024x1024-40-false-ddim-false,Stability AI,2024-02-24,40.0,1024.0,885.0,1.5,30.0,1024.0
+stablediffusion-xl-unknown-1-1024x1024-40-false-dpm2-false,Stability AI,2024-02-06,40.0,1024.0,885.0,1.5,30.0,1024.0
+stablediffusion-xl-unknown-1-512x512-50-false-unknown-false,stabilityai,2024-05-29,50.0,512.0,885.0,1.5,30.0,1024.0
+stablediffusion-xl-unknown-1-768x768-50-false-unknown-false,Stability AI,2024-05-29,50.0,768.0,885.0,1.5,30.0,1024.0
+stablediffusion-xl-unknown-0.8-512x512-unknown-false-unknown-false,stabilityai,2024-01-27,,512.0,909.0,1.1,30.0,1024.0
+stablediffusion-xl-unknown-0.8-512x512-unknown-true-unknown-false,stabilityai,2024-01-27,,512.0,909.0,1.1,30.0,1024.0
+stablediffusion-xl-unknown-0.8-1024x1024-unknown-false-unknown-false,stabilityai,2024-01-27,,1024.0,909.0,1.1,30.0,1024.0
+stablediffusion-xl-unknown-0.8-1024x1024-unknown-true-unknown-false,stabilityai,2024-01-27,,1024.0,909.0,1.1,30.0,1024.0
+stablediffusion-xl-unknown-1-1024x1024-unknown-false-unknown-false,stabilityai,2024-01-27,,1024.0,885.0,1.5,30.0,1024.0
+stablediffusion-xl-unknown-1-1024x1024-unknown-true-unknown-false,stabilityai,2024-01-27,,1024.0,885.0,1.5,30.0,1024.0
+stablediffusion-xl-controlnet-1-1024x1024-50-false-unknown-false,Stability AI,2024-10-31,50.0,1024.0,909.0,1.1,30.0,1024.0
+stablediffusion-xl-lightning-1-unknown-unknown-false-unknown-false,stabilityai,2024-08-26,,,909.0,1.1,4.0,1024.0
+stablediffusion-xl-lightning-1-unknown-4-false-unknown-false,Stability AI,2024-06-19,4.0,,909.0,1.1,4.0,1024.0
+stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false,Stability AI,2024-09-27,,,885.0,1.5,30.0,1024.0
+stablediffusion-xl-turbo-1-1024x1024-50-false-unknown-false,Stability AI,2024-10-31,50.0,1024.0,909.0,1.1,30.0,1024.0
+stablediffusion-xl-unknown-1-1024x1024-60-false-unknown-true,Stability AI,2024-02-06,60.0,1024.0,885.0,1.5,30.0,1024.0
+stablediffusion-xl-unknown-1-unknown-20-false-unknown-false,Stability AI,2024-06-19,20.0,,885.0,1.5,30.0,1024.0
+stablediffusion-xl-lcm-1-1024x1024-4-false-unknown-true,Stability AI,2024-02-24,4.0,1024.0,909.0,1.1,30.0,1024.0
+stablediffusion-xl-base-1-1024x1024-50-false-unknown-false,Stability AI,2024-10-31,50.0,1024.0,909.0,1.1,30.0,1024.0
+stablediffusion-segmind-1b-1-1024x1024-30-false-unknown-false,,2024-10-31,30.0,1024.0,909.0,1.1,30.0,1024.0
+ssd-unknown-unknown-1-1024x1024-50-false-unknown-false,Segmind,2024-10-31,50.0,1024.0,,,,
+stablediffusion-unknown-unknown-1.5-1024x1024-100-false-unknown-false,stabilityai,2023-08-12,100.0,1024.0,623.0,68.5,50.0,1024.0
+stablediffusion-unknown-unknown-1.5-512x512-100-false-unknown-false,stabilityai,2023-08-12,100.0,512.0,623.0,68.5,50.0,1024.0
+stablediffusion-unknown-unknown-1.5-1024x1024-25-false-unknown-false,stabilityai,2023-08-12,25.0,1024.0,623.0,68.5,50.0,1024.0
+stablediffusion-unknown-unknown-1.5-512x512-25-false-unknown-false,stabilityai,2023-08-12,25.0,512.0,623.0,68.5,50.0,1024.0
+stablediffusion-unknown-unknown-1.5-512x512-50-false-unknown-false,stabilityai,2023-08-12,50.0,512.0,623.0,68.5,50.0,1024.0
+stablediffusion-unknown-unknown-1.5-1024x1024-75-false-unknown-false,stabilityai,2023-08-12,75.0,1024.0,623.0,68.5,50.0,1024.0
+stablediffusion-unknown-unknown-1.5-512x512-75-false-unknown-false,stabilityai,2023-08-12,75.0,512.0,623.0,68.5,50.0,1024.0
+stablediffusion-unknown-unknown-1.5-1024x1024-unknown-false-unknown-false,stability ai,2024-09-27,,1024.0,623.0,68.5,50.0,1024.0
+stablediffusion-unknown-unknown-1.5-512x512-unknown-false-unknown-false,stability ai,2024-09-27,,512.0,623.0,68.5,50.0,1024.0
+stablediffusion-unknown-unknown-2.1-unknown-unknown-false-unknown-false,stabilityai,2023-07-14,,,737.0,6.2,50.0,1024.0
+stablediffusion-unknown-unknown-2.1-1024x1024-100-false-unknown-false,stabilityai,2023-08-12,100.0,1024.0,737.0,6.2,50.0,1024.0
+stablediffusion-unknown-unknown-2.1-512x512-100-false-unknown-false,stabilityai,2023-08-12,100.0,512.0,737.0,6.2,50.0,1024.0
+stablediffusion-unknown-unknown-2.1-1024x1024-25-false-unknown-false,stabilityai,2023-08-12,25.0,1024.0,737.0,6.2,50.0,1024.0
+stablediffusion-unknown-unknown-2.1-512x512-25-false-unknown-false,stabilityai,2023-08-12,25.0,512.0,737.0,6.2,50.0,1024.0
+stablediffusion-unknown-unknown-2.1-1024x1024-50-false-unknown-false,stabilityai,2023-08-12,50.0,1024.0,737.0,6.2,50.0,1024.0
+stablediffusion-unknown-unknown-2.1-512x512-50-false-unknown-false,stabilityai,2023-08-12,50.0,512.0,737.0,6.2,50.0,1024.0
+stablediffusion-unknown-unknown-2.1-1024x1024-75-false-unknown-false,stabilityai,2023-08-12,75.0,1024.0,737.0,6.2,50.0,1024.0
+stablediffusion-unknown-unknown-2.1-512x512-75-false-unknown-false,stabilityai,2023-08-12,75.0,512.0,737.0,6.2,50.0,1024.0
+stablediffusion-unknown-unknown-2.1-1024x1024-unknown-false-unknown-false,stability ai,2024-09-27,,1024.0,737.0,6.2,50.0,1024.0
+stablediffusion-unknown-unknown-2.1-512x512-unknown-false-unknown-false,stability ai,2024-09-27,,512.0,737.0,6.2,50.0,1024.0
+stablediffusion-unknown-unknown-3-1024x1024-100-false-unknown-false,stabilityai,2024-07-03,100.0,1024.0,1059.0,7.4,30.0,1024.0
+stablediffusion-unknown-unknown-3-512x512-100-false-unknown-false,stabilityai,2024-07-03,100.0,512.0,1059.0,7.4,30.0,1024.0
+stablediffusion-unknown-unknown-3-1024x1024-25-false-unknown-false,stabilityai,2024-07-03,25.0,1024.0,1059.0,7.4,30.0,1024.0
+stablediffusion-unknown-unknown-3-512x512-25-false-unknown-false,stabilityai,2024-07-03,25.0,512.0,1059.0,7.4,30.0,1024.0
+stablediffusion-unknown-unknown-3-1024x1024-50-false-unknown-false,stabilityai,2024-07-03,50.0,1024.0,1059.0,7.4,30.0,1024.0
+stablediffusion-unknown-unknown-3-512x512-50-false-unknown-false,stabilityai,2024-07-03,50.0,512.0,1059.0,7.4,30.0,1024.0
+stablediffusion-unknown-unknown-3-1024x1024-75-false-unknown-false,stabilityai,2024-07-03,75.0,1024.0,1059.0,7.4,30.0,1024.0
+stablediffusion-unknown-unknown-3-512x512-75-false-unknown-false,stabilityai,2024-07-03,75.0,512.0,1059.0,7.4,30.0,1024.0
+stablediffusion-unknown-unknown-3-1024x1024-unknown-false-unknown-false,stability ai,2024-09-27,,1024.0,1059.0,7.4,30.0,1024.0
+stablediffusion-large-turbo-3-unknown-unknown-false-unknown-false,stabilityai,2024-07-03,,,935.0,2.1,30.0,1024.0
+stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false,stabilityai,2024-07-03,,,942.0,2.4,30.0,1024.0
+stablediffusion-large-unknown-3.5-unknown-unknown-false-unknown-false,,2024-10-31,,,1081.0,11.8,35.0,1024.0
+stablediffusion-large-unknown-3.5-1024x1024-unknown-false-unknown-false,stability ai,2024-09-27,,1024.0,1081.0,11.8,35.0,1024.0
+stablediffusion-large-turbo-3.5-unknown-unknown-false-unknown-false,,2024-10-31,,,1084.0,2.3,4.0,1024.0
+stablediffusion-xl-unknown-1-unknown-50-false-unknown-false,Stability AI,2024-01-03,50.0,,885.0,1.5,30.0,1024.0
+stablediffusion-xl-unknown-1-1024x1024-100-false-unknown-false,stabilityai,2024-06-18,100.0,1024.0,885.0,1.5,30.0,1024.0
+stablediffusion-xl-unknown-1-512x512-100-false-unknown-false,stabilityai,2024-06-18,100.0,512.0,885.0,1.5,30.0,1024.0
+stablediffusion-xl-unknown-1-1024x1024-25-false-unknown-false,stabilityai,2024-06-18,25.0,1024.0,885.0,1.5,30.0,1024.0
+stablediffusion-xl-unknown-1-512x512-25-false-unknown-false,stabilityai,2024-06-18,25.0,512.0,885.0,1.5,30.0,1024.0
+stablediffusion-xl-unknown-1-1024x1024-75-false-unknown-false,stabilityai,2024-06-18,75.0,1024.0,885.0,1.5,30.0,1024.0
+stablediffusion-xl-unknown-1-512x512-75-false-unknown-false,stabilityai,2024-06-18,75.0,512.0,885.0,1.5,30.0,1024.0
+stablediffusion-xl-unknown-1-512x512-unknown-false-unknown-false,stability ai,2024-09-27,,512.0,885.0,1.5,30.0,1024.0
+stablediffusion-xl-unknown-1-unknown-30-false-unknown-false,,2024-10-31,30.0,,885.0,1.5,30.0,1024.0
+stablediffusion-xl-base-1-2048x2048-50-false-unknown-false,Stability.ai,2024-10-31,50.0,2048.0,909.0,1.1,30.0,1024.0
+stablediffusion-xl-base-1-512x512-50-false-unknown-false,Stability.ai,2024-10-31,50.0,512.0,909.0,1.1,30.0,1024.0
+stablediffusion-xl-lightning-1-1024x1024-50-false-unknown-false,bytedance,2024-10-31,50.0,1024.0,909.0,1.1,4.0,1024.0
+stablediffusion-xl-lightning-1-2048x2048-50-false-unknown-false,bytedance,2024-10-31,50.0,2048.0,909.0,1.1,4.0,1024.0
+stablediffusion-xl-lightning-1-512x512-50-false-unknown-false,bytedance,2024-10-31,50.0,512.0,909.0,1.1,4.0,1024.0
+stableimage-core-unknown-1-unknown-unknown-false-unknown-false,stabilityai,2024-09-27,,,,,,
+stableimage-ultra-unknown-1-unknown-unknown-false-unknown-false,stabilityai,2024-09-27,,,,,,
+ultra-unknown-unknown-1-unknown-unknown-false-unknown-false,stabilityai,2024-07-03,,,,,,
+flux-pro-unknown-1.1-unknown-unknown-False,blackforestlabs,2024-08-05,,,1135.0,4.2,50.0,1024.0
+flux-pro-ultra-1.1-unknown-unknown-False,blackforestlabs,2024-10-31,,,1135.0,4.2,50.0,1024.0
+flux-dev-unknown-1-unknown-unknown-False,blackforestlabs,2024-09-18,,,1091.0,3.5,28.0,1024.0
+amazontitan-unknown-unknown-1-512x512-unknown-False,amazon,2024-08-26,,512.0,919.0,11.2,,
+amazontitan-unknown-unknown-1-512x512-unknown-True,amazon,2024-08-26,,512.0,919.0,11.2,,
+amazontitan-unknown-unknown-2-1024x1024-unknown-False,amazon,2024-08-26,,1024.0,940.0,12.2,,
+amazontitan-unknown-unknown-2-1024x1024-unknown-True,amazon,2024-08-26,,1024.0,940.0,12.2,,
+amazontitan-unknown-unknown-2-512x512-unknown-False,amazon,2024-08-26,,512.0,940.0,12.2,,
+amazontitan-unknown-unknown-2-512x512-unknown-True,amazon,2024-08-26,,512.0,940.0,12.2,,
+stablediffusion-unknown-unknown-1.5-512x512-30-False,stabilityai,2023-07-27,30.0,512.0,623.0,68.5,50.0,1024.0
+stablediffusion-unknown-unknown-1.5-1024x1024-30-True,stabilityai,2023-07-27,30.0,1024.0,623.0,68.5,50.0,1024.0
+stablediffusion-unknown-unknown-1.6-512x512-30-False,stabilityai,2023-11-20,30.0,512.0,926.0,5.0,50.0,1024.0
+stablediffusion-unknown-unknown-1.6-1024x1024-30-True,stabilityai,2023-11-20,30.0,1024.0,926.0,5.0,50.0,1024.0
+stablediffusion-unknown-unknown-2.1-512x512-30-False,stabilityai,2023-07-27,30.0,512.0,737.0,6.2,50.0,1024.0
+stablediffusion-unknown-unknown-2.1-1024x1024-30-True,stabilityai,2023-07-27,30.0,1024.0,737.0,6.2,50.0,1024.0
+stablediffusion-large-unknown-unknown-unknown-unknown-False,stabilityai,2024-10-21,,,1084.0,2.3,35.0,1024.0
+stablediffusion-large-turbo-unknown-unknown-unknown-False,stabilityai,2024-10-21,,,1084.0,2.3,35.0,1024.0
+stablediffusion-medium-unknown-unknown-unknown-unknown-False,stabilityai,2024-10-21,,,942.0,2.4,30.0,1024.0
+stablediffusion-x4-unknown-unknown-unknown-512x512-False,stabilityai,2023-07-27,,,,,,
+stablediffusion-xl-unknown-0.8-512x512-30-False,stabilityai,2023-07-27,30.0,512.0,909.0,1.1,30.0,1024.0
+stablediffusion-xl-unknown-0.9-1024x1024-30-False,stabilityai,2023-07-27,30.0,1024.0,909.0,1.1,30.0,1024.0
+stablediffusion-xl-unknown-1.0-1024x1024-30-False,stabilityai,2023-07-27,30.0,1024.0,909.0,1.1,30.0,1024.0
+dalle-unknown-unknown-2-1024x1024-unknown-False,openai,2024-07-03,,1024.0,742.0,12.5,,
+dalle-unknown-unknown-2-256x256-unknown-False,openai,2024-07-03,,256.0,742.0,12.5,,
+dalle-unknown-unknown-2-512x512-unknown-False,openai,2024-07-03,,512.0,742.0,12.5,,
+dalle-unknown-unknown-3-1024x1024-unknown-False,openai,2024-07-03,,1024.0,970.0,14.4,,
+dalle-unknown-unknown-3-1024x1024-unknown-True,openai,2024-07-03,,1024.0,984.0,17.7,,
+dalle-unknown-unknown-3-1792x1792-unknown-False,openai,2024-07-05,,1792.0,970.0,14.4,,
+dalle-unknown-unknown-3-1792x1792-unknown-True,openai,2024-07-05,,1792.0,984.0,17.7,,
+dalle-unknown-unknown-3-1024x1792-unknown-True,openai,2024-07-03,,1408.0,984.0,17.7,,
+dalle-unknown-unknown-3-256x256-unknown-False,openai,2024-07-03,,256.0,970.0,14.4,,
+dalle-unknown-unknown-3-512x512-unknown-False,openai,2024-07-03,,512.0,970.0,14.4,,
+dalle-unknown-unknown-unknown-unknown-unknown-False,openai,2024-07-03,,,984.0,17.7,,
+stabilityai-unknown-unknown-unknown-unknown-unknown-False,stabilityai,2024-07-03,,,,,,

@@ -1,6 +1,6 @@
 name,id_name,2024-06-19,2024-10-31
 SDXL with defaults 20 steps,stablediffusion-xl-unknown-1-unknown-20-false-unknown-false,0.00194,0.00194
-SDXL Lightning 4 steps,stablediffusion-xl-lightning-v1-unknown-4-false-unknown-false,0.00042,0.00042
+SDXL Lightning 4 steps,stablediffusion-xl-lightning-1-unknown-4-false-unknown-false,0.00042,0.00042
 FLUX.1 [dev] 1024x1024,flux-dev-unknown-1-1024x1024-unknown-false-unknown-false,,0.025
 FLUX.1 [schnell] 1024x1024,flux-schnell-unknown-1-1024x1024-unknown-false-unknown-false,,0.003
 FLUX.1 [pro] 1024x1024,flux-pro-unknown-1-1024x1024-unknown-false-unknown-false,,0.05

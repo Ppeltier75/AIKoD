@@ -8,6 +8,6 @@ name,id_name,2024-10-31
 "stable-diffusion-xl-base-1.0 (50 steps, 512x512)",stablediffusion-xl-base-1-512x512-50-false-unknown-false,0.005
 "stable-diffusion-xl-base-1.0 (50 steps, 1024x1024)",stablediffusion-xl-base-1-1024x1024-50-false-unknown-false,0.01
 "stable-diffusion-xl-base-1.0 (50 steps, 2048x2048)",stablediffusion-xl-base-1-2048x2048-50-false-unknown-false,0.02
-"stable-diffusion-xl-lightning (50 steps, 512x512)",stablediffusion-xl-lightning-v1-512x512-50-false-unknown-false,0.005
-"stable-diffusion-xl-lightning (50 steps, 1024x1024)",stablediffusion-xl-lightning-v1-1024x1024-50-false-unknown-false,0.01
-"stable-diffusion-xl-lightning (50 steps, 2048x2048)",stablediffusion-xl-lightning-v1-2048x2048-50-false-unknown-false,0.02
+"stable-diffusion-xl-lightning (50 steps, 512x512)",stablediffusion-xl-lightning-1-512x512-50-false-unknown-false,0.005
+"stable-diffusion-xl-lightning (50 steps, 1024x1024)",stablediffusion-xl-lightning-1-1024x1024-50-false-unknown-false,0.01
+"stable-diffusion-xl-lightning (50 steps, 2048x2048)",stablediffusion-xl-lightning-1-2048x2048-50-false-unknown-false,0.02

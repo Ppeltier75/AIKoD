@@ -247,3 +247,37 @@ if __name__ == "__main__":
 
 # Appel de la fonction
 init_API(pricing_dir, output_json_path)
+
+# %%
+import os 
+from function_utils.utils_api import add_infos_to_API
+
+base_path = os.path.abspath(os.path.dirname(__file__))
+
+# Chemin vers le répertoire contenant les fichiers CSV 'AIKoD_{type}_infos.csv'
+models_infos_directory = os.path.join(base_path, "data", "models_infos")
+
+# Chemin vers le fichier JSON généré par 'init_API'
+output_json_path= os.path.join(base_path, "data", "API", "AIKoD_API_base_v0.json")
+
+# Appel de la fonction
+add_infos_to_API(models_infos_directory, output_json_path)
+
+# %%
+# Chargement des données depuis le fichier JSON existant
+import os
+from function_utils.utils_api import generate_API_date
+
+# Chemin de base de votre projet
+base_path = os.path.abspath(os.path.dirname(__file__))
+
+# Chemin vers le fichier JSON généré par 'init_API'
+input_json_path = os.path.join(base_path, "data", "API", "AIKoD_API_base_v0.json")
+
+# Chemin où vous souhaitez enregistrer le nouveau fichier JSON
+output_json_path = os.path.join(base_path, "data", "API", "API_date_v3.json")
+
+# Appel de la fonction
+generate_API_date(input_json_path, output_json_path)
+
+# %%
