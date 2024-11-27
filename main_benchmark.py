@@ -287,4 +287,25 @@ if __name__ == "__main__":
 
     # Appeler la fonction
     add_id_name_benchmark_bis(benchmark_dir, id_name_csv, column_names)
+
+# %%
+from function_utils.utils_id_name import generate_and_update_id_names
+import os
+from dotenv import load_dotenv
+
+if __name__ == "__main__":
+
+    base_path = os.path.abspath(os.path.dirname(__file__))
+    # Charger les variables d'environnement depuis .env
+    env_path = os.path.join(base_path, ".env")
+    load_dotenv(env_path)
+
+    # Récupérer la clé API OpenAI
+    openai_api_key = os.getenv("OPENAI_API_KEY")
+    
+    csv_path = os.path.join(base_path, "data", "models_infos", "AIOS", "AIOS_2024-10-08.csv")
+    examples_csv_path = os.path.join(base_path, "data", "id_name", "exemple", "text_exemple.csv")
+    model_type = "text"
+    column_name ="name"
+    generate_and_update_id_names(csv_path, examples_csv_path, model_type, openai_api_key, column_name)
 # %%

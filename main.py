@@ -232,3 +232,18 @@ if __name__ == "__main__":
     print("Extraction terminée.")
 
 # %%
+# Chemin vers le répertoire 'pricing'
+
+import os 
+from function_utils.utils_api import init_API
+
+if __name__ == "__main__":
+    # Définir le chemin de base et les répertoires
+    base_path = os.path.abspath(os.path.dirname(__file__))
+    output_json_path = os.path.join(base_path, "data", "API", "AIKoD_API_base_v0.json")
+    pricing_dir = os.path.join(base_path, "data", "pricing")
+
+
+
+# Appel de la fonction
+init_API(pricing_dir, output_json_path)

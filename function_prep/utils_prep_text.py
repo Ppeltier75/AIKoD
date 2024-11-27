@@ -132,27 +132,25 @@ def add_csv_text(base_csv_path):
 
     return df_merged
 
-import pandas as pd
-import numpy as np
 
-
+def normalize_elo_rating(elo, elo_min=1000, elo_max=2000):
+    """Normalize an ELO rating to a 0-1 scale."""
+    if pd.isnull(elo):
+        return np.nan
+    return (elo - elo_min) / (elo_max - elo_min)
 
 def add_quality_index(csv_path):
     """
-    Calculates the quality index for models based on specified columns and coefficients.
-    The function reads the CSV file, computes the quality index, and saves the updated DataFrame.
+    Calcule l'indice de qualité pour les modèles en fonction des colonnes spécifiées et des coefficients.
+    La fonction lit le fichier CSV, calcule l'indice de qualité, supprime les colonnes intermédiaires,
+    et enregistre le DataFrame mis à jour dans le même fichier CSV.
 
-    :param csv_path: Path to the CSV file.
+    :param csv_path: Chemin vers le fichier CSV.
     """
-    def normalize_elo_rating(elo, elo_min=1000, elo_max=2000):
-        """Normalize an ELO rating to a 0-1 scale."""
-        if pd.isnull(elo):
-            return np.nan
-        return (elo - elo_min) / (elo_max - elo_min)
-    # Read the CSV file into a DataFrame
+    # Lire le fichier CSV dans un DataFrame
     df = pd.read_csv(csv_path)
 
-    # Define the columns to be used
+    # Définir les colonnes à utiliser
     columns = {
         'Livebench_rating': 'Livebench_rating',
         'aa_mmlu': 'aa_mmlu',
@@ -162,13 +160,13 @@ def add_quality_index(csv_path):
         'aa_gpqa': 'aa_gpqa'
     }
 
-    # Ensure all required columns are present
+    # S'assurer que toutes les colonnes requises sont présentes
     missing_cols = [col for col in columns.values() if col not in df.columns]
     if missing_cols:
         print(f"Les colonnes suivantes sont manquantes dans le CSV : {missing_cols}")
-        return
+        return df  # Retourner le DataFrame tel quel si des colonnes manquent
 
-    # Combine MMLU and aa_mmlu
+    # Combiner MMLU et aa_mmlu
     def compute_mmlu(row):
         values = []
         if pd.notnull(row['MMLU']):
@@ -182,7 +180,7 @@ def add_quality_index(csv_path):
 
     df['MMLU_value'] = df.apply(compute_mmlu, axis=1)
 
-    # Combine AE and AA_arenaelo
+    # Combiner AE et AA_arenaelo
     def compute_arenaelo(row):
         values = []
         if pd.notnull(row['AE']):
@@ -196,17 +194,17 @@ def add_quality_index(csv_path):
 
     df['Arenaelo_value_raw'] = df.apply(compute_arenaelo, axis=1)
 
-    # Normalize Arenaelo_value using normalize_elo_rating function
+    # Normaliser Arenaelo_value en utilisant la fonction normalize_elo_rating
     df['Arenaelo_value'] = df['Arenaelo_value_raw'].apply(lambda x: normalize_elo_rating(x, elo_min=1000, elo_max=2000))
 
-    # GPQA value
+    # Valeur GPQA
     df['GPQA_value'] = df['aa_gpqa']
 
-    # Livebench rating normalized by dividing by 100
+    # Livebench rating normalisé en le divisant par 100
     df['Livebench_value_raw'] = df['Livebench_rating']
     df['Livebench_value'] = df['Livebench_value_raw'] / 100
 
-    # Coefficients for the quality index
+    # Coefficients pour l'indice de qualité
     coefficients = {
         'MMLU_value': 0.35,
         'Arenaelo_value': 0.35,
@@ -214,21 +212,21 @@ def add_quality_index(csv_path):
         'Livebench_value': 0.15
     }
 
-    # Function to calculate the quality index for a row
+    # Fonction pour calculer l'indice de qualité pour une ligne
     def calculate_quality_index(row):
-        # Check if any of the MMLU or Arenaelo sources have values
+        # Vérifier si l'une des sources MMLU ou Arenaelo a des valeurs
         has_mmlu = pd.notnull(row['MMLU']) or pd.notnull(row['aa_mmlu'])
         has_arenaelo = pd.notnull(row['AE']) or pd.notnull(row['AA_arenaelo'])
 
-        # Proceed only if at least one of MMLU or Arenaelo has a value
+        # Procéder uniquement si au moins l'une des valeurs MMLU ou Arenaelo est présente
         if has_mmlu or has_arenaelo:
-            # Get the values for the metrics
+            # Obtenir les valeurs pour les métriques
             mmlu = row['MMLU_value']
             arenaelo = row['Arenaelo_value']
             gpqa = row['GPQA_value']
             livebench = row['Livebench_value']
 
-            # Prepare a dictionary of values
+            # Préparer un dictionnaire de valeurs
             values = {
                 'MMLU_value': mmlu,
                 'Arenaelo_value': arenaelo,
@@ -236,30 +234,30 @@ def add_quality_index(csv_path):
                 'Livebench_value': livebench
             }
 
-            # Impute missing values using decile imputation
+            # Imputer les valeurs manquantes en utilisant l'imputation par déciles
             for key in values:
                 if pd.isnull(values[key]):
                     values[key] = impute_value(df, key, row)
 
-            # Calculate the quality index
+            # Calculer l'indice de qualité
             quality_index = sum(values[k] * coefficients[k] for k in coefficients)
             return round(quality_index, 3)
         else:
             return np.nan
 
-    # Function to impute missing values based on deciles using normalized values
+    # Fonction pour imputer les valeurs manquantes basées sur les déciles en utilisant des valeurs normalisées
     def impute_value(df, column, row):
-        # Get the deciles for the column
+        # Obtenir les déciles pour la colonne
         deciles = df[column].quantile([i/10 for i in range(1, 10)]).values
 
-        # Get the decile positions of available metrics (excluding the current column)
+        # Obtenir les positions des déciles des métriques disponibles (en excluant la colonne actuelle)
         available_metrics = ['MMLU_value', 'Arenaelo_value', 'GPQA_value', 'Livebench_value']
         available_metrics = [m for m in available_metrics if pd.notnull(row[m]) and m != column]
 
         if not available_metrics:
-            return df[column].mean()  # Fallback to mean if no metrics are available
+            return df[column].mean()  # Repli sur la moyenne si aucune métrique n'est disponible
 
-        # Calculate the average decile position
+        # Calculer la position moyenne des déciles
         decile_positions = []
         for metric in available_metrics:
             metric_value = row[metric]
@@ -273,20 +271,29 @@ def add_quality_index(csv_path):
         elif avg_decile < 0:
             avg_decile = 0
 
-        # Impute the value based on the average decile
+        # Imputer la valeur basée sur le décile moyen
         return deciles[avg_decile]
 
-    # Calculate the quality index for each row
+    # Calculer l'indice de qualité pour chaque ligne
     df['quality_index'] = df.apply(calculate_quality_index, axis=1)
 
-    # Save the updated DataFrame to the CSV file
+    # Supprimer les colonnes intermédiaires
+    columns_to_drop = [
+        'MMLU_value',
+        'Arenaelo_value_raw',
+        'Arenaelo_value',
+        'GPQA_value',
+        'Livebench_value_raw',
+        'Livebench_value'
+    ]
+    df.drop(columns=columns_to_drop, inplace=True)
+
+    # Sauvegarder le DataFrame mis à jour dans le fichier CSV
     df.to_csv(csv_path, index=False)
     print(f"La colonne 'quality_index' a été ajoutée au fichier CSV '{csv_path}'.")
 
-    # Return the updated DataFrame
+    # Retourner le DataFrame mis à jour
     return df
-
-
 
 def AIKoD_text_infos(json_path, text_infos_csv_path):
     """

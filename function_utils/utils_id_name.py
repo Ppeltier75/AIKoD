@@ -238,6 +238,7 @@ def generate_and_update_id_names(csv_path, examples_csv_path, model_type, openai
     :param examples_csv_path: Chemin du fichier CSV contenant les exemples pour le prompt.
     :param model_type: Type de modèle ('text', 'image', 'audio', etc.).
     :param openai_api_key: Clé API OpenAI pour effectuer les appels.
+    :param column_name: Nom de la colonne contenant les noms des modèles.
     :return: Liste des modèles ajoutés.
     """
     # Charger le fichier CSV
@@ -248,7 +249,7 @@ def generate_and_update_id_names(csv_path, examples_csv_path, model_type, openai
         print("Colonne 'id_name' manquante. Création de la colonne...")
         df["id_name"] = None
 
-    # Vérifier si toutes les lignes avec `name` ont un `id_name`
+    # Vérifier si toutes les lignes avec `column_name` ont un `id_name`
     if df["id_name"].notnull().all():
         print("Tous les `id_name` sont déjà remplis. Aucun traitement requis.")
         return []
@@ -262,11 +263,11 @@ def generate_and_update_id_names(csv_path, examples_csv_path, model_type, openai
         return []
 
     # Préparer les données pour le prompt
-    model_names = missing_id_names["name"].tolist()
+    model_names = missing_id_names[column_name].tolist()
 
     # Construire le prompt
     prompt = create_prompt_id_name(
-        model_names, model_type, examples_csv_path, column_name
+        model_names, model_type, examples_csv_path, column_name=column_name
     )
 
     # Initialiser le client OpenAI
@@ -296,8 +297,8 @@ def generate_and_update_id_names(csv_path, examples_csv_path, model_type, openai
     # Convertir la sortie API en DataFrame avec le séparateur "|"
     try:
         rows = [line.split("|") for line in generated_text.split("\n") if "|" in line]
-        df_generated = pd.DataFrame(rows, columns=["name", "id_name"])
-        df_generated["name"] = df_generated["name"].str.strip()  # Nettoyer les espaces
+        df_generated = pd.DataFrame(rows, columns=[column_name, "id_name"])
+        df_generated[column_name] = df_generated[column_name].str.strip()  # Nettoyer les espaces
         df_generated["id_name"] = df_generated["id_name"].str.strip()  # Nettoyer les espaces
         print("Données générées par l'API OpenAI (converties en DataFrame) :")
         print(df_generated)
@@ -305,13 +306,13 @@ def generate_and_update_id_names(csv_path, examples_csv_path, model_type, openai
         print(f"Erreur lors du traitement de la réponse API : {e}")
         return []
 
-    # Fusion basée sur les noms
+    # Fusion basée sur les noms dynamiques
     print("Fusion des données générées avec le fichier CSV d'entrée...")
     try:
         updated_df = pd.merge(
             df,
             df_generated,
-            on="name",
+            on=column_name,
             how="left",
             suffixes=("", "_new"),
         )
@@ -327,7 +328,7 @@ def generate_and_update_id_names(csv_path, examples_csv_path, model_type, openai
     updated_df.to_csv(csv_path, index=False)
 
     # Afficher les modèles ajoutés
-    added_models = df_generated["name"].tolist()
+    added_models = df_generated[column_name].tolist()
     print("Fusion réussie. Modèles ajoutés :")
     print(added_models)
     return added_models
