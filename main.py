@@ -70,7 +70,7 @@ from dotenv import load_dotenv
 from function_utils.utils_cleaning import remove_id_names_with_wrong_segments
 
 base_path = os.path.abspath(os.path.dirname(__file__))
-csv_path = os.path.join(base_path, "data", "id_name", "AIKoD", "AIKoD_texttoimage_idname.csv")
+csv_path = os.path.join(base_path, "data", "id_name", "AIKoD", "AIKoD_text_idname.csv")
 expected_segments = 9  # Vous pouvez modifier ce nombre selon vos besoins
 
 remove_id_names_with_wrong_segments(csv_path, expected_segments)
