@@ -1,4 +1,6 @@
-
+import re
+import json
+import requests
 
 # Fonction pour extraire les noms de modèles depuis AIKoD_API_v16.json et les enregistrer dans un fichier JSON
 def extract_model_names(json_path, output_model_names_path):

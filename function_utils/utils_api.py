@@ -82,7 +82,7 @@ def init_API(pricing_directory, output_json_path):
                         continue  # Ignorer les entrées sans aucun prix
                     model_entry = {
                         'provider': provider_name,
-                        'name': row['name'],
+                        'model_name': row['name'],
                         'id_name': row['id_name'],
                         'type': type_name,
                         'date': row['date'],
@@ -257,7 +257,7 @@ def generate_API_date(input_json_path, output_json_path):
 
     # Date de début et de fin
     start_date = datetime(2023, 1, 1)
-    end_date = datetime(2024, 9, 30)
+    end_date = datetime(2024, 11, 30)
 
     # Initialiser un dictionnaire pour stocker les données
     api_data = {}
