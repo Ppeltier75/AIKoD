@@ -4,7 +4,7 @@ claude 3 haiku,claude-haiku-unknown-3-unknown-unknown-unknown-false,1.25,1.25,1.
 claude 3 opus,claude-opus-unknown-3-unknown-unknown-unknown-false,75.0,75.0,75.0,,75.0,75.0,75.0,75.0
 claude 3 sonnet,claude-sonnet-unknown-3-unknown-unknown-unknown-false,15.0,15.0,15.0,,15.0,15.0,15.0,15.0
 claude 3.5 sonnet,claude-sonnet-unknown-3.5-unknown-unknown-unknown-false,,,,,,15.0,15.0,15.0
-codestral,codestral-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,3.0,0.6,3.0
+codestral,codestral-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,3.0,0.6,3.0
 codey for code chat,codey-unknown-code-chat-unknown-unknown-unknown-unknown-false,2.0,2.0,2.0,,2.0,,,
 codey for code chat 32k,codey-unknown-code-chat-unknown-unknown-unknown-32-false,2.0,2.0,2.0,,2.0,,,
 codey for code completion,codey-unknown-code-completion-unknown-unknown-unknown-unknown-false,2.0,2.0,2.0,,2.0,2.0,0.5,0.5

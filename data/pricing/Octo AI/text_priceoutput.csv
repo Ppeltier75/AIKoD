@@ -2,18 +2,18 @@ name,id_name,2024-02-06,2024-04-21,2024-07-25,2024-08-26,2024-02-24,2024-04-15,2
 Hermes 2 Pro Llama 3,hermes-llama-pro-2-unknown-unknown-unknown-unknown-false,,,,,,,0.15,0.15
 Mistral NeMo,mistral-nemo-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,0.2,0.2
 Phi 3.5-Vision,phi-vision-unknown-3.5-unknown-unknown-unknown-false,,,,,,,0.15,0.15
-WizardLM 2,wizardlm-unknown-unknown-2-unknown-unknown-unknown-false,,,,,,,0.75,0.75
+WizardLM 2,wizardlm-unknown-unknown-2-unknown-unknown-unknown-unknown-false,,,,,,,0.75,0.75
 code llama (34b),code-unknown-unknown-unknown-unknown-34-unknown-unknown-false,,1.0,,,,,,
 codellama 13b,codellama-unknown-unknown-unknown-unknown-13-unknown-unknown-false,,0.5,,,,,,
 codellama 70b instruct,codellama-unknown-instruct-unknown-unknown-70-unknown-code-false,1.9,,,,1.9,1.9,,
 codellama 7b,codellama-unknown-unknown-unknown-unknown-7-unknown-unknown-false,,0.25,,,,,,
 codellama 7b instruct,codellama-unknown-instruct-unknown-unknown-7-unknown-code-false,0.25,,,,0.25,0.25,,
 codellama-13b-instruct,codellama-unknown-instruct-unknown-unknown-13-unknown-code-false,0.5,,,,0.5,0.5,,
-codellama-34b-instruct,codellama-unknown-unknown-unknown-unknown-34-unknown-unknown-instruct-false,1.0,,,,1.0,1.0,,
+codellama-34b-instruct,codellama-unknown-unknown-unknown-unknown-34-unknown-instruct-false,1.0,,,,1.0,1.0,,
 llama 2 13b,llama-unknown-unknown-2-unknown-13-unknown-unknown-false,,0.5,,,,,,
-llama 2 13b chat,llama-unknown--unknown-2-unknown-13-unknown-chat-false,0.5,,,,0.5,0.5,,
+llama 2 13b chat,llama-unknown-unknown-2-unknown-13-unknown-unknown-false,0.5,,,,0.5,0.5,,
 llama 2 70b,llama-unknown-unknown-2-unknown-70-unknown-unknown-false,,1.9,,,,,,
-llama 2 70b chat,llama-unknown--unknown-2-unknown-70-unknown-unknown-false,1.9,,,,1.9,1.9,,
+llama 2 70b chat,llama-unknown-unknown-2-unknown-70-unknown-unknown-false,1.9,,,,1.9,1.9,,
 llama 2 7b,llama-unknown-unknown-2-unknown-7-unknown-unknown-false,,0.25,,,,,,
 llama 3 70b,llama-unknown-unknown-3-unknown-70-unknown-unknown-false,,1.9,0.9,0.9,,,,
 llama 3 7b,llama-unknown-unknown-3-unknown-7-unknown-unknown-false,,0.25,,,,,,

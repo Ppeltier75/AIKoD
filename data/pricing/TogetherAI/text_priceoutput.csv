@@ -2,10 +2,10 @@ name,id_name,2024-06-20,2024-05-28,2024-05-10,2024-03-23,2024-03-04,2024-01-17,2
 01-ai Yi Chat (34B),yi-unknown-unknown-unknown-unknown-34-unknown-chat-false,,,,,,,,,,,,,,,,0.8
 Alpaca (7B),alpaca-unknown-unknown-unknown-unknown-7-unknown-unknown-false,,,,,,,,,,,,,,,,0.2
 Chronos Hermes (13B),chronos-hermes-unknown-unknown-unknown-13-unknown-unknown-false,,,,,,,,,,,,,,,,0.3
-Code Llama Instruct (13B),code-unknown-unknown-unknown-unknown-13-unknown-unknown-instruct-false,,,,,,,,,,,,,,,,0.3
-Code Llama Instruct (34B),code-unknown-unknown-unknown-unknown-34-unknown-unknown-instruct-false,,,,,,,,,,,,,,,,0.8
-Code Llama Instruct (70B),code-unknown-unknown-unknown-unknown-70-unknown-unknown-instruct-false,,,,,,,,,,,,,,,,0.9
-Code Llama Instruct (7B),code-unknown-unknown-unknown-unknown-7-unknown-unknown-instruct-false,,,,,,,,,,,,,,,,0.2
+Code Llama Instruct (13B),llama-unknown-unknown-unknown-unknown-13-unknown-instruct-false,,,,,,,,,,,,,,,,0.3
+Code Llama Instruct (34B),llama-unknown-unknown-unknown-unknown-34-unknown-instruct-false,,,,,,,,,,,,,,,,0.8
+Code Llama Instruct (70B),llama-unknown-unknown-unknown-unknown-70-unknown-instruct-false,,,,,,,,,,,,,,,,0.9
+Code Llama Instruct (7B),llama-unknown-unknown-unknown-unknown-7-unknown-instruct-false,,,,,,,,,,,,,,,,0.2
 CodeLlama (13B),llama-unknown-unknown-unknown-unknown-13-unknown-code-false,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.4,,,,,,,
 CodeLlama (7B),codellama-unknown-unknown-unknown-unknown-7-unknown-code-false,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,0.2,,,,,,,
 CodeLlama Instruct (13B),codellama-unknown-instruct-unknown-unknown-13-unknown-code-false,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.4,,,,,,,

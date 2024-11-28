@@ -15,7 +15,7 @@ llama 3 8b,llama-unknown-unknown-3-unknown-8-unknown-unknown-false,,0.05,0.05,0.
 llama 3 8b 8k,llama-unknown-unknown-3-unknown-8-8-unknown-false,,,,,0.05,0.05
 llama 3 groq 70b tool use preview 8k,llama-groq-preview-3-unknown-70-8-tool-false,,,,,0.89,0.89
 llama 3 groq 8b tool use preview 8k,llama-groq-preview-3-unknown-8-8-tool-false,,,,,0.19,0.19
-llama 3.1 70b versatile 128k,llama-unknown-versatile--3.1-unknown-70-128-unknown-false,,,,,0.59,0.59
+llama 3.1 70b versatile 128k,llama-versatile-unknown-3.1-unknown-70-128-unknown-false,,,,,0.59,0.59
 llama 3.1 8b instant 128k,llama-unknown-instant-3.1-unknown-8-128-unknown-false,,,,,0.05,0.05
 llama guard 3 8b 8k,llama-guard-unknown-3-unknown-8-8-unknown-false,,,,,0.2,0.2
 mixtral 8x7b,mixtral-unknown-unknown-unknown-unknown-8x7-unknown-unknown-false,,,,,,

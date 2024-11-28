@@ -155,6 +155,37 @@ if __name__ == "__main__":
 
 
 
+# %%
+
+from function_utils.utils_cleaning import  harmonize_company_name
+from function_utils.utils_models_infos import column_name_modelsinfos, add_country_to_csv
+
+# Chemin vers le fichier CSV
+base_path = os.path.abspath(os.path.dirname(__file__))
+
+path_modelsinfos = os.path.join(base_path, "data", "models_infos")
+
+text_path = os.path.join(base_path, "data", "models_infos", "AIKoD_text_infos.csv")  
+texttoimage_path = os.path.join(base_path, "data", "models_infos", "AIKoD_texttoimage_infos.csv")  
+audiototext_path = os.path.join(base_path, "data", "models_infos", "AIKoD_audiototext_infos.csv")  
+
+
+# Nom de la colonne à harmoniser
+column_name = 'company'
+
+
+# Appel de la fonction
+harmonize_company_name(text_path , column_name)
+harmonize_company_name(texttoimage_path , column_name)
+harmonize_company_name(audiototext_path, column_name)
+
+column_name_modelsinfos(path_modelsinfos)
+
+
+add_country_to_csv(text_path, column_name)
+add_country_to_csv(texttoimage_path, column_name)
+add_country_to_csv(audiototext_path, column_name)
+
 # %% Imports nécessaires
 from function_prep.utils_prep_texttoimage import create_adjusted_price_text_to_image
 
@@ -185,7 +216,6 @@ reorganize_prices_by_resolution_and_steps(input_csv)
 
 import os
 from function_utils.utils_extract_pricing import extract_pricing_text
-from function_utils.utils_extract_pricing import add_id_name_to_pricing_files
 
 if __name__ == "__main__":
     # Définir le chemin de base et les répertoires
@@ -242,7 +272,6 @@ if __name__ == "__main__":
     base_path = os.path.abspath(os.path.dirname(__file__))
     output_json_path = os.path.join(base_path, "data", "API", "AIKoD_API_base_v0.json")
     pricing_dir = os.path.join(base_path, "data", "pricing")
-
 
 
 # Appel de la fonction

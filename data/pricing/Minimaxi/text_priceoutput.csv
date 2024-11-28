@@ -5,5 +5,5 @@ abab6.5t,abab-t-unknown-6.5-unknown-unknown-unknown-unknown-false,,,0.7,0.7
 chatcompletion,chatcompletion-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,
 chatcompletion pro,chatcompletion-pro-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,
 chatcompletion v2,chatcompletion-unknown-unknown-2-unknown-unknown-unknown-unknown-false,,,,
-finetune,finetune-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,
-finetune (微调),finetune-unknown-unknown-unknown-unknown-unknown-unknown-false,,25.0,,
+finetune,,,,,
+finetune (微调),,,25.0,,

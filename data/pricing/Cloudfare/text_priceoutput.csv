@@ -7,7 +7,7 @@ falcon-7b-instruct,falcon-unknown-unknown-unknown-unknown-7-unknown-instruct-fal
 gemma-2b-it-lora,gemma-unknown-it-unknown-unknown-2-unknown-unknown-true,0.1
 gemma-7b-it-lora,gemma-unknown-it-unknown-unknown-7-unknown-unknown-true,0.2
 hermes-2-pro-mistral-7b,hermes-mistral pro-2-unknown-7-unknown-unknown-false-false,0.2
-llama-2-13b-chat-awq,llama-unknown--awq-2-unknown-13-unknown-chat-false,0.25
+llama-2-13b-chat-awq,llama-awq-unknown-2-unknown-13-unknown-unknown-false,0.25
 llama-2-7b-chat-fp16,llama-unknown-fp16-2-unknown-7-unknown-chat-false,0.2
 llama-2-7b-chat-hf-lora,llama-unknown-chat-2-unknown-7-unknown-unknown-true,0.2
 llama-2-7b-chat-int8,llama-unknown-int8-2-unknown-7-unknown-chat-false,0.2

@@ -1,7 +1,7 @@
 name,id_name,2024-04-05,2024-03-24,2024-02-26,2024-01-16,2023-12-18,2023-12-14,2024-07-03,2024-08-26,2024-09-17,2024-09-27,2024-10-21
 Codestral finetuned,codestral-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,,,,
 Mistral Large 2407 finetuned,mistral-large-unknown-unknown-2407-unknown-unknown-unknown-true,,,,,,,,,,,
-codestral,codestral-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,
+codestral,codestral-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,
 codestral 22B,codestral-unknown-unknown-unknown-unknown-22-unknown-code-false,,,,,,,,,,,
 codestral 22b,codestral-unknown-unknown-unknown-unknown-22-unknown-code-false,,,,,,,,,,,
 codestral finetuned,codestral-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,,,,

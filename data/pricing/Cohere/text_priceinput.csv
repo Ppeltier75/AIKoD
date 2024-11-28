@@ -8,7 +8,7 @@ command-r,commandr-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
 custom,cohere-custom-unknown-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,,,,,,0.8,,
 default,cohere-default-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,0.4,,
 default model,cohere-default-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,1.0,,,,,,,,,,
-fine-tuned model - command r,command-r-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true,2.0,,,,,,,,,,,,,2.0,0.3
+fine-tuned model - command r,commandr-unknown-unknown-unknown-unknown-unknown-unknown-true,2.0,,,,,,,,,,,,,2.0,0.3
 generate,commandr-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,0.4,,
 generate-custom,commandr-custom-unknown-unknown-unknown-unknown-unknown-unknown-true,,,,,,,30.0,30.0,,,,,,,
 generate-default,command-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,15.0,15.0,,,,,,,

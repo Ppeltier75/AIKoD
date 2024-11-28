@@ -65,7 +65,7 @@ gpt-4o-2024-08-06 finetuned,gpt-4o-unknown-unknown-20240806-unknown-unknown-unkn
 gpt-4o-2024-10-01,gpt-4o-unknown-unknown-20241001-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,,,,,51.25
 gpt-4o-mini-2024-07-18,gpt-4o-mini-unknown-20240718-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,0.15,0.15,,0.15,0.15
 instructgpt (ada),ada-unknown-unknown-unknown-unknown-unknown-unknown-instruct-false,,,,,,,,,,,,,0.4,,,,,,0.4,,
-instructgpt (babbage),babbage-unknown-unknown--unknown-unknown-unknown-unknown-instruct-false,,,,,,,,,,,,,0.5,,,,,,0.5,,
+instructgpt (babbage),babbage-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,0.5,,,,,,0.5,,
 instructgpt (curie),curie-unknown-unknown-unknown-unknown-unknown-unknown-instruct-false,,,,,,,,,,,,,2.0,,,,,,2.0,,
 instructgpt (davinci),davinci-unknownunknown--unknown-unknown-unknown-unknown-instruct-false,,,,,,,,,,,,,20.0,,,,,,20.0,,
 o1-mini,o1-mini-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,,3.0,,3.0,3.0

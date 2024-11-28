@@ -42,9 +42,9 @@ jamba 1.5 large,jamba-large-unknown-1.5-unknown-unknown-unknown-unknown-false,,8
 jamba 1.5 mini,jamba-mini-unknown-1.5-unknown-unknown-unknown-unknown-false,,0.4
 jamba-instruct,jamba-unknown-unknown-unknown-unknown-unknown-unknown-instruct-false,0.7,0.7
 llama 2 13b,llama-unknown-unknown-2-unknown-13-unknown-unknown-false,0.94,0.94
-llama 2 13b chat,llama-unknown--unknown-2-unknown-13-unknown-chat-false,0.94,0.94
+llama 2 13b chat,llama-unknown-unknown-2-unknown-13-unknown-unknown-false,0.94,0.94
 llama 2 70b,llama-unknown-unknown-2-unknown-70-unknown-unknown-false,1.77,1.77
-llama 2 70b chat,llama-unknown--unknown-2-unknown-70-unknown-unknown-false,1.22,1.77
+llama 2 70b chat,llama-unknown-unknown-2-unknown-70-unknown-unknown-false,1.22,1.77
 llama 2 7b,llama-unknown-unknown-2-unknown-7-unknown-unknown-false,0.67,0.67
 llama 3 70b instruct,llama-unknown-unknown-3-unknown-70-unknown-instruct-false,11.780000000000001,3.54
 llama 3 8b instruct,llama-unknown-unknown-3-unknown-8-unknown-instruct-false,1.1,0.61

@@ -2,17 +2,17 @@ name,id_name
 Capybara 34B,capybara-unknown-unknown-unknown-unknown-34-unknown-unknown-false
 Chronos Hermes 13B v2,hermes-unknown-unknown-2-unknown-13-unknown-unknown-false
 Code Llama 13B,code-unknown-unknown-unknown-unknown-13-unknown-unknown-false
-Code Llama 13B Instruct,code-unknown-unknown-unknown-unknown-13-unknown-unknown-instruct-false
-Code Llama 13B Python,code-unknown-unknown-unknown-unknown-13-unknown-unknown-python-false
+Code Llama 13B Instruct,llama-unknown-unknown-unknown-unknown-13-unknown-instruct-false
+Code Llama 13B Python,llama-unknown-unknown-unknown-unknown-13-unknown-python-false
 Code Llama 34B,code-unknown-unknown-unknown-unknown-34-unknown-unknown-false
-Code Llama 34B Instruct,code-unknown-unknown-unknown-unknown-34-unknown-unknown-instruct-false
-Code Llama 34B Python,code-unknown-unknown-unknown-unknown-34-unknown-unknown-python-false
+Code Llama 34B Instruct,llama-unknown-unknown-unknown-unknown-34-unknown-instruct-false
+Code Llama 34B Python,llama-unknown-unknown-unknown-unknown-34-unknown-python-false
 Code Llama 70B,code-unknown-unknown-unknown-unknown-70-unknown-unknown-false
-Code Llama 70B Instruct,code-unknown-unknown-unknown-unknown-70-unknown-unknown-instruct-false
-Code Llama 70B Python,code-unknown-unknown-unknown-unknown-70-unknown-unknown-python-false
+Code Llama 70B Instruct,llama-unknown-unknown-unknown-unknown-70-unknown-instruct-false
+Code Llama 70B Python,llama-unknown-unknown-unknown-unknown-70-unknown-python-false
 Code Llama 7B,code-unknown-unknown-unknown-unknown-7-unknown-unknown-false
-Code Llama 7B Instruct,code-unknown-unknown-unknown-unknown-7-unknown-unknown-instruct-false
-Code Llama 7B Python,code-unknown-unknown-unknown-unknown-7-unknown-unknown-python-false
+Code Llama 7B Instruct,llama-unknown-unknown-unknown-unknown-7-unknown-instruct-false
+Code Llama 7B Python,llama-unknown-unknown-unknown-unknown-7-unknown-python-false
 Code Qwen 1.5 7B,qwen-unknown-unknown-1.5-unknown-7-unknown-unknown-false
 CodeGemma 2B,codegemma-unknown-unknown-unknown-2-unknown-unknown-unknown-false
 CodeGemma 7B,codegemma-unknown-unknown-unknown-7-unknown-unknown-unknown-false
@@ -20,7 +20,7 @@ DBRX Instruct,dbrx-unknown-unknown-unknown-unknown-unknown-unknown-instruct-fals
 DeepSeek Coder 1.3B Base,deepseek-unknown-base-unknown-1.3-unknown-unknown-unknown-false
 DeepSeek Coder 6.7B Base,deepseek-unknown-base-unknown-6.7-unknown-unknown-unknown-false
 DeepSeek Coder V2 Instruct,deepseek-unknown-instruct-unknown-2-unknown-unknown-unknown-false
-DeepSeek Coder V2 Lite Base,deepseek-unknown-base-unknown-2-unknown-unknown-unknown-lite-false
+DeepSeek Coder V2 Lite Base,deepseek-unknown-lite-base-2-unknown-unknown-unknown-false
 DeepSeek V2 Lite Chat,deepseek-unknown-lite-2-unknown-unknown-unknown-chat-false
 DeepSeek V2.5,deepseek-unknown-unknown-2.5-unknown-unknown-unknown-unknown-false
 Deepseek Coder 33B Instruct,deepseek-unknown-unknown-unknown-33-unknown-unknown-instruct-false
@@ -36,9 +36,9 @@ Gemma 7B Instruct,gemma-unknown-unknown-unknown-unknown-7-unknown-instruct-false
 Hermes 2 Pro Mistral 7B,hermes-mistral pro-2-unknown-7-unknown-unknown-false-false
 LLaVA V1.6 Yi 34B,llava-unknown-yi-unknown-34-unknown-unknown-false
 Llama 2 13B,llama-unknown-unknown-2-unknown-13-unknown-unknown-false
-Llama 2 13B Chat,llama-unknown--unknown-2-unknown-13-unknown-chat-false
+Llama 2 13B Chat,llama-unknown-unknown-2-unknown-13-unknown-unknown-false
 Llama 2 70B,llama-unknown-unknown-2-unknown-70-unknown-unknown-false
-Llama 2 70B Chat,llama-unknown--unknown-2-unknown-70-unknown-unknown-false
+Llama 2 70B Chat,llama-unknown-unknown-2-unknown-70-unknown-unknown-false
 Llama 2 7B,llama-unknown-unknown-2-unknown-7-unknown-unknown-false
 Llama 2 7B Chat,llama-unknown-unknown-2-unknown-7-unknown-chat-false
 Llama 3 70B Instruct,llama-unknown-unknown-3-unknown-70-unknown-instruct-false
@@ -88,8 +88,8 @@ Phi 3 Mini 128K Instruct,phi-mini-unknown-3-unknown-unknown-128-instruct-false
 Phi 3.5 Vision Instruct,phi-vision-instruct-unknown-3.5-unknown-unknown-unknown-false
 Phi-2,phi-unknown-unknown-2-unknown-unknown-unknown-unknown-false
 Phind CodeLlama 34B Python v1,codellama-unknown-unknown-unknown-34-unknown-unknown-python-false
-Phind CodeLlama 34B v1,codellama-unknown-unknown-unknown-34-unknown-unknown-false
-Phind CodeLlama 34B v2,codellama-unknown-unknown-unknown-34-unknown-unknown-false
+Phind CodeLlama 34B v1,codellama-unknown-unknown-1-unknown-34-unknown-unknown-false
+Phind CodeLlama 34B v2,codellama-unknown-unknown-2-unknown-34-unknown-unknown-false
 Pythia 12B,pythia-unknown-unknown-unknown-unknown-12-unknown-unknown-false
 QWen2.5 72B float8-mm-405b,qwen-unknown-float8-2.5-unknown-405-unknown-unknown-false
 Qwen1.5 72B Chat,qwen-unknown-unknown-1.5-unknown-72-unknown-chat-false
@@ -110,11 +110,11 @@ Qwen2.5 Coder 7B Instruct,qwen-unknown-unknown-2.5-unknown-7-unknown-instruct-fa
 Qwen2p5 Math 72b Instruct,qwen-math-unknown-2.5-unknown-72-unknown-instruct-false
 Snorkel Mistral PairRM DPO,mistral-pairrm-dpo-unknown-unknown-unknown-unknown-unknown-false
 Stable Code 3B,stable-code-unknown-unknown-unknown-3-unknown-unknown-false
-StarCoder 15.5B,starcoder-unknown-unknown-unknown-15.5-unknown-unknown-false
-StarCoder 7B,starcoder-unknown-unknown-unknown-7-unknown-unknown-false
-StarCoder2 15B,starcoder2-unknown-unknown-unknown-15-unknown-unknown-false
-StarCoder2 3B,starcoder2-unknown-unknown-unknown-3-unknown-unknown-false
-StarCoder2 7B,starcoder2-unknown-unknown-unknown-7-unknown-unknown-false
+StarCoder 15.5B,starcoder-unknown-unknown-unknown-unknown-15.5-unknown-unknown-false
+StarCoder 7B,starcoder-unknown-unknown-unknown-unknown-7-unknown-unknown-false
+StarCoder2 15B,starcoder2-unknown-unknown-unknown-unknown-15-unknown-unknown-false
+StarCoder2 3B,starcoder2-unknown-unknown-unknown-unknown-3-unknown-unknown-false
+StarCoder2 7B,starcoder2-unknown-unknown-unknown-unknown-7-unknown-unknown-false
 Toppy M 7B,toppy-m-unknown-unknown-unknown-7-unknown-unknown-false
 Yi 34B,yi-unknown-unknown-unknown-unknown-34-unknown-unknown-false
 Yi 34B Chat,yi-unknown-unknown-unknown-unknown-34-unknown-chat-false
