@@ -12,8 +12,8 @@ llama-3.1-sonar-large-128k-chat,llama-sonar-large-3.1-unknown-unknown-128-chat-f
 llama-3.1-sonar-large-128k-online,llama-sonar-large-3.1-unknown-unknown-128-online-false,,,,,,1.0,1.0,1.0
 llama-3.1-sonar-small-128k-chat,llama-sonar-small-3.1-unknown-unknown-128-chat-false,,,,,,0.2,0.2,0.2
 llama-3.1-sonar-small-128k-online,llama-sonar-small-3.1-unknown-unknown-128-online-false,,,,,,0.2,0.2,0.2
-sonar medium online,sonar-medium-unknown-unknown-unknown-unknown-unknown-online-false,0.0,0.0,0.0,,,,,
-sonar small online,sonar-small-unknown-unknown-unknown-unknown-unknown-online-false,0.0,0.0,0.0,,,,,
+sonar medium online,sonar-medium-unknown-unknown-unknown-unknown-unknown-online-false,,,,,,,,
+sonar small online,sonar-small-unknown-unknown-unknown-unknown-unknown-online-false,,,,,,,,
 vanilla 7b parameters,vanilla-unknown-unknown-unknown-unknown-7-unknown-unknown-false,,,0.2,,,,,
 vanilla 8x7b models,vanilla-unknown-unknown-unknown-unknown-8x7-unknown-unknown-false,,,0.6,,,,,
 vanilla language model 34b,vanilla-language-unknown-unknown-unknown-34-unknown-unknown-false,0.35,,,,,,,

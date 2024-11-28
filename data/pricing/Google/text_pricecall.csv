@@ -1,9 +1,9 @@
 name,id_name,2024-06-01,2024-05-22,2024-04-19,2024-03-10,2024-07-03,2024-08-26,2024-09-27,2024-10-21
 LLM Text translation,llm-unknown-text-unknown-unknown-unknown-unknown-translation-false,,,,,,,,
-claude 3 haiku,claude-haiku-unknown-3-unknown-unknown-unknown-false,,,,,,,,
-claude 3 opus,claude-opus-unknown-3-unknown-unknown-unknown-false,,,,,,,,
-claude 3 sonnet,claude-sonnet-unknown-3-unknown-unknown-unknown-false,,,,,,,,
-claude 3.5 sonnet,claude-sonnet-unknown-3.5-unknown-unknown-unknown-false,,,,,,,,
+claude 3 haiku,claude-haiku-unknown-3-unknown-unknown-unknown-unknown-false,,,,,,,,
+claude 3 opus,claude-opus-unknown-3-unknown-unknown-unknown-unknown-false,,,,,,,,
+claude 3 sonnet,claude-sonnet-unknown-3-unknown-unknown-unknown-unknown-false,,,,,,,,
+claude 3.5 sonnet,claude-sonnet-unknown-3.5-unknown-unknown-unknown-unknown-false,,,,,,,,
 codestral,codestral-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,
 codey for code chat,codey-unknown-code-chat-unknown-unknown-unknown-unknown-false,,,,,,,,
 codey for code chat 32k,codey-unknown-code-chat-unknown-unknown-unknown-32-false,,,,,,,,

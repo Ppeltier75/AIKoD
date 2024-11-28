@@ -14,16 +14,16 @@ gpt 3.5 4k 0301,gpt-unknown-unknown-3.5-0301-unknown-4-unknown-false,,2.0
 gpt 3.5 4k 0613,gpt-unknown-unknown-3.5-0613-unknown-4-unknown-false,,1.5
 gpt 3.5 turbo 0125,gpt-unknown-turbo-3.5-0125-unknown-unknown-unknown-false,,0.5
 gpt 3.5 turbo 16k,gpt-turbo-unknown-3.5-unknown-16-unknown-unknown-false,,0.5
-gpt 3.5 turbo 4k,gpt-turbo-unknown-3.5-unknown-4-unknown-false,,0.5
+gpt 3.5 turbo 4k,gpt-unknown-turbo-3.5-unknown-unknown-4-unknown-false,,0.5
 gpt 3.5 turbo instruct,gpt-unknown-turbo-3.5-unknown-unknown-unknown-instruct-false,,1.5
-gpt 4 32k,gpt-unknown-unknown-4-unknown-32-unknown-false,,60.0
-gpt 4 8k,gpt-unknown-unknown-4-unknown-8-unknown-false,,30.0
+gpt 4 32k,gpt-unknown-unknown-4-unknown-unknown-32-unknown-false,,60.0
+gpt 4 8k,gpt-unknown-unknown-4-unknown-unknown-8-unknown-false,,30.0
 gpt 4-0 2024-08-06,gpt-unknown-4-0-20240806-unknown-unknown-unknown-false,,2.5
 gpt 4-0 global deployment,gpt-unknown-4-0-unknown-unknown-unknown-unknown-false,,5.0
 gpt 4-0 mini global deployment,gpt-unknown-4-0-mini-unknown-unknown-unknown-false,,0.15
 gpt 4-0 mini regional api,gpt-unknown-4-0-mini-unknown-unknown-unknown-false,,0.15
 gpt 4-0 regional deployment,gpt-unknown-4-0-unknown-unknown-unknown-unknown-false,,5.0
-gpt 4o,gpt-4o-unknown-unknown-unknown-unknown-unknown-false,,2.8
+gpt 4o,gpt-unknown-unknown-4o-unknown-unknown-unknown-false,,2.8
 gpt 4o mini,gpt-4o-mini-unknown-unknown-unknown-unknown-unknown-false,,0.165
 gpt-3.5-turbo (16k fine-tuned),gpt-unknown-turbo-3.5-unknown-unknown-16-unknown-true,0.5,
 gpt-3.5-turbo (4k fine-tuned),gpt-unknown-turbo-3.5-unknown-unknown-4-unknown-true,0.5,
@@ -34,8 +34,8 @@ gpt-3.5-turbo-0613 (16k),gpt-turbo-unknown-3.5-0613-unknown-16-unknown-false,3.0
 gpt-3.5-turbo-1106,gpt-unknown-turbo-3.5-1106-unknown-unknown-unknown-false,1.0,
 gpt-3.5-turbo-instruct,gpt-unknown-turbo-3.5-unknown-unknown-unknown-instruct-false,1.5,
 gpt-4,gpt-unknown-unknown-4-unknown-unknown-unknown-false,30.0,
-gpt-4-32k,gpt-unknown-unknown-4-unknown-32-unknown-false,60.0,
-gpt-4o global deployment,gpt-4o-unknown-unknown-unknown-unknown-unknown-false,5.0,
+gpt-4-32k,gpt-unknown-unknown-4-unknown-unknown-32-unknown-false,60.0,
+gpt-4o global deployment,gpt-unknown-global-deployment-4o-unknown-unknown-unknown-false,5.0,
 gpt-4o regional api,gpt-4o-unknown-regional-api-unknown-unknown-unknown-false,5.0,
 jais 30b chat,jais-unknown-unknown-unknown-unknown-30-unknown-chat-false,3.2,3.2
 jamba 1.5 large,jamba-large-unknown-1.5-unknown-unknown-unknown-unknown-false,,2.0

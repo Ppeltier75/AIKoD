@@ -1,7 +1,7 @@
 name,id_name,2024-02-06,2024-04-21,2024-07-25,2024-08-26,2024-02-24,2024-04-15,2024-09-27,2024-10-21
 Hermes 2 Pro Llama 3,hermes-llama-pro-2-unknown-unknown-unknown-unknown-false,,,,,,,,
 Mistral NeMo,mistral-nemo-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,
-Phi 3.5-Vision,phi-vision-unknown-3.5-unknown-unknown-unknown-false,,,,,,,,
+Phi 3.5-Vision,phi-unknown-unknown-3.5-unknown-unknown-unknown-vision-false,,,,,,,,
 WizardLM 2,wizardlm-unknown-unknown-2-unknown-unknown-unknown-unknown-false,,,,,,,,
 code llama (34b),code-unknown-unknown-unknown-unknown-34-unknown-unknown-false,,,,,,,,
 codellama 13b,codellama-unknown-unknown-unknown-unknown-13-unknown-unknown-false,,,,,,,,

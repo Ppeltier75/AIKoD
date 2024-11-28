@@ -34,7 +34,7 @@ Gemma 2B Instruct,gemma-unknown-unknown-unknown-unknown-2-unknown-instruct-false
 Gemma 7B,gemma-unknown-unknown-unknown-unknown-7-unknown-unknown-false
 Gemma 7B Instruct,gemma-unknown-unknown-unknown-unknown-7-unknown-instruct-false
 Hermes 2 Pro Mistral 7B,hermes-mistral pro-2-unknown-7-unknown-unknown-false-false
-LLaVA V1.6 Yi 34B,llava-unknown-yi-unknown-34-unknown-unknown-false
+LLaVA V1.6 Yi 34B,llava-yi-unknown-1.6-unknown-34-unknown-unknown-false
 Llama 2 13B,llama-unknown-unknown-2-unknown-13-unknown-unknown-false
 Llama 2 13B Chat,llama-unknown-unknown-2-unknown-13-unknown-unknown-false
 Llama 2 70B,llama-unknown-unknown-2-unknown-70-unknown-unknown-false
@@ -49,12 +49,12 @@ Llama 3 8B Instruct (HF version),llama-unknown-unknown-3-unknown-8-unknown-instr
 Llama 3.1 405B Instruct,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false
 Llama 3.1 70B Instruct,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
 Llama 3.1 8B Instruct,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
-Llama 3.2 11B Vision Instruct,llama-vision-instruct-unknown-3.2-unknown-11-unknown-unknown-false
+Llama 3.2 11B Vision Instruct,llama-unknown-instruct-3.2-unknown-11-unknown-unknown-false
 Llama 3.2 1B,llama-unknown-unknown-3.2-unknown-1-unknown-unknown-false
 Llama 3.2 1B Instruct,llama-unknown-unknown-3.2-unknown-1-unknown-instruct-false
 Llama 3.2 3B,llama-unknown-unknown-3.2-unknown-3-unknown-unknown-false
 Llama 3.2 3B Instruct,llama-unknown-unknown-3.2-unknown-3-unknown-instruct-false
-Llama 3.2 90B Vision Instruct,llama-vision-instruct-unknown-3.2-unknown-90-unknown-unknown-false
+Llama 3.2 90B Vision Instruct,llama-unknown-instruct-3.2-unknown-90-unknown-unknown-false
 Llama Guard 7B,llama-guard-unknown-unknown-unknown-7-unknown-unknown-false
 Llama Guard v2 8B,llama-guard-unknown-2-unknown-8-unknown-unknown-false
 Llama Guard v3 1B,llama-guard-unknown-3-unknown-1-unknown-unknown-false

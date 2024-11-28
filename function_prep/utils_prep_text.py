@@ -303,13 +303,32 @@ def AIKoD_text_infos(json_path, text_infos_csv_path):
     :param json_path: Chemin du fichier JSON contenant les données des modèles.
     :param text_infos_csv_path: Chemin vers le fichier CSV à mettre à jour.
     """
+    # Chemin vers AIKoD_multimodal_infos.csv (chemin hardcodé)
+    multimodal_infos_csv_path = r'C:\Users\piwip\OneDrive\Documents\OCDE\AIKoD\data\models_infos\AIKoD_multimodal_infos.csv'
+
+    # Vérifier si le fichier multimodal existe
+    if not os.path.exists(multimodal_infos_csv_path):
+        print(f"Le fichier {multimodal_infos_csv_path} n'a pas été trouvé.")
+        return
+
+    # Charger le fichier AIKoD_text_infos.csv
+    text_infos_df = pd.read_csv(text_infos_csv_path)
+
+    # Charger le fichier AIKoD_multimodal_infos.csv
+    multimodal_infos_df = pd.read_csv(multimodal_infos_csv_path)
+
+    # Concaténer les deux DataFrames
+    combined_df = pd.concat([text_infos_df, multimodal_infos_df], ignore_index=True)
+
+    # Supprimer les doublons basés sur 'id_name', en gardant le premier
+    combined_df.drop_duplicates(subset='id_name', keep='first', inplace=True)
+
+    # Utiliser le DataFrame combiné pour la suite du traitement
+    text_infos_df = combined_df
 
     # Charger les données JSON
     with open(json_path, 'r', encoding='utf-8') as file:
         data = json.load(file)
-
-    # Charger le fichier AIKoD_text_infos.csv
-    text_infos_df = pd.read_csv(text_infos_csv_path)
 
     # Parcourir les modèles dans le JSON
     id_name_to_info = {}
@@ -419,5 +438,3 @@ def AIKoD_text_infos(json_path, text_infos_csv_path):
     # Supprimer le fichier temporaire
     if os.path.exists(temp_csv_path):
         os.remove(temp_csv_path)
-
-

@@ -5,10 +5,10 @@ amazon titan text premier,titan-text-premier-unknown-unknown-unknown-unknown-unk
 claude 2.0,claude-unknown-unknown-2-unknown-unknown-unknown-unknown-false,,,,,,,,8.0,8.0,8.0
 claude 2.0/2.1,claude-unknown-unknown-2.1-unknown-unknown-unknown-unknown-false,8.0,8.0,8.0,8.0,,,8.0,,,
 claude 2.1,claude-unknown-unknown-2.1-unknown-unknown-unknown-unknown-false,,,,,,,,8.0,8.0,8.0
-claude 3 haiku,claude-haiku-unknown-3-unknown-unknown-unknown-false,0.25,0.25,0.25,,,,0.25,0.25,0.25,0.25
-claude 3 opus,claude-opus-unknown-3-unknown-unknown-unknown-false,15.0,15.0,,,,,15.0,15.0,15.0,15.0
-claude 3 sonnet,claude-sonnet-unknown-3-unknown-unknown-unknown-false,3.0,3.0,3.0,3.0,,,3.0,3.0,3.0,3.0
-claude 3.5 sonnet,claude-sonnet-unknown-3.5-unknown-unknown-unknown-false,,,,,,,,3.0,3.0,3.0
+claude 3 haiku,claude-haiku-unknown-3-unknown-unknown-unknown-unknown-false,0.25,0.25,0.25,,,,0.25,0.25,0.25,0.25
+claude 3 opus,claude-opus-unknown-3-unknown-unknown-unknown-unknown-false,15.0,15.0,,,,,15.0,15.0,15.0,15.0
+claude 3 sonnet,claude-sonnet-unknown-3-unknown-unknown-unknown-unknown-false,3.0,3.0,3.0,3.0,,,3.0,3.0,3.0,3.0
+claude 3.5 sonnet,claude-sonnet-unknown-3.5-unknown-unknown-unknown-unknown-false,,,,,,,,3.0,3.0,3.0
 claude instant,claude-instant-unknown-unknown-unknown-unknown-unknown-unknown-false,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8,0.8
 command,command-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5,1.5
 command light,command-light-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,0.3,0.3,0.3

@@ -66,11 +66,19 @@ def extract_pricing_text(json_path, output_dir):
                         row_call["id_name"] = id_name
 
                     # Ajouter les données brutes de price_call
-                    try:
-                        avg_price_call = sum(map(float, price_call)) / len(price_call) if price_call else None
-                        row_call[date_str] = avg_price_call
-                    except ValueError:
-                        pass
+                    price_call_values = []
+                    for pc in price_call:
+                        try:
+                            pc_str = str(pc).strip()
+                            if pc_str == '':
+                                continue
+                            price_call_value = float(pc_str)
+                            price_call_values.append(price_call_value)
+                        except (ValueError, TypeError):
+                            continue
+
+                    avg_price_call = sum(price_call_values) / len(price_call_values) if price_call_values else None
+                    row_call[date_str] = avg_price_call
 
                     price_input_data.append(row_input)
                     price_output_data.append(row_output)
@@ -102,7 +110,6 @@ def extract_pricing_text(json_path, output_dir):
 
 
 
-
 def harmonize_and_convert_prices_text(units, prices, currencies, company):
     """
     Harmonise les prix en fonction des unités textuelles et convertit en USD.
@@ -113,13 +120,19 @@ def harmonize_and_convert_prices_text(units, prices, currencies, company):
     :param company: Nom de la société (utilisé pour des conversions spécifiques).
     :return: Liste des prix harmonisés en USD.
     """
-    conversion_rates = {'EUR': 1.1, 'CHF': 1.17, 'CNY': 0.15, 'CREDITS': 0.01, 'DBU': 0.070, 'USD': 1.0}
+    conversion_rates = {'EUR': 1.1, 'CHF': 1.17, 'CNY': 0.15, 'CREDITS': 0.01,
+                        'DBU': 0.070, 'USD': 1.0}
     harmonized_prices = []
 
     for i, (unit, price) in enumerate(zip(units, prices)):
         unit = unit.lower()
-        # Extraire les valeurs numériques même si elles sont précédées par un symbole
-        price = float(re.search(r'\d+(\.\d+)?', str(price)).group()) if re.search(r'\d+(\.\d+)?', str(price)) else 0.0
+        price_str = str(price).strip()
+        price_match = re.search(r'\d+(\.\d+)?', price_str)
+        if price_match:
+            price = float(price_match.group())
+        else:
+            # Ignorer les prix invalides ou manquants
+            continue
 
         # Détecter la devise et appliquer le taux de conversion
         currency = currencies[i % len(currencies)].upper() if currencies else 'USD'
@@ -147,6 +160,7 @@ def harmonize_and_convert_prices_text(units, prices, currencies, company):
 
     return harmonized_prices
 
+
 def harmonize_and_convert_price_audiototext(units, prices, currencies, company):
     """
     Harmonise les prix en fonction des unités audio et les convertit en 'minute audio',
@@ -158,20 +172,24 @@ def harmonize_and_convert_price_audiototext(units, prices, currencies, company):
     :param company: Nom de la société (utilisé pour des conversions spécifiques).
     :return: Liste des prix harmonisés en 'minute audio' (convertis en USD si applicable).
     """
-    conversion_rates = {'EUR': 1.1, 'CHF': 1.17, 'CNY': 0.15, 'CREDITS': 0.01, 'DBU': 0.070, 'USD': 1.0}
+    conversion_rates = {'EUR': 1.1, 'CHF': 1.17, 'CNY': 0.15, 'CREDITS': 0.01,
+                        'DBU': 0.070, 'USD': 1.0}
     harmonized_prices = []
 
     for i, (unit, price) in enumerate(zip(units, prices)):
-        try:
-            price = float(re.search(r'\d+(\.\d+)?', str(price)).group()) if re.search(r'\d+(\.\d+)?', str(price)) else 0.0
-        except AttributeError:
+        unit = unit.lower()
+        price_str = str(price).strip()
+        price_match = re.search(r'\d+(\.\d+)?', price_str)
+        if price_match:
+            price = float(price_match.group())
+        else:
+            # Ignorer les prix invalides ou manquants
             continue
 
         # Détecter la devise et appliquer le taux de conversion
         currency = currencies[i % len(currencies)].upper() if currencies else 'USD'
         rate = conversion_rates.get(currency, 1.0)
 
-        unit = unit.lower()
         if "second audio" in unit or "audio second" in unit:
             price_per_minute = price * 60
         elif "minute audio" in unit:
@@ -187,6 +205,7 @@ def harmonize_and_convert_price_audiototext(units, prices, currencies, company):
         harmonized_prices.append(price_in_usd)
 
     return harmonized_prices
+
 
 def extract_pricing_audiototext(json_path, output_dir):
     """
@@ -319,7 +338,6 @@ def extract_pricing_texttoimage(json_path, output_dir):
             price_output_df.to_csv(output_csv_path, index=False)
             print(f"Fichier sauvegardé : {output_csv_path}")
 
-
 def harmonize_and_convert_price_texttoimage(units, prices, currencies, company):
     """
     Harmonise les prix en fonction des unités contenant 'image' et convertit en USD.
@@ -330,21 +348,24 @@ def harmonize_and_convert_price_texttoimage(units, prices, currencies, company):
     :param company: Nom de la société (utilisé pour des conversions spécifiques).
     :return: Liste des prix harmonisés en USD.
     """
-    conversion_rates = {'EUR': 1.1, 'CHF': 1.17, 'CNY': 0.15, 'CREDITS': 0.01, 'DBU': 0.070, 'USD': 1.0}
+    conversion_rates = {'EUR': 1.1, 'CHF': 1.17, 'CNY': 0.15, 'CREDITS': 0.01,
+                        'DBU': 0.070, 'USD': 1.0}
     harmonized_prices = []
 
     for i, (unit, price) in enumerate(zip(units, prices)):
-        try:
-            # Extraire les valeurs numériques même si elles sont précédées par un symbole
-            price = float(re.search(r'\d+(\.\d+)?', str(price)).group()) if re.search(r'\d+(\.\d+)?', str(price)) else 0.0
-        except AttributeError:
+        unit = unit.lower()
+        price_str = str(price).strip()
+        price_match = re.search(r'\d+(\.\d+)?', price_str)
+        if price_match:
+            price = float(price_match.group())
+        else:
+            # Ignorer les prix invalides ou manquants
             continue
 
         # Détecter la devise et appliquer le taux de conversion
         currency = currencies[i % len(currencies)].upper() if currencies else 'USD'
         rate = conversion_rates.get(currency, 1.0)
 
-        unit = unit.lower()
         if "image" in unit:
             # Diviser le prix par le nombre dans l'unité, si applicable
             match = re.search(r'(\d+)\s*image', unit)

@@ -3,18 +3,18 @@ name,id_name,2024-06-18,2024-07-03,2024-08-26,2024-09-27,2024-10-21
 Alpaca (7B),alpaca-unknown-unknown-unknown-unknown-7-unknown-unknown-false,0.25999999999999995,0.25999999999999995,0.25999999999999995,0.21000000000000002,0.21000000000000002
 Chat GPT 3.5 Turbo,chatgpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-false,,,,3.15,
 Chat GPT 3.5 Turbo,gpt-turbo-unknown-3.5-unknown-unknown-unknown-chat-false,,,,,3.15
-Chat GPT 4,chatgpt-unknown-unknown-4-unknown-unknown-unknown-false,,,,31.5,
 Chat GPT 4,gpt-unknown-unknown-4-unknown-unknown-unknown-chat-false,,,,,31.5
+Chat GPT 4,gpt-unknown-unknown-4-unknown-unknown-unknown-false,,,,31.5,
 Chat GPT 4 32k,gpt-unknown-unknown-4-unknown-unknown-32-chat-false,,,,63.0,63.0
-Chat GPT 4 Turbo,chatgpt-unknown-turbo-4-unknown-unknown-unknown-false,,,,10.5,
 Chat GPT 4 Turbo,gpt-unknown-turbo-4-unknown-unknown-unknown-chat-false,,,,,10.5
-Chat GPT 4o mini,chatgpt-mini-unknown-4o-unknown-unknown-unknown-false,,,,0.16,
+Chat GPT 4 Turbo,gpt-unknown-turbo-4-unknown-unknown-unknown-false,,,,10.5,
+Chat GPT 4o mini,gpt-mini-unknown-4o-unknown-unknown-unknown-false,,,,0.16,
 Chat GPT 4o mini,gpt-mini-unknown-4o-unknown-unknown-unknown-unknown-unknown-false,,,,,0.16
 Chat GPT-3.5 Turbo 0125,gpt-turbo-unknown-3.5-0125-unknown-unknown-chat-false,,,,0.5199999999999999,0.5199999999999999
 Chat GPT-3.5 Turbo 1106,gpt-turbo-unknown-3.5-1106-unknown-unknown-chat-false,,,,1.05,1.05
 Chat GPT-3.5 Turbo Instruct,gpt-turbo-unknown-3.5-unknown-unknown-unknown-instruct-false,,,,1.58,1.58
-Chat GPT-4o,chatgpt-unknown-unknown-4o-unknown-unknown-unknown-false,,,,5.25,
 Chat GPT-4o,gpt-4o-unknown-unknown-unknown-unknown-unknown-chat-false,,,,,5.25
+Chat GPT-4o,gpt-unknown-unknown-4o-unknown-unknown-unknown-false,,,,5.25,
 Claude 3 Haiku,claude-haiku-unknown-3-unknown-unknown-unknown-unknown-false,,,,0.25999999999999995,0.25999999999999995
 Claude 3 Opus,claude-opus-unknown-3-unknown-unknown-unknown-unknown-false,,,,15.75,15.75
 Claude 3 Sonnet,claude-sonnet-unknown-3-unknown-unknown-unknown-unknown-false,,,,3.15,3.15
@@ -76,7 +76,7 @@ LLaMA-2-32K (7B),llama-unknown-unknown-2-unknown-7-32-unknown-false,0.2599999999
 LLaMA-2-7B-32K-Instruct (7B),llama-unknown-unknown-2-unknown-7-32-instruct-false,0.25999999999999995,0.25999999999999995,0.25999999999999995,0.21000000000000002,0.21000000000000002
 LLaMA-3 Chat (70B),llama-unknown-unknown-3-unknown-70-unknown-chat-false,,,,0.94,0.94
 LLaMA-3 Chat (8B),llama-unknown-unknown-3-unknown-8-unknown-chat-false,,,,0.21000000000000002,0.21000000000000002
-LLaVa v1.6 - Mistral 7b,llava-mistral-unknown-unknown-7-unknown-unknown-false,,,,0.19,0.19
+LLaVa v1.6 - Mistral 7b,llava-mistral-unknown-1.6-unknown-7-unknown-unknown-false,,,,0.19,0.19
 LLama-3 (70B),llama-unknown-unknown-3-unknown-70-unknown-unknown-false,,,,0.94,0.94
 Llama 3 70B Instruct Lite,llama-unknown-lite-3-unknown-70-unknown-instruct-false,,,,0.57,0.57
 Llama 3 70B Instruct Reference,llama-unknown-reference-3-unknown-70-unknown-instruct-false,,,,0.94,0.94
@@ -85,9 +85,9 @@ Llama 3 8B Instruct Reference,llama-unknown-reference-3-unknown-8-unknown-instru
 Llama 3.1 (405B) Instruct Turbo,llama-unknown-turbo-3.1-unknown-405-unknown-instruct-false,,,,5.25,5.25
 Llama 3.1 70B Instruct Turbo,llama-unknown-turbo-3.1-unknown-70-unknown-turbo-false,,,,0.92,0.92
 Llama 3.1 8B Instruct Turbo,llama-unknown-turbo-3.1-unknown-8-unknown-instruct-false,,,,0.19,0.19
-Llama 3.2 11B Vision Instruct Turbo,llama-vision-instruct-turbo-unknown-3.2-unknown-11-unknown-unknown-false,,,,0.19,0.19
+Llama 3.2 11B Vision Instruct Turbo,llama-unknown-turbo-3.2-unknown-11-unknown-instruct-false,,,,0.19,0.19
 Llama 3.2 3B Instruct Turbo,llama-unknown-turbo-3.2-unknown-3-unknown-instruct-false,,,,0.060000000000000005,0.060000000000000005
-Llama 3.2 90B Vision Instruct Turbo,llama-vision-instruct-turbo-unknown-3.2-unknown-90-unknown-unknown-false,,,,1.26,1.26
+Llama 3.2 90B Vision Instruct Turbo,llama-unknown-turbo-3.2-unknown-90-unknown-instruct-false,,,,1.26,1.26
 Llama-3 (70B),llama-unknown-unknown-3-unknown-70-unknown-unknown-false,,1.17,1.17,,
 Llama-3 (8B),llama-unknown-unknown-3-unknown-8-unknown-unknown-false,,0.25999999999999995,0.25999999999999995,,
 Llama-3 70B Gradient Instruct,llama-unknown-gradient-3-unknown-70-unknown-instruct-false,,,,0.5199999999999999,0.5199999999999999
@@ -168,10 +168,10 @@ Vicuna v1.5 16k (13B),vicuna-unknown-unknown-1.5-unknown-13-16-unknown-false,,,,
 WizardCoder Python v1.0 (34B),wizardcoder-unknown-unknown-1.0-34-unknown-unknown-python-false,1.0399999999999998,,,0.8400000000000001,0.8400000000000001
 WizardLM v1.2 (13B),wizardlm-unknown-unknown-1.2-unknown-13-unknown-unknown-false,0.39,0.39,0.39,0.21000000000000002,0.21000000000000002
 Zephyr 7B,zephyr-unknown-unknown-unknown-unknown-7-unknown-unknown-false,0.25999999999999995,0.25999999999999995,0.25999999999999995,0.5199999999999999,0.5199999999999999
-claude-3-haiku,claude-haiku-unknown-3-unknown-unknown-unknown-false,0.325,0.325,0.325,,
-claude-3-opus,claude-opus-unknown-3-unknown-unknown-unknown-false,19.5,19.5,19.5,,
-claude-3-sonnet,claude-sonnet-unknown-3-unknown-unknown-unknown-false,3.9,3.9,3.9,,
-claude-3.5-sonnet,claude-sonnet-unknown-3.5-unknown-unknown-unknown-false,,,3.9,,
+claude-3-haiku,claude-haiku-unknown-3-unknown-unknown-unknown-unknown-false,0.325,0.325,0.325,,
+claude-3-opus,claude-opus-unknown-3-unknown-unknown-unknown-unknown-false,19.5,19.5,19.5,,
+claude-3-sonnet,claude-sonnet-unknown-3-unknown-unknown-unknown-unknown-false,3.9,3.9,3.9,,
+claude-3.5-sonnet,claude-sonnet-unknown-3.5-unknown-unknown-unknown-unknown-false,,,3.9,,
 gpt-3.5-turbo,gpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-false,0.65,0.65,0.65,,
 gpt-3.5-turbo-0613,gpt-unknown-turbo-3.5-0613-unknown-unknown-unknown-false,1.95,1.95,1.95,,
 gpt-3.5-turbo-16k,gpt-turbo-unknown-3.5-unknown-16-unknown-unknown-false,3.9,3.9,3.9,,
@@ -179,10 +179,10 @@ gpt-3.5-turbo-16k-0613,gpt-turbo-unknown-3.5-0613-unknown-16-unknown-false,3.9,3
 gpt-3.5-turbo-instruct,gpt-unknown-turbo-3.5-unknown-unknown-unknown-instruct-false,1.95,1.95,1.95,,
 gpt-4,gpt-unknown-unknown-4-unknown-unknown-unknown-false,39.0,39.0,39.0,,
 gpt-4-0613,gpt-unknown-unknown-4-0613-unknown-unknown-unknown-false,39.0,39.0,39.0,,
-gpt-4-32k,gpt-unknown-unknown-4-unknown-32-unknown-false,78.0,78.0,78.0,,
-gpt-4-32k-0613,gpt-unknown-unknown-4-0613-32-unknown-false,78.0,78.0,78.0,,
-gpt-4-turbo,gpt-turbo-unknown-4-unknown-unknown-unknown-false,13.0,13.0,13.0,,
-gpt-4o,gpt-4o-unknown-unknown-unknown-unknown-unknown-false,6.5,6.5,6.5,,
+gpt-4-32k,gpt-unknown-unknown-4-unknown-unknown-32-unknown-false,78.0,78.0,78.0,,
+gpt-4-32k-0613,gpt-unknown-unknown-4-0613-unknown-unknown-32-unknown-false,78.0,78.0,78.0,,
+gpt-4-turbo,gpt-unknown-turbo-4-unknown-unknown-unknown-false,13.0,13.0,13.0,,
+gpt-4o,gpt-unknown-unknown-4o-unknown-unknown-unknown-false,6.5,6.5,6.5,,
 gpt-4o mini,gpt-4o-mini-unknown-unknown-unknown-unknown-unknown-false,,,0.195,,
 llama-3-70b instruct lite,llama-unknown-lite-3-unknown-70-unknown-instruct-false,,,0.7020000000000001,,
 llama-3.1-70b instruct turbo,llama-unknown-turbo-3.1-unknown-70-unknown-turbo-false,,,3.822,,

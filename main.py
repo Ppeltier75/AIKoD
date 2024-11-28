@@ -70,7 +70,7 @@ from dotenv import load_dotenv
 from function_utils.utils_cleaning import remove_id_names_with_wrong_segments
 
 base_path = os.path.abspath(os.path.dirname(__file__))
-csv_path = os.path.join(base_path, "data", "id_name", "AIKoD", "AIKoD_text_idname.csv")
+csv_path = os.path.join(base_path, "data", "id_name", "AIKoD", "AIKoD_multimodal_idname.csv")
 expected_segments = 9  # Vous pouvez modifier ce nombre selon vos besoins
 
 remove_id_names_with_wrong_segments(csv_path, expected_segments)
@@ -304,7 +304,7 @@ base_path = os.path.abspath(os.path.dirname(__file__))
 input_json_path = os.path.join(base_path, "data", "API", "AIKoD_API_base_v0.json")
 
 # Chemin où vous souhaitez enregistrer le nouveau fichier JSON
-output_json_path = os.path.join(base_path, "data", "API", "API_date_v3.json")
+output_json_path = os.path.join(base_path, "data", "API", "API_date_v4.3.json")
 
 # Appel de la fonction
 generate_API_date(input_json_path, output_json_path)

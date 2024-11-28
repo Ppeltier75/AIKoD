@@ -1,7 +1,7 @@
 name,id_name,2024-04-21,2024-03-03,2024-02-22,2024-01-26,2023-09-25,2023-05-28,2023-05-21,2023-03-21,2023-02-01,2022-10-22,2022-08-16
-base,base-unknown-unknown-unknown-unknown-unknown-unknown-false,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,,
+base,base-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3,,
 base-control,base-control-unknown-unknown-unknown-unknown-unknown-unknown-false,0.375,0.375,0.375,0.375,0.375,,,,,,
-extended,extended-unknown-unknown-unknown-unknown-unknown-unknown-false,0.45,0.45,0.45,0.45,0.45,0.45,0.45,0.45,0.45,,
+extended,extended-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,0.45,0.45,0.45,0.45,0.45,0.45,0.45,0.45,0.45,,
 extended-control,extended-control-unknown-unknown-unknown-unknown-unknown-unknown-false,0.5625,0.5625,0.5625,0.5625,0.5625,,,,,,
 luminous base,luminous-base-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,
 luminous enhanced,luminous-enhanced-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,

@@ -3,7 +3,7 @@ airoboros-70b,airoboros-unknown-unknown-unknown-unknown-70-unknown-unknown-false
 codellama-34b-instruct,codellama-unknown-unknown-unknown-unknown-34-unknown-instruct-false,,,0.6,0.6,1.0,0.9,0.9,0.95,,,0.95,0.95,0.95,0.95,0.95,0.95,0.95,,
 dbrx,dbrx-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,0.6,0.6,,,,,,,,,,,,,,,
 dolphin-2.6-mixtral-8x7b,dolphin-mixtral-unknown-2.6-unknown-8x7-unknown-unknown-false,0.24,0.24,0.24,0.27,,,,,0.24,,,,,,,,,,
-gemma-2-27b-it,gemma-unknown-it-2-unknown-27-unknown-unknown-false,,,,,,,,,,,,,,,,,,,0.0
+gemma-2-27b-it,gemma-unknown-it-2-unknown-27-unknown-unknown-false,,,,,,,,,,,,,,,,,,,
 gemma-7b,gemma-unknown-unknown-unknown-unknown-7-unknown-unknown-false,0.07,0.07,0.1,,,,,,0.07,,,,,,,,,,
 llama-2-13b-chat,llama-unknown-unknown-2-unknown-13-unknown-unknown-false,,0.13,0.18,0.22,1.0,0.9,0.9,0.95,,,0.95,0.95,0.95,0.95,0.95,0.95,0.95,,
 llama-2-70b-chat,llama-unknown-unknown-2-unknown-70-unknown-unknown-false,,0.8,0.8,0.9,0.9,0.9,0.9,0.95,,,0.95,0.95,0.95,0.95,0.95,0.95,0.95,,
@@ -13,7 +13,7 @@ llama-3-8b-instruct,llama-unknown-unknown-3-unknown-8-unknown-instruct-false,0.0
 llama-3.1-405b-instruct,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false,,,,,,,,,,2.7,,,,,,,,1.79,1.79
 llama-3.1-70b-instruct,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false,,,,,,,,,,0.4,,,,,,,,0.4,0.4
 llama-3.1-8b-instruct,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false,,,,,,,,,,0.055,,,,,,,,0.055,0.055
-llama-3.2-11b-vision-instruct,llama-vision-instruct-unknown-3.2-unknown-11-unknown-unknown-false,,,,,,,,,,,,,,,,,,,0.0
+llama-3.2-11b-vision-instruct,llama-unknown-instruct-3.2-unknown-11-unknown-unknown-false,,,,,,,,,,,,,,,,,,,
 lzlv-70b,lzlv-unknown-unknown-unknown-unknown-70-unknown-unknown-false,0.79,0.79,0.79,0.9,1.0,0.9,0.9,0.95,0.79,0.4,0.95,0.95,0.95,0.95,0.95,0.95,0.95,0.4,0.4
 mistral-7b,mistral-unknown-unknown-unknown-unknown-7-unknown-unknown-false,0.07,0.07,,0.13,1.0,0.9,0.9,0.95,0.064,0.055,0.95,0.95,0.95,0.95,0.95,0.95,0.95,,
 mistral-7b-v2,mistral-unknown-unknown-2-unknown-7-unknown-unknown-false,0.07,0.07,0.1,,,,,,0.07,0.055,,,,,,,,,
@@ -26,11 +26,11 @@ mythomax-l2-13b,mythomax-unknown-unknown-l2-unknown-13-unknown-unknown-false,0.1
 mythomax-l2-13b-turbo,mythomax-unknown-turbo-l2-unknown-13-unknown-unknown-false,0.13,0.13,,,,,,,,,,,,,,,,,
 openchat-3.5,openchat-unknown-unknown-3.5-unknown-unknown-unknown-unknown-false,0.07,0.07,0.13,0.13,1.0,0.9,0.9,,0.07,0.055,,,,,,,,0.055,0.055
 phi-3-medium-4k,phi-medium-unknown-3-unknown-unknown-4-unknown-false,0.14,,,,,,,,0.14,0.14,,,,,,,,,
-phind-codellama-34b-v2,codellama-unknown-unknown-2-unknown-34-unknown-unknown-false,0.6,0.6,0.6,0.6,1.0,0.9,0.9,,0.6,,,,,,,,,,0.0
+phind-codellama-34b-v2,codellama-unknown-unknown-2-unknown-34-unknown-unknown-false,0.6,0.6,0.6,0.6,1.0,0.9,0.9,,0.6,,,,,,,,,,
 qwen2-72b,qwen-unknown-unknown-2-unknown-72-unknown-unknown-false,0.79,,,,,,,,0.77,0.4,,,,,,,,0.4,
-qwen2-7b,qwen-unknown-unknown-2-unknown-7-unknown-unknown-false,0.07,,,,,,,,0.07,0.055,,,,,,,,0.055,0.0
+qwen2-7b,qwen-unknown-unknown-2-unknown-7-unknown-unknown-false,0.07,,,,,,,,0.07,0.055,,,,,,,,0.055,
 sdxl,sdxl-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,,,
-starcoder2-15b,starcoder2-unknown-unknown-unknown-unknown-15-unknown-unknown-false,,0.6,,,,,,,,,,,,,,,,,0.0
+starcoder2-15b,starcoder2-unknown-unknown-unknown-unknown-15-unknown-unknown-false,,0.6,,,,,,,,,,,,,,,,,
 wizardlm-2-7b,wizardlm-unknown-unknown-2-unknown-7-unknown-unknown-false,0.07,0.07,0.1,,,,,,0.07,0.055,,,,,,,,0.055,0.055
 wizardlm-2-8x22b,wizardlm-unknown-unknown-2-unknown-8x22-unknown-unknown-false,0.65,0.65,,,,,,,0.65,0.5,,,,,,,,0.5,0.5
 yi-34b-chat,yi-unknown-unknown-unknown-unknown-34-unknown-chat-false,,,0.6,0.6,1.0,0.9,0.9,,,,,,,,,,,,

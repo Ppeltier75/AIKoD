@@ -99,7 +99,6 @@ def init_API(pricing_directory, output_json_path):
 
 
 
-
 def add_infos_to_API(models_infos_directory, api_json_path):
     """
     Complète le fichier JSON des modèles avec des informations supplémentaires provenant des fichiers CSV appropriés.
@@ -133,7 +132,7 @@ def add_infos_to_API(models_infos_directory, api_json_path):
     # Créer un dictionnaire pour regrouper les modèles par type
     models_by_type = {}
     for model in models:
-        type_name = model['type']
+        type_name = model.get('type')
         if type_name not in models_by_type:
             models_by_type[type_name] = []
         models_by_type[type_name].append(model)
@@ -166,15 +165,40 @@ def add_infos_to_API(models_infos_directory, api_json_path):
 
         # Pour chaque modèle du type courant, ajouter les informations du CSV
         for model in models_list:
-            id_name = model['id_name']
+            id_name = model.get('id_name')
             if id_name in csv_info_dict:
                 # Obtenir les informations du CSV pour cet 'id_name'
                 csv_info = csv_info_dict[id_name]
                 # Ajouter les informations au modèle, en excluant 'id_name'
                 for key, value in csv_info.items():
-                    model[key] = value
+                    if key != 'id_name':
+                        model[key] = value
             else:
                 print(f"L'id_name '{id_name}' n'a pas été trouvé dans le fichier CSV : {csv_path}")
+            
+            # Ajouter blended_price pour les modèles de type 'text'
+            if type_name == 'text':
+                price_input = model.get('price_input')
+                price_output = model.get('price_output')
+                price_call = model.get('price_call')
+
+                # Vérifier et convertir les prix en float
+                def parse_price(value):
+                    try:
+                        return float(value) if value not in [None, '', 'null'] else None
+                    except (ValueError, TypeError):
+                        return None
+
+                price_input = parse_price(price_input)
+                price_output = parse_price(price_output)
+                price_call = parse_price(price_call) or 0.0  # Si price_call est None, on le met à 0.0
+
+                # Calculer blended_price si possible
+                if price_input is not None and price_output is not None:
+                    blended_price = (3/4) * price_input + (1/4) * price_output + 1000 * price_call
+                    model['blended_price'] = blended_price
+                else:
+                    model['blended_price'] = None
 
     # Remplacer les NaN par None dans l'ensemble de la liste des modèles
     replace_nan_with_none(models)
@@ -199,6 +223,13 @@ def pareto_frontier(models, price_field, quality_field, maximize_quality):
     Retourne:
     - pareto_models (list): Liste des modèles sur le front de Pareto.
     """
+    # Exclure les modèles dont le prix est 0 ou None
+    models = [model for model in models if model['_parsed_price'] is not None and model['_parsed_price'] > 0]
+
+    # Vérifier s'il y a des modèles restants après le filtrage
+    if not models:
+        return []
+
     # Trier les modèles par prix croissant
     models_sorted = sorted(models, key=lambda x: x['_parsed_price'])
     pareto_models = []
@@ -206,6 +237,8 @@ def pareto_frontier(models, price_field, quality_field, maximize_quality):
 
     for model in models_sorted:
         quality = model['_parsed_quality']
+        if quality is None:
+            continue  # Ignorer les modèles sans qualité définie
         if current_best_quality is None:
             pareto_models.append(model)
             current_best_quality = quality
@@ -224,7 +257,7 @@ def pareto_frontier(models, price_field, quality_field, maximize_quality):
 
 def generate_API_date(input_json_path, output_json_path):
     """
-    Génère un fichier JSON contenant les modèles disponibles pour chaque mois de 2023-01 à 2024-09,
+    Génère un fichier JSON contenant les modèles disponibles pour chaque mois de 2023-01 à 2024-11,
     catégorisés par 'type', avec les 'models_star' par 'type' représentant le Pareto optimal
     en termes de qualité et de prix selon les critères spécifiés.
 
@@ -339,7 +372,7 @@ def generate_API_date(input_json_path, output_json_path):
 
             # Définir les champs de prix et de qualité selon le type
             if type_ == 'text':
-                price_field = 'price_output'
+                price_field = 'blended_price'
                 quality_field = 'quality_index'
                 maximize_quality = True
             elif type_ == 'audiototext':
@@ -359,7 +392,7 @@ def generate_API_date(input_json_path, output_json_path):
             for m in models:
                 price = parse_float(m.get(price_field))
                 quality = parse_float(m.get(quality_field))
-                if price is not None and quality is not None:
+                if price is not None and price > 0 and quality is not None:
                     m['_parsed_price'] = price
                     m['_parsed_quality'] = quality
                     models_filtered.append(m)
@@ -367,11 +400,16 @@ def generate_API_date(input_json_path, output_json_path):
             if models_filtered:
                 # Appliquer le filtrage Pareto
                 pareto_models = pareto_frontier(models_filtered, '_parsed_price', '_parsed_quality', maximize_quality)
-                # Enlever les champs temporaires
+                # Enlever les champs temporaires des modèles Pareto
                 for m in pareto_models:
-                    del m['_parsed_price']
-                    del m['_parsed_quality']
+                    m.pop('_parsed_price', None)
+                    m.pop('_parsed_quality', None)
                 models_star[type_] = pareto_models
+
+            # Enlever les champs temporaires des modèles restants
+            for m in models:
+                m.pop('_parsed_price', None)
+                m.pop('_parsed_quality', None)
 
         # Convertir models_list en dictionnaire standard
         models_list = dict(models_list)
@@ -392,4 +430,3 @@ def generate_API_date(input_json_path, output_json_path):
         json.dump(api_data, f, ensure_ascii=False, indent=4)
 
     print(f"Le fichier JSON a été généré et enregistré à {output_json_path}.")
-
