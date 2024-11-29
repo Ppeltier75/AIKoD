@@ -88,12 +88,12 @@ flux-schnell-fp8-1-unknown-30-false-unknown-false,,2024-10-31,30.0,,1045.0,1.1,4
 flux-schnell-free-1-unknown-unknown-false-unknown-false,blackforestlabs,2024-10-21,,,1045.0,1.1,4.0,1024.0,DEU
 flux-schnell-loras-1-1024x1024-4-false-unknown-false,blackforestlabs,2024-09-27,4.0,1024.0,1045.0,1.1,4.0,1024.0,DEU
 flux-pro-unknown-1.1-unknown-unknown-false-unknown-false,blackforestlabs,2024-10-21,,,1135.0,4.2,50.0,1024.0,DEU
-ideogram-default-unknown-0.2-unknown-unknown-false-unknown-false,ideogram,2024-10-31,,,,,,,
-ideogram-default-unknown-1-unknown-unknown-false-unknown-false,ideogram,2024-10-31,,,1069.0,16.1,,,
-ideogram-unknown-turbo-1-unknown-unknown-false-unknown-false,ideogram,2024-10-31,,,1069.0,16.1,,,
-ideogram-default-unknown-2-unknown-unknown-false-unknown-false,ideogram,2024-10-31,,,1094.0,20.4,,,
-ideogram-quality-unknown-2-unknown-unknown-false-unknown-false,ideogram,2024-10-31,,,1094.0,20.4,,,
-ideogram-unknown-turbo-2-unknown-unknown-false-unknown-false,ideogram,2024-10-31,,,1086.0,11.8,,,
+ideogram-default-unknown-0.2-unknown-unknown-false-unknown-false,ideogram,2024-10-31,,,,,,,CAN
+ideogram-default-unknown-1-unknown-unknown-false-unknown-false,ideogram,2024-10-31,,,1069.0,16.1,,,CAN
+ideogram-unknown-turbo-1-unknown-unknown-false-unknown-false,ideogram,2024-10-31,,,1069.0,16.1,,,CAN
+ideogram-default-unknown-2-unknown-unknown-false-unknown-false,ideogram,2024-10-31,,,1094.0,20.4,,,CAN
+ideogram-quality-unknown-2-unknown-unknown-false-unknown-false,ideogram,2024-10-31,,,1094.0,20.4,,,CAN
+ideogram-unknown-turbo-2-unknown-unknown-false-unknown-false,ideogram,2024-10-31,,,1086.0,11.8,,,CAN
 imagen-unknown-unknown-1-unknown-unknown-false-unknown-false,google,2024-03-10,,,,,,,USA
 imagen-unknown-unknown-2-unknown-unknown-false-unknown-false,google,2024-08-26,,,,,,,USA
 imagen-unknown-unknown-3-unknown-unknown-false-unknown-false,google,2024-08-26,,,,,,,USA
@@ -101,15 +101,15 @@ imagen-fast-unknown-3-unknown-unknown-false-unknown-false,google,2024-08-26,,,,,
 stablediffusion-japonese-xl-1-unknown-30-false-unknown-false,,2024-10-31,30.0,,909.0,1.1,30.0,1024.0,
 juggernaut-unknown-unknown-9-unknown-30-false-unknown-false,juggernaut ai,2024-07-25,30.0,,,,,,
 juggernaut-lighting-unknown-9-unknown-4-false-unknown-false,juggernaut ai,2024-07-25,4.0,,,,,,
-midjourney-unknown-unknown-1-unknown-unknown-false-unknown-false,midjourney,2023-01-30,,,1098.0,87.7,,,
-midjourney-unknown-unknown-2-unknown-unknown-false-unknown-false,midjourney,2023-01-30,,,1098.0,87.7,,,
-midjourney-unknown-unknown-3-unknown-unknown-false-unknown-false,midjourney,2023-01-30,,,1098.0,87.7,,,
-midjourney-unknown-unknown-4-unknown-unknown-false-unknown-false,midjourney,2023-01-30,,,1098.0,87.7,,,
-midjourney-unknown-unknown-5-unknown-unknown-false-unknown-false,midjourney,2024-01-14,,,1098.0,87.7,,,
-midjourney-unknown-unknown-5.1-unknown-unknown-false-unknown-false,midjourney,2024-01-14,,,1098.0,87.7,,,
-midjourney-unknown-unknown-5.2-unknown-unknown-false-unknown-false,midjourney,2024-01-14,,,1098.0,87.7,,,
-midjourney-unknown-unknown-6-unknown-unknown-false-unknown-false,midjourney,2024-10-31,,,1084.0,80.8,,,
-midjourney-unknown-unknown-6.1-unknown-unknown-false-unknown-false,midjourney,2024-10-31,,,1098.0,87.7,,,
+midjourney-unknown-unknown-1-unknown-unknown-false-unknown-false,midjourney,2023-01-30,,,1098.0,87.7,,,USA
+midjourney-unknown-unknown-2-unknown-unknown-false-unknown-false,midjourney,2023-01-30,,,1098.0,87.7,,,USA
+midjourney-unknown-unknown-3-unknown-unknown-false-unknown-false,midjourney,2023-01-30,,,1098.0,87.7,,,USA
+midjourney-unknown-unknown-4-unknown-unknown-false-unknown-false,midjourney,2023-01-30,,,1098.0,87.7,,,USA
+midjourney-unknown-unknown-5-unknown-unknown-false-unknown-false,midjourney,2024-01-14,,,1098.0,87.7,,,USA
+midjourney-unknown-unknown-5.1-unknown-unknown-false-unknown-false,midjourney,2024-01-14,,,1098.0,87.7,,,USA
+midjourney-unknown-unknown-5.2-unknown-unknown-false-unknown-false,midjourney,2024-01-14,,,1098.0,87.7,,,USA
+midjourney-unknown-unknown-6-unknown-unknown-false-unknown-false,midjourney,2024-10-31,,,1084.0,80.8,,,USA
+midjourney-unknown-unknown-6.1-unknown-unknown-false-unknown-false,midjourney,2024-10-31,,,1098.0,87.7,,,USA
 opendalle-unknown-unknown-1-unknown-50-false-unknown-false,openai,2024-02-01,50.0,,,,,,USA
 dalle-unknown-unknown-1-unknown-unknown-false-unknown-false,openai,2024-02-14,,,984.0,17.7,,,USA
 dalle-unknown-unknown-3-1024x1024-100-false-unknown-false,openai,2024-06-18,100.0,1024.0,984.0,17.7,,,USA

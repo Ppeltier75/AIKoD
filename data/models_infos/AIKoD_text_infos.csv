@@ -1,7 +1,7 @@
 id_name,number_of_parameters,context_window,finetuned,company,date_release,aa_ae_rating,quality_index,aa_mmlu_rating,aa_gpqa_rating,aa_humaneval_rating,aa_math_rating,aa_mgsm_rating,livebench_rating,hf_ae_rating,hf_mmlu_rating,hf_mt_rating,speed_index,latence_first_chunk,country
-abab-g-unknown-6.5-unknown-unknown-unknown-unknown-false,,8000.0,False,minimaxi,2024-09-27,,,,,,,,,,,,,,USA
-abab-s-unknown-6.5-unknown-unknown-unknown-unknown-false,,200000.0,False,minimaxi,2024-09-27,,,,,,,,,,,,,,USA
-abab-t-unknown-6.5-unknown-unknown-unknown-unknown-false,,8000.0,False,minimaxi,2024-09-27,,,,,,,,,,,,,,USA
+abab-g-unknown-6.5-unknown-unknown-unknown-unknown-false,,8000.0,False,minimaxi,2024-09-27,,,,,,,,,,,,,,CHN
+abab-s-unknown-6.5-unknown-unknown-unknown-unknown-false,,200000.0,False,minimaxi,2024-09-27,,,,,,,,,,,,,,CHN
+abab-t-unknown-6.5-unknown-unknown-unknown-unknown-false,,8000.0,False,minimaxi,2024-09-27,,,,,,,,,,,,,,CHN
 ada-unknown-unknown-unknown-unknown-unknown-unknown-instruct-false,,,False,openai,2022-11-17,,,,,,,,,,,,,,USA
 ada-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true,,,True,openai,2022-11-17,,,,,,,,,,,,,,USA
 airoboros-gptq-unknown-unknown-unknown-33-unknown-unknown-false,,,False,jondurbin,2024-10-04,,,,,,,,,,,,,,USA
@@ -30,9 +30,9 @@ capybara-unknown-unknown-1.9-unknown-7-unknown-unknown-false,7.0,8000.0,False,no
 capybara-unknown-unknown-unknown-unknown-34-unknown-unknown-false,34.0,200000.0,False,nous,2024-10-31,,,,,,,,,,,,,,USA
 characterglm-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,False,zhipuai,2023-11-13,,,,,,,,,,,,,,CHN
 charglm-unknown-unknown-3-unknown-unknown-unknown-unknown-false,,4000.0,False,,2024-07-03,,,,,,,,,zhipuai,,,,,
-chatcompletion-pro-unknown-unknown-unknown-unknown-unknown-unknown-false,1024000.0,128000.0,False,minimaxi,2024-07-03,,,,,,,,,,,,,,USA
-chatcompletion-unknown-unknown-2-unknown-unknown-unknown-unknown-false,405.0,256000.0,False,minimaxi,2024-07-03,,,,,,,,,,,,,,USA
-chatcompletion-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,340.0,2000000.0,False,minimaxi,2024-07-03,,,,,,,,,,,,,,USA
+chatcompletion-pro-unknown-unknown-unknown-unknown-unknown-unknown-false,1024000.0,128000.0,False,minimaxi,2024-07-03,,,,,,,,,,,,,,CHN
+chatcompletion-unknown-unknown-2-unknown-unknown-unknown-unknown-false,405.0,256000.0,False,minimaxi,2024-07-03,,,,,,,,,,,,,,CHN
+chatcompletion-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,340.0,2000000.0,False,minimaxi,2024-07-03,,,,,,,,,,,,,,CHN
 chatglm-unknown-turbo-unknown-unknown-unknown-unknown-unknown-false,,,False,zhipuai,2024-07-03,,0.194,,,,,,,889.1,,,,,CHN
 chatglm-unknown-unknown-unknown-unknown-12-unknown-unknown-false,,,False,zhipuai,2023-06-01,,0.194,,,,,,,889.1,,,,,CHN
 chatglm-unknown-unknown-unknown-unknown-130-unknown-unknown-false,130.0,,False,zhipuai,2023-07-14,,0.194,,,,,,,889.1,,,,,CHN
@@ -360,7 +360,7 @@ llama-lunaris-unknown-3-unknown-8-unknown-unknown-false,,,,saok10k,,1152.0,0.396
 llama-nemotron-unknown-3.1-unknown-70-unknown-instruct-false,70.0,128000.0,False,nvidia,2024-10-01,,0.529,0.856,0.477,0.751,0.711,,43.11,1266.815130451609,,,28.3,0.42,USA
 llama-next-unknown-3-unknown-8-unknown-unknown-false,,,,lnms-lab,,1152.0,0.396,0.643,0.304,0.588,0.302,0.551,,1151.3262325799033,0.684,,121.5,0.32,
 llama-reference-unknown-3-unknown-8-unknown-unknown-false,,,,meta,,1152.0,0.396,0.643,0.304,0.588,0.302,0.551,,1151.3262325799033,0.684,,121.5,0.32,USA
-llama-sft-unknown-6-unknown-30-unknown-unknown-false,,,False,openassistant,2024-05-28,,,,,,,,,,,,,,DEU
+llama-sft-unknown-6-unknown-30-unknown-unknown-false,,,False,openassistant,2024-05-28,,,,,,,,,,,,,,FR
 llama-soliloquy-unknown-3-unknown-8-unknown-unknown-false,8.0,24576.0,False,lynn,2024-06-10,1152.0,0.396,0.643,0.304,0.588,0.302,0.551,,1151.3262325799033,0.684,,121.5,0.32,USA
 llama-sonar-huge-3.1-unknown-unknown-128-online-false,,128000.0,False,perplexityai,2024-08-14,,,,,,,,,,,,,,USA
 llama-sonar-large-3-unknown-unknown-unknown-32-online-false,,,False,perplexityai,2024-05-13,,,,,,,,,,,,,,USA
@@ -439,7 +439,7 @@ llama-unknown-turbo-3.2-unknown-90-unknown-instruct-false,,,,meta,,,0.444,0.84,0
 llama-unknown-unknown-2-unknown-13-unknown-chat-false,13.0,4096.0,False,meta,2023-07-18,1063.0,0.251,0.449,0.193,0.213,0.135,0.15,,,,,53.1,0.49,USA
 llama-unknown-unknown-2-unknown-13-unknown-unknown-false,13.0,4096.0,False,meta,2023-07-18,1063.0,0.251,0.449,0.193,0.213,0.135,0.15,,,,,53.1,0.49,USA
 llama-unknown-unknown-2-unknown-13-unknown-unknown-true,13.0,,True,meta,2024-05-24,1063.0,0.251,0.449,0.193,0.213,0.135,0.15,,,,,53.1,0.49,USA
-llama-unknown-unknown-2-unknown-34-unknown-unknown-false,34.0,16000.0,False,phind,2023-05-01,,,,,,,,,,,,,,USA
+llama-unknown-unknown-2-unknown-34-unknown-unknown-false,34.0,16000.0,False,phind,2023-05-01,,,,,,,,,,,,,,CAN
 llama-unknown-unknown-2-unknown-7-32-instruct-false,7.0,32000.0,False,meta,2023-08-18,1037.0,0.109,0.125,0.063,0.134,,,,,,,123.8,0.33,USA
 llama-unknown-unknown-2-unknown-7-32-unknown-false,7.0,32000.0,False,meta,2023-10-17,1037.0,0.109,0.125,0.063,0.134,,,,,,,123.8,0.33,USA
 llama-unknown-unknown-2-unknown-7-unknown-chat-false,7.0,4096.0,False,meta,2023-07,1037.0,0.109,0.125,0.063,0.134,,,,,,,123.8,0.33,USA
@@ -686,10 +686,10 @@ redpajama-incite-unknown-unknown-unknown-3-unknown-unknown-false,3.0,2000.0,Fals
 redpajama-incite-unknown-unknown-unknown-7-unknown-chat-false,7.0,2000.0,False,togetherai,2023-06-06,,,,,,,,,,,,,,USA
 redpajama-incite-unknown-unknown-unknown-7-unknown-instruct-false,7.0,,False,togetherai,2023-06-06,,,,,,,,,,,,,,USA
 redpajama-incite-unknown-unknown-unknown-7-unknown-unknown-false,7.0,,False,togetherai,2023-06-06,,,,,,,,,,,,,,USA
-reka-core-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,rekaai,,1200.0,0.433,0.76,0.278,0.685,0.55,0.747,,1147.6238430848332,,,14.8,1.16,
-reka-edge-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,rekaai,,,0.279,0.437,0.193,0.376,0.178,0.323,,1147.6238430848332,,,35.2,0.93,
-reka-flash-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,rekaai,,1200.0,0.433,0.76,0.278,0.685,0.55,0.747,,1147.6238430848332,,,32.8,1.26,
-reka-spark-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,rekaai,,1200.0,0.433,0.76,0.278,0.685,0.55,0.747,,1147.6238430848332,,,32.8,1.26,
+reka-core-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,rekaai,,1200.0,0.433,0.76,0.278,0.685,0.55,0.747,,1147.6238430848332,,,14.8,1.16,USA
+reka-edge-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,rekaai,,,0.279,0.437,0.193,0.376,0.178,0.323,,1147.6238430848332,,,35.2,0.93,USA
+reka-flash-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,rekaai,,1200.0,0.433,0.76,0.278,0.685,0.55,0.747,,1147.6238430848332,,,32.8,1.26,USA
+reka-spark-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,rekaai,,1200.0,0.433,0.76,0.278,0.685,0.55,0.747,,1147.6238430848332,,,32.8,1.26,USA
 remm-slerp-unknown-l2-unknown-13-unknown-unknown-false,13.0,4000.0,False,remmai,2024-06-18,,,,,,,,,,,,,,USA
 replit-code-unknown-1-unknown-3-unknown-unknown-false,3.0,2000.0,False,replit,2023-07-14,,,,,,,,,,,,,,USA
 rerank-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,False,cohere,2024-04-09,,,,,,,,,,,,,,CAN

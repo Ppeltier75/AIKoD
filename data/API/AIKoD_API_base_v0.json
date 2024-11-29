@@ -24783,7 +24783,7 @@
         "hf_mt_rating": null,
         "speed_index": null,
         "latence_first_chunk": null,
-        "country": "USA",
+        "country": "CAN",
         "blended_price": 1.0399999999999998
     },
     {
@@ -24813,7 +24813,7 @@
         "hf_mt_rating": null,
         "speed_index": null,
         "latence_first_chunk": null,
-        "country": "USA",
+        "country": "CAN",
         "blended_price": 1.0399999999999998
     },
     {
@@ -24843,7 +24843,7 @@
         "hf_mt_rating": null,
         "speed_index": null,
         "latence_first_chunk": null,
-        "country": "USA",
+        "country": "CAN",
         "blended_price": 1.0399999999999998
     },
     {
@@ -24873,7 +24873,7 @@
         "hf_mt_rating": null,
         "speed_index": null,
         "latence_first_chunk": null,
-        "country": "USA",
+        "country": "CAN",
         "blended_price": 2.5200000000000005
     },
     {
@@ -24903,7 +24903,7 @@
         "hf_mt_rating": null,
         "speed_index": null,
         "latence_first_chunk": null,
-        "country": "USA",
+        "country": "CAN",
         "blended_price": 2.5200000000000005
     },
     {
@@ -30588,7 +30588,7 @@
         "hf_mt_rating": null,
         "speed_index": null,
         "latence_first_chunk": null,
-        "country": "USA",
+        "country": "CHN",
         "blended_price": 0.7
     },
     {
@@ -30618,7 +30618,7 @@
         "hf_mt_rating": null,
         "speed_index": null,
         "latence_first_chunk": null,
-        "country": "USA",
+        "country": "CHN",
         "blended_price": 0.7
     },
     {
@@ -30648,7 +30648,7 @@
         "hf_mt_rating": null,
         "speed_index": null,
         "latence_first_chunk": null,
-        "country": "USA",
+        "country": "CHN",
         "blended_price": 0.15
     },
     {
@@ -30678,7 +30678,7 @@
         "hf_mt_rating": null,
         "speed_index": null,
         "latence_first_chunk": null,
-        "country": "USA",
+        "country": "CHN",
         "blended_price": 0.15
     },
     {
@@ -30708,7 +30708,7 @@
         "hf_mt_rating": null,
         "speed_index": null,
         "latence_first_chunk": null,
-        "country": "USA",
+        "country": "CHN",
         "blended_price": 0.7
     },
     {
@@ -30738,7 +30738,7 @@
         "hf_mt_rating": null,
         "speed_index": null,
         "latence_first_chunk": null,
-        "country": "USA",
+        "country": "CHN",
         "blended_price": 0.7
     },
     {
@@ -30768,7 +30768,7 @@
         "hf_mt_rating": null,
         "speed_index": null,
         "latence_first_chunk": null,
-        "country": "USA",
+        "country": "CHN",
         "blended_price": null
     },
     {
@@ -30798,7 +30798,7 @@
         "hf_mt_rating": null,
         "speed_index": null,
         "latence_first_chunk": null,
-        "country": "USA",
+        "country": "CHN",
         "blended_price": null
     },
     {
@@ -30828,7 +30828,7 @@
         "hf_mt_rating": null,
         "speed_index": null,
         "latence_first_chunk": null,
-        "country": "USA",
+        "country": "CHN",
         "blended_price": null
     },
     {
@@ -61390,7 +61390,7 @@
         "hf_mt_rating": null,
         "speed_index": null,
         "latence_first_chunk": null,
-        "country": "DEU",
+        "country": "FR",
         "blended_price": 6.0
     },
     {
@@ -61420,7 +61420,7 @@
         "hf_mt_rating": null,
         "speed_index": null,
         "latence_first_chunk": null,
-        "country": "DEU",
+        "country": "FR",
         "blended_price": 6.0
     },
     {
@@ -63750,7 +63750,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -63769,7 +63769,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -63788,7 +63788,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -63807,7 +63807,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -63826,7 +63826,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -63845,7 +63845,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -63864,7 +63864,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -63883,7 +63883,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -63902,7 +63902,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -63921,7 +63921,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -63940,7 +63940,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -63959,7 +63959,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -63978,7 +63978,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -63997,7 +63997,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -64016,7 +64016,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -64035,7 +64035,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -64054,7 +64054,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -64073,7 +64073,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -64092,7 +64092,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -64111,7 +64111,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -64130,7 +64130,7 @@
         "speed_index": 80.8,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Midjourney",
@@ -64149,7 +64149,7 @@
         "speed_index": 87.7,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "USA"
     },
     {
         "provider": "Google",
@@ -84185,7 +84185,7 @@
         "speed_index": null,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "CAN"
     },
     {
         "provider": "Ideogram",
@@ -84204,7 +84204,7 @@
         "speed_index": 16.1,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "CAN"
     },
     {
         "provider": "Ideogram",
@@ -84223,7 +84223,7 @@
         "speed_index": 16.1,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "CAN"
     },
     {
         "provider": "Ideogram",
@@ -84242,7 +84242,7 @@
         "speed_index": 20.4,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "CAN"
     },
     {
         "provider": "Ideogram",
@@ -84261,7 +84261,7 @@
         "speed_index": 20.4,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "CAN"
     },
     {
         "provider": "Ideogram",
@@ -84280,7 +84280,7 @@
         "speed_index": 11.8,
         "default_steps": null,
         "default_resolution": null,
-        "country": null
+        "country": "CAN"
     },
     {
         "provider": "IBMWatsonxAI",
@@ -111385,7 +111385,7 @@
         "hf_mt_rating": null,
         "speed_index": 14.8,
         "latence_first_chunk": 1.16,
-        "country": null,
+        "country": "USA",
         "blended_price": 13.75
     },
     {
@@ -111415,7 +111415,7 @@
         "hf_mt_rating": null,
         "speed_index": 14.8,
         "latence_first_chunk": 1.16,
-        "country": null,
+        "country": "USA",
         "blended_price": 6.0
     },
     {
@@ -111445,7 +111445,7 @@
         "hf_mt_rating": null,
         "speed_index": 14.8,
         "latence_first_chunk": 1.16,
-        "country": null,
+        "country": "USA",
         "blended_price": 2.0
     },
     {
@@ -111475,7 +111475,7 @@
         "hf_mt_rating": null,
         "speed_index": 14.8,
         "latence_first_chunk": 1.16,
-        "country": null,
+        "country": "USA",
         "blended_price": 2.0
     },
     {
@@ -111505,7 +111505,7 @@
         "hf_mt_rating": null,
         "speed_index": 35.2,
         "latence_first_chunk": 0.93,
-        "country": null,
+        "country": "USA",
         "blended_price": 0.55
     },
     {
@@ -111535,7 +111535,7 @@
         "hf_mt_rating": null,
         "speed_index": 35.2,
         "latence_first_chunk": 0.93,
-        "country": null,
+        "country": "USA",
         "blended_price": 0.55
     },
     {
@@ -111565,7 +111565,7 @@
         "hf_mt_rating": null,
         "speed_index": 35.2,
         "latence_first_chunk": 0.93,
-        "country": null,
+        "country": "USA",
         "blended_price": 0.1
     },
     {
@@ -111595,7 +111595,7 @@
         "hf_mt_rating": null,
         "speed_index": 35.2,
         "latence_first_chunk": 0.93,
-        "country": null,
+        "country": "USA",
         "blended_price": 0.1
     },
     {
@@ -111625,7 +111625,7 @@
         "hf_mt_rating": null,
         "speed_index": 32.8,
         "latence_first_chunk": 1.26,
-        "country": null,
+        "country": "USA",
         "blended_price": 1.1
     },
     {
@@ -111655,7 +111655,7 @@
         "hf_mt_rating": null,
         "speed_index": 32.8,
         "latence_first_chunk": 1.26,
-        "country": null,
+        "country": "USA",
         "blended_price": 1.1
     },
     {
@@ -111685,7 +111685,7 @@
         "hf_mt_rating": null,
         "speed_index": 32.8,
         "latence_first_chunk": 1.26,
-        "country": null,
+        "country": "USA",
         "blended_price": 0.35000000000000003
     },
     {
@@ -111715,7 +111715,7 @@
         "hf_mt_rating": null,
         "speed_index": 32.8,
         "latence_first_chunk": 1.26,
-        "country": null,
+        "country": "USA",
         "blended_price": 0.35000000000000003
     },
     {
@@ -111745,7 +111745,7 @@
         "hf_mt_rating": null,
         "speed_index": 32.8,
         "latence_first_chunk": 1.26,
-        "country": null,
+        "country": "USA",
         "blended_price": 0.05
     },
     {
@@ -111775,7 +111775,7 @@
         "hf_mt_rating": null,
         "speed_index": 32.8,
         "latence_first_chunk": 1.26,
-        "country": null,
+        "country": "USA",
         "blended_price": 0.05
     },
     {
@@ -111791,7 +111791,7 @@
         "date_release": "2023-06-20",
         "quality_index": 0.129,
         "speed_index": 20.6,
-        "country": null
+        "country": "FR"
     },
     {
         "provider": "Gladia",
@@ -111806,7 +111806,7 @@
         "date_release": "2023-06-20",
         "quality_index": 0.129,
         "speed_index": 20.6,
-        "country": null
+        "country": "FR"
     },
     {
         "provider": "Groq",
