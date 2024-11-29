@@ -121,8 +121,9 @@ def add_country_to_csv(csv_path, column_name):
     # Convertir les noms de compagnies en minuscules en gérant les valeurs NaN
     df[column_name] = df[column_name].astype(str).str.lower()
     df[column_name].replace('nan', np.nan, inplace=True)
-    
-    mapping_file_path = os.path.join('C:\\Users\\piwip\\OneDrive\\Documents\\OCDE\\AIKoD', 'data', 'models_infos', 'mapping', 'country_mapping.json')
+    base_path = os.path.abspath(os.path.dirname(__file__))
+    mapping_file_path = os.path.join(base_path, '..', 'data', 'models_infos', 'mapping', 'country_mapping.json')
+
     # Lire le mapping depuis le fichier JSON
     with open(mapping_file_path, 'r', encoding='utf-8') as f:
         country_mapping = json.load(f)
