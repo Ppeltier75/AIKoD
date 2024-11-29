@@ -43,7 +43,7 @@ chatgpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-false,20.0,16000.0,Fal
 chatgpt-unknown-unknown-4o-unknown-unknown-unknown-false,,,,openai,,,0.567,,,,,,54.25,1316.8023351337524,,,,,
 chronos-hermes-unknown-unknown-unknown-13-unknown-unknown-false,13.0,2048.0,False,austism,2024-10-21,,,,,,,,,,,,,,USA
 claude-haiku-unknown-3-unknown-unknown-unknown-unknown-false,,200000.0,False,anthropic,2024-03-13,1179.0,0.421,0.708,0.333,0.717,0.41,0.713,35.4,1179.449486715465,0.752,,127.6,0.48,USA
-claude-haiku-unknown-3.5-unknown-unknown-unknown-unknown-false,,,,,,,0.515,0.81,0.369,0.854,0.73,,60.33,,0.8870000000000001,,63.2,0.89,
+claude-haiku-unknown-3.5-unknown-unknown-unknown-unknown-false,,,,antropic,,,0.515,0.81,0.369,0.854,0.73,,60.33,,0.8870000000000001,,63.2,0.89,
 claude-instant-unknown-1.1-unknown-unknown-unknown-unknown-false,,100000.0,False,anthropic,2024-10-21,,,,,,,,,,,,,,USA
 claude-instant-unknown-1.2-unknown-unknown-unknown-unknown-false,,,False,anthropic,2024-02-14,,,,,,,,,,,,,,USA
 claude-instant-unknown-unknown-unknown-unknown-unknown-unknown-false,,100000.0,False,anthropic,2023-08-09,,,,,,,,,,,,,,USA
@@ -131,7 +131,7 @@ deepseek-unknown-unknown-2-unknown-unknown-unknown-chat-false,108.0,128000.0,Fal
 deepseek-unknown-unknown-2-unknown-unknown-unknown-lite-false,,163840.0,False,deepseek,2024-10-31,,0.473,0.797,0.421,0.857,0.584,0.852,45.41,1178.397159228231,,,16.4,1.06,
 deepseek-unknown-unknown-2-unknown-unknown-unknown-unknown-false,236.0,128000.0,False,deepseek,2024-06-17,,0.473,0.797,0.421,0.857,0.584,0.852,45.41,1178.397159228231,,,16.5,1.06,USA
 deepseek-unknown-unknown-2.5-unknown-unknown-unknown-unknown-false,236.0,128000.0,False,deepseek,2024-09-05,,0.504,0.805,0.418,0.857,0.553,0.857,47.31,1253.2529519043085,,,13.9,0.94,USA
-deepseek-unknown-unknown-unknown-33-unknown-unknown-instruct-false,33.0,16384.0,False,,2024-10-31,,,,,,,,,,,,,,
+deepseek-unknown-unknown-unknown-33-unknown-unknown-instruct-false,33.0,16384.0,False,deepseek,2024-10-31,,,,,,,,,,,,,,
 deepseek-unknown-unknown-unknown-unknown-67-unknown-chat-false,67.0,4000.0,False,deepseek,2024-10-13,,0.372,,,,,,,1077.3981914964745,0.713,,,,USA
 deepseek-unknown-unknown-unknown-unknown-unknown-unknown-chat-false,236.0,128000.0,False,deepseek,2023-12-01,,,,,,,,,,,,,,USA
 discolm-german-awq-1-unknown-7-unknown-unknown-false,7.0,,False,disco research,2024-10-31,,,,,,,,,,,,,,GBR
@@ -173,7 +173,7 @@ gemini-flash-unknown-1.5-unknown-8-unknown-unknown-false,8.0,1000000.0,False,goo
 gemini-flash-unknown-1.5-unknown-unknown-128-unknown-false,,,,google,,1269.0,0.516,0.807,0.499,0.837,0.794,,49.57,1228.8083659076408,0.789,,192.5,0.32,
 gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false,,1000000.0,False,google,2024-05-24,1269.0,0.516,0.807,0.499,0.837,0.794,,49.57,1228.8083659076408,0.789,,192.5,0.32,USA
 gemini-pro-unknown-1.0-unknown-unknown-unknown-unknown-false,,32000.0,False,google,2024-02-15,1111.0,0.405,,,,,0.645,,,0.718,,102.7,1.26,USA
-gemini-pro-unknown-1.5-unknown-unknown-128-unknown-false,,,,,,1299.0,0.565,0.861,0.607,0.871,0.85,,54.94,1255.9540080136758,0.819,,59.2,0.77,
+gemini-pro-unknown-1.5-unknown-unknown-128-unknown-false,,,,google,,1299.0,0.565,0.861,0.607,0.871,0.85,,54.94,1255.9540080136758,0.819,,59.2,0.77,
 gemini-pro-unknown-1.5-unknown-unknown-unknown-unknown-false,,2000000.0,False,google,2024-05-24,1299.0,0.565,0.861,0.607,0.871,0.85,,54.94,1255.9540080136758,0.819,,59.2,0.77,USA
 gemini-pro-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,google,,,0.404,,,,,,,1108.5,0.7180000000000001,,,,
 gemma-instruct-unknown-2-unknown-9-unknown-unknown-false,9.0,8192.0,False,google,2024-10-21,1185.0,0.414,0.732,0.308,0.282,0.533,0.787,30.6,1187.7221977196994,,,159.1,0.36,USA
@@ -207,10 +207,10 @@ glm-unknown-unknown-unknown-unknown-175-unknown-unknown-false,,,False,zhipuai,20
 glm-unknown-unknown-unknown-unknown-6-unknown-unknown-false,,,False,zhipuai,2023-06-26,,,,,,,,,,,,,,CHN
 goliath-unknown-unknown-unknown-unknown-120-unknown-unknown-false,,6144.0,False,alpindale,2024-10-21,,,,,,,,,,,,,,USA
 gpr-unknown-turbo-4-unknown-unknown-unknown-unknown-false,,,False,,2024-10-31,,,,,,,,,,,,,,
-gpt-4o-mini-unknown-20240718-unknown-unknown-unknown-false,,,,,,1272.0,0.512,0.819,0.427,0.856,0.753,0.87,43.27,1276.5769257113293,0.8200000000000001,,97.8,0.48,
-gpt-4o-mini-unknown-20240718-unknown-unknown-unknown-true,,,,,,1272.0,0.512,0.819,0.427,0.856,0.753,0.87,43.27,1276.5769257113293,0.8200000000000001,,97.8,0.48,
-gpt-4o-mini-unknown-unknown-unknown-unknown-unknown-false,,,,,,1272.0,0.512,0.819,0.427,0.856,0.753,0.87,43.27,1276.5769257113293,0.8200000000000001,,97.8,0.48,
-gpt-4o-unknown-regional-api-unknown-unknown-unknown-false,,,,,,,,,,,,,,openai,,,,,
+gpt-4o-mini-unknown-20240718-unknown-unknown-unknown-false,,,,openai,,1272.0,0.512,0.819,0.427,0.856,0.753,0.87,43.27,1276.5769257113293,0.8200000000000001,,97.8,0.48,
+gpt-4o-mini-unknown-20240718-unknown-unknown-unknown-true,,,,openai,,1272.0,0.512,0.819,0.427,0.856,0.753,0.87,43.27,1276.5769257113293,0.8200000000000001,,97.8,0.48,
+gpt-4o-mini-unknown-unknown-unknown-unknown-unknown-false,,,,openai,,1272.0,0.512,0.819,0.427,0.856,0.753,0.87,43.27,1276.5769257113293,0.8200000000000001,,97.8,0.48,
+gpt-4o-unknown-regional-api-unknown-unknown-unknown-false,,,,openai,,,,,,,,,,,,,,,
 gpt-4o-unknown-unknown-20240513-unknown-unknown-unknown-false,,128000.0,False,openai,2024-05-13,1337.0,0.577,0.886,0.514,0.905,0.783,0.901,53.98,1286.4432975974114,0.887,,83.8,0.45,USA
 gpt-4o-unknown-unknown-20240806-unknown-unknown-unknown-false,,128000.0,False,openai,2024-08-06,1337.0,0.576,0.886,0.514,0.905,0.783,0.901,56.03,1263.7189473843396,,,83.8,0.45,USA
 gpt-4o-unknown-unknown-20240806-unknown-unknown-unknown-true,,,,,,1337.0,0.576,0.886,0.514,0.905,0.783,0.901,56.03,1263.7189473843396,,,83.8,0.45,
@@ -486,8 +486,8 @@ llama-unknown-unknown-unknown-unknown-70-unknown-python-false,70.0,16000.0,False
 llama-unknown-unknown-unknown-unknown-70-unknown-unknown-false,70.0,1200.0,False,meta,2024-01-27,,0.339,,,,,,,1066.857142857143,0.6300000000000002,6.860000000000002,,,USA
 llama-unknown-vision-3.2-unknown-11-unknown-instruct-false,11.0,,False,meta,2024-10-31,,0.356,0.714,0.247,0.675,0.502,,,1055.895268906952,,,128.9,0.29,USA
 llama-versatile-unknown-3.1-unknown-70-128-unknown-false,70.0,128000.0,False,meta,2024-09-27,1249.0,0.52,0.835,0.434,0.748,0.6,0.831,47.8,1245.5194252507997,0.8599999999999999,,71.2,0.43,USA
-llama-vision-unknown-3.2-unknown-11-unknown-unknown-false,,,,,,,0.376,0.714,0.247,0.675,0.502,,,meta,,,128.9,0.29,
-llama-vision-unknown-3.2-unknown-90-unknown-unknown-false,,,,,,,0.508,0.84,0.415,0.75,0.664,,,meta,,,41.2,0.36,
+llama-vision-unknown-3.2-unknown-11-unknown-unknown-false,,,,meta,,,0.376,0.714,0.247,0.675,0.502,,,meta,,,128.9,0.29,
+llama-vision-unknown-3.2-unknown-90-unknown-unknown-false,,,,meta,,,0.508,0.84,0.415,0.75,0.664,,,meta,,,41.2,0.36,
 llama2-unknown-unknown-2-unknown-13-unknown-unknown-false,13.0,4096.0,False,meta,2024-08-15,,,,,,,,,,,,,,USA
 llamaguard-unknown-unknown-2-unknown-8-unknown-unknown-false,8.0,8192.0,False,meta,2024-07-15,,,,,,,,,,,,,,USA
 llava-mistral-next-unknown-7-unknown-unknown-false-false,7.0,4096.0,False,llava-hf,2024-10-21,,,,,,,,,,,,,,USA
@@ -505,11 +505,11 @@ magma-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,alep-al
 magnum-unknown-unknown-2-unknown-72-unknown-unknown-false,,32768.0,False,anthracite-org,2024-10-14,,,,,,,,,,,,,,USA
 magnum-unknown-unknown-unknown-unknown-72-unknown-unknown-false,,16384.0,False,anthracite-org,2024-07-27,,,,,,,,,,,,,,USA
 merlinite-unknown-unknown-unknown-7-unknown-unknown-unknown-false,,,False,ibmwatsonxai,2024-02-22,,,,,,,,,,,,,,USA
-midnight-rose-unknown-unknown-unknown-70-unknown-unknown-false,70.0,4096.0,False,,2024-09-27,,,,,,,,,,,,,,
+midnight-rose-unknown-unknown-unknown-70-unknown-unknown-false,70.0,4096.0,False,mistralai,2024-09-27,,,,,,,,,,,,,,
 ministral-unknown-unknown-unknown-2410-3-unknown-unknown-false,3.0,128000.0,False,mistralai,2024-10-21,,0.301,0.579,0.261,0.713,0.478,,,,,,209.3,0.41,FRA
 ministral-unknown-unknown-unknown-2410-8-unknown-unknown-false,8.0,128000.0,False,mistralai,2024-10-21,,0.328,0.589,0.299,0.744,0.5,,,,,,135.5,0.42,FRA
 ministral-unknown-unknown-unknown-unknown-3-unknown-unknown-false,,128000.0,False,mistralai,2024-10-16,,0.301,0.579,0.261,0.713,0.478,,,,,,209.3,0.41,FRA
-ministral-unknown-unknown-unknown-unknown-8-unknown-unknown-false,,128000.0,False,,2024-10-15,,0.328,0.589,0.299,0.744,0.5,,,,,,135.5,0.42,
+ministral-unknown-unknown-unknown-unknown-8-unknown-unknown-false,,128000.0,False,mistralai,2024-10-15,,0.328,0.589,0.299,0.744,0.5,,,,,,135.5,0.42,
 mistral-codestral-unknown-unknown-unknown-unknown-unknown-unknown-false,22.2,32000.0,False,mistralai,2024-07-16,,0.425,0.661,0.33,0.682,0.403,0.486,48.5,1156.9209237342525,0.753,8.610000000000001,71.5,0.49,FRA
 mistral-instruct-awq-0.1-unknown-7-unknown-unknown-false,7.0,,False,thebloke,2024-10-31,,0.287,,,,,,,1019.3333333333334,0.5539999999999999,6.839999999999998,,,GBR
 mistral-instruct-lora-0.2-unknown-7-unknown-unknown-false,7.0,,False,mistralai,2024-10-31,,0.353,,,,,,,1072.8008355049471,,7.600000000000003,,,FRA
@@ -580,11 +580,11 @@ mythalion-unknown-unknown-unknown-unknown-13-unknown-unknown-false,13.0,8192.0,F
 mythomax-unknown-lite-l2-unknown-13-unknown-unknown-false,13.0,4096.0,False,gryphe,2024-10-21,,,,,,,,,,,,,,USA
 mythomax-unknown-turbo-l2-unknown-13-unknown-unknown-false,,,False,gryphe,2024-05-20,,,,,,,,,,,,,,USA
 mythomax-unknown-unknown-l2-unknown-13-unknown-unknown-false,13.0,4000.0,False,gryphe,2023-12-25,,,,,,,,,,,,,,USA
-mythomist-unknown-unknown-unknown-unknown-7-unknown-unknown-false,7.0,4096.0,False,,2024-10-21,,,,,,,,,,,,,,
+mythomist-unknown-unknown-unknown-unknown-7-unknown-unknown-false,7.0,4096.0,False,gryphe,2024-10-21,,,,,,,,,,,,,,
 nemotron-unknown-unknown-4-unknown-340-unknown-instruct-false,340.0,,False,nvidia,2024-06-14,,0.527,,,,,,,1208.2013304722036,,,,,USA
 neural-chat-awq-3.1-unknown-7-unknown-unknown-false,7.0,,False,thebloke,2024-10-31,,,,,,,,,,,,,,GBR
 nexusraven-unknown-unknown-unknown-unknown-13-unknown-unknown-false,13.0,16000.0,False,nexusai,2023-09-28,,,,,,,,,,,,,,USA
-noromaid-unknown-unknown-unknown-unknown-20-unknown-unknown-false,,8192.0,False,,2024-10-15,,,,,,,,,,,,,,
+noromaid-unknown-unknown-unknown-unknown-20-unknown-unknown-false,,8192.0,False,thebloke,2024-10-15,,,,,,,,,,,,,,
 o1-mini-unknown-unknown-20240912-unknown-unknown-unknown-false,0.274,128000.0,False,openai,2024-09-12,1314.0,0.583,0.852,0.578,0.934,0.9,0.899,59.09,1312.3241786882086,,,74.1,13.63,USA
 o1-mini-unknown-unknown-unknown-unknown-unknown-unknown-false,0.274,128000.0,False,openai,2024-09-12,1314.0,0.583,0.852,0.578,0.934,0.9,0.899,59.09,1312.3241786882086,,,74.1,13.63,USA
 o1-preview-unknown-unknown-20240912-unknown-unknown-unknown-false,0.274,128000.0,False,openai,2024-10-21,,0.635,0.908,0.669,0.954,0.855,0.908,66.02,1337.0392198073275,,,35.7,28.76,USA
@@ -645,7 +645,7 @@ qwen-instruct-unknown-2.5-unknown-7-unknown-instruct-false,7.0,131072.0,False,al
 qwen-math-unknown-2.5-unknown-72-unknown-instruct-false,72.0,4096.0,False,alibaba,2024-10-31,,0.544,0.857,0.496,0.846,0.811,,52.89,1257.475818203736,,,47.3,0.55,
 qwen-unknown-awq-1.5-unknown-14-unknown-chat-false,14.0,,False,alibaba,2024-10-31,,,,,,,,,,,,,,CHN
 qwen-unknown-awq-1.5-unknown-7-unknown-chat-false,7.0,,False,alibaba,2024-10-31,,,,,,,,,,,,,,CHN
-qwen-unknown-float8-2.5-unknown-405-unknown-unknown-false,72.0,,False,,2024-10-31,,0.544,0.857,0.496,0.846,0.811,,52.89,1257.475818203736,,,47.3,0.55,
+qwen-unknown-float8-2.5-unknown-405-unknown-unknown-false,72.0,,False,alibaba,2024-10-31,,0.544,0.857,0.496,0.846,0.811,,52.89,1257.475818203736,,,47.3,0.55,
 qwen-unknown-turbo-2.5-unknown-7-unknown-instruct-false,7.0,32000.0,False,alibaba,2024-09-18,,0.544,0.857,0.496,0.846,0.811,,52.89,1257.475818203736,,,47.3,0.55,CHN
 qwen-unknown-turbo-2.5-unknown-72-unknown-instruct-false,72.0,32000.0,False,alibaba,2024-09-18,,0.544,0.857,0.496,0.846,0.811,,52.89,1257.475818203736,,,47.3,0.55,CHN
 qwen-unknown-unknown-1.5-unknown-0.5-unknown-chat-false,0.5,32768.0,False,alibaba,2024-10-21,,,,,,,,,,,,,,CHN
@@ -656,7 +656,7 @@ qwen-unknown-unknown-1.5-unknown-14-unknown-chat-false,14.0,32768.0,False,alibab
 qwen-unknown-unknown-1.5-unknown-32-unknown-chat-false,32.0,32768.0,False,alibaba,2024-09-18,,,,,,,,,,,,,,CHN
 qwen-unknown-unknown-1.5-unknown-4-unknown-chat-false,4.0,32768.0,False,alibaba,2024-09-18,,,,,,,,,,,,,,CHN
 qwen-unknown-unknown-1.5-unknown-7-unknown-chat-false,7.0,32768.0,False,alibaba,2023-08-03,,,,,,,,,,,,,,CHN
-qwen-unknown-unknown-1.5-unknown-7-unknown-unknown-false,7.0,65536.0,False,,2024-10-31,,,,,,,,,,,,,,
+qwen-unknown-unknown-1.5-unknown-7-unknown-unknown-false,7.0,65536.0,False,alibaba,2024-10-31,,,,,,,,,,,,,,
 qwen-unknown-unknown-1.5-unknown-72-unknown-chat-false,72.0,32768.0,False,alibaba,2024-09-18,,,,,,,,,,,,,,CHN
 qwen-unknown-unknown-1.5-unknown-72-unknown-unknown-false,72.0,32000.0,False,alibaba,2024-09-27,,,,,,,,,,,,,,CHN
 qwen-unknown-unknown-2-unknown-1.5-unknown-instruct-false,1.5,128000.0,False,alibaba,2024-06-07,,,,,,,,,,,,,,CHN
@@ -664,7 +664,7 @@ qwen-unknown-unknown-2-unknown-7-unknown-instruct-false,7.0,32768.0,False,alibab
 qwen-unknown-unknown-2-unknown-7-unknown-unknown-false,7.0,32000.0,False,alibaba,2024-07-16,,,,,,,,,,,,,,CHN
 qwen-unknown-unknown-2-unknown-72-unknown-instruct-false,72.0,32768.0,False,alibaba,2024-06-07,,,,,,,,,,,,,,CHN
 qwen-unknown-unknown-2-unknown-72-unknown-unknown-false,72.71,32000.0,False,alibaba,2024-06-07,,,,,,,,,,,,,,CHN
-qwen-unknown-unknown-2.5-1.5-unknown-unknown-instruct-false,1.5,32768.0,False,,2024-10-31,,0.544,0.857,0.496,0.846,0.811,,52.89,1257.475818203736,,,47.3,0.55,
+qwen-unknown-unknown-2.5-1.5-unknown-unknown-instruct-false,1.5,32768.0,False,alibaba,2024-10-31,,0.544,0.857,0.496,0.846,0.811,,52.89,1257.475818203736,,,47.3,0.55,
 qwen-unknown-unknown-2.5-1.5-unknown-unknown-unknown-false,1.5,32768.0,False,alibaba,2024-10-31,,0.544,0.857,0.496,0.846,0.811,,52.89,1257.475818203736,,,47.3,0.55,
 qwen-unknown-unknown-2.5-unknown-14-unknown-instruct-false,14.0,32768.0,False,alibaba,2024-10-31,,0.544,0.857,0.496,0.846,0.811,,52.89,1257.475818203736,,,47.3,0.55,
 qwen-unknown-unknown-2.5-unknown-14-unknown-unknown-false,14.0,131072.0,False,alibaba,2024-10-31,,0.544,0.857,0.496,0.846,0.811,,52.89,1257.475818203736,,,47.3,0.55,
@@ -718,9 +718,9 @@ stable-code-unknown-unknown-unknown-3-unknown-unknown-false,3.0,,False,stability
 stable-image-core-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,stabilityai,,,,,,,,,,,,,,,
 stablelm-alpha-unknown-unknown-3-unknown-unknown-base-false,3.0,4000.0,False,stabilityai,2024-06-18,,,,,,,,,,,,,,GBR
 stablelm-sft-unknown-7-unknown-7-unknown-unknown-false,7.0,4000.0,False,stabilityai,2023-04-12,,,,,,,,,,,,,,DEU
-starcoder-unknown-unknown-unknown-unknown-15.5-unknown-unknown-false,15.5,8192.0,False,,2024-10-31,,,,,,,,,,,,,,
+starcoder-unknown-unknown-unknown-unknown-15.5-unknown-unknown-false,15.5,8192.0,Falsebigcode,2024-10-31,,,,,,,,,,,,,,
 starcoder-unknown-unknown-unknown-unknown-16-unknown-unknown-false,16.0,8000.0,False,bigcode,2023-05-09,,,,,,,,,,,,,,FRA
-starcoder-unknown-unknown-unknown-unknown-7-unknown-unknown-false,7.0,8192.0,False,,2024-10-31,,,,,,,,,,,,,,
+starcoder-unknown-unknown-unknown-unknown-7-unknown-unknown-false,7.0,8192.0,False,bigcode,2024-10-31,,,,,,,,,,,,,,
 starcoder-unknown-unknown-unknown-unknown-unknown-unknown-false,15.5,,False,bigcode,2024-02-14,,,,,,,,,,,,,,FRA
 starcoder2-unknown-unknown-unknown-15-unknown-unknown-instruct-false,15.0,16384.0,False,bigcode,2024-05-01,,,,,,,,,,,,,,FRA
 starcoder2-unknown-unknown-unknown-unknown-15-unknown-unknown-false,15.0,8000.0,False,bigcode,2024-05-20,,,,,,,,,,,,,,FRA
@@ -774,8 +774,8 @@ yi-unknown-unknown-unknown-unknown-34-unknown-chat-false,34.0,4096.0,False,01ai,
 yi-unknown-unknown-unknown-unknown-34-unknown-unknown-false,34.0,4096.0,False,01ai,2024-10-31,,,,,,,,,,,,,,
 yi-unknown-unknown-unknown-unknown-6-200-unknown-false,,,False,01ai,2023-11-05,,,,,,,,,,,,,,USA
 yi-unknown-unknown-unknown-unknown-6-unknown-base-false,6.0,4000.0,False,01ai,2024-06-18,,,,,,,,,,,,,,USA
-yi-unknown-unknown-unknown-unknown-6-unknown-unknown-false,6.0,4096.0,False,,2024-10-31,,,,,,,,,,,,,,
+yi-unknown-unknown-unknown-unknown-6-unknown-unknown-false,6.0,4096.0,False,01ai,2024-10-31,,,,,,,,,,,,,,
 zephyr-beta-awq-unknown-unknown-7-unknown-unknown-false,7.0,,False,thebloke,2024-10-31,,0.314,,,,,,,1036.6666666666667,0.6139999999999999,7.339999999999999,,,GBR
-zephyr-beta-unknown-unknown-unknown-7-unknown-unknown-false,7.0,4096.0,False,,2024-10-31,,0.327,,,,,,,1047.6666666666667,0.6139999999999999,7.339999999999999,,,
-zephyr-unknown-unknown-unknown-unknown-7-unknown-unknown-false,7.0,32000.0,False,huggingfaceh4,2023-11-29,,0.314,,,,,,,1036.6666666666667,0.6139999999999999,7.339999999999999,,,FRA
-zephyr-unknown-unknown-unknown-unknown-8x22-unknown-unknown-false,,,False,huggingfaceh4,2024-04-12,,0.314,,,,,,,1036.6666666666667,0.6139999999999999,7.339999999999999,,,FRA
+zephyr-beta-unknown-unknown-unknown-7-unknown-unknown-false,7.0,4096.0,False,thebloke,2024-10-31,,0.327,,,,,,,1047.6666666666667,0.6139999999999999,7.339999999999999,,,
+zephyr-unknown-unknown-unknown-unknown-7-unknown-unknown-false,7.0,32000.0,False,thebloke,2023-11-29,,0.314,,,,,,,1036.6666666666667,0.6139999999999999,7.339999999999999,,,FRA
+zephyr-unknown-unknown-unknown-unknown-8x22-unknown-unknown-false,,,False,thebloke,2024-04-12,,0.314,,,,,,,1036.6666666666667,0.6139999999999999,7.339999999999999,,,FRA

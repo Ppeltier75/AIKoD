@@ -377,11 +377,11 @@ def generate_API_date(input_json_path, output_json_path):
                 maximize_quality = True
             elif type_ == 'audiototext':
                 price_field = 'price_input'
-                quality_field = 'Word Error Rate (%)'
+                quality_field = 'quality_index'
                 maximize_quality = False  # On veut minimiser l'erreur
             elif type_ == 'texttoimage':
                 price_field = 'price_output'
-                quality_field = 'Model Quality ELO'
+                quality_field = 'quality_index'
                 maximize_quality = True
             else:
                 # Pour les autres types, vous pouvez ajouter des critères spécifiques ou les ignorer
