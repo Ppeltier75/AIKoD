@@ -154,15 +154,16 @@ def update_model_names_HF_Livebench_EpochAI(input_dir, output_dir):
         print(f"Aucun nouveau modèle à ajouter dans {output_csv_path}.")
 
 
-
-def Benchmark_update_id_names(root_directory, examples_directory, openai_api_key):
+def Benchmark_update_id_names(root_directory, examples_directory, openai_api_key, reset=False):
     """
     Parcourt tous les CSV, y compris ceux des sous-dossiers, dans `root_directory` et met à jour les `id_name`.
+    Si `reset` est True, supprime la colonne `id_name` des CSV avant de les traiter.
     Utilise les fichiers d'exemples pour déterminer le type des modèles.
 
     :param root_directory: Répertoire racine contenant les fichiers CSV à analyser (inclut les sous-dossiers).
     :param examples_directory: Répertoire contenant les fichiers exemples utilisés pour chaque type.
     :param openai_api_key: Clé API OpenAI pour les appels à l'API.
+    :param reset: Booléen optionnel. Si True, supprime la colonne `id_name` des CSV avant traitement. Défaut à False.
     """
     # Vérifier que les répertoires existent
     if not os.path.exists(root_directory):
@@ -202,6 +203,20 @@ def Benchmark_update_id_names(root_directory, examples_directory, openai_api_key
                 if not os.path.exists(examples_csv_path):
                     print(f"Fichier exemple manquant pour {model_type}: {examples_csv_path}. Ignoré.")
                     continue
+
+                # Si reset est True, supprimer la colonne 'id_name' du CSV
+                if reset:
+                    try:
+                        df = pd.read_csv(csv_path)
+                        if 'id_name' in df.columns:
+                            df = df.drop(columns=['id_name'])
+                            df.to_csv(csv_path, index=False)
+                            print(f"Colonne 'id_name' supprimée du fichier : {csv_path}")
+                        else:
+                            print(f"Le fichier {csv_path} ne contient pas de colonne 'id_name'. Aucune suppression effectuée.")
+                    except Exception as e:
+                        print(f"Erreur lors de la suppression de la colonne 'id_name' dans {csv_path} : {e}")
+                        continue  # Passer au fichier suivant en cas d'erreur
 
                 # Appliquer la fonction pour générer et mettre à jour les id_name
                 print(f"Traitement du fichier : {csv_path} avec le type {model_type}...")

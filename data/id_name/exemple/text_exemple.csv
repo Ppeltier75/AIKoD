@@ -1,99 +1,202 @@
 name,id_name
+chat gpt 4o mini,gpt-mini-unknown-4o-unknown-unknown-unknown-unknown-unknown-false
+nousresearch/hermes 2 pro llama 3 8b,hermes-pro-llama-2-unknown-8-unknown-unknown-false
+chat gpt 4o,gpt-4o-unknown-unknown-unknown-unknown-unknown-chat-false
+discolm german 7b v1 awq,discolm-german-awq-1-unknown-7-unknown-unknown-false
 o1 preview 2024 09 12,o1-preview-unknown-unknown-20240912-unknown-unknown-unknown-false
-claude 3 5 sonnet 20241022,claude-sonnet-unknown-3.5-20241022-unknown-unknown-unknown-false
-claude 3 5 sonnet 20240620,claude-sonnet-unknown-3.5-20240620-unknown-unknown-unknown-false
-o1 mini 2024 09 12,o1-mini-unknown-unknown-20240912-unknown-unknown-unknown-false
-gpt 4o 2024 08 06,gpt-unknown-unknown-4o-20240806-unknown-unknown-unknown-false
-gemini 1.5 pro 002,gemini-pro-unknown-1.5-unknown-unknown-unknown-unknown-false
-chatgpt 4o latest 0903,chatgpt-unknown-latest-4o-0903-unknown-unknown-unknown-false
-gpt 4o 2024 05 13,gpt-unknown-unknown-4o-20240513-unknown-unknown-unknown-false
-gemini 1.5 pro exp 0827,gemini-pro-exp-1.5-0827-unknown-unknown-unknown-false
-meta llama 3.1 405b instruct turbo,llama-unknown-turbo-3.1-unknown-405-unknown-instruct-false
-qwen2.5 72b instruct,qwen-unknown-unknown-2.5-unknown-72-unknown-instruct-false
-gpt 4 turbo 2024 04 09,gpt-unknown-turbo-4-20240409-unknown-unknown-unknown-false
-dracarys2 72b instruct,dracarys-unknown-unknown-2-unknown-72-unknown-instruct-false
-gemini 1.5 pro exp 0801,gemini-pro-exp-1.5-0801-unknown-unknown-unknown-false
-claude 3 opus 20240229,claude-opus-unknown-3-20240229-unknown-unknown-unknown-false
-gemini 1.5 flash 002,gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false
-mistral large 2407,mistral-large-unknown-unknown-2407-unknown-unknown-unknown-false
-dracarys2 llama 3.1 70b instruct,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
-gpt 4 0125 preview,gpt-unknown-preview-4-0125-unknown-unknown-unknown-false
-deepseek v2.5,deepseek-unknown-unknown-2.5-unknown-unknown-unknown-unknown-false
-meta llama 3.1 70b instruct turbo,llama-unknown-turbo-3.1-unknown-70-unknown-instruct-false
-grok 2,grok-unknown-unknown-2-unknown-unknown-unknown-unknown-false
-gemini 1.5 flash exp 0827,gemini-flash-exp-1.5-0827-unknown-unknown-unknown-false
-grok 2 mini,grok-mini-unknown-2-unknown-unknown-unknown-unknown-false
-deepseek coder v2,deepseek-unknown-unknown-2-unknown-unknown-unknown-coder-false
-gpt 4 0613,gpt-unknown-unknown-4-0613-unknown-unknown-unknown-false
-gemini 1.5 pro api 0514,gemini-pro-unknown-1.5-0514-unknown-unknown-unknown-false
-gpt 4o mini 2024 07 18,gpt-mini-unknown-4o-20240718-unknown-unknown-unknown-false
-llama 3.1 nemotron 70b instruct,llama-nemotron-unknown-3.1-unknown-70-unknown-instruct-false
-gemma 2 27b it,gemma-unknown-it-2-unknown-27-unknown-unknown-false
-gemini 1.5 flash api 0514,gemini-flash-unknown-1.5-0514-unknown-unknown-unknown-false
-claude 3 sonnet 20240229,claude-sonnet-unknown-3-20240229-unknown-unknown-unknown-false
-gemini 1.5 flash 8b exp 0827,gemini-flash-exp-1.5-0827-8-unknown-unknown-false
-claude 3 haiku 20240307,claude-haiku-unknown-3-20240307-unknown-unknown-unknown-false
-mixtral 8x22b instruct v0.1,mixtral-unknown-unknown-0.1-unknown- 8x22-unknown-instruct-false
-phi 3.5 moe instruct,phi-moe-unknown-3.5-unknown-unknown-unknown-instruct-false
-command r plus 08 2024,commandr-plus-unknown-unknown-082024-unknown-unknown-unknown-false
-gpt 3.5 turbo 0125,gpt-unknown-turbo-3.5-0125-unknown-unknown-unknown-false
-command r plus,commandr-plus-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
-gemma 2 9b it,gemma-unknown-it-2-unknown-9-unknown-unknown-false
-mistral small 2402,mistral-small-unknown-unknown-2402-unknown-unknown-unknown-false
-command r 08 2024,command-r-unknown-unknown-082024-unknown-unknown-unknown-false
-phi 3 medium 4k instruct,phi-medium-unknown-3-unknown-unknown-4-instruct-false
-open mistral nemo,mistral-nemo-unknown-unknown-unknown-unknown-unknown-unknown-false
-phi 3.5 mini instruct,phi-mini-unknown-3.5-unknown-unknown-unknown-instruct-false
-phi 3 small 8k instruct,phi-small-unknown-3-unknown-unknown-8-instruct-false
-meta llama 3.1 8b instruct turbo,llama-unknown-turbo-3.1-unknown-8-unknown-instruct-false
-command r,command-r-unknown-unknown-unknown-unknown-unknown-unknown-false
-phi 3 mini 4k instruct,phi-mini-unknown-3-unknown-unknown-4-instruct-false
-mistral large 2 finetuned,mistral-large-unknown-2-unknown-unknown-unknown-unknown-true
-mistral small 24.09 finetuned,mistral-small-unknown-unknown-24.09-unknown-unknown-unknown-true
-codestral,codestral-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
-gpt 4o 2024 05 13,gpt-4o-unknown-unknown-20240513-unknown-unknown-unknown-false
-gpt 3.5 turbo 0125,gpt-unknown-turbo-3.5-0125-unknown-unknown-unknown-false
-gpt 4 turbo 2024 04 09,gpt-unknown-turbo-4-20240409-unknown-unknown-unknown-false
-jamba 1.5 large,jamba-large-unknown-1.5-unknown-unknown-unknown-unknown-false
-amazon titan text lite,titan-text-lite-unknown-unknown-unknown-unknown-unknown-unknown-false
-granite 20b multilingual,granite-unknown-multilingual-unknown-unknown-20-unknown-unknown-false
-granite 7b lab,granite-unknown-lab-unknown-unknown-7-unknown-unknown-false
-flan ul2 20b,flan-ul2-unknown-unknown-unknown-20-unknown-unknown-false
-luminous extended,luminous-extended-unknown-unknown-unknown-unknown-unknown-unknown-false
-deepseek coder,deepseek-unknown-unknown-unknown-unknown-unknown-unknown-code-false
-dolphin 2.6 mixtral 8x7b,dolphin-mixtral-unknown-2.6-unknown-8x7-unknown-unknown-false
-glm 4 alltools,glm-alltools-unknown-4-unknown-unknown-unknown-unknown-false
-glm 4 airx,glm-airx-unknown-4-unknown-unknown-unknown-unknown-false
-charglm 3,charglm-unknown-unknown-3-unknown-unknown-unknown-unknown-false
-dolphin 2.9.2 mixtral 8x22b,dolphin-mixtral-unknown-2.9.2-unknown-8x22-unknown-unknown-false
-openchat 3.6 8b,openchat-unknown-unknown-3.6-unknown-8-unknown-unknown-false
-hermes 2 pro llama 3 8b,hermes-pro-llama-2-unknown-8-unknown-unknown-false
+magnum v2 72b,magnum-unknown-unknown-2-unknown-72-unknown-unknown-false
+phi 3 small 128k instruct,phi-small-unknown-3-unknown-unknown-128-instruct-false
+llama 3.1 405b (bf16),llama-unknown-bf16-3.1-unknown-405-unknown-unknown-false
+jais 30b chat,jais-unknown-unknown-unknown-unknown-30-unknown-chat-false
+meta llama 3 70b instruct reference,llama-unknown-reference-3-unknown-70-unknown-instruct-false
+perplexity: llama 3.1 sonar 70b,llama-sonar-unknown-3.1-unknown-70-unknown-unknown-false
+llama 2 pretrained (13b),llama-unknown-unknown-2-unknown-13-unknown-unknown-true
+amazon titan text express,titan-text-express-unknown-unknown-unknown-unknown-unknown-unknown-false
+dolly v2 (3b),dolly-unknown-unknown-2-unknown-3-unknown-unknown-false
+mistral 7b instruct,mistral-unknown-unknown-unknown-unknown-7-unknown-instruct-false
+zephyr 7b beta,zephyr-beta-unknown-unknown-unknown-7-unknown-unknown-false
+qwen 1.5 chat (4b),qwen-unknown-unknown-1.5-unknown-4-unknown-chat-false
+anthropic: claude v2,claude-unknown-unknown-2-unknown-unknown-unknown-unknown-false
+openai gpt 3.5 turbo instruct,gpt-unknown-turbo-3.5-unknown-unknown-unknown-instruct-false
+mistral 7b openorca,mistral-openorca-unknown-unknown-unknown-7-unknown-unknown-false
+llama 2 7b chat fp16,llama-unknown-fp16-2-unknown-7-unknown-chat-false
+qwen 1.5 32b chat,qwen-unknown-unknown-1.5-unknown-32-unknown-chat-false
+flan t5 xl (3b),flan-t5-xl-unknown-unknown-3-unknown-unknown-false
+babbage 002 (fine tuning),babbage-unknown-unknown-unknown-2-unknown-unknown-unknown-true
+mistral 7b instruct v0.2 lora,mistral-instruct-lora-0.2-unknown-7-unknown-unknown-false
+gpt neox 20b,gpt-neox-unknown-unknown-unknown-20-unknown-unknown-false
 llama 3 lumimaid 70b,llama-lumimaid-unknown-3-unknown-70-unknown-unknown-false
-perplexity: llama3 sonar 8b,llama-sonar-unknown-3-unknown-8-unknown-unknown-false
-llama 3 70b instruct reference,llama-unknown-reference-3-unknown-70-unknown-instruct-false
-snowflake arctic instruct,snowflake-arctic-unknown-unknown-unknown-unknown-unknown-instruct-false
-pythia chat base (7b),pythia-unknown-base-unknown-unknown-7-unknown-chat-false
-discolm mixtral 8x7b (46.7b),discolm-mixtral-unknown-unknown-unknown-46.7-unknown-unknown-false
-dolly v2 (7b),dolly-unknown-unknown-2-unknown-7-unknown-unknown-false
-platypus2 70b instruct,platypus-unknown-unknown-2-unknown-70-unknown-instruct-false
-gryphe mythomax l2 lite (13b),gryphe-mythomax-lite-l2-unknown-13-unknown-unknown-false
-llava next (mistral 7b),llava-next-mistral-unknown-unknown-7-unknown-unknown-false
-baichuan3 turbo 128k,baichuan-unknown-turbo-3-unknown-unknown-128-unknown-false
-abab6.5s,abab-s-unknown-6.5-unknown-unknown-unknown-unknown-false
-abab6.5t,abab-t-unknown-6.5-unknown-unknown-unknown-unknown-false
-reka core,reka-core-unknown-unknown-unknown-unknown-unknown-unknown-false
-reka edge,reka-edge-unknown-unknown-unknown-unknown-unknown-unknown-false
-vanilla language model 34b,vanilla-language-unknown-unknown-unknown-34-unknown-unknown-false
-llama 3.1 sonar small 128k online,llama-sonar-small-3.1-unknown-unknown-128-online-false
-llama 3.1 sonar huge 128k online,llama-sonar-huge-3.1-unknown-unknown-128-online-false
-llama 3.1 70b versatile 128k,llama-versatile-unknown-3.1-unknown-70-128-unknown-false
-gryphe/mythomax l2 13b,gryphe-mythomax-unknown-l2-unknown-13-unknown-unknown-false
-solar pro,solar-pro-unknown-unknown-unknown-unknown-unknown-unknown-false
-solar mini,solar-mini-unknown-unknown-unknown-unknown-unknown-unknown-false
-solar docvision,solar-docvision-unknown-unknown-unknown-unknown-unknown-unknown-false
-sensechat 5.5,sensechat-unknown-unknown-5.5-unknown-unknown-unknown-unknown-false
-sensechat vision 5.5,sensechat-unknown-vision-5.5-unknown-unknown-unknown-unknown-false
-eleutherai/pythia 410m,pythia-unknown-unknown-unknown-unknown-0.41-unknown-unknown-false
-gpr 4 turbo,gpr-unknown-turbo-4-unknown-unknown-unknown-unknown-false
-deepseek coder 7b base v1.5,deepseek-unknown-base-1.5-unknown-7-unknown-coder-false
+codellama (13b),llama-unknown-unknown-unknown-unknown-13-unknown-code-false
+glm 4 airx,glm-airx-unknown-4-unknown-unknown-unknown-unknown-false
+chatglm 32b,chatglm-unknown-unknown-unknown-unknown-32-unknown-unknown-false
+fine tuned curie,curie-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true
+llama 2 7b chat,llama-unknown-unknown-2-unknown-7-unknown-chat-false
+falcon 40b instruct,falcon-unknown-unknown-unknown-unknown-40-unknown-instruct-false
+openchat 3.6 8b,openchat-unknown-unknown-3.6-unknown-8-unknown-unknown-false
+meta llama 3.1 70b instruct,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
+llama 3 8b 8k,llama-unknown-unknown-3-unknown-8-8-unknown-false
+codegemma 2b,codegemma-unknown-unknown-unknown-2-unknown-unknown-unknown-false
+nous: hermes 3 70b instruct,hermes-unknown-unknown-3-unknown-70-unknown-instruct-false
+nous: hermes 13b,hermes-unknown-unknown-unknown-unknown-13-unknown-unknown-false
+chronos hermes 13b v2,hermes-unknown-unknown-2-unknown-13-unknown-unknown-false
+meta: llama 3 70b (base),llama-unknown-unknown-3-unknown-70-unknown-unknown-false
+nous hermes 2 yi 34b,hermes-yi-unknown-2-unknown-34-unknown-unknown-false
+codey for code generation 32k,codey-unknown-code-generation-unknown-unknown-unknown-32-false
+granite 3 2b instruct,granite-unknown-unknown-3-unknown-2-unknown-instruct-false
 llama v3p1 405b instruct long,llama-unknown-long-3.1-unknown-405-unknown-instruct-false
+nous hermes llama2 70b,hermes-llama-unknown-2-unknown-70-unknown-unknown-false
+command r 08 2024,commandr-unknown-unknown-unknown-082024-unknown-unknown-unknown-false
+xwin 70b,xwin-unknown-unknown-unknown-unknown-70-unknown-unknown-false
+mistralai/mistral 7b instruct v0.1,mistral-unknown-unknown-0.1-unknown-7-unknown-instruct-false
+granite 34b code instruct,granite-unknown-unknown-unknown-34-unknown-unknown-instruct-false
+qwen2 vl 72b instruct,qwen-vl-unknown-2-unknown-72-unknown-instruct-false
+sensechat,sensechat-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
+nous: hermes 2 mixtral 8x7b dpo,hermes-mixtral-dpo-2-unknown-8x7-unknown-unknown-false
+perplexity: llama 3.1 sonar 70b online,llama-sonar-unknown-3.1-unknown-70-unknown-online-false
+openchat 3.5,openchat-unknown-unknown-3.5-unknown-unknown-unknown-unknown-false
+liquid: lfm 40b moe,lfm-moe-unknown-unknown-unknown-40-unknown-unknown-false
+qwen2.5 coder 7b instruct,qwen-unknown-unknown-2.5-unknown-7-unknown-instruct-false
+fine tuning (ada),ada-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true
+codestral finetuned,codestral-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true
+llama 2 13b,llama-unknown-unknown-2-unknown-13-unknown-unknown-false
+llama 2 70b,llama-unknown-unknown-2-unknown-70-unknown-unknown-false
+pythia 12b,pythia-unknown-unknown-unknown-unknown-12-unknown-unknown-false
+mistral small (24.02),mistral-small-unknown-unknown-2402-unknown-unknown-unknown-false
+glm 4 air,glm-air-unknown-4-unknown-unknown-unknown-unknown-false
+chatcompletion v2,chatcompletion-unknown-unknown-2-unknown-unknown-unknown-unknown-false
+llama 2 chat (7b),llama-unknown-unknown-2-unknown-7-unknown-chat-false
+llama 3.1 instruct (8b),llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
+granite 13b chat,granite-unknown-unknown-unknown-unknown-13-unknown-chat-false
+llama 3 turbo 8b,llama-unknown-turbo-3-unknown-8-unknown-unknown-false
+liquid: lfm 40b moe (free),lfm-moe-unknown-unknown-unknown-40-unknown-unknown-false
+phi 3.5 mini 128k instruct,phi-mini-unknown-3.5-unknown-unknown-128-instruct-false
+mistral 7b instruct v0.1,mistral-instruct-unknown-0.1-unknown-7-unknown-unknown-false
+mpt chat (30b),mpt-unknown-unknown-unknown-unknown-30-unknown-chat-false
+jondurbin/airoboros l2 70b,airoboros-unknown-unknown-l2-unknown-70-unknown-unknown-false
+mistral 7b instruct v0.1 awq,mistral-instruct-awq-0.1-unknown-7-unknown-unknown-false
+nous capybara v1.9 (7b),capybara-unknown-unknown-1.9-unknown-7-unknown-unknown-false
+mistral nemo finetuned,mistral-nemo-finetuned-unknown-unknown-unknown-unknown-unknown-true
+phi 3 medium instruct,phi-medium-unknown-3-unknown-unknown-unknown-instruct-false
+gpt 3.5 turbo finetuned,gpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-true
+qwen/qwen 2 72b instruct,qwen-unknown-unknown-2-unknown-72-unknown-instruct-false
+llama 3 8b instruct awq,llama-unknown-awq-3-unknown-8-unknown-instruct-false
+pre trained named entity recognition model,unknown-unknown-unknown-unknown-unknown-unknown-false
+chatglm turbo,chatglm-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
+starcoder2 3b,starcoder2-unknown-unknown-unknown-unknown-3-unknown-unknown-false
+baichuan2 turbo,baichuan-unknown-turbo-2-unknown-unknown-unknown-unknown-false
+meta: llama 3.2 3b instruct (free),llama-unknown-unknown-3.2-unknown-3-unknown-instruct-false
+nous hermes 2 mixtral 8x7b sft,hermes-mixtral-sft-2-unknown-8x7-unknown-unknown-false
+gpt 3.5 turbo 0301,gpt-unknown-turbo-3.5-0301-unknown-unknown-unknown-false
+llama 2 chat (70b),llama-unknown-unknown-2-unknown-70-unknown-chat-false
+jurassic mid,jurassic-mid-unknown-unknown-unknown-unknown-unknown-unknown-false
+mistral large 2407 finetuned,mistral-large-unknown-unknown-2407-unknown-unknown-unknown-true
+qwen 1.5 72b chat,qwen-unknown-unknown-1.5-unknown-72-unknown-chat-false
+lama 2 chat (13b),lama-unknown-unknown-2-unknown-13-unknown-chat-false
+llama 3 reference 70b,llama-unknown-reference-3-unknown-70-unknown-unknown-false
+nous: hermes 3 405b instruct (free),hermes-unknown-unknown-3-unknown-405-unknown-instruct-false
+gpt 4o 2024 08 06,gpt-4o-unknown-unknown-20240806-unknown-unknown-unknown-false
+meta/meta llama 3 70b,llama-unknown-unknown-3-unknown-70-unknown-unknown-false
+qwen 1.5 chat (1.8b),qwen-unknown-unknown-1.5-unknown-1.8-unknown-chat-false
+instructgpt (ada),ada-unknown-unknown-unknown-unknown-unknown-unknown-instruct-false
+supreme,supreme-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
+llama 3.1 instruct (70b) reference,llama-unknown-reference-3.1-unknown-70-unknown-instruct-false
+jurassic 2 mid,jurassic-mid-unknown-2-unknown-unknown-unknown-unknown-false
+guanaco (65b),guanaco-unknown-unknown-unknown-unknown-65-unknown-unknown-false
+chat gpt 4,gpt-unknown-unknown-4-unknown-unknown-unknown-chat-false
+qwen 1.5 110b chat,qwen-unknown-unknown-1.5-unknown-110-unknown-chat-false
+llama3 70b,llama-unknown-unknown-3-unknown-70-unknown-unknown-false
+openchat 3.5 7b (free),openchat-unknown-unknown-3.5-unknown-7-unknown-unknown-false
+glm 4 0520,glm-unknown-unknown-4-0520-unknown-unknown-unknown-false
+microsoft phi 2,phi-unknown-unknown-2-unknown-unknown-unknown-unknown-false
+lzlv 70b,lzlv-unknown-unknown-unknown-unknown-70-unknown-unknown-false
+chatcompletion pro,chatcompletion-pro-unknown-unknown-unknown-unknown-unknown-unknown-false
+zephyr 7b,zephyr-unknown-unknown-unknown-unknown-7-unknown-unknown-false
+qwen 1.5 chat (32b),qwen-unknown-unknown-1.5-unknown-32-unknown-chat-false
+qwen1.5 1.8b chat,qwen-unknown-unknown-1.5-unknown-1.8-unknown-chat-false
+sensechat 32k,sensechat-unknown-unknown-unknown-unknown-unknown-32-unknown-false
+gemma 2b instruct,gemma-unknown-unknown-unknown-unknown-2-unknown-instruct-false
+llama 3.1 sonar small 128k online,llama-sonar-small-3.1-unknown-unknown-128-online-false
+mistral (7b) instruct v0.3,mistral-instruct-unknown-0.3-unknown-7-unknown-unknown-false
+solar docvision,solar-docvision-unknown-unknown-unknown-unknown-unknown-unknown-false
+mistral medium,mistral-medium-unknown-unknown-unknown-unknown-unknown-unknown-false
+deepseek coder instruct (33b),deepseek-unknown-instruct-unknown-33-unknown-unknown-unknown-false
+code llama instruct (70b),llama-unknown-unknown-unknown-unknown-70-unknown-instruct-false
+gemma instruct (7b),gemma-unknown-unknown-unknown-unknown-7-unknown-instruct-false
+qwen2.5 72b,qwen-unknown-unknown-2.5-unknown-72-unknown-unknown-false
+davinci 002 finetuned,davinci-unknown-unknown-unknown-2-unknown-unknown-unknown-true
+command r+ 08 2024,commandr-plus-unknown-unknown-082024-unknown-unknown-unknown-false
+redpajama incite chat (7b),redpajama-incite-unknown-unknown-unknown-7-unknown-chat-false
+granite guardian 3 2b,granite-guardian-unknown-3-unknown-2-unknown-unknown-false
+nous hermes 2 mistral dpo (7b),hermes-mistral-dpo-2-unknown-7-unknown-unknown-false
+yi 34b chat,yi-unknown-unknown-unknown-unknown-34-unknown-chat-false
+jumbo (base & instruct),jumbo-unknown-unknown-unknown-unknown-unknown-unknown-instruct-false
+llama2 70b,llama-unknown-unknown-unknown-70-unknown-unknown-unknown-false
+gemma instruct (2b),gemma-unknown-unknown-unknown-unknown-2-unknown-instruct-false
+ibm granite/granite 3.0 8b instruct,granite-unknown-unknown-3-unknown-8-unknown-instruct-false
+llama 3 7b,llama-unknown-unknown-3-unknown-7-unknown-unknown-false
+deepseek coder v2 lite base,deepseek-unknown-lite-base-2-unknown-unknown-unknown-false
+nous hermes 2 mixtral 8x7b dpo,hermes-mixtral-dpo-2-unknown-8x7-unknown-unknown-false
+llama 2 7b 32k instruct (7b),llama-unknown-unknown-2-unknown-7-32-instruct-false
+discolm mixtral 8x7b (46.7b),discolm-mixtral-unknown-unknown-unknown-8x7-unknown-unknown-false
+phind codellama 34b v2,codellama-unknown-unknown-2-unknown-34-unknown-unknown-false
+llama 2 (13b),llama-unknown-unknown-2-unknown-13-unknown-unknown-false
+meta/llama 2 13b chat,llama-unknown-unknown-2-unknown-13-unknown-chat-false
+codestral mamba,codestral-mamba-unknown-unknown-unknown-unknown-unknown-unknown-false
+llama 3.1 8b instruct,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
+mistral nemo instruct 2407,mistral-nemo-unknown-unknown-2407-unknown-unknown-instruct-false
+mistralai/mistral 7b instruct,mistral-unknown-unknown-unknown-unknown-7-unknown-instruct-false
+jumbo grande (base & instruct),jumbo-grande-unknown-unknown-unknown-unknown-unknown-instruct-false
+mistralai/mistral 7b v0.1,mistral-unknown-unknown-0.1-unknown-7-unknown-unknown-false
+llama 3.2 3b (preview) 8k,llama-unknown-preview-3.2-unknown-3-8-unknown-false
+claude 2.0/2.1,claude-unknown-unknown-2.1-unknown-unknown-unknown-unknown-false
+granite guardian 3 8b,granite-guardian-unknown-3-unknown-8-unknown-unknown-false
+gpt 3.5 turbo (4k fine tuned),gpt-unknown-turbo-3.5-unknown-unknown-4-unknown-true
+test 11,test-unknown-unknown-11-unknown-unknown-unknown-unknown-false
+mixtral 8x22b,mixtral-unknown-unknown-unknown-unknown-8x22-unknown-unknown-false
+nous: hermes 3 405b instruct (extended),hermes-unknown-extended-3-unknown-405-unknown-instruct-false
+mistral small 2402 finetuned,mistral-small-unknown-unknown-2402-unknown-unknown-unknown-true
+llava next (mistral 7b),llava-mistral-next-unknown-7-unknown-unknown-false-false
+chatcompletion,chatcompletion-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
+dolly v2 12b,dolly-unknown-unknown-2-unknown-12-unknown-unknown-false
+llama 3 instruct (8b),llama-unknown-unknown-3-unknown-8-unknown-instruct-false
+llama 3 70b instruct (hf version),llama-unknown-unknown-3-unknown-70-unknown-instruct-false
+mistral: mistral nemo,mistral-nemo-unknown-unknown-unknown-unknown-unknown-unknown-false
+llama 3.1 instruct (70b),llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
+code llama 70b instruct,llama-unknown-unknown-unknown-unknown-70-unknown-instruct-false
+llama 3 70b gradient instruct,llama-unknown-gradient-3-unknown-70-unknown-instruct-false
+llama 3.1 8b instruct turbo,llama-unknown-turbo-3.1-unknown-8-unknown-instruct-false
+llama 3 8b instruct reference,llama-unknown-reference-3-unknown-8-unknown-instruct-false
+gryphe mythomax l2 lite (13b),mythomax-unknown-lite-l2-unknown-13-unknown-unknown-false
+base control,base-control-unknown-unknown-unknown-unknown-unknown-unknown-false
+qwen (7b),qwen-unknown-unknown-unknown-unknown-7-unknown-unknown-false
+qwen2p5 math 72b instruct,qwen-math-unknown-2.5-unknown-72-unknown-instruct-false
+google/gemma 2 9b it,gemma-unknown-it-2-unknown-9-unknown-unknown-false
+codellama 13b,codellama-unknown-unknown-unknown-unknown-13-unknown-unknown-false
+microsoft/wizardlm 2 8x22b,wizardlm-unknown-unknown-2-unknown-8x22-unknown-unknown-false
+jurassic 2 light,jurassic-light-unknown-2-unknown-unknown-unknown-unknown-false
+starcoder2 15b instruct,starcoder2-unknown-unknown-unknown-15-unknown-unknown-instruct-false
+pygmalion: mythalion 13b,mythalion-unknown-unknown-unknown-unknown-13-unknown-unknown-false
+mistralai/mistral nemo,mistral-nemo-unknown-unknown-unknown-unknown-unknown-unknown-false
+anthropic: claude v2.1 (self moderated),claude-unknown-moderated-2.1-unknown-unknown-unknown-unknown-false
+anthropic: claude v2 (self moderated),claude-unknown-moderated-2-unknown-unknown-unknown-unknown-false
+starcoder2 15b,starcoder2-unknown-unknown-unknown-unknown-15-unknown-unknown-false
+meta llama 3 70b instruct,llama-unknown-unknown-3-unknown-70-unknown-instruct-false
+instructcodet5 (16b),instructcodet5-unknown-unknown-unknown-unknown-16-unknown-unknown-false
+phi 3 mini 4k instruct,phi-mini-unknown-3-unknown-unknown-4-instruct-false
+guanaco (33b),guanaco-unknown-unknown-unknown-unknown-33-unknown-unknown-false
+command r+,commandr-plus-unknown-unknown-unknown-unknown-unknown-unknown-false
+claude 2.0,claude-unknown-unknown-2-unknown-unknown-unknown-unknown-false
+glm 4 flashx,glm-flashx-unknown-4-unknown-unknown-unknown-unknown-false
+sensechat character pro,sensechat-character-pro-unknown-unknown-unknown-unknown-unknown-false
+claude 3 sonnet,claude-sonnet-unknown-3-unknown-unknown-unknown-unknown-false
+starcoder 15.5b,starcoder-unknown-unknown-unknown-unknown-15.5-unknown-unknown-false
+redpajama incite instruct (3b),redpajama-incite-unknown-unknown-unknown-3-unknown-instruct-false
+sqlcoder,sqlcoder-unknown-unknown-unknown-unknown-unknown-unknown-false
+llama 2 préentrainé (70b),llama-unknown-unknown-unknown-unknown-70-unknown-unknown-false
+34b vanilla language model,vanilla-language-unknown-unknown-unknown-34-unknown-unknown-false
+cohere: command r (08 2024),commandr-unknown-unknown-unknown-082024-unknown-unknown-unknown-false
+sonar medium online,sonar-medium-unknown-unknown-unknown-unknown-unknown-online-false
+openai gpt 3_5 turbo,gpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-false
+mistral: mistral 7b instruct v0.1,mistral-unknown-unknown-0.1-unknown-7-unknown-instruct-false
+8x7b vanilla language model,vanilla-language-unknown-unknown-unknown-8x7-unknown-unknown-false
+characterglm,characterglm-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false

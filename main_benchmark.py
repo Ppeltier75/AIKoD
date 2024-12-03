@@ -254,7 +254,8 @@ def main():
     examples_directory = os.path.join(base_path, "data", "id_name", "exemple")
 
     # Appeler la fonction pour générer les id_name
-    Benchmark_update_id_names(root_directory, examples_directory, openai_api_key)
+    Benchmark_update_id_names(root_directory, examples_directory, openai_api_key, reset=False)
+
 
 if __name__ == "__main__":
     main()
