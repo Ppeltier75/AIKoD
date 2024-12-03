@@ -1,9 +1,9 @@
 name,id_name,2024-06-18,2024-07-03,2024-08-26,2024-09-27,2024-10-21
-whisper-base,whisper-base-unknown-unknown,0.01225,,,,
-whisper-large,whisper-large-unknown-unknown,0.0168,,,,
-whisper-medium,whisper-medium-unknown-unknown,0.0147,,,,
-whisper-small,whisper-small-unknown-unknown,0.0133,,,,
-whisper-tiny,whisper-tiny-unknown-unknown,0.01155,,,,
 Aura stt,aura-stt-unknown-unknown,,,,0.01575,0.01575
 Deepgram Nova-2,deepgram-nova-unknown-2,,,,0.006195,0.006195
+whisper-base,whisper-base-unknown-unknown,0.01225,0.01225,0.01225,0.01225,0.01225
+whisper-large,whisper-large-unknown-unknown,0.0168,0.0168,0.0168,0.0168,0.0168
+whisper-medium,whisper-medium-unknown-unknown,0.0147,0.0147,0.0147,0.0147,0.0147
+whisper-small,whisper-small-unknown-unknown,0.0133,0.0133,0.0133,0.0133,0.0133
+whisper-tiny,whisper-tiny-unknown-unknown,0.01155,0.01155,0.01155,0.01155,0.01155
 Whisper,whisper-unknown-unknown-unknown,,,,0.003675,0.003675

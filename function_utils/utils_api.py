@@ -5,15 +5,33 @@ import numpy as np
 
 from datetime import datetime, timedelta
 from collections import defaultdict
+from datetime import datetime
+
+from function_utils.utils_merge_id import select_specific_segments, select_segments_no_order
 
 def init_API(pricing_directory, output_json_path):
     """
-    Parcourt les fichiers CSV de pricing pour chaque fournisseur et génère un fichier JSON avec les informations des modèles.
+    Parcourt les fichiers CSV de pricing pour chaque fournisseur et génère un fichier JSON avec les informations des modèles,
+    en ajoutant une information 'country_provider' basée sur le fournisseur.
 
     :param pricing_directory: Chemin vers le répertoire 'pricing' contenant les sous-dossiers des providers.
     :param output_json_path: Chemin vers le fichier JSON de sortie.
+    :param country_mapping_path: Chemin vers le fichier JSON de mapping des pays par fournisseur.
     """
     models = []
+
+    base_path = os.path.abspath(os.path.dirname(__file__))
+    country_mapping_path = os.path.join(base_path, '..', 'data', 'models_infos', 'mapping', 'country_mapping.json')
+    
+    # Charger le mapping des pays
+    if not os.path.exists(country_mapping_path):
+        print(f"Le fichier de mapping des pays n'existe pas : {country_mapping_path}")
+        country_mapping = {}
+    else:
+        with open(country_mapping_path, 'r', encoding='utf-8') as f:
+            country_mapping = json.load(f)
+        # Normaliser les clés pour une recherche insensible à la casse
+        country_mapping_normalized = {key.lower(): value for key, value in country_mapping.items()}
     
     # Parcours de chaque fournisseur (sous-dossier) dans le répertoire pricing
     for provider_name in os.listdir(pricing_directory):
@@ -28,12 +46,12 @@ def init_API(pricing_directory, output_json_path):
                     # Extraction du type à partir du nom du fichier
                     file_parts = filename.split('_')
                     if len(file_parts) >= 2:
-                        type_name = file_parts[0]  # Partie avant le premier '_'
+                        type_name = file_parts[0].lower()  # Partie avant le premier '_', en minuscule
                         # Assurez-vous que le type est dans le dictionnaire
                         if type_name not in type_files:
                             type_files[type_name] = {}
                         # Déterminer le type de prix à partir du nom du fichier
-                        price_type = file_parts[1].replace('.csv', '')
+                        price_type = file_parts[1].replace('.csv', '').lower()
                         # Ajouter le chemin du fichier au dictionnaire
                         file_path = os.path.join(provider_path, filename)
                         type_files[type_name][price_type] = file_path
@@ -44,10 +62,14 @@ def init_API(pricing_directory, output_json_path):
                 # Traitement de chaque type de prix
                 for price_type, file_path in price_files.items():
                     # Lire le fichier CSV
-                    df = pd.read_csv(file_path)
+                    try:
+                        df = pd.read_csv(file_path)
+                    except Exception as e:
+                        print(f"  Erreur lors de la lecture du fichier {file_path} : {e}")
+                        continue
                     # Vérifier si les colonnes 'name' et 'id_name' sont présentes
                     if 'name' not in df.columns or 'id_name' not in df.columns:
-                        print(f"Le fichier {file_path} est ignoré car les colonnes 'name' ou 'id_name' sont manquantes.")
+                        print(f"  Le fichier {file_path} est ignoré car les colonnes 'name' ou 'id_name' sont manquantes.")
                         continue
                     # Ajouter le DataFrame au dictionnaire
                     price_dfs[price_type] = df
@@ -71,7 +93,10 @@ def init_API(pricing_directory, output_json_path):
                 # Concaténer tous les DataFrames convertis
                 df_all = pd.concat(melted_dfs, ignore_index=True)
                 # Pivot pour obtenir une ligne par 'name', 'id_name', 'date'
-                df_pivot = df_all.pivot_table(index=['name', 'id_name', 'date'], columns='price_type', values='price', aggfunc='first').reset_index()
+                df_pivot = df_all.pivot_table(index=['name', 'id_name', 'date'], 
+                                             columns='price_type', 
+                                             values='price', 
+                                             aggfunc='first').reset_index()
                 # Pour chaque ligne, créer une entrée de modèle
                 for idx, row in df_pivot.iterrows():
                     # Vérifier si au moins un prix est présent
@@ -80,6 +105,9 @@ def init_API(pricing_directory, output_json_path):
                     price_output = row.get('priceoutput', None)
                     if pd.isnull(price_call) and pd.isnull(price_input) and pd.isnull(price_output):
                         continue  # Ignorer les entrées sans aucun prix
+                    # Déterminer le country_provider
+                    provider_key = provider_name.lower()
+                    country_provider = country_mapping_normalized.get(provider_key, None)
                     model_entry = {
                         'provider': provider_name,
                         'model_name': row['name'],
@@ -89,6 +117,7 @@ def init_API(pricing_directory, output_json_path):
                         'price_call': float(price_call) if not pd.isnull(price_call) else None,
                         'price_input': float(price_input) if not pd.isnull(price_input) else None,
                         'price_output': float(price_output) if not pd.isnull(price_output) else None,
+                        'country_provider': country_provider
                     }
                     models.append(model_entry)
     # Écrire la liste des modèles dans le fichier JSON de sortie
@@ -288,53 +317,35 @@ def add_infos_to_API(models_infos_directory, api_json_path):
     print("La fonction add_infos_to_API s'est exécutée avec succès.")
 
 
-
-def pareto_frontier(models, price_field, quality_field, maximize_quality):
+def pareto_frontier(data, price_field, quality_field, maximize_quality=True):
     """
-    Calcule le front de Pareto pour une liste de modèles en fonction du prix et de la qualité.
+    Identifie les modèles qui sont sur le front de Pareto en fonction des champs de prix et de qualité.
 
-    Paramètres:
-    - models (list): Liste de modèles avec les champs '_parsed_price' et '_parsed_quality'.
-    - price_field (str): Nom du champ de prix dans les modèles.
-    - quality_field (str): Nom du champ de qualité dans les modèles.
-    - maximize_quality (bool): True si la qualité doit être maximisée, False si elle doit être minimisée.
-
-    Retourne:
-    - pareto_models (list): Liste des modèles sur le front de Pareto.
+    :param data: Liste de dictionnaires contenant les modèles filtrés avec '_parsed_price' et '_parsed_quality'.
+    :param price_field: Nom du champ de prix utilisé pour le tri.
+    :param quality_field: Nom du champ de qualité utilisé pour le tri.
+    :param maximize_quality: Booléen indiquant si la qualité doit être maximisée ou minimisée.
+    :return: Liste des modèles sur le front de Pareto.
     """
-    # Exclure les modèles dont le prix est 0 ou None
-    models = [model for model in models if model['_parsed_price'] is not None and model['_parsed_price'] > 0]
-
-    # Vérifier s'il y a des modèles restants après le filtrage
-    if not models:
-        return []
-
-    # Trier les modèles par prix croissant
-    models_sorted = sorted(models, key=lambda x: x['_parsed_price'])
-    pareto_models = []
-    current_best_quality = None
-
-    for model in models_sorted:
-        quality = model['_parsed_quality']
-        if quality is None:
-            continue  # Ignorer les modèles sans qualité définie
-        if current_best_quality is None:
-            pareto_models.append(model)
+    # Trier les données en fonction du prix (ascendant) et de la qualité (descendant ou ascendant)
+    sorted_data = sorted(
+        data,
+        key=lambda x: (x[price_field], -x[quality_field] if maximize_quality else x[quality_field])
+    )
+    
+    pareto = []
+    current_best_quality = -np.inf if maximize_quality else np.inf
+    
+    for model in sorted_data:
+        quality = model[quality_field]
+        if (maximize_quality and quality > current_best_quality) or (not maximize_quality and quality < current_best_quality):
+            pareto.append(model)
             current_best_quality = quality
-        else:
-            if maximize_quality:
-                if quality > current_best_quality:
-                    pareto_models.append(model)
-                    current_best_quality = quality
-            else:
-                if quality < current_best_quality:
-                    pareto_models.append(model)
-                    current_best_quality = quality
-
-    return pareto_models
+    
+    return pareto
 
 
-def generate_API_date(input_json_path, output_json_path):
+def generate_API_date(input_json_path, output_json_path, exclude_provider=None, exclude_company=None):
     """
     Génère un fichier JSON contenant les modèles disponibles pour chaque mois de 2023-01 à 2024-11,
     catégorisés par 'type', avec les 'models_star' par 'type' représentant le Pareto optimal
@@ -343,7 +354,11 @@ def generate_API_date(input_json_path, output_json_path):
     Paramètres:
     - input_json_path (str): Chemin vers le fichier JSON existant (généré par 'init_API').
     - output_json_path (str): Chemin où le fichier JSON sera enregistré.
-
+    - exclude_provider (List[str], optionnel): Liste des fournisseurs à exclure de la génération des frontières.
+      Exemple : exclude_provider=["OpenAI", "AI21"]
+    - exclude_company (List[str], optionnel): Liste des sociétés à exclure de la génération des frontières.
+      Exemple : exclude_company=["OpenAI Inc", "Anthropic LLC"]
+    
     Le fichier JSON généré aura la structure suivante:
     {
         "YYYY_MM": {
@@ -364,8 +379,19 @@ def generate_API_date(input_json_path, output_json_path):
     }
     """
     # Lire les données depuis le fichier JSON existant
-    with open(input_json_path, 'r', encoding='utf-8') as f:
-        data = json.load(f)
+    try:
+        with open(input_json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        print(f"Données JSON chargées depuis {input_json_path}")
+    except FileNotFoundError:
+        print(f"Erreur : Le fichier JSON spécifié n'existe pas : {input_json_path}")
+        return
+    except json.JSONDecodeError as e:
+        print(f"Erreur de décodage JSON dans le fichier {input_json_path} : {e}")
+        return
+    except Exception as e:
+        print(f"Erreur lors du chargement du fichier JSON {input_json_path} : {e}")
+        return
 
     # Date de début et de fin
     start_date = datetime(2023, 1, 1)
@@ -392,18 +418,39 @@ def generate_API_date(input_json_path, output_json_path):
         else:
             current_date = datetime(year, month + 1, 1)
 
-    # Pré-traiter les données pour obtenir les dates disponibles par fournisseur
+    # Normaliser les listes exclude_provider et exclude_company pour une comparaison insensible à la casse
+    if exclude_provider:
+        exclude_provider_normalized = [provider.lower() for provider in exclude_provider]
+        print(f"Fournisseurs exclus (après normalisation) : {exclude_provider_normalized}")
+    else:
+        exclude_provider_normalized = []
+        print("Aucun fournisseur n'est exclu.")
+
+    if exclude_company:
+        exclude_company_normalized = [company.lower() for company in exclude_company]
+        print(f"Sociétés exclues (après normalisation) : {exclude_company_normalized}")
+    else:
+        exclude_company_normalized = []
+        print("Aucune société n'est exclue.")
+
+    # Pré-traiter les données pour obtenir les dates disponibles par fournisseur et société, en excluant les fournisseurs et sociétés spécifiés
     provider_dates = defaultdict(set)
     for entry in data:
         provider = entry.get('provider')
+        company = entry.get('company', '').strip().lower()
         date_str = entry.get('date')
         if not provider or not date_str:
             continue
+        if provider.lower() in exclude_provider_normalized:
+            continue  # Exclure ce fournisseur
+        if company and company in exclude_company_normalized:
+            continue  # Exclure cette société
         try:
             entry_date = datetime.strptime(date_str, '%Y-%m-%d')
         except ValueError:
             continue
         provider_dates[provider].add(entry_date)
+    print(f"Fournisseurs traités après exclusion : {list(provider_dates.keys())}")
 
     # Maintenant, pour chaque date cible
     for target_date in date_list:
@@ -422,13 +469,20 @@ def generate_API_date(input_json_path, output_json_path):
         models_for_date = []
         for entry in data:
             provider = entry.get('provider')
+            company = entry.get('company', '').strip().lower()
             date_str = entry.get('date')
             if not provider or not date_str:
                 continue
+            if provider.lower() in exclude_provider_normalized:
+                continue  # Exclure ce fournisseur
+            if company and company in exclude_company_normalized:
+                continue  # Exclure cette société
             if provider in provider_latest_date:
                 latest_date = provider_latest_date[provider]
                 if date_str == latest_date.strftime('%Y-%m-%d'):
                     models_for_date.append(entry)
+
+        print(f"Date cible {date_key} : {len(models_for_date)} modèles collectés après exclusion.")
 
         # Catégoriser les modèles par 'type' dans 'models_list'
         models_list = defaultdict(list)
@@ -451,8 +505,8 @@ def generate_API_date(input_json_path, output_json_path):
 
             # Définir les champs de prix et de qualité selon le type
             if type_ == 'text':
-                price_field = 'blended_price'
-                quality_field = 'quality_index'
+                price_field = 'price_input'  # Assurez-vous que cela correspond à vos données
+                quality_field = 'quality_index'  # Assurez-vous que cela correspond à vos données
                 maximize_quality = True
             elif type_ == 'audiototext':
                 price_field = 'price_input'
@@ -484,6 +538,9 @@ def generate_API_date(input_json_path, output_json_path):
                     m.pop('_parsed_price', None)
                     m.pop('_parsed_quality', None)
                 models_star[type_] = pareto_models
+                print(f"Type '{type_}' : {len(pareto_models)} modèles sur le front de Pareto.")
+            else:
+                print(f"Type '{type_}' : Aucun modèle filtré pour le front de Pareto.")
 
             # Enlever les champs temporaires des modèles restants
             for m in models:
@@ -502,10 +559,281 @@ def generate_API_date(input_json_path, output_json_path):
     # Créer le répertoire de sortie s'il n'existe pas
     output_dir = os.path.dirname(output_json_path)
     if not os.path.exists(output_dir):
-        os.makedirs(output_dir)
+        try:
+            os.makedirs(output_dir)
+            print(f"Répertoire de sortie créé : {output_dir}")
+        except Exception as e:
+            print(f"Erreur lors de la création du répertoire de sortie {output_dir} : {e}")
+            return
 
     # Écrire les données dans un fichier JSON
-    with open(output_json_path, 'w', encoding='utf-8') as f:
-        json.dump(api_data, f, ensure_ascii=False, indent=4)
+    try:
+        with open(output_json_path, 'w', encoding='utf-8') as f:
+            json.dump(api_data, f, ensure_ascii=False, indent=4)
+        print(f"Le fichier JSON a été généré et enregistré à {output_json_path}.")
+    except Exception as e:
+        print(f"Erreur lors de l'enregistrement du fichier JSON mis à jour : {e}")
+        return
 
-    print(f"Le fichier JSON a été généré et enregistré à {output_json_path}.")
+    print("La fonction generate_API_date s'est exécutée avec succès.")
+
+
+
+def add_speed_provider_text_AA(json_path, aa_directory):
+    """
+    Ajoute les colonnes 'median_time_to_first_token_seconds' et 'median_output_tokens_per_second'
+    aux modèles de type 'text', 'audiototext' et 'texttoimage' dans le fichier JSON 'AIKoD_API_base_v0.json'
+    en se basant sur les fichiers 'speed_performance.csv' situés dans les sous-dossiers du répertoire AA.
+    Calcule également le 'blended_price' selon le type de modèle.
+    Indique le nombre de modèles mis à jour et enregistre le JSON modifié.
+    """
+    # Définir les stratégies de transformation pour id_name
+    strategies = [
+        lambda x: x,  # Correspondance exacte
+        lambda x: select_specific_segments(x, [1, 2, 3, 4, 5, 6, 7, 8]),
+        lambda x: select_segments_no_order(x, [1, 2, 3, 4, 5, 6, 7, 8]),
+        lambda x: select_specific_segments(x, [1, 2, 3, 4, 5, 6, 7]),
+        lambda x: select_segments_no_order(x, [1, 2, 3, 4, 5, 6, 7]),
+        lambda x: select_specific_segments(x, [1, 2, 3, 4, 5, 6]),
+        lambda x: select_segments_no_order(x, [1, 2, 3, 4, 5, 6]),
+        lambda x: select_specific_segments(x, [1, 2, 4, 6]),
+        lambda x: select_segments_no_order(x, [1, 2, 4, 6]),
+        lambda x: select_specific_segments(x, [1, 2, 4]),
+        lambda x: select_specific_segments(x, [1, 4, 6]),
+        # Ajoutez d'autres stratégies si nécessaire
+    ]
+
+    # Vérifier l'existence du répertoire AA
+    if not os.path.exists(aa_directory):
+        print(f"Le répertoire AA spécifié n'existe pas : {aa_directory}")
+        return
+
+    # Vérifier l'existence du fichier JSON
+    if not os.path.exists(json_path):
+        print(f"Le fichier JSON spécifié n'existe pas : {json_path}")
+        return
+
+    # Charger le JSON existant
+    try:
+        with open(json_path, 'r', encoding='utf-8') as f:
+            api_data = json.load(f)
+        print(f"Le fichier JSON a été chargé depuis {json_path}")
+    except json.JSONDecodeError as e:
+        print(f"Erreur de décodage JSON dans le fichier {json_path} : {e}")
+        return
+    except Exception as e:
+        print(f"Erreur lors du chargement du fichier JSON {json_path} : {e}")
+        return
+
+    updated_models_count = 0  # Compteur des modèles mis à jour
+
+    # Parcourir les modèles dans le JSON
+    for model in api_data:
+        try:
+            if model.get('type') not in ['text', 'audiototext', 'texttoimage']:
+                continue  # Ne traiter que les types spécifiés
+
+            id_name_original = model.get('id_name')
+            if not id_name_original:
+                print(f"Modèle sans 'id_name' : {model.get('model_name', 'Unknown')}")
+                continue
+
+            provider = model.get('provider', '').lower()
+            model_date_str = model.get('date')
+            if not model_date_str:
+                print(f"Modèle sans 'date' : {id_name_original}")
+                continue
+
+            # Parse the model date
+            try:
+                model_date = datetime.strptime(model_date_str, '%Y-%m-%d')
+            except ValueError:
+                print(f"Format de date invalide pour le modèle {id_name_original} : {model_date_str}")
+                continue
+
+            # Find all date folders
+            date_folders = []
+            try:
+                for entry in os.listdir(aa_directory):
+                    entry_path = os.path.join(aa_directory, entry)
+                    if os.path.isdir(entry_path):
+                        try:
+                            folder_date = datetime.strptime(entry, '%Y-%m-%d')
+                            date_folders.append(folder_date)
+                        except ValueError:
+                            continue  # Ignore folders that don't match date format
+                print(f"Date folders trouvés dans {aa_directory} : {len(date_folders)}")
+            except Exception as e:
+                print(f"Erreur lors de la liste des dossiers dans {aa_directory} : {e}")
+                continue
+
+            if not date_folders:
+                print(f"Aucun dossier de date trouvé dans {aa_directory} pour le modèle {id_name_original}")
+                continue
+
+            # Find the closest date <= model_date
+            closest_date = max([d for d in date_folders if d <= model_date], default=None)
+            if not closest_date:
+                print(f"Aucune date appropriée trouvée pour le modèle {id_name_original} avec la date {model_date_str}")
+                continue
+
+            closest_date_str = closest_date.strftime('%Y-%m-%d')
+
+            # Build the path to the provider's folder
+            date_folder_path = os.path.join(aa_directory, closest_date_str)
+            provider_dir = None
+            try:
+                for entry in os.listdir(date_folder_path):
+                    entry_path = os.path.join(date_folder_path, entry)
+                    if os.path.isdir(entry_path) and entry.lower() == provider:
+                        provider_dir = entry_path
+                        break
+                if not provider_dir:
+                    print(f"Aucun dossier fournisseur trouvé pour '{provider}' à la date {closest_date_str} pour le modèle {id_name_original}")
+                    continue
+            except Exception as e:
+                print(f"Erreur lors de la recherche du dossier fournisseur dans {date_folder_path} : {e}")
+                continue
+
+            # Path to speed_performance.csv
+            speed_csv_path = os.path.join(provider_dir, 'speed_performance.csv')
+            if not os.path.exists(speed_csv_path):
+                print(f"Fichier 'speed_performance.csv' non trouvé dans {provider_dir} pour le modèle {id_name_original}")
+                continue
+
+            # Load the CSV
+            try:
+                speed_df = pd.read_csv(speed_csv_path)
+                print(f"Fichier 'speed_performance.csv' chargé : {speed_csv_path}")
+            except Exception as e:
+                print(f"Erreur lors du chargement du CSV {speed_csv_path} pour le modèle {id_name_original} : {e}")
+                continue
+
+            # Apply matching strategies on id_name
+            matched_row = None
+            for strategy in strategies:
+                transformed_id_name = strategy(id_name_original)
+                # Look for the transformed_id_name in the 'id_name' column of CSV
+                matched = speed_df[speed_df['id_name'] == transformed_id_name]
+                if not matched.empty:
+                    matched_row = matched.iloc[0]
+                    print(f"Correspondance trouvée avec la stratégie : {transformed_id_name}")
+                    break  # Found, exit the strategies loop
+
+            if matched_row is None:
+                print(f"Aucune correspondance trouvée dans le CSV pour le modèle {id_name_original} après application des stratégies")
+                continue
+
+            # Extract desired columns
+            median_time_to_first_token_seconds = matched_row.get('median_time_to_first_token_seconds', None)
+            median_output_tokens_per_second = matched_row.get('median_output_tokens_per_second', None)
+
+            # Add to the model
+            model['median_time_to_first_token_seconds'] = median_time_to_first_token_seconds
+            model['median_output_tokens_per_second'] = median_output_tokens_per_second
+            print(f"Ajout des colonnes de performance pour le modèle {id_name_original}")
+
+            # Calculate blended_price
+            blended_price = None
+            type_name = model.get('type')
+            if type_name == 'text':
+                price_input = model.get('price_input')
+                price_output = model.get('price_output')
+                price_call = model.get('price_call', 0.0)  # Default to 0.0 if not present
+
+                # Convert prices to float
+                def parse_price(value):
+                    try:
+                        return float(value) if value not in [None, '', 'null'] else None
+                    except (ValueError, TypeError):
+                        return None
+
+                price_input = parse_price(price_input)
+                price_output = parse_price(price_output)
+                price_call = parse_price(price_call) or 0.0
+
+                if price_input is not None and price_output is not None:
+                    blended_price = (3/4) * price_input + (1/4) * price_output + 1000 * price_call
+                else:
+                    blended_price = None
+
+            elif type_name == 'audiototext':
+                price_input = model.get('price_input')
+
+                # Convert price to float
+                def parse_price(value):
+                    try:
+                        return float(value) if value not in [None, '', 'null'] else None
+                    except (ValueError, TypeError):
+                        return None
+
+                price_input = parse_price(price_input)
+
+                if price_input is not None:
+                    blended_price = 1 * price_input
+                else:
+                    blended_price = None
+
+            elif type_name == 'texttoimage':
+                price_output = model.get('price_output')
+
+                # Convert price to float
+                def parse_price(value):
+                    try:
+                        return float(value) if value not in [None, '', 'null'] else None
+                    except (ValueError, TypeError):
+                        return None
+
+                price_output = parse_price(price_output)
+
+                if price_output is not None:
+                    blended_price = 1 * price_output
+                else:
+                    blended_price = None
+
+            # Assign blended_price
+            model['blended_price'] = blended_price
+            print(f"blended_price calculé pour le modèle {id_name_original} : {blended_price}")
+
+            updated_models_count += 1
+
+        except Exception as e:
+            print(f"Erreur lors du traitement du modèle {model.get('id_name', 'Unknown')} : {e}")
+            continue
+
+    # Remplacer les NaN par None dans l'ensemble de la liste des modèles
+    def replace_nan_with_none(data):
+        if isinstance(data, dict):
+            for k in data:
+                data[k] = replace_nan_with_none(data[k])
+            return data
+        elif isinstance(data, list):
+            for i in range(len(data)):
+                data[i] = replace_nan_with_none(data[i])
+            return data
+        elif isinstance(data, float):
+            if np.isnan(data):
+                return None
+            else:
+                return data
+        else:
+            return data
+
+    try:
+        api_data = replace_nan_with_none(api_data)
+        print("Valeurs NaN remplacées par None dans le JSON.")
+    except Exception as e:
+        print(f"Erreur lors de la conversion des NaN en None : {e}")
+        return
+
+    # Enregistrer le fichier JSON mis à jour
+    try:
+        with open(json_path, 'w', encoding='utf-8') as f:
+            json.dump(api_data, f, ensure_ascii=False, indent=4, allow_nan=False)
+        print(f"Le fichier JSON a été mis à jour avec les informations de performance et enregistré à {json_path}.")
+    except Exception as e:
+        print(f"Erreur lors de l'enregistrement du fichier JSON mis à jour : {e}")
+        return
+
+    print(f"La fonction add_speed_provider_text_AA s'est exécutée avec succès. {updated_models_count} modèles ont été mis à jour.")
+

@@ -129,7 +129,7 @@ def add_country_to_csv(csv_path, column_name):
         country_mapping = json.load(f)
     
     # Ajouter la colonne 'country' en mappant les noms de compagnies aux pays
-    df['country'] = df[column_name].map(country_mapping)
+    df['country_company'] = df[column_name].map(country_mapping)
     
     # Enregistrer le DataFrame modifié dans le fichier CSV (optionnel)
     df.to_csv(csv_path, index=False)

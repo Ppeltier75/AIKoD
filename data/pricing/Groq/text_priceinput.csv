@@ -1,23 +1,22 @@
 name,id_name,2024-02-11,2024-05-01,2024-06-02,2024-08-25,2024-09-27,2024-10-21
-Llama 3.2 11B Vision 8k (Preview),llama-unknown-preview-3.2-unknown-11-unknown-8-unknown-false,,,,,,0.18
-Llama 3.2 1B (Preview) 8k,llama-unknown-preview-3.2-unknown-1-8-unknown-false,,,,,,0.04
-Llama 3.2 3B (Preview) 8k,llama-unknown-preview-3.2-unknown-3-8-unknown-false,,,,,,0.06
-Llama 3.2 90B Vision 8k (Preview),llama-unknown-preview-3.2-unknown-90-unknown-8-unknown-false,,,,,,0.9
-gemma 2 9b,gemma-unknown-unknown-2-unknown-9-unknown-unknown-false,,,,0.2,,
 gemma 2 9b 8k,gemma-unknown-unknown-2-unknown-9-8-unknown-false,,,,,0.2,0.2
-gemma 7b,gemma-unknown-unknown-unknown-unknown-7-unknown-unknown-false,,0.1,0.07,0.07,,
+gemma 2 9b,gemma-unknown-unknown-2-unknown-9-unknown-unknown-false,,,,0.2,0.2,0.2
 gemma 7b 8k instruct,gemma-unknown-unknown-unknown-unknown-7-8-instruct-false,,,,,0.07,0.07
-llama 2 70b,llama-unknown-unknown-2-unknown-70-unknown-unknown-false,,,,,,
-llama 2 7b,llama-unknown-unknown-2-unknown-7-unknown-unknown-false,,,,,,
-llama 3 70b,llama-unknown-unknown-3-unknown-70-unknown-unknown-false,,0.59,0.59,0.59,,
-llama 3 70b 8k,llama-unknown-unknown-3-unknown-70-8-unknown-false,,,,,0.59,0.59
-llama 3 8b,llama-unknown-unknown-3-unknown-8-unknown-unknown-false,,0.05,0.05,0.05,,
-llama 3 8b 8k,llama-unknown-unknown-3-unknown-8-8-unknown-false,,,,,0.05,0.05
+gemma 7b,gemma-unknown-unknown-unknown-unknown-7-unknown-unknown-false,,0.1,0.07,0.07,0.07,0.07
 llama 3 groq 70b tool use preview 8k,llama-groq-preview-3-unknown-70-8-tool-false,,,,,0.89,0.89
 llama 3 groq 8b tool use preview 8k,llama-groq-preview-3-unknown-8-8-tool-false,,,,,0.19,0.19
-llama 3.1 70b versatile 128k,llama-versatile-unknown-3.1-unknown-70-128-unknown-false,,,,,0.59,0.59
-llama 3.1 8b instant 128k,llama-unknown-instant-3.1-unknown-8-128-unknown-false,,,,,0.05,0.05
 llama guard 3 8b 8k,llama-guard-unknown-3-unknown-8-8-unknown-false,,,,,0.2,0.2
-mixtral 8x7b,mixtral-unknown-unknown-unknown-unknown-8x7-unknown-unknown-false,,,,,,
+llama 3.1 8b instant 128k,llama-unknown-instant-3.1-unknown-8-128-unknown-false,,,,,0.05,0.05
+Llama 3.2 1B (Preview) 8k,llama-unknown-preview-3.2-unknown-1-8-unknown-false,,,,,,0.04
+Llama 3.2 11B Vision 8k (Preview),llama-unknown-preview-3.2-unknown-11-unknown-8-unknown-false,,,,,,0.18
+Llama 3.2 3B (Preview) 8k,llama-unknown-preview-3.2-unknown-3-8-unknown-false,,,,,,0.06
+Llama 3.2 90B Vision 8k (Preview),llama-unknown-preview-3.2-unknown-90-unknown-8-unknown-false,,,,,,0.9
+llama 2 7b,llama-unknown-unknown-2-unknown-7-unknown-unknown-false,,,,,,
+llama 2 70b,llama-unknown-unknown-2-unknown-70-unknown-unknown-false,,,,,,
+llama 3 70b 8k,llama-unknown-unknown-3-unknown-70-8-unknown-false,,,,,0.59,0.59
+llama 3 70b,llama-unknown-unknown-3-unknown-70-unknown-unknown-false,,0.59,0.59,0.59,0.59,0.59
+llama 3 8b 8k,llama-unknown-unknown-3-unknown-8-8-unknown-false,,,,,0.05,0.05
+llama 3 8b,llama-unknown-unknown-3-unknown-8-unknown-unknown-false,,0.05,0.05,0.05,0.05,0.05
+llama 3.1 70b versatile 128k,llama-versatile-unknown-3.1-unknown-70-128-unknown-false,,,,,0.59,0.59
 mixtral 8x7b instruct 32k,mixtral-unknown-unknown-unknown-unknown-8x7-32-instruct-false,,,,,0.24,0.24
-mixtral 8x7b smoe,mixtral-unknown-unknown-unknown-unknown-8x7-unknown-unknown-false,,0.27,0.24,0.24,,
+mixtral 8x7b,mixtral-unknown-unknown-unknown-unknown-8x7-unknown-unknown-false,,0.27,0.24,0.24,0.24,0.24

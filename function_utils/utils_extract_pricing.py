@@ -3,7 +3,9 @@ import json
 import pandas as pd
 from collections import defaultdict
 import re
-
+import numpy as np
+from datetime import datetime
+from collections import defaultdict
 
 def extract_pricing_text(json_path, output_dir):
     """
@@ -72,13 +74,22 @@ def extract_pricing_text(json_path, output_dir):
                             pc_str = str(pc).strip()
                             if pc_str == '':
                                 continue
-                            price_call_value = float(pc_str)
+                            # Supprimer tout symbole de devise ou caractère non numérique
+                            pc_clean = re.sub(r'[^\d\.]', '', pc_str)
+                            if pc_clean == '':
+                                continue
+                            price_call_value = float(pc_clean)
                             price_call_values.append(price_call_value)
                         except (ValueError, TypeError):
                             continue
 
-                    avg_price_call = sum(price_call_values) / len(price_call_values) if price_call_values else None
-                    row_call[date_str] = avg_price_call
+                    # Pour price_call, au lieu de faire la moyenne, prendre la première valeur non nulle
+                    if price_call_values:
+                        # Vous pouvez choisir 'first', 'max' ou une autre agrégation selon vos besoins
+                        avg_price_call = price_call_values[0]  # Prendre la première valeur non nulle
+                        row_call[date_str] = avg_price_call
+                    else:
+                        row_call[date_str] = None
 
                     price_input_data.append(row_input)
                     price_output_data.append(row_output)
@@ -91,24 +102,42 @@ def extract_pricing_text(json_path, output_dir):
 
         # Sauvegarder les fichiers CSV
         if not price_input_df.empty:
-            input_df = price_input_df.groupby(["name", "id_name"], dropna=False).mean(numeric_only=True)
+            # Group by 'name' and 'id_name', puis faire la moyenne pour price_input
+            input_df = price_input_df.groupby(["name", "id_name"], dropna=False).mean(numeric_only=True).reset_index()
             input_csv_path = os.path.join(provider_dir, "text_priceinput.csv")
-            input_df.to_csv(input_csv_path)
+            input_df.to_csv(input_csv_path, index=False)
             print(f"Fichier sauvegardé : {input_csv_path}")
 
         if not price_output_df.empty:
-            output_df = price_output_df.groupby(["name", "id_name"], dropna=False).mean(numeric_only=True)
+            # Group by 'name' and 'id_name', puis faire la moyenne pour price_output
+            output_df = price_output_df.groupby(["name", "id_name"], dropna=False).mean(numeric_only=True).reset_index()
             output_csv_path = os.path.join(provider_dir, "text_priceoutput.csv")
-            output_df.to_csv(output_csv_path)
+            output_df.to_csv(output_csv_path, index=False)
             print(f"Fichier sauvegardé : {output_csv_path}")
 
         if not price_call_df.empty:
-            call_df = price_call_df.groupby(["name", "id_name"], dropna=False).mean(numeric_only=True)
+            # Group by 'name' and 'id_name', puis prendre la première valeur pour chaque date
+            call_df = price_call_df.groupby(["name", "id_name"], dropna=False).first().reset_index()
+            # Si nécessaire, effectuer un forward-fill sur les colonnes de dates
+            date_columns = [col for col in call_df.columns if is_date_column(col)]
+            if date_columns:
+                call_df[date_columns] = call_df[date_columns].ffill(axis=1)
             call_csv_path = os.path.join(provider_dir, "text_pricecall.csv")
-            call_df.to_csv(call_csv_path)
+            call_df.to_csv(call_csv_path, index=False)
             print(f"Fichier sauvegardé : {call_csv_path}")
 
+def is_date_column(column_name):
+    """
+    Vérifie si le nom de la colonne correspond au format de date 'YYYY-MM-DD'.
 
+    :param column_name: Nom de la colonne.
+    :return: Booléen indiquant si la colonne est une colonne de date.
+    """
+    try:
+        datetime.strptime(column_name, '%Y-%m-%d')
+        return True
+    except ValueError:
+        return False
 
 def harmonize_and_convert_prices_text(units, prices, currencies, company):
     """
@@ -159,7 +188,6 @@ def harmonize_and_convert_prices_text(units, prices, currencies, company):
         harmonized_prices.append(price_in_usd)
 
     return harmonized_prices
-
 
 def harmonize_and_convert_price_audiototext(units, prices, currencies, company):
     """
@@ -377,3 +405,150 @@ def harmonize_and_convert_price_texttoimage(units, prices, currencies, company):
             harmonized_prices.append(price_per_image)
 
     return harmonized_prices
+
+
+import os
+import pandas as pd
+from datetime import datetime
+
+def correct_pricing_aikod(directory):
+    """
+    Corrige les fichiers de tarification dans le répertoire spécifié en :
+    1. Organisant les colonnes de dates du plus ancien au plus récent.
+    2. Fusionnant les lignes ayant le même 'id_name' sans conflits dans les colonnes de dates.
+    3. Comblant les trous dans les colonnes de dates avec la dernière valeur connue (forward-fill).
+    4. Imprimant les lignes conflictuelles où la fusion n'est pas possible.
+
+    :param directory: Chemin absolu ou relatif vers le répertoire 'pricing' contenant les sous-dossiers par provider et les fichiers CSV.
+    """
+
+    def is_date_column(column_name):
+        """
+        Vérifie si le nom de la colonne correspond au format de date 'YYYY-MM-DD'.
+
+        :param column_name: Nom de la colonne.
+        :return: Booléen indiquant si la colonne est une colonne de date.
+        """
+        try:
+            datetime.strptime(column_name, '%Y-%m-%d')
+            return True
+        except ValueError:
+            return False
+
+    # Initialiser les compteurs
+    total_csvs = 0
+    total_models_merged = 0
+    total_conflicts = 0
+
+    # Parcourir tous les fichiers dans le répertoire spécifié et ses sous-répertoires
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            if file.lower().endswith('.csv'):
+                total_csvs += 1
+                csv_path = os.path.join(root, file)
+                print(f"\nTraitement du fichier CSV : {csv_path}")
+
+                try:
+                    df = pd.read_csv(csv_path)
+                except Exception as e:
+                    print(f"  Erreur lors de la lecture du fichier CSV : {e}")
+                    continue
+
+                # Identifier les colonnes de dates
+                date_columns = [col for col in df.columns if is_date_column(col)]
+
+                if not date_columns:
+                    print("  Aucun colonne de date trouvée. Passage au fichier suivant.")
+                    continue
+
+                # Trier les colonnes de dates du plus ancien au plus récent
+                try:
+                    date_columns_sorted = sorted(date_columns, key=lambda x: datetime.strptime(x, '%Y-%m-%d'))
+                except Exception as e:
+                    print(f"  Erreur lors du tri des colonnes de dates : {e}")
+                    continue
+
+                # Réorganiser les colonnes : 'name', 'id_name', colonnes de dates triées, puis les autres colonnes
+                non_date_columns = [col for col in df.columns if col not in date_columns_sorted]
+                ordered_columns = []
+
+                if 'name' in non_date_columns:
+                    ordered_columns.append('name')
+                    non_date_columns.remove('name')
+                if 'id_name' in non_date_columns:
+                    ordered_columns.append('id_name')
+                    non_date_columns.remove('id_name')
+
+                ordered_columns += date_columns_sorted
+                ordered_columns += non_date_columns  # Ajouter les autres colonnes telles quelles
+
+                df = df[ordered_columns]
+
+                # Grouper par 'id_name'
+                grouped = df.groupby('id_name')
+
+                merged_rows = []
+                conflicts = []
+
+                for id_name, group in grouped:
+                    if len(group) == 1:
+                        merged_rows.append(group.iloc[0].to_dict())
+                    else:
+                        conflict_found = False
+                        merged_dict = group.iloc[0].to_dict()
+                        for idx, row in group.iloc[1:].iterrows():
+                            # Vérifier les conflits dans les colonnes de dates
+                            overlapping = False
+                            for date_col in date_columns_sorted:
+                                val1 = merged_dict.get(date_col)
+                                val2 = row.get(date_col)
+                                # Overlapping only if both have non-empty values and different
+                                if (pd.notnull(val1) and val1 != '' and
+                                    pd.notnull(val2) and val2 != '' and
+                                    val1 != val2):
+                                    overlapping = True
+                                    break
+                            if overlapping:
+                                conflict_found = True
+                                conflicts.append(group)
+                                print(f"  Conflit détecté pour 'id_name' : '{id_name}'. Fusion annulée.")
+                                print(group.to_string(index=False))
+                                break  # Sortir de la boucle de fusion pour ce groupe
+                            else:
+                                # Fusionner les valeurs non vides
+                                for date_col in date_columns_sorted:
+                                    if (pd.isnull(merged_dict.get(date_col)) or merged_dict.get(date_col) == '') and pd.notnull(row.get(date_col)) and row.get(date_col) != '':
+                                        merged_dict[date_col] = row.get(date_col)
+                        if not conflict_found:
+                            # Convert merged_dict to DataFrame to perform forward-fill on date columns
+                            temp_df = pd.DataFrame([merged_dict])
+                            # Apply forward-fill along the row for date columns
+                            temp_df[date_columns_sorted] = temp_df[date_columns_sorted].ffill(axis=1)
+                            merged_dict_filled = temp_df.iloc[0].to_dict()
+                            merged_rows.append(merged_dict_filled)
+                            total_models_merged += (len(group) - 1)
+
+                # Compter les conflits
+                total_conflicts += len(conflicts)
+
+                # Créer un nouveau DataFrame avec les lignes fusionnées
+                new_df = pd.DataFrame(merged_rows)
+
+                # Maintenant, effectuer un forward-fill global sur les colonnes de dates
+                new_df[date_columns_sorted] = new_df[date_columns_sorted].ffill(axis=1)
+
+                # Sauvegarder le DataFrame mis à jour dans le fichier CSV original
+                try:
+                    new_df.to_csv(csv_path, index=False)
+                    print(f"  Fichier CSV mis à jour : {csv_path}")
+                except Exception as e:
+                    print(f"  Erreur lors de l'écriture du fichier CSV mis à jour : {e}")
+                    continue
+
+                print(f"  Modèles fusionnés dans ce CSV : {total_models_merged}")
+                print(f"  Conflits rencontrés dans ce CSV : {len(conflicts)}")
+
+    print("\nTraitement terminé.")
+    print(f"Total de fichiers CSV traités : {total_csvs}")
+    print(f"Total de modèles fusionnés : {total_models_merged}")
+    print(f"Total de conflits rencontrés : {total_conflicts}")

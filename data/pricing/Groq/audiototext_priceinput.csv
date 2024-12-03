@@ -1,5 +1,4 @@
 name,id_name,2024-06-02,2024-08-25,2024-09-27,2024-10-21
-whisper large v3,whisper-large-unknown-3,0.00109,0.0005,,
-distil-whisper,whisper-distil-unknown-unknown,,0.0003333333333333333,0.0003333333333333333,0.0003333333333333333
-whisper v3 large,whisper-large-unknown-3,,,0.00185,0.00185
-whisper v3 large turbo,whisper-large-turbo-3,,,,0.0006666666666666666
+distil-whisper,whisper-distil-unknown-unknown,,0.0003333333333333,0.0003333333333333,0.0003333333333333
+whisper v3 large turbo,whisper-large-turbo-3,,,,0.0006666666666666
+whisper large v3,whisper-large-unknown-3,0.00109,0.0005,0.00185,0.00185

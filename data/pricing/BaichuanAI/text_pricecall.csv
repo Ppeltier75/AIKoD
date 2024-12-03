@@ -1,9 +1,9 @@
-name,id_name,2024-07-03,2024-08-26,2024-07-13,2024-09-27,2024-10-21
+name,id_name,2024-07-03,2024-07-13,2024-08-26,2024-09-27,2024-10-21
 baichuan-npc-lite,baichuan-npc-lite-unknown-unknown-unknown-unknown-unknown-false,,,,,
 baichuan-npc-turbo,baichuan-npc-turbo-unknown-unknown-unknown-unknown-unknown-false,,,,,
-baichuan2-53b,baichuan-unknown-unknown-2-unknown-53-unknown-unknown-false,,,,,
-baichuan2-turbo,baichuan-unknown-turbo-2-unknown-unknown-unknown-unknown-false,,,,,
 baichuan2-turbo-192k,baichuan-unknown-turbo-2-unknown-unknown-192-unknown-false,,,,,
-baichuan3-turbo,baichuan-unknown-turbo-3-unknown-unknown-unknown-unknown-false,,,,,
+baichuan2-turbo,baichuan-unknown-turbo-2-unknown-unknown-unknown-unknown-false,,,,,
 baichuan3-turbo-128k,baichuan-unknown-turbo-3-unknown-unknown-128-unknown-false,,,,,
+baichuan3-turbo,baichuan-unknown-turbo-3-unknown-unknown-unknown-unknown-false,,,,,
+baichuan2-53b,baichuan-unknown-unknown-2-unknown-53-unknown-unknown-false,,,,,
 baichuan4,baichuan-unknown-unknown-4-unknown-unknown-unknown-unknown-false,,,,,

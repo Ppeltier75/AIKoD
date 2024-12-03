@@ -95,7 +95,8 @@ def harmonize_company_name(csv_path, column_name):
     # Retourner le DataFrame modifié
     return df
 
-
+import os
+import json
 
 def clean_name_AA(aa_directory):
     """
@@ -119,8 +120,12 @@ def clean_name_AA(aa_directory):
     try:
         with open(mapping_file_path, 'r', encoding='utf-8') as f:
             mapping = json.load(f)
+        print(f"Mapping chargé depuis {mapping_file_path}")
     except json.JSONDecodeError as e:
         print(f"Erreur de décodage JSON dans le fichier de mapping : {e}")
+        return
+    except Exception as e:
+        print(f"Erreur lors du chargement du fichier de mapping : {e}")
         return
     
     # Vérifier que le mapping est un dictionnaire
@@ -148,31 +153,28 @@ def clean_name_AA(aa_directory):
         return
     
     # Appliquer le mapping et convertir en minuscules
-    for root, dirs, files in os.walk(aa_path, topdown=False):
+    for root, dirs, files in os.walk(aa_path, topdown=True):
         for dir_name in dirs:
+            current_path = os.path.join(root, dir_name)
             dir_name_lower = dir_name.lower()
+            # Vérifier si le dossier correspond à une clé dans le mapping
             if dir_name_lower in normalized_mapping:
                 # Obtenir le nouveau nom depuis le mapping et le convertir en minuscules
-                new_name = normalized_mapping[dir_name_lower].lower()
-                current_path = os.path.join(root, dir_name)
+                new_name = normalized_mapping[dir_name_lower]
                 new_path = os.path.join(root, new_name)
-                
-                # Vérifier si le nouveau nom est déjà en minuscules pour éviter les conflits
                 if current_path != new_path:
                     if not os.path.exists(new_path):
                         try:
                             os.rename(current_path, new_path)
-                            print(f"Renommé : '{current_path}' -> '{new_path}'")
+                            print(f"Renommé selon mapping : '{current_path}' -> '{new_path}'")
                         except Exception as e:
                             print(f"Erreur lors du renommage de '{current_path}' en '{new_path}' : {e}")
                     else:
                         print(f"Le dossier cible existe déjà : '{new_path}'. Impossible de renommer '{current_path}'.")
             else:
-                # Si le dossier n'est pas dans le mapping, le renommer en minuscules directement
+                # Si le dossier n'est pas dans le mapping, renommer en minuscules
                 new_name = dir_name_lower
-                current_path = os.path.join(root, dir_name)
                 new_path = os.path.join(root, new_name)
-                
                 if current_path != new_path:
                     if not os.path.exists(new_path):
                         try:
@@ -182,7 +184,40 @@ def clean_name_AA(aa_directory):
                             print(f"Erreur lors de la conversion de '{current_path}' en minuscules : {e}")
                     else:
                         print(f"Le dossier cible en minuscules existe déjà : '{new_path}'. Impossible de renommer '{current_path}'.")
+    
+    print("Tous les noms de dossiers ont été nettoyés et convertis en minuscules.")
 
+
+def convert_dirs_to_lowercase(directory):
+    """
+    Convertit tous les noms de dossiers dans le répertoire spécifié en minuscules.
+
+    :param directory: Chemin relatif ou absolu vers le répertoire dont les sous-dossiers seront convertis en minuscules.
+    """
+    # Vérifier si le répertoire existe
+    if not os.path.exists(directory):
+        print(f"Le répertoire spécifié n'existe pas : {directory}")
+        return
+    
+    # Utiliser os.walk pour parcourir tous les sous-répertoires
+    for root, dirs, files in os.walk(directory, topdown=False):  # topdown=False pour renommer les dossiers après avoir parcouru les sous-dossiers
+        for dir_name in dirs:
+            current_path = os.path.join(root, dir_name)
+            new_name = dir_name.lower()
+            new_path = os.path.join(root, new_name)
+            
+            # Vérifier si le dossier est déjà en minuscules
+            if current_path != new_path:
+                if not os.path.exists(new_path):  # Vérifier si le dossier cible n'existe pas déjà
+                    try:
+                        os.rename(current_path, new_path)
+                        print(f"Renommé : '{current_path}' -> '{new_path}'")
+                    except Exception as e:
+                        print(f"Erreur lors du renommage de '{current_path}' en '{new_path}' : {e}")
+                else:
+                    print(f"Le dossier cible existe déjà : '{new_path}'. Impossible de renommer '{current_path}'.")
+    
+    print("Tous les noms de dossiers ont été convertis en minuscules.")
 
 def aikod_clean_company(json_path):
     """

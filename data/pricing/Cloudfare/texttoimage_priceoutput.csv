@@ -1,13 +1,13 @@
 name,id_name,2024-10-31
-"dreamshaper-8-lcm (50 steps, 512x512)",dreamshaper-lcm-unknown-8-512x512-50-false-unknown-false,0.005
 "dreamshaper-8-lcm (50 steps, 1024x1024)",dreamshaper-lcm-unknown-8-1024x1024-50-false-unknown-false,0.01
 "dreamshaper-8-lcm (50 steps, 2048x2048)",dreamshaper-lcm-unknown-8-2048x2048-50-false-unknown-false,0.02
-"flux-1-schnell (50 steps, 512x512)",flux-schnell-unknown-1-512x512-50-false-unknown-false,0.005
+"dreamshaper-8-lcm (50 steps, 512x512)",dreamshaper-lcm-unknown-8-512x512-50-false-unknown-false,0.005
 "flux-1-schnell (50 steps, 1024x1024)",flux-schnell-unknown-1-1024x1024-50-false-unknown-false,0.01
 "flux-1-schnell (50 steps, 2048x2048)",flux-schnell-unknown-1-2048x2048-50-false-unknown-false,0.02
-"stable-diffusion-xl-base-1.0 (50 steps, 512x512)",stablediffusion-xl-base-1-512x512-50-false-unknown-false,0.005
+"flux-1-schnell (50 steps, 512x512)",flux-schnell-unknown-1-512x512-50-false-unknown-false,0.005
 "stable-diffusion-xl-base-1.0 (50 steps, 1024x1024)",stablediffusion-xl-base-1-1024x1024-50-false-unknown-false,0.01
 "stable-diffusion-xl-base-1.0 (50 steps, 2048x2048)",stablediffusion-xl-base-1-2048x2048-50-false-unknown-false,0.02
-"stable-diffusion-xl-lightning (50 steps, 512x512)",stablediffusion-xl-lightning-1-512x512-50-false-unknown-false,0.005
+"stable-diffusion-xl-base-1.0 (50 steps, 512x512)",stablediffusion-xl-base-1-512x512-50-false-unknown-false,0.005
 "stable-diffusion-xl-lightning (50 steps, 1024x1024)",stablediffusion-xl-lightning-1-1024x1024-50-false-unknown-false,0.01
 "stable-diffusion-xl-lightning (50 steps, 2048x2048)",stablediffusion-xl-lightning-1-2048x2048-50-false-unknown-false,0.02
+"stable-diffusion-xl-lightning (50 steps, 512x512)",stablediffusion-xl-lightning-1-512x512-50-false-unknown-false,0.005

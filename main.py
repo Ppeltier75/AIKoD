@@ -261,6 +261,15 @@ if __name__ == "__main__":
     extract_pricing_texttoimage(json_path, pricing_dir)
     print("Extraction terminée.")
 
+
+# %%
+import os
+from function_utils.utils_extract_pricing import correct_pricing_aikod
+base_path = os.path.abspath(os.path.dirname(__file__))
+directory_pricing = os.path.join(base_path, "data", "pricing")
+
+correct_pricing_aikod(directory_pricing)
+
 # %%
 # Chemin vers le répertoire 'pricing'
 
@@ -304,27 +313,21 @@ base_path = os.path.abspath(os.path.dirname(__file__))
 input_json_path = os.path.join(base_path, "data", "API", "AIKoD_API_base_v0.json")
 
 # Chemin où vous souhaitez enregistrer le nouveau fichier JSON
-output_json_path = os.path.join(base_path, "data", "API", "API_date_v4.9.json")
+output_json_path = os.path.join(base_path, "data", "API", "API_date_v5.0.json")
 
 # Appel de la fonction
-generate_API_date(input_json_path, output_json_path)
+generate_API_date(input_json_path, output_json_path, exclude_provider=["Openrouter","AIMLAPI"])
 
 # %%
 import os 
-from function_utils.utils_cleaning import clean_name_AA
+from function_utils.utils_cleaning import clean_name_AA, convert_dirs_to_lowercase
 # Chemin de base de votre projet
 base_path = os.path.abspath(os.path.dirname(__file__))
 # Chemin vers le fichier JSON généré par 'init_API'
-directory_AA = os.path.join(base_path, "data", 'benchmark', 'AA')
+directory_AA = os.path.join(base_path, "data", 'benchmark', 'AA', "2024-11-16")
 # Exemple d'appel de la fonction
-clean_name_AA(directory_AA)
+convert_dirs_to_lowercase(directory_AA)
 
-# %%
-import os 
-from function_utils.utils_add_infos import add_speed_provider_text_AA
-# Fonction principale
-if __name__ == "__main__":
-    add_speed_provider_text_AA()
 
 
 # %%
@@ -360,4 +363,15 @@ column_name = 'Provider'
 # Appel de la fonction
 harmonize_company_name(texttoimage_path , column_name)
 harmonize_company_name(audiototext_path, column_name)
+# %%
+import os 
+from function_utils.utils_api import add_speed_provider_text_AA
+
+
+base_path = os.path.abspath(os.path.dirname(__file__))
+json_path = os.path.join(base_path, "data", "API", "AIKoD_API_base_v0.json")
+aa_directory = os.path.join(base_path, "data", 'benchmark', 'AA')
+# Fonction principale
+if __name__ == "__main__":
+    add_speed_provider_text_AA(json_path, aa_directory)
 # %%

@@ -1,4 +1,4 @@
-id_name,company,date_release,steps,resolution,quality_index,speed_index,default_steps,default_resolution,country
+id_name,company,date_release,steps,resolution,quality_index,speed_index,default_steps,default_resolution,country_company
 aiqr-unknown-unknown-unknown-unknown-50-false-unknown-false,aiqr,2024-01-03,50.0,,,,,,
 amazontitan-unknown-unknown-1-1024x1024-unknown-false-unknown-false,amazon,2024-05-24,,1024.0,0.4557142857142857,11.2,,,USA
 analogdiffusion-unknown-unknown-1-unknown-unknown-false-unknown-false,,2023-07-14,,,,,,,

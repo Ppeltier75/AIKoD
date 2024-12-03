@@ -1,4 +1,4 @@
-id_name,number_of_parameters,context_window,finetuned,company,date_release,aa_ae_rating,quality_index,aa_mmlu_rating,aa_gpqa_rating,aa_humaneval_rating,aa_math_rating,aa_mgsm_rating,livebench_rating,hf_ae_rating,hf_mmlu_rating,hf_mt_rating,speed_index,latence_first_chunk,country,model_name,is_open_source,is_multimodal
+id_name,number_of_parameters,context_window,finetuned,company,date_release,aa_ae_rating,quality_index,aa_mmlu_rating,aa_gpqa_rating,aa_humaneval_rating,aa_math_rating,aa_mgsm_rating,livebench_rating,hf_ae_rating,hf_mmlu_rating,hf_mt_rating,speed_index,latence_first_chunk,country_company,model_name,is_open_source,is_multimodal
 abab-g-unknown-6.5-unknown-unknown-unknown-unknown-false,,8000.0,False,minimaxi,2024-09-27,,,,,,,,,,,,,,CHN,abab g 6.5,False,
 abab-s-unknown-6.5-unknown-unknown-unknown-unknown-false,,245000.0,False,minimaxi,2024-09-27,,,,,,,,,,,,,,CHN,abab s 6.5,False,True
 abab-t-unknown-6.5-unknown-unknown-unknown-unknown-false,,8000.0,False,minimaxi,2024-09-27,,,,,,,,,,,,,,CHN,abab t 6.5,,
