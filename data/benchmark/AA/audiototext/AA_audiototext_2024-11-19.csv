@@ -1,30 +1,30 @@
 Provider,Model,Whisper Version,Footnotes,Word Error Rate (%),Median Speed Factor,Price (USD per 1000 Minutes),id_name,speed_index,quality_index
-OpenAI,Whisper (large-v2),large-v2,,10.6,34.6,6.0,whisper-large-unknown-2,26.275000000000002,10.75
-Microsoft Azure,Whisper (large-v2),large-v2,,10.6,37.1,6.0,whisper-large-unknown-2,26.275000000000002,10.75
-fal.ai,Wizper (Large v3),large-v3,,10.3,223.3,0.5,wizper-large-unknown-3,223.3,10.3
-Replicate,Incredibly Fast Whisper,large-v3,,10.3,43.9,1.49,whisper-fast-unknown-unknown,43.9,10.3
-Replicate,Whisper (large-v2),large-v2,,11.2,3.3,3.47,whisper-large-unknown-2,26.275000000000002,10.75
-Replicate,Whisper (large-v3),large-v3,,10.3,3.0,4.23,whisper-large-unknown-3,111.85,7.7250000000000005
-Replicate,WhisperX,large-v3,,10.9,21.3,1.09,whisperx-unknown-unknown-unknown,21.3,10.9
-Replicate,Whisper (medium),medium,,12.8,4.4,2.68,whisper-medium-unknown-unknown,4.4,12.8
-Replicate,Whisper (small),small,,17.0,2.5,1.37,whisper-small-unknown-unknown,2.5,17.0
-Groq,Whisper (large-v3),large-v3,,10.3,164.1,1.85,whisper-large-unknown-3,111.85,7.7250000000000005
+OpenAI,Whisper (large-v2),large-v2,,10.6,34.6,6.0,whisper-large-unknown-2,26.275,10.75
+Microsoft,Whisper (large-v2),large-v2,,10.6,37.1,6.0,whisper-large-unknown-2,26.275,10.75
+fal,Wizper (Large v3),large-v3,,10.3,223.3,0.5,wizper-large-unknown-3,223.3,10.3
+ReplicateAI,Incredibly Fast Whisper,large-v3,,10.3,43.9,1.49,whisper-fast-unknown-unknown,43.9,10.3
+ReplicateAI,Whisper (large-v2),large-v2,,11.2,3.3,3.47,whisper-large-unknown-2,26.275,10.75
+ReplicateAI,Whisper (large-v3),large-v3,,10.3,3.0,4.23,whisper-large-unknown-3,111.85,7.725
+ReplicateAI,WhisperX,large-v3,,10.9,21.3,1.09,whisperx-unknown-unknown-unknown,21.3,10.9
+ReplicateAI,Whisper (medium),medium,,12.8,4.4,2.68,whisper-medium-unknown-unknown,4.4,12.8
+ReplicateAI,Whisper (small),small,,17.0,2.5,1.37,whisper-small-unknown-unknown,2.5,17.0
+Groq,Whisper (large-v3),large-v3,,10.3,164.1,1.85,whisper-large-unknown-3,111.85,7.725
 Groq,"Distil-Whisper, Groq",,,13.0,201.8,0.33,whisper-distil-groq-unknown,201.8,13.0
 Deepinfra,"Whisper (large-v3), Deepinfra",large-v3,,10.3,120.0,0.45,whisper-large-deepinfra-3,120.0,10.3
-fal.ai,Whisper (large-v3),large-v3,,10.3,92.3,1.15,whisper-large-unknown-3,111.85,7.7250000000000005
+fal,Whisper (large-v3),large-v3,,10.3,92.3,1.15,whisper-large-unknown-3,111.85,7.725
 Deepinfra,"Distil-Whisper, Deepinfra",,,13.0,171.3,0.18,whisper-distil-deepinfra-unknown,171.3,13.0
 Groq,Whisper (large-v3 Turbo),v3 Turbo,,12.0,187.1,0.67,whisper-large-turbo-3,221.1,6.0
-Fireworks,Whisper (large-v3),large-v3,,0.0,188.0,0.0,whisper-large-unknown-3,111.85,7.7250000000000005
+Fireworks,Whisper (large-v3),large-v3,,0.0,188.0,0.0,whisper-large-unknown-3,111.85,7.725
 Fireworks,Whisper (large-v3 Turbo),v3 Turbo,,0.0,255.1,0.0,whisper-large-turbo-3,221.1,6.0
-AssemblyAI,AssemblyAI (Universal-1),,,8.7,57.8,6.17,assemblyai-universal-unknown-1,57.8,8.7
-AssemblyAI,Nano,,,12.7,81.1,2.0,nano-unknown-unknown-unknown,81.1,12.7
+assemblyai,AssemblyAI (Universal-1),,,8.7,57.8,6.17,assemblyai-universal-unknown-1,57.8,8.7
+assemblyai,Nano,,,12.7,81.1,2.0,nano-unknown-unknown-unknown,81.1,12.7
 Speechmatics,Speechmatics Standard,,,12.6,17.7,13.33,speechmatics-standard-unknown-unknown,17.7,12.6
 Speechmatics,Speechmatics Enhanced,,,8.6,9.1,17.33,speechmatics-enhanced-unknown-unknown,9.1,8.6
-Microsoft Azure,Azure Speech Service,,,12.6,2.0,16.67,azure-speech-service-unknown,2.0,12.6
+Microsoft,Azure Speech Service,,,12.6,2.0,16.67,azure-speech-service-unknown,2.0,12.6
 Deepgram,Nova-2,,,15.1,129.2,4.3,nova-unknown-unknown-2,129.2,15.1
 Deepgram,Base,,,26.1,162.0,12.5,base-unknown-unknown-unknown,162.0,26.1
-Deepgram,Whisper Large v2,large-v2,,10.6,30.1,4.8,whisper-large-unknown-2,26.275000000000002,10.75
-Gladia,Gladia,whisper-v2-variant,,12.9,20.6,10.2,gladia-unknown-unknown-unknown,20.6,12.9
-Amazon Bedrock,Amazon Transcribe,,,11.2,23.5,24.0,amazon-transcribe-unknown-unknown,23.5,11.2
-Rev AI,Rev AI,,,0.0,9.1,20.0,rev-ai-unknown-unknown,9.1,0.0
+Deepgram,Whisper Large v2,large-v2,,10.6,30.1,4.8,whisper-large-unknown-2,26.275,10.75
+gladia,Gladia,whisper-v2-variant,,12.9,20.6,10.2,gladia-unknown-unknown-unknown,20.6,12.9
+Amazon,Amazon Transcribe,,,11.2,23.5,24.0,amazon-transcribe-unknown-unknown,23.5,11.2
+RevAI,Rev AI,,,0.0,9.1,20.0,rev-ai-unknown-unknown,9.1,0.0
 Google,Cloud Speech-To-Text (Chirp),,,12.4,14.8,16.0,chirp-cloud-speech-unknown,14.8,12.4

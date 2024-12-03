@@ -1,53 +1,53 @@
 Provider,Model,Footnotes,Model Quality ELO,Median Generation Time (s),Price per 1k Images (USD),id_name,speed_index
-Recraft AI,Recraft V3,,1169,8.6,$,recraft-unknown-unknown-3-unknown-unknown-false-unknown-false,8.6
-Black Forest Labs,FLUX1.1 [pro],,1135,4.2,$40.00,flux-pro-unknown-1.1-unknown-unknown-false-unknown-false,5.25
-fal.ai,FLUX1.1 [pro],,1135,3.0,$40.00,flux-pro-unknown-1.1-unknown-unknown-false-unknown-false,5.25
-Replicate,FLUX1.1 [pro],,1135,9.9,$50.00,flux-pro-unknown-1.1-unknown-unknown-false-unknown-false,5.25
-Together.ai,FLUX1.1 [pro],,1135,3.9,$40.00,flux-pro-unknown-1.1-unknown-unknown-false-unknown-false,5.25
-Replicate,FLUX.1 [pro],,1114,10.0,$55.00,flux-pro-unknown-1-unknown-unknown-false-unknown-false,12.8
-Black Forest Labs,FLUX.1 [pro],,1114,23.7,$,flux-pro-unknown-1-unknown-unknown-false-unknown-false,12.8
-Together.ai,FLUX.1 [pro],,1114,8.7,$50.00,flux-pro-unknown-1-unknown-unknown-false-unknown-false,12.8
-fal.ai,FLUX.1 [pro],,1114,8.8,$50.00,flux-pro-unknown-1-unknown-unknown-false-unknown-false,12.8
+recraft ai,Recraft V3,,1169,8.6,$,recraft-unknown-unknown-3-unknown-unknown-false-unknown-false,8.6
+Blackforestlabs,FLUX1.1 [pro],,1135,4.2,$40.00,flux-pro-unknown-1.1-unknown-unknown-false-unknown-false,5.25
+fal,FLUX1.1 [pro],,1135,3.0,$40.00,flux-pro-unknown-1.1-unknown-unknown-false-unknown-false,5.25
+ReplicateAI,FLUX1.1 [pro],,1135,9.9,$50.00,flux-pro-unknown-1.1-unknown-unknown-false-unknown-false,5.25
+TogetherAI,FLUX1.1 [pro],,1135,3.9,$40.00,flux-pro-unknown-1.1-unknown-unknown-false-unknown-false,5.25
+ReplicateAI,FLUX.1 [pro],,1114,10.0,$55.00,flux-pro-unknown-1-unknown-unknown-false-unknown-false,12.8
+Blackforestlabs,FLUX.1 [pro],,1114,23.7,$,flux-pro-unknown-1-unknown-unknown-false-unknown-false,12.8
+TogetherAI,FLUX.1 [pro],,1114,8.7,$50.00,flux-pro-unknown-1-unknown-unknown-false-unknown-false,12.8
+fal,FLUX.1 [pro],,1114,8.8,$50.00,flux-pro-unknown-1-unknown-unknown-false-unknown-false,12.8
 Midjourney,Midjourney v6.1,,1098,87.7,$82.50,midjourney-unknown-unknown-6.1-unknown-unknown-false-unknown-false,87.7
 Ideogram,Ideogram v2,,1094,20.4,$80.00,ideogram-unknown-unknown-2-unknown-unknown-false-unknown-false,20.4
-Replicate,FLUX.1 [dev],,1091,3.5,$30.00,flux-dev-unknown-1-unknown-unknown-false-unknown-false,5.6000000000000005
-Black Forest Labs,FLUX.1 [dev],,1091,10.3,$,flux-dev-unknown-1-unknown-unknown-false-unknown-false,5.6000000000000005
-fal.ai,FLUX.1 [dev],,1091,3.0,$25.00,flux-dev-unknown-1-unknown-unknown-false-unknown-false,5.6000000000000005
+ReplicateAI,FLUX.1 [dev],,1091,3.5,$30.00,flux-dev-unknown-1-unknown-unknown-false-unknown-false,5.6000000000000005
+Blackforestlabs,FLUX.1 [dev],,1091,10.3,$,flux-dev-unknown-1-unknown-unknown-false-unknown-false,5.6000000000000005
+fal,FLUX.1 [dev],,1091,3.0,$25.00,flux-dev-unknown-1-unknown-unknown-false-unknown-false,5.6000000000000005
 Ideogram,Ideogram v2 Turbo,,1086,11.8,$50.00,ideogram-unknown-turbo-2-unknown-unknown-false-unknown-false,11.8
 Midjourney,Midjourney v6,,1084,80.8,$82.50,midjourney-unknown-unknown-6-unknown-unknown-false-unknown-false,80.8
-Replicate,Stable Diffusion 3.5 Large Turbo,,1084,2.3,$40.00,stablediffusion-large-turbo-unknown-3.5-unknown-unknown-false-unknown-false,4.949999999999999
-Stability.ai,Stable Diffusion 3.5 Large Turbo,,1084,7.6,$40.00,stablediffusion-large-turbo-unknown-3.5-unknown-unknown-false-unknown-false,4.949999999999999
-Replicate,Stable Diffusion 3.5 Large,,1081,11.8,$65.00,stablediffusion-large-unknown-3.5-unknown-unknown-false-unknown-false,8.1
-Stability.ai,Stable Diffusion 3.5 Large,,1081,8.1,$65.00,stablediffusion-large-unknown-3.5-unknown-unknown-false-unknown-false,8.1
-fal.ai,Stable Diffusion 3.5 Large,,1081,4.4,$65.00,stablediffusion-large-unknown-3.5-unknown-unknown-false-unknown-false,8.1
+ReplicateAI,Stable Diffusion 3.5 Large Turbo,,1084,2.3,$40.00,stablediffusion-large-turbo-unknown-3.5-unknown-unknown-false-unknown-false,4.949999999999999
+StabilityAI,Stable Diffusion 3.5 Large Turbo,,1084,7.6,$40.00,stablediffusion-large-turbo-unknown-3.5-unknown-unknown-false-unknown-false,4.949999999999999
+ReplicateAI,Stable Diffusion 3.5 Large,,1081,11.8,$65.00,stablediffusion-large-unknown-3.5-unknown-unknown-false-unknown-false,8.1
+StabilityAI,Stable Diffusion 3.5 Large,,1081,8.1,$65.00,stablediffusion-large-unknown-3.5-unknown-unknown-false-unknown-false,8.1
+fal,Stable Diffusion 3.5 Large,,1081,4.4,$65.00,stablediffusion-large-unknown-3.5-unknown-unknown-false-unknown-false,8.1
 Ideogram,Ideogram v1,,1069,16.1,$60.00,ideogram-unknown-unknown-1-unknown-unknown-false-unknown-false,16.1
-Stability.ai,Stable Diffusion 3 Large,,1059,7.4,$65.00,stablediffusion-large-unknown-3-unknown-unknown-false-unknown-false,7.4
-Playground AI,Playground v3 (beta),,1046,17.7,$0.70,playground-unknown-beta-3-unknown-unknown-false-unknown-false,17.7
-Together.ai,FLUX.1 [schnell],,1045,1.1,$3.00,flux-schnell-unknown-1-unknown-unknown-false-unknown-false,1.1
-Replicate,FLUX.1 [schnell],,1045,1.6,$3.00,flux-schnell-unknown-1-unknown-unknown-false-unknown-false,1.1
-fal.ai,FLUX.1 [schnell],,1045,0.6,$3.00,flux-schnell-unknown-1-unknown-unknown-false-unknown-false,1.1
-Recraft AI,Recraft 20B,,1017,8.6,$,recraft-unknown-unknown-20-unknown-unknown-false-unknown-false,8.6
-fal.ai,Playground v2.5,,996,4.4,$5.13,playground-unknown-unknown-2.5-unknown-unknown-false-unknown-false,5.15
-Replicate,Playground v2.5,,996,7.7,$10.67,playground-unknown-unknown-2.5-unknown-unknown-false-unknown-false,5.15
+StabilityAI,Stable Diffusion 3 Large,,1059,7.4,$65.00,stablediffusion-large-unknown-3-unknown-unknown-false-unknown-false,7.4
+playground ai,Playground v3 (beta),,1046,17.7,$0.70,playground-unknown-beta-3-unknown-unknown-false-unknown-false,17.7
+TogetherAI,FLUX.1 [schnell],,1045,1.1,$3.00,flux-schnell-unknown-1-unknown-unknown-false-unknown-false,1.1
+ReplicateAI,FLUX.1 [schnell],,1045,1.6,$3.00,flux-schnell-unknown-1-unknown-unknown-false-unknown-false,1.1
+fal,FLUX.1 [schnell],,1045,0.6,$3.00,flux-schnell-unknown-1-unknown-unknown-false-unknown-false,1.1
+recraft ai,Recraft 20B,,1017,8.6,$,recraft-unknown-unknown-20-unknown-unknown-false-unknown-false,8.6
+fal,Playground v2.5,,996,4.4,$5.13,playground-unknown-unknown-2.5-unknown-unknown-false-unknown-false,5.15
+ReplicateAI,Playground v2.5,,996,7.7,$10.67,playground-unknown-unknown-2.5-unknown-unknown-false-unknown-false,5.15
 Fireworks,Playground v2.5,,996,1.6,$6.50,playground-unknown-unknown-2.5-unknown-unknown-false-unknown-false,5.15
-Playground AI,Playground v2.5,,996,6.9,$0.70,playground-unknown-unknown-2.5-unknown-unknown-false-unknown-false,5.15
+playground ai,Playground v2.5,,996,6.9,$0.70,playground-unknown-unknown-2.5-unknown-unknown-false-unknown-false,5.15
 OpenAI,DALLE 3 HD,,984,17.7,$80.00,dalle-unknown-unknown-3-unknown-unknown-false-true,17.7
 OpenAI,DALLE 3,,970,14.4,$40.00,dalle-unknown-unknown-3-unknown-unknown-false-unknown-false,14.4
-fal.ai,Stable Diffusion 3 Medium,,942,2.4,$35.00,stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false,4.866666666666667
-Replicate,Stable Diffusion 3 Medium,,942,4.7,$35.00,stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false,4.866666666666667
-Stability.ai,Stable Diffusion 3 Medium,,942,7.5,$35.00,stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false,4.866666666666667
-Amazon Bedrock,Amazon Titan G1 v2 (Standard),,940,12.2,$10.00,amazontitan-unknown-unknown-2-unknown-unknown-false-unknown-false,12.2
-Stability.ai,Stable Diffusion 3 Large Turbo,,935,2.1,$40.00,stablediffusion-large-turbo-unknown-unknown-unknown-false-unknown-false,2.1
-Stability.ai,Stable Diffusion 1.6,,926,5.0,$10.00,stablediffusion-unknown-unknown-1.6-unknown-unknown-false-unknown-false,5.0
-Amazon Bedrock,Amazon Titan G1 (Standard),,919,11.2,$10.00,amazontitan-unknown-unknown-1-unknown-unknown-false-unknown-false,11.2
-fal.ai,SDXL Lightning,,909,1.1,$1.01,stablediffusion-xl-lightning-unknown-unknown-unknown-false-unknown-false,1.6500000000000001
-Replicate,SDXL Lightning,,909,2.2,$2.65,stablediffusion-xl-lightning-unknown-unknown-unknown-false-unknown-false,1.6500000000000001
-fal.ai,Stable Diffusion XL 1.0,,885,1.5,$3.50,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false,4.366666666666666
-Replicate,Stable Diffusion XL 1.0,,885,9.7,$9.04,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false,4.366666666666666
-Amazon Bedrock,Stable Diffusion XL 1.0,,885,6.1,$40.00,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false,4.366666666666666
+fal,Stable Diffusion 3 Medium,,942,2.4,$35.00,stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false,4.866666666666667
+ReplicateAI,Stable Diffusion 3 Medium,,942,4.7,$35.00,stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false,4.866666666666667
+StabilityAI,Stable Diffusion 3 Medium,,942,7.5,$35.00,stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false,4.866666666666667
+Amazon,Amazon Titan G1 v2 (Standard),,940,12.2,$10.00,amazontitan-unknown-unknown-2-unknown-unknown-false-unknown-false,12.2
+StabilityAI,Stable Diffusion 3 Large Turbo,,935,2.1,$40.00,stablediffusion-large-turbo-unknown-unknown-unknown-false-unknown-false,2.1
+StabilityAI,Stable Diffusion 1.6,,926,5.0,$10.00,stablediffusion-unknown-unknown-1.6-unknown-unknown-false-unknown-false,5.0
+Amazon,Amazon Titan G1 (Standard),,919,11.2,$10.00,amazontitan-unknown-unknown-1-unknown-unknown-false-unknown-false,11.2
+fal,SDXL Lightning,,909,1.1,$1.01,stablediffusion-xl-lightning-unknown-unknown-unknown-false-unknown-false,1.65
+ReplicateAI,SDXL Lightning,,909,2.2,$2.65,stablediffusion-xl-lightning-unknown-unknown-unknown-false-unknown-false,1.65
+fal,Stable Diffusion XL 1.0,,885,1.5,$3.50,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false,4.366666666666666
+ReplicateAI,Stable Diffusion XL 1.0,,885,9.7,$9.04,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false,4.366666666666666
+Amazon,Stable Diffusion XL 1.0,,885,6.1,$40.00,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false,4.366666666666666
 Fireworks,Stable Diffusion XL 1.0,,885,1.1,$3.90,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false,4.366666666666666
-Stability.ai,Stable Diffusion XL 1.0,,885,4.0,$6.00,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false,4.366666666666666
-Together.ai,Stable Diffusion XL 1.0,,885,3.8,$20.00,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false,4.366666666666666
+StabilityAI,Stable Diffusion XL 1.0,,885,4.0,$6.00,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false,4.366666666666666
+TogetherAI,Stable Diffusion XL 1.0,,885,3.8,$20.00,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false,4.366666666666666
 OpenAI,DALLE 2,,742,12.5,$20.00,dalle-unknown-unknown-2-unknown-unknown-false-unknown-false,12.5
-Replicate,Stable Diffusion 2.1,,737,6.2,$6.71,stablediffusion-unknown-unknown-2.1-unknown-unknown-false-unknown-false,6.2
-Replicate,Stable Diffusion 1.5,,623,68.5,$8.56,stablediffusion-unknown-unknown-1.5-unknown-unknown-false-unknown-false,68.5
+ReplicateAI,Stable Diffusion 2.1,,737,6.2,$6.71,stablediffusion-unknown-unknown-2.1-unknown-unknown-false-unknown-false,6.2
+ReplicateAI,Stable Diffusion 1.5,,623,68.5,$8.56,stablediffusion-unknown-unknown-1.5-unknown-unknown-false-unknown-false,68.5

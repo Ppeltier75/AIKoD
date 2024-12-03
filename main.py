@@ -304,7 +304,7 @@ base_path = os.path.abspath(os.path.dirname(__file__))
 input_json_path = os.path.join(base_path, "data", "API", "AIKoD_API_base_v0.json")
 
 # Chemin où vous souhaitez enregistrer le nouveau fichier JSON
-output_json_path = os.path.join(base_path, "data", "API", "API_date_v4.8.json")
+output_json_path = os.path.join(base_path, "data", "API", "API_date_v4.9.json")
 
 # Appel de la fonction
 generate_API_date(input_json_path, output_json_path)
@@ -330,12 +330,34 @@ if __name__ == "__main__":
 # %%
 import os
 from function_utils.utils_cleaning import aikod_clean_company
+base_path = os.path.abspath(os.path.dirname(__file__))
+json_path = os.path.join(base_path, "data", "raw", "AIKoD_brut_API_v2.json")
+
 if __name__ == "__main__":
-    aikod_clean_company()
+    aikod_clean_company(json_path)
 
 # %%
 import os 
 from function_utils.utils_add_infos import add_os_multi_pplx
 # Exemple d'appel de la fonction
 add_os_multi_pplx()
+# %%
+from function_utils.utils_cleaning import  harmonize_company_name
+from function_utils.utils_models_infos import column_name_modelsinfos, add_country_to_csv
+
+# Chemin vers le fichier CSV
+base_path = os.path.abspath(os.path.dirname(__file__))
+
+texttoimage_path = os.path.join(base_path, "data", "benchmark", "AA", "texttoimage", "AA_texttoimage_2024-11-19.csv")  
+audiototext_path = os.path.join(base_path, "data", "benchmark", "AA", "audiototext", "AA_audiototext_2024-11-19.csv")  
+
+
+
+# Nom de la colonne à harmoniser
+column_name = 'Provider'
+
+
+# Appel de la fonction
+harmonize_company_name(texttoimage_path , column_name)
+harmonize_company_name(audiototext_path, column_name)
 # %%

@@ -270,7 +270,7 @@ def AIKoD_texttoimage_infos(json_path, output_file):
 
     # Normaliser la colonne quality_index
     if "quality_index" in df_final.columns:
-        df_final["quality_index"] = df_final["quality_index"].apply(normalize_elo_rating)
+        df_final["quality_index"] = df_final["quality_index"].apply(lambda x: normalize_elo_rating(x, elo_min=600,elo_max=1300))
         print("La colonne 'quality_index' a été normalisée avec succès.")
 
     # Enregistrer le DataFrame final à l'emplacement d'origine

@@ -133,7 +133,7 @@ def add_csv_text(base_csv_path):
     return df_merged
 
 
-def normalize_elo_rating(elo, elo_min=800, elo_max=1700):
+def normalize_elo_rating(elo, elo_min=700, elo_max=1700):
     """Normalize an ELO rating to a 0-1 scale."""
     if pd.isnull(elo):
         return np.nan
@@ -195,7 +195,7 @@ def add_quality_index(csv_path):
     df['Arenaelo_value_raw'] = df.apply(compute_arenaelo, axis=1)
 
     # Normaliser Arenaelo_value en utilisant la fonction normalize_elo_rating
-    df['Arenaelo_value'] = df['Arenaelo_value_raw'].apply(lambda x: normalize_elo_rating(x, elo_min=1000, elo_max=2000))
+    df['Arenaelo_value'] = df['Arenaelo_value_raw'].apply(lambda x: normalize_elo_rating(x, elo_min=700, elo_max=1700))
 
     # Valeur GPQA
     df['GPQA_value'] = df['aa_gpqa']
@@ -297,144 +297,222 @@ def add_quality_index(csv_path):
 
 def AIKoD_text_infos(json_path, text_infos_csv_path):
     """
-    Analyse un fichier JSON pour les modèles avec type 'text' et ajoute des informations
+    Analyse un fichier JSON pour les modèles avec type 'text' et 'multimodal' et ajoute des informations
     aux fichiers CSV existants.
 
     :param json_path: Chemin du fichier JSON contenant les données des modèles.
     :param text_infos_csv_path: Chemin vers le fichier CSV à mettre à jour.
     """
-    # Chemin vers AIKoD_multimodal_infos.csv (chemin hardcodé)
-    multimodal_infos_csv_path = r'C:\Users\piwip\OneDrive\Documents\OCDE\AIKoD\data\models_infos\AIKoD_multimodal_infos.csv'
+    # Définir les chemins absolus
+    script_dir = os.path.abspath(os.path.dirname(__file__))
+    multimodal_infos_csv_path = os.path.join(script_dir, '..', 'data', 'models_infos', 'AIKoD_multimodal_infos.csv')
 
     # Vérifier si le fichier multimodal existe
     if not os.path.exists(multimodal_infos_csv_path):
         print(f"Le fichier {multimodal_infos_csv_path} n'a pas été trouvé.")
+        # Selon vos besoins, vous pouvez choisir de continuer ou de retourner
+        # Pour cet exemple, nous retournons
         return
 
     # Charger le fichier AIKoD_text_infos.csv
-    text_infos_df = pd.read_csv(text_infos_csv_path)
+    try:
+        text_infos_df = pd.read_csv(text_infos_csv_path)
+        print(f"Fichier CSV chargé : {text_infos_csv_path}")
+    except Exception as e:
+        print(f"Erreur lors du chargement du fichier CSV {text_infos_csv_path} : {e}")
+        return
 
     # Charger le fichier AIKoD_multimodal_infos.csv
-    multimodal_infos_df = pd.read_csv(multimodal_infos_csv_path)
+    try:
+        multimodal_infos_df = pd.read_csv(multimodal_infos_csv_path)
+        print(f"Fichier multimodal CSV chargé : {multimodal_infos_csv_path}")
+    except Exception as e:
+        print(f"Erreur lors du chargement du fichier multimodal CSV {multimodal_infos_csv_path} : {e}")
+        return
 
     # Concaténer les deux DataFrames
-    combined_df = pd.concat([text_infos_df, multimodal_infos_df], ignore_index=True)
+    try:
+        combined_df = pd.concat([text_infos_df, multimodal_infos_df], ignore_index=True)
+        print("DataFrames text et multimodal concaténés.")
+    except Exception as e:
+        print(f"Erreur lors de la concaténation des DataFrames : {e}")
+        return
 
     # Supprimer les doublons basés sur 'id_name', en gardant le premier
-    combined_df.drop_duplicates(subset='id_name', keep='first', inplace=True)
-
-    # Utiliser le DataFrame combiné pour la suite du traitement
-    text_infos_df = combined_df
+    try:
+        combined_df.drop_duplicates(subset='id_name', keep='first', inplace=True)
+        print("Doublons supprimés du DataFrame combiné.")
+    except Exception as e:
+        print(f"Erreur lors de la suppression des doublons : {e}")
+        return
 
     # Charger les données JSON
-    with open(json_path, 'r', encoding='utf-8') as file:
-        data = json.load(file)
+    try:
+        with open(json_path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+        print(f"Fichier JSON chargé : {json_path}")
+    except Exception as e:
+        print(f"Erreur lors du chargement du fichier JSON {json_path} : {e}")
+        return
 
     # Parcourir les modèles dans le JSON
     id_name_to_info = {}
-    for provider, date_dict in data.items():
-        for date_str, models_extract in date_dict.items():
-            if isinstance(models_extract, dict):
-                models = models_extract.get("models_extract_GPT4o", {}).get("models", [])
-                for model in models:
-                    # Vérifier que le type est 'text'
-                    if model.get("type") == "text" and "id_name" in model and model["id_name"]:
-                        id_name = model["id_name"]
-                        company = model.get("company", None)
-                        date_release = model.get("date_release", None)
-                        number_of_parameters = model.get("number_of_parameters")
-                        context_window = model.get("context_window")
-                        finetuned = not model.get("id_name", "").endswith("false")
+    try:
+        for provider, date_dict in data.items():
+            for date_str, models_extract in date_dict.items():
+                if isinstance(models_extract, dict):
+                    models = models_extract.get("models_extract_GPT4o", {}).get("models", [])
+                    for model in models:
+                        # Vérifier que le type est 'text' ou 'multimodal'
+                        if model.get("type") in ["text", "multimodal"] and "id_name" in model and model["id_name"]:
+                            id_name = model["id_name"]
+                            company = model.get("company", None)
+                            date_release = model.get("date_release", None)
+                            number_of_parameters = model.get("number_of_parameters")
+                            context_window = model.get("context_window")
+                            finetuned = not model.get("id_name", "").endswith("false")
 
-                        id_name_to_info.setdefault(id_name, {
-                            "number_of_parameters": [],
-                            "context_window": [],
-                            "finetuned": finetuned,
-                            "company": [],
-                            "date_release": []
-                        })
+                            # Initialiser le dictionnaire pour cet id_name si nécessaire
+                            if id_name not in id_name_to_info:
+                                id_name_to_info[id_name] = {
+                                    "number_of_parameters": [],
+                                    "context_window": [],
+                                    "finetuned": finetuned,
+                                    "company": [],
+                                    "date_release": []
+                                }
 
-                        if number_of_parameters is not None:
-                            id_name_to_info[id_name]["number_of_parameters"].append(number_of_parameters)
-                        if context_window is not None:
-                            id_name_to_info[id_name]["context_window"].append(context_window)
-                        if company:
-                            id_name_to_info[id_name]["company"].append(company)
-                        if date_release:
-                            id_name_to_info[id_name]["date_release"].append(date_release)
+                            # Ajouter les informations
+                            if number_of_parameters is not None:
+                                id_name_to_info[id_name]["number_of_parameters"].append(number_of_parameters)
+                            if context_window is not None:
+                                id_name_to_info[id_name]["context_window"].append(context_window)
+                            if company:
+                                id_name_to_info[id_name]["company"].append(company)
+                            if date_release:
+                                id_name_to_info[id_name]["date_release"].append(date_release)
+        print("Informations des modèles extraites du JSON.")
+    except Exception as e:
+        print(f"Erreur lors du traitement des modèles dans le JSON : {e}")
+        return
 
     # Analyser les informations majoritaires et compléter les id_name
     rows_to_update = []
-    for id_name, info in id_name_to_info.items():
-        # Calculer les valeurs majoritaires
-        number_of_parameters = (
-            Counter(info["number_of_parameters"]).most_common(1)[0][0]
-            if info["number_of_parameters"]
-            else None
-        )
-        context_window = (
-            Counter(info["context_window"]).most_common(1)[0][0]
-            if info["context_window"]
-            else None
-        )
-        company = (
-            Counter(info["company"]).most_common(1)[0][0]
-            if info["company"]
-            else None
-        )
-        date_release = (
-            Counter([str(d) for d in info["date_release"] if isinstance(d, (str, int, float))]).most_common(1)[0][0]
-            if info.get("date_release") and info["date_release"]
-            else None
-        )
-        finetuned = info["finetuned"]
+    try:
+        for id_name, info in id_name_to_info.items():
+            # Calculer les valeurs majoritaires
+            number_of_parameters = (
+                Counter(info["number_of_parameters"]).most_common(1)[0][0]
+                if info["number_of_parameters"]
+                else None
+            )
+            context_window = (
+                Counter(info["context_window"]).most_common(1)[0][0]
+                if info["context_window"]
+                else None
+            )
+            company = (
+                Counter(info["company"]).most_common(1)[0][0]
+                if info["company"]
+                else None
+            )
+            date_release = (
+                Counter([str(d) for d in info["date_release"] if isinstance(d, (str, int, float))]).most_common(1)[0][0]
+                if info.get("date_release") and info["date_release"]
+                else None
+            )
+            finetuned = info["finetuned"]
 
-        # Ajouter les informations pour cet id_name
-        rows_to_update.append({
-            "id_name": id_name,
-            "number_of_parameters": number_of_parameters,
-            "context_window": context_window,
-            "finetuned": finetuned,
-            "company": company,
-            "date_release": date_release
-        })
+            # Ajouter les informations pour cet id_name
+            rows_to_update.append({
+                "id_name": id_name,
+                "number_of_parameters": number_of_parameters,
+                "context_window": context_window,
+                "finetuned": finetuned,
+                "company": company,
+                "date_release": date_release
+            })
+        print("Informations majoritaires calculées.")
+    except Exception as e:
+        print(f"Erreur lors de l'analyse des informations : {e}")
+        return
 
     # Créer un DataFrame avec les mises à jour
-    updates_df = pd.DataFrame(rows_to_update)
+    try:
+        updates_df = pd.DataFrame(rows_to_update)
+        print("DataFrame des mises à jour créé.")
+    except Exception as e:
+        print(f"Erreur lors de la création du DataFrame des mises à jour : {e}")
+        return
 
     # Fusionner les mises à jour avec le DataFrame existant
-    text_infos_df = pd.merge(
-        text_infos_df,
-        updates_df,
-        on="id_name",
-        how="outer",
-        suffixes=("", "_new"),
-    )
+    try:
+        text_infos_df = pd.merge(
+            combined_df,
+            updates_df,
+            on="id_name",
+            how="outer",
+            suffixes=("", "_new"),
+        )
+        print("Fusion des DataFrames existants et des mises à jour effectuée.")
+    except Exception as e:
+        print(f"Erreur lors de la fusion des DataFrames : {e}")
+        return
 
     # Remplacer les colonnes avec les nouvelles valeurs (si elles existent)
-    for col in ["number_of_parameters", "context_window", "finetuned", "company", "date_release"]:
-        if f"{col}_new" in text_infos_df.columns:
-            text_infos_df[col] = text_infos_df[f"{col}_new"].combine_first(text_infos_df[col])
-
-    # Supprimer les colonnes temporaires
-    text_infos_df.drop(
-        columns=[col for col in ["number_of_parameters_new", "context_window_new", "finetuned_new", "company_new", "date_release_new"]
-                 if col in text_infos_df.columns],
-        inplace=True,
-    )
+    try:
+        for col in ["number_of_parameters", "context_window", "finetuned", "company", "date_release"]:
+            if f"{col}_new" in text_infos_df.columns:
+                text_infos_df[col] = text_infos_df[f"{col}_new"].combine_first(text_infos_df[col])
+                print(f"Colonne '{col}' mise à jour avec les nouvelles valeurs.")
+        # Supprimer les colonnes temporaires
+        text_infos_df.drop(
+            columns=[col for col in ["number_of_parameters_new", "context_window_new", "finetuned_new", "company_new", "date_release_new"]
+                     if col in text_infos_df.columns],
+            inplace=True,
+        )
+        print("Colonnes temporaires supprimées.")
+    except Exception as e:
+        print(f"Erreur lors de la mise à jour des colonnes : {e}")
+        return
 
     # Sauvegarder le fichier mis à jour temporairement
     temp_csv_path = text_infos_csv_path.replace('.csv', '_temp.csv')
-    text_infos_df.to_csv(temp_csv_path, index=False)
+    try:
+        text_infos_df.to_csv(temp_csv_path, index=False)
+        print(f"Fichier CSV temporaire enregistré sous '{temp_csv_path}'.")
+    except Exception as e:
+        print(f"Erreur lors de l'enregistrement du fichier CSV temporaire : {e}")
+        return
 
     # Utiliser add_csv_text pour effectuer les fusions supplémentaires
-    df_final = add_csv_text(temp_csv_path)
-    df_final = add_quality_index(temp_csv_path)
+    try:
+        df_final = add_csv_text(temp_csv_path)
+        print("Fonction add_csv_text exécutée.")
+    except Exception as e:
+        print(f"Erreur lors de l'appel de la fonction add_csv_text : {e}")
+        return
+
+    # Utiliser add_quality_index pour effectuer les fusions supplémentaires
+    try:
+        df_final = add_quality_index(temp_csv_path)
+        print("Fonction add_quality_index exécutée.")
+    except Exception as e:
+        print(f"Erreur lors de l'appel de la fonction add_quality_index : {e}")
+        return
 
     # Enregistrer le DataFrame final à l'emplacement d'origine
-    df_final.to_csv(text_infos_csv_path, index=False)
-    print(f"Le fichier {text_infos_csv_path} a été mis à jour avec succès en utilisant add_csv_text.")
+    try:
+        df_final.to_csv(text_infos_csv_path, index=False)
+        print(f"Le fichier '{text_infos_csv_path}' a été mis à jour avec succès en utilisant add_csv_text et add_quality_index.")
+    except Exception as e:
+        print(f"Erreur lors de l'enregistrement du fichier final : {e}")
+        return
 
     # Supprimer le fichier temporaire
-    if os.path.exists(temp_csv_path):
-        os.remove(temp_csv_path)
+    try:
+        if os.path.exists(temp_csv_path):
+            os.remove(temp_csv_path)
+            print(f"Fichier temporaire '{temp_csv_path}' supprimé.")
+    except Exception as e:
+        print(f"Erreur lors de la suppression du fichier temporaire : {e}")

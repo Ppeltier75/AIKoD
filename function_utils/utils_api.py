@@ -98,11 +98,10 @@ def init_API(pricing_directory, output_json_path):
 
 
 
-
 def add_infos_to_API(models_infos_directory, api_json_path):
     """
     Complète le fichier JSON des modèles avec des informations supplémentaires provenant des fichiers CSV appropriés.
-    Remplace les valeurs NaN par null dans le fichier JSON final.
+    Ajoute le blended_price pour les modèles de type 'text', 'audiototext', et 'texttoimage'.
 
     :param models_infos_directory: Chemin vers le répertoire contenant les fichiers CSV (par exemple, 'AIKoD_text_infos.csv').
     :param api_json_path: Chemin vers le fichier JSON généré par 'init_API'.
@@ -126,87 +125,167 @@ def add_infos_to_API(models_infos_directory, api_json_path):
             return data
 
     # Lire le fichier JSON existant
-    with open(api_json_path, 'r', encoding='utf-8') as f:
-        models = json.load(f)
+    try:
+        with open(api_json_path, 'r', encoding='utf-8') as f:
+            models = json.load(f)
+        print(f"Le fichier JSON a été chargé depuis {api_json_path}")
+    except Exception as e:
+        print(f"Erreur lors du chargement du fichier JSON {api_json_path} : {e}")
+        return
 
     # Créer un dictionnaire pour regrouper les modèles par type
-    models_by_type = {}
-    for model in models:
-        type_name = model.get('type')
-        if type_name not in models_by_type:
-            models_by_type[type_name] = []
-        models_by_type[type_name].append(model)
+    try:
+        models_by_type = {}
+        for model in models:
+            type_name = model.get('type')
+            if type_name not in models_by_type:
+                models_by_type[type_name] = []
+            models_by_type[type_name].append(model)
+        print("Les modèles ont été regroupés par type.")
+    except Exception as e:
+        print(f"Erreur lors du regroupement des modèles par type : {e}")
+        return
 
     # Parcourir chaque type et compléter les informations
     for type_name, models_list in models_by_type.items():
-        # Déterminer le nom du fichier CSV correspondant
-        csv_filename = f'AIKoD_{type_name}_infos.csv'
-        csv_path = os.path.join(models_infos_directory, csv_filename)
+        try:
+            # Déterminer le nom du fichier CSV correspondant
+            csv_filename = f'AIKoD_{type_name}_infos.csv'
+            csv_path = os.path.join(models_infos_directory, csv_filename)
 
-        # Vérifier si le fichier CSV existe
-        if not os.path.exists(csv_path):
-            print(f"Le fichier CSV pour le type '{type_name}' n'existe pas : {csv_path}")
+            # Vérifier si le fichier CSV existe
+            if not os.path.exists(csv_path):
+                print(f"Le fichier CSV pour le type '{type_name}' n'existe pas : {csv_path}")
+                continue
+
+            # Lire le fichier CSV dans un DataFrame
+            try:
+                df = pd.read_csv(csv_path)
+                print(f"Fichier CSV chargé : {csv_path}")
+            except Exception as e:
+                print(f"Erreur lors du chargement du fichier CSV '{csv_path}' : {e}")
+                continue
+
+            # Vérifier que la colonne 'id_name' est présente
+            if 'id_name' not in df.columns:
+                print(f"La colonne 'id_name' est manquante dans le fichier CSV : {csv_path}")
+                continue
+
+            # Remplacer les NaN par None dans le DataFrame
+            df = df.where(pd.notnull(df), None)
+            print(f"Les valeurs NaN ont été remplacées par None dans le DataFrame '{csv_path}'.")
+
+            # Créer un dictionnaire des informations du CSV indexé par 'id_name'
+            df.set_index('id_name', inplace=True)
+            csv_info_dict = df.to_dict('index')
+            print(f"Dictionnaire des informations CSV créé pour le type '{type_name}'.")
+
+        except Exception as e:
+            print(f"Erreur lors du traitement du type '{type_name}' : {e}")
             continue
-
-        # Lire le fichier CSV dans un DataFrame
-        df = pd.read_csv(csv_path)
-
-        # Vérifier que la colonne 'id_name' est présente
-        if 'id_name' not in df.columns:
-            print(f"La colonne 'id_name' est manquante dans le fichier CSV : {csv_path}")
-            continue
-
-        # Remplacer les NaN par None dans le DataFrame
-        df = df.where(pd.notnull(df), None)
-
-        # Créer un dictionnaire des informations du CSV indexé par 'id_name'
-        df.set_index('id_name', inplace=True)
-        csv_info_dict = df.to_dict('index')
 
         # Pour chaque modèle du type courant, ajouter les informations du CSV
         for model in models_list:
-            id_name = model.get('id_name')
-            if id_name in csv_info_dict:
-                # Obtenir les informations du CSV pour cet 'id_name'
-                csv_info = csv_info_dict[id_name]
-                # Ajouter les informations au modèle, en excluant 'id_name'
-                for key, value in csv_info.items():
-                    if key != 'id_name':
-                        model[key] = value
-            else:
-                print(f"L'id_name '{id_name}' n'a pas été trouvé dans le fichier CSV : {csv_path}")
-            
-            # Ajouter blended_price pour les modèles de type 'text'
-            if type_name == 'text':
-                price_input = model.get('price_input')
-                price_output = model.get('price_output')
-                price_call = model.get('price_call')
-
-                # Vérifier et convertir les prix en float
-                def parse_price(value):
-                    try:
-                        return float(value) if value not in [None, '', 'null'] else None
-                    except (ValueError, TypeError):
-                        return None
-
-                price_input = parse_price(price_input)
-                price_output = parse_price(price_output)
-                price_call = parse_price(price_call) or 0.0  # Si price_call est None, on le met à 0.0
-
-                # Calculer blended_price si possible
-                if price_input is not None and price_output is not None:
-                    blended_price = (3/4) * price_input + (1/4) * price_output + 1000 * price_call
-                    model['blended_price'] = blended_price
+            try:
+                id_name = model.get('id_name')
+                if id_name in csv_info_dict:
+                    # Obtenir les informations du CSV pour cet 'id_name'
+                    csv_info = csv_info_dict[id_name]
+                    # Ajouter les informations au modèle, en excluant 'id_name'
+                    for key, value in csv_info.items():
+                        if key != 'id_name':
+                            model[key] = value
+                    print(f"Informations du CSV ajoutées pour le modèle '{id_name}'.")
                 else:
-                    model['blended_price'] = None
+                    print(f"L'id_name '{id_name}' n'a pas été trouvé dans le fichier CSV : {csv_path}")
+
+                # Ajouter blended_price selon le type
+                blended_price = None
+                if type_name == 'text':
+                    # Pour les modèles de type 'text', blended_price = (3/4)*price_input + (1/4)*price_output + 1000*price_call
+                    price_input = model.get('price_input')
+                    price_output = model.get('price_output')
+                    price_call = model.get('price_call', 0.0)  # Default to 0.0 if not present
+
+                    # Convertir les prix en float si possible
+                    def parse_price(value):
+                        try:
+                            return float(value) if value not in [None, '', 'null'] else None
+                        except (ValueError, TypeError):
+                            return None
+
+                    price_input = parse_price(price_input)
+                    price_output = parse_price(price_output)
+                    price_call = parse_price(price_call) or 0.0
+
+                    # Calculer blended_price si possible
+                    if price_input is not None and price_output is not None:
+                        blended_price = (3/4) * price_input + (1/4) * price_output + 1000 * price_call
+                    else:
+                        blended_price = None
+
+                elif type_name == 'audiototext':
+                    # Pour les modèles de type 'audiototext', blended_price = 1 * price_input
+                    price_input = model.get('price_input')
+
+                    # Convertir le prix en float si possible
+                    def parse_price(value):
+                        try:
+                            return float(value) if value not in [None, '', 'null'] else None
+                        except (ValueError, TypeError):
+                            return None
+
+                    price_input = parse_price(price_input)
+
+                    if price_input is not None:
+                        blended_price = 1 * price_input
+                    else:
+                        blended_price = None
+
+                elif type_name == 'texttoimage':
+                    # Pour les modèles de type 'texttoimage', blended_price = 1 * price_output
+                    price_output = model.get('price_output')
+
+                    # Convertir le prix en float si possible
+                    def parse_price(value):
+                        try:
+                            return float(value) if value not in [None, '', 'null'] else None
+                        except (ValueError, TypeError):
+                            return None
+
+                    price_output = parse_price(price_output)
+
+                    if price_output is not None:
+                        blended_price = 1 * price_output
+                    else:
+                        blended_price = None
+
+                # Assigner blended_price au modèle
+                model['blended_price'] = blended_price
+                print(f"blended_price calculé pour le modèle '{id_name}' : {blended_price}")
+
+            except Exception as e:
+                print(f"Erreur lors de l'ajout de blended_price pour le modèle '{id_name}' : {e}")
+                continue
 
     # Remplacer les NaN par None dans l'ensemble de la liste des modèles
-    replace_nan_with_none(models)
+    try:
+        models = replace_nan_with_none(models)
+        print("Valeurs NaN remplacées par None dans le JSON.")
+    except Exception as e:
+        print(f"Erreur lors de la conversion des NaN en None : {e}")
+        return
 
     # Enregistrer le fichier JSON mis à jour
-    with open(api_json_path, 'w', encoding='utf-8') as f:
-        json.dump(models, f, ensure_ascii=False, indent=4, allow_nan=False)
-    print(f"Le fichier JSON a été mis à jour avec les informations supplémentaires et enregistré à {api_json_path}.")
+    try:
+        with open(api_json_path, 'w', encoding='utf-8') as f:
+            json.dump(models, f, ensure_ascii=False, indent=4, allow_nan=False)
+        print(f"Le fichier JSON a été mis à jour et enregistré à {api_json_path}.")
+    except Exception as e:
+        print(f"Erreur lors de l'enregistrement du fichier JSON mis à jour : {e}")
+        return
+
+    print("La fonction add_infos_to_API s'est exécutée avec succès.")
 
 
 
