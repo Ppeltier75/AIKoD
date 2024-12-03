@@ -313,10 +313,10 @@ base_path = os.path.abspath(os.path.dirname(__file__))
 input_json_path = os.path.join(base_path, "data", "API", "AIKoD_API_base_v0.json")
 
 # Chemin où vous souhaitez enregistrer le nouveau fichier JSON
-output_json_path = os.path.join(base_path, "data", "API", "API_date_v5.0.json")
+output_json_path = os.path.join(base_path, "data", "API", "API_date_v5.2.json")
 
 # Appel de la fonction
-generate_API_date(input_json_path, output_json_path, exclude_provider=["Openrouter","AIMLAPI"])
+generate_API_date(input_json_path, output_json_path, exclude_provider=["Openrouter","AIMLAPI"], exclude_company=["thebloke"])
 
 # %%
 import os 

@@ -344,7 +344,6 @@ def pareto_frontier(data, price_field, quality_field, maximize_quality=True):
     
     return pareto
 
-
 def generate_API_date(input_json_path, output_json_path, exclude_provider=None, exclude_company=None):
     """
     Génère un fichier JSON contenant les modèles disponibles pour chaque mois de 2023-01 à 2024-11,
@@ -358,7 +357,7 @@ def generate_API_date(input_json_path, output_json_path, exclude_provider=None, 
       Exemple : exclude_provider=["OpenAI", "AI21"]
     - exclude_company (List[str], optionnel): Liste des sociétés à exclure de la génération des frontières.
       Exemple : exclude_company=["OpenAI Inc", "Anthropic LLC"]
-    
+
     Le fichier JSON généré aura la structure suivante:
     {
         "YYYY_MM": {
@@ -433,24 +432,21 @@ def generate_API_date(input_json_path, output_json_path, exclude_provider=None, 
         exclude_company_normalized = []
         print("Aucune société n'est exclue.")
 
-    # Pré-traiter les données pour obtenir les dates disponibles par fournisseur et société, en excluant les fournisseurs et sociétés spécifiés
+    # Pré-traiter les données pour obtenir les dates disponibles par fournisseur
     provider_dates = defaultdict(set)
     for entry in data:
         provider = entry.get('provider')
-        company = entry.get('company', '').strip().lower()
+        # Assurer que 'company' est une chaîne de caractères avant d'appeler 'strip' et 'lower'
+        company = (entry.get('company') or '').strip().lower()
         date_str = entry.get('date')
         if not provider or not date_str:
             continue
-        if provider.lower() in exclude_provider_normalized:
-            continue  # Exclure ce fournisseur
-        if company and company in exclude_company_normalized:
-            continue  # Exclure cette société
         try:
             entry_date = datetime.strptime(date_str, '%Y-%m-%d')
         except ValueError:
             continue
         provider_dates[provider].add(entry_date)
-    print(f"Fournisseurs traités après exclusion : {list(provider_dates.keys())}")
+    print(f"Fournisseurs traités : {list(provider_dates.keys())}")
 
     # Maintenant, pour chaque date cible
     for target_date in date_list:
@@ -465,35 +461,44 @@ def generate_API_date(input_json_path, output_json_path, exclude_provider=None, 
                 latest_date = max(dates_before_target)
                 provider_latest_date[provider] = latest_date
 
-        # Collecter les modèles pour chaque fournisseur à la dernière date pertinente
-        models_for_date = []
+        # Collecter tous les modèles pour chaque fournisseur à la dernière date pertinente
+        models_for_date_list = []
+        models_for_date_star = []
         for entry in data:
             provider = entry.get('provider')
-            company = entry.get('company', '').strip().lower()
+            # Assurer que 'company' est une chaîne de caractères avant d'appeler 'strip' et 'lower'
+            company = (entry.get('company') or '').strip().lower()
             date_str = entry.get('date')
             if not provider or not date_str:
                 continue
-            if provider.lower() in exclude_provider_normalized:
-                continue  # Exclure ce fournisseur
-            if company and company in exclude_company_normalized:
-                continue  # Exclure cette société
+            # Vérifier si le modèle correspond à la dernière date pertinente pour son fournisseur
             if provider in provider_latest_date:
                 latest_date = provider_latest_date[provider]
                 if date_str == latest_date.strftime('%Y-%m-%d'):
-                    models_for_date.append(entry)
+                    models_for_date_list.append(entry)
+                    # Vérifier si le modèle doit être exclu pour `models_star`
+                    if (provider.lower() not in exclude_provider_normalized) and (company not in exclude_company_normalized):
+                        models_for_date_star.append(entry)
 
-        print(f"Date cible {date_key} : {len(models_for_date)} modèles collectés après exclusion.")
+        print(f"Date cible {date_key} : {len(models_for_date_list)} modèles dans models_list, {len(models_for_date_star)} modèles dans models_star après exclusion.")
 
         # Catégoriser les modèles par 'type' dans 'models_list'
         models_list = defaultdict(list)
-        for model in models_for_date:
+        for model in models_for_date_list:
             type_ = model.get('type')
             if type_:
                 models_list[type_].append(model)
 
+        # Catégoriser les modèles par 'type' dans 'models_star'
+        models_star_candidates = defaultdict(list)
+        for model in models_for_date_star:
+            type_ = model.get('type')
+            if type_:
+                models_star_candidates[type_].append(model)
+
         # Trouver les 'models_star' par 'type' en utilisant le filtrage Pareto
         models_star = {}
-        for type_, models in models_list.items():
+        for type_, models in models_star_candidates.items():
             # Fonction utilitaire pour convertir en float
             def parse_float(value):
                 if value in [None, '', 'null']:
@@ -542,10 +547,12 @@ def generate_API_date(input_json_path, output_json_path, exclude_provider=None, 
             else:
                 print(f"Type '{type_}' : Aucun modèle filtré pour le front de Pareto.")
 
-            # Enlever les champs temporaires des modèles restants
-            for m in models:
-                m.pop('_parsed_price', None)
-                m.pop('_parsed_quality', None)
+        # Supprimer les champs temporaires `_parsed_` de tous les modèles dans `models_list`
+        for type_, models in models_list.items():
+            for model in models:
+                keys_to_remove = [key for key in model if key.startswith('_parsed_')]
+                for key in keys_to_remove:
+                    model.pop(key, None)
 
         # Convertir models_list en dictionnaire standard
         models_list = dict(models_list)
@@ -576,7 +583,6 @@ def generate_API_date(input_json_path, output_json_path, exclude_provider=None, 
         return
 
     print("La fonction generate_API_date s'est exécutée avec succès.")
-
 
 
 def add_speed_provider_text_AA(json_path, aa_directory):

@@ -181,7 +181,7 @@ stablediffusion-xl-unknown-1-unknown-20-false-unknown-false,stabilityai,2024-06-
 stablediffusion-xl-lcm-1-1024x1024-4-false-unknown-true,stabilityai,2024-02-24,4.0,1024.0,0.4071428571428571,4.366666666666666,30.0,1024.0,GBR
 stablediffusion-xl-base-1-1024x1024-50-false-unknown-false,stabilityai,2024-10-31,50.0,1024.0,0.4071428571428571,4.366666666666666,30.0,1024.0,GBR
 stablediffusion-segmind-1b-1-1024x1024-30-false-unknown-false,,2024-10-31,30.0,1024.0,0.4071428571428571,4.366666666666666,30.0,1024.0,
-ssd-unknown-unknown-1-1024x1024-50-false-unknown-false,segmind,2024-10-31,50.0,1024.0,,,,,
+ssd-unknown-unknown-1-1024x1024-50-false-unknown-false,segmind,2024-10-31,50.0,1024.0,,,,,IND
 stablediffusion-unknown-unknown-1.5-1024x1024-100-false-unknown-false,stabilityai,2023-08-12,100.0,1024.0,0.0328571428571428,68.5,50.0,1024.0,GBR
 stablediffusion-unknown-unknown-1.5-512x512-100-false-unknown-false,stabilityai,2023-08-12,100.0,512.0,0.0328571428571428,68.5,50.0,1024.0,GBR
 stablediffusion-unknown-unknown-1.5-1024x1024-25-false-unknown-false,stabilityai,2023-08-12,25.0,1024.0,0.0328571428571428,68.5,50.0,1024.0,GBR
