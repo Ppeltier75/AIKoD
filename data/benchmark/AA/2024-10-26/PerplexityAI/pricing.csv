@@ -1,0 +1,6 @@
+model_name,price_1m_blended_3_to_1,price_1m_input_tokens,price_1m_output_tokens,id_name
+Llama 3.1 Instruct 70B,1.0,1.0,1.0,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
+Llama 3.1 Instruct 8B,0.2,0.2,0.2,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
+Sonar 3.1 Large,1.0,1.0,1.0,sonar-large-unknown-3.1-unknown-unknown-unknown-unknown-false
+Sonar 3.1 Small,0.2,0.2,0.2,sonar-small-unknown-3.1-unknown-unknown-unknown-unknown-false
+Mistral 7B Instruct,0.2,0.2,0.2,mistral-unknown-unknown-unknown-unknown-7-unknown-instruct-false

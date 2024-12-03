@@ -29,7 +29,7 @@ bge-large-unknown-unknown-unknown-unknown-unknown-unknown-false,12.0,11800.0,Fal
 capybara-unknown-unknown-1.9-unknown-7-unknown-unknown-false,7.0,8000.0,False,nous,2024-06-18,,,,,,,,,,,,,,USA
 capybara-unknown-unknown-unknown-unknown-34-unknown-unknown-false,34.0,200000.0,False,nous,2024-10-31,,,,,,,,,,,,,,USA
 characterglm-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,False,zhipuai,2023-11-13,,,,,,,,,,,,,,CHN
-charglm-unknown-unknown-3-unknown-unknown-unknown-unknown-false,,4000.0,False,,2024-07-03,,,,,,,,,zhipuai,,,,,
+charglm-unknown-unknown-3-unknown-unknown-unknown-unknown-false,,4000.0,False,zhipuai,2024-07-03,,,,,,,,,zhipuai,,,,,
 chatcompletion-pro-unknown-unknown-unknown-unknown-unknown-unknown-false,1024000.0,128000.0,False,minimaxi,2024-07-03,,,,,,,,,,,,,,CHN
 chatcompletion-unknown-unknown-2-unknown-unknown-unknown-unknown-false,405.0,256000.0,False,minimaxi,2024-07-03,,,,,,,,,,,,,,CHN
 chatcompletion-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,340.0,2000000.0,False,minimaxi,2024-07-03,,,,,,,,,,,,,,CHN
@@ -213,8 +213,8 @@ gpt-4o-mini-unknown-unknown-unknown-unknown-unknown-false,,,,openai,,1272.0,0.51
 gpt-4o-unknown-regional-api-unknown-unknown-unknown-false,,,,openai,,,,,,,,,,,,,,,USA
 gpt-4o-unknown-unknown-20240513-unknown-unknown-unknown-false,,128000.0,False,openai,2024-05-13,1337.0,0.577,0.886,0.514,0.905,0.783,0.901,53.98,1286.4432975974114,0.887,,83.8,0.45,USA
 gpt-4o-unknown-unknown-20240806-unknown-unknown-unknown-false,,128000.0,False,openai,2024-08-06,1337.0,0.576,0.886,0.514,0.905,0.783,0.901,56.03,1263.7189473843396,,,83.8,0.45,USA
-gpt-4o-unknown-unknown-20240806-unknown-unknown-unknown-true,,,,,,1337.0,0.576,0.886,0.514,0.905,0.783,0.901,56.03,1263.7189473843396,,,83.8,0.45,
-gpt-4o-unknown-unknown-20241001-unknown-unknown-unknown-false,,,,,,1337.0,0.581,0.886,0.514,0.905,0.783,0.901,56.03,1286.4432975974114,0.887,,83.8,0.45,
+gpt-4o-unknown-unknown-20240806-unknown-unknown-unknown-true,,,,openai,,1337.0,0.576,0.886,0.514,0.905,0.783,0.901,56.03,1263.7189473843396,,,83.8,0.45,
+gpt-4o-unknown-unknown-20241001-unknown-unknown-unknown-false,,,,openai,,1337.0,0.581,0.886,0.514,0.905,0.783,0.901,56.03,1286.4432975974114,0.887,,83.8,0.45,
 gpt-4o-unknown-unknown-unknown-unknown-unknown-chat-false,,128000.0,False,openai,2024-05-13,1337.0,0.581,0.886,0.514,0.905,0.783,0.901,56.03,1286.4432975974114,0.887,,83.8,0.45,USA
 gpt-jt-moderation-unknown-unknown-6-unknown-unknown-false,6.0,2000.0,False,togetherai,2023-02-03,,,,,,,,,,,,,,USA
 gpt-mini-unknown-4o-unknown-unknown-unknown-false,,,,openai,,1272.0,0.512,0.819,0.427,0.856,0.753,0.87,43.27,1276.5769257113293,0.8200000000000001,,97.8,0.48,USA

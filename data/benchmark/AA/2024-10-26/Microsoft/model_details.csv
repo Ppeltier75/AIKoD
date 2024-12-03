@@ -1,0 +1,15 @@
+model_name,parameters,open_weights,open_weights_license_name,open_weights_license_url,release_date,context_window,id_name
+Llama 3.1 Instruct 405B,405.0,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,128000,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false
+Llama 3.1 Instruct 70B,70.0,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,128000,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
+Llama 3.1 Instruct 8B,8.0,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,128000,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
+Mistral Large 2,123.0,True,Mistral Research License,https://mistral.ai/licenses/MRL-0.1.md,2024-07-24,128000,mistral-large-unknown-2-unknown-unknown-unknown-unknown-false
+Command-R+ (Apr '24),104.0,True,CC-BY-NC 4.0 License with Acceptable Use Addendum,https://cohere.com/c4ai-cc-by-nc-license,2024-04-05,128000,commandr-plus-unknown-unknown-202404-unknown-unknown-unknown-false
+Command-R (Mar '24),35.0,True,CC-BY-NC 4.0 License with Acceptable Use Addendum,https://cohere.com/c4ai-cc-by-nc-license,2024-03-12,128000,commandr-unknown-unknown-202403-unknown-unknown-unknown-false
+Phi-3 Medium Instruct 14B,14.0,True,MIT,https://opensource.org/license/mit,2024-05-21,128000,phi-medium-unknown-3-unknown-unknown-14-instruct-false
+Jamba 1.5 Large,398.0,True,Jamba Open Model License Agreement,https://www.ai21.com/licenses/jamba-open-model-license,2024-08-22,256000,jamba-large-unknown-1.5-unknown-unknown-unknown-unknown-false
+Jamba 1.5 Mini,52.0,True,Jamba Open Model License Agreement,https://www.ai21.com/licenses/jamba-open-model-license,2024-08-22,256000,jamba-mini-unknown-1.5-unknown-unknown-unknown-unknown-false
+Llama 3 Instruct 70B,70.0,True,META LLAMA 3 COMMUNITY LICENSE AGREEMENT,https://llama.meta.com/llama3/license/,2024-04-18,8192,llama-unknown-unknown-3-unknown-70-unknown-instruct-false
+Llama 3 Instruct 8B,8.0,True,META LLAMA 3 COMMUNITY LICENSE AGREEMENT,https://llama.meta.com/llama3/license/,2024-04-18,8192,llama-unknown-unknown-3-unknown-8-unknown-instruct-false
+Mistral Large,,False,,,2024-02-26,32768,mistral-large-unknown-unknown-unknown-unknown-unknown-false
+Mistral Small (Feb '24),,False,,,2024-02-26,32768,mistral-small-unknown-202402-unknown-unknown-unknown-false
+Jamba Instruct,52.0,True,Apache 2.0,https://www.ai21.com/licenses/jamba-open-model-license,2024-05-02,256000,jamba-instruct-unknown-1.5-unknown-unknown-unknown-unknown-false

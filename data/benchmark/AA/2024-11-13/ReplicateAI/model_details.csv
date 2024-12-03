@@ -1,0 +1,5 @@
+model_name,parameters,open_weights,open_weights_license_name,open_weights_license_url,release_date,context_window,id_name
+Llama 3.1 Instruct 405B,405,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,128000,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false
+Llama 3 Instruct 70B,70,True,META LLAMA 3 COMMUNITY LICENSE AGREEMENT,https://llama.meta.com/llama3/license/,2024-04-18,8192,llama-unknown-unknown-3-unknown-70-unknown-instruct-false
+Llama 3 Instruct 8B,8,True,META LLAMA 3 COMMUNITY LICENSE AGREEMENT,https://llama.meta.com/llama3/license/,2024-04-18,8192,llama-unknown-unknown-3-unknown-8-unknown-instruct-false
+Llama 2 Chat 7B,7,True,Llama 2 Community License Agreement,https://ai.meta.com/llama/license/,2023-07-18,4096,llama-chat-unknown-2-unknown-7-unknown-unknown-false

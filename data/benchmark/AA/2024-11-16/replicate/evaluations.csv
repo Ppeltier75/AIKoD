@@ -1,5 +1,0 @@
-model_name,quality_index,mmlu,gpqa,humaneval,math,id_name
-Llama 3.1 Instruct 405B,,,,,,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false
-Llama 3 Instruct 70B,61.9,0.794,0.406,0.746,0.529,llama-unknown-unknown-3-unknown-70-unknown-instruct-false
-Llama 3 Instruct 8B,45.1,0.645,0.295,0.559,0.304,llama-unknown-unknown-3-unknown-8-unknown-instruct-false
-Llama 2 Chat 7B,,0.13,0.066,,,llama-chat-unknown-2-unknown-7-unknown-unknown-false

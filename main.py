@@ -310,3 +310,27 @@ output_json_path = os.path.join(base_path, "data", "API", "API_date_v4.8.json")
 generate_API_date(input_json_path, output_json_path)
 
 # %%
+import os 
+from function_utils.utils_cleaning import clean_name_AA
+# Chemin de base de votre projet
+base_path = os.path.abspath(os.path.dirname(__file__))
+# Chemin vers le fichier JSON généré par 'init_API'
+directory_AA = os.path.join(base_path, "data", 'benchmark', 'AA')
+# Exemple d'appel de la fonction
+clean_name_AA(directory_AA)
+
+# %%
+import os 
+from function_utils.utils_add_infos import add_speed_provider_text_AA
+# Fonction principale
+if __name__ == "__main__":
+    add_speed_provider_text_AA()
+
+
+# %%
+import os
+from function_utils.utils_cleaning import aikod_clean_company
+if __name__ == "__main__":
+    aikod_clean_company()
+
+# %%

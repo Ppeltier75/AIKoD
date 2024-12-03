@@ -1,0 +1,5 @@
+model_name,quality_index,mmlu,gpqa,humaneval,math,id_name
+Reka Flash (Sep '24),57.9,0.731,0.34,0.707,0.54,reka-flash-unknown-202409-unknown-unknown-unknown-false
+Reka Core,56.8,0.76,0.278,0.685,0.55,reka-core-unknown-unknown-unknown-unknown-unknown-unknown-false
+Reka Flash (Feb '24),46.2,0.646,0.267,0.568,0.367,reka-flash-unknown-202402-unknown-unknown-unknown-false
+Reka Edge,29.6,0.437,0.193,0.376,0.178,reka-edge-unknown-unknown-unknown-unknown-unknown-unknown-false

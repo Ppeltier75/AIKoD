@@ -128,5 +128,18 @@
     "wizardlm": "WizardAI",
     "zhipuai": "ZhipuAI",
     "aiqr": "AIQR",
-    "nan": null
+    "nan": null,
+    "amazon_bedrock": "Amazon",
+    "azure": "Microsoft",
+    "cerebras": "Cerebras",
+    "deepinfra": "Deepinfra",
+    "groq": "Groq",
+    "hyperbolic": "Hyperbolic",
+    "mistral": "MistralAI",
+    "nebius": "Nebius",
+    "perplexity": "PerplexityAI",
+    "reka-ai": "RekaAI",
+    "replicate": "ReplicateAI",
+    "simplismart": "Simplismart",
+    "upstage": "UpstageAI"
 }

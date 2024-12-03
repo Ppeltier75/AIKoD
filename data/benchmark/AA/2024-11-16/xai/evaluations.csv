@@ -1,2 +1,0 @@
-model_name,quality_index,mmlu,gpqa,humaneval,math,id_name
-Grok Beta,70.4,0.847,0.429,0.849,0.692,grok-unknown-unknown-beta-unknown-unknown-unknown-false

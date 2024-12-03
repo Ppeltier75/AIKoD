@@ -1,0 +1,24 @@
+model_name,quality_index,mmlu,gpqa,humaneval,math,id_name
+Llama 3.1 Instruct 405B,,,,,,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false
+Llama 3.2 Instruct 90B (Vision),67.0,0.848,0.407,0.755,0.669,llama-unknown-unknown-3.2-unknown-90-unknown-unknown-vision-false
+Llama 3.1 Instruct 70B,,,,,,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
+Llama 3.2 Instruct 11B (Vision),53.3,0.704,0.236,0.689,0.503,llama-unknown-unknown-3.2-unknown-11-unknown-unknown-vision-false
+Llama 3.1 Instruct 8B,,,,,,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
+Llama 3.2 Instruct 3B,46.9,0.643,0.21,0.512,0.513,llama-unknown-unknown-3.2-unknown-3-unknown-unknown-false
+Llama 3.2 Instruct 1B,29.2,0.351,0.155,0.366,0.296,llama-unknown-unknown-3.2-unknown-1-unknown-unknown-false
+Claude 3.5 Sonnet (Oct '24),,,,,,claude-sonnet-unknown-3.5-202410-unknown-unknown-unknown-false
+Claude 3.5 Sonnet (June '24),,,,,,claude-sonnet-unknown-3.5-202406-unknown-unknown-unknown-false
+Claude 3 Opus,,,,,,claude-opus-unknown-3-unknown-unknown-unknown-unknown-false
+Claude 3.5 Haiku,,,,,,claude-haiku-unknown-3.5-unknown-unknown-unknown-unknown-false
+Claude 3 Haiku,,,,,,claude-haiku-unknown-3-unknown-unknown-unknown-unknown-false
+Mistral Large 2,,,,,,mistral-large-unknown-2-unknown-unknown-unknown-unknown-false
+Mixtral 8x7B Instruct,,,,,,mixtral-unknown-unknown-unknown-8x7-unknown-unknown-instruct-false
+Command-R+ (Aug '24),,,,,,commandr-plus-unknown-unknown-202408-unknown-unknown-unknown-false
+Command-R (Aug '24),,,,,,commandr-unknown-unknown-202408-unknown-unknown-unknown-false
+Command-R+ (Apr '24),,,,,,commandr-plus-unknown-unknown-202404-unknown-unknown-unknown-false
+Command-R (Mar '24),,,,,,commandr-unknown-unknown-202403-unknown-unknown-unknown-false
+Llama 3 Instruct 70B,,,,,,llama-unknown-unknown-3-unknown-70-unknown-instruct-false
+Llama 3 Instruct 8B,,,,,,llama-unknown-unknown-3-unknown-8-unknown-instruct-false
+Claude 3 Sonnet,,,,,,claude-sonnet-unknown-3-unknown-unknown-unknown-unknown-false
+Mistral Large,,,,,,mistral-large-unknown-unknown-unknown-unknown-unknown-false
+Mistral 7B Instruct,,,,,,mistral-unknown-unknown-unknown-unknown-7-unknown-instruct-false
