@@ -4,15 +4,15 @@ Llama 3.1 Instruct 70B,70.0,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://g
 Llama 3.1 Instruct 70B,70.0,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,128000,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
 Llama 3.1 Instruct 8B,8.0,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,128000,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
 Llama 3.1 Instruct 8B,8.0,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,128000,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
-Gemma 2 9B,9.0,True,Gemma license,https://ai.google.dev/gemma/terms,2024-06-27,8192,gemma-unknown-unknown-2-unknown-9-unknown-unknown-false
-Gemma 2 9B,9.0,True,Gemma license,https://ai.google.dev/gemma/terms,2024-06-27,8192,gemma-unknown-unknown-2-unknown-9-unknown-unknown-false
-Mixtral 8x22B Instruct,141.0,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2024-04-17,65384,mixtral-unknown-unknown-unknown-8x22-unknown-unknown-instruct-false
-Mixtral 8x22B Instruct,141.0,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2024-04-17,65384,mixtral-unknown-unknown-unknown-8x22-unknown-unknown-instruct-false
-Mistral NeMo,12.0,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2024-07-18,128000,mistral-nemo-unknown-unknown-unknown-unknown-unknown-false
-Mistral NeMo,12.0,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2024-07-18,128000,mistral-nemo-unknown-unknown-unknown-unknown-unknown-false
-Mixtral 8x7B Instruct,46.7,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2023-12-11,32768,mixtral-unknown-unknown-unknown-8x7-unknown-unknown-instruct-false
-Mixtral 8x7B Instruct,46.7,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2023-12-11,32768,mixtral-unknown-unknown-unknown-8x7-unknown-unknown-instruct-false
-Llama 3.1 Nemotron Instruct 70B,70.0,True,META LLAMA 3 COMMUNITY LICENSE AGREEMENT,https://llama.meta.com/llama3/license/,,128000,llama-nemotron-unknown-3.1-unknown-70-unknown-instruct-false
-Llama 3.1 Nemotron Instruct 70B,70.0,True,META LLAMA 3 COMMUNITY LICENSE AGREEMENT,https://llama.meta.com/llama3/license/,,128000,llama-nemotron-unknown-3.1-unknown-70-unknown-instruct-false
+Gemma 2 9B,9.0,True,Gemma license,https://ai.google.dev/gemma/terms,2024-06-27,8192,gemma-unknown-unknown-unknown-unknown-9-unknown-unknown-false
+Gemma 2 9B,9.0,True,Gemma license,https://ai.google.dev/gemma/terms,2024-06-27,8192,gemma-unknown-unknown-unknown-unknown-9-unknown-unknown-false
+Mixtral 8x22B Instruct,141.0,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2024-04-17,65384,mixtral-instruct-unknown-unknown-unknown-8x22-unknown-unknown-false
+Mixtral 8x22B Instruct,141.0,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2024-04-17,65384,mixtral-instruct-unknown-unknown-unknown-8x22-unknown-unknown-false
+Mistral NeMo,12.0,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2024-07-18,128000,mistral-nemo-unknown-unknown-unknown-unknown-unknown-unknown-false
+Mistral NeMo,12.0,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2024-07-18,128000,mistral-nemo-unknown-unknown-unknown-unknown-unknown-unknown-false
+Mixtral 8x7B Instruct,46.7,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2023-12-11,32768,mixtral-instruct-unknown-unknown-unknown-8x7-unknown-unknown-false
+Mixtral 8x7B Instruct,46.7,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2023-12-11,32768,mixtral-instruct-unknown-unknown-unknown-8x7-unknown-unknown-false
+Llama 3.1 Nemotron Instruct 70B,70.0,True,META LLAMA 3 COMMUNITY LICENSE AGREEMENT,https://llama.meta.com/llama3/license/,,128000,llama-unknown-nemotron-3.1-unknown-70-unknown-instruct-false
+Llama 3.1 Nemotron Instruct 70B,70.0,True,META LLAMA 3 COMMUNITY LICENSE AGREEMENT,https://llama.meta.com/llama3/license/,,128000,llama-unknown-nemotron-3.1-unknown-70-unknown-instruct-false
 Qwen2.5 Instruct 72B,72.0,True,Qwen License Agreement,https://huggingface.co/Qwen/Qwen2.5-72B-Instruct/blob/main/LICENSE,2024-09-19,131072,qwen-unknown-unknown-2.5-unknown-72-unknown-instruct-false
 Qwen2.5 Instruct 72B,72.0,True,Qwen License Agreement,https://huggingface.co/Qwen/Qwen2.5-72B-Instruct/blob/main/LICENSE,2024-09-19,131072,qwen-unknown-unknown-2.5-unknown-72-unknown-instruct-false

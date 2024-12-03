@@ -1,6 +1,6 @@
 model_name,quality_index,mmlu,gpqa,humaneval,math,id_name
 Llama 3.1 Instruct 405B,,,,,,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false
-Llama 3.2 Instruct 90B (Vision),,,,,,llama-unknown-unknown-3.2-unknown-90-unknown-unknown-vision-false
+Llama 3.2 Instruct 90B (Vision),,,,,,llama-unknown-vision-3.2-unknown-90-unknown-instruct-false
 Llama 3.1 Instruct 70B,,,,,,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
 Llama 3.1 Instruct 8B,,,,,,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
 Gemini 1.5 Pro (Sep '24),,,,,,gemini-pro-unknown-1.5-202409-unknown-unknown-unknown-false
@@ -12,4 +12,4 @@ Gemini 1.5 Flash (May '24),60.0,0.789,0.39,,0.55,gemini-flash-unknown-1.5-202405
 Gemini 1.5 Pro (May '24),,,,,,gemini-pro-unknown-1.5-202405-unknown-unknown-unknown-false
 Gemini 1.5 Pro (May '24),71.5,0.86,0.46,,0.68,gemini-pro-unknown-1.5-202405-unknown-unknown-unknown-false
 Gemini 1.5 Flash-8B,,0.75,0.298,,0.699,gemini-flash-unknown-1.5-unknown-8-unknown-unknown-false
-Gemini 1.0 Pro,,,,,,gemini-pro-unknown-1.0-unknown-unknown-unknown-unknown-false
+Gemini 1.0 Pro,,,,,,gemini-pro-unknown-1.0-unknown-unknown-unknown-false

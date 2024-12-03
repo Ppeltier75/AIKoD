@@ -458,3 +458,117 @@ def scrappe_table_textAA(output_dir):
     finally:
         # Close the driver
         driver.quit()
+
+
+import os
+import pandas as pd
+
+def correct_AA_benchmark():
+    """
+    Parcourt les répertoires 'texttoimage' et 'audiototext' dans 'data\benchmark\AA\'
+    et ajoute ou remplace les colonnes 'speed_index' et 'quality_index' selon les spécifications.
+    
+    Pour les fichiers dans 'texttoimage' :
+        - Crée ou remplace la colonne 'speed_index' basée sur la moyenne de 'Median Generation Time (s)' pour chaque 'id_name'.
+    
+    Pour les fichiers dans 'audiototext' :
+        - Crée ou remplace la colonne 'speed_index' basée sur la moyenne de 'Median Speed Factor' pour chaque 'id_name'.
+        - Crée ou remplace la colonne 'quality_index' basée sur la moyenne de 'Word Error Rate (%)' pour chaque 'id_name'.
+    """
+    
+    # Définir le chemin racine
+    root_dir = os.path.join('data', 'benchmark', 'AA')
+    
+    # Définir les sous-répertoires
+    texttoimage_dir = os.path.join(root_dir, 'texttoimage')
+    audiototext_dir = os.path.join(root_dir, 'audiototext')
+    
+    # Fonction auxiliaire pour calculer et assigner l'indice
+    def calculate_and_assign(df, group_col, target_col, new_col_name):
+        """
+        Calcule la moyenne de 'target_col' pour chaque 'group_col' et assigne la valeur moyenne à 'new_col_name'.
+        
+        :param df: DataFrame à traiter.
+        :param group_col: Colonne utilisée pour le groupement.
+        :param target_col: Colonne dont la moyenne sera calculée.
+        :param new_col_name: Nom de la nouvelle colonne à créer ou remplacer.
+        :return: DataFrame avec la nouvelle colonne ajoutée ou remplacée.
+        """
+        if group_col not in df.columns or target_col not in df.columns:
+            print(f"Les colonnes '{group_col}' ou '{target_col}' sont absentes. Opération ignorée.")
+            return df
+        
+        # Calculer la moyenne en ignorant les NaN
+        mean_values = df.groupby(group_col)[target_col].mean()
+        
+        # Créer un mapping de 'id_name' à la moyenne calculée
+        mapping = mean_values.to_dict()
+        
+        # Assigner les valeurs moyennes à la nouvelle colonne
+        df[new_col_name] = df[group_col].map(mapping)
+        
+        return df
+    
+    # Traitement des fichiers dans texttoimage_dir
+    if os.path.exists(texttoimage_dir):
+        print(f"\n--- Traitement des fichiers dans '{texttoimage_dir}' ---")
+        for file in os.listdir(texttoimage_dir):
+            if file.startswith('AA_texttoimage_') and file.endswith('.csv'):
+                file_path = os.path.join(texttoimage_dir, file)
+                print(f"\nTraitement du fichier texttoimage : {file_path}")
+                try:
+                    # Lire le fichier CSV
+                    df = pd.read_csv(file_path)
+                    
+                    # Vérifier la présence des colonnes nécessaires
+                    required_columns = ['id_name', 'Median Generation Time (s)']
+                    if not all(col in df.columns for col in required_columns):
+                        print(f"Les colonnes {required_columns} manquent dans {file_path}. Opération ignorée.")
+                        continue
+                    
+                    # Calculer et assigner 'speed_index'
+                    df = calculate_and_assign(df, 'id_name', 'Median Generation Time (s)', 'speed_index')
+                    
+                    # Sauvegarder le fichier mis à jour
+                    df.to_csv(file_path, index=False)
+                    print(f"Colonne 'speed_index' ajoutée ou remplacée dans {file_path}.")
+                    
+                except Exception as e:
+                    print(f"Erreur lors du traitement de {file_path} : {e}")
+    else:
+        print(f"\nLe répertoire '{texttoimage_dir}' n'existe pas. Aucun fichier traité pour 'texttoimage'.")
+    
+    # Traitement des fichiers dans audiototext_dir
+    if os.path.exists(audiototext_dir):
+        print(f"\n--- Traitement des fichiers dans '{audiototext_dir}' ---")
+        for file in os.listdir(audiototext_dir):
+            if file.startswith('AA_audiototext_') and file.endswith('.csv'):
+                file_path = os.path.join(audiototext_dir, file)
+                print(f"\nTraitement du fichier audiototext : {file_path}")
+                try:
+                    # Lire le fichier CSV
+                    df = pd.read_csv(file_path)
+                    
+                    # Vérifier la présence des colonnes nécessaires
+                    required_columns_speed = ['id_name', 'Median Speed Factor']
+                    required_columns_quality = ['id_name', 'Word Error Rate (%)']
+                    if not all(col in df.columns for col in required_columns_speed + required_columns_quality):
+                        print(f"Les colonnes {required_columns_speed + required_columns_quality} manquent dans {file_path}. Opération ignorée.")
+                        continue
+                    
+                    # Calculer et assigner 'speed_index'
+                    df = calculate_and_assign(df, 'id_name', 'Median Speed Factor', 'speed_index')
+                    
+                    # Calculer et assigner 'quality_index'
+                    df = calculate_and_assign(df, 'id_name', 'Word Error Rate (%)', 'quality_index')
+                    
+                    # Sauvegarder le fichier mis à jour
+                    df.to_csv(file_path, index=False)
+                    print(f"Colonnes 'speed_index' et 'quality_index' ajoutées ou remplacées dans {file_path}.")
+                    
+                except Exception as e:
+                    print(f"Erreur lors du traitement de {file_path} : {e}")
+    else:
+        print(f"\nLe répertoire '{audiototext_dir}' n'existe pas. Aucun fichier traité pour 'audiototext'.")
+    
+    print("\n--- Traitement terminé ---\n")

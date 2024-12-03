@@ -235,14 +235,16 @@ def Benchmark_update_id_names(root_directory, examples_directory, openai_api_key
                     print(f"Aucun modèle ajouté ou mise à jour non requise pour {file}.")
 
 
-def add_idname_benchmark(benchmark_dir, id_benchmark_dir):
+
+def add_idname_benchmark(benchmark_dir, id_benchmark_dir, reset=False):
     """
-    Ajoute une colonne `id_name` aux fichiers CSV dans benchmark_dir en se basant uniquement
-    sur les fichiers correspondants (par préfixe) dans id_benchmark_dir.
-    Supprime toutes les colonnes commençant par 'id_name' avant de faire le merge.
+    Ajoute une colonne `id_name` aux fichiers CSV dans `benchmark_dir` en se basant uniquement
+    sur les fichiers correspondants (par préfixe) dans `id_benchmark_dir`.
+    Si `reset` est True, supprime toutes les colonnes commençant par 'id_name' avant de faire le merge.
 
     :param benchmark_dir: Répertoire contenant les fichiers de benchmark (avec sous-dossiers).
     :param id_benchmark_dir: Répertoire contenant les fichiers avec les `id_name`.
+    :param reset: Booléen optionnel. Si True, supprime les colonnes 'id_name' avant traitement. Défaut à False.
     """
     if not os.path.exists(benchmark_dir) or not os.path.exists(id_benchmark_dir):
         print("Un des répertoires spécifiés n'existe pas.")
@@ -273,11 +275,14 @@ def add_idname_benchmark(benchmark_dir, id_benchmark_dir):
                 # Lire le fichier benchmark
                 benchmark_df = pd.read_csv(benchmark_file_path)
 
-                # Supprimer toutes les colonnes commençant par 'id_name'
-                id_name_columns = [col for col in benchmark_df.columns if col.startswith("id_name")]
-                if id_name_columns:
-                    benchmark_df.drop(columns=id_name_columns, inplace=True)
-                    print(f"Colonnes supprimées : {id_name_columns}")
+                if reset:
+                    # Supprimer toutes les colonnes commençant par 'id_name'
+                    id_name_columns = [col for col in benchmark_df.columns if col.startswith("id_name")]
+                    if id_name_columns:
+                        benchmark_df.drop(columns=id_name_columns, inplace=True)
+                        print(f"Colonnes 'id_name' supprimées : {id_name_columns}")
+                    else:
+                        print(f"Aucune colonne 'id_name' trouvée dans {benchmark_file_path}.")
 
                 # Identifier la colonne des modèles (Model ou model_name)
                 model_column = None
@@ -329,14 +334,15 @@ def add_idname_benchmark(benchmark_dir, id_benchmark_dir):
             except Exception as e:
                 print(f"Erreur lors du traitement de {benchmark_file_path}: {e}")
 
-
-def add_id_name_benchmark_bis(input_dir, id_name_csv, column_names):
+def add_id_name_benchmark_bis(input_dir, id_name_csv, column_names, reset=False):
     """
     Analyse tous les fichiers CSV dans un répertoire donné et effectue un merge basé sur la colonne id_name.
-    
+    Si `reset` est True, supprime toutes les colonnes commençant par 'id_name' avant de faire le merge.
+
     :param input_dir: Répertoire contenant les fichiers CSV à analyser.
     :param id_name_csv: Chemin du fichier CSV contenant les id_name.
     :param column_names: Liste des noms de colonnes à rechercher pour le merge.
+    :param reset: Booléen optionnel. Si True, supprime les colonnes 'id_name' avant traitement. Défaut à False.
     """
     if not os.path.exists(input_dir) or not os.path.exists(id_name_csv):
         print("Le répertoire d'entrée ou le fichier d'ID_name spécifié n'existe pas.")
@@ -369,17 +375,20 @@ def add_id_name_benchmark_bis(input_dir, id_name_csv, column_names):
                 # Charger le fichier CSV
                 benchmark_df = pd.read_csv(file_path)
 
+                if reset:
+                    # Supprimer les colonnes id_name existantes
+                    id_name_columns = [col for col in benchmark_df.columns if col.startswith("id_name")]
+                    if id_name_columns:
+                        benchmark_df.drop(columns=id_name_columns, inplace=True)
+                        print(f"Colonnes 'id_name' supprimées : {id_name_columns}")
+                    else:
+                        print(f"Aucune colonne 'id_name' trouvée dans {file_path}.")
+
                 # Identifier les colonnes correspondantes pour le merge
                 target_columns = [col for col in benchmark_df.columns if col in column_names]
                 if not target_columns:
                     print(f"Aucune des colonnes spécifiées {column_names} trouvée dans {file_path}. Ignoré.")
                     continue
-
-                # Supprimer les colonnes id_name existantes
-                id_name_columns = [col for col in benchmark_df.columns if col.startswith("id_name")]
-                if id_name_columns:
-                    benchmark_df.drop(columns=id_name_columns, inplace=True)
-                    print(f"Colonnes supprimées : {id_name_columns}")
 
                 # Nettoyer les colonnes cibles pour le merge
                 for target_col in target_columns:

@@ -250,11 +250,11 @@ def main():
         raise ValueError("Clé API OpenAI introuvable. Vérifiez votre fichier .env.")
 
     # Répertoires pour les CSV et les fichiers exemples
-    root_directory = os.path.join(base_path, "data", "models_infos","AA")
+    root_directory = os.path.join(base_path, "data", "id_name","benchmark", "AA")
     examples_directory = os.path.join(base_path, "data", "id_name", "exemple")
 
     # Appeler la fonction pour générer les id_name
-    Benchmark_update_id_names(root_directory, examples_directory, openai_api_key, reset=False)
+    Benchmark_update_id_names(root_directory, examples_directory, openai_api_key, reset=True)
 
 
 if __name__ == "__main__":
@@ -268,7 +268,7 @@ if __name__ == "__main__":
     id_benchmark_dir = os.path.join(base_path, "data", "id_name", "benchmark")
 
     print("Ajout des id_name aux fichiers benchmark...")
-    add_idname_benchmark(benchmark_dir, id_benchmark_dir)
+    add_idname_benchmark(benchmark_dir, id_benchmark_dir, reset=True)   
 
 # %%
 from function_benchmark.utils_benchmark_id_name import add_id_name_benchmark_bis
@@ -278,16 +278,15 @@ if __name__ == "__main__":
     base_path = os.path.abspath(os.path.dirname(__file__))
     
     # Répertoire contenant les fichiers benchmark
-    benchmark_dir = os.path.join(base_path, "data", "benchmark","AA","texttoaudio")
+    benchmark_dir = os.path.join(base_path, "data", "benchmark","AA","audiototext")
     
     # Fichier CSV contenant les id_name
-    id_name_csv = os.path.join(base_path, "data", "id_name", "benchmark", "AA", "AA_texttoaudio_idname.csv")
+    id_name_csv = os.path.join(base_path, "data", "id_name", "benchmark", "AA", "AA_audiototext_idname.csv")
     
     # Colonnes à rechercher pour le merge
-    column_names = ["Model", "model_name"]
-
+    column_names = ["model", "model_name"]
     # Appeler la fonction
-    add_id_name_benchmark_bis(benchmark_dir, id_name_csv, column_names)
+    add_id_name_benchmark_bis(benchmark_dir, id_name_csv, column_names, reset=True)
 
 # %%
 from function_utils.utils_id_name import generate_and_update_id_names
@@ -310,3 +309,7 @@ if __name__ == "__main__":
     column_name ="name"
     generate_and_update_id_names(csv_path, examples_csv_path, model_type, openai_api_key, column_name)
 # %%
+import os 
+from function_benchmark.utils_AA import correct_AA_benchmark
+if __name__ == "__main__":
+    correct_AA_benchmark()

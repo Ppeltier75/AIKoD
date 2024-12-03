@@ -1,20 +1,20 @@
 name,id_name
-hd openai tts,openai-unknown-unknown-unknown
-journey google cloud tts,google-cloud-unknown-unknown-unknown
+hd openai tts,openai-tts-unknown-unknown
+journey google cloud tts,google-cloud-tts-journey-unknown
 lmnt,lmnt-unknown-unknown-unknown
-long form amazon polly,amazon-polly-longform-unknown-unknown
-metavoice v1,metavoice-unknown-unknown-1
+long form amazon polly,amazon-polly-long-form-unknown
+metavoice v1,metavoice-unknown-1
 multilingual v2 elevenlabs,elevenlabs-multilingual-unknown-2
 neural amazon polly,amazon-polly-neural-unknown
 neural microsoft azure,microsoft-azure-neural-unknown
-neural2 google cloud tts,google-cloud-neural2-unknown
-openvoice v2,openvoice-unknown-unknown-2
-sonic english (oct '24) cartesia,cartesia-sonic-english-unknown-24
+neural2 google cloud tts,google-cloud-tts-neural2-unknown
+openvoice v2,openvoice-unknown-2
+sonic english (oct '24) cartesia,cartesia-sonic-english-unknown-unknown
 standard amazon polly,amazon-polly-standard-unknown
-standard google cloud tts,google-cloud-standard-unknown
-standard openai tts,openai-standard-unknown
-studio google cloud tts,google-cloud-studio-unknown
-styletts 2,styletts-unknown-unknown-2
+standard google cloud tts,google-cloud-tts-standard-unknown
+standard openai tts,openai-tts-standard-unknown
+studio google cloud tts,google-cloud-tts-studio-unknown
+styletts 2,styletts-unknown-2
 turbo v2.5 elevenlabs,elevenlabs-turbo-unknown-2.5
-wavenet google cloud tts,google-cloud-wavenet-unknown
-xtts v2,xtts-unknown-unknown-2
+wavenet google cloud tts,google-cloud-tts-wavenet-unknown
+xtts v2,xtts-unknown-2

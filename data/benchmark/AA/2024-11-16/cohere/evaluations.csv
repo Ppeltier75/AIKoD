@@ -1,7 +1,7 @@
 model_name,quality_index,mmlu,gpqa,humaneval,math,id_name
-Command-R+ (Aug '24),55.9,0.75,0.339,0.71,0.436,commandr-plus-unknown-unknown-202408-unknown-unknown-unknown-false
-Command-R (Aug '24),51.1,0.674,0.27,0.695,0.404,commandr-unknown-unknown-202408-unknown-unknown-unknown-false
-Command-R+ (Apr '24),48.1,0.695,0.301,0.64,0.288,commandr-plus-unknown-unknown-202404-unknown-unknown-unknown-false
-Command-R (Mar '24),36.2,0.584,0.252,0.456,0.155,commandr-unknown-unknown-202403-unknown-unknown-unknown-false
-Aya Expanse 8B,,,,,,aya-expanse-unknown-unknown-unknown-unknown-8-unknown-unknown-false
-Aya Expanse 32B,,,,,,aya-expanse-unknown-unknown-unknown-unknown-32-unknown-unknown-false
+Command-R+ (Aug '24),55.9,0.75,0.339,0.71,0.436,commandr-plus-unknown-unknown-unknown-202408-unknown-unknown-false
+Command-R (Aug '24),51.1,0.674,0.27,0.695,0.404,commandr-unknown-unknown-unknown-202408-unknown-unknown-false
+Command-R+ (Apr '24),48.1,0.695,0.301,0.64,0.288,commandr-plus-unknown-unknown-unknown-202404-unknown-unknown-false
+Command-R (Mar '24),36.2,0.584,0.252,0.456,0.155,commandr-unknown-unknown-unknown-202403-unknown-unknown-false
+Aya Expanse 8B,,,,,,aya-unknown-unknown-unknown-unknown-8-unknown-unknown-false
+Aya Expanse 32B,,,,,,aya-unknown-unknown-unknown-unknown-32-unknown-unknown-false

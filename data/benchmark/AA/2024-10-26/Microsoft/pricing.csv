@@ -3,13 +3,13 @@ Llama 3.1 Instruct 405B,7.9975,5.33,16.0,llama-unknown-unknown-3.1-unknown-405-u
 Llama 3.1 Instruct 70B,2.895,2.68,3.54,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
 Llama 3.1 Instruct 8B,0.3775,0.3,0.61,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
 Mistral Large 2,4.5,3.0,9.0,mistral-large-unknown-2-unknown-unknown-unknown-unknown-false
-Command-R+ (Apr '24),6.0,3.0,15.0,commandr-plus-unknown-unknown-202404-unknown-unknown-unknown-false
-Command-R (Mar '24),0.75,0.5,1.5,commandr-unknown-unknown-202403-unknown-unknown-unknown-false
-Phi-3 Medium Instruct 14B,0.2975,0.17,0.68,phi-medium-unknown-3-unknown-unknown-14-instruct-false
-Jamba 1.5 Large,3.5,2.0,8.0,jamba-large-unknown-1.5-unknown-unknown-unknown-unknown-false
-Jamba 1.5 Mini,0.25,0.2,0.4,jamba-mini-unknown-1.5-unknown-unknown-unknown-unknown-false
+Command-R+ (Apr '24),6.0,3.0,15.0,commandr-plus-unknown-unknown-unknown-202404-unknown-unknown-false
+Command-R (Mar '24),0.75,0.5,1.5,commandr-unknown-unknown-unknown-202403-unknown-unknown-false
+Phi-3 Medium Instruct 14B,0.2975,0.17,0.68,phi-medium-unknown-3-unknown-14-unknown-instruct-false
+Jamba 1.5 Large,3.5,2.0,8.0,jamba-large-unknown-1.5-unknown-unknown-unknown-false
+Jamba 1.5 Mini,0.25,0.2,0.4,jamba-mini-unknown-1.5-unknown-unknown-unknown-false
 Llama 3 Instruct 70B,2.895,2.68,3.54,llama-unknown-unknown-3-unknown-70-unknown-instruct-false
 Llama 3 Instruct 8B,0.3775,0.3,0.61,llama-unknown-unknown-3-unknown-8-unknown-instruct-false
-Mistral Large,6.0,4.0,12.0,mistral-large-unknown-unknown-unknown-unknown-unknown-false
-Mistral Small (Feb '24),1.5,1.0,3.0,mistral-small-unknown-202402-unknown-unknown-unknown-false
-Jamba Instruct,0.55,0.5,0.7,jamba-instruct-unknown-1.5-unknown-unknown-unknown-unknown-false
+Mistral Large,6.0,4.0,12.0,mistral-large-unknown-unknown-unknown-unknown-unknown-unknown-false
+Mistral Small (Feb '24),1.5,1.0,3.0,mistral-small-unknown-unknown-202402-unknown-unknown-unknown-false
+Jamba Instruct,0.55,0.5,0.7,jamba-instruct-unknown-unknown-unknown-unknown-unknown-unknown-false

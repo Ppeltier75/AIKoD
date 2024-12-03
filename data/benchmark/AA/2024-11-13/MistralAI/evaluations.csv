@@ -1,15 +1,15 @@
 model_name,quality_index,mmlu,gpqa,humaneval,math,id_name
 Mistral Large 2,73.0,0.846,0.484,0.871,0.72,mistral-large-unknown-2-unknown-unknown-unknown-unknown-false
-Mixtral 8x22B Instruct,61.6,0.765,0.376,0.7,0.623,mixtral-unknown-unknown-unknown-8x22-unknown-unknown-instruct-false
-Mistral Small (Sep '24),60.4,0.741,0.338,0.734,0.602,mistral-small-unknown-202409-unknown-unknown-unknown-false
-Pixtral 12B (2409),56.1,0.694,0.307,0.705,0.537,pixtral-unknown-unknown-unknown-12-unknown-2409-unknown-false
-Ministral 8B,53.3,0.589,0.299,0.744,0.5,ministral-unknown-unknown-8-unknown-8-unknown-unknown-false
-Mistral NeMo,51.9,0.661,0.33,0.682,0.403,mistral-nemo-unknown-unknown-unknown-unknown-unknown-false
-Ministral 3B,50.8,0.579,0.261,0.713,0.478,ministral-unknown-unknown-3-unknown-3-unknown-unknown-false
-Mixtral 8x7B Instruct,44.3,0.651,0.308,0.48,0.333,mixtral-unknown-unknown-unknown-8x7-unknown-unknown-instruct-false
+Mixtral 8x22B Instruct,61.6,0.765,0.376,0.7,0.623,mixtral-instruct-unknown-unknown-unknown-8x22-unknown-unknown-false
+Mistral Small (Sep '24),60.4,0.741,0.338,0.734,0.602,mistral-small-unknown-unknown-202409-unknown-unknown-unknown-false
+Pixtral 12B (2409),56.1,0.694,0.307,0.705,0.537,pixtral-unknown-unknown-unknown-2409-unknown-unknown-unknown-false
+Ministral 8B,53.3,0.589,0.299,0.744,0.5,ministral-unknown-unknown-unknown-unknown-8-unknown-unknown-false
+Mistral NeMo,51.9,0.661,0.33,0.682,0.403,mistral-nemo-unknown-unknown-unknown-unknown-unknown-unknown-false
+Ministral 3B,50.8,0.579,0.261,0.713,0.478,ministral-unknown-unknown-unknown-unknown-3-unknown-unknown-false
+Mixtral 8x7B Instruct,44.3,0.651,0.308,0.48,0.333,mixtral-instruct-unknown-unknown-unknown-8x7-unknown-unknown-false
 Codestral-Mamba,35.5,0.254,0.028,0.782,0.356,codestral-mamba-unknown-unknown-unknown-unknown-unknown-unknown-false
-Mistral Large,56.8,0.708,0.372,0.687,0.505,mistral-large-unknown-unknown-unknown-unknown-unknown-false
-Mistral Small (Feb '24),49.9,0.69,0.314,0.537,0.454,mistral-small-unknown-202402-unknown-unknown-unknown-false
-Mistral 7B Instruct,22.3,0.201,0.161,0.383,0.148,mistral-unknown-unknown-unknown-unknown-7-unknown-instruct-false
+Mistral Large,56.8,0.708,0.372,0.687,0.505,mistral-large-unknown-unknown-unknown-unknown-unknown-unknown-false
+Mistral Small (Feb '24),49.9,0.69,0.314,0.537,0.454,mistral-small-unknown-unknown-202402-unknown-unknown-unknown-false
+Mistral 7B Instruct,22.3,0.201,0.161,0.383,0.148,mistral-instruct-unknown-unknown-7-unknown-unknown-unknown-false
 Codestral,,,0.229,0.777,,codestral-unknown-unknown-unknown-unknown-unknown-unknown-false
-Mistral Medium,,,,,,mistral-medium-unknown-unknown-unknown-unknown-unknown-false
+Mistral Medium,,,,,,mistral-medium-unknown-unknown-unknown-unknown-unknown-unknown-false

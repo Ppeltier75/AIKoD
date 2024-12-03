@@ -1,15 +1,15 @@
 name,Default Steps,Default Resolution,id_name
-Stable Diffusion 2.1,50,1024,stablediffusion-unknown-unknown-2.1-unknown-unknown-False
-Stable Diffusion XL 1.0,30,1024,stablediffusion-xl-unknown-1-unknown-unknown-False
-SDXL Lightning,4,1024,stablediffusion-xl-lightning-1-unknown-unknown-False
-Stable Diffusion 1.6,50,1024,stablediffusion-unknown-unknown-1.6-unknown-unknown-False
-Playground v2.5,50,1024,playground-unknown-unknown-2.5-unknown-unknown-False
-Stable Diffusion 1.5,50,1024,stablediffusion-unknown-unknown-1.5-unknown-unknown-False
-Stable Diffusion 3 Medium,30,1024,stablediffusion-medium-unknown-3-unknown-unknown-False
-Playground v3 (beta),50,1024,playground-unknown-beta-3-unknown-unknown-False
-FLUX.1 [pro],28,1024,flux-pro-unknown-1-unknown-unknown-False
-FLUX.1 [dev],28,1024,flux-dev-unknown-1-unknown-unknown-False
-FLUX.1 [schnell],4,1024,flux-schnell-unknown-1-unknown-unknown-False
-FLUX1.1 [pro],50,1024,flux-pro-unknown-1.1-unknown-unknown-False
-Stable Diffusion 3.5 Large,35,1024,stablediffusion-large-unknown-3.5-unknown-unknown-False
-Stable Diffusion 3.5 Large Turbo,4,1024,stablediffusion-large-turbo-3.5-unknown-unknown-False
+Stable Diffusion 2.1,50,1024,stablediffusion-unknown-unknown-2.1-unknown-unknown-false-unknown-false
+Stable Diffusion XL 1.0,30,1024,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false
+SDXL Lightning,4,1024,stablediffusion-xl-lightning-unknown-unknown-unknown-false-unknown-false
+Stable Diffusion 1.6,50,1024,stablediffusion-unknown-unknown-1.6-unknown-unknown-false-unknown-false
+Playground v2.5,50,1024,playground-unknown-unknown-2.5-unknown-unknown-false-unknown-false
+Stable Diffusion 1.5,50,1024,stablediffusion-unknown-unknown-1.5-unknown-unknown-false-unknown-false
+Stable Diffusion 3 Medium,30,1024,stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false
+Playground v3 (beta),50,1024,playground-unknown-unknown-3-unknown-unknown-false-unknown-false
+FLUX.1 [pro],28,1024,flux-pro-unknown-1-unknown-unknown-false-unknown-false
+FLUX.1 [dev],28,1024,flux-dev-unknown-1-unknown-unknown-false-unknown-false
+FLUX.1 [schnell],4,1024,flux-schnell-unknown-1-unknown-unknown-false-unknown-false
+FLUX1.1 [pro],50,1024,flux-pro-unknown-1.1-unknown-unknown-false-unknown-false
+Stable Diffusion 3.5 Large,35,1024,stablediffusion-large-unknown-3.5-unknown-unknown-false-unknown-false
+Stable Diffusion 3.5 Large Turbo,4,1024,stablediffusion-large-turbo-unknown-3.5-unknown-unknown-false-unknown-false

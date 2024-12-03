@@ -1,29 +1,29 @@
 name,id_name
-amazon titan g1 (standard),amazontitan-g1-standard-1-unknown-unknown-False
-amazon titan g1 v2 (standard),amazontitan-g1-standard-2-unknown-unknown-False
-dalle 2,dalle-unknown-unknown-2-unknown-unknown-False
-dalle 3,dalle-unknown-unknown-3-unknown-unknown-False
-dalle 3 hd,dalle-unknown-unknown-3-unknown-unknown-True
-flux.1 [dev],flux-dev-unknown-1-unknown-unknown-False
-flux.1 [pro],flux-pro-unknown-1-unknown-unknown-False
-flux.1 [schnell],flux-schnell-unknown-1-unknown-unknown-False
-flux1.1 [pro],flux-pro-unknown-1.1-unknown-unknown-False
-ideogram v1,ideogram-unknown-unknown-1-unknown-unknown-False
-ideogram v2,ideogram-unknown-unknown-2-unknown-unknown-False
-ideogram v2 turbo,ideogram-unknown-turbo-2-unknown-unknown-False
-midjourney v6,midjourney-unknown-unknown-6-unknown-unknown-False
-midjourney v6.1,midjourney-unknown-unknown-6.1-unknown-unknown-False
-playground v2.5,playground-unknown-unknown-2.5-unknown-unknown-False
-playground v3 (beta),playground-unknown-beta-3-unknown-unknown-False
-recraft 20b,recraft-20b-unknown-v1-unknown-unknown-False
-recraft v3,recraft-unknown-unknown-3-unknown-unknown-False
-sdxl lightning,stablediffusion-xl-lightning-1-unknown-unknown-False
-stable diffusion 1.5,stablediffusion-unknown-unknown-1.5-unknown-unknown-False
-stable diffusion 1.6,stablediffusion-unknown-unknown-1.6-unknown-unknown-False
-stable diffusion 2.1,stablediffusion-unknown-unknown-2.1-unknown-unknown-False
-stable diffusion 3 large,stablediffusion-large-unknown-3-unknown-unknown-False
-stable diffusion 3 large turbo,stablediffusion-large-turbo-3-unknown-unknown-False
-stable diffusion 3 medium,stablediffusion-medium-unknown-3-unknown-unknown-False
-stable diffusion 3.5 large,stablediffusion-large-unknown-3.5-unknown-unknown-False
-stable diffusion 3.5 large turbo,stablediffusion-large-turbo-3.5-unknown-unknown-False
-stable diffusion xl 1.0,stablediffusion-xl-unknown-1-unknown-unknown-False
+amazon titan g1 (standard),amazontitan-unknown-unknown-1-unknown-unknown-false-unknown-false
+amazon titan g1 v2 (standard),amazontitan-unknown-unknown-2-unknown-unknown-false-unknown-false
+dalle 2,dalle-unknown-unknown-2-unknown-unknown-false-unknown-false
+dalle 3,dalle-unknown-unknown-3-unknown-unknown-false-unknown-false
+dalle 3 hd,dalle-unknown-unknown-3-unknown-unknown-false-True
+flux.1 [dev],flux-dev-unknown-1-unknown-unknown-false-unknown-false
+flux.1 [pro],flux-pro-unknown-1-unknown-unknown-false-unknown-false
+flux.1 [schnell],flux-schnell-unknown-1-unknown-unknown-false-unknown-false
+flux1.1 [pro],flux-pro-unknown-1.1-unknown-unknown-false-unknown-false
+ideogram v1,ideogram-unknown-unknown-1-unknown-unknown-false-unknown-false
+ideogram v2,ideogram-unknown-unknown-2-unknown-unknown-false-unknown-false
+ideogram v2 turbo,ideogram-unknown-turbo-2-unknown-unknown-false-unknown-false
+midjourney v6,midjourney-unknown-unknown-6-unknown-unknown-false-unknown-false
+midjourney v6.1,midjourney-unknown-unknown-6.1-unknown-unknown-false-unknown-false
+playground v2.5,playground-unknown-unknown-2.5-unknown-unknown-false-unknown-false
+playground v3 (beta),playground-unknown-beta-3-unknown-unknown-false-unknown-false
+recraft 20b,recraft-unknown-unknown-20-unknown-unknown-false-unknown-false
+recraft v3,recraft-unknown-unknown-3-unknown-unknown-false-unknown-false
+sdxl lightning,stablediffusion-xl-lightning-unknown-unknown-unknown-false-unknown-false
+stable diffusion 1.5,stablediffusion-unknown-unknown-1.5-unknown-unknown-false-unknown-false
+stable diffusion 1.6,stablediffusion-unknown-unknown-1.6-unknown-unknown-false-unknown-false
+stable diffusion 2.1,stablediffusion-unknown-unknown-2.1-unknown-unknown-false-unknown-false
+stable diffusion 3 large,stablediffusion-large-unknown-3-unknown-unknown-false-unknown-false
+stable diffusion 3 large turbo,stablediffusion-large-turbo-unknown-unknown-unknown-false-unknown-false
+stable diffusion 3 medium,stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false
+stable diffusion 3.5 large,stablediffusion-large-unknown-3.5-unknown-unknown-false-unknown-false
+stable diffusion 3.5 large turbo,stablediffusion-large-turbo-unknown-3.5-unknown-unknown-false-unknown-false
+stable diffusion xl 1.0,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false
