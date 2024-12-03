@@ -334,3 +334,8 @@ if __name__ == "__main__":
     aikod_clean_company()
 
 # %%
+import os 
+from function_utils.utils_add_infos import add_os_multi_pplx
+# Exemple d'appel de la fonction
+add_os_multi_pplx()
+# %%

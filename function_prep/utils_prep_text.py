@@ -133,7 +133,7 @@ def add_csv_text(base_csv_path):
     return df_merged
 
 
-def normalize_elo_rating(elo, elo_min=1000, elo_max=2000):
+def normalize_elo_rating(elo, elo_min=800, elo_max=1700):
     """Normalize an ELO rating to a 0-1 scale."""
     if pd.isnull(elo):
         return np.nan

@@ -25,7 +25,12 @@ def add_csv_audio_to_text(base_csv_path):
     ]
 
     # Lecture du fichier de base
-    df_base = pd.read_csv(base_csv_path)
+    try:
+        df_base = pd.read_csv(base_csv_path)
+        print(f"Fichier de base chargé : {base_csv_path}")
+    except Exception as e:
+        print(f"Erreur lors du chargement du fichier de base {base_csv_path} : {e}")
+        return
 
     # Création d'une copie du DataFrame de base pour les fusions successives
     df_merged = df_base.copy()
@@ -33,36 +38,77 @@ def add_csv_audio_to_text(base_csv_path):
     # Chemin vers le fichier à fusionner
     audio_to_text_csv = r'C:\Users\piwip\OneDrive\Documents\OCDE\AIKoD\data\benchmark\AA\audiototext\AA_audiototext_2024-11-19.csv'
 
-    # Lecture du fichier à fusionner
-    df_merge = pd.read_csv(audio_to_text_csv)
+    # Vérifier si le fichier à fusionner existe
+    if not os.path.exists(audio_to_text_csv):
+        print(f"Le fichier à fusionner {audio_to_text_csv} n'existe pas. Opération ignorée.")
+        return
 
-    # Colonnes à conserver
-    keep_columns = ['Word Error Rate (%)', 'Median Speed Factor']
+    # Lecture du fichier à fusionner
+    try:
+        df_merge = pd.read_csv(audio_to_text_csv)
+        print(f"Fichier à fusionner chargé : {audio_to_text_csv}")
+    except Exception as e:
+        print(f"Erreur lors du chargement du fichier à fusionner {audio_to_text_csv} : {e}")
+        return
+
+    # Colonnes à conserver après le merge
+    keep_columns = ['speed_index', 'quality_index']
 
     # Nettoyer la colonne 'Word Error Rate (%)' dans df_merge
     if 'Word Error Rate (%)' in df_merge.columns:
-        df_merge['Word Error Rate (%)'] = df_merge['Word Error Rate (%)'].str.replace('%', '', regex=False)
+        print("Nettoyage de la colonne 'Word Error Rate (%)'")
+        # Vérifier si la colonne contient des chaînes de caractères avec '%'
+        if df_merge['Word Error Rate (%)'].dtype == object:
+            # Vérifier s'il y a des '%' dans les valeurs
+            contains_percent = df_merge['Word Error Rate (%)'].str.contains('%', na=False).any()
+            if contains_percent:
+                # Remplacer '%' et convertir en float
+                df_merge['Word Error Rate (%)'] = df_merge['Word Error Rate (%)'].str.replace('%', '', regex=False)
+                print("Symboles '%' supprimés de 'Word Error Rate (%)'")
+        # Convertir en numérique et diviser par 100
         df_merge['Word Error Rate (%)'] = pd.to_numeric(df_merge['Word Error Rate (%)'], errors='coerce') / 100
+        print("Conversion de 'Word Error Rate (%)' en numérique et division par 100")
+
+    else:
+        print("La colonne 'Word Error Rate (%)' est absente dans le fichier à fusionner.")
+
+    # Nettoyer la colonne 'Median Speed Factor' si nécessaire
+    if 'Median Speed Factor' in df_merge.columns:
+        print("Nettoyage de la colonne 'Median Speed Factor'")
+        # Vérifier si la colonne contient des chaînes de caractères
+        if df_merge['Median Speed Factor'].dtype == object:
+            # Remplacer les éventuels caractères non numériques (par exemple, espaces)
+            df_merge['Median Speed Factor'] = df_merge['Median Speed Factor'].str.replace(',', '.', regex=False)  # Remplacer la virgule par un point si nécessaire
+        # Convertir en numérique
+        df_merge['Median Speed Factor'] = pd.to_numeric(df_merge['Median Speed Factor'], errors='coerce')
+        print("Conversion de 'Median Speed Factor' en numérique")
+    else:
+        print("La colonne 'Median Speed Factor' est absente dans le fichier à fusionner.")
 
     # Fusion
-    df_merged = merge_csv_id_name(df_merged, df_merge, keep_columns, strategies)
+    try:
+        df_merged = merge_csv_id_name(df_merged, df_merge, keep_columns, strategies)
+        print("Fusion effectuée avec succès.")
+    except Exception as e:
+        print(f"Erreur lors de la fusion des DataFrames : {e}")
+        return
 
     # Enregistrement du DataFrame fusionné
-    # Définition du chemin de sortie (vous pouvez le modifier si nécessaire)
-    output_csv_path = os.path.splitext(base_csv_path)[0] + '.csv'
-
-    df_merged.to_csv(output_csv_path, index=False)
-
-    print(f"Le fichier fusionné a été enregistré sous {output_csv_path}")
+    try:
+        output_csv_path = os.path.splitext(base_csv_path)[0] + '.csv'
+        df_merged.to_csv(output_csv_path, index=False)
+        print(f"Le fichier fusionné a été enregistré sous {output_csv_path}")
+    except Exception as e:
+        print(f"Erreur lors de l'enregistrement du fichier fusionné : {e}")
+        return
 
     return df_merged
-
 
 
 def AIKoD_audiototext_infos(json_path, base_csv_path):
     """
     Met à jour un fichier CSV avec des informations extraites d'un JSON et fusionne avec d'autres fichiers CSV
-    en utilisant add_csv_audio_to_text.
+    en utilisant add_csv_audio_to_text. Modifie la colonne quality_index selon les spécifications.
 
     :param json_path: Chemin vers le fichier JSON contenant les données des modèles.
     :param base_csv_path: Chemin vers le fichier CSV à mettre à jour.
@@ -143,6 +189,11 @@ def AIKoD_audiototext_infos(json_path, base_csv_path):
 
     # Utiliser add_csv_audio_to_text pour effectuer les fusions supplémentaires
     df_final = add_csv_audio_to_text(temp_csv_path)
+
+    # Transformer la colonne quality_index
+    if "quality_index" in df_final.columns:
+        df_final["quality_index"] = 1 - (df_final["quality_index"] / 100)
+        print("La colonne 'quality_index' a été transformée.")
 
     # Enregistrer le DataFrame final à l'emplacement d'origine
     df_final.to_csv(base_csv_path, index=False)

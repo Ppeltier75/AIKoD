@@ -184,7 +184,7 @@ def clean_name_AA(aa_directory):
                         print(f"Le dossier cible en minuscules existe déjà : '{new_path}'. Impossible de renommer '{current_path}'.")
 
 
-def aikod_clean_company():
+def aikod_clean_company(json_path):
     """
     Parcourt le fichier JSON spécifié et met à jour le champ 'company' des modèles
     de type 'text', 'multimodal', 'text to image' et 'audio to text' en fonction
@@ -194,9 +194,6 @@ def aikod_clean_company():
     """
     # Définir les chemins relatifs des fichiers
     base_path = os.path.abspath(os.path.dirname(__file__))
-    
-    # Chemin relatif vers le fichier JSON
-    json_path = os.path.join(base_path, '..', 'data', 'raw', 'AIKoD_brut_API_v2.json')
     
     # Chemins relatifs vers les fichiers CSV
     csv_text_path = os.path.join(base_path, '..', 'data', 'models_infos', 'AIKoD_text_infos.csv')

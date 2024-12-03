@@ -2,6 +2,7 @@ import pandas as pd
 import json
 import os
 from collections import Counter
+from function_prep.utils_prep_text import normalize_elo_rating
 
 # Importation des fonctions depuis merge_utils.py
 from function_utils.utils_merge_id import select_specific_segments, select_segments_no_order, merge_csv_id_name
@@ -143,7 +144,7 @@ def add_csv_texttoimage(base_csv_path):
     df_merge = pd.read_csv(paths['AA_texttoimage'])
 
     # Colonnes à conserver
-    keep_columns = ['Model Quality ELO', 'Median Generation Time (s)']
+    keep_columns = ['Model Quality ELO', 'speed_index']
 
     # Fusion
     df_merged = merge_csv_id_name(df_merged, df_merge, keep_columns, strategies)
@@ -151,9 +152,10 @@ def add_csv_texttoimage(base_csv_path):
     # Fusion avec AA_texttoimage_infos.csv
     df_merge = pd.read_csv(paths['AA_texttoimage_infos'])
 
-    keep_columns = ['Default Steps', 'Default Resolution']
+    keep_columns = ['default_steps', 'default_resolution']
 
     df_merged = merge_csv_id_name(df_merged, df_merge, keep_columns, strategies)
+    df_merged.rename(columns={'Model Quality ELO': 'quality_index'}, inplace=True)
 
     # Enregistrement du DataFrame fusionné
     # Définition du chemin de sortie (vous pouvez le modifier si nécessaire)
@@ -165,14 +167,16 @@ def add_csv_texttoimage(base_csv_path):
 
     return df_merged
 
+
 def AIKoD_texttoimage_infos(json_path, output_file):
     """
     Met à jour un fichier CSV avec des informations extraites d'un JSON et fusionne avec d'autres fichiers CSV
-    en utilisant add_csv_image.
+    en utilisant add_csv_texttoimage. Normalise également la colonne quality_index.
 
     :param json_path: Chemin vers le fichier JSON contenant les données des modèles.
     :param output_file: Chemin vers le fichier CSV à mettre à jour.
     """
+
     # Charger les données JSON
     with open(json_path, 'r', encoding='utf-8') as file:
         data = json.load(file)
@@ -261,19 +265,23 @@ def AIKoD_texttoimage_infos(json_path, output_file):
     temp_csv_path = output_file.replace('.csv', '_temp.csv')
     base_df.to_csv(temp_csv_path, index=False)
 
-    # Utiliser add_csv_image pour effectuer les fusions supplémentaires
+    # Utiliser add_csv_texttoimage pour effectuer les fusions supplémentaires
     df_final = add_csv_texttoimage(temp_csv_path)
+
+    # Normaliser la colonne quality_index
+    if "quality_index" in df_final.columns:
+        df_final["quality_index"] = df_final["quality_index"].apply(normalize_elo_rating)
+        print("La colonne 'quality_index' a été normalisée avec succès.")
 
     # Enregistrer le DataFrame final à l'emplacement d'origine
     df_final.to_csv(output_file, index=False)
-    print(f"Le fichier {output_file} a été mis à jour avec succès en utilisant add_csv_image.")
+    print(f"Le fichier {output_file} a été mis à jour avec succès en utilisant add_csv_texttoimage.")
 
     # Supprimer le fichier temporaire
     if os.path.exists(temp_csv_path):
         os.remove(temp_csv_path)
 
     return df_final
-
 
 
 def create_adjusted_price_text_to_image(directory_csv, csv_path):

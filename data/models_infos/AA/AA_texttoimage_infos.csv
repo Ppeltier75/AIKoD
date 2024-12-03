@@ -1,4 +1,4 @@
-name,Default Steps,Default Resolution,id_name
+name,default_steps,default_resolution,id_name
 Stable Diffusion 2.1,50,1024,stablediffusion-unknown-unknown-2.1-unknown-unknown-false-unknown-false
 Stable Diffusion XL 1.0,30,1024,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false
 SDXL Lightning,4,1024,stablediffusion-xl-lightning-unknown-unknown-unknown-false-unknown-false

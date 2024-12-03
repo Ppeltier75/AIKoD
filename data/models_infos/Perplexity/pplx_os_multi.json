@@ -1,0 +1,3762 @@
+[
+    {
+        "model_name": "abab g 6.5",
+        "Licence_open_source": false,
+        "multimodal": null
+    },
+    {
+        "model_name": "abab s 6.5",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "abab t 6.5",
+        "Licence_open_source": null,
+        "multimodal": null
+    },
+    {
+        "model_name": "ada instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "ada",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "airoboros gptq 33",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "airoboros l2 70",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "airoboros 70",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "allam 1 13 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "alpaca 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "babbage base 2",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "babbage 2",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "babbage 2",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "babbage",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "babbage",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "babbage",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "baichuan npc lite",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "baichuan npc turbo",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "baichuan turbo 2 192",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "baichuan turbo 2",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "baichuan turbo 3 128",
+        "Licence_open_source": null,
+        "multimodal": null
+    },
+    {
+        "model_name": "baichuan turbo 3",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "baichuan 2 53",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "baichuan 4",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "base control",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "base",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "bge large",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "capybara 1.9 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "capybara 34",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "characterglm",
+        "Licence_open_source": null,
+        "multimodal": null
+    },
+    {
+        "model_name": "chatcompletion pro",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "chatcompletion 2",
+        "Licence_open_source": null,
+        "multimodal": false
+    },
+    {
+        "model_name": "chatcompletion",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "chatglm turbo",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "chatglm 12",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "chatglm 130",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "chatglm 32",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "chatglm 66",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "chatglm",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "chatgpt turbo 3.5",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "chatgpt 4o",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "chronos hermes 13",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "claude haiku 3",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "claude haiku 3.5",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "claude instant 1.1",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "claude instant 1.2",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "claude instant",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "claude opus 3",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "claude sonnet 3",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "claude sonnet 3.5",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "claude moderated 2",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "claude moderated 2.1",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "claude 1",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "claude 2",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "claude 2.1",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "code 13",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "code 34",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "code 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "code 70",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "code",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "codegeex 4",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "codegemma 2",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "codegemma 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "codegen 16",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "codegen 7",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "codellama instruct 13 code",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "codellama instruct 7 code",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "codellama instruct 70 code",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "codellama python python 13 code",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "codellama python 7 code",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "codellama 1 34",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "codellama 2 34",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "codellama 34 python",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "codellama 13",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "codellama 34 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "codellama 7 code",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "codellama 7",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "codestral mamba 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "codestral mamba",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "codestral 22 code",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "codestral",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "codestral",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "codey code chat 32",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "codey code chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "codey code completion",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "codey code generation 32",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "codey code generation",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "cohere custom",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "cohere default",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "command light",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "command",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "commandr custom",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "commandr plus 042024",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "commandr plus 082024",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "commandr plus",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "commandr 032024",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "commandr 082024",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "commandr",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "commandr",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "commandr",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "curie instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "curie",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "curie",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "databricks instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "davinci base 2",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "davinci 2",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "davinci 2",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "davinci 2",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "davinci",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "davinci",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "davinci unknownunknown  instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "dbrx instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "dbrx",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "deepgram",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "deepseek coder awq 6.7 base",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "deepseek coder awq 6.7 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "deepseek coder",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "deepseek math 7 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "deepseek base 1.5 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "deepseek base 1.3",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "deepseek base 6.7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "deepseek instruct 2",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "deepseek instruct 33",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "deepseek lite 2 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "deepseek lite base 2",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "deepseek 1.5 7 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "deepseek 2 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "deepseek 2 lite",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "deepseek 2",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "deepseek 2.5",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "deepseek 33 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "deepseek 67 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "deepseek chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "discolm german awq 1 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "discolm mixtral 8x7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "dolly 2 12",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "dolly 2 3",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "dolly 2 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "dolphin mixtral 2.5 8x7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "dolphin mixtral 2.6 8x7",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "dolphin mixtral 2.9.2 8x22",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "dolphin mixtral 8x22",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "dolphin mixtral 8x7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "dolphin qwen 2.9.2 72",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "elyza llama japanese 2 7 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "emohaa",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "euryale l3 2.1 70",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "euryale l31 2.1 70",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "eva qwen 2.5 14",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "evo base 1 8",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "extended control",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "extended",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "falcon instruct 40",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "falcon instruct 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "falcon 40 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "falcon 40",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "falcon 7 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "falcon 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "fimbulvetr 2 11",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "firellava 13",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "firellava 13",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "flan t5",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "flan t5 xl 3",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "flan t5 xxl 11",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "flan ul2 20",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "flavor week",
+        "Licence_open_source": null,
+        "multimodal": false
+    },
+    {
+        "model_name": "gcp code generation",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gemini flash exp 1.5 8",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gemini flash 1.5 8",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gemini flash 1.5 128",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gemini flash 1.5",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gemini pro 1.0",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gemini pro 1.5 128",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gemini pro 1.5",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gemini pro",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gemma instruct 2 9",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "gemma it 2 27",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "gemma it 2 9",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "gemma it 2",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "gemma it 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "gemma 2 27 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "gemma 2 27",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "gemma 2 9 8",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "gemma 2 9",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "gemma 2 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "gemma 2",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "gemma 7 8 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "gemma 7 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "gemma 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "glm air 4",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "glm airx 4",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "glm alltools 4",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "glm flash 4",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "glm flashx 4",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "glm long 4",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "glm plus 4",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "glm turbo 3",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "glm 4 0520",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "glm 4",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "glm 130",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "glm 175",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "glm 6",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "goliath 120",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt 4o mini 20240718",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt 4o mini 20240718",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt 4o mini",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt 4o regional api",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt 4o 20240513",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt 4o 20240806",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt 4o chat",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt jt moderation 6",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt mini 4o",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt mini 4o",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt neox 20",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt neoxt base 20 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt random tiny 2",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt turbo 3.5 0125 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt turbo 3.5 0613 16",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt turbo 3.5 0613",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt turbo 3.5 1106 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt turbo 3.5 16",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt turbo 3.5 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt turbo 3.5 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt 4 0 20240806",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt 4 0 mini",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt 4 0",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt global deployment 4o",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt latest 4o",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt turbo 3.5 0125",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt turbo 3.5 0301",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt turbo 3.5 0613 16",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt turbo 3.5 0613",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt turbo 3.5 1106",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt turbo 3.5 16",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt turbo 3.5 16",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt turbo 3.5 4",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt turbo 3.5 4",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt turbo 3.5 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt turbo 3.5",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt turbo 3.5",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt turbo 4 chat",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt turbo 4",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt 3.5 0301 4",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt 3.5 0613 16",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt 3.5 0613 4",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt 3.5 1106 16",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt 4 0125",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt 4 0613 32",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt 4 0613",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt 4 1106",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt 4 32 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt 4 32",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "gpt 4 8",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt 4 chat",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt 4",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt 4",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt 4o",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt vision 4",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "gpt vision preview 4",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "granite code 20 8 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "granite code 8 128 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "granite guardian 3 2",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "granite guardian 3 8",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "granite japanese 8",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "granite lab 7",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "granite multilingual 20",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "granite 3 2 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "granite 3 8 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "granite 20 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "granite 3 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "granite 34 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "granite 8 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "granite 13 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "granite 13 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "grok beta",
+        "Licence_open_source": null,
+        "multimodal": null
+    },
+    {
+        "model_name": "gte",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "guanaco 13",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "guanaco 33",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "guanaco 65",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "guanaco 7",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "hermes llama pro 2 8",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "hermes llama pro 2",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "hermes llama theta 2 70",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "hermes llama 2 13",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "hermes llama 2 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "hermes llama 2 70",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "hermes mistral pro 2 7",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "hermes mistral dpo 2 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "hermes mixtral dpo 2 8x7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "hermes mixtral sft 2 8x7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "hermes mixtral 8x7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "hermes pro llama 2 8",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "hermes theta 2 8",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "hermes bf16 3 70",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "hermes extended 3 405 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "hermes 2 13",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "hermes 3 405 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "hermes 3 70 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "hermes 13",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "hermes yi 2 34",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "inflection pi 3",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "inflection productivity 3",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "instructcodet5 16",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "jais arabic 13",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "jais 30 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "jamba large 1.5",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "jamba mini 1.5",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "jamba instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "jumbo grande instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "jumbo grande",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "jumbo large base",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "jumbo large",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "jumbo instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "jumbo",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "jurassic light 2",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "jurassic light",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "jurassic mid 2",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "jurassic mid",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "jurassic ultra 2",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "jurassic ultra",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "jurassic 2 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "jurrasic grande 2 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "jurrasic grande 2",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "jurrasic jumbo 2 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "jurrasic jumbo 2",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "jurrasic large 2",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "koala 13",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "koala 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "lama 2 13 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "lama 2 70 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "lemur basic",
+        "Licence_open_source": null,
+        "multimodal": null
+    },
+    {
+        "model_name": "lfm moe 40",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "llama awq 2 13",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama base fp8 3.1 405 base",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama dpo korean 7 13",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama groq preview 3 70 8 tool",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama groq preview 3 8 8 tool",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama guard awq 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama guard 2 7",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama guard 2 8",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama guard 3 1",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama guard 3 8 8",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama guard 7",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama instruct 3.2 11",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "llama instruct 3.2 90",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "llama lumimaid extended 3 8",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama lumimaid 3 70",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama lumimaid 3 8",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama lunaris 3 8",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama nemotron 3.1 70 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama next 3 8",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "llama reference 3 8",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama sft 6 30",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama soliloquy 3 8",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama sonar huge 3.1 128 online",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama sonar large 3 32 online",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama sonar large 3.1 128 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama sonar large 3.1 128 online",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama sonar small 3 32 online",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama sonar small 3.1 128 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama sonar small 3.1 128 online",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama sonar 3 70 online",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama sonar 3 70",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama sonar 3 8 online",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama sonar 3 8",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama sonar 3.1 405 online",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama sonar 3.1 70 online",
+        "Licence_open_source": null,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama sonar 3.1 70",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama sonar 3.1 8 online",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama sonar 3.1 8",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama stheno 3.3 8 32",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama awq 3 8 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama awq 3.1 8 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama base bf16 3.2 90",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "llama bf16 3.1 405 base",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama bf16 3.1 405",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama bf16 3.1 70",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama chat 2 7",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama euryale 3.1 70 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama extended 3 8 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama fast 3.1 8 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama fp16 2 7 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama fp8 3.1 8 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama gradient 3 70 1048 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama gradient 3 70 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama hf 2 13 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama hf 2 7 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama hf 2 7",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama instant 3.1 8 128",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama instruct 3 11 2",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "llama instruct 3 90 2",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "llama instruct 3.2 11",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "llama instruct 3.2 90",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "llama instruct bf16 3.2 90",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "llama instruct free 3.2 11",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "llama int4 3 8 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama int8 2 7 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama int8 3 8 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama lite 3 3",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama lite 3 70 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama lite 3 70",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama lite 3 8 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama lite 3 8",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama nitro 3 8 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama preview 3.2 1 8",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama preview 3.2 11 8",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "llama preview 3.2 3 8",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama reference 3 70 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama reference 3 70",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama reference 3 8 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama reference 3.1 70 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama reference 3.1 8 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama turbo 3 3",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama turbo 3 405",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama turbo 3 70 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama turbo 3 70",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama turbo 3 8 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama turbo 3 8",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama turbo 3.1 405 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama turbo 3.1 405",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama turbo 3.1 70 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama turbo 3.1 70 turbo",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama turbo 3.1 8 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama turbo 3.2 11 instruct",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "llama turbo 3.2 3 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama turbo 3.2 90 instruct",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "llama 2 13 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 2 13",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 2 13",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 2 34",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 2 7 32 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 2 7 32",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 2 7 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 2 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 2 70 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 2 70",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 2 70",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 3 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 3 70 8",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 3 70 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 3 70 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 3 70",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 3 8 8",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 3 8 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 3 8 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 3 8",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 3",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "llama 3.1 405 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 3.1 405",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 3.1 70 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 3.1 70",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 3.1 8 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 3.1 8",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 3.2 1 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 3.2 1",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 3.2 3 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 3.2 3",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 13",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 7",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 13 code",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 13 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 13 python",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 13",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 33",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "llama 34 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 34 python",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 65",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 7 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 7 python",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 70 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 70 python",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama 70",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama vision 3.2 11 instruct",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "llama versatile 3.1 70 128",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "llama vision 3.2 11",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "llama vision 3.2 90",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "llama2 2 13",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llamaguard 2 8",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "llava mistral next 7",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "llava mistral 1.6 7",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "llava 1.6 34",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "llava yi 1.6 34",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "llm text translation",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "lumimaid 0.2 8",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "luminous base",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "luminous enhanced",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "luminous extended",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "luminous supreme",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "lzlv 70",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "magnum 2 72",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "magnum 72",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "merlinite 7",
+        "Licence_open_source": null,
+        "multimodal": null
+    },
+    {
+        "model_name": "midnight rose 70",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "ministral 2410 3",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "ministral 2410 8",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "ministral 3",
+        "Licence_open_source": null,
+        "multimodal": null
+    },
+    {
+        "model_name": "ministral 8",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral codestral",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral instruct awq 0.1 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral instruct lora 0.2 7",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral instruct 0.1 7",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral instruct 0.2 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral instruct 0.3 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral large 2",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral large 2",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral large 2402",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral large 2407",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral large 2407",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral large",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral lite",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral medium",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral nemo celeste 12",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral nemo finetuned",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral nemo starcannon 12",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral nemo",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral openorca 7 8",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral openorca 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral pairrm dpo 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral pairrm dpo",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral small 2402",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral small 2402",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral small 2409",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral small 2409",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral small",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral small",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral tiny",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral 0.1 7 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral 0.1 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral 0.2 7 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral 0.2 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral 0.3 7 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral 2 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral 3 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral 7 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mistral 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mixtral moe 8x22 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mixtral moe 8x22",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mixtral moe 8x7 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mixtral 0.1 8x22 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mixtral 0.1 8x7 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mixtral 0.1 8x7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mixtral 46.7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mixtral 8x22 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mixtral 8x22",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mixtral 8x7 32 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mixtral 8x7 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mixtral 8x7 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mixtral 8x7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "ml318br carson",
+        "Licence_open_source": false,
+        "multimodal": null
+    },
+    {
+        "model_name": "mpt chat 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mpt 30 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "mpt 30 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mpt 30",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mpt 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mt0 xxl 13",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "mythalion 13",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "mythomax lite l2 13",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "mythomax turbo l2 13",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "mythomax l2 13",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "mythomist 7",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "nemotron 4 340 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "neural chat awq 3.1 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "nexusraven 13",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "noromaid 20",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "o1 mini 20240912",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "o1 mini",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "o1 preview 20240912",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "o1 preview",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "olmo twin 2 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "olmo 7 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "olmo 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "openai 3.5 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "openchat 3.5 0106",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "openchat 3.5 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "openchat 3.5",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "openchat 3.6 8",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "openchat 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "openhermes mistral awq 2.5 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "openhermes mistral 2 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "openhermes mistral 2.5 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "openorca mistral 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "palm text bison 2",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "palm bison 2 32 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "palm bison 2 32",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "palm bison 2 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "palm bison 2 text",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "palm chat 2 32 code",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "palm unicorn 2 text",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "palm 2 32 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "phi medium 3 128 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "phi medium 3 4 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "phi medium 3 4",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "phi medium 3 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "phi mini 3 128 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "phi mini 3 4 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "phi mini 3 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "phi mini 3.5 128 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "phi moe 3.5 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "phi small 3 128 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "phi small 3 8 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "phi 2",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "phi 3.5 vision",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "phi vision instruct 3.5",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "pixtral bf16 12",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "pixtral 12",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "pixtral 12",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "platypus 2 70 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "prompt llm",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "pythia reward 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "pythia sft 4 12",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "pythia base 7 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "pythia 0.07",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "pythia 0.41",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "pythia 12",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "pythia 7 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen instruct turbo 2.5 7 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen instruct 2 7",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "qwen instruct 2 72",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "qwen instruct 2.5 7 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen math 2.5 72 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen awq 1.5 14 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen awq 1.5 7 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen float8 2.5 405",
+        "Licence_open_source": null,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen turbo 2.5 7 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen turbo 2.5 72 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 1.5 0.5 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 1.5 0.5",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 1.5 1.8 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 1.5 110 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 1.5 14 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 1.5 32 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 1.5 4 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 1.5 7 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 1.5 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 1.5 72 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 1.5 72",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 2 1.5 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 2 7 instruct",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "qwen 2 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 2 72 instruct",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "qwen 2 72",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 2.5 1.5 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 2.5 1.5",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 2.5 14 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 2.5 14",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 2.5 32 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 2.5 32",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 2.5 7 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 2.5 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 2.5 72 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 2.5 72",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 14 chat",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 32",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 7 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "qwen vl 2 7 instruct",
+        "Licence_open_source": true,
+        "multimodal": true
+    },
+    {
+        "model_name": "qwen vl 2 72 instruct",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "redpajama incite 3 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "redpajama incite 3 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "redpajama incite 3",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "redpajama incite 7 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "redpajama incite 7 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "redpajama incite 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "reka core",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "reka edge",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "reka flash",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "reka spark",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "remm slerp l2 13",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "replit code 1 3",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "rerank",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "rocinante 12",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "sdxl",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "sensechat character pro",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "sensechat character",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "sensechat cantonais 5",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "sensechat turbo",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "sensechat 5",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "sensechat 128",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "sensechat 32",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "sensechat",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "sensechat vision",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "snowflake arctic instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "solar docvision",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "solar mini",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "solar pro",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "solar 1 11 instruct",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "sonar medium online",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "sonar small online",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "sqlcoder 2 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "sqlcoder 15",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "sqlcoder",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "stable code 3",
+        "Licence_open_source": null,
+        "multimodal": false
+    },
+    {
+        "model_name": "stable image core",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "stablelm alpha 3 base",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "stablelm sft 7 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "starcoder 15.5",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "starcoder 16",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "starcoder 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "starcoder",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "starcoder2 15 instruct",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "starcoder2 15",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "starcoder2 3",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "starcoder2 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "starcoderchat alpha 16",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "starling lm beta 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "stripedhyena hessian 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "stripedhyena nous 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "supreme control",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "supreme",
+        "Licence_open_source": false,
+        "multimodal": true
+    },
+    {
+        "model_name": "test 11",
+        "Licence_open_source": null,
+        "multimodal": null
+    },
+    {
+        "model_name": "tinyllama 1.0 1.1 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "titan text express",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "titan text lite",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "titan text premier",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "toppy m nitro 7",
+        "Licence_open_source": true,
+        "multimodal": null
+    },
+    {
+        "model_name": "toppy m 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "una cybertron bf16 2 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "vanilla language 34",
+        "Licence_open_source": null,
+        "multimodal": null
+    },
+    {
+        "model_name": "vanilla language 7",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "vanilla language 70",
+        "Licence_open_source": null,
+        "multimodal": null
+    },
+    {
+        "model_name": "vanilla language 8x7",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "vanilla 34",
+        "Licence_open_source": null,
+        "multimodal": null
+    },
+    {
+        "model_name": "vanilla 7",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "vanilla 70",
+        "Licence_open_source": null,
+        "multimodal": null
+    },
+    {
+        "model_name": "vanilla 8x7",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "vicuna t5 fastchat 3",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "vicuna 1.1 13",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "vicuna 1.3 13",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "vicuna 1.3 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "vicuna 1.5 13 16",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "vicuna 1.5 13",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "vicuna 1.5 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "weaver alpha",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "wizardcoder 1.0 34 python",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "wizardcoder 34 python",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "wizardlm 1.2 13",
+        "Licence_open_source": false,
+        "multimodal": false
+    },
+    {
+        "model_name": "wizardlm 2 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "wizardlm 2 8x22",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "wizardlm 2",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "wizardlm 70",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "xwin 70",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "yi large",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "yi 34 chat",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "yi 34",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "yi 6 200",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "yi 6 base",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "yi 6",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "zephyr beta awq 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "zephyr beta 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "zephyr 7",
+        "Licence_open_source": true,
+        "multimodal": false
+    },
+    {
+        "model_name": "zephyr 8x22",
+        "Licence_open_source": true,
+        "multimodal": false
+    }
+]

@@ -219,67 +219,169 @@ def add_date_release(json_path, models_infos_path, output_path=None):
     print(f"Les dates de publication ont été ajoutées et enregistrées dans le fichier '{final_output_path}'.")
 
 
-
-# Définir les stratégies de transformation pour id_name
-strategies = [
-    lambda x: x,  # Correspondance exacte
-    lambda x: select_specific_segments(x, [1, 2, 3, 4, 5, 6, 7, 8]),
-    lambda x: select_segments_no_order(x, [1, 2, 3, 4, 5, 6, 7, 8]),
-    lambda x: select_specific_segments(x, [1, 2, 3, 4, 5, 6, 7]),
-    lambda x: select_segments_no_order(x, [1, 2, 3, 4, 5, 6, 7]),
-    lambda x: select_specific_segments(x, [1, 2, 3, 4, 5, 6]),
-    lambda x: select_segments_no_order(x, [1, 2, 3, 4, 5, 6]),
-    lambda x: select_specific_segments(x, [1, 2, 4, 6]),
-    lambda x: select_segments_no_order(x, [1, 2, 4, 6]),
-    lambda x: select_specific_segments(x, [1, 2, 4]),
-    lambda x: select_specific_segments(x, [1, 4, 6]),
-    # Ajoutez d'autres stratégies si nécessaire
-]
-
-import os
-import json
-import pandas as pd
-from datetime import datetime
-
-def select_specific_segments(id_name, indices):
-    """
-    Sélectionne des segments spécifiques de `id_name` selon les indices fournis.
-
-    :param id_name: Chaîne de caractères représentant l'id_name.
-    :param indices: Liste d'indices à sélectionner.
-    :return: Chaîne transformée avec les segments sélectionnés.
-    """
+def process_id_name(id_name):
+    """Process id_name by removing 'unknown' and replacing '-' with spaces, and removing non-essential segments."""
+    # Split the id_name by '-'
     parts = id_name.split('-')
-    selected = [parts[i] for i in indices if i < len(parts)]
-    return '-'.join(selected)
+    # Remove 'unknown' parts and non-essential segments like 'false', 'true'
+    parts = [part for part in parts if part.lower() not in ['unknown', 'false', 'true']]
+    # Replace '-' with spaces and join
+    processed_name = ' '.join(parts)
+    return processed_name
 
-def select_segments_no_order(id_name, indices):
+def add_os_multi_pplx():
     """
-    Sélectionne des segments spécifiques de `id_name` sans tenir compte de l'ordre.
-
-    :param id_name: Chaîne de caractères représentant l'id_name.
-    :param indices: Liste d'indices à sélectionner.
-    :return: Chaîne transformée avec les segments sélectionnés triés.
+    Fusionne les données du fichier JSON 'pplx_os_multi.json' avec le fichier CSV 'AIKoD_text_infos.csv'.
+    Ajoute ou met à jour les colonnes 'is_open_source' et 'is_multimodal' dans le CSV en fonction des données du JSON.
     """
-    parts = id_name.split('-')
-    selected = sorted([parts[i] for i in indices if i < len(parts)])
-    return '-'.join(selected)
+    # Définir les chemins absolus
+    try:
+        script_dir = os.path.abspath(os.path.dirname(__file__))  # Répertoire du script actuel
+        csv_path = os.path.join(script_dir, '..', 'data', 'models_infos', 'AIKoD_text_infos.csv')
+        json_path = os.path.join(script_dir, '..', 'data', 'models_infos', 'Perplexity', 'pplx_os_multi.json')
+        output_csv_path = os.path.join(script_dir, '..', 'data', 'models_infos', 'AIKoD_text_infos.csv')  # Optionnel : sauvegarder sous un nouveau nom
 
-# Définir les stratégies de transformation pour id_name
-strategies = [
-    lambda x: x,  # Correspondance exacte
-    lambda x: select_specific_segments(x, [1, 2, 3, 4, 5, 6, 7, 8]),
-    lambda x: select_segments_no_order(x, [1, 2, 3, 4, 5, 6, 7, 8]),
-    lambda x: select_specific_segments(x, [1, 2, 3, 4, 5, 6, 7]),
-    lambda x: select_segments_no_order(x, [1, 2, 3, 4, 5, 6, 7]),
-    lambda x: select_specific_segments(x, [1, 2, 3, 4, 5, 6]),
-    lambda x: select_segments_no_order(x, [1, 2, 3, 4, 5, 6]),
-    lambda x: select_specific_segments(x, [1, 2, 4, 6]),
-    lambda x: select_segments_no_order(x, [1, 2, 4, 6]),
-    lambda x: select_specific_segments(x, [1, 2, 4]),
-    lambda x: select_specific_segments(x, [1, 4, 6]),
-    # Ajoutez d'autres stratégies si nécessaire
-]
+        print(f"Chemin du fichier CSV : {csv_path}")
+        print(f"Chemin du fichier JSON : {json_path}")
+    except Exception as e:
+        print(f"Erreur lors de la définition des chemins : {e}")
+        return
+
+    # Vérifier l'existence du fichier CSV
+    if not os.path.exists(csv_path):
+        print(f"Erreur : Le fichier CSV '{csv_path}' n'existe pas.")
+        return
+
+    # Lire le fichier CSV
+    try:
+        df_csv = pd.read_csv(csv_path)
+        print(f"Fichier CSV chargé : '{csv_path}'")
+    except Exception as e:
+        print(f"Erreur lors du chargement du fichier CSV '{csv_path}' : {e}")
+        return
+
+    # Vérifier la présence de 'id_name' dans le CSV
+    if 'id_name' not in df_csv.columns:
+        print("Erreur : La colonne 'id_name' est absente du fichier CSV.")
+        return
+
+    # Créer 'model_name' à partir de 'id_name'
+    try:
+        df_csv['model_name'] = df_csv['id_name'].apply(process_id_name).str.strip().str.lower()
+        print("Colonne 'model_name' créée à partir de 'id_name'.")
+    except Exception as e:
+        print(f"Erreur lors de la création de la colonne 'model_name' : {e}")
+        return
+
+    # Vérifier l'existence du fichier JSON
+    if not os.path.exists(json_path):
+        print(f"Erreur : Le fichier JSON '{json_path}' n'existe pas.")
+        return
+
+    # Lire le fichier JSON
+    try:
+        with open(json_path, 'r', encoding='utf-8') as f:
+            pplx_data = json.load(f)
+        print(f"Fichier JSON chargé : '{json_path}'")
+    except Exception as e:
+        print(f"Erreur lors du chargement du fichier JSON '{json_path}' : {e}")
+        return
+
+    # Convertir le JSON en DataFrame
+    try:
+        df_pplx = pd.DataFrame(pplx_data)
+        print("JSON converti en DataFrame.")
+    except Exception as e:
+        print(f"Erreur lors de la conversion du JSON en DataFrame : {e}")
+        return
+
+    # Vérifier les colonnes nécessaires dans le JSON
+    required_columns = ['model_name', 'Licence_open_source', 'multimodal']
+    missing_columns = [col for col in required_columns if col not in df_pplx.columns]
+    if missing_columns:
+        print(f"Erreur : Les colonnes suivantes sont absentes du fichier JSON : {missing_columns}")
+        return
+
+    # Nettoyer les colonnes 'Licence_open_source' et 'multimodal'
+    try:
+        def convert_to_bool(val):
+            """Convertit une valeur en booléen ou None."""
+            if isinstance(val, bool):
+                return val
+            elif isinstance(val, str):
+                val_lower = val.strip().lower()
+                if val_lower == 'true':
+                    return True
+                elif val_lower == 'false':
+                    return False
+            return None
+
+        df_pplx['is_open_source'] = df_pplx['Licence_open_source'].apply(convert_to_bool)
+        df_pplx['is_multimodal'] = df_pplx['multimodal'].apply(convert_to_bool)
+        print("Colonnes 'Licence_open_source' et 'multimodal' converties en 'is_open_source' et 'is_multimodal'.")
+    except Exception as e:
+        print(f"Erreur lors du nettoyage des colonnes booléennes : {e}")
+        return
+
+    # Préparer le DataFrame JSON pour la fusion
+    try:
+        df_pplx_clean = df_pplx[['model_name', 'is_open_source', 'is_multimodal']].copy()
+        df_pplx_clean['model_name'] = df_pplx_clean['model_name'].str.lower()  # Assurer la casse
+        print("DataFrame JSON préparé pour la fusion.")
+    except Exception as e:
+        print(f"Erreur lors de la préparation du DataFrame JSON pour la fusion : {e}")
+        return
+
+    # Vérifier que 'model_name' est unique dans le JSON
+    try:
+        if df_pplx_clean['model_name'].duplicated().any():
+            print("Attention : Des 'model_name' dupliqués ont été trouvés dans le JSON. Les doublons seront supprimés.")
+            # Agréger les valeurs en prenant la première occurrence ou une autre stratégie
+            df_pplx_clean = df_pplx_clean.drop_duplicates(subset=['model_name'], keep='first')
+            print("Doublons supprimés du DataFrame JSON.")
+    except Exception as e:
+        print(f"Erreur lors de la vérification des doublons dans le DataFrame JSON : {e}")
+        return
+
+    # Supprimer les colonnes 'is_open_source' et 'is_multimodal' existantes dans le CSV pour éviter les conflits
+    try:
+        for col in ['is_open_source', 'is_multimodal']:
+            if col in df_csv.columns:
+                df_csv.drop(columns=[col], inplace=True)
+                print(f"Colonne existante '{col}' supprimée du CSV pour éviter les conflits.")
+            else:
+                print(f"Aucune colonne '{col}' trouvée dans le CSV.")
+    except Exception as e:
+        print(f"Erreur lors de la suppression des colonnes existantes dans le CSV : {e}")
+        return
+
+    # Fusionner le CSV et le JSON sur 'model_name'
+    try:
+        df_merged = pd.merge(df_csv, df_pplx_clean, on='model_name', how='left')
+        print("Fusion des DataFrames réussie.")
+    except Exception as e:
+        print(f"Erreur lors de la fusion des DataFrames : {e}")
+        return
+
+    # Remplacer les NaN par None (optionnel)
+    try:
+        df_merged['is_open_source'] = df_merged['is_open_source'].where(pd.notnull(df_merged['is_open_source']), None)
+        df_merged['is_multimodal'] = df_merged['is_multimodal'].where(pd.notnull(df_merged['is_multimodal']), None)
+        print("Valeurs NaN remplacées par None dans les colonnes 'is_open_source' et 'is_multimodal'.")
+    except Exception as e:
+        print(f"Erreur lors du remplacement des valeurs NaN : {e}")
+        return
+
+    # Sauvegarder le DataFrame mis à jour
+    try:
+        df_merged.to_csv(output_csv_path, index=False)
+        print(f"Fichier CSV mis à jour enregistré sous '{output_csv_path}'.")
+    except Exception as e:
+        print(f"Erreur lors de l'enregistrement du fichier CSV mis à jour : {e}")
+        return
+
+    print("Fusion terminée avec succès.")
+
 
 def add_speed_provider_text_AA():
     """
@@ -287,6 +389,22 @@ def add_speed_provider_text_AA():
     aux modèles de type 'text' dans le fichier JSON 'API_date_v4.8.json' en se basant sur les fichiers
     'speed_performance.csv' situés dans les sous-dossiers du répertoire AA.
     """
+    # Définir les stratégies de transformation pour id_name
+    strategies = [
+        lambda x: x,  # Correspondance exacte
+        lambda x: select_specific_segments(x, [1, 2, 3, 4, 5, 6, 7, 8]),
+        lambda x: select_segments_no_order(x, [1, 2, 3, 4, 5, 6, 7, 8]),
+        lambda x: select_specific_segments(x, [1, 2, 3, 4, 5, 6, 7]),
+        lambda x: select_segments_no_order(x, [1, 2, 3, 4, 5, 6, 7]),
+        lambda x: select_specific_segments(x, [1, 2, 3, 4, 5, 6]),
+        lambda x: select_segments_no_order(x, [1, 2, 3, 4, 5, 6]),
+        lambda x: select_specific_segments(x, [1, 2, 4, 6]),
+        lambda x: select_segments_no_order(x, [1, 2, 4, 6]),
+        lambda x: select_specific_segments(x, [1, 2, 4]),
+        lambda x: select_specific_segments(x, [1, 4, 6]),
+        # Ajoutez d'autres stratégies si nécessaire
+    ]
+
     # Définir le chemin de base relatif au script actuel
     base_path = os.path.abspath(os.path.dirname(__file__))
     

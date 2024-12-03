@@ -460,20 +460,17 @@ def scrappe_table_textAA(output_dir):
         driver.quit()
 
 
-import os
-import pandas as pd
-
 def correct_AA_benchmark():
     """
-    Parcourt les répertoires 'texttoimage' et 'audiototext' dans 'data\benchmark\AA\'
+    Parcourt les répertoires 'texttoimage' et 'audiototext' dans 'data/benchmark/AA/'
     et ajoute ou remplace les colonnes 'speed_index' et 'quality_index' selon les spécifications.
     
     Pour les fichiers dans 'texttoimage' :
-        - Crée ou remplace la colonne 'speed_index' basée sur la moyenne de 'Median Generation Time (s)' pour chaque 'id_name'.
+        - Crée ou remplace la colonne 'speed_index' basée sur la moyenne de 'Median Generation Time (s)' pour chaque 'id_name' unique.
     
     Pour les fichiers dans 'audiototext' :
-        - Crée ou remplace la colonne 'speed_index' basée sur la moyenne de 'Median Speed Factor' pour chaque 'id_name'.
-        - Crée ou remplace la colonne 'quality_index' basée sur la moyenne de 'Word Error Rate (%)' pour chaque 'id_name'.
+        - Crée ou remplace la colonne 'speed_index' basée sur la moyenne de 'Median Speed Factor' pour chaque 'id_name' unique.
+        - Crée ou remplace la colonne 'quality_index' basée sur la moyenne de 'Word Error Rate (%)' pour chaque 'id_name' unique.
     """
     
     # Définir le chemin racine
@@ -484,7 +481,7 @@ def correct_AA_benchmark():
     audiototext_dir = os.path.join(root_dir, 'audiototext')
     
     # Fonction auxiliaire pour calculer et assigner l'indice
-    def calculate_and_assign(df, group_col, target_col, new_col_name):
+    def calculate_and_assign(df, group_col, target_col, new_col_name, remove_percentage=False):
         """
         Calcule la moyenne de 'target_col' pour chaque 'group_col' et assigne la valeur moyenne à 'new_col_name'.
         
@@ -492,17 +489,34 @@ def correct_AA_benchmark():
         :param group_col: Colonne utilisée pour le groupement.
         :param target_col: Colonne dont la moyenne sera calculée.
         :param new_col_name: Nom de la nouvelle colonne à créer ou remplacer.
+        :param remove_percentage: Booléen. Si True, supprime les '%' avant de convertir en float.
         :return: DataFrame avec la nouvelle colonne ajoutée ou remplacée.
         """
         if group_col not in df.columns or target_col not in df.columns:
             print(f"Les colonnes '{group_col}' ou '{target_col}' sont absentes. Opération ignorée.")
             return df
         
+        # Nettoyer 'id_name's en les stripant et convertissant en lower case
+        df[group_col] = df[group_col].astype(str).str.strip().str.lower()
+        
+        # Nettoyer target_col si nécessaire
+        if remove_percentage:
+            # Supprimer les '%' et convertir en float
+            df[target_col] = df[target_col].astype(str).str.replace('%', '').str.strip()
+        
+        # Convertir target_col en numeric, coercing errors to NaN
+        df[target_col] = pd.to_numeric(df[target_col], errors='coerce')
+        
         # Calculer la moyenne en ignorant les NaN
         mean_values = df.groupby(group_col)[target_col].mean()
         
         # Créer un mapping de 'id_name' à la moyenne calculée
         mapping = mean_values.to_dict()
+        
+        # Afficher le mapping pour débogage
+        print(f"\nMapping pour '{new_col_name}':")
+        for id_name, mean_val in mapping.items():
+            print(f"  {id_name}: {mean_val}")
         
         # Assigner les valeurs moyennes à la nouvelle colonne
         df[new_col_name] = df[group_col].map(mapping)
@@ -527,7 +541,16 @@ def correct_AA_benchmark():
                         continue
                     
                     # Calculer et assigner 'speed_index'
-                    df = calculate_and_assign(df, 'id_name', 'Median Generation Time (s)', 'speed_index')
+                    df = calculate_and_assign(
+                        df, 
+                        group_col='id_name', 
+                        target_col='Median Generation Time (s)', 
+                        new_col_name='speed_index',
+                        remove_percentage=False
+                    )
+                    
+                    # Remplacer NaN par des chaînes vides dans 'speed_index'
+                    df['speed_index'] = df['speed_index'].fillna('')
                     
                     # Sauvegarder le fichier mis à jour
                     df.to_csv(file_path, index=False)
@@ -557,10 +580,26 @@ def correct_AA_benchmark():
                         continue
                     
                     # Calculer et assigner 'speed_index'
-                    df = calculate_and_assign(df, 'id_name', 'Median Speed Factor', 'speed_index')
+                    df = calculate_and_assign(
+                        df, 
+                        group_col='id_name', 
+                        target_col='Median Speed Factor', 
+                        new_col_name='speed_index',
+                        remove_percentage=False
+                    )
                     
                     # Calculer et assigner 'quality_index'
-                    df = calculate_and_assign(df, 'id_name', 'Word Error Rate (%)', 'quality_index')
+                    df = calculate_and_assign(
+                        df, 
+                        group_col='id_name', 
+                        target_col='Word Error Rate (%)', 
+                        new_col_name='quality_index',
+                        remove_percentage=True  # remove '%' before conversion
+                    )
+                    
+                    # Remplacer NaN par des chaînes vides dans 'speed_index' et 'quality_index'
+                    df['speed_index'] = df['speed_index'].fillna('')
+                    df['quality_index'] = df['quality_index'].fillna('')
                     
                     # Sauvegarder le fichier mis à jour
                     df.to_csv(file_path, index=False)
