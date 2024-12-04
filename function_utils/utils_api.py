@@ -515,7 +515,7 @@ def generate_API_date(input_json_path, output_json_path, exclude_provider=None, 
             elif type_ == 'audiototext':
                 price_field = 'blended_price'
                 quality_field = 'quality_index'
-                maximize_quality = False  # On veut minimiser l'erreur
+                maximize_quality = True # On veut minimiser l'erreur
             elif type_ == 'texttoimage':
                 price_field = 'blended_price'
                 quality_field = 'quality_index'

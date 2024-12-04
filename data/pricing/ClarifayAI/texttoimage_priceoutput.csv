@@ -1,5 +1,5 @@
 name,id_name,2024-02-14,2024-07-03
-OpenAI DALL-E,dalle-unknown-unknown-1-unknown-unknown-false-unknown-false,0.02,0.02
+OpenAI DALL-E,dalle-unknown-unknown-1-unknown-unknown-false-unknown-false,2.0,
+StabilityAI Stable-Diffusion-XL,stablediffusion-xl-unknown-unknown-unknown-unknown-false-unknown-false,2.1999999999999997,
 dall-e,dalle-unknown-unknown-unknown-unknown-unknown-False,,
-stabilityai stable-difussion-xl,stabilityai-unknown-unknown-unknown-unknown-unknown-False,,
-StabilityAI Stable-Diffusion-XL,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false,0.022,0.022
+stabilityai stable-difussion-xl,stablediffusion-xl-unknown-unknown-unknown-unknown-False,,

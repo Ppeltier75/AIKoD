@@ -2,6 +2,8 @@ name,id_name,2024-07-03,2024-08-26,2024-09-27,2024-10-21
 abab6.5g,abab-g-unknown-6.5-unknown-unknown-unknown-unknown-false,,,0.7,0.7
 abab6.5s,abab-s-unknown-6.5-unknown-unknown-unknown-unknown-false,,,0.15,0.15
 abab6.5t,abab-t-unknown-6.5-unknown-unknown-unknown-unknown-false,,,0.7,0.7
-chatcompletion pro,chatcompletion-pro-unknown-unknown-unknown-unknown-unknown-unknown-false,4.5,4.5,4.5,4.5
-chatcompletion v2,chatcompletion-unknown-unknown-2-unknown-unknown-unknown-unknown-false,4.5,4.5,4.5,4.5
-chatcompletion,chatcompletion-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,2.25,2.25,2.25,2.25
+chatcompletion,chatcompletion-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,2.25,,,
+chatcompletion pro,chatcompletion-pro-unknown-unknown-unknown-unknown-unknown-unknown-false,4.5,,,
+chatcompletion v2,chatcompletion-unknown-unknown-2-unknown-unknown-unknown-unknown-false,4.5,,,
+finetune,,,,,
+finetune (微调),,,15.0,,

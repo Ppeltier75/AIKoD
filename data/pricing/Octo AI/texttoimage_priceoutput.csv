@@ -1,16 +1,18 @@
-name,id_name,2024-02-06,2024-02-24,2024-04-15,2024-04-21,2024-07-25,2024-08-26,2024-09-27,2024-10-21
-"FLUX.1 [Dev] with pretrained LoRAs (30 steps, 1024x1024)",flux-dev-lora-1-1024x1024-30-false-unknown-false,,,,,,,0.035,0.035
-"FLUX.1 [Dev] (30 steps, 1024x1024)",flux-dev-unknown-1-1024x1024-30-false-unknown-false,,,,,,,0.02,0.02
-"FLUX.1 [Schnell] with pretrained LoRAs (4 steps, 1024x1024)",flux-schnell-loras-1-1024x1024-4-false-unknown-false,,,,,,,0.006,0.006
-"FLUX.1 [Schnell] (4 steps, 1024x1024)",flux-schnell-unknown-1-1024x1024-4-false-unknown-false,,,,,,,0.002,0.002
-Juggernaut v9 and XI Lighting (4 steps),juggernaut-lighting-unknown-9-unknown-4-false-unknown-false,,,,,0.007,0.007,0.007,0.007
-Juggernaut v9 and XI (30 steps),juggernaut-unknown-unknown-9-unknown-30-false-unknown-false,,,,,0.01,0.01,0.01,0.01
-"SD 1.5 (40 steps, 1024x1024, DPM_2 sampler)",stablediffusion-unknown-unknown-1.5-1024x1024-40-false-unknown-false,,0.009,0.009,0.009,0.009,0.009,0.009,0.009
-"SD 1.5 (60 steps, 1024x1024, DDIM sampler)",stablediffusion-unknown-unknown-1.5-1024x1024-60-false-unknown-false,0.003,0.003,0.003,0.003,0.003,0.003,0.003,0.003
-"SD 1.5 (40 steps, 512x512, DDIM sampler)",stablediffusion-unknown-unknown-1.5-512x512-40-false-unknown-false,,0.002,0.002,0.002,0.002,0.002,0.002,0.002
-SD1.5 Fine-tuned (50 steps),stablediffusion-unknown-unknown-1.5-unknown-50-false-unknown-true,0.0025,0.0025,0.0025,0.0025,0.0025,0.0025,0.0025,0.0025
-SD3 (30 steps),stablediffusion-unknown-unknown-3-unknown-30-false-unknown-false,,,,,0.03,0.03,0.03,0.03
-"SDXL with LCM-LoRA (Fine-tuned) (4 steps, 1024x1024, LCM sampler)",stablediffusion-xl-lcm-1-1024x1024-4-false-unknown-true,,0.001,0.001,0.001,0.001,0.001,0.001,0.001
-"SDXL (30 steps, 1024x1024, DDIM sampler)",stablediffusion-xl-unknown-1-1024x1024-30-false-ddim-false,0.004,0.004,0.004,0.004,0.004,0.004,0.004,0.004
-"SDXL (40 steps, 1024x1024, DDIM sampler)",stablediffusion-xl-unknown-1-1024x1024-40-false-ddim-false,,0.0053,0.0053,0.0053,0.0053,0.0053,0.0053,0.0053
-"SDXL (40 steps, 1024x1024, DPM_2_ANCESTRAL sampler)",stablediffusion-xl-unknown-1-1024x1024-40-false-dpm2-false,0.0107,0.0107,0.0107,0.0107,0.0107,0.0107,0.0107,0.0107
+name,id_name,2024-02-06,2024-04-21,2024-07-25,2024-08-26,2024-09-27,2024-10-21,2024-02-24,2024-04-15
+"SDXL (30 steps, 1024x1024, DDIM sampler)",stablediffusion-xl-unknown-1-1024x1024-30-false-ddim-false,0.4,0.4,0.4,0.4,0.4,0.4,,
+"SDXL (40 steps, 1024x1024, DPM_2_ANCESTRAL sampler)",stablediffusion-xl-unknown-1-1024x1024-40-false-dpm2-false,1.0699999999999998,1.0699999999999998,1.0699999999999998,1.0699999999999998,1.0699999999999998,1.0699999999999998,1.0699999999999998,1.0699999999999998
+"SDXL with Custom Asset (Fine-tuned) (60 steps, 1024x1024, DDIM sampler)",stablediffusion-xl-unknown-unknown-1024x1024-60-false-unknown-true,1.6,1.6,1.6,1.6,1.6,1.6,1.6,1.6
+"SD 1.5 (60 steps, 1024x1024, DDIM sampler)",stablediffusion-unknown-unknown-1.5-1024x1024-60-false-unknown-false,0.3,0.3,0.3,0.3,0.3,0.3,0.3,0.3
+SD1.5 Fine-tuned (50 steps),stablediffusion-unknown-unknown-1.5-unknown-50-false-unknown-true,0.25,0.25,0.25,0.25,0.25,0.25,,
+Juggernaut v9 and XI (30 steps),juggernaut-unknown-unknown-9-unknown-30-false-unknown-false,,,1.0,1.0,1.0,1.0,,
+Juggernaut v9 and XI Lighting (4 steps),juggernaut-lighting-unknown-9-unknown-4-false-unknown-false,,,0.7000000000000001,0.7000000000000001,0.7000000000000001,0.7000000000000001,,
+SD3 (30 steps),stablediffusion-unknown-unknown-3-unknown-30-false-unknown-false,,,3.0,3.0,3.0,3.0,,
+"SDXL (40 steps, 1024x1024, DDIM sampler)",stablediffusion-xl-unknown-1-1024x1024-40-false-ddim-false,,,,,,,0.53,0.53
+"SDXL with LCM-LoRA (Fine-tuned) (4 steps, 1024x1024, LCM sampler)",stablediffusion-xl-lcm-unknown-1024x1024-4-false-unknown-true,,,,,,,0.1,0.1
+"SDXL with Custom Asset (Fine-tuned) (60 steps, 1024x1024, DPM_2 sampler)",stablediffusion-xl-unknown-unknown-1024x1024-60-false-unknown-true,,,,,,,3.2,3.2
+"SD 1.5 (40 steps, 512x512, DDIM sampler)",stablediffusion-unknown-unknown-1.5-512x512-40-false-unknown-false,,,,,,,0.2,0.2
+"SD 1.5 (40 steps, 1024x1024, DPM_2 sampler)",stablediffusion-unknown-unknown-1.5-1024x1024-40-false-unknown-false,,,,,,,0.8999999999999999,0.8999999999999999
+"FLUX.1 [Dev] (30 steps, 1024x1024)",flux-dev-unknown-1-1024x1024-30-false-unknown-false,,,,,2.0,2.0,,
+"FLUX.1 [Dev] with pretrained LoRAs (30 steps, 1024x1024)",flux-dev-lora-1-1024x1024-30-false-unknown-false,,,,,3.5000000000000004,3.5000000000000004,,
+"FLUX.1 [Schnell] (4 steps, 1024x1024)",flux-schnell-unknown-1-1024x1024-4-false-unknown-false,,,,,0.2,0.2,,
+"FLUX.1 [Schnell] with pretrained LoRAs (4 steps, 1024x1024)",flux-schnell-loras-1-1024x1024-4-false-unknown-false,,,,,0.6,0.6,,

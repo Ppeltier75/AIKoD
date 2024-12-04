@@ -1,4 +1,4 @@
 name,id_name,2024-09-27,2024-10-21
-SD 1.5 Text to Image,stablediffusion-unknown-unknown-1.5-unknown-unknown-false-unknown-false,0.0021,0.0021
-SD3 Text to Image,stablediffusion-unknown-unknown-3-unknown-unknown-false-unknown-false,0.0084,0.0084
-SDXL Text to Image,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false,0.003,0.003
+SDXL Text to Image,stablediffusion-xl-unknown-unknown-unknown-unknown-false-unknown-false,0.3,0.3
+SD3 Text to Image,stablediffusion-unknown-unknown-3-unknown-unknown-false-unknown-false,0.84,0.84
+SD 1.5 Text to Image,stablediffusion-unknown-unknown-1.5-unknown-unknown-false-unknown-false,0.21,0.21

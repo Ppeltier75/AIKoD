@@ -1,17 +1,17 @@
-name,id_name,2024-01-27,2024-02-24,2024-03-26,2024-04-26,2024-05-24,2024-06-22,2024-07-03,2024-08-26,2024-09-27,2024-10-21
-amazon titan image generator 1024,amazontitan-unknown-unknown-1-1024x1024-unknown-false-unknown-false,,,,,0.01,0.01,0.01,0.01,0.01,0.01
-amazon titan image generator v1 512,amazontitan-unknown-unknown-1-512x512-unknown-False,,,,,,,,0.008,0.008,0.008
-amazon titan image generator v1 512 hd,amazontitan-unknown-unknown-1-512x512-unknown-True,,,,,,,,0.01,0.01,0.01
-amazon titan image generator v2 1024,amazontitan-unknown-unknown-2-1024x1024-unknown-False,,,,,,,,0.01,0.01,0.01
-amazon titan image generator v2 1024 hd,amazontitan-unknown-unknown-2-1024x1024-unknown-True,,,,,,,,0.012,0.012,0.012
-amazon titan image generator v2 512,amazontitan-unknown-unknown-2-512x512-unknown-False,,,,,,,,0.008,0.008,0.008
-amazon titan image generator v2 512 hd,amazontitan-unknown-unknown-2-512x512-unknown-True,,,,,,,,0.01,0.01,0.01
-sd3 large,stablediffusion-large-unknown-3-unknown-unknown-false-unknown-false,,,,,,,,,0.08,0.08
-sdxl 0.8 > 512,stablediffusion-xl-unknown-0.8-1024x1024-unknown-false-unknown-false,0.036,0.036,0.036,0.036,0.036,0.036,0.036,0.036,0.036,0.036
-sdxl 0.8 > 512  HD ,stablediffusion-xl-unknown-0.8-1024x1024-unknown-true-unknown-false,0.072,0.072,0.072,0.072,0.072,0.072,0.072,0.072,0.072,0.072
-sdxl 0.8 512,stablediffusion-xl-unknown-0.8-512x512-unknown-false-unknown-false,0.018,0.018,0.018,0.018,0.018,0.018,0.018,0.018,0.018,0.018
-sdxl 0.8 512 hd,stablediffusion-xl-unknown-0.8-512x512-unknown-true-unknown-false,0.036,0.036,0.036,0.036,0.036,0.036,0.036,0.036,0.036,0.036
-sdxl 1.0 1024,stablediffusion-xl-unknown-1-1024x1024-unknown-false-unknown-false,0.04,0.04,0.04,0.04,0.04,0.04,0.04,0.04,0.04,0.04
-sdxl 1.0 1024 hd,stablediffusion-xl-unknown-1-1024x1024-unknown-true-unknown-false,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08
-stable image core,stableimage-core-unknown-1-unknown-unknown-false-unknown-false,,,,,,,,,,0.04
-stable image ultra,stableimage-ultra-unknown-1-unknown-unknown-false-unknown-false,,,,,,,,,0.14,0.14
+name,id_name,2024-06-22,2024-05-24,2024-04-26,2024-03-26,2024-02-24,2024-01-27,2024-07-03,2024-08-26,2024-09-27,2024-10-21
+sdxl 0.8 512,stablediffusion-xl-unknown-0.8-512x512-unknown-false-unknown-false,1.7999999999999998,1.7999999999999998,1.7999999999999998,1.7999999999999998,1.7999999999999998,1.7999999999999998,1.7999999999999998,1.7999999999999998,,
+sdxl 0.8 > 512,stablediffusion-xl-unknown-0.8-1024x1024-unknown-false-unknown-false,3.5999999999999996,3.5999999999999996,3.5999999999999996,3.5999999999999996,3.5999999999999996,3.5999999999999996,3.5999999999999996,3.5999999999999996,,
+sdxl 0.8 512 hd,stablediffusion-xl-unknown-0.8-512x512-unknown-true-unknown-false,3.5999999999999996,3.5999999999999996,3.5999999999999996,3.5999999999999996,3.5999999999999996,3.5999999999999996,3.5999999999999996,3.5999999999999996,,
+sdxl 0.8 > 512  HD ,stablediffusion-xl-unknown-0.8-1024x1024-unknown-true-unknown-false,7.199999999999999,7.199999999999999,7.199999999999999,7.199999999999999,7.199999999999999,7.199999999999999,7.199999999999999,7.199999999999999,,
+sdxl 1.0 1024 hd,stablediffusion-xl-unknown-1-1024x1024-unknown-true-unknown-false,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0,8.0
+sdxl 1.0 1024,stablediffusion-xl-unknown-1-1024x1024-unknown-false-unknown-false,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0
+amazon titan image generator 1024,amazontitan-unknown-unknown-1-1024x1024-unknown-false-unknown-false,1.0,1.0,,,,,,,,
+amazon titan image generator v1 512,amazontitan-unknown-unknown-1-512x512-unknown-False,,,,,,,,0.8,0.8,0.8
+amazon titan image generator v1 512 hd,amazontitan-unknown-unknown-1-512x512-unknown-True,,,,,,,,1.0,1.0,1.0
+amazon titan image generator v2 512,amazontitan-unknown-unknown-2-512x512-unknown-False,,,,,,,,0.8,0.8,0.8
+amazon titan image generator v2 512 hd,amazontitan-unknown-unknown-2-512x512-unknown-True,,,,,,,,1.0,1.0,1.0
+amazon titan image generator v2 1024,amazontitan-unknown-unknown-2-1024x1024-unknown-False,,,,,,,,1.0,1.0,1.0
+amazon titan image generator v2 1024 hd,amazontitan-unknown-unknown-2-1024x1024-unknown-True,,,,,,,,1.2,1.2,1.2
+sd3 large,stablediffusion-large-unknown-3-unknown-unknown-false-unknown-false,,,,,,,,,8.0,8.0
+stable image ultra,stableimage-ultra-unknown-1-unknown-unknown-false-unknown-false,,,,,,,,,14.000000000000002,14.000000000000002
+stable image core,stableimage-core-unknown-1-unknown-unknown-false-unknown-false,,,,,,,,,,4.0

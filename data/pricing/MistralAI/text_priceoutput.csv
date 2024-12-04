@@ -1,28 +1,32 @@
-name,id_name,2023-12-14,2023-12-18,2024-01-16,2024-02-26,2024-03-24,2024-04-05,2024-07-03,2024-08-26,2024-09-17,2024-09-27,2024-10-21
-codestral mamba 7B,codestral-mamba-unknown-unknown-unknown-7-unknown-unknown-false,,,,,,,,0.25,0.25,0.25,0.25
-codestral mamba,codestral-mamba-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,0.25,0.25,0.25
-codestral 22B,codestral-unknown-unknown-unknown-unknown-22-unknown-code-false,,,,,,,3.0,3.0,3.0,3.0,3.0
+name,id_name,2024-04-05,2024-03-24,2024-02-26,2024-01-16,2023-12-18,2023-12-14,2024-07-03,2024-08-26,2024-09-17,2024-09-27,2024-10-21
+Codestral finetuned,codestral-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,3.0,,,
+Mistral Large 2407 finetuned,mistral-large-unknown-unknown-2407-unknown-unknown-unknown-true,,,,,,,,9.0,,,
 codestral,codestral-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,0.6,0.6,0.6
-Codestral finetuned,codestral-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,3.0,0.6,0.6,0.6
+codestral 22B,codestral-unknown-unknown-unknown-unknown-22-unknown-code-false,,,,,,,,3.0,,,
+codestral 22b,codestral-unknown-unknown-unknown-unknown-22-unknown-code-false,,,,,,,3.0,,,,
+codestral finetuned,codestral-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,,0.6,0.6,0.6
+codestral mamba,codestral-mamba-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,0.25,,
+codestral mamba 7B,codestral-mamba-unknown-unknown-unknown-7-unknown-unknown-false,,,,,,,,0.25,,,
 ministral 3b 24.10,ministral-unknown-unknown-unknown-2410-3-unknown-unknown-false,,,,,,,,,,,0.04
 ministral 8b 24.10,ministral-unknown-unknown-unknown-2410-8-unknown-unknown-false,,,,,,,,,,,0.1
+mistral 7b,mistral-unknown-unknown-unknown-unknown-7-unknown-unknown-false,0.25,0.25,0.25,,,,0.25,0.25,0.25,0.25,0.25
+mistral 7b finetuned,mistral-unknown-unknown-unknown-unknown-7-unknown-unknown-true,,,,,,,0.75,0.75,,,
+mistral large,mistral-large-unknown-unknown-unknown-unknown-unknown-unknown-false,24.0,24.0,24.0,,,,,,,,
 mistral large 2,mistral-large-unknown-2-unknown-unknown-unknown-unknown-false,,,,,,,,9.0,6.0,6.0,6.0
 mistral large 2 finetuned,mistral-large-unknown-2-unknown-unknown-unknown-unknown-true,,,,,,,,,6.0,6.0,6.0
-mistral large 2402,mistral-large-unknown-unknown-2402-unknown-unknown-unknown-false,,,,,,,12.0,12.0,12.0,12.0,12.0
-Mistral Large 2407 finetuned,mistral-large-unknown-unknown-2407-unknown-unknown-unknown-true,,,,,,,,9.0,9.0,9.0,9.0
-mistral large,mistral-large-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,24.0,24.0,24.0,24.0,24.0,24.0,24.0,24.0
-mistral medium,mistral-medium-unknown-unknown-unknown-unknown-unknown-unknown-false,8.25,8.25,8.25,8.1,8.1,8.1,8.1,8.1,8.1,8.1,8.1
-mistral nemo finetuned,mistral-nemo-finetuned-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,0.3,0.15,0.15,0.15
+mistral large 2402,mistral-large-unknown-unknown-2402-unknown-unknown-unknown-false,,,,,,,12.0,,,,
+mistral medium,mistral-medium-unknown-unknown-unknown-unknown-unknown-unknown-false,8.1,8.1,8.1,,,,,8.1,8.1,8.1,
 mistral nemo,mistral-nemo-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,0.3,0.15,0.15,0.15
-mistral small 2402,mistral-small-unknown-unknown-2402-unknown-unknown-unknown-false,,,,,,,3.0,3.0,3.0,3.0,3.0
-mistral small 2402 finetuned,mistral-small-unknown-unknown-2402-unknown-unknown-unknown-true,,,,,,,7.5,7.5,7.5,7.5,7.5
+mistral nemo finetuned,mistral-nemo-finetuned-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,0.3,0.15,0.15,0.15
+mistral small,mistral-small-unknown-unknown-unknown-unknown-unknown-unknown-false,6.0,6.0,6.0,,,,,3.0,3.0,3.0,
 mistral small 24.09,mistral-small-unknown-unknown-2409-unknown-unknown-unknown-false,,,,,,,,,0.6,0.6,0.6
 mistral small 24.09 finetuned,mistral-small-unknown-unknown-2409-unknown-unknown-unknown-true,,,,,,,,,0.6,0.6,0.6
-mistral small,mistral-small-unknown-unknown-unknown-unknown-unknown-unknown-false,1.98,1.98,1.98,6.0,6.0,6.0,6.0,3.0,3.0,3.0,3.0
-mistral small finetuned,mistral-small-unknown-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,7.5,3.0,3.0,3.0
-mistral-tiny,mistral-tiny-unknown-unknown-unknown-unknown-unknown-unknown-false,0.462,0.462,0.462,0.462,0.462,0.462,0.462,0.462,0.462,0.462,0.462
-mistral 7b,mistral-unknown-unknown-unknown-unknown-7-unknown-unknown-false,,,,0.25,0.25,0.25,0.25,0.25,0.25,0.25,0.25
-mistral 7b finetuned,mistral-unknown-unknown-unknown-unknown-7-unknown-unknown-true,,,,,,,0.75,0.75,0.75,0.75,0.75
+mistral small 2402,mistral-small-unknown-unknown-2402-unknown-unknown-unknown-false,,,,,,,3.0,,,,
+mistral small 2402 finetuned,mistral-small-unknown-unknown-2402-unknown-unknown-unknown-true,,,,,,,7.5,,,,
+mistral small finetuned,mistral-small-unknown-unknown-unknown-unknown-unknown-unknown-true,,,,,,,,7.5,3.0,3.0,
+mistral-medium,mistral-medium-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,8.25,8.25,8.25,8.1,,,,
+mistral-small,mistral-small-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,1.9800000000000002,1.9800000000000002,1.9800000000000002,,,,,
+mistral-tiny,mistral-tiny-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,0.462,0.462,0.462,,,,,
 mixtral 8x22b,mixtral-unknown-unknown-unknown-unknown-8x22-unknown-unknown-false,,,,,,,6.0,6.0,6.0,6.0,6.0
-mixtral 8x7b,mixtral-unknown-unknown-unknown-unknown-8x7-unknown-unknown-false,,,,0.7,0.7,0.7,0.7,0.7,0.7,0.7,0.7
+mixtral 8x7b,mixtral-unknown-unknown-unknown-unknown-8x7-unknown-unknown-false,0.7,0.7,0.7,,,,0.7,0.7,0.7,0.7,0.7
 pixtral 12b,pixtral-unknown-unknown-unknown-12-unknown-unknown-false,,,,,,,,,0.15,0.15,0.15

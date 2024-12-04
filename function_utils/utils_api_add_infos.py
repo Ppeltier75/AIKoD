@@ -368,10 +368,13 @@ def add_provider_infos_texttoimage(json_path):
     
     print("La fonction add_provider_infos_texttoimage s'est exécutée avec succès.")
 
+
+
 def add_provider_infos_audiototext(json_path):
     """
     Enrichit les modèles de type 'audiototext' dans le fichier JSON avec les informations
     'quality_provider_index' et 'speed_provider_index' provenant du fichier CSV spécifié.
+    Pour 'quality_provider_index', la valeur est transformée par 1 - (valeur / 100).
     
     :param json_path: Chemin vers le fichier JSON à modifier.
     """
@@ -387,6 +390,8 @@ def add_provider_infos_audiototext(json_path):
         lambda x: select_segments_no_order(x, [1, 2, 3]),
         lambda x: select_specific_segments(x, [1, 4]),
         lambda x: select_segments_no_order(x, [1, 4]),
+        lambda x: select_specific_segments(x, [1, 2]),
+        lambda x: select_segments_no_order(x, [1, 2]),
     ]
     
     # Charger le fichier JSON
@@ -439,8 +444,24 @@ def add_provider_infos_audiototext(json_path):
             ]
             if not matched_rows.empty:
                 # Prendre la première correspondance trouvée
-                quality_provider_index = matched_rows.iloc[0]['Word Error Rate (%)']
-                speed_provider_index = matched_rows.iloc[0]['Median Speed Factor']
+                raw_quality = matched_rows.iloc[0]['Word Error Rate (%)']
+                raw_speed = matched_rows.iloc[0]['Median Speed Factor']
+                
+                # Transformation de quality_provider_index
+                try:
+                    quality_value = float(raw_quality)
+                    quality_provider_index = 1 - (quality_value / 100)
+                except (ValueError, TypeError):
+                    quality_provider_index = None
+                    print(f"Valeur invalide pour 'Word Error Rate (%)' : {raw_quality} dans le modèle '{model.get('model_name')}'")
+                
+                # Transformation de speed_provider_index (pas de transformation spécifiée, donc directement)
+                try:
+                    speed_provider_index = float(raw_speed)
+                except (ValueError, TypeError):
+                    speed_provider_index = None
+                    print(f"Valeur invalide pour 'Median Speed Factor' : {raw_speed} dans le modèle '{model.get('model_name')}'")
+                
                 break  # Arrêter après la première correspondance trouvée
         
         if quality_provider_index is not None and speed_provider_index is not None:
@@ -450,7 +471,7 @@ def add_provider_infos_audiototext(json_path):
         else:
             model['quality_provider_index'] = None
             model['speed_provider_index'] = None
-            print(f"Aucune correspondance trouvée pour le modèle '{model.get('model_name')}' avec id_name '{json_id_name}' et provider '{json_provider}'")
+            print(f"Aucune correspondance valide trouvée pour le modèle '{model.get('model_name')}' avec id_name '{json_id_name}' et provider '{json_provider}'")
     
     # Supprimer les champs temporaires commençant par '_parsed_'
     for model in data:

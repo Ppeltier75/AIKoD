@@ -219,11 +219,11 @@ def harmonize_and_convert_price_audiototext(units, prices, currencies, company):
         rate = conversion_rates.get(currency, 1.0)
 
         if "second audio" in unit or "audio second" in unit:
-            price_per_minute = price * 60
+            price_per_minute = price * 3600
         elif "minute audio" in unit:
-            price_per_minute = price
+            price_per_minute = price * 60
         elif "hour audio" in unit or "hour" in unit:
-            price_per_minute = price / 60
+            price_per_minute = price 
         else:
             # Ignorer les unités non pertinentes
             continue
@@ -399,9 +399,9 @@ def harmonize_and_convert_price_texttoimage(units, prices, currencies, company):
             match = re.search(r'(\d+)\s*image', unit)
             if match:
                 divisor = int(match.group(1))
-                price_per_image = (price / divisor) * rate
+                price_per_image = (price / divisor) * rate * 100
             else:
-                price_per_image = price * rate
+                price_per_image = price * rate * 100
             harmonized_prices.append(price_per_image)
 
     return harmonized_prices

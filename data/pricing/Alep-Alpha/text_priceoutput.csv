@@ -1,12 +1,15 @@
-name,id_name,2022-08-16,2022-10-22,2023-02-01,2023-03-21,2023-05-21,2023-05-28,2023-09-25,2024-01-26,2024-02-22,2024-03-03,2024-04-21
-base-control,base-control-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,0.4125,0.4125,0.4125,0.4125,0.4125
-base,base-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,0.33,0.33,0.33,0.33,0.33,0.33,0.33,0.33,0.33
-extended-control,extended-control-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,0.61875,0.61875,0.61875,0.61875,0.61875
-extended,extended-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,0.495,0.495,0.495,0.495,0.495,0.495,0.495,0.495,0.495
+name,id_name,2024-04-21,2024-03-03,2024-02-22,2024-01-26,2023-09-25,2023-05-28,2023-05-21,2023-03-21,2023-02-01,2022-10-22,2022-08-16
+base,base-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,0.33,0.33,0.33,0.33,0.33,0.33,0.33,0.33,0.33,,
+base-control,base-control-unknown-unknown-unknown-unknown-unknown-unknown-false,0.41250000000000003,0.41250000000000003,0.41250000000000003,0.41250000000000003,0.41250000000000003,,,,,,
+extended,extended-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,0.495,0.495,0.495,0.495,0.495,0.495,0.495,0.495,0.495,,
+extended-control,extended-control-unknown-unknown-unknown-unknown-unknown-unknown-false,0.61875,0.61875,0.61875,0.61875,0.61875,,,,,,
 luminous base,luminous-base-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,
 luminous enhanced,luminous-enhanced-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,
 luminous extended,luminous-extended-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,
 luminous supreme,luminous-supreme-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,
 magma base,magma-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,
-supreme-control,supreme-control-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,2.40625,2.3000000000000003,2.3000000000000003,2.40625,2.40625,2.40625,2.40625,2.40625
-supreme,supreme-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,1.925,1.925,1.92,1.92,1.925,1.925,1.925,1.925,1.925
+magma enhanced,magma-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,
+magma extended,magma-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,
+magma supreme,magma-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,
+supreme,supreme-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,1.925,1.925,1.925,1.925,1.925,1.92,1.92,1.925,1.925,,
+supreme-control,supreme-control-unknown-unknown-unknown-unknown-unknown-unknown-false,2.40625,2.40625,2.40625,2.40625,2.40625,2.3000000000000003,2.3000000000000003,2.40625,,,

@@ -1,5 +1,5 @@
 name,id_name,2022-12-04,2023-03-15,2024-10-31
-speechmatics transcription enhanced,speechmatics-transcription-enhanced-unknown,0.0358333333333333,0.0358333333333333,0.0225
-speechmatics transcription lite mode,speechmatics-transcription-lite-mode-unknown,,,0.005
-speechmatics transcription standard,speechmatics-transcription-standard-unknown,0.0275,0.0275,0.0173333333333333
-speechmatics translation,speechmatics-translation-unknown-unknown,,,0.0108333333333333
+speechmatics transcription standard,speechmatics-standard-transcription-unknown,1.65,1.65,1.04
+speechmatics transcription enhanced,speechmatics-enhanced-transcription-unknown,2.15,2.15,1.35
+speechmatics transcription lite mode,speechmatics-litemode-transcription-unknown,,,0.3
+speechmatics translation,speechmatics-translation-unknown-unknown,,,0.65
