@@ -97,17 +97,17 @@ flux.1 [schnell] fp8 30 steps,flux-schnell-fp8-1-unknown-30-false-unknown-false
 flux.1 [schnell] free,flux-schnell-free-1-unknown-unknown-false-unknown-false
 flux.1 [schnell] with pretrained loras (4 steps 1024x1024),flux-schnell-loras-1-1024x1024-4-false-unknown-false
 flux1.1 [pro],flux-pro-unknown-1.1-unknown-unknown-false-unknown-false
-ideogram version 0.2 default,ideogram-default-unknown-0.2-unknown-unknown-false-unknown-false
-ideogram version 1.0 default,ideogram-default-unknown-1-unknown-unknown-false-unknown-false
+ideogram version 0.2 default,ideogram-unknown-default-0.2-unknown-unknown-false-unknown-false
+ideogram version 1.0 default,ideogram-unknown-default-1-unknown-unknown-false-unknown-false
 ideogram version 1.0 turbo,ideogram-unknown-turbo-1-unknown-unknown-false-unknown-false
-ideogram version 2.0 default,ideogram-default-unknown-2-unknown-unknown-false-unknown-false
-ideogram version 2.0 quality,ideogram-quality-unknown-2-unknown-unknown-false-unknown-false
+ideogram version 2.0 default,ideogram-unknown-default-2-unknown-unknown-false-unknown-false
+ideogram version 2.0 quality,ideogram-unknown-quality-2-unknown-unknown-false-unknown-false
 ideogram version 2.0 turbo,ideogram-unknown-turbo-2-unknown-unknown-false-unknown-false
 imagen,imagen-unknown-unknown-1-unknown-unknown-false-unknown-false
 imagen 2,imagen-unknown-unknown-2-unknown-unknown-false-unknown-false
 imagen 3,imagen-unknown-unknown-3-unknown-unknown-false-unknown-false
 imagen 3 fast,imagen-fast-unknown-3-unknown-unknown-false-unknown-false
-japonese stable diffusion xl 30 steps,stablediffusion-japonese-xl-1-unknown-30-false-unknown-false
+japonese stable diffusion xl 30 steps,stablediffusion-xl-japonese-1-unknown-30-false-unknown-false
 juggernaut v9 and xi (30 steps),juggernaut-unknown-unknown-9-unknown-30-false-unknown-false
 juggernaut v9 and xi lighting (4 steps),juggernaut-lighting-unknown-9-unknown-4-false-unknown-false
 midjourney version 1,midjourney-unknown-unknown-1-unknown-unknown-false-unknown-false
@@ -186,20 +186,20 @@ sdxl 0.8 > 512 hd,stablediffusion-xl-unknown-0.8-1024x1024-unknown-true-unknown-
 sdxl 1.0 1024,stablediffusion-xl-unknown-1-1024x1024-unknown-false-unknown-false
 sdxl 1.0 1024 hd,stablediffusion-xl-unknown-1-1024x1024-unknown-true-unknown-false
 sdxl 1.0 hd 1024,stablediffusion-xl-unknown-1-1024x1024-unknown-true-unknown-false
-sdxl controlnet (50 steps 1024x1024),stablediffusion-xl-controlnet-1-1024x1024-50-false-unknown-false
-sdxl lightning,stablediffusion-xl-lightning-1-unknown-unknown-false-unknown-false
-sdxl lightning 4 steps,stablediffusion-xl-lightning-1-unknown-4-false-unknown-false
-sdxl text to image,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false
-sdxl turbo (50 steps 1024x1024),stablediffusion-xl-turbo-1-1024x1024-50-false-unknown-false
-sdxl with custom asset (fine tuned) (60 steps 1024x1024 ddim sampler),stablediffusion-xl-unknown-1-1024x1024-60-false-unknown-true
-sdxl with custom asset (fine tuned) (60 steps 1024x1024 dpm_2 sampler),stablediffusion-xl-unknown-1-1024x1024-60-false-unknown-true
-sdxl with defaults 20 steps,stablediffusion-xl-unknown-1-unknown-20-false-unknown-false
-sdxl with lcm lora (fine tuned) (4 steps 1024x1024 lcm sampler),stablediffusion-xl-lcm-1-1024x1024-4-false-unknown-true
+sdxl controlnet (50 steps 1024x1024),stablediffusion-xl-controlnet-unknown-1024x1024-50-false-unknown-false
+sdxl lightning,stablediffusion-xl-lightning-unknown-unknown-unknown-false-unknown-false
+sdxl lightning 4 steps,stablediffusion-xl-lightning-unknown-unknown-4-false-unknown-false
+sdxl text to image,stablediffusion-xl-unknown-unknown-unknown-unknown-false-unknown-false
+sdxl turbo (50 steps 1024x1024),stablediffusion-xl-turbo-unknown-1024x1024-50-false-unknown-false
+sdxl with custom asset (fine tuned) (60 steps 1024x1024 ddim sampler),stablediffusion-xl-unknown-unknown-1024x1024-60-false-unknown-true
+sdxl with custom asset (fine tuned) (60 steps 1024x1024 dpm_2 sampler),stablediffusion-xl-unknown-unknown-1024x1024-60-false-unknown-true
+sdxl with defaults 20 steps,stablediffusion-xl-unknown-unknown-unknown-20-false-unknown-false
+sdxl with lcm lora (fine tuned) (4 steps 1024x1024 lcm sampler),stablediffusion-xl-lcm-unknown-1024x1024-4-false-unknown-true
 sdxl1.0 base (50 steps 1024x1024),stablediffusion-xl-base-1-1024x1024-50-false-unknown-false
 segmind stable diffusion 1b (ssd 1b) 30 steps,stablediffusion-segmind-1b-1-1024x1024-30-false-unknown-false
 ssd (50 steps 1024x1024),ssd-unknown-unknown-1-1024x1024-50-false-unknown-false
 stability ai/stable diffusion 3,stablediffusion-unknown-unknown-3-unknown-unknown-false-unknown-false
-stabilityai stable diffusion xl,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false
+stabilityai stable diffusion xl,stablediffusion-xl-unknown-unknown-unknown-unknown-false-unknown-false
 stable diffusion 1.5,stablediffusion-unknown-unknown-1.5-unknown-unknown-false-unknown-false
 stable diffusion 1.5 (100 steps 1024x1024),stablediffusion-unknown-unknown-1.5-1024x1024-100-false-unknown-false
 stable diffusion 1.5 (100 steps 512x512),stablediffusion-unknown-unknown-1.5-512x512-100-false-unknown-false
@@ -275,9 +275,9 @@ stable diffusion 1.6 30 steps 512 pixels,stablediffusion-unknown-unknown-1.6-512
 stable diffusion 1.6 hd 30 steps 1024 pixels,stablediffusion-unknown-unknown-1.6-1024x1024-30-True
 stable diffusion 2.1 30 steps 512 pixels,stablediffusion-unknown-unknown-2.1-512x512-30-False
 stable diffusion 2.1 hd 30 steps 1024 pixels,stablediffusion-unknown-unknown-2.1-1024x1024-30-True
-stable diffusion 3 & 3.5 large,stablediffusion-large-unknown-unknown-unknown-unknown-False
-stable diffusion 3 & 3.5 large turbo,stablediffusion-large-turbo-unknown-unknown-unknown-False
-stable diffusion 3 & 3.5 medium,stablediffusion-medium-unknown-unknown-unknown-unknown-False
+stable diffusion 3 & 3.5 large,stablediffusion-large-unknown-3-unknown-unknown-False
+stable diffusion 3 & 3.5 large turbo,stablediffusion-large-turbo-3-unknown-unknown-False
+stable diffusion 3 & 3.5 medium,stablediffusion-medium-unknown-3-unknown-unknown-False
 stable diffusion x4 latent upscaler 512 pixels,stablediffusion-x4-unknown-unknown-unknown-512x512-False
 stable diffusion xl 0.8 30 steps 512 pixels,stablediffusion-xl-unknown-0.8-512x512-30-False
 stable diffusion xl 0.9 30 steps 1024 pixels,stablediffusion-xl-unknown-0.9-1024x1024-30-False
@@ -299,4 +299,4 @@ dall·e 3 standard (1024x1024),dalle-unknown-unknown-3-1024x1024-unknown-False
 dall·e 3 standard (256x256),dalle-unknown-unknown-3-256x256-unknown-False
 dall·e 3 standard (512x512),dalle-unknown-unknown-3-512x512-unknown-False
 dall e,dalle-unknown-unknown-unknown-unknown-unknown-False
-stabilityai stable difussion xl,stabilityai-unknown-unknown-unknown-unknown-unknown-False
+stabilityai stable difussion xl,stablediffusion-xl-unknown-unknown-unknown-unknown-False

@@ -1,15 +1,15 @@
 name,id_name
 amazon transcribe,amazon-transcribe-unknown-unknown
-assemblyai (universal 1),assemblyai-universal-unknown-1
+assemblyai (universal 1),universal-unknown-unknown-1
 azure speech service,azure-speech-service-unknown
 base,base-unknown-unknown-unknown
 cloud speech to text (chirp),chirp-cloud-speech-unknown
 distil whisper deepinfra,whisper-distil-deepinfra-unknown
 distil whisper groq,whisper-distil-groq-unknown
 gladia,gladia-unknown-unknown-unknown
-incredibly fast whisper,whisper-fast-unknown-unknown
-nano,nano-unknown-unknown-unknown
-nova 2,nova-unknown-unknown-2
+incredibly fast whisper,whisper-fast-incredibly-unknown
+nano,universal-nano-unknown-unknown
+nova 2,deepgram-nova-unknown-2
 rev ai,rev-ai-unknown-unknown
 speechmatics enhanced,speechmatics-enhanced-unknown-unknown
 speechmatics standard,speechmatics-standard-unknown-unknown
@@ -21,4 +21,4 @@ whisper (medium),whisper-medium-unknown-unknown
 whisper (small),whisper-small-unknown-unknown
 whisper large v2,whisper-large-unknown-2
 whisperx,whisperx-unknown-unknown-unknown
-wizper (large v3),wizper-large-unknown-3
+wizper (large v3),whisper-large-unknown-3

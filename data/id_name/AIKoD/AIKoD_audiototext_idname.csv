@@ -14,9 +14,9 @@ gladia model,gladia-unknown-unknown-unknown
 nova 1,nova-unknown-unknown-1
 nova 2,nova-unknown-unknown-2
 redaction,redaction-unknown-unknown-unknown
-speechmatics transcription enhanced,speechmatics-transcription-enhanced-unknown
-speechmatics transcription lite mode,speechmatics-transcription-lite-mode-unknown
-speechmatics transcription standard,speechmatics-transcription-standard-unknown
+speechmatics transcription enhanced,speechmatics-enhanced-transcription-unknown
+speechmatics transcription lite mode,speechmatics-litemode-transcription-unknown
+speechmatics transcription standard,speechmatics-standard-transcription-unknown
 speechmatics translation,speechmatics-translation-unknown-unknown
 universal 1,universal-unknown-unknown-1
 universal nano,universal-nano-unknown-unknown

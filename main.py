@@ -375,3 +375,15 @@ aa_directory = os.path.join(base_path, "data", 'benchmark', 'AA')
 if __name__ == "__main__":
     add_speed_provider_text_AA(json_path, aa_directory)
 # %%
+import os 
+from function_utils.utils_api_add_infos import add_provider_infos_audiototext, add_provider_infos_texttoimage
+
+# Chemin vers votre fichier JSON
+json_path = r'c:\Users\piwip\OneDrive\Documents\OCDE\AIKoD\data\API\AIKoD_API_base_v0.json'
+
+# Enrichir les modèles de type 'texttoimage'
+add_provider_infos_texttoimage(json_path)
+
+# Enrichir les modèles de type 'audiototext'
+add_provider_infos_audiototext(json_path)
+# %%
