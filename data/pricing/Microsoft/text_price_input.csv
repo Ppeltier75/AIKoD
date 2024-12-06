@@ -1,0 +1,63 @@
+name,2024-07-05,2024-09-30
+babbage-002,0.4,
+babbage-002 (fine-tuned),0.4,0.4
+code interpreter,0.03,
+command r,0.5,0.5
+command r 08-2024,,0.15
+command r+,3.0,3.0
+command r+ 08-2024,,10.0
+davinci-002,2.0,
+davinci-002 (fine-tuned),2.0,2.0
+gpt 3.5 16k 0613,,3.0
+gpt 3.5 16k 1106,,1.0
+gpt 3.5 4k 0301,,2.0
+gpt 3.5 4k 0613,,1.5
+gpt 3.5 turbo 0125,,0.5
+gpt 3.5 turbo 16k,,0.5
+gpt 3.5 turbo 4k,,0.5
+gpt 3.5 turbo instruct,,1.5
+gpt 4 32k,,60.0
+gpt 4 8k,,30.0
+gpt 4-0 2024-08-06,,2.5
+gpt 4-0 global deployment,,5.0
+gpt 4-0 mini global deployment,,0.15
+gpt 4-0 mini regional api,,0.15
+gpt 4-0 regional deployment,,5.0
+gpt 4o,,2.8
+gpt 4o mini,,0.165
+gpt-3.5-turbo (16k fine-tuned),0.5,
+gpt-3.5-turbo (4k fine-tuned),0.5,
+gpt-3.5-turbo-0125,0.5,
+gpt-3.5-turbo-0301,2.0,
+gpt-3.5-turbo-0613,1.5,
+gpt-3.5-turbo-0613 (16k),3.0,
+gpt-3.5-turbo-1106,1.0,
+gpt-3.5-turbo-instruct,1.5,
+gpt-4,30.0,
+gpt-4-32k,60.0,
+gpt-4o global deployment,5.0,
+gpt-4o regional api,5.0,
+jais 30b chat,3.2,3.2
+jamba 1.5 large,,2.0
+jamba 1.5 mini,,0.2
+jamba-instruct,0.5,0.5
+llama 2 13b,0.8099999999999999,0.8099999999999999
+llama 2 13b chat,0.8099999999999999,0.8099999999999999
+llama 2 70b,1.5399999999999998,1.5399999999999998
+llama 2 70b chat,0.5199999999999999,1.5399999999999998
+llama 2 7b,0.5199999999999999,0.5199999999999999
+llama 3 70b instruct,3.78,2.68
+llama 3 8b instruct,0.37,0.3
+llama 3.1 405b instruct,,5.33
+llama 3.1 70b instruct,,2.68
+llama 3.1 8b instruct,,0.3
+mistral large,4.0,4.0
+mistral large 2407,,3.0
+mistral small,1.0,0.3
+phi-3-medium-128k-instruct,0.5,0.17
+phi-3-medium-4k-instruct,0.45,0.17
+phi-3-mini-128k-instruct,0.3,0.12999999999999998
+phi-3-mini-4k-instruct,0.28,0.12999999999999998
+phi-3-small-128k-instruct,0.35,0.15
+phi-3-small-8k-instruct,0.32,0.15
+phi-3.5 moe instruct,,0.16

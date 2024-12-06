@@ -302,6 +302,18 @@ output_json_path= os.path.join(base_path, "data", "API", "AIKoD_API_base_v0.json
 add_infos_to_API(models_infos_directory, output_json_path)
 
 # %%
+import os 
+from function_utils.utils_api_add_infos import add_provider_infos_audiototext, add_provider_infos_texttoimage
+
+# Chemin vers votre fichier JSON
+json_path = r'c:\Users\piwip\OneDrive\Documents\OCDE\AIKoD\data\API\AIKoD_API_base_v0.json'
+
+# Enrichir les modèles de type 'texttoimage'
+add_provider_infos_texttoimage(json_path)
+
+# Enrichir les modèles de type 'audiototext'
+add_provider_infos_audiototext(json_path)
+# %%
 # Chargement des données depuis le fichier JSON existant
 import os
 from function_utils.utils_api import generate_API_date
@@ -318,15 +330,6 @@ output_json_path = os.path.join(base_path, "data", "API", "API_date_v5.4.json")
 # Appel de la fonction
 generate_API_date(input_json_path, output_json_path, exclude_provider=["Openrouter","AIMLAPI"], exclude_company=["thebloke"])
 
-# %%
-import os 
-from function_utils.utils_cleaning import clean_name_AA, convert_dirs_to_lowercase
-# Chemin de base de votre projet
-base_path = os.path.abspath(os.path.dirname(__file__))
-# Chemin vers le fichier JSON généré par 'init_API'
-directory_AA = os.path.join(base_path, "data", 'benchmark', 'AA', "2024-11-16")
-# Exemple d'appel de la fonction
-convert_dirs_to_lowercase(directory_AA)
 
 
 
@@ -345,24 +348,7 @@ from function_utils.utils_add_infos import add_os_multi_pplx
 # Exemple d'appel de la fonction
 add_os_multi_pplx()
 # %%
-from function_utils.utils_cleaning import  harmonize_company_name
-from function_utils.utils_models_infos import column_name_modelsinfos, add_country_to_csv
 
-# Chemin vers le fichier CSV
-base_path = os.path.abspath(os.path.dirname(__file__))
-
-texttoimage_path = os.path.join(base_path, "data", "benchmark", "AA", "texttoimage", "AA_texttoimage_2024-11-19.csv")  
-audiototext_path = os.path.join(base_path, "data", "benchmark", "AA", "audiototext", "AA_audiototext_2024-11-19.csv")  
-
-
-
-# Nom de la colonne à harmoniser
-column_name = 'Provider'
-
-
-# Appel de la fonction
-harmonize_company_name(texttoimage_path , column_name)
-harmonize_company_name(audiototext_path, column_name)
 # %%
 import os 
 from function_utils.utils_api import add_speed_provider_text_AA
@@ -374,16 +360,12 @@ aa_directory = os.path.join(base_path, "data", 'benchmark', 'AA')
 # Fonction principale
 if __name__ == "__main__":
     add_speed_provider_text_AA(json_path, aa_directory)
+
 # %%
 import os 
-from function_utils.utils_api_add_infos import add_provider_infos_audiototext, add_provider_infos_texttoimage
+from function_utils.utils_api import Adapting_idname_aikod
 
-# Chemin vers votre fichier JSON
-json_path = r'c:\Users\piwip\OneDrive\Documents\OCDE\AIKoD\data\API\AIKoD_API_base_v0.json'
+json_path = r'C:\Users\piwip\OneDrive\Documents\OCDE\AIKoD\data\API\AIKoD_API_base_v0.json'
+Adapting_idname_aikod(json_path)
 
-# Enrichir les modèles de type 'texttoimage'
-add_provider_infos_texttoimage(json_path)
-
-# Enrichir les modèles de type 'audiototext'
-add_provider_infos_audiototext(json_path)
 # %%

@@ -1,0 +1,170 @@
+name,2024-06-10,2024-07-03,2024-08-26,2024-10-21,2024-09-27
+ai21: jamba 1.5 large,,,,8.0,8.0
+ai21: jamba 1.5 mini,,,,0.4,0.4
+ai21: jamba instruct,,0.7,,0.7,
+airoboros 70b,,,,0.5,
+anthropic: claude 3 haiku,,,,1.25,
+anthropic: claude 3 haiku (self-moderated),,,,1.25,
+anthropic: claude 3 opus,,,,75.0,
+anthropic: claude 3 opus (self-moderated),,,,75.0,
+anthropic: claude 3 sonnet,,,,15.0,
+anthropic: claude 3 sonnet (self-moderated),,,,15.0,
+anthropic: claude 3.5 sonnet,,15.0,,,
+anthropic: claude 3.5 sonnet (self-moderated),,15.0,,15.0,
+anthropic: claude instant v1.1,,,,2.4,
+anthropic: claude v2,,,,24.0,
+anthropic: claude v2 (self-moderated),,,,24.0,
+anthropic: claude v2.1,,,,24.0,
+anthropic: claude v2.1 (self-moderated),,,,24.0,
+cohere: command r (03-2024),,,,1.425,1.425
+cohere: command r (08-2024),,,,,0.57
+cohere: command r+ (04-2024),,,,14.25,14.25
+cohere: command r+ (08-2024),,,,0.4,9.5
+deepseek coder,0.28,,0.28,,
+deepseek-coder-v2,,0.28,,,
+deepseek-v2 chat,0.28,0.28,0.28,,
+dolphin 2.6 mixtral 8x7b 🐬,,,,0.5,
+dolphin 2.9.2 mixtral 8x22b,1.0,0.9,,0.9,
+dolphin 2.9.2 mixtral 8x22b 🐬,,,0.9,,
+eva qwen2.5 14b,,,,0.5,
+fimbulvetr 11b v2,1.5,,,,1.5
+firellava 13b,0.2,,,,
+flavor of the week,,0.0,,,
+goliath 120b,,,,9.375,
+google: gemini 1.5 flash-8b,,,,0.15,
+google: gemini flash 1.5,,0.75,,0.3,
+google: gemini flash 1.5 (preview),0.75,0.75,0.3,,
+google: gemini flash 1.5 experimental,,,,0.0,0.0
+google: gemini flash 8b 1.5 experimental,,,,0.0,0.0
+google: gemini pro 1.5 experimental,,,,0.0,
+google: gemma 2 27b,,,,0.27,
+google: gemma 2 9b,,,,0.06,
+google: gemma 2 9b (free),,0.0,,0.0,
+google: palm 2 chat 32k,,,,2.0,
+google: palm 2 code chat 32k,,,,2.0,
+hugging face: zephyr 7b (free),,,,0.0,
+inflection: inflection 3 pi,,,,10.0,
+inflection: inflection 3 productivity,,,,10.0,
+liquid: lfm 40b moe,,,,0.0,
+liquid: lfm 40b moe (free),,,,0.0,
+llama 3 8b lunaris,,,,2.0,
+llama 3 lumimaid 70b,4.5,4.5,4.5,,4.5
+llama 3 lumimaid 8b,1.125,,,1.125,1.125
+llama 3 lumimaid 8b (extended),1.125,,,1.125,1.125
+llama 3 stheno 8b v3.3 32k,,1.5,,,
+llama 3.1 euryale 70b v2.2,,,,0.4,0.4
+llava v1.6 34b,0.9,0.9,,,
+lumimaid v0.2 8b,,,,1.125,1.125
+lynn: llama 3 soliloquy 8b v2,0.05,,,,
+lzlv 70b,,,,0.4,
+magnum 72b,,,,4.5,
+magnum v2 72b,,,,4.5,
+mancer: weaver (alpha),,,,2.25,
+meta: llama 3 70b (base),0.81,0.81,0.81,,
+meta: llama 3 70b instruct,0.79,,,0.4,0.4
+meta: llama 3 70b instruct (nitro),0.9,,,0.792,0.792
+meta: llama 3 8b (base),0.18,0.18,0.18,,
+meta: llama 3 8b instruct,0.07,,,0.055,0.055
+meta: llama 3 8b instruct (extended),1.125,,,1.125,1.125
+meta: llama 3 8b instruct (free),0.0,,,,0.0
+meta: llama 3 8b instruct (nitro),0.2,,,,0.162
+meta: llama 3.1 405b (base),,,,2.0,
+meta: llama 3.1 405b instruct,,,,1.79,
+meta: llama 3.2 11b vision instruct,,,,0.055,0.162
+meta: llama 3.2 11b vision instruct (free),,,,0.0,0.0
+meta: llama 3.2 1b instruct,,,,0.02,0.1
+meta: llama 3.2 1b instruct (free),,,,0.0,
+meta: llama 3.2 3b instruct,,,,0.05,0.054
+meta: llama 3.2 3b instruct (free),,,,0.0,
+meta: llama 3.2 90b vision instruct,,,,0.4,0.4
+meta: llamaguard 2 8b,0.2,0.15,,,
+ministral 3b,,,,0.04,
+ministral 8b,,,,0.1,
+mistral 7b instruct,0.07,0.065,,,
+mistral 7b instruct v0.3,0.07,0.065,0.055,0.055,
+mistral large,,,,6.0,
+mistral medium,,,,8.1,
+mistral nemo 12b celeste,,,,1.5,
+mistral nemo 12b starcannon,,,,2.0,
+mistral small,,,,0.6,
+mistral tiny,,,,0.25,
+mistral: codestral mamba,,,,0.25,
+mistral: mistral 7b instruct v0.1,,,,0.18,
+mistral: mistral 7b instruct v0.2,,,,0.18,
+mistral: mistral nemo,,,,0.13,
+mistral: mixtral 8x22b instruct,0.65,,,,
+mistral: pixtral 12b,,,,0.1,0.1
+mixtral 8x7b (base),,,,0.54,
+mixtral 8x7b instruct,,,,0.24,
+mixtral 8x7b instruct (nitro),,,,0.54,
+mythomist 7b,,,,0.375,
+mythomist 7b (free),,,,0.0,
+noromaid 20b,,,,2.25,
+nous: hermes 13b,,,,0.17,
+nous: hermes 2 mixtral 8x7b dpo,,,,0.54,
+nous: hermes 2 theta 8b,,,,1.125,
+nous: hermes 3 405b instruct,,,,2.49,4.5
+nous: hermes 3 405b instruct (extended),,,,4.5,4.5
+nous: hermes 3 405b instruct (free),,,,0.0,0.0
+nous: hermes 3 70b instruct,,,,0.4,0.4
+nousresearch: hermes 2 pro - llama-3 8b,0.15,0.14,0.14,,0.14
+nvidia nemotron-4 340b instruct,,4.2,,,
+nvidia: llama 3.1 nemotron 70b instruct,,,,0.4,
+olmo 7b instruct,0.18,0.18,,,
+openai: chatgpt-4o,,,,15.0,15.0
+openai: gpt-3.5 turbo (older v0613),,,,2.0,
+openai: gpt-3.5 turbo 16k,,,,4.0,
+openai: gpt-3.5 turbo 16k (older v1106),,,,2.0,
+openai: gpt-3.5 turbo instruct,,,,2.0,
+openai: gpt-4 32k,,,,120.0,
+openai: gpt-4 32k (older v0314),,,,120.0,
+openai: gpt-4 turbo (older v1106),,,,30.0,
+openai: gpt-4 vision,,,,30.0,
+openai: gpt-4o,15.0,,15.0,10.0,
+openai: gpt-4o (2024-05-13),15.0,15.0,15.0,,
+openai: o1-mini,,,,12.0,12.0
+openai: o1-mini (2024-09-12),,,,12.0,12.0
+openai: o1-preview,,,,60.0,60.0
+openai: o1-preview (2024-09-12),,,,60.0,
+openchat 3.5 7b,,,,0.055,
+openchat 3.5 7b (free),,,,0.0,
+openchat 3.6 8b,0.08,0.064,,,
+openhermes 2.5 mistral 7b,,,,0.17,
+perplexity: llama 3.1 sonar 405b online,,,,5.0,5.0
+perplexity: llama 3.1 sonar 70b,,,,1.0,
+perplexity: llama 3.1 sonar 70b online,,,,1.0,
+perplexity: llama 3.1 sonar 8b,,,,0.2,
+perplexity: llama 3.1 sonar 8b online,,,,0.2,
+perplexity: llama3 sonar 70b,1.0,,,,
+perplexity: llama3 sonar 70b online,1.0,1.0,1.0,,
+perplexity: llama3 sonar 8b,0.2,0.2,0.2,,
+perplexity: llama3 sonar 8b online,0.2,,,0.2,
+phi-3 medium 128k instruct (free),,,,0.0,
+phi-3 medium instruct,1.0,,,,
+phi-3 medium instruct (free),0.0,0.0,,,
+phi-3 mini 128k instruct,,,,0.1,
+phi-3 mini instruct,0.1,0.1,,,
+phi-3 mini instruct (free),0.0,0.0,0.0,0.0,
+phi-3.5 mini 128k instruct,,,,0.1,
+pygmalion: mythalion 13b,,,,1.125,
+qwen 1.5 110b chat,1.62,,,,
+qwen 1.5 14b chat,0.27,,,,
+qwen 1.5 32b chat,0.75,,,,
+qwen 1.5 4b chat,0.09,,,,
+qwen 1.5 72b chat,0.9,,,0.81,
+qwen 1.5 7b chat,0.18,,,,
+qwen 2 72b instruct,0.9,0.77,0.4,,
+qwen 2 7b instruct,,,,0.054,
+qwen2-vl 72b instruct,,,,0.4,0.4
+qwen2-vl 7b instruct,,,,0.1,0.1
+qwen2.5 72b instruct,,,,0.4,0.4
+qwen2.5 7b instruct,,,,0.27,
+rocinante 12b,,,,0.5,
+snowflake: arctic instruct,2.16,,,,
+starcoder2 15b instruct,0.15,0.3,0.4,,
+toppy m 7b,,,,0.07,
+toppy m 7b (free),,,,0.0,
+toppy m 7b (nitro),,,,0.07,
+xai: grok beta,,,,15.0,
+xwin 70b,,,,3.75,
+yi large,,3.0,,,

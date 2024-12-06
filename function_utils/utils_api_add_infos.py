@@ -369,7 +369,6 @@ def add_provider_infos_texttoimage(json_path):
     print("La fonction add_provider_infos_texttoimage s'est exécutée avec succès.")
 
 
-
 def add_provider_infos_audiototext(json_path):
     """
     Enrichit les modèles de type 'audiototext' dans le fichier JSON avec les informations
@@ -378,20 +377,48 @@ def add_provider_infos_audiototext(json_path):
     
     :param json_path: Chemin vers le fichier JSON à modifier.
     """
+    import os
+    import json
+    import pandas as pd
+
     # Chemin vers le fichier CSV spécifique
     csv_path = os.path.join("data", "benchmark", "AA", "audiototext", "AA_audiototext_2024-11-19.csv")
     
-    # Définition des stratégies de correspondance
+    # Définition des fonctions de stratégie de correspondance
+    def select_specific_segments(id_name, indices):
+        """
+        Sélectionne des segments spécifiques d'un id_name basé sur les indices fournis.
+        """
+        segments = id_name.split('-')
+        selected = [segments[i - 1] for i in indices if 0 < i <= len(segments)]
+        return '-'.join(selected)
+    
+    def select_segments_no_order(id_name, indices):
+        """
+        Sélectionne des segments spécifiques d'un id_name sans tenir compte de l'ordre des segments.
+        """
+        segments = id_name.split('-')
+        selected = sorted([segments[i - 1] for i in indices if 0 < i <= len(segments)])
+        return '-'.join(selected)
+    
+    def normalize_id_name(id_name):
+        """
+        Remplace certains segments spécifiques par des valeurs génériques pour faciliter la correspondance.
+        """
+        return id_name.replace('transcription', 'unknown')
+    
+    # Définition des stratégies de correspondance avec normalisation
     strategies = [
         lambda x: x,  # Correspondance exacte
-        lambda x: select_specific_segments(x, [1, 2, 4]),
-        lambda x: select_segments_no_order(x, [1, 2, 4]),
-        lambda x: select_specific_segments(x, [1, 2, 3]),
-        lambda x: select_segments_no_order(x, [1, 2, 3]),
-        lambda x: select_specific_segments(x, [1, 4]),
-        lambda x: select_segments_no_order(x, [1, 4]),
-        lambda x: select_specific_segments(x, [1, 2]),
-        lambda x: select_segments_no_order(x, [1, 2]),
+        lambda x: normalize_id_name(x),
+        lambda x: select_specific_segments(normalize_id_name(x), [1, 2, 4]),
+        lambda x: select_segments_no_order(normalize_id_name(x), [1, 2, 4]),
+        lambda x: select_specific_segments(normalize_id_name(x), [1, 2, 3]),
+        lambda x: select_segments_no_order(normalize_id_name(x), [1, 2, 3]),
+        lambda x: select_specific_segments(normalize_id_name(x), [1, 4]),
+        lambda x: select_segments_no_order(normalize_id_name(x), [1, 4]),
+        lambda x: select_specific_segments(normalize_id_name(x), [1, 2]),
+        lambda x: select_segments_no_order(normalize_id_name(x), [1, 2]),
     ]
     
     # Charger le fichier JSON
@@ -489,3 +516,140 @@ def add_provider_infos_audiototext(json_path):
         return
     
     print("La fonction add_provider_infos_audiototext s'est exécutée avec succès.")
+
+
+
+
+
+
+
+def Adapting_idname_aikod(json_path):
+    """
+    Adapte le champ 'id_name' des modèles de type 'text' dans le fichier JSON spécifié.
+    Si le 4ème segment de 'id_name' est 'unknown', la fonction cherche les modèles similaires
+    avec une version numérique dans le 4ème segment et met à jour 'id_name' avec la version
+    la plus élevée trouvée.
+
+    :param json_path: Chemin vers le fichier JSON à modifier.
+    """
+    
+    def split_id_name(id_name):
+        """Sépare l'id_name en segments."""
+        return id_name.split('-')
+    
+    def join_id_name(segments):
+        """Rejoint les segments en une chaîne id_name."""
+        return '-'.join(segments)
+    
+    # Charger le fichier JSON
+    try:
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        print(f"Données JSON chargées depuis {json_path}")
+    except FileNotFoundError:
+        print(f"Erreur : Le fichier JSON spécifié n'existe pas : {json_path}")
+        return
+    except json.JSONDecodeError as e:
+        print(f"Erreur de décodage JSON dans le fichier {json_path} : {e}")
+        return
+    except Exception as e:
+        print(f"Erreur lors du chargement du fichier JSON {json_path} : {e}")
+        return
+
+    # Préparer une liste pour indexer les modèles par provider et base_id_name
+    # base_id_name est l'id_name avec les segments 4 et 5 remplacés par 'unknown'
+    model_index = {}
+    for model in data:
+        if model.get('type') != 'text':
+            continue
+        id_name = model.get('id_name', '').strip()
+        if not id_name:
+            continue
+        segments = split_id_name(id_name)
+        if len(segments) < 4:
+            continue  # S'assurer qu'il y a au moins 4 segments
+        provider = model.get('provider', '').strip().lower()
+        # Créer la base_id_name en remplaçant le 4ème segment par 'unknown'
+        base_segments = segments.copy()
+        base_segments[3] = 'unknown'
+        base_id_name = join_id_name(base_segments)
+        key = (provider, base_id_name)
+        if key not in model_index:
+            model_index[key] = []
+        # Inclure la date pour la comparaison
+        date_str = model.get('date', '').strip()
+        try:
+            date_obj = datetime.strptime(date_str, '%Y-%m-%d').date()
+        except ValueError:
+            date_obj = None
+        model_index[key].append({
+            'model': model,
+            'version': segments[3],
+            'date': date_obj
+        })
+    
+    # Parcourir les modèles pour adapter les id_name
+    for model in data:
+        if model.get('type') != 'text':
+            continue
+        id_name = model.get('id_name', '').strip()
+        if not id_name:
+            continue
+        segments = split_id_name(id_name)
+        if len(segments) < 4:
+            continue  # S'assurer qu'il y a au moins 4 segments
+        # Vérifier si le 4ème segment est 'unknown'
+        if segments[3].lower() != 'unknown':
+            continue
+        provider = model.get('provider', '').strip().lower()
+        if not provider:
+            continue
+        # Créer la base_id_name pour la recherche
+        base_segments = segments.copy()
+        base_segments[3] = 'unknown'
+        base_id_name = join_id_name(base_segments)
+        key = (provider, base_id_name)
+        if key not in model_index:
+            print(f"Aucune version trouvée pour le modèle avec id_name '{id_name}' et provider '{provider}'.")
+            continue
+        # Obtenir la date du modèle actuel
+        current_date_str = model.get('date', '').strip()
+        try:
+            current_date = datetime.strptime(current_date_str, '%Y-%m-%d').date()
+        except ValueError:
+            current_date = None
+        if not current_date:
+            print(f"Date invalide pour le modèle avec id_name '{id_name}'.")
+            continue
+        # Chercher les versions numériques avant ou égales à la date actuelle
+        possible_versions = []
+        for entry in model_index[key]:
+            version_str = entry['version']
+            entry_date = entry['date']
+            if entry_date and entry_date <= current_date:
+                try:
+                    version_num = float(version_str)
+                    possible_versions.append(version_num)
+                except ValueError:
+                    continue  # Ignorer les versions non numériques
+        if not possible_versions:
+            print(f"Aucune version numérique trouvée pour le modèle avec id_name '{id_name}' et provider '{provider}' avant la date {current_date}.")
+            continue
+        # Trouver la version la plus élevée
+        max_version = max(possible_versions)
+        # Mettre à jour le 4ème segment de l'id_name
+        segments[3] = str(max_version)
+        new_id_name = join_id_name(segments)
+        print(f"Mise à jour de 'id_name' de '{id_name}' à '{new_id_name}' pour le modèle '{model.get('model_name')}'.")
+        model['id_name'] = new_id_name
+    
+    # Écrire les données mises à jour dans le fichier JSON
+    try:
+        with open(json_path, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=4)
+        print(f"Données JSON mises à jour et enregistrées à {json_path}")
+    except Exception as e:
+        print(f"Erreur lors de l'enregistrement du fichier JSON mis à jour : {e}")
+        return
+    
+    print("La fonction Adapting_idname_aikod s'est exécutée avec succès.")

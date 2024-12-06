@@ -4,9 +4,9 @@ aura stt,aura-stt-unknown-unknown
 base,base-unknown-unknown-unknown
 base model,base-unknown-unknown-unknown
 core transcription,core-transcription-unknown-unknown
-deepgram nova,deepgram-nova-unknown-unknown
-deepgram nova 2,deepgram-nova-unknown-2
-deepgram whisper cloud,deepgram-whisper-cloud-unknown
+deepgram nova,nova-unknown-unknown-1
+deepgram nova 2,nova-unknown-unknown-2
+deepgram whisper cloud,whisper-cloud-unknown-unknown
 distil whisper,whisper-distil-unknown-unknown
 enhanced,enhanced-unknown-unknown-unknown
 enhanced model,enhanced-unknown-unknown-unknown
@@ -23,15 +23,15 @@ universal nano,universal-nano-unknown-unknown
 whisper,whisper-unknown-unknown-unknown
 whisper 2,whisper-unknown-unknown-2
 whisper 3,whisper-unknown-unknown-3
-whisper base,whisper-base-unknown-unknown
+whisper base,whisper-unknown-unknown-unknown
 whisper large,whisper-large-unknown-unknown
 whisper large v3,whisper-large-unknown-3
 whisper medium,whisper-medium-unknown-unknown
 whisper small,whisper-small-unknown-unknown
 whisper tiny,whisper-tiny-unknown-unknown
-whisper v3,whisper-unknown-3
+whisper v3,whisper-unknown-unknown-3
 whisper v3 large,whisper-large-unknown-3
 whisper v3 large turbo,whisper-large-turbo-3
-whisper v3 turbo,whisper-unknown-3
+whisper v3 turbo,whisper-turbo-unknown-3
 whisperx,whisperx-unknown-unknown-unknown
 azure ai speech stt,azure-ai-speech-unknown-unknown

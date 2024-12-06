@@ -315,3 +315,30 @@ if __name__ == "__main__":
     correct_AA_benchmark()
 
 # %%
+import os 
+from function_utils.utils_cleaning import clean_name_AA, convert_dirs_to_lowercase
+# Chemin de base de votre projet
+base_path = os.path.abspath(os.path.dirname(__file__))
+# Chemin vers le fichier JSON généré par 'init_API'
+directory_AA = os.path.join(base_path, "data", 'benchmark', 'AA', "2024-11-16")
+# Exemple d'appel de la fonction
+convert_dirs_to_lowercase(directory_AA)
+
+from function_utils.utils_cleaning import  harmonize_company_name
+from function_utils.utils_models_infos import column_name_modelsinfos, add_country_to_csv
+
+# Chemin vers le fichier CSV
+base_path = os.path.abspath(os.path.dirname(__file__))
+
+texttoimage_path = os.path.join(base_path, "data", "benchmark", "AA", "texttoimage", "AA_texttoimage_2024-11-19.csv")  
+audiototext_path = os.path.join(base_path, "data", "benchmark", "AA", "audiototext", "AA_audiototext_2024-11-19.csv")  
+
+
+
+# Nom de la colonne à harmoniser
+column_name = 'Provider'
+
+
+# Appel de la fonction
+harmonize_company_name(texttoimage_path , column_name)
+harmonize_company_name(audiototext_path, column_name)
