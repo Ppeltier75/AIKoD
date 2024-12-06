@@ -9,20 +9,20 @@ claude 3.5 sonnet (june '24),claude-sonnet-unknown-3.5-202406-unknown-unknown-un
 claude 3.5 sonnet (june),claude-sonnet-unknown-3.5-unknown-unknown-unknown-unknown-false
 claude 3.5 sonnet (oct '24),claude-sonnet-unknown-3.5-202410-unknown-unknown-unknown-false
 claude 3.5 sonnet (oct),claude-sonnet-unknown-3.5-unknown-unknown-unknown-unknown-false
-codestral,
+codestral,codestral-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
 codestral mamba,codestral-mamba-unknown-unknown-unknown-unknown-unknown-unknown-false
-command r,
-command r (aug '24),
-command r (mar '24),
+command r,commandr-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
+command r (aug '24),commandr-unknown-unknown-unknown-082024-unknown-unknown-unknown-false
+command r (mar '24),commandr-unknown-unknown-unknown-032024-unknown-unknown-unknown-false
 command r+,commandr-plus-unknown-unknown-unknown-unknown-unknown-unknown-false
 command r+ (apr '24),commandr-plus-unknown-unknown-unknown-202404-unknown-unknown-false
 command r+ (aug '24),commandr-plus-unknown-unknown-unknown-202408-unknown-unknown-false
-dbrx,
+dbrx,dbrx-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
 dbrx instruct,dbrx-instruct-unknown-unknown-unknown-unknown-unknown-unknown-false
 deepseek coder v2,deepseek-unknown-unknown-2-unknown-unknown-unknown-coder-false
-deepseek v2,
+deepseek v2,deepseek-unknown-unknown-2-unknown-unknown-unknown-unknown-false
 deepseek v2 chat,deepseek-unknown-unknown-2-unknown-unknown-unknown-chat-false
-deepseek v2.5,
+deepseek v2.5,deepseek-unknown-unknown-2.5-unknown-unknown-unknown-unknown-false
 gemini 1.0 pro,gemini-pro-unknown-1.0-unknown-unknown-unknown-unknown-false
 gemini 1.5 flash (may '24),gemini-flash-unknown-1.5-202405-unknown-unknown-unknown-false
 gemini 1.5 flash (may),gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false
