@@ -1,22 +1,16 @@
 name,id_name,2024-04-17,2024-07-03,2024-08-26,2024-09-27,2024-10-21
-bge large,bge-large-unknown-unknown-unknown-unknown-unknown-unknown-false,,0.1,0.13,0.13,0.10003000000000001
-bge-l,bge-large-unknown-unknown-unknown-unknown-unknown-unknown-false,0.1,,,,
+bge large,bge-large-unknown-unknown-unknown-unknown-unknown-unknown-false,0.1,0.1,0.13,0.13,0.10003
 dbrx,dbrx-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,2.25,0.75,0.75,0.75,0.7499800000000001
-gte,gte-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,0.0091,0.13,0.13,0.12999000000000002
-llama 2 13b,llama-unknown-unknown-2-unknown-13-unknown-unknown-false,,0.9499700000000001,,,
-llama 2 70b,llama-unknown-unknown-2-unknown-70-unknown-unknown-false,,0.035,0.5,0.5,0.5000100000000001
+gte,gte-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,0.0091,0.13,0.13,0.12999
+llama 2 13b,llama-unknown-unknown-2-unknown-13-unknown-unknown-false,0.95,0.94997,0.94997,0.94997,0.94997
+llama 2 70b,llama-unknown-unknown-2-unknown-70-unknown-unknown-false,2.0,0.035,0.5,0.5,0.5000100000000001
 llama 3 70b,llama-unknown-unknown-3-unknown-70-unknown-unknown-false,,,,,
 llama 3 8b,llama-unknown-unknown-3-unknown-8-unknown-unknown-false,,,,,
 llama 3.1 405b,llama-unknown-unknown-3.1-unknown-405-unknown-unknown-false,,,5.0,5.0,5.000030000000001
-llama 3.1 70b,llama-unknown-unknown-3.1-unknown-70-unknown-unknown-false,,,1.0,1.0,1.0000200000000001
+llama 3.1 70b,llama-unknown-unknown-3.1-unknown-70-unknown-unknown-false,,,1.0,1.0,1.00002
 llama 3.1 8b,llama-unknown-unknown-3.1-unknown-8-unknown-unknown-false,,,,,
 llama 3.2 1b,llama-unknown-unknown-3.2-unknown-1-unknown-unknown-false,,,,,
 llama 3.2 3b,llama-unknown-unknown-3.2-unknown-3-unknown-unknown-false,,,,,
-llama-2-13b,llama-unknown-unknown-2-unknown-13-unknown-unknown-false,0.95,,,,
-llama-2-70b,llama-unknown-unknown-2-unknown-70-unknown-unknown-false,2.0,,,,
-mixtral 8x7b,mixtral-unknown-unknown-unknown-unknown-8x7-unknown-unknown-false,,0.035,0.5,0.5,0.5000100000000001
-mixtral-8-7b,mixtral-unknown-unknown-unknown-unknown-8x7-unknown-unknown-false,1.5,,,,
-mpt 30b,mpt-unknown-unknown-unknown-unknown-30-unknown-unknown-false,,1.0,1.0,1.0,1.0000200000000001
-mpt 7b,mpt-unknown-unknown-unknown-unknown-7-unknown-unknown-false,,0.5,0.5,0.5,0.5000100000000001
-mpt-30b,mpt-unknown-unknown-unknown-unknown-30-unknown-unknown-false,1.0,,,,
-mpt-7b,mpt-unknown-unknown-unknown-unknown-7-unknown-unknown-false,0.5,,,,
+mixtral 8x7b,mixtral-unknown-unknown-unknown-unknown-8x7-unknown-unknown-false,1.5,0.035,0.5,0.5,0.5000100000000001
+mpt 30b,mpt-unknown-unknown-unknown-unknown-30-unknown-unknown-false,1.0,1.0,1.0,1.0,1.00002
+mpt 7b,mpt-unknown-unknown-unknown-unknown-7-unknown-unknown-false,0.5,0.5,0.5,0.5,0.5000100000000001

@@ -54,7 +54,7 @@ def main():
         raise ValueError("Clé API OpenAI introuvable. Vérifiez votre fichier .env.")
 
     # Répertoires pour les CSV et les fichiers exemples
-    csv_directory = os.path.join(base_path, "data", "id_name", "AIKoD")
+    csv_directory = os.path.join(base_path, "data", "id_name", "benchmark", "HF")
     examples_directory = os.path.join(base_path, "data", "id_name", "exemple")
 
     # Appeler la fonction pour générer les id_name
@@ -70,7 +70,7 @@ from dotenv import load_dotenv
 from function_utils.utils_cleaning import remove_id_names_with_wrong_segments
 
 base_path = os.path.abspath(os.path.dirname(__file__))
-csv_path = os.path.join(base_path, "data", "id_name", "AIKoD", "AIKoD_multimodal_idname.csv")
+csv_path = os.path.join(base_path, "data", "id_name", "benchmark", "AA", "AA_text_idname.csv")
 expected_segments = 9  # Vous pouvez modifier ce nombre selon vos besoins
 
 remove_id_names_with_wrong_segments(csv_path, expected_segments)
@@ -363,7 +363,7 @@ if __name__ == "__main__":
 
 # %%
 import os 
-from function_utils.utils_api import Adapting_idname_aikod
+from function_utils.utils_api_add_infos import Adapting_idname_aikod
 
 json_path = r'C:\Users\piwip\OneDrive\Documents\OCDE\AIKoD\data\API\AIKoD_API_base_v0.json'
 Adapting_idname_aikod(json_path)

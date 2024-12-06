@@ -1,38 +1,38 @@
 name,id_name
 aya expanse 32b,aya-unknown-unknown-unknown-unknown-32-unknown-unknown-false
 aya expanse 8b,aya-unknown-unknown-unknown-unknown-8-unknown-unknown-false
-claude 3 haiku,claude-haiku-unknown-3-unknown-unknown-unknown-false
-claude 3 opus,claude-opus-unknown-3-unknown-unknown-unknown-false
-claude 3 sonnet,claude-sonnet-unknown-3-unknown-unknown-unknown-false
-claude 3.5 haiku,claude-haiku-unknown-3.5-unknown-unknown-unknown-false
+claude 3 haiku,claude-haiku-unknown-3-unknown-unknown-unknown-unknown-false
+claude 3 opus,claude-opus-unknown-3-unknown-unknown-unknown-unknown-false
+claude 3 sonnet,claude-sonnet-unknown-3-unknown-unknown-unknown-unknown-false
+claude 3.5 haiku,claude-haiku-unknown-3.5-unknown-unknown-unknown-unknown-false
 claude 3.5 sonnet (june '24),claude-sonnet-unknown-3.5-202406-unknown-unknown-unknown-false
-claude 3.5 sonnet (june),claude-sonnet-unknown-3.5-unknown-unknown-unknown-false
+claude 3.5 sonnet (june),claude-sonnet-unknown-3.5-unknown-unknown-unknown-unknown-false
 claude 3.5 sonnet (oct '24),claude-sonnet-unknown-3.5-202410-unknown-unknown-unknown-false
-claude 3.5 sonnet (oct),claude-sonnet-unknown-3.5-unknown-unknown-unknown-false
-codestral,codestral-unknown-unknown-unknown-unknown-unknown-unknown-false
+claude 3.5 sonnet (oct),claude-sonnet-unknown-3.5-unknown-unknown-unknown-unknown-false
+codestral,
 codestral mamba,codestral-mamba-unknown-unknown-unknown-unknown-unknown-unknown-false
-command r,commandr-unknown-unknown-unknown-unknown-unknown-unknown-false
-command r (aug '24),commandr-unknown-unknown-unknown-202408-unknown-unknown-false
-command r (mar '24),commandr-unknown-unknown-unknown-202403-unknown-unknown-false
+command r,
+command r (aug '24),
+command r (mar '24),
 command r+,commandr-plus-unknown-unknown-unknown-unknown-unknown-unknown-false
 command r+ (apr '24),commandr-plus-unknown-unknown-unknown-202404-unknown-unknown-false
 command r+ (aug '24),commandr-plus-unknown-unknown-unknown-202408-unknown-unknown-false
-dbrx,dbrx-unknown-unknown-unknown-unknown-unknown-unknown-false
+dbrx,
 dbrx instruct,dbrx-instruct-unknown-unknown-unknown-unknown-unknown-unknown-false
-deepseek coder v2,deepseek-coder-unknown-2-unknown-unknown-unknown-false
-deepseek v2,deepseek-unknown-unknown-2-unknown-unknown-unknown-false
-deepseek v2 chat,deepseek-unknown-unknown-2-unknown-unknown-chat-false
-deepseek v2.5,deepseek-unknown-unknown-2.5-unknown-unknown-unknown-false
-gemini 1.0 pro,gemini-pro-unknown-1.0-unknown-unknown-unknown-false
+deepseek coder v2,deepseek-unknown-unknown-2-unknown-unknown-unknown-coder-false
+deepseek v2,
+deepseek v2 chat,deepseek-unknown-unknown-2-unknown-unknown-unknown-chat-false
+deepseek v2.5,
+gemini 1.0 pro,gemini-pro-unknown-1.0-unknown-unknown-unknown-unknown-false
 gemini 1.5 flash (may '24),gemini-flash-unknown-1.5-202405-unknown-unknown-unknown-false
-gemini 1.5 flash (may),gemini-flash-unknown-1.5-unknown-unknown-unknown-false
+gemini 1.5 flash (may),gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false
 gemini 1.5 flash (sep '24),gemini-flash-unknown-1.5-202409-unknown-unknown-unknown-false
-gemini 1.5 flash (sep),gemini-flash-unknown-1.5-unknown-unknown-unknown-false
+gemini 1.5 flash (sep),gemini-flash-unknown-1.5-unknown-unknown-unknown-unknown-false
 gemini 1.5 flash 8b,gemini-flash-unknown-1.5-unknown-8-unknown-unknown-false
 gemini 1.5 pro (may '24),gemini-pro-unknown-1.5-202405-unknown-unknown-unknown-false
-gemini 1.5 pro (may),gemini-pro-unknown-1.5-unknown-unknown-unknown-false
+gemini 1.5 pro (may),gemini-pro-unknown-1.5-unknown-unknown-unknown-unknown-false
 gemini 1.5 pro (sep '24),gemini-pro-unknown-1.5-202409-unknown-unknown-unknown-false
-gemini 1.5 pro (sep),gemini-pro-unknown-1.5-unknown-unknown-unknown-false
+gemini 1.5 pro (sep),gemini-pro-unknown-1.5-unknown-unknown-unknown-unknown-false
 gemma 2 27b,gemma-unknown-unknown-unknown-unknown-27-unknown-unknown-false
 gemma 2 9b,gemma-unknown-unknown-unknown-unknown-9-unknown-unknown-false
 gpt 3.5 turbo,gpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-false
@@ -43,9 +43,9 @@ gpt 4o,gpt-4o-unknown-unknown-unknown-unknown-unknown-unknown-false
 gpt 4o (aug '24),gpt-4o-unknown-unknown-202408-unknown-unknown-unknown-false
 gpt 4o (may '24),gpt-4o-unknown-unknown-202405-unknown-unknown-unknown-false
 gpt 4o mini,gpt-4o-mini-unknown-unknown-unknown-unknown-unknown-false
-grok beta,grok-unknown-unknown-unknown-unknown-unknown-unknown-false
-jamba 1.5 large,jamba-large-unknown-1.5-unknown-unknown-unknown-false
-jamba 1.5 mini,jamba-mini-unknown-1.5-unknown-unknown-unknown-false
+grok beta,grok-beta-unknown-unknown-unknown-unknown-unknown-unknown-false
+jamba 1.5 large,jamba-large-unknown-1.5-unknown-unknown-unknown-unknown-false
+jamba 1.5 mini,jamba-mini-unknown-1.5-unknown-unknown-unknown-unknown-false
 jamba instruct,jamba-instruct-unknown-unknown-unknown-unknown-unknown-unknown-false
 llama 2 chat 13b,llama-unknown-unknown-2-unknown-13-unknown-chat-false
 llama 2 chat 70b,llama-unknown-unknown-2-unknown-70-unknown-chat-false
@@ -89,7 +89,7 @@ mixtral 8x7b instruct,mixtral-instruct-unknown-unknown-unknown-8x7-unknown-unkno
 o1 mini,o1-mini-unknown-unknown-unknown-unknown-unknown-unknown-false
 o1 preview,o1-preview-unknown-unknown-unknown-unknown-unknown-unknown-false
 openchat 3.5,openchat-unknown-unknown-3.5-unknown-unknown-unknown-unknown-false
-openchat 3.5 (1210),openchat-unknown-unknown-3.5-20231210-unknown-unknown-unknown-false
+openchat 3.5 (1210),openchat-unknown-unknown-3.5-202312-unknown-unknown-unknown-false
 phi 3 medium 14b,phi-medium-unknown-3-unknown-14-unknown-unknown-false
 phi 3 medium instruct 14b,phi-medium-unknown-3-unknown-14-unknown-instruct-false
 pixtral 12b,pixtral-unknown-unknown-unknown-unknown-12-unknown-unknown-false

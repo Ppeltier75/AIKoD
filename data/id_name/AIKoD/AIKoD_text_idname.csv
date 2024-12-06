@@ -85,7 +85,7 @@ claude 3 sonnet,claude-sonnet-unknown-3-unknown-unknown-unknown-unknown-false
 claude 3.5 sonnet,claude-sonnet-unknown-3.5-unknown-unknown-unknown-unknown-false
 claude instant,claude-instant-unknown-unknown-unknown-unknown-unknown-unknown-false
 claude instant 1.2,claude-instant-unknown-1.2-unknown-unknown-unknown-unknown-false
-codellama (13b),llama-unknown-unknown-unknown-unknown-13-unknown-code-false
+codellama (13b),codellama-unknown-unknown-unknown-unknown-13-unknown-code-false
 codellama (7b),codellama-unknown-unknown-unknown-unknown-7-unknown-code-false
 codellama 13b instruct,codellama-unknown-instruct-unknown-unknown-13-unknown-code-false
 codellama 70b instruct,codellama-unknown-instruct-unknown-unknown-70-unknown-code-false
@@ -305,8 +305,8 @@ jurassic mid,jurassic-mid-unknown-unknown-unknown-unknown-unknown-unknown-false
 jurassic ultra,jurassic-ultra-unknown-unknown-unknown-unknown-unknown-unknown-false
 koala (13b),koala-unknown-unknown-unknown-unknown-13-unknown-unknown-false
 koala (7b),koala-unknown-unknown-unknown-unknown-7-unknown-unknown-false
-lama 2 chat (13b),lama-unknown-unknown-2-unknown-13-unknown-chat-false
-lama 2 chat (70b),lama-unknown-unknown-2-unknown-70-unknown-chat-false
+lama 2 chat (13b),llama-unknown-unknown-2-unknown-13-unknown-chat-false
+lama 2 chat (70b),llama-unknown-unknown-2-unknown-70-unknown-chat-false
 lemur basic,lemur-basic-unknown-unknown-unknown-unknown-unknown-unknown-false
 liquid: lfm 40b moe,lfm-moe-unknown-unknown-unknown-40-unknown-unknown-false
 liquid: lfm 40b moe (free),lfm-moe-unknown-unknown-unknown-40-unknown-unknown-false
@@ -501,8 +501,8 @@ mistral 7b instruct v0.3,mistral-instruct-unknown-0.3-unknown-7-unknown-unknown-
 mistral 7b openorca,mistral-openorca-unknown-unknown-unknown-7-unknown-unknown-false
 mistral 7b v0.1,mistral-unknown-unknown-0.1-unknown-7-unknown-unknown-false
 mistral 7b v0.2,mistral-unknown-unknown-0.2-unknown-7-unknown-unknown-false
-mistral 7b v2,mistral-unknown-unknown-2-unknown-7-unknown-unknown-false
-mistral 7b v3,mistral-unknown-unknown-3-unknown-7-unknown-unknown-false
+mistral 7b v2,mistral-unknown-unknown-0.2-unknown-7-unknown-unknown-false
+mistral 7b v3,mistral-unknown-unknown-0.2-unknown-7-unknown-unknown-false
 mistral instruct v0.1 (7b),mistral-instruct-unknown-0.1-unknown-7-unknown-unknown-false
 mistral instruct v0.2 (7b),mistral-instruct-unknown-0.2-unknown-7-unknown-unknown-false
 mistral large,mistral-large-unknown-unknown-unknown-unknown-unknown-unknown-false
@@ -818,28 +818,28 @@ zephyr 7b beta awq,zephyr-beta-awq-unknown-unknown-7-unknown-unknown-false
 zephyr 7b ß,zephyr-unknown-unknown-unknown-unknown-7-unknown-unknown-false
 zephyr 8x 22b,zephyr-unknown-unknown-unknown-unknown-8x22-unknown-unknown-false
 code interpreter,code-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
-code llama (34b),code-unknown-unknown-unknown-unknown-34-unknown-unknown-false
-code llama (70b),code-unknown-unknown-unknown-unknown-70-unknown-unknown-false
-code llama 13b,code-unknown-unknown-unknown-unknown-13-unknown-unknown-false
-code llama 13b instruct,llama-unknown-unknown-unknown-unknown-13-unknown-instruct-false
-code llama 13b python,llama-unknown-unknown-unknown-unknown-13-unknown-python-false
-code llama 34b,code-unknown-unknown-unknown-unknown-34-unknown-unknown-false
-code llama 34b instruct,llama-unknown-unknown-unknown-unknown-34-unknown-instruct-false
-code llama 34b python,llama-unknown-unknown-unknown-unknown-34-unknown-python-false
-code llama 70b,code-unknown-unknown-unknown-unknown-70-unknown-unknown-false
-code llama 70b instruct,llama-unknown-unknown-unknown-unknown-70-unknown-instruct-false
-code llama 70b python,llama-unknown-unknown-unknown-unknown-70-unknown-python-false
-code llama 7b,code-unknown-unknown-unknown-unknown-7-unknown-unknown-false
-code llama 7b instruct,llama-unknown-unknown-unknown-unknown-7-unknown-instruct-false
-code llama 7b python,llama-unknown-unknown-unknown-unknown-7-unknown-python-false
-code llama instruct (13b),llama-unknown-unknown-unknown-unknown-13-unknown-instruct-false
-code llama instruct (34b),llama-unknown-unknown-unknown-unknown-34-unknown-instruct-false
-code llama instruct (70b),llama-unknown-unknown-unknown-unknown-70-unknown-instruct-false
-code llama instruct (7b),llama-unknown-unknown-unknown-unknown-7-unknown-instruct-false
-code llama python (13b),llama-unknown-unknown-unknown-unknown-13-unknown-python-false
-code llama python (34b),llama-unknown-unknown-unknown-unknown-34-unknown-python-false
-code llama python (70b),llama-unknown-unknown-unknown-unknown-70-unknown-python-false
-code llama python (7b),llama-unknown-unknown-unknown-unknown-7-unknown-python-false
+code llama (34b),codellama-unknown-unknown-unknown-unknown-34-unknown-unknown-false
+code llama (70b),codellama-unknown-unknown-unknown-unknown-70-unknown-unknown-false
+code llama 13b,codellama-unknown-unknown-unknown-unknown-13-unknown-unknown-false
+code llama 13b instruct,codellama-unknown-unknown-unknown-unknown-13-unknown-instruct-false
+code llama 13b python,codellama-unknown-unknown-unknown-unknown-13-unknown-python-false
+code llama 34b,codellama-unknown-unknown-unknown-unknown-34-unknown-unknown-false
+code llama 34b instruct,codellama-unknown-unknown-unknown-unknown-34-unknown-instruct-false
+code llama 34b python,codellama-unknown-unknown-unknown-unknown-34-unknown-python-false
+code llama 70b,codellama-unknown-unknown-unknown-unknown-70-unknown-unknown-false
+code llama 70b instruct,codellama-unknown-unknown-unknown-unknown-70-unknown-instruct-false
+code llama 70b python,codellama-unknown-unknown-unknown-unknown-70-unknown-python-false
+code llama 7b,codellama-unknown-unknown-unknown-unknown-7-unknown-unknown-false
+code llama 7b instruct,codellama-unknown-unknown-unknown-unknown-7-unknown-instruct-false
+code llama 7b python,codellama-unknown-unknown-unknown-unknown-7-unknown-python-false
+code llama instruct (13b),codellama-unknown-unknown-unknown-unknown-13-unknown-instruct-false
+code llama instruct (34b),codellama-unknown-unknown-unknown-unknown-34-unknown-instruct-false
+code llama instruct (70b),codellama-unknown-unknown-unknown-unknown-70-unknown-instruct-false
+code llama instruct (7b),codellama-unknown-unknown-unknown-unknown-7-unknown-instruct-false
+code llama python (13b),codellama-unknown-unknown-unknown-unknown-13-unknown-python-false
+code llama python (34b),codellama-unknown-unknown-unknown-unknown-34-unknown-python-false
+code llama python (70b),codellama-unknown-unknown-unknown-unknown-70-unknown-python-false
+code llama python (7b),codellama-unknown-unknown-unknown-unknown-7-unknown-python-false
 code qwen 1.5 7b,qwen-unknown-unknown-1.5-unknown-7-unknown-unknown-false
 codegeex 4,codegeex-unknown-unknown-4-unknown-unknown-unknown-unknown-false
 codegemma 2b,codegemma-unknown-unknown-unknown-2-unknown-unknown-unknown-false
@@ -914,10 +914,10 @@ nousresearch/nous hermes llama2 13b,llama2-unknown-unknown-2-unknown-13-unknown-
 nvidia: llama 3.1 nemotron 70b instruct,llama-nemotron-unknown-3.1-unknown-70-unknown-instruct-false
 openai 3.5 turbo instruct,openai-unknown-unknown-3.5-unknown-unknown-unknown-instruct-false
 openai gpt 3_5 turbo,gpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-false
-phind code llama v2 (34b),llama-unknown-unknown-2-unknown-34-unknown-unknown-false
-phind codellama 34b python v1,codellama-unknown-unknown-unknown-34-unknown-unknown-python-false
-phind codellama 34b v1,codellama-unknown-unknown-1-unknown-34-unknown-unknown-false
-phind codellama 34b v2,codellama-unknown-unknown-2-unknown-34-unknown-unknown-false
+phind code llama v2 (34b),codellama-phind-unknown-2-unknown-34-unknown-unknown-false
+phind codellama 34b python v1,codellama-phind-unknown-unknown-34-unknown-unknown-python-false
+phind codellama 34b v1,codellama-phind-unknown-1-unknown-34-unknown-unknown-false
+phind codellama 34b v2,codellama-phind-unknown-2-unknown-34-unknown-unknown-false
 pre trained named entity recognition model,unknown-unknown-unknown-unknown-unknown-unknown-false
 pre trained translation model,unknown-unknown-unknown-unknown-unknown-unknown-false
 qwen/qwen 2.5 72b instruct,qwen-unknown-unknown-2.5-unknown-72-unknown-instruct-false

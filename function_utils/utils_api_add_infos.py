@@ -518,30 +518,53 @@ def add_provider_infos_audiototext(json_path):
     print("La fonction add_provider_infos_audiototext s'est exécutée avec succès.")
 
 
-
-
-
-
+import os
+import json
+from datetime import datetime
+from collections import defaultdict
 
 def Adapting_idname_aikod(json_path):
     """
-    Adapte le champ 'id_name' des modèles de type 'text' dans le fichier JSON spécifié.
-    Si le 4ème segment de 'id_name' est 'unknown', la fonction cherche les modèles similaires
-    avec une version numérique dans le 4ème segment et met à jour 'id_name' avec la version
-    la plus élevée trouvée.
+    Met à jour les champs 'id_name' des modèles de types 'text', 'texttoimage', et 'audiototext'
+    dans le fichier JSON spécifié. Si le 4ème segment de 'id_name' est 'unknown', la fonction
+    recherche les modèles similaires avec des versions connues et met à jour le 4ème segment
+    avec la version la plus élevée trouvée pour des dates similaires ou antérieures.
+
+    Seuls les modèles dont le 'id_name' a été modifié sont affichés.
 
     :param json_path: Chemin vers le fichier JSON à modifier.
     """
-    
-    def split_id_name(id_name):
-        """Sépare l'id_name en segments."""
-        return id_name.split('-')
-    
-    def join_id_name(segments):
-        """Rejoint les segments en une chaîne id_name."""
-        return '-'.join(segments)
-    
-    # Charger le fichier JSON
+    # Définir une fonction pour générer une clé basée sur 'id_name' selon le type
+    def generate_key(id_name, model_type):
+        segments = id_name.split('-')
+        if model_type == 'text':
+            # Remplacer les segments 4 et 5 par 'unknown'
+            if len(segments) >= 5:
+                segments_key = segments.copy()
+                segments_key[3] = 'unknown'  # 4ème segment
+                segments_key[4] = 'unknown'  # 5ème segment
+            else:
+                # Remplir avec 'unknown' jusqu'à 5 segments
+                segments_key = segments.copy()
+                while len(segments_key) < 5:
+                    segments_key.append('unknown')
+                segments_key[3] = 'unknown'
+                segments_key[4] = 'unknown'
+        else:  # 'texttoimage' ou 'audiototext'
+            # Remplacer uniquement le 4ème segment par 'unknown'
+            if len(segments) >= 4:
+                segments_key = segments.copy()
+                segments_key[3] = 'unknown'  # 4ème segment
+            else:
+                # Remplir avec 'unknown' jusqu'à 4 segments
+                segments_key = segments.copy()
+                while len(segments_key) < 4:
+                    segments_key.append('unknown')
+                segments_key[3] = 'unknown'
+        key = '-'.join(segments_key)
+        return key
+
+    # Charger les données depuis le fichier JSON
     try:
         with open(json_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
@@ -556,94 +579,122 @@ def Adapting_idname_aikod(json_path):
         print(f"Erreur lors du chargement du fichier JSON {json_path} : {e}")
         return
 
-    # Préparer une liste pour indexer les modèles par provider et base_id_name
-    # base_id_name est l'id_name avec les segments 4 et 5 remplacés par 'unknown'
-    model_index = {}
+    # Créer un mapping des clés aux versions disponibles avec leurs dates
+    key_to_versions = defaultdict(list)
     for model in data:
-        if model.get('type') != 'text':
+        model_type = model.get('type', '').strip().lower()
+        if model_type not in ['text', 'texttoimage', 'audiototext']:
             continue
+
         id_name = model.get('id_name', '').strip()
         if not id_name:
             continue
-        segments = split_id_name(id_name)
-        if len(segments) < 4:
-            continue  # S'assurer qu'il y a au moins 4 segments
-        provider = model.get('provider', '').strip().lower()
-        # Créer la base_id_name en remplaçant le 4ème segment par 'unknown'
-        base_segments = segments.copy()
-        base_segments[3] = 'unknown'
-        base_id_name = join_id_name(base_segments)
-        key = (provider, base_id_name)
-        if key not in model_index:
-            model_index[key] = []
-        # Inclure la date pour la comparaison
-        date_str = model.get('date', '').strip()
-        try:
-            date_obj = datetime.strptime(date_str, '%Y-%m-%d').date()
-        except ValueError:
-            date_obj = None
-        model_index[key].append({
-            'model': model,
-            'version': segments[3],
-            'date': date_obj
-        })
-    
-    # Parcourir les modèles pour adapter les id_name
-    for model in data:
-        if model.get('type') != 'text':
-            continue
-        id_name = model.get('id_name', '').strip()
-        if not id_name:
-            continue
-        segments = split_id_name(id_name)
-        if len(segments) < 4:
-            continue  # S'assurer qu'il y a au moins 4 segments
-        # Vérifier si le 4ème segment est 'unknown'
-        if segments[3].lower() != 'unknown':
-            continue
-        provider = model.get('provider', '').strip().lower()
-        if not provider:
-            continue
-        # Créer la base_id_name pour la recherche
-        base_segments = segments.copy()
-        base_segments[3] = 'unknown'
-        base_id_name = join_id_name(base_segments)
-        key = (provider, base_id_name)
-        if key not in model_index:
-            print(f"Aucune version trouvée pour le modèle avec id_name '{id_name}' et provider '{provider}'.")
-            continue
-        # Obtenir la date du modèle actuel
-        current_date_str = model.get('date', '').strip()
-        try:
-            current_date = datetime.strptime(current_date_str, '%Y-%m-%d').date()
-        except ValueError:
-            current_date = None
-        if not current_date:
-            print(f"Date invalide pour le modèle avec id_name '{id_name}'.")
-            continue
-        # Chercher les versions numériques avant ou égales à la date actuelle
-        possible_versions = []
-        for entry in model_index[key]:
-            version_str = entry['version']
-            entry_date = entry['date']
-            if entry_date and entry_date <= current_date:
+
+        key = generate_key(id_name, model_type)
+        segments = id_name.split('-')
+
+        if model_type == 'text':
+            # Pour 'text', considérer les segments 4 et 5
+            if len(segments) >= 5:
+                version_segment = segments[3]  # 4ème segment
+            else:
+                version_segment = 'unknown'  # Si moins de 5 segments
+
+            if version_segment != 'unknown':
                 try:
-                    version_num = float(version_str)
-                    possible_versions.append(version_num)
+                    version = float(version_segment)
                 except ValueError:
-                    continue  # Ignorer les versions non numériques
-        if not possible_versions:
-            print(f"Aucune version numérique trouvée pour le modèle avec id_name '{id_name}' et provider '{provider}' avant la date {current_date}.")
+                    # Ignorer les segments de version non numériques
+                    continue
+
+                # Parser la date du modèle
+                date_str = model.get('date', '').strip()
+                try:
+                    date_obj = datetime.strptime(date_str, '%Y-%m-%d') if date_str else None
+                except ValueError:
+                    # Ignorer les modèles avec un format de date invalide
+                    date_obj = None
+
+                key_to_versions[key].append((version, date_obj))
+        else:  # 'texttoimage' ou 'audiototext'
+            # Pour ces types, considérer uniquement le 4ème segment
+            if len(segments) >= 4:
+                version_segment = segments[3]  # 4ème segment
+            else:
+                version_segment = 'unknown'
+
+            if version_segment != 'unknown':
+                try:
+                    version = float(version_segment)
+                except ValueError:
+                    # Ignorer les segments de version non numériques
+                    continue
+
+                # Parser la date du modèle
+                date_str = model.get('date', '').strip()
+                try:
+                    date_obj = datetime.strptime(date_str, '%Y-%m-%d') if date_str else None
+                except ValueError:
+                    # Ignorer les modèles avec un format de date invalide
+                    date_obj = None
+
+                key_to_versions[key].append((version, date_obj))
+
+    # Déterminer la version maximale par clé en fonction des dates
+    key_to_max_version = {}
+    for key, versions_dates in key_to_versions.items():
+        # Trier les versions par date croissante
+        sorted_versions = sorted(
+            versions_dates, 
+            key=lambda x: (x[1] if x[1] else datetime.min, x[0])
+        )
+        max_version = None
+        for version, date_obj in sorted_versions:
+            if max_version is None or version > max_version:
+                max_version = version
+        key_to_max_version[key] = max_version
+
+    # Mettre à jour les modèles avec segment 4 'unknown' en utilisant la version maximale trouvée
+    for model in data:
+        model_type = model.get('type', '').strip().lower()
+        if model_type not in ['text', 'texttoimage', 'audiototext']:
             continue
-        # Trouver la version la plus élevée
-        max_version = max(possible_versions)
-        # Mettre à jour le 4ème segment de l'id_name
-        segments[3] = str(max_version)
-        new_id_name = join_id_name(segments)
-        print(f"Mise à jour de 'id_name' de '{id_name}' à '{new_id_name}' pour le modèle '{model.get('model_name')}'.")
-        model['id_name'] = new_id_name
-    
-    # Écrire les données mises à jour dans le fichier JSON
+
+        id_name = model.get('id_name', '').strip()
+        if not id_name:
+            continue
+
+        segments = id_name.split('-')
+        if len(segments) < 4:
+            continue
+
+        # Vérifier si le 4ème segment est 'unknown'
+        if model_type == 'text':
+            if len(segments) >= 4 and segments[3] != 'unknown':
+                continue  # Ignorer les modèles dont le 4ème segment n'est pas 'unknown'
+        else:  # 'texttoimage' ou 'audiototext'
+            if segments[3] != 'unknown':
+                continue  # Ignorer les modèles dont le 4ème segment n'est pas 'unknown'
+
+        key = generate_key(id_name, model_type)
+        max_version = key_to_max_version.get(key)
+
+        if max_version is not None:
+            new_id_name_segments = segments.copy()
+            new_id_name_segments[3] = str(max_version)
+            new_id_name = '-'.join(new_id_name_segments)
+
+            if new_id_name != id_name:
+                model['id_name'] = new_id_name
+                print(f"Modèle '{model.get('model_name')}' id_name mis à jour de '{id_name}' à '{new_id_name}'")
+
+    # Supprimer les champs temporaires commençant par '_parsed_'
+    for model in data:
+        keys_to_remove = [key for key in model if key.startswith('_parsed_')]
+        for key in keys_to_remove:
+            del model[key]
+
+    # Écrire les données mises à jour dans le même fichier JSON
     try:
         with open(json_path, 'w', encoding='utf-8') as f:
             json.dump(data, f, ensure_ascii=False, indent=4)
@@ -651,5 +702,5 @@ def Adapting_idname_aikod(json_path):
     except Exception as e:
         print(f"Erreur lors de l'enregistrement du fichier JSON mis à jour : {e}")
         return
-    
+
     print("La fonction Adapting_idname_aikod s'est exécutée avec succès.")

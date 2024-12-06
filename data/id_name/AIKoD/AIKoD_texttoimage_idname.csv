@@ -260,43 +260,43 @@ stable diffusion xl lightning (50 steps 512x512),stablediffusion-xl-lightning-1-
 stable image core,stableimage-core-unknown-1-unknown-unknown-false-unknown-false
 stable image ultra,stableimage-ultra-unknown-1-unknown-unknown-false-unknown-false
 ultra,ultra-unknown-unknown-1-unknown-unknown-false-unknown-false
-flux 1.1 [pro],flux-pro-unknown-1.1-unknown-unknown-False
-flux 1.1 [pro] ultra,flux-pro-ultra-1.1-unknown-unknown-False
-flux.1 [dev],flux-dev-unknown-1-unknown-unknown-False
-amazon titan image generator v1 512,amazontitan-unknown-unknown-1-512x512-unknown-False
-amazon titan image generator v1 512 hd,amazontitan-unknown-unknown-1-512x512-unknown-True
-amazon titan image generator v2 1024,amazontitan-unknown-unknown-2-1024x1024-unknown-False
-amazon titan image generator v2 1024 hd,amazontitan-unknown-unknown-2-1024x1024-unknown-True
-amazon titan image generator v2 512,amazontitan-unknown-unknown-2-512x512-unknown-False
-amazon titan image generator v2 512 hd,amazontitan-unknown-unknown-2-512x512-unknown-True
-stable diffusion 1.5 30 steps 512 pixels,stablediffusion-unknown-unknown-1.5-512x512-30-False
-stable diffusion 1.5 hd 30 steps 1024 pixels,stablediffusion-unknown-unknown-1.5-1024x1024-30-True
-stable diffusion 1.6 30 steps 512 pixels,stablediffusion-unknown-unknown-1.6-512x512-30-False
-stable diffusion 1.6 hd 30 steps 1024 pixels,stablediffusion-unknown-unknown-1.6-1024x1024-30-True
-stable diffusion 2.1 30 steps 512 pixels,stablediffusion-unknown-unknown-2.1-512x512-30-False
-stable diffusion 2.1 hd 30 steps 1024 pixels,stablediffusion-unknown-unknown-2.1-1024x1024-30-True
-stable diffusion 3 & 3.5 large,stablediffusion-large-unknown-3-unknown-unknown-False
-stable diffusion 3 & 3.5 large turbo,stablediffusion-large-turbo-3-unknown-unknown-False
-stable diffusion 3 & 3.5 medium,stablediffusion-medium-unknown-3-unknown-unknown-False
-stable diffusion x4 latent upscaler 512 pixels,stablediffusion-x4-unknown-unknown-unknown-512x512-False
-stable diffusion xl 0.8 30 steps 512 pixels,stablediffusion-xl-unknown-0.8-512x512-30-False
-stable diffusion xl 0.9 30 steps 1024 pixels,stablediffusion-xl-unknown-0.9-1024x1024-30-False
-stable diffusion xl 1.0 1024 30 steps,stablediffusion-xl-unknown-1.0-1024x1024-30-False
-stable diffusion xl 1.0 30 steps 1024 pixels,stablediffusion-xl-unknown-1.0-1024x1024-30-False
-dall·e 2 (1024x1024),dalle-unknown-unknown-2-1024x1024-unknown-False
-dall·e 2 (256x256),dalle-unknown-unknown-2-256x256-unknown-False
-dall·e 2 (512x512),dalle-unknown-unknown-2-512x512-unknown-False
-dall·e 2 1024,dalle-unknown-unknown-2-1024x1024-unknown-False
-dall·e 2 256,dalle-unknown-unknown-2-256x256-unknown-False
-dall·e 2 512,dalle-unknown-unknown-2-512x512-unknown-False
-dall·e 3 1024,dalle-unknown-unknown-3-1024x1024-unknown-False
-dall·e 3 1024 hd,dalle-unknown-unknown-3-1024x1024-unknown-True
-dall·e 3 1792,dalle-unknown-unknown-3-1792x1792-unknown-False
-dall·e 3 1792 hd,dalle-unknown-unknown-3-1792x1792-unknown-True
-dall·e 3 hd (1024x1024),dalle-unknown-unknown-3-1024x1024-unknown-True
-dall·e 3 hd (1024x1792),dalle-unknown-unknown-3-1024x1792-unknown-True
-dall·e 3 standard (1024x1024),dalle-unknown-unknown-3-1024x1024-unknown-False
-dall·e 3 standard (256x256),dalle-unknown-unknown-3-256x256-unknown-False
-dall·e 3 standard (512x512),dalle-unknown-unknown-3-512x512-unknown-False
-dall e,dalle-unknown-unknown-unknown-unknown-unknown-False
-stabilityai stable difussion xl,stablediffusion-xl-unknown-unknown-unknown-unknown-False
+flux 1.1 [pro],flux-pro-unknown-1.1-unknown-unknown-false-unknown-false
+flux 1.1 [pro] ultra,flux-pro-ultra-1.1-unknown-unknown-false-unknown-false
+flux.1 [dev],flux-dev-unknown-1-unknown-unknown-false-unknown-false
+amazon titan image generator v1 512,amazontitan-unknown-unknown-1-512x512-unknown-false-unknown-false
+amazon titan image generator v1 512 hd,amazontitan-unknown-unknown-1-512x512-unknown-true-unknown-false
+amazon titan image generator v2 1024,amazontitan-unknown-unknown-2-1024x1024-unknown-false-unknown-false
+amazon titan image generator v2 1024 hd,amazontitan-unknown-unknown-2-1024x1024-unknown-true-unknown-false
+amazon titan image generator v2 512,amazontitan-unknown-unknown-2-512x512-unknown-false-unknown-false
+amazon titan image generator v2 512 hd,amazontitan-unknown-unknown-2-512x512-unknown-true-unknown-false
+stable diffusion 1.5 30 steps 512 pixels,stablediffusion-unknown-unknown-1.5-512x512-30-false-unknown-false
+stable diffusion 1.5 hd 30 steps 1024 pixels,stablediffusion-unknown-unknown-1.5-1024x1024-30-false-unknown-true
+stable diffusion 1.6 30 steps 512 pixels,stablediffusion-unknown-unknown-1.6-512x512-30-false-unknown-false
+stable diffusion 1.6 hd 30 steps 1024 pixels,stablediffusion-unknown-unknown-1.6-1024x1024-30-false-unknown-true
+stable diffusion 2.1 30 steps 512 pixels,stablediffusion-unknown-unknown-2.1-512x512-30-false-unknown-false
+stable diffusion 2.1 hd 30 steps 1024 pixels,stablediffusion-unknown-unknown-2.1-1024x1024-30-false-unknown-true
+stable diffusion 3 & 3.5 large,stablediffusion-large-unknown-3-unknown-unknown-false-unknown-false
+stable diffusion 3 & 3.5 large turbo,stablediffusion-large-turbo-3-unknown-unknown-false-unknown-false
+stable diffusion 3 & 3.5 medium,stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false
+stable diffusion x4 latent upscaler 512 pixels,stablediffusion-unknown-unknown-unknown-512x512-unknown-false-unknown-false
+stable diffusion xl 0.8 30 steps 512 pixels,stablediffusion-xl-unknown-0.8-512x512-30-false-unknown-false
+stable diffusion xl 0.9 30 steps 1024 pixels,stablediffusion-xl-unknown-0.9-1024x1024-30-false-unknown-false
+stable diffusion xl 1.0 1024 30 steps,stablediffusion-xl-unknown-1-1024x1024-30-false-unknown-false
+stable diffusion xl 1.0 30 steps 1024 pixels,stablediffusion-xl-unknown-1-1024x1024-30-false-unknown-false
+dall·e 2 (1024x1024),dalle-unknown-unknown-2-1024x1024-unknown-false-unknown-false
+dall·e 2 (256x256),dalle-unknown-unknown-2-256x256-unknown-false-unknown-false
+dall·e 2 (512x512),dalle-unknown-unknown-2-512x512-unknown-false-unknown-false
+dall·e 2 1024,dalle-unknown-unknown-2-1024x1024-unknown-false-unknown-false
+dall·e 2 256,dalle-unknown-unknown-2-256x256-unknown-false-unknown-false
+dall·e 2 512,dalle-unknown-unknown-2-512x512-unknown-false-unknown-false
+dall·e 3 1024,dalle-unknown-unknown-3-1024x1024-unknown-false-unknown-false
+dall·e 3 1024 hd,dalle-unknown-unknown-3-1024x1024-unknown-true-unknown-false
+dall·e 3 1792,dalle-unknown-unknown-3-1792x1792-unknown-false-unknown-false
+dall·e 3 1792 hd,dalle-unknown-unknown-3-1792x1792-unknown-true-unknown-false
+dall·e 3 hd (1024x1024),dalle-unknown-unknown-3-1024x1024-unknown-true-unknown-false
+dall·e 3 hd (1024x1792),dalle-unknown-unknown-3-1024x1792-unknown-true-unknown-false
+dall·e 3 standard (1024x1024),dalle-unknown-unknown-3-1024x1024-unknown-false-unknown-false
+dall·e 3 standard (256x256),dalle-unknown-unknown-3-256x256-unknown-false-unknown-false
+dall·e 3 standard (512x512),dalle-unknown-unknown-3-512x512-unknown-false-unknown-false
+dall e,dalle-unknown-unknown-unknown-unknown-unknown-false-unknown-false
+stabilityai stable difussion xl,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false

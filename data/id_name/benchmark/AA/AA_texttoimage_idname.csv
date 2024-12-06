@@ -3,7 +3,7 @@ amazon titan g1 (standard),amazontitan-unknown-unknown-1-unknown-unknown-false-u
 amazon titan g1 v2 (standard),amazontitan-unknown-unknown-2-unknown-unknown-false-unknown-false
 dalle 2,dalle-unknown-unknown-2-unknown-unknown-false-unknown-false
 dalle 3,dalle-unknown-unknown-3-unknown-unknown-false-unknown-false
-dalle 3 hd,dalle-unknown-unknown-3-unknown-unknown-false-True
+dalle 3 hd,dalle-unknown-unknown-3-unknown-unknown-false-unknown-false
 flux.1 [dev],flux-dev-unknown-1-unknown-unknown-false-unknown-false
 flux.1 [pro],flux-pro-unknown-1-unknown-unknown-false-unknown-false
 flux.1 [schnell],flux-schnell-unknown-1-unknown-unknown-false-unknown-false
@@ -25,5 +25,5 @@ stable diffusion 3 large,stablediffusion-large-unknown-3-unknown-unknown-false-u
 stable diffusion 3 large turbo,stablediffusion-large-turbo-3-unknown-unknown-false-unknown-false
 stable diffusion 3 medium,stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false
 stable diffusion 3.5 large,stablediffusion-large-unknown-3.5-unknown-unknown-false-unknown-false
-stable diffusion 3.5 large turbo,stablediffusion-large-turbo-unknown-3.5-unknown-unknown-false-unknown-false
+stable diffusion 3.5 large turbo,stablediffusion-large-turbo-3.5-unknown-unknown-false-unknown-false
 stable diffusion xl 1.0,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false

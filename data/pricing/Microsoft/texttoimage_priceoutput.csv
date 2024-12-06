@@ -1,8 +1,8 @@
 name,id_name,2024-07-05,2024-09-30
-dall·e 3 1024,dalle-unknown-unknown-3-1024x1024-unknown-False,4.0,4.0
-dall·e 3 1792,dalle-unknown-unknown-3-1792x1792-unknown-False,8.0,8.0
-dall·e 3 1024 hd,dalle-unknown-unknown-3-1024x1024-unknown-True,8.0,8.0
-dall·e 3 1792 hd,dalle-unknown-unknown-3-1792x1792-unknown-True,12.0,12.0
-dall·e 2 1024,dalle-unknown-unknown-2-1024x1024-unknown-False,2.0,2.0
-dall·e 2 512,dalle-unknown-unknown-2-512x512-unknown-False,1.7999999999999998,1.7999999999999998
-dall·e 2 256,dalle-unknown-unknown-2-256x256-unknown-False,1.6,1.6
+dall·e 2 1024,dalle-unknown-unknown-2-1024x1024-unknown-false-unknown-false,2.0,2.0
+dall·e 2 256,dalle-unknown-unknown-2-256x256-unknown-false-unknown-false,1.6,1.6
+dall·e 2 512,dalle-unknown-unknown-2-512x512-unknown-false-unknown-false,1.7999999999999998,1.7999999999999998
+dall·e 3 1024,dalle-unknown-unknown-3-1024x1024-unknown-false-unknown-false,4.0,4.0
+dall·e 3 1024 hd,dalle-unknown-unknown-3-1024x1024-unknown-true-unknown-false,8.0,8.0
+dall·e 3 1792,dalle-unknown-unknown-3-1792x1792-unknown-false-unknown-false,8.0,8.0
+dall·e 3 1792 hd,dalle-unknown-unknown-3-1792x1792-unknown-true-unknown-false,12.0,12.0

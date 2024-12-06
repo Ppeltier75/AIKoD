@@ -67,7 +67,7 @@ phi 3 small 8k instruct,phi-small-unknown-3-unknown-unknown-8-instruct-false
 phi 3.5 mini instruct,phi-mini-unknown-3.5-unknown-unknown-unknown-instruct-false
 phi 3.5 moe instruct,phi-moe-unknown-3.5-unknown-unknown-unknown-instruct-false
 qwen1.5 0.5b chat,qwen-unknown-chat-1.5-unknown-0.5-unknown-unknown-false
-qwen1.5 1.8b chat,qwen-unknown-chat-1.5-unknown-1.8-unknown-unknown-unknown-false
+qwen1.5 1.8b chat,
 qwen1.5 110b chat,qwen-unknown-chat-1.5-unknown-110-unknown-unknown-false
 qwen1.5 4b chat,qwen-unknown-chat-1.5-unknown-4-unknown-unknown-false
 qwen1.5 72b chat,qwen-unknown-chat-1.5-unknown-72-unknown-unknown-false
@@ -80,7 +80,7 @@ qwen2.5 72b instruct,qwen-unknown-instruct-2.5-unknown-72-unknown-unknown-false
 smaug qwen2 72b instruct,qwen-unknown-instruct-2-unknown-72-unknown-unknown-false
 starling lm 7b beta,starling-unknown-beta-unknown-unknown-7-unknown-unknown-false
 vicuna 7b v1.5,vicuna-unknown-unknown-1.5-unknown-7-unknown-unknown-false
-vicuna 7b v1.5 16k,vicuna-unknown-unknown-1.5-unknown-7-unknown-16-unknown-false
+vicuna 7b v1.5 16k,
 yi 6b chat,yi-unknown-chat-unknown-unknown-6-unknown-unknown-false
 zephyr 7b alpha,zephyr-unknown-alpha-unknown-unknown-7-unknown-unknown-false
 zephyr 7b beta,zephyr-unknown-beta-unknown-unknown-7-unknown-unknown-false

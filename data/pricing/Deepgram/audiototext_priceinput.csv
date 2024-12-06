@@ -1,15 +1,12 @@
-name,id_name,2022-07-17,2022-08-19,2022-10-09,2022-12-01,2023-02-28,2023-04-01,2023-12-22,2024-03-01,2024-05-30,2024-08-26,2024-09-27,2024-10-21,2023-04-15,2023-06-02,2023-07-29,2023-08-17,2024-01-22
-base model,base-unknown-unknown-unknown,0.9480000000000001,0.9480000000000001,0.9480000000000001,0.9480000000000001,0.87,0.87,,,,,,,,,,,
-enhanced model,enhanced-unknown-unknown-unknown,,,,0.99,0.99,0.99,0.99,0.99,0.99,0.99,0.99,0.99,,,,,
-deepgram nova,deepgram-nova-unknown-unknown,,,,,,,,,,,,,0.348,0.354,0.354,0.354,
-deepgram whisper cloud,deepgram-whisper-cloud-unknown,,,,,,,,,,,,,0.198,0.288,,,
-whisper large,whisper-large-unknown-unknown,,,,,,,0.288,0.288,0.288,0.288,0.288,0.288,,,0.288,0.288,0.288
-whisper medium,whisper-medium-unknown-unknown,,,,,,,0.252,0.252,0.252,0.252,0.252,0.252,,,0.252,0.252,0.252
-whisper small,whisper-small-unknown-unknown,,,,,,,0.228,0.228,0.228,0.228,0.228,0.228,,,0.228,0.228,0.228
-whisper base,whisper-base-unknown-unknown,,,,,,,0.21,0.21,0.21,0.21,0.21,0.21,,,0.21,0.21,0.21
-whisper tiny,whisper-tiny-unknown-unknown,,,,,,,0.198,0.198,0.198,0.198,0.198,0.198,,,0.198,0.198,0.198
-nova-1,nova-unknown-unknown-1,,,,,,,0.354,0.354,0.354,0.354,0.354,0.354,,,,,0.354
-base,base-unknown-unknown-unknown,,,,,,,0.87,0.87,0.87,0.87,0.87,0.87,,,,,0.87
-redaction,redaction-unknown-unknown-unknown,,,,,,,0.26,0.12,,,,,,,,,0.26
-nova-2,nova-unknown-unknown-2,,,,,,,,0.354,0.354,0.354,0.354,0.354,,,,,0.354
-enhanced,enhanced-unknown-unknown-unknown,,,,,,,,,,,,,,,,,0.99
+name,id_name,2022-07-17,2022-08-19,2022-10-09,2022-12-01,2023-02-28,2023-04-01,2023-04-15,2023-06-02,2023-07-29,2023-08-17,2023-12-22,2024-01-22,2024-03-01,2024-05-30,2024-08-26,2024-09-27,2024-10-21
+base model,base-unknown-unknown-unknown,0.948,0.948,0.948,0.948,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87,0.87
+enhanced model,enhanced-unknown-unknown-unknown,,,,0.99,0.99,0.99,0.99,0.99,0.99,0.99,0.99,0.99,0.99,0.99,0.99,0.99,0.99
+deepgram nova,nova-unknown-unknown-1,,,,,,,0.348,0.354,0.354,0.354,0.354,0.354,0.354,0.354,0.354,0.354,0.354
+nova-2,nova-unknown-unknown-2,,,,,,,,,,,,0.354,0.354,0.354,0.354,0.354,0.354
+redaction,redaction-unknown-unknown-unknown,,,,,,,,,,,0.26,0.26,0.12,0.12,0.12,0.12,0.12
+deepgram whisper cloud,whisper-cloud-unknown-unknown,,,,,,,0.198,0.288,0.288,0.288,0.288,0.288,0.288,0.288,0.288,0.288,0.288
+whisper large,whisper-large-unknown-unknown,,,,,,,,,0.288,0.288,0.288,0.288,0.288,0.288,0.288,0.288,0.288
+whisper medium,whisper-medium-unknown-unknown,,,,,,,,,0.252,0.252,0.252,0.252,0.252,0.252,0.252,0.252,0.252
+whisper small,whisper-small-unknown-unknown,,,,,,,,,0.228,0.228,0.228,0.228,0.228,0.228,0.228,0.228,0.228
+whisper tiny,whisper-tiny-unknown-unknown,,,,,,,,,0.198,0.198,0.198,0.198,0.198,0.198,0.198,0.198,0.198
+whisper base,whisper-unknown-unknown-unknown,,,,,,,,,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21,0.21
