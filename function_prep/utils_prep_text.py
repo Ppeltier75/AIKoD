@@ -35,29 +35,25 @@ def analyze_id_name(id_name):
 
 
 def add_csv_text(base_csv_path):
-    # Définition des stratégies de correspondance
+    """
+    Fusionne divers fichiers CSV de benchmark dans le fichier CSV de base en utilisant différentes stratégies de correspondance d'id_name.
+
+    :param base_csv_path: Chemin vers le fichier CSV de base à modifier.
+    :return: DataFrame fusionné.
+    """
+    # Définition des stratégies de correspondance sous forme de tuples (fonction, nom)
     strategies = [
-        lambda x: x,  # Correspondance exacte
-        lambda x: select_specific_segments(x, [1, 2, 3, 4, 5, 6, 7, 8]),
-        lambda x: select_segments_no_order(x, [1, 2, 3, 4, 5, 6, 7, 8]),
-        lambda x: select_specific_segments(x, [1, 2, 3, 4, 5, 6, 7]),
-        lambda x: select_segments_no_order(x, [1, 2, 3, 4, 5, 6, 7]),
-        lambda x: select_specific_segments(x, [1, 2, 3, 4, 5, 6]),
-        lambda x: select_segments_no_order(x, [1, 2, 3, 4, 5, 6]),
-        lambda x: select_specific_segments(x, [1, 2, 3, 4, 6]),
-        lambda x: select_segments_no_order(x, [1, 2, 3, 4, 6]),
-        lambda x: select_specific_segments(x, [1, 2, 4, 6]),
-        lambda x: select_segments_no_order(x, [1, 2, 3, 4]),
-        lambda x: select_specific_segments(x, [1, 2, 4]),
-        lambda x: select_specific_segments(x, [1, 4, 6]),
+        (lambda x: select_specific_segments(x, [1, 2, 3, 4, 5, 6, 7, 8]), 'strategy_1'),
+        (lambda x: select_segments_no_order(x, [1, 2, 3, 4, 5, 6, 7, 8]), 'strategy_2'),
+        (lambda x: select_specific_segments(x, [1, 2, 3, 4, 5, 6, 7]), 'strategy_3'),
+        (lambda x: select_segments_no_order(x, [1, 2, 3, 4, 5, 6, 7]), 'strategy_4'),
+        (lambda x: select_specific_segments(x, [1, 2, 3, 4, 6]), 'strategy_5'),
+        (lambda x: select_segments_no_order(x, [1, 2, 3, 4, 6]), 'strategy_6'),
+        (lambda x: select_specific_segments(x, [1, 2, 4, 6]), 'proxy_parameters'),  # Nouvelle Stratégie
+        (lambda x: select_specific_segments(x, [1, 4, 6]), 'strategy_7'),
+        (lambda x: select_specific_segments(x, [1, 2, 4]), 'strategy_8'),
         # Vous pouvez ajouter d'autres stratégies si nécessaire
     ]
-
-    # Lecture du fichier de base
-    df_base = pd.read_csv(base_csv_path)
-
-    # Création d'une copie du DataFrame de base pour les fusions successives
-    df_merged = df_base.copy()
 
     # Chemins vers les fichiers à fusionner
     paths = {
@@ -68,6 +64,12 @@ def add_csv_text(base_csv_path):
         'HF_text_MT': r'C:\Users\piwip\OneDrive\Documents\OCDE\AIKoD\data\benchmark\HF\HF_text_MT.csv',
         'AA_text': r'C:\Users\piwip\OneDrive\Documents\OCDE\AIKoD\data\benchmark\AA\text\AA_text_2024-11-19.csv',
     }
+
+    # Lecture du fichier de base
+    df_base = pd.read_csv(base_csv_path)
+
+    # Création d'une copie du DataFrame de base pour les fusions successives
+    df_merged = df_base.copy()
 
     # Fusion avec AA_quality_2024-11-16
     df_merge = pd.read_csv(paths['AA_quality'])
@@ -126,6 +128,7 @@ def add_csv_text(base_csv_path):
 
     df_merged = merge_csv_id_name(df_merged, df_merge, keep_columns, strategies)
 
+    # Enregistrement du fichier fusionné
     df_merged.to_csv(base_csv_path, index=False)
 
     print(f"Le fichier fusionné a été enregistré sous {base_csv_path}")

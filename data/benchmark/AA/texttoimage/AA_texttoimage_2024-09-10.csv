@@ -1,0 +1,33 @@
+Provider,Model,Footnotes,Model Quality ELO,Median Generation Time (s),Price per 1k Images (USD)
+Replicate,FLUX.1 [pro],,1136,19.4,$55.00
+fal.ai,FLUX.1 [pro],,1136,20.0,$50.00
+Replicate,FLUX.1 [dev],,1102,5.8,$30.00
+fal.ai,FLUX.1 [dev],,1102,3.0,$25.00
+Ideogram,Ideogram v2 Turbo,,1100,12.6,$50.00
+Replicate,FLUX.1 [schnell],,1075,2.2,$3.00
+fal.ai,FLUX.1 [schnell],,1075,0.6,$3.00
+fal.ai,Playground v2.5,,1029,4.3,$5.13
+Replicate,Playground v2.5,,1029,7.9,$10.67
+Fireworks,Playground v2.5,,1029,1.7,$6.50
+Playground AI,Playground v2.5,,1029,7.5,$0.70
+OpenAI,DALLE 3 HD,,1022,17.7,$80.00
+OpenAI,DALLE 3,,1005,15.7,$40.00
+Amazon Bedrock,Amazon Titan G1 v2 (Standard),,972,12.1,$10.00
+fal.ai,Stable Diffusion 3 Medium,,969,2.4,$35.00
+Replicate,Stable Diffusion 3 Medium,,969,3.1,$35.00
+Amazon Bedrock,Amazon Titan G1 (Standard),,948,11.0,$10.00
+fal.ai,SDXL Lightning,,942,0.6,$1.01
+Replicate,SDXL Lightning,,942,2.5,$2.65
+fal.ai,Stable Diffusion XL 1.0,,920,1.5,$3.50
+Replicate,Stable Diffusion XL 1.0,,920,11.9,$9.04
+Amazon Bedrock,Stable Diffusion XL 1.0,,920,6.3,$40.00
+Lepton AI,Stable Diffusion XL 1.0,,920,0.6,$4.50
+Fireworks,Stable Diffusion XL 1.0,,920,1.2,$3.90
+Deepinfra,Stable Diffusion XL 1.0,,920,6.3,$3.18
+Together.ai,Stable Diffusion XL 1.0,,920,3.8,$20.00
+OpenAI,DALLE 2,,771,10.9,$20.00
+Replicate,Stable Diffusion 2.1,,770,6.6,$6.71
+Deepinfra,Stable Diffusion 2.1,,770,6.9,$3.76
+Together.ai,Stable Diffusion 2.1,,770,8.2,$20.00
+Replicate,Stable Diffusion 1.5,,661,47.6,$8.56
+Together.ai,Stable Diffusion 1.5,,661,9.6,$10.00

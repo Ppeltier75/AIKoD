@@ -288,6 +288,13 @@ init_API(pricing_dir, output_json_path)
 
 # %%
 import os 
+from function_utils.utils_api_add_infos import Adapting_idname_aikod
+
+json_path = r'C:\Users\piwip\OneDrive\Documents\OCDE\AIKoD\data\API\AIKoD_API_base_v0.json'
+Adapting_idname_aikod(json_path)
+
+# %%
+import os 
 from function_utils.utils_api import add_infos_to_API
 
 base_path = os.path.abspath(os.path.dirname(__file__))
@@ -361,11 +368,5 @@ aa_directory = os.path.join(base_path, "data", 'benchmark', 'AA')
 if __name__ == "__main__":
     add_speed_provider_text_AA(json_path, aa_directory)
 
-# %%
-import os 
-from function_utils.utils_api_add_infos import Adapting_idname_aikod
-
-json_path = r'C:\Users\piwip\OneDrive\Documents\OCDE\AIKoD\data\API\AIKoD_API_base_v0.json'
-Adapting_idname_aikod(json_path)
 
 # %%

@@ -123,8 +123,6 @@ def add_csv_texttoimage(base_csv_path):
         lambda x: select_segments_no_order(x, [1, 2, 4]),
         lambda x: select_specific_segments(x, [1, 4]),
         lambda x: select_segments_no_order(x, [1, 4]),
-        lambda x: select_specific_segments(x, [1, 2]),
-        lambda x: select_segments_no_order(x, [1, 2]),
         # Vous pouvez ajouter d'autres stratégies si nécessaire
     ]
 

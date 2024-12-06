@@ -6,7 +6,7 @@ import numpy as np
 from datetime import datetime
 
 
-from function_utils.utils_merge_id import select_specific_segments, select_segments_no_order
+from function_utils.utils_merge_id import select_specific_segments, select_segments_no_order, replace_segment
 
 def add_speed_provider_text_AA(json_path, aa_directory):
     """
@@ -277,7 +277,7 @@ def add_provider_infos_texttoimage(json_path):
     # Chemin vers le fichier CSV spécifique
     csv_path = os.path.join("data", "benchmark", "AA", "texttoimage", "AA_texttoimage_2024-11-19.csv")
     
-    # Définition des stratégies de correspondance
+    # Définition des stratégies de correspondance avec une nouvelle stratégie pour remplacer le 5ème segment
     strategies = [
         lambda x: x,  # Correspondance exacte
         lambda x: select_specific_segments(x, [1, 2, 3, 4, 7]),
@@ -288,8 +288,7 @@ def add_provider_infos_texttoimage(json_path):
         lambda x: select_segments_no_order(x, [1, 2, 4]),
         lambda x: select_specific_segments(x, [1, 4]),
         lambda x: select_segments_no_order(x, [1, 4]),
-        lambda x: select_specific_segments(x, [1, 2]),
-        lambda x: select_segments_no_order(x, [1, 2]),
+        lambda x: replace_segment(x, 4, 'unknown'),  # Nouvelle stratégie : Remplacer le 5ème segment par 'unknown'
     ]
     
     # Charger le fichier JSON
@@ -369,6 +368,7 @@ def add_provider_infos_texttoimage(json_path):
     print("La fonction add_provider_infos_texttoimage s'est exécutée avec succès.")
 
 
+    
 def add_provider_infos_audiototext(json_path):
     """
     Enrichit les modèles de type 'audiototext' dans le fichier JSON avec les informations

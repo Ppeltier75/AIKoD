@@ -34,7 +34,7 @@ dalle-unknown-unknown-3-1024x1024-unknown-false-unknown-false,openai,2022-11-17,
 dalle-unknown-unknown-3-1024x1024-unknown-true-unknown-false,openai,2022-11-17,,1024.0,0.5485714285714286,17.7,,,USA
 dalle-unknown-unknown-3-1792x1792-unknown-false-unknown-false,openai,2022-11-17,,1792.0,0.5485714285714286,17.7,,,USA
 dalle-unknown-unknown-3-1792x1792-unknown-true-unknown-false,openai,2022-11-17,,1792.0,0.5485714285714286,17.7,,,USA
-stablediffusion-medium-unknown-3.5-unknown-unknown-false-unknown-false,,2024-10-31,,,0.6871428571428572,8.1,35.0,1024.0,
+stablediffusion-medium-unknown-3.5-unknown-unknown-false-unknown-false,,2024-10-31,,,0.6914285714285714,4.949999999999999,35.0,1024.0,
 dreamshaper-lcm-unknown-8-1024x1024-50-false-unknown-false,lykon,2024-10-31,50.0,1024.0,,,,,DEU
 dreamshaper-lcm-unknown-8-2048x2048-50-false-unknown-false,lykon,2024-10-31,50.0,2048.0,,,,,DEU
 dreamshaper-lcm-unknown-8-512x512-50-false-unknown-false,lykon,2024-10-31,50.0,512.0,,,,,DEU
@@ -215,7 +215,7 @@ stablediffusion-large-turbo-3-unknown-unknown-false-unknown-false,stabilityai,20
 stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false,stabilityai,2024-07-03,,,0.4885714285714285,4.866666666666667,30.0,1024.0,GBR
 stablediffusion-large-unknown-3.5-unknown-unknown-false-unknown-false,,2024-10-31,,,0.6871428571428572,8.1,35.0,1024.0,
 stablediffusion-large-unknown-3.5-1024x1024-unknown-false-unknown-false,stabilityai,2024-09-27,,1024.0,0.6871428571428572,8.1,35.0,1024.0,GBR
-stablediffusion-large-turbo-3.5-unknown-unknown-false-unknown-false,,2024-10-31,,,0.6871428571428572,8.1,35.0,1024.0,
+stablediffusion-large-turbo-3.5-unknown-unknown-false-unknown-false,,2024-10-31,,,0.6914285714285714,4.949999999999999,35.0,1024.0,
 stablediffusion-xl-unknown-1-unknown-50-false-unknown-false,stabilityai,2024-01-03,50.0,,0.4071428571428571,4.366666666666666,30.0,1024.0,GBR
 stablediffusion-xl-unknown-1-1024x1024-100-false-unknown-false,stabilityai,2024-06-18,100.0,1024.0,0.4071428571428571,4.366666666666666,30.0,1024.0,GBR
 stablediffusion-xl-unknown-1-512x512-100-false-unknown-false,stabilityai,2024-06-18,100.0,512.0,0.4071428571428571,4.366666666666666,30.0,1024.0,GBR
@@ -246,7 +246,7 @@ stablediffusion-unknown-unknown-1.6-512x512-30-false-unknown-false,stabilityai,2
 stablediffusion-unknown-unknown-1.6-1024x1024-30-false-unknown-true,stabilityai,2023-11-20,30.0,1024.0,0.4657142857142857,5.0,50.0,1024.0,GBR
 stablediffusion-unknown-unknown-2.1-512x512-30-false-unknown-false,stabilityai,2023-07-27,30.0,512.0,0.1957142857142857,6.2,50.0,1024.0,GBR
 stablediffusion-unknown-unknown-2.1-1024x1024-30-false-unknown-true,stabilityai,2023-07-27,30.0,1024.0,0.1957142857142857,6.2,50.0,1024.0,GBR
-stablediffusion-unknown-unknown-unknown-512x512-unknown-false-unknown-false,stabilityai,2023-07-27,,512.0,0.6914285714285714,4.949999999999999,4.0,1024.0,GBR
+stablediffusion-unknown-unknown-unknown-512x512-unknown-false-unknown-false,stabilityai,2023-07-27,,512.0,0.4414285714285714,1.65,4.0,1024.0,GBR
 stablediffusion-xl-unknown-0.8-512x512-30-false-unknown-false,stabilityai,2023-07-27,30.0,512.0,0.4414285714285714,1.65,30.0,1024.0,GBR
 stablediffusion-xl-unknown-0.9-1024x1024-30-false-unknown-false,stabilityai,2023-07-27,30.0,1024.0,0.4414285714285714,1.65,30.0,1024.0,GBR
 stablediffusion-xl-unknown-1-1024x1024-30-false-unknown-false,stabilityai,2023-07-27,30.0,1024.0,0.4071428571428571,4.366666666666666,30.0,1024.0,GBR

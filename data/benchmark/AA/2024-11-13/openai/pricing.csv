@@ -1,9 +1,9 @@
 model_name,price_1m_blended_3_to_1,price_1m_input_tokens,price_1m_output_tokens,id_name
 o1-preview,26.25,15.0,60.0,o1-preview-unknown-unknown-unknown-unknown-unknown-unknown-false
 o1-mini,5.25,3.0,12.0,o1-mini-unknown-unknown-unknown-unknown-unknown-unknown-false
-GPT-4o (Aug '24),4.375,2.5,10.0,gpt-4o-unknown-unknown-202408-unknown-unknown-unknown-false
-GPT-4o (May '24),7.5,5.0,15.0,gpt-4o-unknown-unknown-202405-unknown-unknown-unknown-false
-GPT-4o mini,0.2625,0.15,0.6,gpt-4o-mini-unknown-unknown-unknown-unknown-unknown-false
+GPT-4o (Aug '24),4.375,2.5,10.0,gpt-unknown-unknown-4o-202408-unknown-unknown-unknown-false
+GPT-4o (May '24),7.5,5.0,15.0,gpt-unknown-unknown-4o-202405-unknown-unknown-unknown-false
+GPT-4o mini,0.2625,0.15,0.6,gpt-mini-unknown-4o-unknown-unknown-unknown-unknown-false
 GPT-4 Turbo,15.0,10.0,30.0,gpt-unknown-turbo-4-unknown-unknown-unknown-unknown-false
 GPT-3.5 Turbo,0.75,0.5,1.5,gpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-false
 GPT-4,37.5,30.0,60.0,gpt-unknown-unknown-4-unknown-unknown-unknown-unknown-false

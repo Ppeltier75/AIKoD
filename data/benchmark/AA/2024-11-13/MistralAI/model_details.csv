@@ -11,5 +11,5 @@ Codestral-Mamba,,True,,,2024-07-16,256000,codestral-mamba-unknown-unknown-unknow
 Mistral Large,,False,,,2024-02-26,32768,mistral-large-unknown-unknown-unknown-unknown-unknown-unknown-false
 Mistral Small (Feb '24),,False,,,2024-02-26,32768,mistral-small-unknown-unknown-202402-unknown-unknown-unknown-false
 Mistral 7B Instruct,7.0,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2023-09-27,32768,mistral-instruct-unknown-unknown-7-unknown-unknown-unknown-false
-Codestral,,True,,,2024-05-29,32768,codestral-unknown-unknown-unknown-unknown-unknown-unknown-false
+Codestral,,True,,,2024-05-29,32768,codestral-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
 Mistral Medium,,False,,,2023-11-11,32768,mistral-medium-unknown-unknown-unknown-unknown-unknown-unknown-false

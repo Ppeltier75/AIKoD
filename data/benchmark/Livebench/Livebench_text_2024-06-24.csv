@@ -1,10 +1,10 @@
 Model,Global Average,Reasoning Average,Coding Average,Mathematics Average,Data Analysis Average,Language Average,IF Average,id_name
 claude-3-5-sonnet-20240620,61.16,64.0,63.21,53.75,56.74,56.94,72.3,claude-sonnet-unknown-3.5-20240620-unknown-unknown-unknown-false
-gpt-4o-2024-08-06,56.46,54.0,50.63,52.29,52.89,54.37,74.58,gpt-4o-unknown-unknown-20240806-unknown-unknown-unknown-false
+gpt-4o-2024-08-06,56.46,54.0,50.63,52.29,52.89,54.37,74.58,gpt-unknown-unknown-4o-202408-unknown-unknown-unknown-false
 chatgpt-4o-latest,55.35,57.0,46.0,52.19,54.43,49.95,72.52,chatgpt-unknown-latest-4o-unknown-unknown-unknown-unknown-false
 meta-llama-3.1-405b-instruct-turbo,55.18,57.0,45.68,46.55,53.51,49.85,78.47,llama-unknown-turbo-3.1-unknown-405-unknown-instruct-false
 gemini-1.5-pro-exp-0827,55.06,56.0,42.0,56.28,50.83,49.31,75.95,gemini-pro-exp-1.5-0827-unknown-unknown-unknown-false
-gpt-4o-2024-05-13,54.96,55.0,46.37,49.88,52.41,53.94,72.17,gpt-4o-unknown-unknown-20240513-unknown-unknown-unknown-false
+gpt-4o-2024-05-13,54.96,55.0,46.37,49.88,52.41,53.94,72.17,gpt-unknown-unknown-4o-202405-unknown-unknown-unknown-false
 gemini-1.5-pro-exp-0801,53.63,55.0,43.37,47.46,50.15,46.96,78.84,gemini-pro-exp-1.5-0801-unknown-unknown-unknown-false
 gpt-4-turbo-2024-04-09,53.0,54.0,47.05,48.99,51.32,45.26,71.39,gpt-unknown-turbo-4-20240409-unknown-unknown-unknown-false
 claude-3-opus-20240229,50.75,41.0,40.05,46.54,54.32,51.72,70.87,claude-opus-unknown-3-20240229-unknown-unknown-unknown-false
@@ -16,7 +16,7 @@ mistral-large-2407,48.35,45.0,46.37,40.48,46.61,39.79,71.85,mistral-large-unknow
 gemini-1.5-flash-exp-0827,47.51,52.0,39.74,36.29,47.87,31.04,78.11,gemini-flash-exp-1.5-0827-unknown-unknown-unknown-false
 deepseek-coder-v2,46.84,49.0,41.05,52.54,38.25,33.04,67.18,deepseek-unknown-unknown-2-unknown-unknown-unknown-unknown-false
 gpt-4-0613,44.94,31.0,37.05,36.22,44.03,49.57,71.79,gpt-unknown-unknown-4-0613-unknown-unknown-unknown-false
-gpt-4o-mini-2024-07-18,44.57,37.0,43.37,41.58,44.52,35.28,65.68,gpt-mini-unknown-4o-20240718-unknown-unknown-unknown-false
+gpt-4o-mini-2024-07-18,44.57,37.0,43.37,41.58,44.52,35.28,65.68,gpt-mini-unknown-4o-202407-unknown-unknown-unknown-false
 gemini-1.5-pro-api-0514,44.41,33.0,32.79,42.42,52.81,38.25,67.2,gemini-pro-unknown-1.5-0514-unknown-unknown-unknown-false
 dracarys-72b-instruct,41.72,41.0,41.05,42.77,26.24,31.17,68.08,dracarys-unknown-unknown-unknown-unknown-72-unknown-instruct-false
 gemma-2-27b-it,41.22,31.0,36.74,36.23,43.58,32.4,67.37,gemma-unknown-it-2-unknown-27-unknown-unknown-false
@@ -37,7 +37,7 @@ mistral-small-2402,33.03,28.0,24.21,28.15,31.88,22.06,63.91,mistral-small-unknow
 command-r-plus,32.86,32.0,20.26,24.85,24.6,23.92,71.51,commandr-plus-unknown-unknown-unknown-unknown-unknown-unknown-false
 gemma-2-9b-it,31.57,19.0,22.21,23.98,35.06,27.64,61.55,gemma-unknown-it-2-unknown-9-unknown-unknown-false
 phi-3-medium-4k-instruct,30.96,35.0,20.58,31.36,31.63,13.91,53.3,phi-medium-unknown-3-unknown-unknown-4-instruct-false
-command-r-08-2024,30.61,26.0,17.26,26.35,31.34,17.0,65.7,command-r-unknown-unknown-082024-unknown-unknown-unknown-false
+command-r-08-2024,30.61,26.0,17.26,26.35,31.34,17.0,65.7,commandr-unknown-unknown-unknown-082024-unknown-unknown-unknown-false
 phi-3-medium-128k-instruct,29.88,31.0,21.58,25.64,32.12,12.76,56.15,phi-medium-unknown-3-unknown-unknown-128-instruct-false
 phi-3-small-128k-instruct,29.68,28.0,24.87,28.97,27.26,15.53,53.47,phi-small-unknown-3-unknown-unknown-128-instruct-false
 deepseek-coder-v2-lite-instruct,29.21,22.0,26.84,34.44,33.0,10.64,48.34,deepseek-unknown-lite-unknown-2-unknown-unknown-unknown-true
@@ -48,7 +48,7 @@ qwen1.5-72b-chat,28.89,21.0,22.89,26.82,32.98,11.37,58.25,qwen-unknown-chat-1.5-
 meta-llama-3.1-8b-instruct-turbo,28.11,14.0,21.58,24.37,32.15,20.05,56.53,llama-unknown-turbo-3.1-unknown-8-unknown-instruct-false
 phi-3.5-mini-instruct,27.81,31.0,15.26,22.2,30.43,9.67,58.3,phi-mini-unknown-3.5-unknown-unknown-unknown-instruct-false
 meta-llama-3-8b-instruct,27.46,25.0,18.26,19.66,26.0,18.72,57.14,llama-unknown-unknown-3-unknown-8-unknown-instruct-false
-command-r,27.23,28.0,14.95,16.92,31.69,14.64,57.16,command-r-unknown-unknown-unknown-unknown-unknown-unknown-false
+command-r,27.23,28.0,14.95,16.92,31.69,14.64,57.16,commandr-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
 qwen2-7b-instruct,26.63,20.0,29.21,26.87,28.75,10.21,44.74,qwen-unknown-instruct-2-unknown-7-unknown-unknown-false
 phi-3-mini-128k-instruct,24.76,24.0,14.29,17.06,34.02,7.76,51.4,phi-mini-unknown-3-unknown-unknown-128-instruct-false
 phi-3-mini-4k-instruct,24.41,22.0,14.79,20.84,29.55,8.06,51.25,phi-mini-unknown-3-unknown-unknown-4-instruct-false

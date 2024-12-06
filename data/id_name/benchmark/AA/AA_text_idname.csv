@@ -39,10 +39,10 @@ gpt 3.5 turbo,gpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-false
 gpt 3.5 turbo instruct,gpt-unknown-turbo-3.5-unknown-unknown-unknown-instruct-false
 gpt 4,gpt-unknown-unknown-4-unknown-unknown-unknown-unknown-false
 gpt 4 turbo,gpt-unknown-turbo-4-unknown-unknown-unknown-unknown-false
-gpt 4o,gpt-4o-unknown-unknown-unknown-unknown-unknown-unknown-false
-gpt 4o (aug '24),gpt-4o-unknown-unknown-202408-unknown-unknown-unknown-false
-gpt 4o (may '24),gpt-4o-unknown-unknown-202405-unknown-unknown-unknown-false
-gpt 4o mini,gpt-4o-mini-unknown-unknown-unknown-unknown-unknown-false
+gpt 4o,gpt-unknown-unknown-4o-unknown-unknown-unknown-unknown-false
+gpt 4o (aug '24),gpt-unknown-unknown-4o-202408-unknown-unknown-unknown-false
+gpt 4o (may '24),gpt-unknown-unknown-4o-202405-unknown-unknown-unknown-false
+gpt 4o mini,gpt-mini-unknown-4o-unknown-unknown-unknown-unknown-false
 grok beta,grok-beta-unknown-unknown-unknown-unknown-unknown-unknown-false
 jamba 1.5 large,jamba-large-unknown-1.5-unknown-unknown-unknown-unknown-false
 jamba 1.5 mini,jamba-mini-unknown-1.5-unknown-unknown-unknown-unknown-false

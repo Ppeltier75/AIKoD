@@ -62,7 +62,7 @@ chat gpt 3.5 turbo instruct,gpt-turbo-unknown-3.5-unknown-unknown-unknown-instru
 chat gpt 4,gpt-unknown-unknown-4-unknown-unknown-unknown-chat-false
 chat gpt 4 32k,gpt-unknown-unknown-4-unknown-unknown-32-chat-false
 chat gpt 4 turbo,gpt-unknown-turbo-4-unknown-unknown-unknown-chat-false
-chat gpt 4o,gpt-4o-unknown-unknown-unknown-unknown-unknown-chat-false
+chat gpt 4o,gpt-unknown-unknown-4o-unknown-unknown-unknown-chat-false
 chat gpt 4o mini,gpt-mini-unknown-4o-unknown-unknown-unknown-unknown-unknown-false
 chatcompletion,chatcompletion-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
 chatcompletion pro,chatcompletion-pro-unknown-unknown-unknown-unknown-unknown-unknown-false
@@ -242,8 +242,8 @@ gpt 3.5 turbo finetuned,gpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-tr
 gpt 3.5 turbo instruct,gpt-unknown-turbo-3.5-unknown-unknown-unknown-instruct-false
 gpt 4 (32k context),gpt-unknown-unknown-4-unknown-unknown-32-unknown-false
 gpt 4 (8k context),gpt-unknown-unknown-4-unknown-unknown-8-unknown-false
-gpt 4o 2024 05 13,gpt-4o-unknown-unknown-20240513-unknown-unknown-unknown-false
-gpt 4o 2024 08 06,gpt-4o-unknown-unknown-20240806-unknown-unknown-unknown-false
+gpt 4o 2024 05 13,gpt-unknown-unknown-4o-20240513-unknown-unknown-unknown-false
+gpt 4o 2024 08 06,gpt-unknown-unknown-4o-20240806-unknown-unknown-unknown-false
 gpt jt moderation (6b),gpt-jt-moderation-unknown-unknown-6-unknown-unknown-false
 gpt neox (20b),gpt-neox-unknown-unknown-unknown-20-unknown-unknown-false
 gpt neox 20b,gpt-neox-unknown-unknown-unknown-20-unknown-unknown-false

@@ -1,9 +1,9 @@
 model_name,chatbot_arena_elo,quality_index,mmlu,gpqa,humaneval,math,mgsm,id_name
 o1-preview,,84.6,0.908,0.669,0.954,0.855,0.908,o1-preview-unknown-unknown-unknown-unknown-unknown-unknown-false
 o1-mini,1314.0,81.6,0.852,0.578,0.934,0.9,0.899,o1-mini-unknown-unknown-unknown-unknown-unknown-unknown-false
-GPT-4o (Aug '24),1337.0,77.2,0.886,0.514,0.905,0.783,0.901,gpt-4o-unknown-unknown-202408-unknown-unknown-unknown-false
-GPT-4o (May '24),1285.0,76.7,0.872,0.507,0.922,0.766,0.899,gpt-4o-unknown-unknown-202405-unknown-unknown-unknown-false
-GPT-4o mini,1272.0,71.4,0.819,0.427,0.856,0.753,0.87,gpt-4o-mini-unknown-unknown-unknown-unknown-unknown-false
+GPT-4o (Aug '24),1337.0,77.2,0.886,0.514,0.905,0.783,0.901,gpt-unknown-unknown-4o-202408-unknown-unknown-unknown-false
+GPT-4o (May '24),1285.0,76.7,0.872,0.507,0.922,0.766,0.899,gpt-unknown-unknown-4o-202405-unknown-unknown-unknown-false
+GPT-4o mini,1272.0,71.4,0.819,0.427,0.856,0.753,0.87,gpt-mini-unknown-4o-unknown-unknown-unknown-unknown-false
 Llama 3.1 Instruct 405B,1266.0,71.9,0.868,0.5,0.822,0.688,0.831,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false
 Llama 3.2 Instruct 90B (Vision),,66.4,0.841,0.428,0.747,0.639,,llama-unknown-vision-3.2-unknown-90-unknown-instruct-false
 Llama 3.1 Instruct 70B,1249.0,65.4,0.835,0.436,0.746,0.601,0.829,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
@@ -19,8 +19,8 @@ Gemini 1.5 Flash (May '24),1269.0,,0.789,0.39,,0.55,0.756,gemini-flash-unknown-1
 Gemini 1.5 Pro (May '24),1299.0,,0.86,0.46,,0.68,0.763,gemini-pro-unknown-1.5-202405-unknown-unknown-unknown-false
 Gemini 1.5 Flash-8B,,,0.75,0.298,,0.699,,gemini-flash-unknown-1.5-unknown-8-unknown-unknown-false
 Claude 3.5 Sonnet (June '24),1269.0,76.9,0.881,0.559,0.898,0.738,0.918,claude-sonnet-unknown-3.5-202406-unknown-unknown-unknown-false
-Claude 3 Opus,1248.0,70.3,0.841,0.497,0.841,0.632,0.897,claude-opus-unknown-3-unknown-unknown-unknown-false
-Claude 3 Haiku,1179.0,54.2,0.708,0.333,0.717,0.41,0.713,claude-haiku-unknown-3-unknown-unknown-unknown-false
+Claude 3 Opus,1248.0,70.3,0.841,0.497,0.841,0.632,0.897,claude-opus-unknown-3-unknown-unknown-unknown-unknown-false
+Claude 3 Haiku,1179.0,54.2,0.708,0.333,0.717,0.41,0.713,claude-haiku-unknown-3-unknown-unknown-unknown-unknown-false
 Mistral Large 2,1251.0,73.0,0.846,0.484,0.871,0.72,0.874,mistral-large-unknown-2-unknown-unknown-unknown-unknown-false
 Mixtral 8x22B Instruct,1148.0,61.2,0.763,0.367,0.698,0.619,0.601,mixtral-instruct-unknown-unknown-unknown-8x22-unknown-unknown-false
 Mistral Small (Sep '24),,60.4,0.741,0.338,0.734,0.602,0.676,mistral-small-unknown-unknown-202409-unknown-unknown-unknown-false
@@ -31,9 +31,9 @@ Ministral 3B,,50.8,0.579,0.261,0.713,0.478,,ministral-unknown-unknown-unknown-un
 Mixtral 8x7B Instruct,1114.0,42.0,0.633,0.305,0.409,0.333,0.3,mixtral-instruct-unknown-unknown-unknown-8x7-unknown-unknown-false
 Codestral-Mamba,,35.5,0.254,0.028,0.782,0.356,0.34,codestral-mamba-unknown-unknown-unknown-unknown-unknown-unknown-false
 Command-R+ (Aug '24),,55.9,0.75,0.339,0.71,0.436,0.663,commandr-plus-unknown-unknown-unknown-202408-unknown-unknown-false
-Command-R (Aug '24),,51.1,0.674,0.27,0.695,0.404,0.575,commandr-unknown-unknown-unknown-202408-unknown-unknown-false
+Command-R (Aug '24),,51.1,0.674,0.27,0.695,0.404,0.575,commandr-unknown-unknown-unknown-082024-unknown-unknown-unknown-false
 Command-R+ (Apr '24),1190.0,45.9,0.682,0.236,0.636,0.282,0.555,commandr-plus-unknown-unknown-unknown-202404-unknown-unknown-false
-Command-R (Mar '24),1149.0,35.9,0.591,0.258,0.435,0.152,0.298,commandr-unknown-unknown-unknown-202403-unknown-unknown-false
+Command-R (Mar '24),1149.0,35.9,0.591,0.258,0.435,0.152,0.298,commandr-unknown-unknown-unknown-032024-unknown-unknown-unknown-false
 Sonar 3.1 Large,,,,,,,,sonar-large-unknown-3.1-unknown-unknown-unknown-unknown-false
 Sonar 3.1 Small,,,,,,,,sonar-small-unknown-3.1-unknown-unknown-unknown-unknown-false
 Phi-3 Medium Instruct 14B,1123.0,,,,,,,phi-medium-unknown-3-unknown-14-unknown-instruct-false
@@ -45,11 +45,11 @@ Reka Flash (Sep '24),,57.9,0.731,0.34,0.707,0.54,,reka-flash-unknown-unknown-202
 Reka Core,1200.0,56.8,0.76,0.278,0.685,0.55,0.747,reka-core-unknown-unknown-unknown-unknown-unknown-unknown-false
 Reka Flash (Feb '24),,46.2,0.646,0.267,0.568,0.367,0.51,reka-flash-unknown-unknown-202402-unknown-unknown-unknown-false
 Reka Edge,,29.6,0.437,0.193,0.376,0.178,0.323,reka-edge-unknown-unknown-unknown-unknown-unknown-unknown-false
-Jamba 1.5 Large,,64.0,0.804,0.41,0.741,0.603,0.741,jamba-large-unknown-1.5-unknown-unknown-unknown-false
-Jamba 1.5 Mini,,45.6,0.634,0.26,0.61,0.321,0.296,jamba-mini-unknown-1.5-unknown-unknown-unknown-false
-DeepSeek-Coder-V2,,66.5,0.797,0.421,0.857,0.584,0.852,deepseek-coder-unknown-2-unknown-unknown-unknown-false
-DeepSeek-V2-Chat,1219.0,65.9,0.801,0.418,0.776,0.641,0.86,deepseek-unknown-unknown-2-unknown-unknown-chat-false
-DeepSeek-V2.5,,65.8,0.805,0.418,0.857,0.553,0.857,deepseek-unknown-unknown-2.5-unknown-unknown-unknown-false
+Jamba 1.5 Large,,64.0,0.804,0.41,0.741,0.603,0.741,jamba-large-unknown-1.5-unknown-unknown-unknown-unknown-false
+Jamba 1.5 Mini,,45.6,0.634,0.26,0.61,0.321,0.296,jamba-mini-unknown-1.5-unknown-unknown-unknown-unknown-false
+DeepSeek-Coder-V2,,66.5,0.797,0.421,0.857,0.584,0.852,deepseek-unknown-unknown-2-unknown-unknown-unknown-coder-false
+DeepSeek-V2-Chat,1219.0,65.9,0.801,0.418,0.776,0.641,0.86,deepseek-unknown-unknown-2-unknown-unknown-unknown-chat-false
+DeepSeek-V2.5,,65.8,0.805,0.418,0.857,0.553,0.857,deepseek-unknown-unknown-2.5-unknown-unknown-unknown-unknown-false
 Qwen2.5 Instruct 72B,,75.2,0.857,0.496,0.846,0.811,,qwen-unknown-unknown-2.5-unknown-72-unknown-instruct-false
 Qwen2 Instruct 72B,1187.0,69.0,0.826,0.401,0.792,0.742,0.81,qwen-unknown-unknown-2-unknown-72-unknown-instruct-false
 Yi-Large,1212.0,58.3,0.779,0.335,0.682,0.538,0.723,yi-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
@@ -62,13 +62,13 @@ Llama 3 Instruct 8B,1152.0,45.9,0.643,0.304,0.588,0.302,0.551,llama-unknown-unkn
 Llama 2 Chat 70B,1093.0,38.6,0.602,0.253,0.464,0.224,0.396,llama-unknown-unknown-2-unknown-70-unknown-chat-false
 Llama 2 Chat 13B,1063.0,35.6,0.546,0.247,0.412,0.218,0.346,llama-unknown-unknown-2-unknown-13-unknown-chat-false
 Llama 2 Chat 7B,1037.0,,0.125,0.063,0.134,,,llama-unknown-unknown-2-unknown-7-unknown-chat-false
-Gemini 1.0 Pro,1111.0,,,,,,0.645,gemini-pro-unknown-1.0-unknown-unknown-unknown-false
-Claude 3 Sonnet,1201.0,57.2,0.765,0.373,0.694,0.456,0.84,claude-sonnet-unknown-3-unknown-unknown-unknown-false
+Gemini 1.0 Pro,1111.0,,,,,,0.645,gemini-pro-unknown-1.0-unknown-unknown-unknown-unknown-false
+Claude 3 Sonnet,1201.0,57.2,0.765,0.373,0.694,0.456,0.84,claude-sonnet-unknown-3-unknown-unknown-unknown-unknown-false
 Mistral Large,1157.0,56.1,0.687,0.359,0.69,0.508,0.608,mistral-large-unknown-unknown-unknown-unknown-unknown-unknown-false
 Mistral Small (Feb '24),,49.9,0.69,0.314,0.537,0.454,0.589,mistral-small-unknown-unknown-202402-unknown-unknown-unknown-false
 Mistral 7B Instruct,1008.0,24.4,0.332,0.186,0.318,0.139,0.229,mistral-instruct-unknown-unknown-7-unknown-unknown-unknown-false
 Mistral Medium,1148.0,,,,,,,mistral-medium-unknown-unknown-unknown-unknown-unknown-unknown-false
-Codestral,,,,0.229,0.777,,,codestral-unknown-unknown-unknown-unknown-unknown-unknown-false
-OpenChat 3.5 (1210),1076.0,42.5,0.559,0.224,0.637,0.28,0.387,openchat-unknown-unknown-3.5-20231210-unknown-unknown-unknown-false
+Codestral,,,,0.229,0.777,,,codestral-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
+OpenChat 3.5 (1210),1076.0,42.5,0.559,0.224,0.637,0.28,0.387,openchat-unknown-unknown-3.5-202312-unknown-unknown-unknown-false
 Jamba Instruct,,28.2,0.577,0.252,0.002,0.296,0.375,jamba-instruct-unknown-unknown-unknown-unknown-unknown-unknown-false
 Claude 3.5 Sonnet (Oct '24),,80.0,0.895,0.582,0.932,0.79,,claude-sonnet-unknown-3.5-202410-unknown-unknown-unknown-false

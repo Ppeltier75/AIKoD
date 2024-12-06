@@ -12,4 +12,4 @@ Mistral Large,56.8,0.708,0.372,0.687,0.505,mistral-large-unknown-unknown-unknown
 Mistral Small (Feb '24),49.9,0.69,0.314,0.537,0.454,mistral-small-unknown-unknown-202402-unknown-unknown-unknown-false
 Mistral 7B Instruct,22.3,0.201,0.161,0.383,0.148,mistral-instruct-unknown-unknown-7-unknown-unknown-unknown-false
 Mistral Medium,,,,,,mistral-medium-unknown-unknown-unknown-unknown-unknown-unknown-false
-Codestral,,,0.229,0.777,,codestral-unknown-unknown-unknown-unknown-unknown-unknown-false
+Codestral,,,0.229,0.777,,codestral-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false

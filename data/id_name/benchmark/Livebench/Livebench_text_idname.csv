@@ -6,8 +6,8 @@ claude 3 5 sonnet 20241022,claude-sonnet-unknown-3.5-20241022-unknown-unknown-un
 claude 3 haiku 20240307,claude-haiku-unknown-3-20240307-unknown-unknown-unknown-false
 claude 3 opus 20240229,claude-opus-unknown-3-20240229-unknown-unknown-unknown-false
 claude 3 sonnet 20240229,claude-sonnet-unknown-3-20240229-unknown-unknown-unknown-false
-command r,command-r-unknown-unknown-unknown-unknown-unknown-unknown-false
-command r 08 2024,command-r-unknown-unknown-082024-unknown-unknown-unknown-false
+command r,commandr-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
+command r 08 2024,commandr-unknown-unknown-unknown-082024-unknown-unknown-unknown-false
 command r plus,commandr-plus-unknown-unknown-unknown-unknown-unknown-unknown-false
 command r plus 08 2024,commandr-plus-unknown-unknown-082024-unknown-unknown-unknown-false
 deepseek coder v2,deepseek-unknown-unknown-2-unknown-unknown-unknown-unknown-false
@@ -33,9 +33,9 @@ gpt 3.5 turbo 0125,gpt-unknown-turbo-3.5-0125-unknown-unknown-unknown-false
 gpt 4 0125 preview,gpt-unknown-preview-4-0125-unknown-unknown-unknown-false
 gpt 4 0613,gpt-unknown-unknown-4-0613-unknown-unknown-unknown-false
 gpt 4 turbo 2024 04 09,gpt-unknown-turbo-4-20240409-unknown-unknown-unknown-false
-gpt 4o 2024 05 13,gpt-4o-unknown-unknown-20240513-unknown-unknown-unknown-false
-gpt 4o 2024 08 06,gpt-4o-unknown-unknown-20240806-unknown-unknown-unknown-false
-gpt 4o mini 2024 07 18,gpt-mini-unknown-4o-20240718-unknown-unknown-unknown-false
+gpt 4o 2024 05 13,gpt-unknown-unknown-4o-202405-unknown-unknown-unknown-false
+gpt 4o 2024 08 06,gpt-unknown-unknown-4o-202408-unknown-unknown-unknown-false
+gpt 4o mini 2024 07 18,gpt-mini-unknown-4o-202407-unknown-unknown-unknown-false
 grok 2,grok-unknown-unknown-2-unknown-unknown-unknown-unknown-false
 grok 2 mini,grok-mini-unknown-2-unknown-unknown-unknown-unknown-false
 hermes 3 llama 3.1 70b,hermes-llama-unknown-3.1-unknown-70-unknown-unknown-false

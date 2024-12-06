@@ -278,10 +278,10 @@ if __name__ == "__main__":
     base_path = os.path.abspath(os.path.dirname(__file__))
     
     # Répertoire contenant les fichiers benchmark
-    benchmark_dir = os.path.join(base_path, "data", "benchmark","AA","audiototext")
+    benchmark_dir = os.path.join(base_path, "data", "benchmark","AA")
     
     # Fichier CSV contenant les id_name
-    id_name_csv = os.path.join(base_path, "data", "id_name", "benchmark", "AA", "AA_audiototext_idname.csv")
+    id_name_csv = os.path.join(base_path, "data", "id_name", "benchmark", "AA", "AA_text_idname.csv")
     
     # Colonnes à rechercher pour le merge
     column_names = ["model", "model_name", "Model"]

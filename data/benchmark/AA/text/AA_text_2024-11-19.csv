@@ -1,9 +1,9 @@
 Model,Creator,Context Window,Quality Index (Normalized avg),Blended Price (USD/1M Tokens),Output Tokens/S Median,Latency Median (First Chunk),id_name
 o1-preview,,128k,85.0,$26.25,35.7,28.76,o1-preview-unknown-unknown-unknown-unknown-unknown-unknown-false
 o1-mini,,128k,82.0,$5.25,74.1,13.63,o1-mini-unknown-unknown-unknown-unknown-unknown-unknown-false
-GPT-4o,,128k,77.0,$4.38,83.8,0.45,gpt-4o-unknown-unknown-unknown-unknown-unknown-unknown-false
-GPT-4o (May '24),,128k,77.0,$7.50,91.5,0.45,gpt-4o-unknown-unknown-202405-unknown-unknown-unknown-false
-GPT-4o mini,,128k,71.0,$0.26,97.8,0.48,gpt-4o-mini-unknown-unknown-unknown-unknown-unknown-false
+GPT-4o,,128k,77.0,$4.38,83.8,0.45,gpt-unknown-unknown-4o-unknown-unknown-unknown-unknown-false
+GPT-4o (May '24),,128k,77.0,$7.50,91.5,0.45,gpt-unknown-unknown-4o-202405-unknown-unknown-unknown-false
+GPT-4o mini,,128k,71.0,$0.26,97.8,0.48,gpt-mini-unknown-4o-unknown-unknown-unknown-unknown-false
 Llama 3.1 405B,,128k,72.0,$5.13,79.6,0.87,llama-unknown-unknown-3.1-unknown-405-unknown-unknown-false
 Llama 3.2 90B (Vision),,128k,67.0,$0.90,41.2,0.36,llama-unknown-vision-3.2-unknown-90-unknown-unknown-false
 Llama 3.1 70B,,128k,65.0,$0.75,71.2,0.43,llama-unknown-unknown-3.1-unknown-70-unknown-unknown-false

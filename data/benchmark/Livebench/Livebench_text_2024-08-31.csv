@@ -3,10 +3,10 @@ o1-preview-2024-09-12,66.02,68.0,50.85,62.92,63.97,72.66,77.72,o1-preview-unknow
 claude-3-5-sonnet-20241022,60.33,58.67,67.13,51.28,52.78,58.09,74.05,claude-sonnet-unknown-3.5-20241022-unknown-unknown-unknown-false
 claude-3-5-sonnet-20240620,59.8,58.67,60.85,53.32,56.74,56.94,72.3,claude-sonnet-unknown-3.5-20240620-unknown-unknown-unknown-false
 o1-mini-2024-09-12,59.09,77.33,48.05,59.22,54.07,45.72,70.17,o1-mini-unknown-unknown-20240912-unknown-unknown-unknown-false
-gpt-4o-2024-08-06,56.03,54.67,51.44,48.21,52.89,54.37,74.58,gpt-4o-unknown-unknown-20240806-unknown-unknown-unknown-false
+gpt-4o-2024-08-06,56.03,54.67,51.44,48.21,52.89,54.37,74.58,gpt-unknown-unknown-4o-202408-unknown-unknown-unknown-false
 gemini-1.5-pro-002,54.94,46.0,48.8,57.4,52.3,47.41,77.75,gemini-pro-unknown-1.5-unknown-unknown-unknown-unknown-false
 chatgpt-4o-latest-0903,54.25,51.33,49.72,46.74,54.23,51.72,71.75,chatgpt-unknown-latest-4o-0903-unknown-unknown-unknown-false
-gpt-4o-2024-05-13,53.98,50.0,49.36,45.98,52.41,53.94,72.17,gpt-4o-unknown-unknown-20240513-unknown-unknown-unknown-false
+gpt-4o-2024-05-13,53.98,50.0,49.36,45.98,52.41,53.94,72.17,gpt-unknown-unknown-4o-202405-unknown-unknown-unknown-false
 gemini-1.5-pro-exp-0827,53.75,49.33,40.95,56.15,50.83,49.31,75.95,gemini-pro-exp-1.5-0827-unknown-unknown-unknown-false
 meta-llama-3.1-405b-instruct-turbo,53.24,53.33,43.8,40.48,53.51,49.85,78.47,llama-unknown-turbo-3.1-unknown-405-unknown-instruct-false
 qwen2.5-72b-instruct,52.89,46.0,56.56,52.36,48.79,38.12,75.5,qwen-unknown-instruct-2.5-unknown-72-unknown-unknown-false
@@ -26,7 +26,7 @@ grok-2-mini,45.54,42.0,37.51,40.28,44.25,39.5,69.7,grok-mini-unknown-2-unknown-u
 deepseek-coder-v2,45.41,45.33,41.51,47.11,38.25,33.04,67.18,deepseek-unknown-unknown-2-unknown-unknown-unknown-unknown-false
 gpt-4-0613,45.14,34.67,37.31,33.48,44.03,49.57,71.79,gpt-unknown-unknown-4-0613-unknown-unknown-unknown-false
 gemini-1.5-pro-api-0514,43.8,35.33,32.31,36.91,52.81,38.25,67.2,gemini-pro-unknown-1.5-0514-unknown-unknown-unknown-false
-gpt-4o-mini-2024-07-18,43.27,35.33,43.15,35.64,44.52,35.28,65.68,gpt-mini-unknown-4o-20240718-unknown-unknown-unknown-false
+gpt-4o-mini-2024-07-18,43.27,35.33,43.15,35.64,44.52,35.28,65.68,gpt-mini-unknown-4o-202407-unknown-unknown-unknown-false
 llama-3.1-nemotron-70b-instruct,43.11,48.0,32.67,37.56,39.07,31.8,69.57,llama-nemotron-unknown-3.1-unknown-70-unknown-instruct-false
 gemma-2-27b-it,39.58,32.0,35.95,26.18,43.58,32.4,67.37,gemma-unknown-it-2-unknown-27-unknown-unknown-false
 gemini-1.5-flash-api-0514,38.94,29.33,34.31,32.27,44.03,30.69,63.01,gemini-flash-unknown-1.5-0514-unknown-unknown-unknown-false
@@ -40,7 +40,7 @@ gpt-3.5-turbo-0125,33.21,26.67,27.74,18.93,41.21,24.22,60.47,gpt-unknown-turbo-3
 command-r-plus,30.82,28.67,19.46,16.76,24.6,23.92,71.51,commandr-plus-unknown-unknown-unknown-unknown-unknown-unknown-false
 gemma-2-9b-it,30.6,17.33,22.46,19.54,35.06,27.64,61.55,gemma-unknown-it-2-unknown-9-unknown-unknown-false
 mistral-small-2402,30.6,26.0,21.18,18.55,31.88,22.06,63.91,mistral-small-unknown-unknown-2402-unknown-unknown-unknown-false
-command-r-08-2024,29.68,26.67,17.9,19.48,31.34,17.0,65.7,command-r-unknown-unknown-082024-unknown-unknown-unknown-false
+command-r-08-2024,29.68,26.67,17.9,19.48,31.34,17.0,65.7,commandr-unknown-unknown-unknown-082024-unknown-unknown-unknown-false
 phi-3-medium-4k-instruct,29.26,36.67,20.46,19.6,31.63,13.91,53.3,phi-medium-unknown-3-unknown-unknown-4-instruct-false
 phi-3-small-128k-instruct,29.07,30.0,24.57,23.59,27.26,15.53,53.47,phi-small-unknown-3-unknown-unknown-128-instruct-false
 phi-3-medium-128k-instruct,28.96,34.0,21.1,17.61,32.12,12.76,56.15,phi-medium-unknown-3-unknown-unknown-128-instruct-false
@@ -48,6 +48,6 @@ open-mistral-nemo,28.38,25.33,28.74,16.9,33.35,14.15,51.8,mistral-nemo-unknown-u
 phi-3.5-mini-instruct,27.4,33.33,15.9,16.78,30.43,9.67,58.3,phi-mini-unknown-3.5-unknown-unknown-unknown-instruct-false
 phi-3-small-8k-instruct,26.89,23.33,20.26,17.19,29.62,15.13,55.81,phi-small-unknown-3-unknown-unknown-8-instruct-false
 meta-llama-3.1-8b-instruct-turbo,26.74,15.33,19.74,16.61,32.15,20.05,56.53,llama-unknown-turbo-3.1-unknown-8-unknown-instruct-false
-command-r,25.92,25.33,15.26,11.45,31.69,14.64,57.16,command-r-unknown-unknown-unknown-unknown-unknown-unknown-false
+command-r,25.92,25.33,15.26,11.45,31.69,14.64,57.16,commandr-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
 phi-3-mini-128k-instruct,25.14,28.0,15.04,14.58,34.02,7.76,51.4,phi-mini-unknown-3-unknown-unknown-128-instruct-false
 phi-3-mini-4k-instruct,24.48,28.0,15.04,14.99,29.55,8.06,51.25,phi-mini-unknown-3-unknown-unknown-4-instruct-false
