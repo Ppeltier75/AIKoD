@@ -343,7 +343,9 @@ def pareto_frontier(data, price_field, quality_field, maximize_quality=True):
     
     return pareto
 
-def generate_API_date(input_json_path, output_json_path, exclude_provider=None, exclude_company=None):
+def generate_API_date(input_json_path, output_json_path, 
+                      exclude_provider=None, exclude_company=None,
+                      exclude_provider_list=None, exclude_company_list=None):
     """
     Génère un fichier JSON contenant les modèles disponibles pour chaque mois de 2023-01 à 2024-11,
     catégorisés par 'type', avec les 'models_star' par 'type' représentant le Pareto optimal
@@ -356,6 +358,10 @@ def generate_API_date(input_json_path, output_json_path, exclude_provider=None, 
       Exemple : exclude_provider=["OpenAI", "AI21"]
     - exclude_company (List[str], optionnel): Liste des sociétés à exclure de la génération des frontières.
       Exemple : exclude_company=["OpenAI Inc", "Anthropic LLC"]
+    - exclude_provider_list (List[str], optionnel): Liste des fournisseurs à exclure de 'models_list'.
+      Exemple : exclude_provider_list=["ProviderA", "ProviderB"]
+    - exclude_company_list (List[str], optionnel): Liste des sociétés à exclure de 'models_list'.
+      Exemple : exclude_company_list=["CompanyA", "CompanyB"]
 
     Le fichier JSON généré aura la structure suivante:
     {
@@ -416,20 +422,34 @@ def generate_API_date(input_json_path, output_json_path, exclude_provider=None, 
         else:
             current_date = datetime(year, month + 1, 1)
 
-    # Normaliser les listes exclude_provider et exclude_company pour une comparaison insensible à la casse
+    # Normaliser les listes d'exclusion pour une comparaison insensible à la casse
+    if exclude_provider_list:
+        exclude_provider_list_normalized = [provider.lower() for provider in exclude_provider_list]
+        print(f"Fournisseurs exclus de models_list (après normalisation) : {exclude_provider_list_normalized}")
+    else:
+        exclude_provider_list_normalized = []
+        print("Aucun fournisseur n'est exclu de models_list.")
+
+    if exclude_company_list:
+        exclude_company_list_normalized = [company.lower() for company in exclude_company_list]
+        print(f"Sociétés exclues de models_list (après normalisation) : {exclude_company_list_normalized}")
+    else:
+        exclude_company_list_normalized = []
+        print("Aucune société n'est exclue de models_list.")
+
     if exclude_provider:
         exclude_provider_normalized = [provider.lower() for provider in exclude_provider]
-        print(f"Fournisseurs exclus (après normalisation) : {exclude_provider_normalized}")
+        print(f"Fournisseurs exclus de models_star (après normalisation) : {exclude_provider_normalized}")
     else:
         exclude_provider_normalized = []
-        print("Aucun fournisseur n'est exclu.")
+        print("Aucun fournisseur n'est exclu de models_star.")
 
     if exclude_company:
         exclude_company_normalized = [company.lower() for company in exclude_company]
-        print(f"Sociétés exclues (après normalisation) : {exclude_company_normalized}")
+        print(f"Sociétés exclues de models_star (après normalisation) : {exclude_company_normalized}")
     else:
         exclude_company_normalized = []
-        print("Aucune société n'est exclue.")
+        print("Aucune société n'est exclue de models_star.")
 
     # Pré-traiter les données pour obtenir les dates disponibles par fournisseur
     provider_dates = defaultdict(set)
@@ -444,7 +464,7 @@ def generate_API_date(input_json_path, output_json_path, exclude_provider=None, 
             entry_date = datetime.strptime(date_str, '%Y-%m-%d')
         except ValueError:
             continue
-        provider_dates[provider].add(entry_date)
+        provider_dates[provider.lower()].add(entry_date)
     print(f"Fournisseurs traités : {list(provider_dates.keys())}")
 
     # Maintenant, pour chaque date cible
@@ -470,13 +490,16 @@ def generate_API_date(input_json_path, output_json_path, exclude_provider=None, 
             date_str = entry.get('date')
             if not provider or not date_str:
                 continue
+            provider_lower = provider.lower()
             # Vérifier si le modèle correspond à la dernière date pertinente pour son fournisseur
-            if provider in provider_latest_date:
-                latest_date = provider_latest_date[provider]
+            if provider_lower in provider_latest_date:
+                latest_date = provider_latest_date[provider_lower]
                 if date_str == latest_date.strftime('%Y-%m-%d'):
-                    models_for_date_list.append(entry)
-                    # Vérifier si le modèle doit être exclu pour `models_star`
-                    if (provider.lower() not in exclude_provider_normalized) and (company not in exclude_company_normalized):
+                    # Exclure les modèles de models_list selon exclude_provider_list et exclude_company_list
+                    if (provider_lower not in exclude_provider_list_normalized) and (company not in exclude_company_list_normalized):
+                        models_for_date_list.append(entry)
+                    # Exclure les modèles de models_star selon exclude_provider et exclude_company
+                    if (provider_lower not in exclude_provider_normalized) and (company not in exclude_company_normalized):
                         models_for_date_star.append(entry)
 
         print(f"Date cible {date_key} : {len(models_for_date_list)} modèles dans models_list, {len(models_for_date_star)} modèles dans models_star après exclusion.")
@@ -515,7 +538,7 @@ def generate_API_date(input_json_path, output_json_path, exclude_provider=None, 
             elif type_ == 'audiototext':
                 price_field = 'blended_price'
                 quality_field = 'quality_index'
-                maximize_quality = True # On veut minimiser l'erreur
+                maximize_quality = True  # On veut maximiser la qualité
             elif type_ == 'texttoimage':
                 price_field = 'blended_price'
                 quality_field = 'quality_index'
@@ -582,5 +605,3 @@ def generate_API_date(input_json_path, output_json_path, exclude_provider=None, 
         return
 
     print("La fonction generate_API_date s'est exécutée avec succès.")
-
-

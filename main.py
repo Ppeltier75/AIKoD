@@ -332,11 +332,45 @@ base_path = os.path.abspath(os.path.dirname(__file__))
 input_json_path = os.path.join(base_path, "data", "API", "AIKoD_API_base_v0.json")
 
 # Chemin où vous souhaitez enregistrer le nouveau fichier JSON
-output_json_path = os.path.join(base_path, "data", "API", "API_date_v5.4.json")
+output_json_path = os.path.join(base_path, "data", "API", "API_date_v5.6.json")
 
 # Appel de la fonction
 generate_API_date(input_json_path, output_json_path, exclude_provider=["Openrouter","AIMLAPI"], exclude_company=["thebloke"])
 
+# %%
+# Chargement des données depuis le fichier JSON existant
+import os
+from function_utils.utils_api import generate_API_date
+
+# Chemin de base de votre projet
+base_path = os.path.abspath(os.path.dirname(__file__))
+
+# Chemin vers le fichier JSON généré par 'init_API'
+input_json_path = os.path.join(base_path, "data", "API", "AIKoD_API_base_v0.json")
+
+# Chemin où vous souhaitez enregistrer le nouveau fichier JSON
+output_json_path = os.path.join(base_path, "data", "API", "API_date_v5.7.json")
+
+# Appel de la fonction
+# Appel de la fonction avec les arguments d'exclusion
+generate_API_date(
+    input_json_path,
+    output_json_path,
+    exclude_provider=["Openrouter", "AIMLAPI"],         # Exclusion pour models_star
+    exclude_company=["thebloke"],                      # Exclusion pour models_star
+    exclude_provider_list=[],                           # Si vous n'avez pas de fournisseurs à exclure de models_list, laissez vide ou spécifiez une liste
+    exclude_company_list=[
+    "haotian liu",
+    "jondurbin",
+    "mancer",
+    "fblgit",
+    "lizpreciatior",
+    "openorca",
+    "platypusai",
+    "sao10k",
+    "thebloke"
+] # Exclusion pour models_list
+)
 
 
 

@@ -6,7 +6,7 @@ babbage-002 (fine-tuned),babbage-unknown-unknown-unknown-2-unknown-unknown-unkno
 instructgpt (babbage),babbage-unknown-unknown-unknown-unknown-unknown-unknown-false,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5
 babbage,babbage-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,,,,,
 fine-tuned babbage,babbage-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true,2.4,2.4,2.4,2.4,2.4,2.4,2.4,2.4,2.4,2.4,2.4,2.4,2.4,2.4,2.4,2.4,2.4,2.4,2.4,2.4,2.4
-chatgpt (gpt-3.5-turbo),chatgpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,,,,,
+chatgpt (gpt-3.5-turbo),chatgpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-false,,,,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0
 instructgpt (curie),curie-unknown-unknown-unknown-unknown-unknown-unknown-instruct-false,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0
 curie,curie-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,,,,,
 curie (fine-tuning),curie-unknown-unknown-unknown-unknown-unknown-unknown-unknown-true,12.0,12.0,12.0,12.0,12.0,12.0,12.0,12.0,12.0,12.0,12.0,12.0,12.0,12.0,12.0,12.0,12.0,12.0,12.0,12.0,12.0
@@ -34,7 +34,7 @@ gpt-3.5 turbo-1106,gpt-unknown-turbo-3.5-1106-unknown-unknown-unknown-false,,,,,
 gpt-3.5 turbo (16k context),gpt-unknown-turbo-3.5-unknown-unknown-16-unknown-false,,,,,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0,4.0
 gpt-3.5 turbo (4k context),gpt-unknown-turbo-3.5-unknown-unknown-4-unknown-false,,,,,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0
 gpt-3.5 turbo instruct,gpt-unknown-turbo-3.5-unknown-unknown-unknown-instruct-false,,,,,,,,,,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0
-gpt-3.5-turbo,gpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,,,,,
+gpt-3.5-turbo,gpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-false,,,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0
 gpt-3.5 turbo (fine-tuning),gpt-unknown-turbo-3.5-unknown-unknown-unknown-unknown-true,,,,,,,16.0,16.0,16.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0,6.0
 gpt-4-turbo,gpt-unknown-turbo-4-unknown-unknown-unknown-false,,,,,,,,,,,,,,,,,30.0,30.0,30.0,30.0,30.0
 gpt-4-0125-preview,gpt-unknown-unknown-4-0125-unknown-unknown-unknown-false,,,,,,,,,,,,,30.0,30.0,30.0,30.0,30.0,30.0,30.0,30.0,30.0
