@@ -10,8 +10,8 @@ from function_utils.utils_id_name import extract_names_by_type, update_model_nam
 base_path = os.path.abspath(os.path.dirname(__file__))
 
 # Construire les chemins absolus
-json_path = os.path.join(base_path, "data/raw/AIKoD_brut_API_v1.json")
-updated_json_path = os.path.join(base_path, "data/raw/AIKoD_brut_API_v1.json")
+json_path = os.path.join(base_path, "data/raw/AIKoD_brut_API_v2.json")
+updated_json_path = os.path.join(base_path, "data/raw/AIKoD_brut_API_v2.json")
 output_dir = os.path.join(base_path, "data/id_name/AIKoD")
 
 # Ajouter les types aux modèles

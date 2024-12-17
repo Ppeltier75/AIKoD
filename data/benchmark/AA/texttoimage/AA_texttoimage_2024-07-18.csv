@@ -1,30 +1,30 @@
-Provider,Model,Footnotes,Model Quality ELO,Median Generation Time (s),Price per 1k Images (USD)
-Midjourney,Midjourney v6,,1165,72.7,$66.00
-Stability.ai,Stable Diffusion 3,,1149,5.3,$65.00
-fal.ai,Playground v2.5,,1097,5.0,$5.13
-Replicate,Playground v2.5,,1097,11.9,$10.67
-Fireworks,Playground v2.5,,1097,1.6,$6.50
-OpenAI,DALLE 3 HD,,1093,16.2,$80.00
-OpenAI,DALLE 3,,1071,12.6,$40.00
-Stability.ai,Stable Diffusion 3 Turbo,,1035,1.8,$40.00
-Stability.ai,Stable Diffusion 1.6,,1027,6.9,$10.00
-fal.ai,Stable Diffusion 3 Medium,,1027,2.2,$35.00
-Stability.ai,Stable Diffusion 3 Medium,,1027,5.1,$35.00
-Replicate,Stable Diffusion 3 Medium,,1027,3.7,$35.00
-fal.ai,SDXL Lightning,,1008,1.0,$1.01
-Replicate,SDXL Lightning,,1008,2.4,$2.65
-Amazon Bedrock,Amazon Titan G1,,1006,10.9,$20.00
-Replicate,Stable Diffusion XL 1.0,,980,9.3,$9.04
-Amazon Bedrock,Stable Diffusion XL 1.0,,980,6.3,$40.00
-Lepton AI,Stable Diffusion XL 1.0,,980,6.4,$4.50
-Fireworks,Stable Diffusion XL 1.0,,980,1.2,$3.90
-Deepinfra,Stable Diffusion XL 1.0,,980,5.9,$3.18
-Stability.ai,Stable Diffusion XL 1.0,,980,5.9,$6.00
-Together.ai,Stable Diffusion XL 1.0,,980,3.9,$20.00
-fal.ai,Stable Diffusion XL 1.0,,980,90.7,$3.50
-Replicate,Stable Diffusion 2.1,,823,6.1,$6.71
-Deepinfra,Stable Diffusion 2.1,,823,12.5,$3.76
-Together.ai,Stable Diffusion 2.1,,823,8.2,$20.00
-OpenAI,DALLE 2,,822,11.1,$20.00
-Replicate,Stable Diffusion 1.5,,697,25.6,$8.56
-Together.ai,Stable Diffusion 1.5,,697,9.5,$10.00
+Provider,Model,Footnotes,Model Quality ELO,Median Generation Time (s),Price per 1k Images (USD),id_name
+Midjourney,Midjourney v6,,1165,72.7,$66.00,midjourney-unknown-unknown-6-unknown-unknown-false-unknown-false
+Stability.ai,Stable Diffusion 3,,1149,5.3,$65.00,
+fal.ai,Playground v2.5,,1097,5.0,$5.13,playground-unknown-unknown-2.5-unknown-unknown-false-unknown-false
+Replicate,Playground v2.5,,1097,11.9,$10.67,playground-unknown-unknown-2.5-unknown-unknown-false-unknown-false
+Fireworks,Playground v2.5,,1097,1.6,$6.50,playground-unknown-unknown-2.5-unknown-unknown-false-unknown-false
+OpenAI,DALLE 3 HD,,1093,16.2,$80.00,dalle-unknown-unknown-3-unknown-unknown-false-unknown-false
+OpenAI,DALLE 3,,1071,12.6,$40.00,dalle-unknown-unknown-3-unknown-unknown-false-unknown-false
+Stability.ai,Stable Diffusion 3 Turbo,,1035,1.8,$40.00,
+Stability.ai,Stable Diffusion 1.6,,1027,6.9,$10.00,stablediffusion-unknown-unknown-1.6-unknown-unknown-false-unknown-false
+fal.ai,Stable Diffusion 3 Medium,,1027,2.2,$35.00,stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false
+Stability.ai,Stable Diffusion 3 Medium,,1027,5.1,$35.00,stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false
+Replicate,Stable Diffusion 3 Medium,,1027,3.7,$35.00,stablediffusion-medium-unknown-3-unknown-unknown-false-unknown-false
+fal.ai,SDXL Lightning,,1008,1.0,$1.01,stablediffusion-xl-lightning-unknown-unknown-unknown-false-unknown-false
+Replicate,SDXL Lightning,,1008,2.4,$2.65,stablediffusion-xl-lightning-unknown-unknown-unknown-false-unknown-false
+Amazon Bedrock,Amazon Titan G1,,1006,10.9,$20.00,
+Replicate,Stable Diffusion XL 1.0,,980,9.3,$9.04,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false
+Amazon Bedrock,Stable Diffusion XL 1.0,,980,6.3,$40.00,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false
+Lepton AI,Stable Diffusion XL 1.0,,980,6.4,$4.50,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false
+Fireworks,Stable Diffusion XL 1.0,,980,1.2,$3.90,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false
+Deepinfra,Stable Diffusion XL 1.0,,980,5.9,$3.18,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false
+Stability.ai,Stable Diffusion XL 1.0,,980,5.9,$6.00,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false
+Together.ai,Stable Diffusion XL 1.0,,980,3.9,$20.00,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false
+fal.ai,Stable Diffusion XL 1.0,,980,90.7,$3.50,stablediffusion-xl-unknown-1-unknown-unknown-false-unknown-false
+Replicate,Stable Diffusion 2.1,,823,6.1,$6.71,stablediffusion-unknown-unknown-2.1-unknown-unknown-false-unknown-false
+Deepinfra,Stable Diffusion 2.1,,823,12.5,$3.76,stablediffusion-unknown-unknown-2.1-unknown-unknown-false-unknown-false
+Together.ai,Stable Diffusion 2.1,,823,8.2,$20.00,stablediffusion-unknown-unknown-2.1-unknown-unknown-false-unknown-false
+OpenAI,DALLE 2,,822,11.1,$20.00,dalle-unknown-unknown-2-unknown-unknown-false-unknown-false
+Replicate,Stable Diffusion 1.5,,697,25.6,$8.56,stablediffusion-unknown-unknown-1.5-unknown-unknown-false-unknown-false
+Together.ai,Stable Diffusion 1.5,,697,9.5,$10.00,stablediffusion-unknown-unknown-1.5-unknown-unknown-false-unknown-false

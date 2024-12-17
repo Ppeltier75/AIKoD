@@ -1,12 +1,12 @@
 model_name,price_1m_blended_3_to_1,price_1m_input_tokens,price_1m_output_tokens,id_name
-Llama 3.2 Instruct 90B (Vision),0.9,0.9,0.9,llama-unknown-vision-3.2-unknown-90-unknown-instruct-false
-Llama 3.1 Instruct 70B,0.64,0.59,0.79,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
-Llama 3.1 Instruct 70B,0.69,0.59,0.99,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
-Llama 3.2 Instruct 11B (Vision),0.18,0.18,0.18,llama-unknown-vision-3.2-unknown-11-unknown-instruct-false
-Llama 3.1 Instruct 8B,0.0575,0.05,0.08,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
-Llama 3.2 Instruct 3B,0.06,0.06,0.06,llama-unknown-unknown-3.2-unknown-3-unknown-instruct-false
-Llama 3.2 Instruct 1B,0.04,0.04,0.04,llama-unknown-unknown-3.2-unknown-1-unknown-instruct-false
-Gemma 2 9B,0.2,0.2,0.2,gemma-unknown-unknown-unknown-unknown-9-unknown-unknown-false
-Mixtral 8x7B Instruct,0.24,0.24,0.24,mixtral-instruct-unknown-unknown-unknown-8x7-unknown-unknown-false
-Llama 3 Instruct 70B,0.64,0.59,0.79,llama-unknown-unknown-3-unknown-70-unknown-instruct-false
-Llama 3 Instruct 8B,0.0575,0.05,0.08,llama-unknown-unknown-3-unknown-8-unknown-instruct-false
+Llama 3.2 Instruct 90B (Vision),0.9,0.9,0.9,
+Llama 3.1 Instruct 70B,0.64,0.59,0.79,
+Llama 3.1 Instruct 70B,0.69,0.59,0.99,
+Llama 3.2 Instruct 11B (Vision),0.18,0.18,0.18,
+Llama 3.1 Instruct 8B,0.0575,0.05,0.08,
+Llama 3.2 Instruct 3B,0.06,0.06,0.06,
+Llama 3.2 Instruct 1B,0.04,0.04,0.04,
+Gemma 2 9B,0.2,0.2,0.2,
+Mixtral 8x7B Instruct,0.24,0.24,0.24,
+Llama 3 Instruct 70B,0.64,0.59,0.79,
+Llama 3 Instruct 8B,0.0575,0.05,0.08,

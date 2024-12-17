@@ -1,5 +1,5 @@
 model_name,parameters,open_weights,open_weights_license_name,open_weights_license_url,release_date,context_window,id_name
-Reka Flash (Sep '24),21.0,False,,,2024-10-04,128000,reka-flash-unknown-unknown-202409-unknown-unknown-unknown-false
-Reka Core,,False,,,2024-04-15,128000,reka-core-unknown-unknown-unknown-unknown-unknown-unknown-false
-Reka Flash (Feb '24),21.0,False,,,2024-02-12,128000,reka-flash-unknown-unknown-202402-unknown-unknown-unknown-false
-Reka Edge,7.0,False,,,2024-02-12,64000,reka-edge-unknown-unknown-unknown-unknown-unknown-unknown-false
+Reka Flash (Sep '24),21.0,False,,,2024-10-04,128000,
+Reka Core,,False,,,2024-04-15,128000,
+Reka Flash (Feb '24),21.0,False,,,2024-02-12,128000,
+Reka Edge,7.0,False,,,2024-02-12,64000,

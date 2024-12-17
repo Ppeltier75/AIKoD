@@ -1,6 +1,6 @@
 model_name,parameters,open_weights,open_weights_license_name,open_weights_license_url,release_date,context_window,id_name
-Llama 3.1 Instruct 70B,70.0,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,128000,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
-Llama 3.1 Instruct 8B,8.0,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,128000,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
-Sonar 3.1 Large,,False,,,2024-08-01,131072,sonar-large-unknown-3.1-unknown-unknown-unknown-unknown-false
-Sonar 3.1 Small,,False,,,2024-08-01,131072,sonar-small-unknown-3.1-unknown-unknown-unknown-unknown-false
-Mistral 7B Instruct,7.0,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2023-09-27,16384,mistral-instruct-unknown-unknown-7-unknown-unknown-unknown-false
+Llama 3.1 Instruct 70B,70.0,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,128000,
+Llama 3.1 Instruct 8B,8.0,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,128000,
+Sonar 3.1 Large,,False,,,2024-08-01,131072,
+Sonar 3.1 Small,,False,,,2024-08-01,131072,
+Mistral 7B Instruct,7.0,True,Apache 2.0,https://www.apache.org/licenses/LICENSE-2.0,2023-09-27,16384,

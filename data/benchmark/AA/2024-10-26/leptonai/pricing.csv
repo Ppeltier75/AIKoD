@@ -1,9 +1,9 @@
 model_name,price_1m_blended_3_to_1,price_1m_input_tokens,price_1m_output_tokens,id_name
-Llama 3.1 Instruct 405B,2.8,2.8,2.8,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false
-Llama 3.1 Instruct 70B,0.8,0.8,0.8,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
-Llama 3.1 Instruct 8B,0.07,0.07,0.07,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
-Llama 3.2 Instruct 3B,0.03,0.03,0.03,llama-unknown-unknown-3.2-unknown-3-unknown-instruct-false
-Mixtral 8x7B Instruct,0.5,0.5,0.5,mixtral-instruct-unknown-unknown-unknown-8x7-unknown-unknown-false
-Llama 3 Instruct 70B,0.8,0.8,0.8,llama-unknown-unknown-3-unknown-70-unknown-instruct-false
-Llama 3 Instruct 8B,0.07,0.07,0.07,llama-unknown-unknown-3-unknown-8-unknown-instruct-false
-Mistral 7B Instruct,0.07,0.07,0.07,mistral-instruct-unknown-unknown-7-unknown-unknown-unknown-false
+Llama 3.1 Instruct 405B,2.8,2.8,2.8,
+Llama 3.1 Instruct 70B,0.8,0.8,0.8,
+Llama 3.1 Instruct 8B,0.07,0.07,0.07,
+Llama 3.2 Instruct 3B,0.03,0.03,0.03,
+Mixtral 8x7B Instruct,0.5,0.5,0.5,
+Llama 3 Instruct 70B,0.8,0.8,0.8,
+Llama 3 Instruct 8B,0.07,0.07,0.07,
+Mistral 7B Instruct,0.07,0.07,0.07,

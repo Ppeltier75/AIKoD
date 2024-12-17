@@ -1,14 +1,14 @@
 model_name,quality_index,mmlu,gpqa,humaneval,math,id_name
-Llama 3.1 Instruct 405B,71.9,0.867,0.491,0.827,0.69,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false
-Llama 3.2 Instruct 90B (Vision),66.0,0.835,0.452,0.744,0.609,llama-unknown-vision-3.2-unknown-90-unknown-instruct-false
-Llama 3.1 Instruct 70B,65.3,0.836,0.434,0.738,0.604,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
-Llama 3.2 Instruct 11B (Vision),53.6,0.716,0.259,0.671,0.5,llama-unknown-vision-3.2-unknown-11-unknown-instruct-false
-Llama 3.1 Instruct 8B,53.3,0.711,0.277,0.635,0.506,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
-Llama 3.2 Instruct 3B,47.0,0.635,0.236,0.524,0.485,llama-unknown-unknown-3.2-unknown-3-unknown-instruct-false
-Llama 3.2 Instruct 1B,26.4,0.349,0.126,0.329,0.25,llama-unknown-unknown-3.2-unknown-1-unknown-instruct-false
-Mixtral 8x22B Instruct,61.0,0.761,0.361,0.696,0.623,mixtral-instruct-unknown-unknown-unknown-8x22-unknown-unknown-false
-Mixtral 8x7B Instruct,41.8,0.633,0.303,0.409,0.327,mixtral-instruct-unknown-unknown-unknown-8x7-unknown-unknown-false
-Qwen2 Instruct 72B,,,,,,qwen-unknown-unknown-2-unknown-72-unknown-instruct-false
-Yi-Large,58.3,0.779,0.335,0.682,0.538,yi-unknown-unknown-unknown-unknown-unknown-unknown-unknown-false
-Llama 3 Instruct 70B,61.7,0.79,0.39,0.768,0.521,llama-unknown-unknown-3-unknown-70-unknown-instruct-false
-Llama 3 Instruct 8B,45.9,0.642,0.308,0.578,0.31,llama-unknown-unknown-3-unknown-8-unknown-instruct-false
+Llama 3.1 Instruct 405B,71.9,0.867,0.491,0.827,0.69,
+Llama 3.2 Instruct 90B (Vision),66.0,0.835,0.452,0.744,0.609,
+Llama 3.1 Instruct 70B,65.3,0.836,0.434,0.738,0.604,
+Llama 3.2 Instruct 11B (Vision),53.6,0.716,0.259,0.671,0.5,
+Llama 3.1 Instruct 8B,53.3,0.711,0.277,0.635,0.506,
+Llama 3.2 Instruct 3B,47.0,0.635,0.236,0.524,0.485,
+Llama 3.2 Instruct 1B,26.4,0.349,0.126,0.329,0.25,
+Mixtral 8x22B Instruct,61.0,0.761,0.361,0.696,0.623,
+Mixtral 8x7B Instruct,41.8,0.633,0.303,0.409,0.327,
+Qwen2 Instruct 72B,,,,,,
+Yi-Large,58.3,0.779,0.335,0.682,0.538,
+Llama 3 Instruct 70B,61.7,0.79,0.39,0.768,0.521,
+Llama 3 Instruct 8B,45.9,0.642,0.308,0.578,0.31,

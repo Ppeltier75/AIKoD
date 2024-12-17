@@ -1,7 +1,7 @@
 model_name,parameters,open_weights,open_weights_license_name,open_weights_license_url,release_date,context_window,id_name
-Claude 3.5 Sonnet (Oct '24),,False,,,,200000,claude-sonnet-unknown-3.5-202410-unknown-unknown-unknown-false
-Claude 3.5 Sonnet (June '24),,False,,,2024-06-21,200000,claude-sonnet-unknown-3.5-202406-unknown-unknown-unknown-false
-Claude 3 Opus,,False,,,2024-03-04,200000,claude-opus-unknown-3-unknown-unknown-unknown-unknown-false
-Claude 3.5 Haiku,,False,,,,200000,claude-haiku-unknown-3.5-unknown-unknown-unknown-unknown-false
-Claude 3 Haiku,,False,,,2024-03-04,200000,claude-haiku-unknown-3-unknown-unknown-unknown-unknown-false
-Claude 3 Sonnet,,False,,,2024-03-04,200000,claude-sonnet-unknown-3-unknown-unknown-unknown-unknown-false
+Claude 3.5 Sonnet (Oct '24),,False,,,,200000,
+Claude 3.5 Sonnet (June '24),,False,,,2024-06-21,200000,
+Claude 3 Opus,,False,,,2024-03-04,200000,
+Claude 3.5 Haiku,,False,,,,200000,
+Claude 3 Haiku,,False,,,2024-03-04,200000,
+Claude 3 Sonnet,,False,,,2024-03-04,200000,

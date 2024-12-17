@@ -1,7 +1,7 @@
 model_name,quality_index,mmlu,gpqa,humaneval,math,id_name
-Claude 3.5 Sonnet (Oct '24),80.0,0.895,0.582,0.932,0.79,claude-sonnet-unknown-3.5-202410-unknown-unknown-unknown-false
-Claude 3.5 Sonnet (June '24),76.9,0.881,0.559,0.898,0.738,claude-sonnet-unknown-3.5-202406-unknown-unknown-unknown-false
-Claude 3 Opus,70.3,0.841,0.497,0.841,0.632,claude-opus-unknown-3-unknown-unknown-unknown-unknown-false
-Claude 3.5 Haiku,69.0,0.81,0.369,0.854,0.73,claude-haiku-unknown-3.5-unknown-unknown-unknown-unknown-false
-Claude 3 Haiku,54.2,0.708,0.333,0.717,0.41,claude-haiku-unknown-3-unknown-unknown-unknown-unknown-false
-Claude 3 Sonnet,57.2,0.765,0.373,0.694,0.456,claude-sonnet-unknown-3-unknown-unknown-unknown-unknown-false
+Claude 3.5 Sonnet (Oct '24),80.0,0.895,0.582,0.932,0.79,
+Claude 3.5 Sonnet (June '24),76.9,0.881,0.559,0.898,0.738,
+Claude 3 Opus,70.3,0.841,0.497,0.841,0.632,
+Claude 3.5 Haiku,69.0,0.81,0.369,0.854,0.73,
+Claude 3 Haiku,54.2,0.708,0.333,0.717,0.41,
+Claude 3 Sonnet,57.2,0.765,0.373,0.694,0.456,

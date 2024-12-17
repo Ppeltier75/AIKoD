@@ -5,6 +5,7 @@ from collections import Counter
 # Importation des fonctions depuis merge_utils.py
 from function_utils.utils_merge_id import select_specific_segments, select_segments_no_order, merge_csv_id_name
 
+
 def add_csv_audio_to_text(base_csv_path):
     """
     Adds audio-to-text related columns to the base CSV file by merging data from the specified CSV file.
@@ -12,15 +13,15 @@ def add_csv_audio_to_text(base_csv_path):
 
     :param base_csv_path: Path to the base CSV file.
     """
-    # Définition des stratégies de correspondance
+    # Définition des stratégies de correspondance sous forme de tuples (fonction, nom)
     strategies = [
-        lambda x: x,  # Correspondance exacte
-        lambda x: select_specific_segments(x, [1, 2, 4]),
-        lambda x: select_segments_no_order(x, [1, 2, 4]),
-        lambda x: select_specific_segments(x, [1, 2, 3]),
-        lambda x: select_segments_no_order(x, [1, 2, 3]),
-        lambda x: select_specific_segments(x, [1, 4]),
-        lambda x: select_segments_no_order(x, [1, 4]),
+        (lambda x: x, 'exact_match'),  # Correspondance exacte
+        (lambda x: select_specific_segments(x, [1, 2, 4]), 'strategy_1'),
+        (lambda x: select_segments_no_order(x, [1, 2, 4]), 'strategy_2'),
+        (lambda x: select_specific_segments(x, [1, 2, 3]), 'strategy_3'),
+        (lambda x: select_segments_no_order(x, [1, 2, 3]), 'strategy_4'),
+        (lambda x: select_specific_segments(x, [1, 4]), 'strategy_5'),
+        (lambda x: select_segments_no_order(x, [1, 4]), 'strategy_6'),
         # Vous pouvez ajouter d'autres stratégies si nécessaire
     ]
 
@@ -68,7 +69,6 @@ def add_csv_audio_to_text(base_csv_path):
         # Convertir en numérique et diviser par 100
         df_merge['Word Error Rate (%)'] = pd.to_numeric(df_merge['Word Error Rate (%)'], errors='coerce') / 100
         print("Conversion de 'Word Error Rate (%)' en numérique et division par 100")
-
     else:
         print("La colonne 'Word Error Rate (%)' est absente dans le fichier à fusionner.")
 
@@ -104,7 +104,6 @@ def add_csv_audio_to_text(base_csv_path):
 
     return df_merged
 
-
 def AIKoD_audiototext_infos(json_path, base_csv_path):
     """
     Met à jour un fichier CSV avec des informations extraites d'un JSON et fusionne avec d'autres fichiers CSV
@@ -114,11 +113,21 @@ def AIKoD_audiototext_infos(json_path, base_csv_path):
     :param base_csv_path: Chemin vers le fichier CSV à mettre à jour.
     """
     # Charger les données JSON
-    with open(json_path, 'r', encoding='utf-8') as file:
-        data = json.load(file)
+    try:
+        with open(json_path, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+        print(f"Données JSON chargées depuis {json_path}")
+    except Exception as e:
+        print(f"Erreur lors du chargement du fichier JSON {json_path} : {e}")
+        return
 
     # Charger le fichier CSV existant
-    base_df = pd.read_csv(base_csv_path)
+    try:
+        base_df = pd.read_csv(base_csv_path)
+        print(f"Fichier CSV de base chargé : {base_csv_path}")
+    except Exception as e:
+        print(f"Erreur lors du chargement du fichier CSV de base {base_csv_path} : {e}")
+        return
 
     # Parcourir les modèles dans le JSON
     id_name_to_info = {}
@@ -166,41 +175,74 @@ def AIKoD_audiototext_infos(json_path, base_csv_path):
         })
 
     # Créer un DataFrame avec les mises à jour
-    updates_df = pd.DataFrame(rows_to_update)
+    try:
+        updates_df = pd.DataFrame(rows_to_update)
+        print("DataFrame des mises à jour créé avec succès.")
+    except Exception as e:
+        print(f"Erreur lors de la création du DataFrame des mises à jour : {e}")
+        return
 
     # Fusionner les mises à jour avec le DataFrame existant
-    base_df = pd.merge(
-        base_df,
-        updates_df,
-        on="id_name",
-        how="left",
-        suffixes=("", "_new"),
-    )
+    try:
+        base_df = pd.merge(
+            base_df,
+            updates_df,
+            on="id_name",
+            how="left",
+            suffixes=("", "_new"),
+        )
+        print("Mises à jour fusionnées avec succès.")
+    except Exception as e:
+        print(f"Erreur lors de la fusion des mises à jour avec le DataFrame existant : {e}")
+        return
 
     # Mettre à jour les colonnes avec les nouvelles valeurs
     for col in ["company", "date_release"]:
         if f"{col}_new" in base_df.columns:
             base_df[col] = base_df[f"{col}_new"].combine_first(base_df[col])
             base_df.drop(columns=[f"{col}_new"], inplace=True)
+            print(f"Colonne '{col}' mise à jour.")
+        else:
+            print(f"Colonne '{col}_new' absente. Aucun changement apporté.")
 
     # Sauvegarder le DataFrame mis à jour temporairement
     temp_csv_path = base_csv_path.replace('.csv', '_temp.csv')
-    base_df.to_csv(temp_csv_path, index=False)
+    try:
+        base_df.to_csv(temp_csv_path, index=False)
+        print(f"Fichier temporaire sauvegardé sous : {temp_csv_path}")
+    except Exception as e:
+        print(f"Erreur lors de la sauvegarde du fichier temporaire {temp_csv_path} : {e}")
+        return
 
     # Utiliser add_csv_audio_to_text pour effectuer les fusions supplémentaires
-    df_final = add_csv_audio_to_text(temp_csv_path)
+    try:
+        df_final = add_csv_audio_to_text(temp_csv_path)
+    except Exception as e:
+        print(f"Erreur lors de l'exécution de add_csv_audio_to_text : {e}")
+        return
 
     # Transformer la colonne quality_index
     if "quality_index" in df_final.columns:
-        df_final["quality_index"] = 1 - (df_final["quality_index"] / 100)
-        print("La colonne 'quality_index' a été transformée.")
+        try:
+            df_final["quality_index"] = 1 - (df_final["quality_index"] / 100)
+            print("La colonne 'quality_index' a été transformée.")
+        except Exception as e:
+            print(f"Erreur lors de la transformation de 'quality_index' : {e}")
 
     # Enregistrer le DataFrame final à l'emplacement d'origine
-    df_final.to_csv(base_csv_path, index=False)
-    print(f"Le fichier {base_csv_path} a été mis à jour avec les informations audio-to-text.")
+    try:
+        df_final.to_csv(base_csv_path, index=False)
+        print(f"Le fichier {base_csv_path} a été mis à jour avec succès en utilisant add_csv_audio_to_text.")
+    except Exception as e:
+        print(f"Erreur lors de l'enregistrement du fichier final {base_csv_path} : {e}")
+        return
 
     # Supprimer le fichier temporaire
     if os.path.exists(temp_csv_path):
-        os.remove(temp_csv_path)
+        try:
+            os.remove(temp_csv_path)
+            print(f"Fichier temporaire {temp_csv_path} supprimé.")
+        except Exception as e:
+            print(f"Erreur lors de la suppression du fichier temporaire {temp_csv_path} : {e}")
 
     return df_final

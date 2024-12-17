@@ -1,5 +1,5 @@
 model_name,quality_index,mmlu,gpqa,humaneval,math,id_name
-Llama 3.1 Instruct 70B,,,,,,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
-Llama 3.1 Instruct 8B,,,,,,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
-Sonar 3.1 Small,,,,,,sonar-small-unknown-3.1-unknown-unknown-unknown-unknown-false
-Sonar 3.1 Large,,,,,,sonar-large-unknown-3.1-unknown-unknown-unknown-unknown-false
+Llama 3.1 Instruct 70B,,,,,,
+Llama 3.1 Instruct 8B,,,,,,
+Sonar 3.1 Small,,,,,,
+Sonar 3.1 Large,,,,,,

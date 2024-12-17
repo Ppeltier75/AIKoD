@@ -1,6 +1,6 @@
 model_name,parameters,open_weights,open_weights_license_name,open_weights_license_url,release_date,context_window,id_name
-Llama 3.1 Instruct 405B,405,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,8192,llama-unknown-unknown-3.1-unknown-405-unknown-instruct-false
-Llama 3.1 Instruct 70B,70,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,64000,llama-unknown-unknown-3.1-unknown-70-unknown-instruct-false
-Llama 3.1 Instruct 8B,8,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,16000,llama-unknown-unknown-3.1-unknown-8-unknown-instruct-false
-Llama 3.2 Instruct 3B,3,True,,,,4096,llama-unknown-unknown-3.2-unknown-3-unknown-instruct-false
-Llama 3.2 Instruct 1B,1,True,,,,4096,llama-unknown-unknown-3.2-unknown-1-unknown-instruct-false
+Llama 3.1 Instruct 405B,405,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,8192,
+Llama 3.1 Instruct 70B,70,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,64000,
+Llama 3.1 Instruct 8B,8,True,LLAMA 3.1 COMMUNITY LICENSE AGREEMENT,https://github.com/meta-llama/llama-models/blob/main/models/llama3_1/LICENSE,2024-07-23,16000,
+Llama 3.2 Instruct 3B,3,True,,,,4096,
+Llama 3.2 Instruct 1B,1,True,,,,4096,

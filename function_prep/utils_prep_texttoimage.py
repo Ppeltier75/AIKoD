@@ -112,18 +112,17 @@ def add_csv_texttoimage(base_csv_path):
 
     :param base_csv_path: Path to the base CSV file.
     """
-    # Définition des stratégies de correspondance
+    # Définition des stratégies de correspondance sous forme de tuples (fonction, nom)
     strategies = [
-        lambda x: x,  # Correspondance exacte
-        lambda x: select_specific_segments(x, [1, 2, 3, 4, 7]),
-        lambda x: select_segments_no_order(x, [1, 2, 3, 4, 7]),
-        lambda x: select_specific_segments(x, [1, 2, 3, 4]),
-        lambda x: select_segments_no_order(x, [1, 2, 3, 4]),
-        lambda x: select_specific_segments(x, [1, 2, 4]),
-        lambda x: select_segments_no_order(x, [1, 2, 4]),
-        lambda x: select_specific_segments(x, [1, 4]),
-        lambda x: select_segments_no_order(x, [1, 4]),
-        # Vous pouvez ajouter d'autres stratégies si nécessaire
+        (lambda x: x, 'exact_match'),  # Correspondance exacte
+        (lambda x: select_specific_segments(x, [1, 2, 3, 4, 7]), 'strategy_1'),
+        (lambda x: select_segments_no_order(x, [1, 2, 3, 4, 7]), 'strategy_2'),
+        (lambda x: select_specific_segments(x, [1, 2, 3, 4]), 'strategy_3'),
+        (lambda x: select_segments_no_order(x, [1, 2, 3, 4]), 'strategy_4'),
+        (lambda x: select_specific_segments(x, [1, 2, 4]), 'strategy_5'),
+        (lambda x: select_segments_no_order(x, [1, 2, 4]), 'strategy_6'),
+        (lambda x: select_specific_segments(x, [1, 4]), 'strategy_7'),
+        (lambda x: select_segments_no_order(x, [1, 4]), 'strategy_8'),
     ]
 
     # Lecture du fichier de base
@@ -164,7 +163,6 @@ def add_csv_texttoimage(base_csv_path):
     print(f"Le fichier fusionné a été enregistré sous {output_csv_path}")
 
     return df_merged
-
 
 def AIKoD_texttoimage_infos(json_path, output_file):
     """
@@ -268,7 +266,7 @@ def AIKoD_texttoimage_infos(json_path, output_file):
 
     # Normaliser la colonne quality_index
     if "quality_index" in df_final.columns:
-        df_final["quality_index"] = df_final["quality_index"].apply(lambda x: normalize_elo_rating(x, elo_min=600,elo_max=1300))
+        df_final["quality_index"] = df_final["quality_index"].apply(lambda x: normalize_elo_rating(x, elo_min=600, elo_max=1300))
         print("La colonne 'quality_index' a été normalisée avec succès.")
 
     # Enregistrer le DataFrame final à l'emplacement d'origine
@@ -280,7 +278,6 @@ def AIKoD_texttoimage_infos(json_path, output_file):
         os.remove(temp_csv_path)
 
     return df_final
-
 
 def create_adjusted_price_text_to_image(directory_csv, csv_path):
     """

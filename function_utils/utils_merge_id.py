@@ -32,6 +32,7 @@ def replace_segment(id_name, index, value):
     return '-'.join(segments)
 
 
+
 def merge_csv_id_name(df_base, df_merge, keep_columns, strategies):
     """
     Fusionne les données de df_merge dans df_base en fonction des stratégies de transformation d'id_name.
@@ -67,7 +68,7 @@ def merge_csv_id_name(df_base, df_merge, keep_columns, strategies):
                             # Si le 6ème segment n'est pas numérique, ignorer cette correspondance
                             break
 
-                        # Ajouter une colonne temporaire pour le 6ème segment numérique
+                        # Extraire le 6ème segment des matches et convertir en numérique
                         matches['seg6_numeric'] = pd.to_numeric(matches['id_name'].str.split('-').str[5], errors='coerce')
                         # Filtrer les lignes où le 6ème segment est numérique
                         valid_matches = matches.dropna(subset=['seg6_numeric'])
